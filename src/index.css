@@ -1,0 +1,156 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, Cambria, serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FBFBF9;
+    color: #1A1A1A;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  html {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: var(--font-serif);
+  }
+
+  /* Grid & Flex child containment to prevent horizontal blowout on mobile */
+  .grid,
+  .flex {
+    min-width: 0;
+  }
+
+  .grid > *,
+  .flex > * {
+    min-width: 0;
+  }
+
+  img,
+  video,
+  canvas {
+    max-width: 100%;
+  }
+}
+
+/* Custom editorial aesthetics */
+.editorial-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+}
+
+.editorial-container {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.img-editorial {
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1), filter 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.group:hover .img-editorial {
+  transform: scale(1.03);
+}
+
+/* Hardware acceleration and smooth rendering for all animated hero components */
+@keyframes heroKenBurns {
+  0% {
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: scale(1.038) translate3d(-0.4%, -0.3%, 0);
+  }
+  100% {
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+}
+
+@keyframes heroPulseGlow {
+  0%, 100% {
+    opacity: 0.94;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.hardware-accelerated,
+.hero-hardware-accelerated,
+.hero-image-container,
+.hero-bg-animated,
+.hero-ticker-word,
+.hero-hotspot,
+.hero-popover,
+[class*='hero'] .hero-image-container,
+[class*='hero'] .hero-bg-animated,
+[class*='hero'] [data-motion="true"],
+[class*='hero'] .motion-node {
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+.hero-image-container,
+.hero-bg-animated,
+[class*='hero'] .hero-image-container {
+  animation: heroKenBurns 22s ease-in-out infinite alternate;
+  transform-origin: center center;
+}
+
+.hero-image-container img,
+.hero-bg-animated img,
+[class*='hero'] .hero-image-container img {
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+.hero-bg-pulse {
+  animation: heroPulseGlow 8s ease-in-out infinite;
+}
+
+/* Accessibility: strictly honor prefers-reduced-motion constraints across all hero components */
+@media (prefers-reduced-motion: reduce) {
+  .hardware-accelerated,
+  .hero-hardware-accelerated,
+  .hero-image-container,
+  .hero-bg-animated,
+  .hero-bg-pulse,
+  .hero-ticker-word,
+  .hero-hotspot,
+  .hero-popover,
+  .hero-image-container img,
+  .hero-bg-animated img,
+  [class*='hero'] .hero-image-container,
+  [class*='hero'] .hero-bg-animated,
+  [class*='hero'] .hero-image-container img,
+  [class*='hero'] [data-motion="true"],
+  [class*='hero'] .motion-node,
+  [class*='hero'] img,
+  [class*='hero'] * {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+    will-change: auto !important;
+  }
+}
+
+
+

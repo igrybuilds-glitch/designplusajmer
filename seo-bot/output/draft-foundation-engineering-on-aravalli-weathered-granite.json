@@ -1,0 +1,66 @@
+{
+  "id": "draft-aravalli-foundation-1789665923147",
+  "slug": "foundation-engineering-on-aravalli-weathered-granite",
+  "category": "architecture",
+  "subcategory": "Foundation Engineering & Soil Mechanics",
+  "title": "Foundation Engineering on Aravalli Weathered Granite: Raft vs. Isolated Footings in Ajmer",
+  "metaTitle": "Foundation Engineering on Aravalli Granite | Design Plus",
+  "metaDescription": "Chartered structural engineering guide to foundation design on weathered Aravalli granite and rocky strata in Ajmer, Rajasthan.",
+  "excerpt": "Analyzing soil bearing capacities, rock weathering zones, and footing design for structural longevity in Ajmer’s hilly terrain.",
+  "outline": [
+    "Geological Strata of the Central Aravalli Range in Ajmer",
+    "Evaluating Safe Bearing Capacity (SBC) Across Weathered Rock Zones",
+    "Raft Foundations vs. Stepped Strip Footings for Sloped Sites",
+    "Chartered Engineering Vetting and IS 1904 Compliance"
+  ],
+  "content": [
+    "Constructing enduring multi-story structures across Ajmer requires an intimate understanding of the Aravalli range’s complex geological subsurface. Soil profiles frequently transition from weathered schists and decomposed granite near hillside slopes to unconsolidated sandy silts near lake catchments.",
+    "Under IS 1904:2021 and IS 6403:1981, foundation design must be governed by empirical plate load testing and core drilling rather than arbitrary assumption. On uneven weathered rock, isolated footings risk differential settlement if one column rests on hard rock while an adjacent footing sits on weathered strata.",
+    "At Design Plus, Chartered Structural Engineer Er. Sudhir Soni models foundation grids using integrated finite element analysis. By deploying reinforced concrete raft slabs or stepped strip foundations with dowelled tie beams, loads are redistributed uniformly across varying bearing strata.",
+    "This rigorous structural vetting eliminates post-construction masonry shear cracks and guarantees complete seismic and structural stability before architectural superstructure erection begins."
+  ],
+  "sources": [
+    "Bureau of Indian Standards: IS 1904 (Design and Construction of Foundations in Soils)",
+    "IS 6403 (Code of Practice for Determination of Bearing Capacity of Shallow Foundations)",
+    "Geological Survey of India: Arid Zone Lithology Bulletins"
+  ],
+  "suggestedInternalLinks": {
+    "services": [
+      "structural-design",
+      "architectural-design"
+    ],
+    "projects": [
+      "ana-sagar-residence",
+      "industrial-spans-kishangarh"
+    ],
+    "locations": [
+      "ajmer",
+      "pushkar"
+    ],
+    "articles": [
+      "structural-safety-and-architecture-in-rajasthan",
+      "navigating-ada-building-byelaws-ajmer"
+    ]
+  },
+  "relatedServices": [
+    "structural-design",
+    "architectural-design"
+  ],
+  "relatedProjects": [
+    "ana-sagar-residence",
+    "industrial-spans-kishangarh"
+  ],
+  "relatedLocations": [
+    "ajmer",
+    "pushkar"
+  ],
+  "author": "Er. Sudhir Soni, Chartered Engineer",
+  "createdAt": "2026-09-17T17:25:23.147Z",
+  "status": "draft",
+  "researchBrief": {
+    "searchIntent": "Technical due-diligence for foundation selection on rocky soils",
+    "targetAudience": "Homebuilders, commercial developers, and civil engineers in Rajasthan",
+    "technicalDepthFocus": "IS Code foundation calculations and soil mechanics",
+    "climaticOrRegionalAnchor": "Aravalli Range / Ajmer District topography"
+  }
+}

@@ -1,0 +1,382 @@
+{
+  "entities": {
+    "admins": {
+      "title": "Admins",
+      "description": "Authorized administrator accounts allowlisted for private CMS and dashboard operations",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "description": "Firebase Auth UID" },
+        "email": { "type": "string", "description": "Administrator email address" },
+        "displayName": { "type": "string", "description": "Administrator full name" },
+        "role": { "type": "string", "enum": ["admin"], "description": "Role identifier" },
+        "active": { "type": "boolean", "description": "Whether the admin account is active" },
+        "createdAt": { "type": "string", "description": "Account registration ISO timestamp" },
+        "lastLoginAt": { "type": "string", "description": "Most recent authentication ISO timestamp" }
+      },
+      "required": ["uid", "email", "role", "active"]
+    },
+    "projects": {
+      "title": "Projects",
+      "description": "Architectural and structural engineering projects managed via the CMS",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string", "maxLength": 200, "description": "Project title" },
+        "slug": { "type": "string", "maxLength": 200, "pattern": "^[a-z0-9-]+$", "description": "URL slug" },
+        "category": { "type": "string", "description": "residential, commercial, interior, structural, or concept" },
+        "status": { "type": "string", "enum": ["Completed", "Ongoing", "Concept", "Design Study"], "description": "Project execution status" },
+        "location": { "type": "string", "description": "Specific locality or sector" },
+        "city": { "type": "string", "description": "City name (Ajmer, Jaipur, Pushkar, etc.)" },
+        "state": { "type": "string", "description": "State name" },
+        "area": { "type": "string", "description": "Super built-up or plot area string" },
+        "plotSize": { "type": "string", "description": "Plot dimensions" },
+        "builtUpArea": { "type": "string", "description": "Constructed floor area" },
+        "floors": { "type": "string", "description": "Number of levels" },
+        "year": { "type": "string", "description": "Commission or completion year" },
+        "services": { "type": "array", "description": "Services delivered" },
+        "shortDescription": { "type": "string", "maxLength": 500, "description": "Summary for cards" },
+        "projectBrief": { "type": "string", "description": "Client brief and requirements" },
+        "designChallenge": { "type": "string", "description": "Site, slope or regulatory hurdles" },
+        "designApproach": { "type": "string", "description": "Architectural and structural philosophy" },
+        "planningDetails": { "type": "string", "description": "Spatial planning, Vastu, circulation" },
+        "elevationDetails": { "type": "string", "description": "Facade rhythm, screening, textures" },
+        "interiorDetails": { "type": "string", "description": "Materials, lighting, joinery" },
+        "structuralDetails": { "type": "string", "description": "RCC framing, soil mechanics, codes" },
+        "materialDirection": { "type": "string", "description": "Stones, claddings, finishes" },
+        "sustainabilityFeatures": { "type": "string", "description": "Courtyards, rainwater, thermal mass" },
+        "outcome": { "type": "string", "description": "Client outcome and structural impact" },
+        "coverImage": { "type": "string", "description": "Primary high-res cover image URL" },
+        "gallery": { "type": "array", "description": "High-res gallery image URLs" },
+        "featured": { "type": "boolean", "description": "Featured on homepage" },
+        "isConcept": { "type": "boolean", "description": "Concept project or design study flag" },
+        "relatedServices": { "type": "array", "description": "Related service slugs" },
+        "relatedLocations": { "type": "array", "description": "Related location slugs" },
+        "relatedProjects": { "type": "array", "description": "Related project slugs" },
+        "relatedArticles": { "type": "array", "description": "Related article slugs" },
+        "seoTitle": { "type": "string", "maxLength": 100, "description": "Meta title" },
+        "seoDescription": { "type": "string", "maxLength": 250, "description": "Meta description" },
+        "canonical": { "type": "string", "description": "Canonical URL" },
+        "robotsSetting": { "type": "string", "description": "Robots meta directives" },
+        "isPublished": { "type": "boolean", "description": "Public visibility toggle" },
+        "isArchived": { "type": "boolean", "description": "Archived status toggle" },
+        "isDeleted": { "type": "boolean", "description": "Soft deletion status" },
+        "createdAt": { "type": "string", "description": "Creation ISO timestamp" },
+        "updatedAt": { "type": "string", "description": "Last update ISO timestamp" }
+      },
+      "required": ["title", "slug", "category", "status", "coverImage"]
+    },
+    "blogPosts": {
+      "title": "BlogPosts",
+      "description": "Journal articles and technical architecture publications",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string", "maxLength": 200, "description": "Article headline" },
+        "slug": { "type": "string", "maxLength": 200, "pattern": "^[a-z0-9-]+$", "description": "URL slug" },
+        "category": { "type": "string", "enum": ["Architecture", "Residential Design", "Commercial Design", "Interior Design", "House Planning", "Ajmer"], "description": "Category" },
+        "excerpt": { "type": "string", "maxLength": 500, "description": "Summary excerpt" },
+        "content": { "type": "string", "description": "Markdown or rich body text" },
+        "featuredImage": { "type": "string", "description": "Main banner image URL" },
+        "imageAltText": { "type": "string", "maxLength": 150, "description": "Alt text for accessibility & SEO" },
+        "author": { "type": "string", "description": "Author name" },
+        "publicationDate": { "type": "string", "description": "Display publication date" },
+        "updatedDate": { "type": "string", "description": "Last update date" },
+        "readingTime": { "type": "string", "description": "Calculated reading time" },
+        "tags": { "type": "array", "description": "Keyword tags" },
+        "sources": { "type": "array", "description": "Citations and code standards" },
+        "relatedServices": { "type": "array", "description": "Related service slugs" },
+        "relatedProjects": { "type": "array", "description": "Related project slugs" },
+        "relatedLocations": { "type": "array", "description": "Related location slugs" },
+        "relatedArticles": { "type": "array", "description": "Related blog slugs" },
+        "seoTitle": { "type": "string", "maxLength": 100, "description": "Meta title" },
+        "seoDescription": { "type": "string", "maxLength": 250, "description": "Meta description" },
+        "canonical": { "type": "string", "description": "Canonical URL" },
+        "robots": { "type": "string", "description": "Robots directive" },
+        "ogImage": { "type": "string", "description": "OpenGraph social preview image" },
+        "isPublished": { "type": "boolean", "description": "Publicly readable flag" },
+        "isArchived": { "type": "boolean", "description": "Archived flag" },
+        "isDeleted": { "type": "boolean", "description": "Soft deleted flag" },
+        "createdAt": { "type": "string", "description": "Creation timestamp" },
+        "updatedAt": { "type": "string", "description": "Update timestamp" }
+      },
+      "required": ["title", "slug", "category", "content", "featuredImage"]
+    },
+    "blogCategories": {
+      "title": "BlogCategories",
+      "description": "Taxonomy categories for the Design Plus Journal",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "description": "Category title" },
+        "slug": { "type": "string", "description": "Category slug" },
+        "description": { "type": "string", "description": "Editorial scope" },
+        "order": { "type": "number", "description": "Display sequence" }
+      },
+      "required": ["name", "slug"]
+    },
+    "services": {
+      "title": "Services",
+      "description": "Practice service offerings and scope specifications",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "description": "Service name" },
+        "slug": { "type": "string", "description": "URL slug" },
+        "shortDescription": { "type": "string", "description": "Card summary" },
+        "fullDescription": { "type": "string", "description": "Comprehensive description" },
+        "serviceProcess": { "type": "array", "description": "Procedural stages" },
+        "features": { "type": "array", "description": "Key deliverables" },
+        "images": { "type": "array", "description": "Service hero and gallery images" },
+        "relatedProjects": { "type": "array", "description": "Associated project slugs" },
+        "relatedArticles": { "type": "array", "description": "Associated journal slugs" },
+        "relatedLocations": { "type": "array", "description": "Associated location slugs" },
+        "seoTitle": { "type": "string", "description": "SEO title" },
+        "seoDescription": { "type": "string", "description": "SEO meta description" },
+        "canonical": { "type": "string", "description": "Canonical URL" },
+        "robots": { "type": "string", "description": "Robots directive" },
+        "isPublished": { "type": "boolean", "description": "Published flag" },
+        "isArchived": { "type": "boolean", "description": "Archived flag" },
+        "isDeleted": { "type": "boolean", "description": "Soft deleted flag" },
+        "updatedAt": { "type": "string", "description": "Update timestamp" }
+      },
+      "required": ["name", "slug"]
+    },
+    "locations": {
+      "title": "Locations",
+      "description": "Regional service hubs across Rajasthan",
+      "type": "object",
+      "properties": {
+        "city": { "type": "string", "description": "City name" },
+        "state": { "type": "string", "description": "State name" },
+        "slug": { "type": "string", "description": "URL slug" },
+        "introduction": { "type": "string", "description": "Regional introduction" },
+        "localContext": { "type": "string", "description": "Topography, geology, municipal bylaws" },
+        "services": { "type": "array", "description": "Services offered in this region" },
+        "projects": { "type": "array", "description": "Local project slugs" },
+        "articles": { "type": "array", "description": "Local journal slugs" },
+        "faqs": { "type": "array", "description": "Regional FAQs" },
+        "seoTitle": { "type": "string", "description": "SEO title" },
+        "seoDescription": { "type": "string", "description": "SEO description" },
+        "canonical": { "type": "string", "description": "Canonical URL" },
+        "robots": { "type": "string", "description": "Robots directive" },
+        "isPublished": { "type": "boolean", "description": "Published flag" },
+        "isArchived": { "type": "boolean", "description": "Archived flag" },
+        "isDeleted": { "type": "boolean", "description": "Soft delete flag" },
+        "updatedAt": { "type": "string", "description": "Update timestamp" }
+      },
+      "required": ["city", "slug"]
+    },
+    "media": {
+      "title": "Media",
+      "description": "Media library assets with SEO metadata and usage records",
+      "type": "object",
+      "properties": {
+        "filename": { "type": "string", "description": "File name" },
+        "url": { "type": "string", "description": "Public URL" },
+        "altText": { "type": "string", "description": "Image accessibility and SEO alt tag" },
+        "caption": { "type": "string", "description": "Editorial caption" },
+        "category": { "type": "string", "enum": ["Projects", "Blog", "Services", "General"], "description": "Category" },
+        "dimensions": { "type": "string", "description": "e.g. 1920x1080" },
+        "fileSize": { "type": "string", "description": "e.g. 245 KB" },
+        "usedIn": { "type": "array", "description": "List of referencing document slugs or IDs" },
+        "uploadedBy": { "type": "string", "description": "Admin email or UID" },
+        "createdAt": { "type": "string", "description": "Upload ISO timestamp" },
+        "isDeleted": { "type": "boolean", "description": "Soft delete flag" }
+      },
+      "required": ["filename", "url", "category"]
+    },
+    "messages": {
+      "title": "Messages",
+      "description": "Private client enquiries and consultation requests",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "description": "Client name" },
+        "phone": { "type": "string", "description": "Client contact number" },
+        "email": { "type": "string", "description": "Client email" },
+        "message": { "type": "string", "description": "Project query or requirements" },
+        "source": { "type": "string", "description": "Submission source" },
+        "status": { "type": "string", "enum": ["New", "Contacted", "Qualified", "Closed"], "description": "Lead lifecycle status" },
+        "internalNotes": { "type": "string", "description": "Private administrator notes" },
+        "isRead": { "type": "boolean", "description": "Read status" },
+        "isArchived": { "type": "boolean", "description": "Archived status" },
+        "createdAt": { "type": "string", "description": "Submission timestamp" }
+      },
+      "required": ["name", "phone", "message", "status"]
+    },
+    "team": {
+      "title": "Team",
+      "description": "Verified leadership and technical engineering team members",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "description": "Full name with honorifics" },
+        "role": { "type": "string", "description": "Organizational role" },
+        "qualification": { "type": "string", "description": "Degrees and professional certifications" },
+        "bio": { "type": "string", "description": "Professional biography" },
+        "specialization": { "type": "string", "description": "Key engineering or design specializations" },
+        "order": { "type": "number", "description": "Display order" },
+        "photoUrl": { "type": "string", "description": "Profile portrait URL" },
+        "updatedAt": { "type": "string", "description": "Update timestamp" }
+      },
+      "required": ["name", "role", "qualification"]
+    },
+    "siteSettings": {
+      "title": "SiteSettings",
+      "description": "Global studio configuration, contact metadata, and SEO defaults",
+      "type": "object",
+      "properties": {
+        "siteName": { "type": "string", "description": "Brand name" },
+        "tagline": { "type": "string", "description": "Brand tagline" },
+        "subTagline": { "type": "string", "description": "Extended motto" },
+        "contactEmail": { "type": "string", "description": "Public contact email" },
+        "phones": { "type": "array", "description": "Studio phone numbers" },
+        "address": { "type": "string", "description": "Physical studio address" },
+        "socials": { "type": "object", "description": "Social media links" },
+        "analyticsId": { "type": "string", "description": "Measurement ID" },
+        "seoDefaults": { "type": "object", "description": "Default meta tags" },
+        "publishing": { "type": "object", "description": "Publishing defaults" },
+        "updatedAt": { "type": "string", "description": "Update timestamp" }
+      }
+    },
+    "auditLogs": {
+      "title": "AuditLogs",
+      "description": "Chronological administrator audit trail for private CMS operations",
+      "type": "object",
+      "properties": {
+        "adminEmail": { "type": "string", "description": "Administrator email" },
+        "adminUid": { "type": "string", "description": "Administrator UID" },
+        "action": { "type": "string", "description": "Created, Updated, Published, etc." },
+        "contentType": { "type": "string", "description": "project, blog, service, location, media, settings" },
+        "contentId": { "type": "string", "description": "Target document ID or slug" },
+        "timestamp": { "type": "string", "description": "ISO timestamp" },
+        "summary": { "type": "string", "description": "Human-readable description of change" }
+      },
+      "required": ["adminEmail", "action", "contentType", "timestamp", "summary"]
+    },
+    "users": {
+      "title": "Users",
+      "description": "User profiles authenticated via Firebase Auth",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "description": "Unique Firebase Auth user UID" },
+        "email": { "type": "string", "description": "User email address" },
+        "displayName": { "type": "string", "description": "User display name" },
+        "photoURL": { "type": "string", "description": "User avatar URL" },
+        "createdAt": { "type": "string", "description": "Creation ISO timestamp" }
+      }
+    },
+    "saved_projects": {
+      "title": "SavedProjects",
+      "description": "User bookmarked architectural projects and floor plan concepts",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "description": "Owner UID" },
+        "projectId": { "type": "string", "description": "Design Plus Project ID or slug" },
+        "title": { "type": "string", "description": "Project title" },
+        "category": { "type": "string", "description": "Architecture category" },
+        "savedAt": { "type": "string", "description": "Saved timestamp" }
+      }
+    },
+    "inquiries": {
+      "title": "Inquiries",
+      "description": "Architectural consultations and project inquiries submitted by users",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "description": "Optional authenticated UID or guest identifier" },
+        "name": { "type": "string", "description": "Client full name" },
+        "email": { "type": "string", "description": "Client email address" },
+        "phone": { "type": "string", "description": "Client phone number" },
+        "plotArea": { "type": "string", "description": "Plot dimensions or area in sq. yards / sq. ft" },
+        "projectType": { "type": "string", "description": "Residential, Commercial, Interior, or Structural" },
+        "location": { "type": "string", "description": "City or locality (e.g. Ajmer, Jaipur, Pushkar)" },
+        "message": { "type": "string", "description": "Project details or requirements" },
+        "createdAt": { "type": "string", "description": "Submission ISO timestamp" },
+        "status": { "type": "string", "description": "Pending, In-Review, or Completed" }
+      }
+    },
+    "video_renders": {
+      "title": "VideoRenders",
+      "description": "Veo generated architectural flythrough video recordings and previews",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "description": "UID of the user who initiated the render" },
+        "prompt": { "type": "string", "description": "Architectural prompt or image context" },
+        "videoUrl": { "type": "string", "description": "Video download or blob reference" },
+        "aspectRatio": { "type": "string", "description": "16:9 or 9:16" },
+        "createdAt": { "type": "string", "description": "Creation timestamp" }
+      }
+    },
+    "conversations": {
+      "title": "Conversations",
+      "description": "Saved multi-turn architectural consultation chatbot conversations",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "description": "Owner UID" },
+        "role": { "type": "string", "description": "Role persona" },
+        "messages": { "type": "array", "description": "Conversation message history" },
+        "updatedAt": { "type": "string", "description": "Last updated ISO timestamp" }
+      }
+    }
+  },
+  "firestore": {
+    "/admins/{uid}": {
+      "schema": "admins",
+      "description": "Private allowlisted administrator identity documents"
+    },
+    "/projects/{projectId}": {
+      "schema": "projects",
+      "description": "Architectural and structural engineering projects managed via CMS"
+    },
+    "/blogPosts/{postId}": {
+      "schema": "blogPosts",
+      "description": "Journal articles and technical architecture publications"
+    },
+    "/blogCategories/{categoryId}": {
+      "schema": "blogCategories",
+      "description": "Categories for the journal engine"
+    },
+    "/services/{serviceId}": {
+      "schema": "services",
+      "description": "Practice architectural and engineering service offerings"
+    },
+    "/locations/{locationId}": {
+      "schema": "locations",
+      "description": "Regional practice hubs and contextual guidelines across Rajasthan"
+    },
+    "/media/{mediaId}": {
+      "schema": "media",
+      "description": "Media library assets with alt text and dimensions"
+    },
+    "/messages/{messageId}": {
+      "schema": "messages",
+      "description": "Private client enquiries and consultation leads"
+    },
+    "/team/{memberId}": {
+      "schema": "team",
+      "description": "Verified leadership and technical engineering team members"
+    },
+    "/siteSettings/{settingId}": {
+      "schema": "siteSettings",
+      "description": "Global studio configuration and SEO defaults"
+    },
+    "/auditLogs/{logId}": {
+      "schema": "auditLogs",
+      "description": "Chronological administrator audit trail for private CMS operations"
+    },
+    "/users/{userId}": {
+      "schema": "users",
+      "description": "User profiles authenticated via Firebase Auth"
+    },
+    "/saved_projects/{docId}": {
+      "schema": "saved_projects",
+      "description": "User bookmarked architectural projects"
+    },
+    "/inquiries/{inquiryId}": {
+      "schema": "inquiries",
+      "description": "Consultations and inquiries submitted by users"
+    },
+    "/video_renders/{renderId}": {
+      "schema": "video_renders",
+      "description": "Veo architectural flythrough video recordings"
+    },
+    "/conversations/{conversationId}": {
+      "schema": "conversations",
+      "description": "Saved multi-turn architectural consultation chatbot conversations"
+    }
+  }
+}

@@ -1,0 +1,134 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Default deny all access
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    // Restrict access strictly to users with the custom claim 'admin: true'
+    function hasAdminClaim() {
+      return isAuthenticated() && request.auth.token.admin == true;
+    }
+
+    // Two authorized administrator accounts and admin claim check
+    function isAllowlistedAdmin() {
+      return isAuthenticated() && (
+        request.auth.token.admin == true ||
+        request.auth.token.email == "igrybuilds@gmail.com" ||
+        request.auth.token.email == "designplusajmer@gmail.com" ||
+        exists(/databases/$(database)/documents/admins/$(request.auth.uid))
+      );
+    }
+
+    // =========================================================================
+    // CMS COLLECTIONS
+    // Read and write access strictly restricted to only users with custom claim 'admin: true'
+    // =========================================================================
+
+    // Projects CMS
+    match /projects/{projectId} {
+      allow read, write: if hasAdminClaim();
+    }
+
+    // Blog Articles CMS
+    match /blogPosts/{postId} {
+      allow read, write: if hasAdminClaim();
+    }
+
+    // Blog Categories CMS
+    match /blogCategories/{categoryId} {
+      allow read, write: if hasAdminClaim();
+    }
+
+    // Services CMS
+    match /services/{serviceId} {
+      allow read, write: if hasAdminClaim();
+    }
+
+    // Locations CMS
+    match /locations/{locationId} {
+      allow read, write: if hasAdminClaim();
+    }
+
+    // Media Library CMS
+    match /media/{mediaId} {
+      allow read, write: if hasAdminClaim();
+    }
+
+    // Team Members CMS
+    match /team/{memberId} {
+      allow read, write: if hasAdminClaim();
+    }
+
+    // Global Site Settings CMS
+    match /siteSettings/{settingId} {
+      allow read, write: if hasAdminClaim();
+    }
+
+    // Audit Logs (strictly private)
+    match /auditLogs/{logId} {
+      allow read, write: if hasAdminClaim();
+    }
+
+    // Admins Collection (strictly private)
+    match /admins/{uid} {
+      allow read, write: if hasAdminClaim();
+    }
+
+    // =========================================================================
+    // CLIENT INQUIRIES & USER DATA
+    // =========================================================================
+
+    // Messages / Leads (public can submit, only admins can view or edit)
+    match /messages/{messageId} {
+      allow create: if request.resource.data.name is string 
+                    && request.resource.data.message is string;
+      allow read, update, delete: if hasAdminClaim() || isAllowlistedAdmin();
+    }
+
+    // User Profiles
+    match /users/{userId} {
+      allow read: if isAuthenticated();
+      allow write: if isOwner(userId) || hasAdminClaim() || isAllowlistedAdmin();
+    }
+
+    // Saved Projects
+    match /saved_projects/{docId} {
+      allow read: if isAuthenticated() && (resource == null || resource.data.userId == request.auth.uid);
+      allow create: if isAuthenticated() && request.resource.data.userId == request.auth.uid;
+      allow update, delete: if isAuthenticated() && resource.data.userId == request.auth.uid;
+    }
+
+    // Public Inquiries
+    match /inquiries/{inquiryId} {
+      allow create: if true;
+      allow read: if hasAdminClaim() || isAllowlistedAdmin() || (isAuthenticated() && resource.data.userId == request.auth.uid);
+      allow update, delete: if hasAdminClaim() || isAllowlistedAdmin();
+    }
+
+    // Video Renders
+    match /video_renders/{renderId} {
+      allow read: if isAuthenticated() && (resource == null || resource.data.userId == request.auth.uid);
+      allow create: if isAuthenticated() && request.resource.data.userId == request.auth.uid;
+      allow update, delete: if isAuthenticated() && resource.data.userId == request.auth.uid;
+    }
+
+    // Consultation Chatbot Conversations
+    match /conversations/{conversationId} {
+      allow read: if isAuthenticated() && (resource == null || resource.data.userId == request.auth.uid);
+      allow create: if isAuthenticated() && request.resource.data.userId == request.auth.uid;
+      allow update, delete: if isAuthenticated() && resource.data.userId == request.auth.uid;
+    }
+  }
+}
