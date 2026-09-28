@@ -13,9 +13,13 @@ binding = "DB"
 database_name = "designplus-db"
 database_id = "470d5ed9-38ef-4ded-b278-231607d2ffbe"
 
-[[r2_buckets]]
-binding = "STORAGE"
-bucket_name = "designplus-storage"
+# R2 binding intentionally omitted: the account has no payment method on file,
+# so the R2 subscription can't be added yet. Re-add this block (bucket
+# "designplus-storage") when R2 is enabled, and the /api/uploads endpoint
+# will start working (it currently returns 503 "not enabled").
+# [[r2_buckets]]
+# binding = "STORAGE"
+# bucket_name = "designplus-storage"
 
 [vars]
 ENVIRONMENT = "production"
