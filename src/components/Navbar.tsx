@@ -67,15 +67,41 @@ export function Navbar({
           {/* Logo Brand */}
           <Link
             to="/"
-            className="group flex flex-col focus:outline-hidden"
+            className="group flex items-center gap-3 focus:outline-hidden"
             aria-label="Design Plus Home"
           >
-            <span className="font-editorial text-2xl sm:text-3xl tracking-[0.06em] text-[#1E1D1A] font-normal uppercase transition-colors">
-              Design Plus
-            </span>
-            <span className="text-[9.5px] sm:text-[10px] tracking-[0.22em] uppercase font-sans text-[#6E665B] font-medium -mt-0.5">
-              Architecture + Structural Studio · Ajmer
-            </span>
+            {/* Animated Monogram */}
+            <svg width="40" height="40" viewBox="0 0 40 40" className="stroke-[#B86B38]" fill="none" strokeWidth="1.5">
+              <rect x="5" y="5" width="30" height="30" className="dp-monogram-stroke" />
+              <path d="M14 20 L26 20 M20 14 L20 26 M14 26 L26 14" className="dp-monogram-stroke" />
+            </svg>
+
+            <div className="flex flex-col">
+              <span className="font-editorial text-2xl sm:text-3xl tracking-[0.06em] text-[#1E1D1A] font-normal uppercase transition-colors relative overflow-hidden">
+                <span className="block dp-wordmark-text">Design Plus</span>
+                <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent -translate-x-full group-hover:animate-sheen"></span>
+              </span>
+              <span className="text-[9.5px] sm:text-[10px] tracking-[0.22em] uppercase font-sans text-[#6E665B] font-medium -mt-0.5">
+                Architecture + Structural Studio · Ajmer
+              </span>
+            </div>
+            
+            <style>{`
+              .dp-monogram-stroke {
+                stroke-dasharray: 120;
+                stroke-dashoffset: 120;
+                animation: drawStroke 1.4s ease-out forwards;
+              }
+              @keyframes drawStroke {
+                to { stroke-dashoffset: 0; }
+              }
+              @keyframes sheen {
+                100% { transform: translateX(100%); }
+              }
+              .group-hover\\:animate-sheen {
+                animation: sheen 0.6s ease-out;
+              }
+            `}</style>
           </Link>
 
           {/* Desktop Navigation Links - Premium Architectural Style */}
