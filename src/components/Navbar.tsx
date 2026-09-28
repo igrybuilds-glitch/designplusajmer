@@ -48,7 +48,7 @@ export function Navbar({
     { label: 'Services', path: '/services' },
     { label: 'Products', path: '/products' },
     { label: 'Projects', path: '/projects' },
-    { label: 'Journal', path: '/blog' },
+    { label: 'Blog', path: '/blog' },
     { label: 'Contact', path: '/contact' }
   ];
 
