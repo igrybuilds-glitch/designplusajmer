@@ -1,5 +1,5 @@
-import { useMemo, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useMemo, useState, useEffect } from 'react';
+import { Link, useSearchParams } from 'react-router-dom';
 import { SEOHead } from '../components/SEOHead';
 import { BLOG_HUB_POSTS, getFeaturedBlogHubPost, type BlogHubPost } from '../content/blog-hub/posts';
 import { Reveal } from '../components/blog-hub/Reveal';
@@ -33,9 +33,21 @@ function CardVisual({ post, large = false }: { post: BlogHubPost; large?: boolea
 }
 
 export default function BlogHubPage() {
+  const [searchParams] = useSearchParams();
   const [filter, setFilter] = useState('All');
   const [filtering, setFiltering] = useState(false);
   const featured = getFeaturedBlogHubPost();
+
+  useEffect(() => {
+    const catParam = searchParams.get('category');
+    if (catParam) {
+      // Basic normalization: capitalized first letter
+      const normalized = catParam.charAt(0).toUpperCase() + catParam.slice(1).toLowerCase();
+      if (CATEGORIES.includes(normalized)) {
+        setFilter(normalized);
+      }
+    }
+  }, [searchParams]);
 
   const posts = useMemo(() => {
     const list = filter === 'All' ? BLOG_HUB_POSTS : BLOG_HUB_POSTS.filter((p) => p.category === filter);

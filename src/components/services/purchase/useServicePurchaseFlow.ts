@@ -10,11 +10,12 @@ import {
 
 export interface UseServicePurchaseFlowOptions {
   initialServiceId?: string;
+  customService?: PurchasableService;
   onComplete?: (orderRef: string) => void;
 }
 
 export function useServicePurchaseFlow(options: UseServicePurchaseFlowOptions = {}) {
-  const { initialServiceId = '2d-floor-plan', onComplete } = options;
+  const { initialServiceId = '2d-floor-plan', customService, onComplete } = options;
 
   // Selected Service
   const [selectedServiceId, setSelectedServiceId] = useState<string>(initialServiceId);
@@ -25,7 +26,7 @@ export function useServicePurchaseFlow(options: UseServicePurchaseFlowOptions = 
     }
   }, [initialServiceId]);
 
-  const currentService: PurchasableService = 
+  const currentService: PurchasableService = customService || 
     PURCHASABLE_SERVICES.find(s => s.id === selectedServiceId || s.slug === selectedServiceId) || 
     PURCHASABLE_SERVICES[0];
 

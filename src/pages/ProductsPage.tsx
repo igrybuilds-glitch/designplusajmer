@@ -120,7 +120,7 @@ export function ProductsPage({}: ProductsPageProps) {
                   key={cat}
                   type="button"
                   onClick={() => setSelectedCategory(cat)}
-                  className={`rounded-full px-4 py-2 text-xs font-sans font-medium whitespace-nowrap shrink-0 transition-all cursor-pointer ${
+                  className={`shrink-0 rounded-full px-4 py-2 text-xs font-sans font-medium whitespace-nowrap transition-all cursor-pointer ${
                     isSelected
                       ? 'bg-[#141414] text-white shadow-sm ring-2 ring-[#C86635]'
                       : 'bg-[#faf8f5] text-[#141414]/80 border border-[#141414]/15 hover:border-[#C86635]'

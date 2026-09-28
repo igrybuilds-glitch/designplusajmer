@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, ArrowUpRight, CheckCircle2, ShieldCheck } from 'lucide-react';
+import { db } from '../lib/firebase';
+import { collection, addDoc } from 'firebase/firestore';
 import { SEOHead } from '../components/SEOHead';
 import { EditorialHero } from '../components/EditorialHero';
 import { BUSINESS_INFO, LEADERSHIP } from '../data/siteData';
 
 export function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [consentRequired, setConsentRequired] = useState(false);
   const [consentOptional, setConsentOptional] = useState(false);
 
@@ -20,10 +24,35 @@ export function ContactPage() {
     message: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!consentRequired) return;
-    setSubmitted(true);
+    
+    setIsSubmitting(true);
+    setError(null);
+
+    try {
+      await addDoc(collection(db, 'inquiries'), {
+        name: formData.name,
+        phone: formData.phone,
+        email: formData.email,
+        message: formData.message,
+        plotArea: formData.plotArea,
+        projectType: formData.service,
+        location: formData.city,
+        source: 'Contact Page',
+        status: 'New',
+        isRead: false,
+        isArchived: false,
+        createdAt: new Date().toISOString()
+      });
+      setSubmitted(true);
+    } catch (err) {
+      console.error('Error submitting inquiry:', err);
+      setError('Failed to submit inquiry. Please try again or contact us directly by phone.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactSchema = {
@@ -331,13 +360,18 @@ export function ContactPage() {
                 </div>
 
                 <div className="pt-2">
+                  {error && (
+                    <p className="text-sm text-red-600 bg-red-50 p-3 mb-4 border border-red-200">
+                      {error}
+                    </p>
+                  )}
                   <button
                     type="submit"
-                    disabled={!consentRequired}
+                    disabled={!consentRequired || isSubmitting}
                     className="w-full bg-stone-950 hover:bg-stone-800 disabled:opacity-50 text-[#FBFBF9] py-3.5 text-xs tracking-wider uppercase font-semibold transition-colors flex items-center justify-center gap-2 cursor-pointer"
                   >
-                    <span>Submit Inquiry for Review</span>
-                    <ArrowUpRight className="w-4 h-4" />
+                    <span>{isSubmitting ? 'Submitting...' : 'Submit Inquiry for Review'}</span>
+                    {!isSubmitting && <ArrowUpRight className="w-4 h-4" />}
                   </button>
                 </div>
 

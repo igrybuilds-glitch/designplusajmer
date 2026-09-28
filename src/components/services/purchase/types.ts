@@ -49,6 +49,7 @@ export interface ServicePurchaseFlowProps {
   isOpen?: boolean;
   onClose?: () => void;
   initialServiceId?: string;
+  customService?: PurchasableService;
   variant?: 'modal' | 'embedded';
   onOpenConsultation?: () => void;
   onComplete?: (orderRef: string) => void;

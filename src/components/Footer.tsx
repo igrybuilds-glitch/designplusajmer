@@ -103,19 +103,19 @@ export function Footer() {
           {/* Column 4: Journal & Insights */}
           <div className="space-y-3">
             <h4 className="text-xs font-mono uppercase tracking-[0.2em] text-white font-bold border-b border-white/15 pb-2">
-              Journal &amp; Guides
+              Blog &amp; Guides
             </h4>
             <ul className="space-y-2 text-xs font-sans text-[#F4F0E8]/80">
               {BLOG_CATEGORIES.map((cat) => (
                 <li key={cat.slug}>
-                  <Link to={`/blog/${cat.slug}`} className="hover:text-[#B86B38] transition-colors block">
+                  <Link to={`/blog?category=${cat.slug}`} className="hover:text-[#B86B38] transition-colors block">
                     {cat.name}
                   </Link>
                 </li>
               ))}
               <li className="pt-1">
                 <Link to="/blog" className="text-[#B86B38] hover:text-[#c47745] font-semibold font-mono text-[11px]">
-                  Read All Monographs &rarr;
+                  Read All Articles &rarr;
                 </Link>
               </li>
             </ul>

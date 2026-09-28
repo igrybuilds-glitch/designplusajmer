@@ -6,41 +6,45 @@ interface Step1ServiceSelectProps {
   selectedServiceId: string;
   onSelectService: (serviceId: string) => void;
   currentService: PurchasableService;
+  hideSelector?: boolean;
 }
 
 export function Step1ServiceSelect({
   selectedServiceId,
   onSelectService,
-  currentService
+  currentService,
+  hideSelector = false
 }: Step1ServiceSelectProps) {
   return (
     <div className="space-y-6 animate-in fade-in duration-200">
-      {/* Service Selector Dropdown */}
-      <div className="space-y-1.5">
-        <label className="block text-xs font-mono uppercase tracking-wider text-stone-600 font-semibold">
-          Choose Standardized Design Package
-        </label>
-        <select
-          value={selectedServiceId}
-          onChange={(e) => onSelectService(e.target.value)}
-          className="w-full p-3 bg-white border border-stone-300 text-stone-900 text-sm font-medium focus:border-stone-800 focus:outline-hidden"
-        >
-          <optgroup label="Architectural &amp; Residential Packages">
-            {PURCHASABLE_SERVICES.filter(s => s.category === 'Architectural / Residential').map(s => (
-              <option key={s.id} value={s.id}>
-                {s.name} — {s.pricingLabel}
-              </option>
-            ))}
-          </optgroup>
-          <optgroup label="Small Technical &amp; Engineering Packages">
-            {PURCHASABLE_SERVICES.filter(s => s.category === 'Small Technical Services').map(s => (
-              <option key={s.id} value={s.id}>
-                {s.name} — {s.pricingLabel}
-              </option>
-            ))}
-          </optgroup>
-        </select>
-      </div>
+      {!hideSelector && (
+        /* Service Selector Dropdown */
+        <div className="space-y-1.5">
+          <label className="block text-xs font-mono uppercase tracking-wider text-stone-600 font-semibold">
+            Choose Standardized Design Package
+          </label>
+          <select
+            value={selectedServiceId}
+            onChange={(e) => onSelectService(e.target.value)}
+            className="w-full p-3 bg-white border border-stone-300 text-stone-900 text-sm font-medium focus:border-stone-800 focus:outline-hidden"
+          >
+            <optgroup label="Architectural &amp; Residential Packages">
+              {PURCHASABLE_SERVICES.filter(s => s.category === 'Architectural / Residential').map(s => (
+                <option key={s.id} value={s.id}>
+                  {s.name} — {s.pricingLabel}
+                </option>
+              ))}
+            </optgroup>
+            <optgroup label="Small Technical &amp; Engineering Packages">
+              {PURCHASABLE_SERVICES.filter(s => s.category === 'Small Technical Services').map(s => (
+                <option key={s.id} value={s.id}>
+                  {s.name} — {s.pricingLabel}
+                </option>
+              ))}
+            </optgroup>
+          </select>
+        </div>
+      )}
 
       {/* Service Overview Card */}
       <div className="bg-white border border-stone-200 p-6 space-y-6">

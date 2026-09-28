@@ -135,7 +135,7 @@ export function ServicesPage({ onOpenConsultation }: ServicesPageProps) {
           <div className="flex items-center gap-2 overflow-x-auto scrollbar-none pb-1 sm:pb-0">
             <button
               onClick={() => setFilterMode('all')}
-              className={`px-3 py-1.5 transition-all uppercase tracking-wider whitespace-nowrap shrink-0 ${
+              className={`shrink-0 px-3 py-1.5 transition-all uppercase tracking-wider whitespace-nowrap ${
                 filterMode === 'all'
                   ? 'bg-stone-900 text-white font-semibold'
                   : 'text-stone-600 hover:text-stone-950 hover:bg-stone-100'
@@ -145,7 +145,7 @@ export function ServicesPage({ onOpenConsultation }: ServicesPageProps) {
             </button>
             <button
               onClick={() => setFilterMode('buy-now')}
-              className={`px-3 py-1.5 transition-all uppercase tracking-wider whitespace-nowrap shrink-0 flex items-center gap-1.5 ${
+              className={`shrink-0 px-3 py-1.5 transition-all uppercase tracking-wider whitespace-nowrap flex items-center gap-1.5 ${
                 filterMode === 'buy-now'
                   ? 'bg-[#C86635] text-white font-semibold'
                   : 'text-stone-600 hover:text-stone-950 hover:bg-stone-100'
@@ -155,7 +155,7 @@ export function ServicesPage({ onOpenConsultation }: ServicesPageProps) {
             </button>
             <button
               onClick={() => setFilterMode('engineering')}
-              className={`px-3 py-1.5 transition-all uppercase tracking-wider whitespace-nowrap shrink-0 ${
+              className={`shrink-0 px-3 py-1.5 transition-all uppercase tracking-wider whitespace-nowrap ${
                 filterMode === 'engineering'
                   ? 'bg-stone-900 text-white font-semibold'
                   : 'text-stone-600 hover:text-stone-950 hover:bg-stone-100'
