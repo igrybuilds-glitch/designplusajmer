@@ -22,6 +22,15 @@ function sanitizeFilename(raw: string): string {
 export const uploadRoutes = new Hono<{ Bindings: Env }>();
 
 uploadRoutes.post("/uploads", async (c) => {
+  // Graceful degradation: the R2 bucket isn't provisioned yet (account has
+  // no payment method for the R2 subscription). Fail cleanly, not with a crash.
+  if (!c.env.STORAGE) {
+    return c.json(
+      { error: "File uploads are not enabled yet. Please try again later." },
+      503
+    );
+  }
+
   let body: Record<string, string | File>;
   try {
     body = await c.req.parseBody();
