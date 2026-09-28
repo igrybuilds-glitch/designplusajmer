@@ -18,6 +18,7 @@ export function ServicePurchaseFlow({
   isOpen = true,
   onClose,
   initialServiceId = '2d-floor-plan',
+  customService,
   variant = 'modal',
   onComplete
 }: ServicePurchaseFlowProps) {
@@ -46,7 +47,7 @@ export function ServicePurchaseFlow({
     prevStep,
     submitOrder,
     resetFlow
-  } = useServicePurchaseFlow({ initialServiceId, onComplete });
+  } = useServicePurchaseFlow({ initialServiceId, customService, onComplete });
 
   if (variant === 'modal' && !isOpen) {
     return null;
@@ -68,6 +69,7 @@ export function ServicePurchaseFlow({
             selectedServiceId={selectedServiceId}
             onSelectService={setSelectedServiceId}
             currentService={currentService}
+            hideSelector={!!customService}
           />
         );
       case 2:
