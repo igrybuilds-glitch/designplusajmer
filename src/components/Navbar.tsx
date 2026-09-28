@@ -155,7 +155,7 @@ export function Navbar({
 
       {/* Mobile Drawer Menu - Premium Architectural Style */}
       {isOpen && (
-        <div className="lg:hidden bg-[#F4F0E8] border-b border-stone-300 px-6 py-8 space-y-6 max-h-[85vh] overflow-y-auto">
+        <div data-lenis-prevent className="lg:hidden bg-[#F4F0E8] border-b border-stone-300 px-6 py-8 space-y-6 max-h-[85vh] overflow-y-auto">
           <nav className="space-y-4 text-sm tracking-[0.25em] uppercase font-medium">
             {navLinks.map((item) => {
               const active = isActive(item.path);
@@ -163,6 +163,7 @@ export function Navbar({
                 <Link
                   key={item.path}
                   to={item.path}
+                  onClick={() => setIsOpen(false)}
                   className={`block py-2.5 transition-colors border-b border-stone-200/60 ${
                     active ? 'text-[#B86B38] font-semibold' : 'text-[#1E1D1A] hover:text-[#B86B38]'
                   }`}
