@@ -194,11 +194,59 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Insights & Journal -->
+  <!-- Blog Hub -->
   <url>
     <loc>https://designplusajmer.in/blog</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://designplusajmer.in/blog/top-10-architects-in-ajmer</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://designplusajmer.in/blog/cost-of-building-a-house-in-ajmer-2026</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://designplusajmer.in/blog/how-to-plan-your-dream-home-in-ajmer</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://designplusajmer.in/blog/guide-to-hiring-architect-in-ajmer</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://designplusajmer.in/blog/architectural-trends-ajmer-2026</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://designplusajmer.in/blog/sustainable-eco-friendly-architecture-ajmer</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://designplusajmer.in/blog/vaastu-compliant-home-plans-ajmer</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://designplusajmer.in/blog/interior-design-cost-per-sqft-ajmer</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
