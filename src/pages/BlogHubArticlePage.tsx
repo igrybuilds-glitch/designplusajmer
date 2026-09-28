@@ -77,7 +77,16 @@ export default function BlogHubArticlePage() {
               <span className="text-sm text-stone-500 dark:text-stone-400">{formatDate(post.date)}</span>
             </div>
             <h1 className="text-3xl md:text-5xl font-black tracking-tight leading-tight mb-6">{post.title}</h1>
-            <p className="text-lg text-stone-600 dark:text-stone-400 leading-relaxed mb-10">{post.description}</p>
+            <p className="text-lg text-stone-600 dark:text-stone-400 leading-relaxed mb-8">{post.description}</p>
+            {post.image && (
+              <div className="mb-10 rounded-2xl overflow-hidden border border-stone-200 dark:border-stone-800 shadow-md aspect-16/10">
+                <img
+                  src={post.image}
+                  alt={post.title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            )}
           </Reveal>
 
           <div className="border-t border-stone-200 dark:border-stone-800 pt-2">

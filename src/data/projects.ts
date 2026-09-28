@@ -87,7 +87,7 @@ export const PROJECTS: Project[] = [
     brief: 'Commissioned by a private family to establish an enduring multi-generational sanctuary overlooking the expansive waters of Ana Sagar Lake. The brief demanded uninhibited panoramic views toward the lake and northern Aravalli ridge, while strictly safeguarding interior living quarters against intense desert solar heat gain.',
     designApproach: 'Our studio adopted a hybrid vernacular-contemporary strategy. We positioned a shaded two-story central light-well and water courtyard at the structural heart of the villa, generating a stack effect that evacuates warm air. The western facade is wrapped in deep 4.5-meter post-tensioned RCC cantilevered overhangs and vertical Dholpur stone louvers that truncate low-angle solar rays while preserving framed views of the lake.',
     images: [
-      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1600&q=85',
+      '/images/projects/ana-sagar-residence.jpg',
       'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1200&q=80'
@@ -156,9 +156,9 @@ export const PROJECTS: Project[] = [
       { name: 'Thermally Broken Low-E Double Glazing', application: 'Western lakefront fenestrations (U-value 1.4 W/m²K)' },
       { name: 'Exposed Board-Form Concrete', application: 'Architectural feature walls & structural cantilever soffits' }
     ],
-    heroImage: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1600&q=85',
+    heroImage: '/images/projects/ana-sagar-residence.jpg',
     heroImageDetails: {
-      url: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1600&q=85',
+      url: '/images/projects/ana-sagar-residence.jpg',
       alt: 'Ana Sagar Lakefront Residence exterior facade at twilight in Ajmer',
       caption: 'Sunset perspective showcasing deep cantilevered shade canopies and Dholpur sandstone brise-soleil.'
     },
@@ -243,7 +243,7 @@ export const PROJECTS: Project[] = [
     brief: 'A high-density urban commercial development requiring maximum ground-level retail frontage on a major arterial junction in Panchsheel Nagar, topped by flexible, column-free corporate floor plates capable of multiple tenant subdivisions.',
     designApproach: 'The structure utilizes a reinforced concrete perimeter moment frame combined with high-grade structural steel internal composite sections. This eliminated interior load-bearing columns across a 12-meter bay width, unlocking unobstructed shopfronts and retail layouts.',
     images: [
-      '/images/projects/dp-com-002-hero.webp',
+      '/images/projects/panchsheel-commercial-pavilion.jpg',
       'https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&q=80'
     ],
@@ -309,9 +309,9 @@ export const PROJECTS: Project[] = [
       { name: 'Structural Glazing (Saint-Gobain Planitherm)', application: 'Curtain wall systems on street-facing elevations' },
       { name: 'Industrial Flamed Granite', application: 'High-traffic ground concourse and pedestrian colonnade' }
     ],
-    heroImage: '/images/projects/dp-com-002-hero.webp',
+    heroImage: '/images/projects/panchsheel-commercial-pavilion.jpg',
     heroImageDetails: {
-      url: '/images/projects/dp-com-002-hero.webp',
+      url: '/images/projects/panchsheel-commercial-pavilion.jpg',
       alt: 'Panchsheel Commercial Pavilion modern commercial exterior facade in Ajmer',
       caption: 'Main avenue perspective showcasing modern commercial pavilion facade with articulated structural bays.'
     },
@@ -381,7 +381,7 @@ export const PROJECTS: Project[] = [
     brief: 'To craft a tranquil family retreat in the holy town of Pushkar that honors regional architectural heritage, preserves courtyard lifestyle traditions, and integrates natural passive cooling.',
     designApproach: 'Organized around a tranquil central stone courtyard with a carved marble water jali. The layout creates a layered sequence of private spaces shielded from desert dust and ambient heat.',
     images: [
-      'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=85',
+      '/images/projects/pushkar-courtyard-haven.jpg',
       'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80'
     ],
@@ -446,9 +446,9 @@ export const PROJECTS: Project[] = [
       { name: 'Traditional Lime Plaster (Chuna Ghotai)', application: 'Interior living walls for breathable, organic texture' },
       { name: 'Reclaimed Teak Wood', application: 'Handcrafted solid doors, window frames, and ceiling rafters' }
     ],
-    heroImage: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=85',
+    heroImage: '/images/projects/pushkar-courtyard-haven.jpg',
     heroImageDetails: {
-      url: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=85',
+      url: '/images/projects/pushkar-courtyard-haven.jpg',
       alt: 'Pushkar Courtyard Haven courtyard perspective with sandstone columns',
       caption: 'Central open chowk showcasing hand-chiseled Jodhpur stone columns and water feature.'
     },
@@ -511,7 +511,7 @@ export const PROJECTS: Project[] = [
     brief: 'A complete interior architectural overhaul for a creative entrepreneur requiring a seamless transition between a private executive studio space and refined residential living quarters in Vaishali Nagar.',
     designApproach: 'Employed a restrained palette of grey Armani marble, fluted natural walnut millwork, and warm micro-cement plaster. Concealed cove lighting grids eliminate glare while creating sculptural depth.',
     images: [
-      'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=85',
+      '/images/projects/vaishali-studio-interiors.jpg',
       'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80'
     ],
@@ -574,9 +574,9 @@ export const PROJECTS: Project[] = [
       { name: 'American Walnut Fluted Panels', application: 'Full-height feature wall cladding and acoustic baffles' },
       { name: 'Brushed Brass Metal Trim', application: 'Cabinetry pulls, threshold inlays, and custom luminaire details' }
     ],
-    heroImage: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=85',
+    heroImage: '/images/projects/vaishali-studio-interiors.jpg',
     heroImageDetails: {
-      url: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=85',
+      url: '/images/projects/vaishali-studio-interiors.jpg',
       alt: 'Vaishali Nagar Studio Interior living space with marble and wood millwork',
       caption: 'Living salon showcasing custom fluted walnut panelling and monolithic stone coffee table.'
     },
@@ -639,7 +639,7 @@ export const PROJECTS: Project[] = [
     brief: 'A leading marble processing consortium required a high-clearance manufacturing and warehousing shed in Kishangarh capable of supporting dual 25-ton EOT cranes with heavy vibration dampening.',
     designApproach: 'Er. Sudhir Soni directed the finite element analysis and structural modeling, utilizing tapered built-up steel portal frames with high-strength friction-grip bolted connections.',
     images: [
-      'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1600&q=85',
+      '/images/projects/industrial-spans-kishangarh.jpg',
       'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1541888946425-d0fbb1861564?auto=format&fit=crop&w=1200&q=80'
     ],
@@ -703,9 +703,9 @@ export const PROJECTS: Project[] = [
       { name: 'M35 Grade Concrete', application: 'Bored piles, pile caps, and heavy equipment isolated foundation pads' },
       { name: 'Insulated Metal Sandwich Panels', application: 'Roofing and high-durability wall claddings' }
     ],
-    heroImage: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1600&q=85',
+    heroImage: '/images/projects/industrial-spans-kishangarh.jpg',
     heroImageDetails: {
-      url: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1600&q=85',
+      url: '/images/projects/industrial-spans-kishangarh.jpg',
       alt: 'Industrial heavy structural steel warehouse facility in Kishangarh',
       caption: 'Internal perspective illustrating 32-meter clear span steel portals and crane runway beam.'
     },
@@ -768,7 +768,7 @@ export const PROJECTS: Project[] = [
     brief: 'An academic trust commissioned Design Plus to create a modern 4-story educational block featuring modular seminar halls, state-of-the-art computer laboratories, and shaded outdoor gathering terraces.',
     designApproach: 'Organized around wide single-loaded circulation verandahs facing north to avoid harsh solar heat, while maximizing natural breeze flow through high-ceilinged classrooms.',
     images: [
-      'https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1600&q=85',
+      '/images/projects/mayo-link-institutional-academy.jpg',
       'https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80'
     ],
@@ -833,9 +833,9 @@ export const PROJECTS: Project[] = [
       { name: 'Kota Stone Slabs', application: 'High-traffic classroom corridors, stairs, and lecture halls' },
       { name: 'Powder-Coated Aluminum Louvers', application: 'External sun-shading brise-soleil systems' }
     ],
-    heroImage: 'https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1600&q=85',
+    heroImage: '/images/projects/mayo-link-institutional-academy.jpg',
     heroImageDetails: {
-      url: 'https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1600&q=85',
+      url: '/images/projects/mayo-link-institutional-academy.jpg',
       alt: 'Academic block exterior with brick facade on Mayo Link Road Ajmer',
       caption: 'Main entrance portico and north-facing classroom galleries.'
     },
@@ -900,7 +900,7 @@ export const PROJECTS: Project[] = [
     brief: 'An exploratory architectural inquiry addressing the challenges of building into steeply sloping rocky terrain in Ajmer’s Kotra Valley, maximizing courtyard convection currents.',
     designApproach: 'The project proposes stepped terraces carved into the natural granite slope, wrapping around a shaded multi-level water courtyard. Computational fluid dynamic simulations guided the placement of upper wind scoops.',
     images: [
-      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=85',
+      '/images/projects/modern-courtyard-residence.jpg',
       'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80'
     ],
@@ -964,9 +964,9 @@ export const PROJECTS: Project[] = [
       { name: 'Engineered Glulam Timber', application: 'Deep shaded pergola beams and roof cantilevers' },
       { name: 'Low-Iron High-Solar-Reflectance Glass', application: 'Internal courtyard clerestory glazing' }
     ],
-    heroImage: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=85',
+    heroImage: '/images/projects/modern-courtyard-residence.jpg',
     heroImageDetails: {
-      url: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=85',
+      url: '/images/projects/modern-courtyard-residence.jpg',
       alt: 'Modern Courtyard Residence design study 3D render',
       caption: 'Architectural research model exploring step-tiered courtyard cooling.'
     },
@@ -1038,7 +1038,7 @@ export const PROJECTS: Project[] = [
     brief: 'A theoretical study examining how kinetic sandstone screens can modulate intense summer sunlight while maintaining panoramic desert mountain views.',
     designApproach: 'Combines traditional hand-carved sandstone patterns with motorized pivot joints, creating a responsive facade that shifts with the solar path.',
     images: [
-      'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1600&q=85',
+      '/images/projects/contemporary-rajasthan-villa.jpg',
       'https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=80'
     ],
@@ -1100,9 +1100,9 @@ export const PROJECTS: Project[] = [
       { name: 'Triple-Glazed Low-E Glass', application: 'Internal thermal envelope' },
       { name: 'Polished Kota Stone', application: 'High-thermal-inertia interior flooring' }
     ],
-    heroImage: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1600&q=85',
+    heroImage: '/images/projects/contemporary-rajasthan-villa.jpg',
     heroImageDetails: {
-      url: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1600&q=85',
+      url: '/images/projects/contemporary-rajasthan-villa.jpg',
       alt: 'Contemporary Rajasthan Villa concept render with sandstone screen',
       caption: 'Architectural rendering showcasing kinetic sandstone jali facade in afternoon sunlight.'
     },
@@ -1174,7 +1174,7 @@ export const PROJECTS: Project[] = [
     brief: 'Developing an optimal spatial template for tight urban infill plots where lateral setbacks are minimal and side windows cannot provide daylight.',
     designApproach: 'Introduced a continuous central vertical atrium and skylight core that brings sunlight into the core of every room while acting as a natural thermal chimney.',
     images: [
-      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=85',
+      '/images/projects/urban-duplex-residence.jpg',
       'https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80'
     ],
@@ -1236,9 +1236,9 @@ export const PROJECTS: Project[] = [
       { name: 'Perforated Aluminum Screens', application: 'Front street elevation privacy screen' },
       { name: 'Solid Teak Wood Slats', application: 'Atrium vertical screening and stair treads' }
     ],
-    heroImage: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=85',
+    heroImage: '/images/projects/urban-duplex-residence.jpg',
     heroImageDetails: {
-      url: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=85',
+      url: '/images/projects/urban-duplex-residence.jpg',
       alt: 'Urban Duplex Residence concept render interior light well',
       caption: 'Triple-height interior light-well bringing natural illumination into narrow urban plot.'
     },
@@ -1310,7 +1310,7 @@ export const PROJECTS: Project[] = [
     brief: 'Reimagining the sterile urban commercial office block as a living, breathable ecosystem that improves employee wellness and minimizes cooling power.',
     designApproach: 'Terraced balconies feature built-in micro-irrigation planter troughs that shade the building facade, while internal open light wells provide natural air change.',
     images: [
-      '/images/projects/dp-cpt-010-biophilic.webp',
+      '/images/projects/boutique-commercial-office.jpg',
       '/images/projects/dp-cpt-010-hero.webp',
       'https://images.unsplash.com/photo-1517502884422-41eaead166d4?auto=format&fit=crop&w=1200&q=80'
     ],
@@ -1373,9 +1373,9 @@ export const PROJECTS: Project[] = [
       { name: 'Exposed Aggregate Concrete', application: 'Durable external planters and spandrel panels' },
       { name: 'Acoustic Double Glazing', application: 'Floor-to-ceiling street-facing facade' }
     ],
-    heroImage: '/images/projects/dp-cpt-010-biophilic.webp',
+    heroImage: '/images/projects/boutique-commercial-office.jpg',
     heroImageDetails: {
-      url: '/images/projects/dp-cpt-010-biophilic.webp',
+      url: '/images/projects/boutique-commercial-office.jpg',
       alt: 'Boutique Commercial Office biophilic building facade wrapped in vertical cascading planters and greenery',
       caption: 'Street perspective showing contemporary boutique commercial building facade wrapped in lush cascading vertical gardens and green terraces.'
     },
@@ -1447,7 +1447,7 @@ export const PROJECTS: Project[] = [
     brief: 'Reimagining traditional cluttered marble showrooms into a serene, contemplative architectural gallery where natural stone slabs are treated as art.',
     designApproach: 'Conceived as an austere, cave-like stone sanctuary featuring floating cantilevered marble slabs, micro-cement seamless floors, and high-CRI 98+ focused beam lighting.',
     images: [
-      'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=85',
+      '/images/projects/contemporary-retail-interior.jpg',
       'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80'
     ],
@@ -1509,9 +1509,9 @@ export const PROJECTS: Project[] = [
       { name: 'Seamless Neutral Micro-Cement', application: 'Monolithic floor and perimeter gallery walls' },
       { name: 'Dark Fluted Walnut Timber', application: 'VIP consultation lounge and bespoke private sales booths' }
     ],
-    heroImage: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=85',
+    heroImage: '/images/projects/contemporary-retail-interior.jpg',
     heroImageDetails: {
-      url: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=85',
+      url: '/images/projects/contemporary-retail-interior.jpg',
       alt: 'Contemporary Retail Interior conceptual rendering',
       caption: 'Contemplative stone gallery interior with floating marble monoliths and warm micro-cement surfaces.'
     },

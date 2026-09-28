@@ -16,17 +16,28 @@ function formatDate(dateStr: string): string {
 
 function CardVisual({ post, large = false }: { post: BlogHubPost; large?: boolean }) {
   return (
-    <div className={`bh-card-visual relative overflow-hidden ${large ? 'h-56 md:h-72' : 'h-40'}`}>
-      <div className="absolute inset-0 bg-gradient-to-br from-amber-600/30 via-stone-900 to-stone-950" />
-      <div
-        className="absolute inset-0 opacity-30"
-        style={{ backgroundImage: 'radial-gradient(circle at 28% 18%, rgba(245,158,11,0.55), transparent 55%), radial-gradient(circle at 78% 85%, rgba(217,119,6,0.35), transparent 50%)' }}
-      />
-      <div className="absolute inset-0 opacity-[0.12]" style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,0.6) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.6) 1px, transparent 1px)', backgroundSize: '28px 28px' }} />
-      <span className={`absolute top-4 left-5 text-[11px] font-bold uppercase tracking-[0.2em] text-amber-300`}>{post.category}</span>
-      <span className={`absolute -bottom-3 right-3 font-black text-white/10 select-none leading-none ${large ? 'text-[9rem]' : 'text-7xl'}`}>{post.category.charAt(0)}</span>
+    <div className={`bh-card-visual relative overflow-hidden ${large ? 'h-56 md:h-72' : 'h-48'}`}>
+      {post.image ? (
+        <img
+          src={post.image}
+          alt={post.title}
+          loading="lazy"
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+      ) : (
+        <>
+          <div className="absolute inset-0 bg-gradient-to-br from-amber-600/30 via-stone-900 to-stone-950" />
+          <div
+            className="absolute inset-0 opacity-30"
+            style={{ backgroundImage: 'radial-gradient(circle at 28% 18%, rgba(245,158,11,0.55), transparent 55%), radial-gradient(circle at 78% 85%, rgba(217,119,6,0.35), transparent 50%)' }}
+          />
+          <div className="absolute inset-0 opacity-[0.12]" style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,0.6) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.6) 1px, transparent 1px)', backgroundSize: '28px 28px' }} />
+          <span className={`absolute -bottom-3 right-3 font-black text-white/10 select-none leading-none ${large ? 'text-[9rem]' : 'text-7xl'}`}>{post.category.charAt(0)}</span>
+        </>
+      )}
+      <span className="absolute top-4 left-5 text-[11px] font-bold uppercase tracking-[0.2em] text-amber-300 bg-stone-950/70 backdrop-blur-xs px-2.5 py-1 rounded-xs z-10">{post.category}</span>
       {post.featured && (
-        <span className="absolute top-4 right-5 text-[11px] font-bold uppercase tracking-[0.18em] bg-amber-500 text-stone-950 px-3 py-1 rounded-full">Featured</span>
+        <span className="absolute top-4 right-5 text-[11px] font-bold uppercase tracking-[0.18em] bg-amber-500 text-stone-950 px-3 py-1 rounded-full z-10 shadow-md">Featured</span>
       )}
     </div>
   );

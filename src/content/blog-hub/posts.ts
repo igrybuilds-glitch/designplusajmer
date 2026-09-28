@@ -5,6 +5,7 @@ export interface BlogHubPost {
   date: string;
   category: string;
   featured?: boolean;
+  image?: string;
   content: string;
 }
 
@@ -16,6 +17,7 @@ export const BLOG_HUB_POSTS: BlogHubPost[] = [
     date: '2026-09-28',
     category: 'Rankings',
     featured: true,
+    image: '/images/blog/top-10-architects-in-ajmer.jpg',
     content: `Finding the right architect in Ajmer isn't just about who has the glossiest brochure. It's about who shows up on site, who understands Rajasthan's climate and soil, and who delivers drawings your contractor can actually build from. We ranked Ajmer's best-known architecture studios on real signals \u2014 client ratings, years in business, and range of services \u2014 so you don't have to guess.
 
 ## 1. Design Plus \u2014 Architects & Structural Consultants, Ajmer
@@ -121,6 +123,7 @@ Building in or around Ajmer? Book a free site consultation with Design Plus \u20
     description: 'Planning to build a house in Ajmer? Real 2026 construction costs per sq ft, hidden expenses most people miss, and budgeting tips from Design Plus.',
     date: '2026-09-28',
     category: 'Guides',
+    image: '/images/blog/cost-of-building-a-house-in-ajmer-2026.jpg',
     content: `Building your own house in Ajmer is a dream for many families \u2014 but the first question is always the same: **kitna kharcha aayega?** Here's an honest breakdown.
 
 ## Construction cost per sq ft in Ajmer (2026 indicative ranges)
@@ -165,6 +168,7 @@ Use the [construction cost estimator on our homepage](/) for a quick indicative 
     description: 'From plot to possession \u2014 the complete step-by-step process of planning your dream home in Ajmer, Rajasthan.',
     date: '2026-09-28',
     category: 'Guides',
+    image: '/images/blog/how-to-plan-your-dream-home-in-ajmer.jpg',
     content: `## Step 1: Define your real requirements
 
 Before meeting any architect, write down: number of bedrooms, joint or nuclear family, work-from-home needs, parking for how many vehicles, future expansion (another floor later?), and your honest budget range. Vague briefs get vague designs.
@@ -207,6 +211,7 @@ Planning a home in Ajmer? [Book a free site consultation](/contact) \u2014 we'll
     description: 'Hiring an architect in Ajmer? What to check, what to ask, fee structures, red flags, and how to compare firms fairly.',
     date: '2026-09-28',
     category: 'Guides',
+    image: '/images/blog/guide-to-hiring-architect-in-ajmer.jpg',
     content: `## Architect vs contractor vs mistri \u2014 what's the difference?
 
 - **Mistri/contractor** builds what you tell them. No design liability.
@@ -258,6 +263,7 @@ Want straight answers to all five? [Book a free consultation](/contact) with Des
     description: 'The real architectural trends shaping Ajmer homes in 2026 \u2014 from climate-responsive design to modern-traditional fusion.',
     date: '2026-09-28',
     category: 'Trends',
+    image: '/images/blog/architectural-trends-ajmer-2026.jpg',
     content: `## 1. Climate-responsive design is the real luxury
 
 Ajmer's summers are brutal. The smartest new homes use deep overhangs, shaded courtyards, cavity walls, and strategic west-side buffering (staircases, toilets on the harsh-sun side). This isn't aesthetic \u2014 it cuts cooling bills for decades.
@@ -300,6 +306,7 @@ Building in 2026? [Explore our services](/services) or [book a site consultation
     description: "Eco-friendly architecture in Ajmer isn't a luxury \u2014 it's common sense. Solar, rainwater harvesting, natural cooling and green materials explained.",
     date: '2026-09-28',
     category: 'Guides',
+    image: '/images/blog/sustainable-eco-friendly-architecture-ajmer.jpg',
     content: `## Why sustainability makes financial sense in Rajasthan
 
 This isn't about ideology \u2014 it's arithmetic. Ajmer gets 300+ sunny days a year and scorching summers. A home designed for the climate uses less electricity every single month for its entire life.
@@ -332,6 +339,7 @@ Want an eco-friendly home designed for your plot? [Book a free consultation](/co
     description: 'Vaastu Shastra for modern Ajmer homes \u2014 key principles, common myths, and how to get Vaastu compliance without compromising good design.',
     date: '2026-09-28',
     category: 'Guides',
+    image: '/images/blog/vaastu-compliant-home-plans-ajmer.jpg',
     content: `In Rajasthan, most families want Vaastu compliance in their home \u2014 and they're right to ask. The trick is integrating it with genuinely good architecture instead of treating it as a constraint that ruins the plan.
 
 ## Core Vaastu principles for home orientation
@@ -366,6 +374,7 @@ Want a Vaastu-compliant plan for your plot? [Book a free site consultation](/con
     description: 'What does interior design cost in Ajmer in 2026? Real per-sq-ft rates for modular kitchens, wardrobes, full-home interiors and what\u2019s included.',
     date: '2026-09-28',
     category: 'Guides',
+    image: '/images/blog/interior-design-cost-per-sqft-ajmer.jpg',
     content: `## Indicative interior rates in Ajmer (2026)
 
 | Scope | Indicative range per sq ft* |
