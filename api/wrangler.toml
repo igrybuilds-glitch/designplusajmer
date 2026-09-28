@@ -11,7 +11,7 @@ compatibility_flags = ["nodejs_compat"]
 [[d1_databases]]
 binding = "DB"
 database_name = "designplus-db"
-database_id = "FILL_AFTER_DASHBOARD_CREATION"
+database_id = "470d5ed9-38ef-4ded-b278-231607d2ffbe"
 
 [[r2_buckets]]
 binding = "STORAGE"
