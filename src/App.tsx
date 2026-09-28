@@ -23,12 +23,8 @@ const ProjectDetailPage = lazy(() => import('./pages/ProjectDetailPage').then(m 
 const ProjectDispatcher = lazy(() => import('./pages/ProjectDispatcher').then(m => ({ default: m.ProjectDispatcher })));
 const LocationsPage = lazy(() => import('./pages/LocationsPage').then(m => ({ default: m.LocationsPage })));
 const LocationDetailPage = lazy(() => import('./pages/LocationDetailPage').then(m => ({ default: m.LocationDetailPage })));
-const BlogPage = lazy(() => import('./pages/BlogPage').then(m => ({ default: m.BlogPage })));
-const BlogCategoryPage = lazy(() => import('./pages/BlogCategoryPage').then(m => ({ default: m.BlogCategoryPage })));
-const BlogDetailPage = lazy(() => import('./pages/BlogDetailPage').then(m => ({ default: m.BlogDetailPage })));
-const BlogTagPage = lazy(() => import('./pages/BlogTagPage').then(m => ({ default: m.BlogTagPage })));
-const BlogAuthorPage = lazy(() => import('./pages/BlogAuthorPage').then(m => ({ default: m.BlogAuthorPage })));
-const BlogDispatcher = lazy(() => import('./pages/BlogDispatcher').then(m => ({ default: m.BlogDispatcher })));
+const BlogHubPage = lazy(() => import('./pages/BlogHubPage'));
+const BlogHubArticlePage = lazy(() => import('./pages/BlogHubArticlePage'));
 const ContactPage = lazy(() => import('./pages/ContactPage').then(m => ({ default: m.ContactPage })));
 const ProjectManagementPage = lazy(() => import('./pages/ProjectManagementPage').then(m => ({ default: m.ProjectManagementPage })));
 const ArchitectFeesAjmerPage = lazy(() => import('./pages/ArchitectFeesAjmerPage').then(m => ({ default: m.ArchitectFeesAjmerPage })));
@@ -169,34 +165,9 @@ function AppContent() {
           <Route path="/locations" element={<LocationsPage />} />
           <Route path="/locations/:slug" element={<LocationDetailPage onOpenConsultation={openConsultation} />} />
 
-          {/* 06 Journal / Blog Content Engine */}
-          <Route path="/blog" element={<BlogPage />} />
-          <Route path="/insights" element={<BlogPage />} />
-          
-          {/* Explicit Blog Category, Tag, Author Archives */}
-          <Route path="/blog/category/:category" element={<BlogCategoryPage onOpenConsultation={openConsultation} />} />
-          <Route path="/blog/tag/:tag" element={<BlogTagPage onOpenConsultation={openConsultation} />} />
-          <Route path="/blog/author/:author" element={<BlogAuthorPage onOpenConsultation={openConsultation} />} />
-
-          {/* Legacy & Short Category Routes */}
-          <Route path="/blog/architecture" element={<BlogCategoryPage onOpenConsultation={openConsultation} />} />
-          <Route path="/blog/structural-engineering" element={<BlogCategoryPage onOpenConsultation={openConsultation} />} />
-          <Route path="/blog/interior-design" element={<BlogCategoryPage onOpenConsultation={openConsultation} />} />
-          <Route path="/blog/residential-design" element={<BlogCategoryPage onOpenConsultation={openConsultation} />} />
-          <Route path="/blog/commercial-design" element={<BlogCategoryPage onOpenConsultation={openConsultation} />} />
-          <Route path="/blog/house-planning" element={<BlogCategoryPage onOpenConsultation={openConsultation} />} />
-          <Route path="/blog/building-planning" element={<BlogCategoryPage onOpenConsultation={openConsultation} />} />
-          <Route path="/blog/infrastructure" element={<BlogCategoryPage onOpenConsultation={openConsultation} />} />
-          <Route path="/blog/township-planning" element={<BlogCategoryPage onOpenConsultation={openConsultation} />} />
-          <Route path="/blog/surveying-geotechnical" element={<BlogCategoryPage onOpenConsultation={openConsultation} />} />
-          <Route path="/blog/decision-guides" element={<BlogCategoryPage onOpenConsultation={openConsultation} />} />
-          <Route path="/blog/project-stories" element={<BlogCategoryPage onOpenConsultation={openConsultation} />} />
-          <Route path="/blog/ajmer-rajasthan" element={<BlogCategoryPage onOpenConsultation={openConsultation} />} />
-          <Route path="/blog/ajmer" element={<BlogCategoryPage onOpenConsultation={openConsultation} />} />
-
-          {/* Hierarchical & Clean Single-Slug Articles */}
-          <Route path="/blog/:category/:slug" element={<BlogDetailPage onOpenConsultation={openConsultation} />} />
-          <Route path="/blog/:param" element={<BlogDispatcher onOpenConsultation={openConsultation} />} />
+          {/* 06 Blog Hub */}
+          <Route path="/blog" element={<BlogHubPage />} />
+          <Route path="/blog/:slug" element={<BlogHubArticlePage />} />
 
           {/* 07 Contact & Inquiries */}
           <Route path="/contact" element={<ContactPage />} />
