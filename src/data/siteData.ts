@@ -14,6 +14,7 @@ export const BUSINESS_INFO = {
     { display: '+91 79764 53090', raw: '7976453090' },
     { display: '+91 94614 65610', raw: '9461465610' }
   ],
+  googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Designplus+Architects+and+Structural+Consultants+Panchsheel+Nagar+Ajmer+Rajasthan',
   socials: {
     justdial: 'https://play.google.com/store/apps/details?id=com.justdial.search&hl=en_IN&gl=US',
     facebook: 'https://www.facebook.com/share/19cizaeGBa/',

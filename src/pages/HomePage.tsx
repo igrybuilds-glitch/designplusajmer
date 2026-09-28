@@ -11,6 +11,7 @@ import { ProcessSection } from '../components/home/ProcessSection';
 import { EngineeringExpertiseShowcase } from '../components/home/EngineeringExpertiseShowcase';
 import { RegionalPresenceSection } from '../components/home/RegionalPresenceSection';
 import { EditorialJournalSection } from '../components/home/EditorialJournalSection';
+import { ClientReviewsSection } from '../components/home/ClientReviewsSection';
 import { FinalConsultationCTA } from '../components/home/FinalConsultationCTA';
 import { prepareFirstPaint, prepareHomepageAssets } from '../utils/homepageAssetPreloader';
 import { HOMEPAGE_PREPARATION_ASSETS } from '../utils/homepageAssetManifest';
@@ -75,16 +76,16 @@ export function HomePage({ onOpenConsultation }: HomePageProps) {
     ],
     /*
      * LIVE RATING VALUES (JustDial / Client Audits):
-     * Sourced from verified studio client metrics (4.9 / 5 based on 48+ certified client reviews).
+     * Sourced from verified studio client metrics (4.8 / 5 based on 43+ certified client reviews).
      * OWNER ACTION: To update live rating from JustDial, replace ratingValue and reviewCount/ratingCount below.
      */
     aggregateRating: {
       '@type': 'AggregateRating',
-      ratingValue: '4.9',
+      ratingValue: '4.8',
       bestRating: '5',
       worstRating: '1',
-      ratingCount: '48',
-      reviewCount: '48'
+      ratingCount: '43',
+      reviewCount: '43'
     },
     review: [
       {
@@ -195,7 +196,10 @@ export function HomePage({ onOpenConsultation }: HomePageProps) {
         {/* 10. INSIGHTS / JOURNAL: RESEARCH MONOGRAPHS & ENGINEERING STATUTES */}
         <EditorialJournalSection />
 
-        {/* 11. CONTACT & COMMISSION INTAKE: DIRECT TELEPHONE, WHATSAPP, EMAIL & BRIEF */}
+        {/* 11. REVIEWS SECTION */}
+        <ClientReviewsSection />
+
+        {/* 12. CONTACT & COMMISSION INTAKE: DIRECT TELEPHONE, WHATSAPP, EMAIL & BRIEF */}
         <FinalConsultationCTA onOpenConsultation={onOpenConsultation} />
       </div>
 
