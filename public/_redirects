@@ -1,4 +1,4 @@
-# Proxy API calls to the Cloudflare Worker backend.
-# This rule MUST stay above the SPA fallback so /api/* reaches the Worker.
-/api/* https://designplus-api.igrybuilds.workers.dev/api/* 200
+# /api/* is proxied to the Cloudflare Worker by functions/api/[[path]].ts
+# (Pages _redirects cannot 200-proxy to absolute URLs, so no rule here).
+# SPA fallback below.
 /* /index.html 200
