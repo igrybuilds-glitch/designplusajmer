@@ -1,6 +1,8 @@
 export interface BlogHubPost {
   slug: string;
   title: string;
+  /** Short SEO title (<=60 chars) used in <title>; falls back to title. */
+  seoTitle?: string;
   description: string;
   date: string;
   category: string;
@@ -12,8 +14,9 @@ export interface BlogHubPost {
 export const BLOG_HUB_POSTS: BlogHubPost[] = [
   {
     slug: 'top-10-architects-in-ajmer',
+        seoTitle: 'Top 10 Architects in Ajmer (2026)',
     title: "Top 10 Architects in Ajmer (2026): Who's Actually Worth Hiring",
-    description: "Looking for the best architect in Ajmer? Our 2026 ranking of the top 10 architecture firms in Ajmer \u2014 rated on design quality, reviews, and project range. Design Plus takes #1.",
+    description: "Best architects in Ajmer (2026): the top 10 architecture firms ranked on design quality, client reviews and project range. See which firm takes #1.",
     date: '2026-09-28',
     category: 'Rankings',
     featured: true,
@@ -119,6 +122,7 @@ Building in or around Ajmer? Book a free site consultation with Design Plus \u20
   },
   {
     slug: 'cost-of-building-a-house-in-ajmer-2026',
+        seoTitle: 'House Construction Cost in Ajmer (2026)',
     title: 'Cost of Building a House in Ajmer (2026): Real Rates, Hidden Costs & Smart Budgeting',
     description: 'Planning to build a house in Ajmer? Real 2026 construction costs per sq ft, hidden expenses most people miss, and budgeting tips from Design Plus.',
     date: '2026-09-28',
@@ -164,8 +168,9 @@ Use the [construction cost estimator on our homepage](/) for a quick indicative 
   },
   {
     slug: 'how-to-plan-your-dream-home-in-ajmer',
+        seoTitle: 'Plan Your Dream Home in Ajmer: Guide',
     title: 'How to Plan Your Dream Home in Ajmer: A Step-by-Step Guide',
-    description: 'From plot to possession \u2014 the complete step-by-step process of planning your dream home in Ajmer, Rajasthan.',
+    description: 'From plot to possession \u2014 the complete step-by-step process of planning your dream home in Ajmer, Rajasthan, with realistic budgets and timelines.',
     date: '2026-09-28',
     category: 'Guides',
     image: '/images/blog/how-to-plan-your-dream-home-in-ajmer.jpg',
@@ -207,8 +212,9 @@ Planning a home in Ajmer? [Book a free site consultation](/contact) \u2014 we'll
   },
   {
     slug: 'guide-to-hiring-architect-in-ajmer',
+        seoTitle: 'How to Hire an Architect in Ajmer',
     title: 'How to Hire an Architect in Ajmer: The Complete 2026 Guide',
-    description: 'Hiring an architect in Ajmer? What to check, what to ask, fee structures, red flags, and how to compare firms fairly.',
+    description: 'Hiring an architect in Ajmer? What to check, what to ask, fee structures, red flags, and how to compare firms fairly before you sign anything.',
     date: '2026-09-28',
     category: 'Guides',
     image: '/images/blog/guide-to-hiring-architect-in-ajmer.jpg',
@@ -259,6 +265,7 @@ Want straight answers to all five? [Book a free consultation](/contact) with Des
   },
   {
     slug: 'architectural-trends-ajmer-2026',
+        seoTitle: 'House Architecture Trends Ajmer 2026',
     title: "House Architecture Trends in Ajmer 2026: What's Actually Being Built",
     description: 'The real architectural trends shaping Ajmer homes in 2026 \u2014 from climate-responsive design to modern-traditional fusion.',
     date: '2026-09-28',
@@ -302,6 +309,7 @@ Building in 2026? [Explore our services](/services) or [book a site consultation
   },
   {
     slug: 'sustainable-eco-friendly-architecture-ajmer',
+        seoTitle: 'Eco-Friendly Home Design in Ajmer',
     title: 'Sustainable & Eco-Friendly Home Design in Ajmer: A Practical Guide',
     description: "Eco-friendly architecture in Ajmer isn't a luxury \u2014 it's common sense. Solar, rainwater harvesting, natural cooling and green materials explained.",
     date: '2026-09-28',
@@ -335,6 +343,7 @@ Want an eco-friendly home designed for your plot? [Book a free consultation](/co
   },
   {
     slug: 'vaastu-compliant-home-plans-ajmer',
+        seoTitle: 'Vaastu-Compliant Home Plans Ajmer',
     title: 'Vaastu-Compliant Home Plans in Ajmer: Principles That Actually Work With Modern Design',
     description: 'Vaastu Shastra for modern Ajmer homes \u2014 key principles, common myths, and how to get Vaastu compliance without compromising good design.',
     date: '2026-09-28',
@@ -370,6 +379,7 @@ Want a Vaastu-compliant plan for your plot? [Book a free site consultation](/con
   },
   {
     slug: 'interior-design-cost-per-sqft-ajmer',
+        seoTitle: 'Interior Design Cost in Ajmer (2026)',
     title: 'Interior Design Cost in Ajmer (2026): Per Sq Ft Rates & What\u2019s Included',
     description: 'What does interior design cost in Ajmer in 2026? Real per-sq-ft rates for modular kitchens, wardrobes, full-home interiors and what\u2019s included.',
     date: '2026-09-28',
