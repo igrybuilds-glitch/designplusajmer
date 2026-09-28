@@ -243,9 +243,9 @@ export const PROJECTS: Project[] = [
     brief: 'A high-density urban commercial development requiring maximum ground-level retail frontage on a major arterial junction in Panchsheel Nagar, topped by flexible, column-free corporate floor plates capable of multiple tenant subdivisions.',
     designApproach: 'The structure utilizes a reinforced concrete perimeter moment frame combined with high-grade structural steel internal composite sections. This eliminated interior load-bearing columns across a 12-meter bay width, unlocking unobstructed shopfronts and retail layouts.',
     images: [
-      'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=85',
+      '/images/projects/dp-com-002-hero.webp',
       'https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80'
+      'https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&q=80'
     ],
     featured: true,
     isConcept: false,
@@ -309,15 +309,15 @@ export const PROJECTS: Project[] = [
       { name: 'Structural Glazing (Saint-Gobain Planitherm)', application: 'Curtain wall systems on street-facing elevations' },
       { name: 'Industrial Flamed Granite', application: 'High-traffic ground concourse and pedestrian colonnade' }
     ],
-    heroImage: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=85',
+    heroImage: '/images/projects/dp-com-002-hero.webp',
     heroImageDetails: {
-      url: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=85',
-      alt: 'Panchsheel Commercial Pavilion exterior glass facade in Ajmer',
-      caption: 'Main avenue perspective showcasing ventilated terracotta fins and structural curtain walling.'
+      url: '/images/projects/dp-com-002-hero.webp',
+      alt: 'Panchsheel Commercial Pavilion modern commercial exterior facade in Ajmer',
+      caption: 'Main avenue perspective showcasing modern commercial pavilion facade with articulated structural bays.'
     },
     gallery: [
       'https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80'
+      'https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&q=80'
     ],
     galleryImages: [
       {
@@ -327,7 +327,7 @@ export const PROJECTS: Project[] = [
         aspect: 'wide'
       },
       {
-        url: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80',
+        url: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&q=80',
         caption: 'Upper level corporate office floor plate designed for modular executive partitioning.',
         alt: 'Corporate open-plan office interior in Ajmer',
         aspect: 'wide'
@@ -1310,9 +1310,9 @@ export const PROJECTS: Project[] = [
     brief: 'Reimagining the sterile urban commercial office block as a living, breathable ecosystem that improves employee wellness and minimizes cooling power.',
     designApproach: 'Terraced balconies feature built-in micro-irrigation planter troughs that shade the building facade, while internal open light wells provide natural air change.',
     images: [
-      'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=85',
-      'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=1200&q=80'
+      '/images/projects/dp-cpt-010-biophilic.webp',
+      '/images/projects/dp-cpt-010-hero.webp',
+      'https://images.unsplash.com/photo-1517502884422-41eaead166d4?auto=format&fit=crop&w=1200&q=80'
     ],
     featured: false,
     isConcept: true,
@@ -1373,27 +1373,27 @@ export const PROJECTS: Project[] = [
       { name: 'Exposed Aggregate Concrete', application: 'Durable external planters and spandrel panels' },
       { name: 'Acoustic Double Glazing', application: 'Floor-to-ceiling street-facing facade' }
     ],
-    heroImage: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=85',
+    heroImage: '/images/projects/dp-cpt-010-biophilic.webp',
     heroImageDetails: {
-      url: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=85',
-      alt: 'Boutique Commercial Office biophilic building concept render',
-      caption: 'Street perspective showing terraced green balconies and terracotta solar louvers.'
+      url: '/images/projects/dp-cpt-010-biophilic.webp',
+      alt: 'Boutique Commercial Office biophilic building facade wrapped in vertical cascading planters and greenery',
+      caption: 'Street perspective showing contemporary boutique commercial building facade wrapped in lush cascading vertical gardens and green terraces.'
     },
     gallery: [
-      'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=1200&q=80'
+      '/images/projects/dp-cpt-010-hero.webp',
+      'https://images.unsplash.com/photo-1517502884422-41eaead166d4?auto=format&fit=crop&w=1200&q=80'
     ],
     galleryImages: [
       {
-        url: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80',
-        caption: 'Modern open-plan workstation floor framed by exterior greenery.',
-        alt: 'Daylit modern office floor with plants',
+        url: '/images/projects/dp-cpt-010-hero.webp',
+        caption: 'Boutique commercial corporate exterior with refined architectural proportions and solar shading.',
+        alt: 'Boutique corporate office exterior perspective',
         aspect: 'wide'
       },
       {
-        url: 'https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=1200&q=80',
-        caption: 'Rooftop green terrace lounge for creative team breakout sessions.',
-        alt: 'Rooftop garden lounge render',
+        url: 'https://images.unsplash.com/photo-1517502884422-41eaead166d4?auto=format&fit=crop&w=1200&q=80',
+        caption: 'Biophilic open-plan workstation floor framed by exterior greenery and daylight.',
+        alt: 'Daylit modern biophilic office floor with plants',
         aspect: 'wide'
       }
     ],

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, ArrowUpRight, CheckCircle2, ShieldCheck } from 'lucide-react';
 import { SEOHead } from '../components/SEOHead';
 import { EditorialHero } from '../components/EditorialHero';
@@ -6,6 +7,9 @@ import { BUSINESS_INFO, LEADERSHIP } from '../data/siteData';
 
 export function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
+  const [consentRequired, setConsentRequired] = useState(false);
+  const [consentOptional, setConsentOptional] = useState(false);
+
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -18,6 +22,7 @@ export function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (!consentRequired) return;
     setSubmitted(true);
   };
 
@@ -287,10 +292,49 @@ export function ContactPage() {
                   ></textarea>
                 </div>
 
+                {/* DPDP Act Granular Consent Section */}
+                <div className="p-4 rounded-xl bg-stone-50 border border-stone-300 space-y-3 text-xs text-stone-700">
+                  <div className="flex items-center gap-1.5 font-semibold text-stone-900 uppercase tracking-wide">
+                    <ShieldCheck className="w-4 h-4 text-amber-800" />
+                    <span>Data Protection Notice (DPDP Act, India)</span>
+                  </div>
+                  <p className="text-stone-600 leading-relaxed">
+                    <strong>Data Collected:</strong> Name, phone number, email, and enquiry message. <strong>Purpose:</strong> To call back and discuss your project enquiry. <strong>Consent Withdrawal &amp; Grievance Contact:</strong> Call or WhatsApp <a href="tel:+917976453090" className="text-amber-800 font-bold">+91-7976453090</a>. Read our <Link to="/privacy-policy" target="_blank" className="text-amber-800 underline font-medium">Privacy Policy</Link>.
+                  </p>
+
+                  <div className="space-y-2 pt-1 border-t border-stone-200">
+                    <label className="flex items-start gap-2.5 cursor-pointer">
+                      <input
+                        type="checkbox"
+                        required
+                        checked={consentRequired}
+                        onChange={(e) => setConsentRequired(e.target.checked)}
+                        className="mt-0.5 rounded-xs text-amber-800 focus:ring-amber-800"
+                      />
+                      <span className="text-stone-900 font-medium">
+                        <strong>(Required)</strong> I consent to Design Plus contacting me about my enquiry (callback/WhatsApp).
+                      </span>
+                    </label>
+
+                    <label className="flex items-start gap-2.5 cursor-pointer">
+                      <input
+                        type="checkbox"
+                        checked={consentOptional}
+                        onChange={(e) => setConsentOptional(e.target.checked)}
+                        className="mt-0.5 rounded-xs text-amber-800 focus:ring-amber-800"
+                      />
+                      <span className="text-stone-700">
+                        <strong>(Optional)</strong> I would like to receive follow-up updates and marketing messages from Design Plus.
+                      </span>
+                    </label>
+                  </div>
+                </div>
+
                 <div className="pt-2">
                   <button
                     type="submit"
-                    className="w-full bg-stone-950 hover:bg-stone-800 text-[#FBFBF9] py-3.5 text-xs tracking-wider uppercase font-semibold transition-colors flex items-center justify-center gap-2"
+                    disabled={!consentRequired}
+                    className="w-full bg-stone-950 hover:bg-stone-800 disabled:opacity-50 text-[#FBFBF9] py-3.5 text-xs tracking-wider uppercase font-semibold transition-colors flex items-center justify-center gap-2 cursor-pointer"
                   >
                     <span>Submit Inquiry for Review</span>
                     <ArrowUpRight className="w-4 h-4" />
@@ -298,28 +342,27 @@ export function ContactPage() {
                 </div>
 
                 <p className="text-[11px] text-stone-500 text-center">
-                  Your project information is held in strict professional confidentiality under Chartered Engineering ethics.
+                  Your details are protected under our DPDP Act compliance framework. Direct studio desk: <a href="tel:+917976453090" className="font-semibold text-stone-800">+91-7976453090</a>.
                 </p>
               </form>
             ) : (
-              <div className="py-16 text-center space-y-4">
-                <div className="w-14 h-14 rounded-full bg-emerald-100 text-emerald-800 mx-auto flex items-center justify-center">
-                  <CheckCircle2 className="w-8 h-8" />
+              <div className="py-12 text-center space-y-4">
+                <div className="w-12 h-12 rounded-full bg-emerald-100 text-emerald-800 mx-auto flex items-center justify-center">
+                  <CheckCircle2 className="w-7 h-7" />
                 </div>
                 <h3 className="font-editorial text-3xl text-stone-950 font-medium">
-                  Inquiry Received by Design Plus
+                  Inquiry Received Successfully
                 </h3>
                 <p className="text-sm text-stone-600 max-w-md mx-auto leading-relaxed">
-                  Thank you, {formData.name}. Your inquiry for {formData.service} in {formData.city} has been routed directly to Er. Sudhir Soni and our lead architects. We will connect by phone at {formData.phone} within 24 business hours.
+                  Thank you, {formData.name}. Our studio principal Er. Sudhir Soni or a senior technical architect will review your submission and contact you via phone ({formData.phone}) within 24 hours.
                 </p>
-                <div className="pt-6">
-                  <a
-                    href={`tel:${BUSINESS_INFO.phones[0].raw}`}
-                    className="inline-flex items-center gap-2 bg-stone-900 text-white px-6 py-3 text-xs uppercase tracking-wider font-semibold hover:bg-stone-800 transition-colors"
+                <div className="pt-4">
+                  <button
+                    onClick={() => { setSubmitted(false); setConsentRequired(false); setConsentOptional(false); }}
+                    className="bg-stone-950 text-white px-6 py-3 text-xs tracking-wider uppercase font-semibold hover:bg-stone-800 transition-colors"
                   >
-                    <Phone className="w-4 h-4" />
-                    <span>Call Now ({BUSINESS_INFO.phones[0].display})</span>
-                  </a>
+                    Submit Another Inquiry
+                  </button>
                 </div>
               </div>
             )}
@@ -327,7 +370,6 @@ export function ContactPage() {
 
         </div>
       </section>
-
     </main>
   );
 }

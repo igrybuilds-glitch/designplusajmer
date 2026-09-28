@@ -1,7 +1,9 @@
+import { useState } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { 
   ArrowLeft, 
   ArrowUpRight, 
+  ArrowRight,
   CheckCircle2, 
   ShieldCheck, 
   ChevronRight, 
@@ -13,6 +15,7 @@ import { SEOHead } from '../components/SEOHead';
 import { SERVICES, LOCATIONS_SERVED } from '../data/siteData';
 import { getAllProjects } from '../data/projectsData';
 import { getAllBlogArticles } from '../data/blogData';
+import { ServicePurchaseFlow } from '../components/services/ServicePurchaseFlow';
 
 interface ServiceDetailPageProps {
   onOpenConsultation?: () => void;
@@ -21,6 +24,7 @@ interface ServiceDetailPageProps {
 export function ServiceDetailPage({ onOpenConsultation }: ServiceDetailPageProps) {
   const { slug } = useParams<{ slug: string }>();
   const service = SERVICES.find((s) => s.slug === slug);
+  const [isPurchaseFlowOpen, setIsPurchaseFlowOpen] = useState(false);
 
   if (!service) {
     return <Navigate to="/services" replace />;
@@ -111,7 +115,15 @@ export function ServiceDetailPage({ onOpenConsultation }: ServiceDetailPageProps
                 alt={service.title}
                 width={1200}
                 height={750}
+                referrerPolicy="no-referrer"
                 className="w-full h-full object-cover object-center"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (!target.dataset.failed) {
+                    target.dataset.failed = 'true';
+                    target.src = 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80';
+                  }
+                }}
               />
             </div>
 
@@ -197,21 +209,89 @@ export function ServiceDetailPage({ onOpenConsultation }: ServiceDetailPageProps
                 </div>
               </div>
 
-              <div className="pt-2 space-y-3">
-                <button
-                  onClick={onOpenConsultation}
-                  className="w-full bg-stone-950 hover:bg-stone-800 text-[#FBFBF9] py-3.5 text-xs font-semibold tracking-wider uppercase transition-colors flex items-center justify-center gap-2"
-                >
-                  <span>Book Consultation for this Service</span>
-                  <ArrowUpRight className="w-4 h-4" />
-                </button>
-                <Link
-                  to="/contact"
-                  className="w-full block text-center border border-stone-300 hover:bg-stone-100 text-stone-900 py-3 text-xs font-semibold tracking-wider uppercase transition-colors"
-                >
-                  Direct Studio Contact
-                </Link>
-              </div>
+              {/* Refined Commercial Action Section */}
+              {service.purchaseEnabled ? (
+                <div className="pt-3 border-t border-stone-200 space-y-4">
+                  <div className="flex items-baseline justify-between gap-2">
+                    <div>
+                      <span className="text-[10px] font-mono uppercase tracking-widest text-stone-400 block">
+                        Professional Fee
+                      </span>
+                      <span className="font-editorial text-2xl font-bold text-stone-950 block">
+                        {service.pricingLabel || 'Starting from ₹X,XXX'}
+                      </span>
+                    </div>
+                    {service.pricingUnit && (
+                      <span className="text-[11px] font-mono text-stone-500 bg-stone-100 px-2 py-0.5 border border-stone-200">
+                        {service.pricingUnit}
+                      </span>
+                    )}
+                  </div>
+
+                  <div className="space-y-2.5">
+                    <button
+                      type="button"
+                      onClick={() => setIsPurchaseFlowOpen(true)}
+                      className="w-full bg-[#C86635] hover:bg-[#b5582a] text-white py-3.5 px-4 text-xs font-semibold tracking-wider uppercase transition-colors flex items-center justify-center gap-2 shadow-xs"
+                    >
+                      <span>Buy Now · Direct Commission</span>
+                      <ArrowRight className="w-4 h-4" />
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={onOpenConsultation}
+                      className="w-full border border-stone-300 hover:border-stone-800 text-stone-900 py-3 px-4 text-xs font-semibold tracking-wider uppercase transition-colors"
+                    >
+                      Discuss with an Architect First
+                    </button>
+                    
+                    <Link
+                      to="/contact"
+                      className="w-full block text-center text-[11px] font-mono uppercase tracking-wider text-stone-500 hover:text-stone-900 pt-1 transition-colors"
+                    >
+                      Direct Studio Contact
+                    </Link>
+                  </div>
+                </div>
+              ) : (
+                <div className="pt-3 border-t border-stone-200 space-y-4">
+                  <div>
+                    <span className="text-[10px] font-mono uppercase tracking-widest text-stone-400 block">
+                      Engineering Appraisal
+                    </span>
+                    <span className="text-xs font-mono text-stone-700 font-medium">
+                      Site-Specific Scope · Technical Proposal
+                    </span>
+                  </div>
+
+                  <div className="space-y-2.5">
+                    <button
+                      type="button"
+                      onClick={onOpenConsultation}
+                      className="w-full bg-stone-950 hover:bg-stone-800 text-[#FBFBF9] py-3.5 px-4 text-xs font-semibold tracking-wider uppercase transition-colors flex items-center justify-center gap-2"
+                    >
+                      <span>Request a Proposal</span>
+                      <ArrowUpRight className="w-4 h-4" />
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={onOpenConsultation}
+                      className="w-full border border-stone-300 hover:border-stone-800 text-stone-900 py-3 px-4 text-xs font-semibold tracking-wider uppercase transition-colors"
+                    >
+                      Discuss Project Scope
+                    </button>
+
+                    <Link
+                      to="/contact"
+                      className="w-full block text-center text-[11px] font-mono uppercase tracking-wider text-stone-500 hover:text-stone-900 pt-1 transition-colors"
+                    >
+                      Direct Studio Contact
+                    </Link>
+                  </div>
+                </div>
+              )}
             </div>
 
             {/* Other Services Quick Links */}
@@ -238,6 +318,37 @@ export function ServiceDetailPage({ onOpenConsultation }: ServiceDetailPageProps
 
         </div>
       </section>
+
+      {/* Online Commissioning Banner for Standardized Services */}
+      {service.purchaseEnabled && (
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+          <div className="bg-[#EDE9E0] border border-stone-300 p-8 sm:p-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+            <div className="space-y-2 max-w-2xl">
+              <div className="flex items-center gap-2 text-[10px] font-mono uppercase tracking-widest text-[#C86635] font-semibold">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#C86635]" />
+                <span>STANDARDIZED DRAWING COMMISSION</span>
+              </div>
+              <h3 className="font-editorial text-2xl sm:text-3xl text-stone-950 font-normal">
+                Commission {service.title} Directly Online
+              </h3>
+              <p className="text-xs sm:text-sm text-stone-700 leading-relaxed font-sans">
+                Our 7-step digital commission questionnaire allows you to submit plot measurements, room zoning requirements, and site sketches directly to our design desk. Drawings are reviewed by Er. Sudhir Soni and Ar. Vipul Verma with delivery within standard milestone timelines.
+              </p>
+            </div>
+
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 shrink-0">
+              <button
+                type="button"
+                onClick={() => setIsPurchaseFlowOpen(true)}
+                className="bg-[#C86635] hover:bg-[#b5582a] text-white px-6 py-3.5 text-xs font-mono uppercase tracking-[0.16em] font-semibold transition-colors flex items-center justify-center gap-2 shadow-xs"
+              >
+                <span>Start 7-Step Commission</span>
+                <ArrowRight className="w-4 h-4" />
+              </button>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Related Portfolio Projects */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 border-t border-stone-200 mb-16">
@@ -304,53 +415,70 @@ export function ServiceDetailPage({ onOpenConsultation }: ServiceDetailPageProps
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {relatedArticles.map((art) => (
-              <article
-                key={art.slug}
-                className="group bg-white border border-stone-200 overflow-hidden flex flex-col justify-between"
-              >
-                <div>
-                  <Link
-                    to={`/blog/${art.category}/${art.slug}`}
-                    className="block aspect-16/10 bg-stone-200 overflow-hidden"
-                  >
-                    <img
-                      src={art.featuredImage || art.image}
-                      alt={art.title}
-                      width={600}
-                      height={375}
-                      loading="lazy"
-                      className="img-editorial w-full h-full object-cover object-center"
-                    />
-                  </Link>
-                  <div className="p-6 space-y-2">
-                    <div className="text-[10px] uppercase tracking-wider text-amber-800 font-semibold">
-                      {art.category}
+            {relatedArticles.map((art) => {
+              const imgSrc = typeof art.featuredImage === 'object' && art.featuredImage !== null
+                ? (art.featuredImage as { src?: string }).src
+                : (typeof art.featuredImage === 'string' ? art.featuredImage : (art.image || 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80'));
+              const imgAlt = typeof art.featuredImage === 'object' && art.featuredImage !== null
+                ? ((art.featuredImage as { alt?: string }).alt || art.title)
+                : art.title;
+
+              return (
+                <article
+                  key={art.slug}
+                  className="group bg-white border border-stone-200 overflow-hidden flex flex-col justify-between"
+                >
+                  <div>
+                    <Link
+                      to={`/blog/${art.category}/${art.slug}`}
+                      className="block aspect-16/10 bg-stone-200 overflow-hidden"
+                    >
+                      <img
+                        src={imgSrc}
+                        alt={imgAlt}
+                        width={600}
+                        height={375}
+                        loading="lazy"
+                        className="img-editorial w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </Link>
+                    <div className="p-6 space-y-2">
+                      <div className="text-[10px] uppercase tracking-wider text-amber-800 font-semibold">
+                        {art.category}
+                      </div>
+                      <h4 className="font-editorial text-xl text-stone-950 group-hover:text-amber-800 transition-colors font-medium">
+                        <Link to={`/blog/${art.category}/${art.slug}`}>
+                          {art.title}
+                        </Link>
+                      </h4>
+                      <p className="text-xs text-stone-600 line-clamp-2">
+                        {art.excerpt}
+                      </p>
                     </div>
-                    <h4 className="font-editorial text-xl text-stone-950 group-hover:text-amber-800 transition-colors font-medium">
-                      <Link to={`/blog/${art.category}/${art.slug}`}>
-                        {art.title}
-                      </Link>
-                    </h4>
-                    <p className="text-xs text-stone-600 line-clamp-2">
-                      {art.excerpt}
-                    </p>
                   </div>
-                </div>
-                <div className="p-6 pt-0">
-                  <Link
-                    to={`/blog/${art.category}/${art.slug}`}
-                    className="inline-flex items-center gap-1 text-xs font-semibold uppercase tracking-wider text-stone-900 group-hover:text-amber-800 pt-3 border-t border-stone-100 transition-colors"
-                  >
-                    <span>Read Technical Monograph</span>
-                    <ArrowUpRight className="w-3.5 h-3.5" />
-                  </Link>
-                </div>
-              </article>
-            ))}
+                  <div className="p-6 pt-0">
+                    <Link
+                      to={`/blog/${art.category}/${art.slug}`}
+                      className="inline-flex items-center gap-1 text-xs font-semibold uppercase tracking-wider text-stone-900 group-hover:text-amber-800 pt-3 border-t border-stone-100 transition-colors"
+                    >
+                      <span>Read Technical Monograph</span>
+                      <ArrowUpRight className="w-3.5 h-3.5" />
+                    </Link>
+                  </div>
+                </article>
+              );
+            })}
           </div>
         </section>
       )}
+
+      {/* Reusable Refined Service Purchase Flow Modal */}
+      <ServicePurchaseFlow
+        isOpen={isPurchaseFlowOpen}
+        onClose={() => setIsPurchaseFlowOpen(false)}
+        initialServiceId={service.packageId || service.slug}
+        onOpenConsultation={onOpenConsultation}
+      />
 
     </main>
   );

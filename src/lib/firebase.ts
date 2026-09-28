@@ -96,6 +96,12 @@ export async function logOut(): Promise<void> {
   await signOut(auth);
 }
 
+export async function getCurrentUserIdToken(forceRefresh = false): Promise<string | null> {
+  const currentUser = auth.currentUser;
+  if (!currentUser) return null;
+  return await currentUser.getIdToken(forceRefresh);
+}
+
 // User Bookmarked / Saved Projects Store
 export async function toggleSaveProject(userId: string, project: { id: string; title: string; category: string; imageUrl?: string }): Promise<boolean> {
   const docRef = doc(db, "saved_projects", `${userId}_${project.id}`);

@@ -25,7 +25,7 @@ export function LocationsPage() {
     <main id="locations-page" className="pt-28 pb-20">
       <SEOHead
         title="Locations Served in Rajasthan | Design Plus Architects & Engineers"
-        description="Explore Design Plus architectural and structural engineering services across Ajmer, Jaipur, Pushkar, and Udaipur. Municipal byelaws, soil adaptation, and climate design."
+        description="Explore Design Plus architectural and structural engineering services across Ajmer, Jaipur, Pushkar, Udaipur, Beawar, Kishangarh, Kekri, and Nasirabad."
         canonical="https://designplusajmer.in/locations"
         schema={locationsSchema}
       />
@@ -34,7 +34,7 @@ export function LocationsPage() {
       <EditorialHero 
         subtitle="Regional Footprint"
         title="Architectural Practice Across Central & Southern Rajasthan"
-        description="Headquartered in Ajmer, our architectural and structural engineering projects extend to desert sanctuary homes in Pushkar, metropolitan estates in Jaipur, and hillside villas in Udaipur."
+        description="Headquartered in Ajmer, our architectural and structural engineering projects extend across Jaipur, Pushkar, Udaipur, Kishangarh, Beawar, Kekri, and Nasirabad."
       />
 
       {/* Locations Grid */}

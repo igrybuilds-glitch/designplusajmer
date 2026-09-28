@@ -255,23 +255,23 @@ export const AdminLayout: React.FC = () => {
           `}
         >
           {/* Sidebar Top: Studio Branding & Seal */}
-          <div className="p-4 sm:p-5 border-b border-stone-800/80 bg-[#12100d]">
+          <div className="p-4 sm:p-5 border-b border-white/[0.08] bg-gradient-to-b from-[#181B22] to-[#12141A]">
             <div className="flex items-center justify-between">
               <Link 
                 to="/admin/dashboard" 
                 className="flex items-center gap-3 group overflow-hidden"
                 title="Design Plus Studio Administration"
               >
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-500/20 to-amber-700/10 border border-amber-500/40 flex items-center justify-center text-amber-400 group-hover:border-amber-400/60 transition-all shrink-0 shadow-inner">
-                  <Compass className="w-5 h-5 group-hover:rotate-45 transition-transform duration-500 text-amber-400" />
+                <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-[#EA580C] via-[#C86635] to-[#D97706] border border-white/20 flex items-center justify-center text-white group-hover:scale-105 transition-all duration-300 shrink-0 shadow-[0_4px_16px_rgba(234,88,12,0.35)]">
+                  <Compass className="w-5 h-5 group-hover:rotate-45 transition-transform duration-500 text-white" />
                 </div>
 
                 {!isSidebarCollapsed && (
                   <div className="min-w-0 transition-opacity duration-300">
-                    <span className="font-serif text-sm sm:text-base font-semibold tracking-wider text-stone-100 block uppercase truncate">
+                    <span className="font-sans text-sm sm:text-base font-bold tracking-wide text-white block uppercase truncate">
                       Design Plus
                     </span>
-                    <span className="text-[10px] font-mono uppercase tracking-widest text-amber-400/90 block truncate">
+                    <span className="text-[10px] font-mono uppercase tracking-widest text-[#FB923C] font-semibold block truncate">
                       Studio Architecture CMS
                     </span>
                   </div>
@@ -282,7 +282,7 @@ export const AdminLayout: React.FC = () => {
               <button 
                 id="admin-mobile-close-btn"
                 onClick={() => setMobileMenuOpen(false)}
-                className="p-2 min-w-[44px] min-h-[44px] flex items-center justify-center text-stone-400 hover:text-stone-100 md:hidden rounded-lg hover:bg-stone-800/60 transition-colors"
+                className="p-2 min-w-[44px] min-h-[44px] flex items-center justify-center text-slate-400 hover:text-white md:hidden rounded-xl hover:bg-white/10 transition-colors"
                 aria-label="Close navigation drawer"
               >
                 <X className="w-5 h-5" />
@@ -291,14 +291,14 @@ export const AdminLayout: React.FC = () => {
 
             {/* Allowlist & Custom Claims Indicator */}
             {!isSidebarCollapsed && (
-              <div className="mt-3.5 px-3 py-2 rounded-lg bg-stone-950/70 border border-stone-800/80 flex items-center justify-between text-xs">
+              <div className="mt-3.5 px-3 py-2 rounded-xl bg-white/[0.04] backdrop-blur-md border border-white/[0.08] shadow-xs flex items-center justify-between text-xs">
                 <div className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                  <span className="text-stone-300 font-mono text-[10px] tracking-wide uppercase">
-                    Admin Claim Active
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_8px_rgba(52,211,153,0.6)]" />
+                  <span className="text-slate-300 font-sans text-[11px] tracking-wide font-medium">
+                    Admin Active
                   </span>
                 </div>
-                <span className="text-amber-400 font-mono text-[10px] font-bold px-1.5 py-0.5 rounded bg-amber-500/10 border border-amber-500/30">
+                <span className="text-amber-300 font-mono text-[10px] font-bold px-2 py-0.5 rounded-full bg-gradient-to-r from-amber-500/20 to-orange-500/20 border border-amber-500/40 shadow-xs">
                   Super Admin
                 </span>
               </div>
@@ -306,13 +306,16 @@ export const AdminLayout: React.FC = () => {
           </div>
 
           {/* Navigation Links Area */}
-          <nav className="flex-1 overflow-y-auto px-3 py-4 space-y-6 scrollbar-thin scrollbar-thumb-stone-800 scrollbar-track-transparent">
+          <nav className="flex-1 overflow-y-auto px-3.5 py-4 space-y-6 scrollbar-thin scrollbar-thumb-white/10 scrollbar-track-transparent bg-[#12141A]">
             {/* 1. Core Modules */}
             <div>
               {!isSidebarCollapsed && (
-                <div className="px-3 pb-2 text-[10px] font-mono uppercase tracking-widest text-stone-400 flex items-center justify-between">
-                  <span>Editorial Modules</span>
-                  <span className="text-[9px] text-stone-400 font-mono">01</span>
+                <div className="px-2.5 pb-2 text-[10px] font-mono font-semibold uppercase tracking-wider text-slate-400 flex items-center justify-between">
+                  <span className="flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#EA580C]" />
+                    <span>Editorial Modules</span>
+                  </span>
+                  <span className="text-[9px] px-1.5 py-0.5 rounded-full bg-white/5 border border-white/10 text-slate-400 font-mono">01</span>
                 </div>
               )}
               <div className="space-y-1">
@@ -328,14 +331,14 @@ export const AdminLayout: React.FC = () => {
                         title={isSidebarCollapsed ? item.name : undefined}
                         className={`
                           flex items-center ${isSidebarCollapsed ? "justify-center px-2 py-3" : "justify-between px-3.5 py-2.5"} 
-                          min-h-[44px] rounded-lg text-xs font-medium transition-all
+                          min-h-[44px] rounded-xl text-xs font-sans font-medium transition-all duration-200
                           ${isActive 
-                            ? "bg-amber-500/15 text-amber-200 border border-amber-500/40 font-semibold shadow-sm" 
-                            : "text-stone-400 hover:text-stone-100 hover:bg-stone-800/50"}
+                            ? "bg-gradient-to-r from-[#EA580C] via-[#C86635] to-[#B45309] text-white font-semibold shadow-[0_4px_16px_rgba(200,102,53,0.35)] scale-[1.01]" 
+                            : "text-slate-300 hover:text-white hover:bg-white/[0.07]"}
                         `}
                       >
                         <div className="flex items-center gap-3">
-                          <Icon className={`w-4 h-4 shrink-0 transition-colors ${isActive ? "text-amber-400" : "text-stone-400 group-hover:text-stone-200"}`} />
+                          <Icon className={`w-4 h-4 shrink-0 transition-colors ${isActive ? "text-white drop-shadow" : "text-slate-400 group-hover:text-amber-400"}`} />
                           {!isSidebarCollapsed && <span className="truncate">{item.name}</span>}
                         </div>
 
@@ -347,7 +350,7 @@ export const AdminLayout: React.FC = () => {
                               setMobileMenuOpen(false);
                             }}
                             title={`Create new in ${item.name}`}
-                            className="p-1 rounded bg-stone-800/80 hover:bg-amber-500/20 text-stone-400 hover:text-amber-300 border border-stone-700/60 transition-colors"
+                            className="p-1 rounded-lg bg-white/10 hover:bg-white/20 text-white/80 hover:text-white border border-white/15 transition-colors"
                           >
                             <Plus className="w-3 h-3" />
                           </Link>
@@ -356,7 +359,7 @@ export const AdminLayout: React.FC = () => {
 
                       {/* Tooltip on Collapsed Rail */}
                       {isSidebarCollapsed && (
-                        <div className="hidden md:group-hover:block absolute left-full ml-2 top-1/2 -translate-y-1/2 z-50 px-2.5 py-1.5 bg-stone-900 text-stone-100 border border-stone-700 text-xs font-medium rounded-md shadow-xl whitespace-nowrap pointer-events-none">
+                        <div className="hidden md:group-hover:block absolute left-full ml-2 top-1/2 -translate-y-1/2 z-50 px-2.5 py-1.5 bg-[#181B22] text-white border border-white/10 text-xs font-sans font-medium rounded-lg shadow-xl whitespace-nowrap pointer-events-none">
                           {item.name}
                         </div>
                       )}
@@ -369,9 +372,12 @@ export const AdminLayout: React.FC = () => {
             {/* 2. Assets & SEO */}
             <div>
               {!isSidebarCollapsed && (
-                <div className="px-3 pb-2 text-[10px] font-mono uppercase tracking-widest text-stone-400 flex items-center justify-between">
-                  <span>Digital Assets</span>
-                  <span className="text-[9px] text-stone-400 font-mono">02</span>
+                <div className="px-2.5 pb-2 text-[10px] font-mono font-semibold uppercase tracking-wider text-slate-400 flex items-center justify-between">
+                  <span className="flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-blue-500" />
+                    <span>Digital Assets</span>
+                  </span>
+                  <span className="text-[9px] px-1.5 py-0.5 rounded-full bg-white/5 border border-white/10 text-slate-400 font-mono">02</span>
                 </div>
               )}
               <div className="space-y-1">
@@ -387,23 +393,23 @@ export const AdminLayout: React.FC = () => {
                         title={isSidebarCollapsed ? item.name : undefined}
                         className={`
                           flex items-center ${isSidebarCollapsed ? "justify-center px-2 py-3" : "justify-between px-3.5 py-2.5"} 
-                          min-h-[44px] rounded-lg text-xs font-medium transition-all
+                          min-h-[44px] rounded-xl text-xs font-sans font-medium transition-all duration-200
                           ${isActive 
-                            ? "bg-amber-500/15 text-amber-200 border border-amber-500/40 font-semibold shadow-sm" 
-                            : "text-stone-400 hover:text-stone-100 hover:bg-stone-800/50"}
+                            ? "bg-gradient-to-r from-[#2563EB] to-[#1D4ED8] text-white font-semibold shadow-[0_4px_16px_rgba(37,99,235,0.35)] scale-[1.01]" 
+                            : "text-slate-300 hover:text-white hover:bg-white/[0.07]"}
                         `}
                       >
                         <div className="flex items-center gap-3">
-                          <Icon className={`w-4 h-4 shrink-0 transition-colors ${isActive ? "text-amber-400" : "text-stone-400 group-hover:text-stone-200"}`} />
+                          <Icon className={`w-4 h-4 shrink-0 transition-colors ${isActive ? "text-white drop-shadow" : "text-slate-400 group-hover:text-blue-400"}`} />
                           {!isSidebarCollapsed && <span className="truncate">{item.name}</span>}
                         </div>
 
                         {!isSidebarCollapsed && item.badge && (
                           <span className={`
-                            text-[10px] px-2 py-0.5 rounded-full font-mono font-medium
+                            text-[10px] px-2 py-0.5 rounded-full font-mono font-bold
                             ${item.badgeColor === "emerald" 
-                              ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/30" 
-                              : "bg-amber-500/20 text-amber-300 border border-amber-500/30"}
+                              ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 shadow-xs" 
+                              : "bg-orange-500/20 text-orange-300 border border-orange-500/40 shadow-xs"}
                           `}>
                             {item.badge}
                           </span>
@@ -411,7 +417,7 @@ export const AdminLayout: React.FC = () => {
                       </Link>
 
                       {isSidebarCollapsed && (
-                        <div className="hidden md:group-hover:block absolute left-full ml-2 top-1/2 -translate-y-1/2 z-50 px-2.5 py-1.5 bg-stone-900 text-stone-100 border border-stone-700 text-xs font-medium rounded-md shadow-xl whitespace-nowrap pointer-events-none">
+                        <div className="hidden md:group-hover:block absolute left-full ml-2 top-1/2 -translate-y-1/2 z-50 px-2.5 py-1.5 bg-[#181B22] text-white border border-white/10 text-xs font-sans font-medium rounded-lg shadow-xl whitespace-nowrap pointer-events-none">
                           {item.name}
                         </div>
                       )}
@@ -424,9 +430,12 @@ export const AdminLayout: React.FC = () => {
             {/* 3. Operations & Security */}
             <div>
               {!isSidebarCollapsed && (
-                <div className="px-3 pb-2 text-[10px] font-mono uppercase tracking-widest text-stone-400 flex items-center justify-between">
-                  <span>Operations &amp; Security</span>
-                  <span className="text-[9px] text-stone-400 font-mono">03</span>
+                <div className="px-2.5 pb-2 text-[10px] font-mono font-semibold uppercase tracking-wider text-slate-400 flex items-center justify-between">
+                  <span className="flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+                    <span>Operations &amp; Security</span>
+                  </span>
+                  <span className="text-[9px] px-1.5 py-0.5 rounded-full bg-white/5 border border-white/10 text-slate-400 font-mono">03</span>
                 </div>
               )}
               <div className="space-y-1">
@@ -442,26 +451,26 @@ export const AdminLayout: React.FC = () => {
                         title={isSidebarCollapsed ? item.name : undefined}
                         className={`
                           flex items-center ${isSidebarCollapsed ? "justify-center px-2 py-3" : "justify-between px-3.5 py-2.5"} 
-                          min-h-[44px] rounded-lg text-xs font-medium transition-all
+                          min-h-[44px] rounded-xl text-xs font-sans font-medium transition-all duration-200
                           ${isActive 
-                            ? "bg-amber-500/15 text-amber-200 border border-amber-500/40 font-semibold shadow-sm" 
-                            : "text-stone-400 hover:text-stone-100 hover:bg-stone-800/50"}
+                            ? "bg-gradient-to-r from-[#059669] to-[#047857] text-white font-semibold shadow-[0_4px_16px_rgba(5,150,105,0.35)] scale-[1.01]" 
+                            : "text-slate-300 hover:text-white hover:bg-white/[0.07]"}
                         `}
                       >
                         <div className="flex items-center gap-3">
-                          <Icon className={`w-4 h-4 shrink-0 transition-colors ${isActive ? "text-amber-400" : "text-stone-400 group-hover:text-stone-200"}`} />
+                          <Icon className={`w-4 h-4 shrink-0 transition-colors ${isActive ? "text-white drop-shadow" : "text-slate-400 group-hover:text-emerald-400"}`} />
                           {!isSidebarCollapsed && <span className="truncate">{item.name}</span>}
                         </div>
 
                         {!isSidebarCollapsed && item.badge && (
-                          <span className="text-[10px] px-2 py-0.5 rounded-full font-mono font-medium bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                          <span className="text-[10px] px-2 py-0.5 rounded-full font-mono font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40 shadow-xs">
                             {item.badge}
                           </span>
                         )}
                       </Link>
 
                       {isSidebarCollapsed && (
-                        <div className="hidden md:group-hover:block absolute left-full ml-2 top-1/2 -translate-y-1/2 z-50 px-2.5 py-1.5 bg-stone-900 text-stone-100 border border-stone-700 text-xs font-medium rounded-md shadow-xl whitespace-nowrap pointer-events-none">
+                        <div className="hidden md:group-hover:block absolute left-full ml-2 top-1/2 -translate-y-1/2 z-50 px-2.5 py-1.5 bg-[#181B22] text-white border border-white/10 text-xs font-sans font-medium rounded-lg shadow-xl whitespace-nowrap pointer-events-none">
                           {item.name}
                         </div>
                       )}
@@ -560,7 +569,7 @@ export const AdminLayout: React.FC = () => {
           {/* Top Sticky Header */}
           <header 
             id="admin-top-header"
-            className="sticky top-0 z-30 bg-[#12100d]/90 backdrop-blur-md border-b border-stone-800/80 h-16 px-3.5 sm:px-6 flex items-center justify-between gap-3 sm:gap-6"
+            className="sticky top-0 z-30 bg-[#12141A]/95 backdrop-blur-xl border-b border-white/[0.08] h-16 px-4 sm:px-6 flex items-center justify-between gap-3 sm:gap-6 shadow-sm"
           >
             {/* Left Header Controls: Drawer Toggles & Breadcrumbs */}
             <div className="flex items-center gap-2 sm:gap-4 min-w-0">
@@ -568,7 +577,7 @@ export const AdminLayout: React.FC = () => {
               <button
                 id="admin-mobile-menu-trigger"
                 onClick={() => setMobileMenuOpen(true)}
-                className="p-2.5 min-w-[44px] min-h-[44px] flex items-center justify-center text-stone-300 hover:text-stone-100 md:hidden rounded-lg hover:bg-stone-800/60 transition-colors"
+                className="p-2.5 min-w-[44px] min-h-[44px] flex items-center justify-center text-slate-300 hover:text-white md:hidden rounded-xl hover:bg-white/10 transition-colors"
                 aria-label="Open CMS Navigation Menu"
               >
                 <Menu className="w-5 h-5" />
@@ -578,7 +587,7 @@ export const AdminLayout: React.FC = () => {
               {isSidebarCollapsed && (
                 <button
                   onClick={() => setIsSidebarCollapsed(false)}
-                  className="hidden md:flex p-2 min-w-[40px] min-h-[40px] items-center justify-center rounded-lg hover:bg-stone-800/60 text-stone-400 hover:text-stone-200 transition-colors"
+                  className="hidden md:flex p-2 min-w-[40px] min-h-[40px] items-center justify-center rounded-xl hover:bg-white/10 text-slate-400 hover:text-white transition-colors"
                   title="Expand sidebar"
                 >
                   <PanelLeftOpen className="w-4 h-4" />
@@ -586,16 +595,20 @@ export const AdminLayout: React.FC = () => {
               )}
 
               {/* Editorial Breadcrumbs */}
-              <nav className="flex items-center gap-1.5 sm:gap-2 text-xs font-mono tracking-wider truncate">
-                <Link to="/admin/dashboard" className="text-stone-400 hover:text-amber-300 transition-colors uppercase font-medium">
+              <nav className="flex items-center gap-1.5 sm:gap-2 text-xs font-sans tracking-wide truncate">
+                <Link to="/admin/dashboard" className="text-slate-400 hover:text-[#EA580C] transition-colors uppercase font-semibold">
                   Admin
                 </Link>
                 {breadcrumbs.slice(1).map((crumb, i) => (
                   <React.Fragment key={crumb.url}>
-                    <ChevronRight className="w-3 h-3 text-stone-400 shrink-0" />
+                    <ChevronRight className="w-3.5 h-3.5 text-slate-500 shrink-0" />
                     <Link 
                       to={crumb.url} 
-                      className={`truncate uppercase ${i === breadcrumbs.length - 2 ? "text-amber-400 font-semibold" : "text-stone-400 hover:text-stone-200"}`}
+                      className={`truncate uppercase transition-colors ${
+                        i === breadcrumbs.length - 2 
+                          ? "text-white font-bold bg-white/[0.06] border border-white/10 px-2.5 py-1 rounded-lg shadow-xs" 
+                          : "text-slate-400 hover:text-white"
+                      }`}
                     >
                       {crumb.label}
                     </Link>
@@ -610,12 +623,12 @@ export const AdminLayout: React.FC = () => {
               <button
                 id="admin-quick-search-btn"
                 onClick={() => setSearchModalOpen(true)}
-                className="flex items-center gap-2 px-2.5 sm:px-3.5 py-1.5 sm:py-2 min-h-[40px] rounded-lg bg-stone-900/90 hover:bg-stone-800 border border-stone-800 text-xs text-stone-400 hover:text-stone-200 transition-all shadow-inner"
+                className="flex items-center gap-2.5 px-3.5 py-2 min-h-[38px] rounded-full bg-white/[0.06] hover:bg-white/[0.1] border border-white/10 hover:border-[#C86635]/50 text-xs text-slate-300 hover:text-white transition-all shadow-inner"
                 title="Search CMS modules (Cmd+K / Ctrl+K)"
               >
-                <Search className="w-3.5 h-3.5 text-stone-400" />
-                <span className="hidden sm:inline font-mono">Quick Search...</span>
-                <kbd className="hidden lg:inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded bg-stone-950 border border-stone-700/80 text-[10px] font-mono text-stone-400">
+                <Search className="w-3.5 h-3.5 text-[#FB923C]" />
+                <span className="hidden sm:inline font-sans font-medium">Quick Search...</span>
+                <kbd className="hidden lg:inline-flex items-center gap-0.5 px-2 py-0.5 rounded-full bg-black/40 border border-white/10 text-[10px] font-mono text-slate-300">
                   <Command className="w-2.5 h-2.5" /> K
                 </kbd>
               </button>
@@ -624,16 +637,17 @@ export const AdminLayout: React.FC = () => {
               <Link
                 to="/admin/projects/new"
                 id="admin-new-project-quick-btn"
-                className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 min-h-[40px] rounded-lg bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 border border-amber-500/40 text-xs font-semibold uppercase tracking-wider transition-colors shadow-sm"
+                className="hidden sm:inline-flex items-center gap-2 px-4 py-2 min-h-[38px] rounded-full bg-gradient-to-r from-[#EA580C] to-[#C86635] hover:from-[#f97316] hover:to-[#ea580c] text-white text-xs font-sans font-semibold uppercase tracking-wider transition-all shadow-[0_4px_14px_rgba(234,88,12,0.35)] active:scale-95"
               >
-                <Plus className="w-3.5 h-3.5 text-amber-400" />
+                <Plus className="w-4 h-4 stroke-[2.5]" />
                 <span>New Project</span>
               </Link>
 
               {/* Ajmer Studio Clock (IST) */}
               {currentTime && (
-                <div className="hidden xl:flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-stone-950/60 border border-stone-800 text-[11px] font-mono text-stone-400">
-                  <Clock className="w-3 h-3 text-amber-400/80" />
+                <div className="hidden xl:flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.05] border border-white/10 text-[11px] font-sans text-slate-300 shadow-xs">
+                  <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
+                  <Clock className="w-3 h-3 text-amber-400" />
                   <span>Ajmer: {currentTime}</span>
                 </div>
               )}
@@ -641,16 +655,16 @@ export const AdminLayout: React.FC = () => {
               {/* Custom Claim Lock Badge */}
               <div 
                 title="Verified Firebase Auth Custom Claim: admin: true"
-                className="flex items-center gap-1.5 px-2 sm:px-2.5 py-1 min-h-[34px] rounded-md bg-stone-900 border border-stone-800 text-[11px] font-mono text-amber-400/90 shrink-0"
+                className="flex items-center gap-1.5 px-3 py-1.5 min-h-[34px] rounded-full bg-emerald-500/10 border border-emerald-500/30 text-[11px] font-mono font-medium text-emerald-400 shrink-0 shadow-xs"
               >
-                <Lock className="w-3 h-3 text-amber-400" />
+                <Lock className="w-3.5 h-3.5 text-emerald-400" />
                 <span className="hidden md:inline">admin: true</span>
               </div>
             </div>
           </header>
 
           {/* Page Body Viewport */}
-          <main className="flex-1 p-3.5 sm:p-6 lg:p-8 max-w-7xl w-full mx-auto">
+          <main className="flex-1 p-4 sm:p-6 lg:p-8 max-w-7xl w-full mx-auto bg-gradient-to-b from-[#0F1115] via-[#12141A] to-[#0D0F13] min-h-[calc(100vh-4rem)] rounded-t-3xl shadow-inner border-t border-x border-white/[0.04]">
             <Outlet />
           </main>
         </div>

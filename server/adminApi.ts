@@ -2,11 +2,17 @@ import express, { Request, Response, NextFunction } from "express";
 import { 
   authenticateAdmin, 
   verifyAdminToken, 
+  generateAdminToken,
+  checkRateLimit,
+  recordFailedAttempt,
+  resetRateLimit,
   updateAdminPassword, 
   getAuditLogs, 
   addAuditLog, 
-  ADMIN_ALLOWLIST 
+  ADMIN_ALLOWLIST,
+  AdminUser 
 } from "./adminAuth";
+import { getAdminAuth } from "./firebaseAdmin";
 import { PROJECTS } from "../src/data/projectsData";
 import { BLOG_ARTICLES } from "../src/data/blogData";
 import { SERVICES, LOCATIONS_SERVED, TEAM_MEMBERS, LEADERSHIP, BUSINESS_INFO } from "../src/data/siteData";
@@ -40,7 +46,7 @@ export function requireAdmin(req: Request, res: Response, next: NextFunction) {
   next();
 }
 
-// 1. Admin Login Endpoint
+// 1. Admin Password Login Endpoint (Optional Bootstrap)
 adminRouter.post("/login", (req: Request, res: Response) => {
   const { email, password } = req.body;
   const ip = getClientIp(req);
@@ -50,14 +56,91 @@ adminRouter.post("/login", (req: Request, res: Response) => {
   }
 
   const result = authenticateAdmin(email, password, ip);
-  if (!result.success) {
-    return res.status(result.status).json({ error: result.message });
+  if (!result || !result.success) {
+    return res.status(result ? result.status : 401).json({ 
+      error: result?.message || "Access Denied: Password login is not configured or credentials invalid." 
+    });
   }
 
   res.json({
     token: result.token,
-    admin: result.admin
+    admin: result.admin,
+    user: result.admin
   });
+});
+
+// 2. Google OAuth Admin Login Endpoint (Verified via Firebase Admin SDK)
+adminRouter.post("/login/google", async (req: Request, res: Response) => {
+  const { idToken } = req.body;
+  const ip = getClientIp(req);
+
+  const rateStatus = checkRateLimit(ip);
+  if (!rateStatus.allowed) {
+    return res.status(429).json({
+      error: `Too many authentication attempts. Please retry after ${rateStatus.retryAfterSeconds} seconds.`
+    });
+  }
+
+  if (!idToken || typeof idToken !== "string") {
+    recordFailedAttempt(ip);
+    console.warn(`[Google Admin Login] Missing or invalid idToken payload from IP ${ip}`);
+    return res.status(401).json({ error: "Access Denied: Invalid administrator credentials." });
+  }
+
+  const adminAuth = getAdminAuth();
+  if (!adminAuth) {
+    console.error("[Google Admin Login] Firebase Admin Auth instance is unavailable.");
+    return res.status(401).json({ error: "Access Denied: Administrator authentication service unavailable." });
+  }
+
+  try {
+    const decoded = await adminAuth.verifyIdToken(idToken);
+    const email = (decoded.email || "").toLowerCase().trim();
+    const isEmailVerified = !!decoded.email_verified;
+
+    if (!isEmailVerified) {
+      recordFailedAttempt(ip);
+      console.warn(`[Google Admin Login] Rejected unverified email account: ${email} from IP ${ip}`);
+      return res.status(401).json({ error: "Access Denied: Account email is not verified." });
+    }
+
+    if (!email || !ADMIN_ALLOWLIST.includes(email)) {
+      recordFailedAttempt(ip);
+      console.warn(`[Google Admin Login] Rejected email not in ADMIN_ALLOWLIST: ${email} from IP ${ip}`);
+      return res.status(401).json({ error: "Access Denied: Account is not on the authorized administrator allowlist." });
+    }
+
+    resetRateLimit(ip);
+
+    const token = generateAdminToken(email);
+    const admin: AdminUser = {
+      email,
+      role: "admin",
+      displayName: decoded.name || (email.includes("sudhir") || email.includes("designplus") ? "Er. Sudhir Soni" : "Lead Administrator"),
+      active: true,
+      createdAt: "2026-01-01T00:00:00.000Z",
+      lastLoginAt: new Date().toISOString()
+    };
+
+    addAuditLog({
+      adminEmail: email,
+      action: "GOOGLE_OAUTH_LOGIN",
+      contentType: "auth",
+      contentId: email,
+      summary: `Administrator ${email} authenticated via verified Google ID token.`,
+      ip
+    });
+
+    return res.json({
+      token,
+      admin,
+      user: admin
+    });
+  } catch (err: any) {
+    recordFailedAttempt(ip);
+    console.warn(`[Google Admin Login] Token verification failed from IP ${ip}: ${err?.message || err}`);
+    return res.status(401).json({ error: "Access Denied: Invalid administrator credentials." });
+  }
 });
 
 // 2. Token Verification Endpoint

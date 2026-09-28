@@ -1,50 +1,62 @@
-import { useState } from 'react';
+import { useState, useEffect, lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import Lenis from 'lenis';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { ScrollToTop } from './components/ScrollToTop';
 import { ConsultationModal } from './components/ConsultationModal';
 import { AuthProvider } from './context/AuthContext';
 import { AdminAuthProvider } from './context/AdminAuthContext';
-import { AiConsultantDrawer } from './components/AiConsultantDrawer';
-import { VeoStudioModal } from './components/VeoStudioModal';
 import { ClientAuthDrawer } from './components/ClientAuthDrawer';
-import { Sparkles, Film } from 'lucide-react';
 
-// Public Pages
+// Direct First Paint Entry
 import { HomePage } from './pages/HomePage';
-import { AboutPage } from './pages/AboutPage';
-import { ServicesPage } from './pages/ServicesPage';
-import { ServiceDetailPage } from './pages/ServiceDetailPage';
-import { ProjectsPage } from './pages/ProjectsPage';
-import { ProjectDetailPage } from './pages/ProjectDetailPage';
-import { ProjectDispatcher } from './pages/ProjectDispatcher';
-import { LocationsPage } from './pages/LocationsPage';
-import { LocationDetailPage } from './pages/LocationDetailPage';
-import { BlogPage } from './pages/BlogPage';
-import { BlogCategoryPage } from './pages/BlogCategoryPage';
-import { BlogDetailPage } from './pages/BlogDetailPage';
-import { BlogDispatcher } from './pages/BlogDispatcher';
-import { ContactPage } from './pages/ContactPage';
 import { OpeningReveal } from './components/OpeningReveal';
 
-// Admin CMS Components & Pages
+// Route Code Splitting: Secondary Public Pages (Loaded on demand to keep homepage bundle ultra-lean)
+const AboutPage = lazy(() => import('./pages/AboutPage').then(m => ({ default: m.AboutPage })));
+const TeamPage = lazy(() => import('./pages/TeamPage').then(m => ({ default: m.TeamPage })));
+const ServicesPage = lazy(() => import('./pages/ServicesPage').then(m => ({ default: m.ServicesPage })));
+const ServiceDetailPage = lazy(() => import('./pages/ServiceDetailPage').then(m => ({ default: m.ServiceDetailPage })));
+const ProjectsPage = lazy(() => import('./pages/ProjectsPage').then(m => ({ default: m.ProjectsPage })));
+const ProjectDetailPage = lazy(() => import('./pages/ProjectDetailPage').then(m => ({ default: m.ProjectDetailPage })));
+const ProjectDispatcher = lazy(() => import('./pages/ProjectDispatcher').then(m => ({ default: m.ProjectDispatcher })));
+const LocationsPage = lazy(() => import('./pages/LocationsPage').then(m => ({ default: m.LocationsPage })));
+const LocationDetailPage = lazy(() => import('./pages/LocationDetailPage').then(m => ({ default: m.LocationDetailPage })));
+const BlogPage = lazy(() => import('./pages/BlogPage').then(m => ({ default: m.BlogPage })));
+const BlogCategoryPage = lazy(() => import('./pages/BlogCategoryPage').then(m => ({ default: m.BlogCategoryPage })));
+const BlogDetailPage = lazy(() => import('./pages/BlogDetailPage').then(m => ({ default: m.BlogDetailPage })));
+const BlogTagPage = lazy(() => import('./pages/BlogTagPage').then(m => ({ default: m.BlogTagPage })));
+const BlogAuthorPage = lazy(() => import('./pages/BlogAuthorPage').then(m => ({ default: m.BlogAuthorPage })));
+const BlogDispatcher = lazy(() => import('./pages/BlogDispatcher').then(m => ({ default: m.BlogDispatcher })));
+const ContactPage = lazy(() => import('./pages/ContactPage').then(m => ({ default: m.ContactPage })));
+const ProjectManagementPage = lazy(() => import('./pages/ProjectManagementPage').then(m => ({ default: m.ProjectManagementPage })));
+const ArchitectFeesAjmerPage = lazy(() => import('./pages/ArchitectFeesAjmerPage').then(m => ({ default: m.ArchitectFeesAjmerPage })));
+const StructuralDrawingAjmerPage = lazy(() => import('./pages/StructuralDrawingAjmerPage').then(m => ({ default: m.StructuralDrawingAjmerPage })));
+const VastuPage = lazy(() => import('./pages/VastuPage').then(m => ({ default: m.VastuPage })));
+const FarmhousePage = lazy(() => import('./pages/FarmhousePage').then(m => ({ default: m.FarmhousePage })));
+const ProductsPage = lazy(() => import('./pages/ProductsPage').then(m => ({ default: m.ProductsPage })));
+const ProductCategorySeoPage = lazy(() => import('./pages/ProductCategorySeoPage').then(m => ({ default: m.ProductCategorySeoPage })));
+const ServiceGroupSeoPage = lazy(() => import('./pages/ServiceGroupSeoPage').then(m => ({ default: m.ServiceGroupSeoPage })));
+const PrivacyPolicyPage = lazy(() => import('./pages/PrivacyPolicyPage').then(m => ({ default: m.PrivacyPolicyPage })));
+
+// Admin CMS Components & Pages (Lazy loaded on demand to minimize homepage bundle weight)
 import { AdminProtectedRoute } from './components/admin/AdminProtectedRoute';
 import { AdminLayout } from './components/admin/AdminLayout';
-import { AdminLoginPage } from './pages/admin/AdminLoginPage';
-import { AdminDashboardPage } from './pages/admin/AdminDashboardPage';
-import { AdminProjectsPage } from './pages/admin/AdminProjectsPage';
-import { AdminProjectEditPage } from './pages/admin/AdminProjectEditPage';
-import { AdminBlogPage } from './pages/admin/AdminBlogPage';
-import { AdminBlogEditPage } from './pages/admin/AdminBlogEditPage';
-import { AdminServicesPage } from './pages/admin/AdminServicesPage';
-import { AdminLocationsPage } from './pages/admin/AdminLocationsPage';
-import { AdminMediaPage } from './pages/admin/AdminMediaPage';
-import { AdminSeoPage } from './pages/admin/AdminSeoPage';
-import { AdminMessagesPage } from './pages/admin/AdminMessagesPage';
-import { AdminTeamPage } from './pages/admin/AdminTeamPage';
-import { AdminSettingsPage } from './pages/admin/AdminSettingsPage';
-import { AdminAuditLogPage } from './pages/admin/AdminAuditLogPage';
+const AdminLoginPage = lazy(() => import('./pages/admin/AdminLoginPage').then(m => ({ default: m.AdminLoginPage })));
+const AdminDashboardPage = lazy(() => import('./pages/admin/AdminDashboardPage').then(m => ({ default: m.AdminDashboardPage })));
+const AdminProjectsPage = lazy(() => import('./pages/admin/AdminProjectsPage').then(m => ({ default: m.AdminProjectsPage })));
+const AdminProjectEditPage = lazy(() => import('./pages/admin/AdminProjectEditPage').then(m => ({ default: m.AdminProjectEditPage })));
+const AdminBlogPage = lazy(() => import('./pages/admin/AdminBlogPage').then(m => ({ default: m.AdminBlogPage })));
+const AdminBlogEditPage = lazy(() => import('./pages/admin/AdminBlogEditPage').then(m => ({ default: m.AdminBlogEditPage })));
+const AdminServicesPage = lazy(() => import('./pages/admin/AdminServicesPage').then(m => ({ default: m.AdminServicesPage })));
+const AdminLocationsPage = lazy(() => import('./pages/admin/AdminLocationsPage').then(m => ({ default: m.AdminLocationsPage })));
+const AdminMediaPage = lazy(() => import('./pages/admin/AdminMediaPage').then(m => ({ default: m.AdminMediaPage })));
+const AdminSeoPage = lazy(() => import('./pages/admin/AdminSeoPage').then(m => ({ default: m.AdminSeoPage })));
+const AdminMessagesPage = lazy(() => import('./pages/admin/AdminMessagesPage').then(m => ({ default: m.AdminMessagesPage })));
+const AdminTeamPage = lazy(() => import('./pages/admin/AdminTeamPage').then(m => ({ default: m.AdminTeamPage })));
+const AdminSettingsPage = lazy(() => import('./pages/admin/AdminSettingsPage').then(m => ({ default: m.AdminSettingsPage })));
+const AdminAuditLogPage = lazy(() => import('./pages/admin/AdminAuditLogPage').then(m => ({ default: m.AdminAuditLogPage })));
 
 function AppContent() {
   const location = useLocation();
@@ -54,6 +66,42 @@ function AppContent() {
   const [isAiStudioOpen, setIsAiStudioOpen] = useState(false);
   const [isVeoStudioOpen, setIsVeoStudioOpen] = useState(false);
   const [isClientPortalOpen, setIsClientPortalOpen] = useState(false);
+
+  useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const lenis = new Lenis({
+      duration: 1.8,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smoothWheel: true,
+      wheelMultiplier: 1.1,
+      lerp: 0.08
+    });
+    console.log("Lenis initialized successfully 🚀");
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    const frameId = requestAnimationFrame(raf);
+
+    const handleAnchorClick = (e: MouseEvent) => {
+      const target = (e.target as HTMLElement).closest('a');
+      if (target && target.hash && target.origin === window.location.origin && target.pathname === window.location.pathname) {
+        const el = document.querySelector(target.hash);
+        if (el) {
+          e.preventDefault();
+          lenis.scrollTo(el as HTMLElement);
+        }
+      }
+    };
+    document.addEventListener('click', handleAnchorClick);
+
+    return () => {
+      cancelAnimationFrame(frameId);
+      lenis.destroy();
+      document.removeEventListener('click', handleAnchorClick);
+    };
+  }, []);
 
   const openConsultation = () => setIsConsultationOpen(true);
   const closeConsultation = () => setIsConsultationOpen(false);
@@ -79,6 +127,7 @@ function AppContent() {
       )}
       
       <div className="flex-1 flex flex-col min-w-0">
+        <Suspense fallback={null}>
         <Routes>
           {/* ========================================================= */}
           {/* PUBLIC CLIENT PORTAL & SHOWCASE ROUTES                     */}
@@ -88,10 +137,21 @@ function AppContent() {
 
           {/* 02 Studio & Team */}
           <Route path="/about" element={<AboutPage onOpenConsultation={openConsultation} />} />
+          <Route path="/studio" element={<AboutPage onOpenConsultation={openConsultation} />} />
+          <Route path="/team" element={<TeamPage onOpenConsultation={openConsultation} />} />
 
-          {/* 03 Services */}
+          {/* 03 Services & Technical Drawings */}
           <Route path="/services" element={<ServicesPage onOpenConsultation={openConsultation} />} />
           <Route path="/services/:slug" element={<ServiceDetailPage onOpenConsultation={openConsultation} />} />
+          <Route path="/project-management" element={<ProjectManagementPage onOpenConsultation={openConsultation} />} />
+          <Route path="/architect-fees-ajmer" element={<ArchitectFeesAjmerPage onOpenConsultation={openConsultation} />} />
+          <Route path="/structural-drawing-ajmer" element={<StructuralDrawingAjmerPage onOpenConsultation={openConsultation} />} />
+          <Route path="/vastu" element={<VastuPage onOpenConsultation={openConsultation} />} />
+          <Route path="/farmhouse" element={<FarmhousePage onOpenConsultation={openConsultation} />} />
+          <Route path="/products" element={<ProductsPage onOpenConsultation={openConsultation} />} />
+          <Route path="/products/:categorySlug" element={<ProductCategorySeoPage onOpenConsultation={openConsultation} />} />
+          <Route path="/services/group/:groupSlug" element={<ServiceGroupSeoPage onOpenConsultation={openConsultation} />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
 
           {/* 04 Portfolio / Projects Engine */}
           <Route path="/projects" element={<ProjectsPage />} />
@@ -111,24 +171,30 @@ function AppContent() {
 
           {/* 06 Journal / Blog Content Engine */}
           <Route path="/blog" element={<BlogPage />} />
+          <Route path="/insights" element={<BlogPage />} />
           
-          {/* Explicit Blog Category Routes */}
+          {/* Explicit Blog Category, Tag, Author Archives */}
+          <Route path="/blog/category/:category" element={<BlogCategoryPage onOpenConsultation={openConsultation} />} />
+          <Route path="/blog/tag/:tag" element={<BlogTagPage onOpenConsultation={openConsultation} />} />
+          <Route path="/blog/author/:author" element={<BlogAuthorPage onOpenConsultation={openConsultation} />} />
+
+          {/* Legacy & Short Category Routes */}
           <Route path="/blog/architecture" element={<BlogCategoryPage onOpenConsultation={openConsultation} />} />
+          <Route path="/blog/structural-engineering" element={<BlogCategoryPage onOpenConsultation={openConsultation} />} />
           <Route path="/blog/interior-design" element={<BlogCategoryPage onOpenConsultation={openConsultation} />} />
           <Route path="/blog/residential-design" element={<BlogCategoryPage onOpenConsultation={openConsultation} />} />
           <Route path="/blog/commercial-design" element={<BlogCategoryPage onOpenConsultation={openConsultation} />} />
           <Route path="/blog/house-planning" element={<BlogCategoryPage onOpenConsultation={openConsultation} />} />
+          <Route path="/blog/building-planning" element={<BlogCategoryPage onOpenConsultation={openConsultation} />} />
+          <Route path="/blog/infrastructure" element={<BlogCategoryPage onOpenConsultation={openConsultation} />} />
+          <Route path="/blog/township-planning" element={<BlogCategoryPage onOpenConsultation={openConsultation} />} />
+          <Route path="/blog/surveying-geotechnical" element={<BlogCategoryPage onOpenConsultation={openConsultation} />} />
+          <Route path="/blog/decision-guides" element={<BlogCategoryPage onOpenConsultation={openConsultation} />} />
+          <Route path="/blog/project-stories" element={<BlogCategoryPage onOpenConsultation={openConsultation} />} />
+          <Route path="/blog/ajmer-rajasthan" element={<BlogCategoryPage onOpenConsultation={openConsultation} />} />
           <Route path="/blog/ajmer" element={<BlogCategoryPage onOpenConsultation={openConsultation} />} />
 
-          {/* Explicit Blog Article Routes */}
-          <Route path="/blog/architecture/:slug" element={<BlogDetailPage onOpenConsultation={openConsultation} />} />
-          <Route path="/blog/interior-design/:slug" element={<BlogDetailPage onOpenConsultation={openConsultation} />} />
-          <Route path="/blog/residential-design/:slug" element={<BlogDetailPage onOpenConsultation={openConsultation} />} />
-          <Route path="/blog/commercial-design/:slug" element={<BlogDetailPage onOpenConsultation={openConsultation} />} />
-          <Route path="/blog/house-planning/:slug" element={<BlogDetailPage onOpenConsultation={openConsultation} />} />
-          <Route path="/blog/ajmer/:slug" element={<BlogDetailPage onOpenConsultation={openConsultation} />} />
-
-          {/* Catch-all Hierarchical & Fallback Dispatchers */}
+          {/* Hierarchical & Clean Single-Slug Articles */}
           <Route path="/blog/:category/:slug" element={<BlogDetailPage onOpenConsultation={openConsultation} />} />
           <Route path="/blog/:param" element={<BlogDispatcher onOpenConsultation={openConsultation} />} />
 
@@ -172,45 +238,15 @@ function AppContent() {
           {/* Public Fallback */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
+        </Suspense>
       </div>
 
       {!isAdminRoute && <Footer />}
-
-      {/* Floating AI & Animation Quick Action Trigger (Bottom Right) */}
-      {!isAdminRoute && (
-        <div 
-          id="floating-studio-actions"
-          className="fixed bottom-3 right-3 sm:bottom-6 sm:right-6 z-40 flex flex-col gap-2 sm:gap-2.5 items-end pointer-events-none max-w-[calc(100vw-1.5rem)]"
-        >
-          <button
-            onClick={openVeoStudio}
-            title="Veo 3D Architectural Animation Studio (veo-3.1-fast-generate-preview)"
-            aria-label="Open Veo 3D Studio"
-            className="pointer-events-auto bg-stone-900/95 backdrop-blur-md text-amber-200 hover:bg-stone-800 border border-stone-700/90 shadow-lg p-2.5 sm:px-3.5 sm:py-2.5 min-h-[42px] min-w-[42px] sm:min-h-[44px] rounded-full flex items-center justify-center gap-2 text-[11px] sm:text-xs font-semibold uppercase tracking-wider transition-all transform hover:scale-105 active:scale-95"
-          >
-            <Film className="w-4 h-4 text-purple-300 shrink-0" />
-            <span className="hidden sm:inline">Veo 3D Studio</span>
-          </button>
-
-          <button
-            onClick={openAiStudio}
-            title="Design Plus AI Consultation & Gemini Live Voice (gemini-3.8-live / Pro / Flash)"
-            aria-label="Open AI Architect & Live Voice"
-            className="pointer-events-auto bg-amber-900/95 backdrop-blur-md text-amber-100 hover:bg-amber-800 border border-amber-700/90 shadow-xl px-3.5 py-2.5 sm:px-4 sm:py-3 min-h-[44px] rounded-full flex items-center gap-2 text-[11px] sm:text-xs font-bold uppercase tracking-wider transition-all transform hover:scale-105 active:scale-95"
-          >
-            <Sparkles className="w-4 h-4 text-amber-300 animate-pulse shrink-0" />
-            <span className="hidden sm:inline">AI Architect &amp; Live Voice</span>
-            <span className="sm:hidden font-mono tracking-normal">AI Architect</span>
-          </button>
-        </div>
-      )}
 
       {/* Global Drawers & Modals */}
       {!isAdminRoute && (
         <>
           <ConsultationModal isOpen={isConsultationOpen} onClose={closeConsultation} />
-          <AiConsultantDrawer isOpen={isAiStudioOpen} onClose={closeAiStudio} />
-          <VeoStudioModal isOpen={isVeoStudioOpen} onClose={closeVeoStudio} />
           <ClientAuthDrawer 
             isOpen={isClientPortalOpen} 
             onClose={closeClientPortal} 

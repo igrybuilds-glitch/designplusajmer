@@ -65,6 +65,46 @@ const LOCATION_FAQS: Record<string, Array<{ q: string; a: string }>> = {
       q: 'What are the environmental and lake catchment setbacks enforced in Udaipur?',
       a: 'Properties within the catchment zones of Lake Pichola, Fateh Sagar, and Badi Lake are subject to stringent ecological buffer zones. We engineer closed-loop sewage treatment systems (STPs) and zero-runoff rainwater recharge reservoirs to satisfy UIT and environmental court stipulations.'
     }
+  ],
+  beawar: [
+    {
+      q: 'What building permissions are required for residential and commercial construction in Beawar?',
+      a: 'Building construction in Beawar is governed by the Beawar Municipal Council (Nagar Parishad). Sanction requires submitted architectural layouts, setback compliance along main roads, and certified structural stability certificates issued by a licensed Chartered Engineer like Er. Sudhir Soni.'
+    },
+    {
+      q: 'How do you design for long and narrow urban plots common in Beawar commercial markets?',
+      a: 'Traditional trading town plots in Beawar often have narrow frontages (15 to 25 feet) with extreme depths (60 to 100 feet). We incorporate central biophilic light shafts, split-level skylights, and ductile steel framing to ensure ample cross-ventilation and daylight throughout the core.'
+    }
+  ],
+  kishangarh: [
+    {
+      q: 'How do you incorporate local marble and natural stone into modern Kishangarh villas?',
+      a: 'We leverage Kishangarh’s world-class stone cutting industry by detailing ventilated dry-clad marble facades, fluted stone louvers, and seamless Makrana marble flooring integrated with modern thermal insulation to prevent excessive indoor summer heat.'
+    },
+    {
+      q: 'Does Design Plus provide structural engineering for industrial PEB marble sheds in Kishangarh?',
+      a: 'Yes. Led by Er. Sudhir Soni (M.E. Structure, CE), we design heavy industrial pre-engineered steel buildings (PEB), high-capacity gantry crane girders (up to 50-ton overhead cranes), and vibration-isolated saw-machine foundations under IS 800 and IS 456.'
+    }
+  ],
+  kekri: [
+    {
+      q: 'What foundation precautions are necessary for building in Kekri’s agricultural soils?',
+      a: 'Kekri region features expanses of loamy and expansive black cotton soils prone to swelling and shrinkage. We conduct site-specific soil bearing tests and engineer under-reamed pile foundations or reinforced plinth beam grids to prevent structural wall cracking.'
+    },
+    {
+      q: 'Can you assist with agricultural land conversion (Section 90-A) in Kekri district?',
+      a: 'Yes. For agro-processing units, farmhouses, or commercial facilities in Kekri, Design Plus prepares the complete layout dossier, setback validation drawings, and structural stability certificates required for 90-A revenue conversion.'
+    }
+  ],
+  nasirabad: [
+    {
+      q: 'What building regulations apply to private properties in the Nasirabad Cantonment area?',
+      a: 'Properties within the Nasirabad Cantonment Board (NCB) jurisdiction must adhere to strict cantonment building byelaws regarding boundary wall heights, roof slopes, floor area ratios, and structural stability. Design Plus prepares compliant drawings aligned with NCB norms.'
+    },
+    {
+      q: 'Can Design Plus design farmhouses and country estates in the Nasirabad rural belt?',
+      a: 'Yes. We specialize in rural estate master planning around Nasirabad—designing water-autonomous farmhouses with 100,000L+ rainwater Tankas, solar power systems, and deep passive verandahs suited to Rajasthan countryside living.'
+    }
   ]
 };
 
@@ -124,8 +164,8 @@ export function LocationDetailPage({ onOpenConsultation }: LocationDetailPagePro
   return (
     <main id="location-detail-page" className="pt-28 pb-20">
       <SEOHead
-        title={`Architects & Structural Engineers in ${location.city}, Rajasthan | Design Plus`}
-        description={`${location.city} architectural design, residential villas, commercial planning, and chartered structural engineering by Design Plus.`}
+        title={`Architect in ${location.city} | Design Plus Rajasthan`}
+        description={`Chartered architect in ${location.city}, Rajasthan. Modern house planning, luxury villa design, 3D elevation, and certified structural engineering by Design Plus.`}
         image={location.heroImage}
         canonical={canonicalUrl}
         schema={locationSchema}
@@ -382,50 +422,59 @@ export function LocationDetailPage({ onOpenConsultation }: LocationDetailPagePro
             </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {cityArticles.map((article) => (
-              <article
-                key={article.slug}
-                className="group bg-white border border-stone-200 overflow-hidden flex flex-col justify-between"
-              >
-                <div>
-                  <Link
-                    to={`/blog/${article.category}/${article.slug}`}
-                    className="block aspect-16/10 bg-stone-200 overflow-hidden"
-                  >
-                    <img
-                      src={article.featuredImage || article.image}
-                      alt={article.title}
-                      width={600}
-                      height={375}
-                      loading="lazy"
-                      className="img-editorial w-full h-full object-cover object-center"
-                    />
-                  </Link>
-                  <div className="p-5 space-y-2">
-                    <div className="text-[10px] uppercase tracking-wider text-amber-800 font-semibold">
-                      {article.category}
+            {cityArticles.map((article) => {
+              const imgSrc = typeof article.featuredImage === 'object' && article.featuredImage !== null
+                ? (article.featuredImage as { src?: string }).src
+                : (typeof article.featuredImage === 'string' ? article.featuredImage : (article.image || 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80'));
+              const imgAlt = typeof article.featuredImage === 'object' && article.featuredImage !== null
+                ? ((article.featuredImage as { alt?: string }).alt || article.title)
+                : article.title;
+
+              return (
+                <article
+                  key={article.slug}
+                  className="group bg-white border border-stone-200 overflow-hidden flex flex-col justify-between"
+                >
+                  <div>
+                    <Link
+                      to={`/blog/${article.category}/${article.slug}`}
+                      className="block aspect-16/10 bg-stone-200 overflow-hidden"
+                    >
+                      <img
+                        src={imgSrc}
+                        alt={imgAlt}
+                        width={600}
+                        height={375}
+                        loading="lazy"
+                        className="img-editorial w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </Link>
+                    <div className="p-5 space-y-2">
+                      <div className="text-[10px] uppercase tracking-wider text-amber-800 font-semibold">
+                        {article.category}
+                      </div>
+                      <h4 className="font-editorial text-xl text-stone-950 group-hover:text-amber-800 transition-colors font-medium">
+                        <Link to={`/blog/${article.category}/${article.slug}`}>
+                          {article.title}
+                        </Link>
+                      </h4>
+                      <p className="text-xs text-stone-600 line-clamp-2">
+                        {article.excerpt}
+                      </p>
                     </div>
-                    <h4 className="font-editorial text-xl text-stone-950 group-hover:text-amber-800 transition-colors font-medium">
-                      <Link to={`/blog/${article.category}/${article.slug}`}>
-                        {article.title}
-                      </Link>
-                    </h4>
-                    <p className="text-xs text-stone-600 line-clamp-2">
-                      {article.excerpt}
-                    </p>
                   </div>
-                </div>
-                <div className="p-5 pt-0">
-                  <Link
-                    to={`/blog/${article.category}/${article.slug}`}
-                    className="inline-flex items-center gap-1 text-xs font-semibold uppercase tracking-wider text-stone-900 group-hover:text-amber-800 pt-3 border-t border-stone-100 transition-colors"
-                  >
-                    <span>Read Guide</span>
-                    <ArrowUpRight className="w-3.5 h-3.5" />
-                  </Link>
-                </div>
-              </article>
-            ))}
+                  <div className="p-5 pt-0">
+                    <Link
+                      to={`/blog/${article.category}/${article.slug}`}
+                      className="inline-flex items-center gap-1 text-xs font-semibold uppercase tracking-wider text-stone-900 group-hover:text-amber-800 pt-3 border-t border-stone-100 transition-colors"
+                    >
+                      <span>Read Guide</span>
+                      <ArrowUpRight className="w-3.5 h-3.5" />
+                    </Link>
+                  </div>
+                </article>
+              );
+            })}
           </div>
         </section>
       )}

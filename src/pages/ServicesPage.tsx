@@ -1,8 +1,18 @@
+import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowUpRight, Compass, Home, Building2, LayoutGrid, PenTool, Box, ShieldCheck } from 'lucide-react';
+import { ArrowUpRight, Compass, Home, Building2, LayoutGrid, PenTool, Box, ShieldCheck, MessageSquare } from 'lucide-react';
 import { SEOHead } from '../components/SEOHead';
 import { EditorialHero } from '../components/EditorialHero';
 import { SERVICES } from '../data/siteData';
+import { ServicePurchaseFlow } from '../components/services/ServicePurchaseFlow';
+import servicesExtraData from '../data/services-extra.json';
+
+interface ExtraServiceItem {
+  category: string;
+  imageUrl: string;
+  name: string;
+  price?: string;
+}
 
 const iconMap: Record<string, typeof Compass> = {
   Compass,
@@ -18,7 +28,39 @@ interface ServicesPageProps {
   onOpenConsultation?: () => void;
 }
 
+const EXTRA_GROUPS = [
+  'Design & Architecture Services',
+  'Valuation Services',
+  'Survey Services',
+  'Engineering Consultancy'
+];
+
 export function ServicesPage({ onOpenConsultation }: ServicesPageProps) {
+  const [filterMode, setFilterMode] = useState<'all' | 'buy-now' | 'engineering'>('all');
+  const [isPurchaseFlowOpen, setIsPurchaseFlowOpen] = useState<boolean>(false);
+  const [activePurchaseServiceId, setActivePurchaseServiceId] = useState<string>('2d-floor-plan');
+  const [activeExtraGroup, setActiveExtraGroup] = useState<string>('All Groups');
+
+  const extraServices = servicesExtraData as ExtraServiceItem[];
+
+  const handleBuyNow = (servicePackageId?: string) => {
+    if (servicePackageId) {
+      setActivePurchaseServiceId(servicePackageId);
+    }
+    setIsPurchaseFlowOpen(true);
+  };
+
+  const displayedServices = SERVICES.filter(s => {
+    if (filterMode === 'buy-now') return s.purchaseEnabled === true;
+    if (filterMode === 'engineering') return s.purchaseEnabled === false;
+    return true;
+  });
+
+  const filteredExtraServices = useMemo(() => {
+    if (activeExtraGroup === 'All Groups') return extraServices;
+    return extraServices.filter(s => s.category.toLowerCase() === activeExtraGroup.toLowerCase());
+  }, [extraServices, activeExtraGroup]);
+
   const servicesSchema = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
@@ -36,7 +78,7 @@ export function ServicesPage({ onOpenConsultation }: ServicesPageProps) {
   };
 
   return (
-    <main id="services-page" className="pt-28 pb-20">
+    <main id="services-page" className="pt-28 pb-20 bg-[#faf8f5] text-[#141414]">
       <SEOHead
         title="Architectural & Structural Services | Design Plus Studio Ajmer"
         description="Explore our integrated services: Residential villa design, commercial architecture, 3D elevation rendering, 2D floor plans, and structural calculations."
@@ -52,10 +94,54 @@ export function ServicesPage({ onOpenConsultation }: ServicesPageProps) {
         description="Every building stage—from municipal setback planning and structural RCC schedules to interior joinery and photorealistic elevations—is directed by our in-house engineering and architectural team."
       />
 
+      {/* Discipline & Commercial Scope Filter Bar */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 sm:-mt-12 mb-12">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-stone-200 pb-4 text-xs font-mono">
+          <div className="flex items-center gap-2 overflow-x-auto scrollbar-none pb-1 sm:pb-0">
+            <button
+              onClick={() => setFilterMode('all')}
+              className={`px-3 py-1.5 transition-all uppercase tracking-wider whitespace-nowrap ${
+                filterMode === 'all'
+                  ? 'bg-stone-900 text-white font-semibold'
+                  : 'text-stone-600 hover:text-stone-950 hover:bg-stone-100'
+              }`}
+            >
+              All Studio Disciplines ({SERVICES.length})
+            </button>
+            <button
+              onClick={() => setFilterMode('buy-now')}
+              className={`px-3 py-1.5 transition-all uppercase tracking-wider whitespace-nowrap flex items-center gap-1.5 ${
+                filterMode === 'buy-now'
+                  ? 'bg-[#C86635] text-white font-semibold'
+                  : 'text-stone-600 hover:text-stone-950 hover:bg-stone-100'
+              }`}
+            >
+              <span>Standardized Packages (Buy Now)</span>
+            </button>
+            <button
+              onClick={() => setFilterMode('engineering')}
+              className={`px-3 py-1.5 transition-all uppercase tracking-wider whitespace-nowrap ${
+                filterMode === 'engineering'
+                  ? 'bg-stone-900 text-white font-semibold'
+                  : 'text-stone-600 hover:text-stone-950 hover:bg-stone-100'
+              }`}
+            >
+              Custom &amp; Infrastructure (Proposal)
+            </button>
+          </div>
+
+          <div className="text-[11px] text-stone-500 font-mono hidden md:block">
+            {filterMode === 'all' && 'Direct execution drawings & chartered engineering audits'}
+            {filterMode === 'buy-now' && 'Instant online commissioning for residential blueprints & consultations'}
+            {filterMode === 'engineering' && 'Complex infrastructure, highways, bridges, and statutory master planning'}
+          </div>
+        </div>
+      </div>
+
       {/* Services Comprehensive Grid */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
         <div className="space-y-12">
-          {SERVICES.map((service, index) => {
+          {displayedServices.map((service, index) => {
             const Icon = iconMap[service.iconName] || Compass;
             const isReversed = index % 2 === 1;
 
@@ -63,18 +149,40 @@ export function ServicesPage({ onOpenConsultation }: ServicesPageProps) {
               <div
                 key={service.slug}
                 id={service.slug}
-                className={`grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center p-8 sm:p-12 bg-white border border-stone-200 transition-shadow hover:shadow-lg`}
+                className="service-card grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center p-6 sm:p-10 lg:p-12 bg-white border border-stone-200 transition-shadow hover:shadow-lg"
               >
                 {/* Visual */}
-                <div className={`lg:col-span-6 ${isReversed ? 'lg:order-2' : 'lg:order-1'}`}>
-                  <div className="relative aspect-16/10 bg-stone-200 overflow-hidden border border-stone-200">
+                <div className={`service-visual-col lg:col-span-6 ${isReversed ? 'lg:order-2' : 'lg:order-1'}`}>
+                  <div className="relative aspect-16/10 bg-stone-100 overflow-hidden border border-stone-200">
                     <img
-                      src={service.heroImage}
+                      src={service.heroImage || service.imageSrc}
                       alt={service.title}
                       width={900}
                       height={560}
                       loading="lazy"
-                      className="w-full h-full object-cover object-center"
+                      referrerPolicy="no-referrer"
+                      className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-[1.03]"
+                      onError={(e) => {
+                        const target = e.currentTarget;
+                        if (!target.dataset.failed) {
+                          target.dataset.failed = 'true';
+                          target.style.display = 'none';
+                          const visualCol = target.closest<HTMLElement>('.service-visual-col');
+                          if (visualCol) {
+                            visualCol.style.display = 'none';
+                          } else if (target.parentElement) {
+                            target.parentElement.style.display = 'none';
+                          }
+                          const card = target.closest<HTMLElement>('.service-card');
+                          if (card) {
+                            const contentCol = card.querySelector<HTMLElement>('.service-content-col');
+                            if (contentCol) {
+                              contentCol.classList.remove('lg:col-span-6');
+                              contentCol.classList.add('lg:col-span-12');
+                            }
+                          }
+                        }
+                      }}
                     />
                     <div className="absolute top-3 left-3 bg-stone-950/80 text-white text-[11px] uppercase tracking-wider px-2.5 py-1 font-mono">
                       0{index + 1}
@@ -83,7 +191,7 @@ export function ServicesPage({ onOpenConsultation }: ServicesPageProps) {
                 </div>
 
                 {/* Content */}
-                <div className={`lg:col-span-6 space-y-6 ${isReversed ? 'lg:order-1' : 'lg:order-2'}`}>
+                <div className={`service-content-col lg:col-span-6 space-y-6 ${isReversed ? 'lg:order-1' : 'lg:order-2'}`}>
                   <div className="space-y-2">
                     <div className="w-10 h-10 rounded-xs bg-stone-100 border border-stone-200 flex items-center justify-center text-stone-900 mb-2">
                       <Icon className="w-5 h-5" />
@@ -96,41 +204,210 @@ export function ServicesPage({ onOpenConsultation }: ServicesPageProps) {
                     </p>
                   </div>
 
-                  {/* Deliverables */}
-                  <div className="space-y-2 pt-2 border-t border-stone-100">
-                    <div className="text-[11px] uppercase tracking-wider text-stone-400 font-semibold">
-                      Standard Deliverables:
-                    </div>
-                    <ul className="text-xs sm:text-sm text-stone-700 space-y-1.5">
-                      {service.deliverables.map((d) => (
-                        <li key={d} className="flex items-start gap-2">
-                          <span className="text-amber-800 font-bold">•</span>
-                          <span>{d}</span>
-                        </li>
+                  {/* Deliverables List */}
+                  {service.deliverables && service.deliverables.length > 0 && (
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-mono text-stone-700 pt-2 border-t border-stone-100">
+                      {service.deliverables.map((deliv: string, idx: number) => (
+                        <div key={idx} className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 bg-[#C86635] shrink-0" />
+                          <span className="truncate">{deliv}</span>
+                        </div>
                       ))}
-                    </ul>
-                  </div>
+                    </div>
+                  )}
 
-                  <div className="pt-2 flex items-center gap-4">
-                    <Link
-                      to={`/services/${service.slug}`}
-                      className="inline-flex items-center gap-1.5 bg-stone-900 hover:bg-stone-800 text-[#FBFBF9] px-5 py-2.5 text-xs font-semibold uppercase tracking-wider transition-colors"
-                    >
-                      <span>Explore Dedicated Scope</span>
-                      <ArrowUpRight className="w-3.5 h-3.5" />
-                    </Link>
+                  {/* Conditional Render: Buy Now button vs Request a Proposal */}
+                  {service.purchaseEnabled && service.packageId ? (
+                    <div className="pt-3 border-t border-stone-100 flex flex-wrap items-center justify-between gap-4">
+                      <div>
+                        <span className="text-[10px] uppercase font-mono tracking-widest text-stone-400 block">
+                          Standardized Commission:
+                        </span>
+                        <span className="text-lg font-editorial font-bold text-stone-950">
+                          {service.pricingLabel || '₹5,000 onwards'}
+                        </span>
+                      </div>
 
-                    <button
-                      onClick={onOpenConsultation}
-                      className="text-xs font-semibold uppercase tracking-wider text-stone-800 hover:text-amber-800 transition-colors"
-                    >
-                      Inquire on this Service
-                    </button>
-                  </div>
+                      <div className="flex items-center gap-3">
+                        <button
+                          type="button"
+                          onClick={() => handleBuyNow(service.packageId)}
+                          className="inline-flex items-center gap-2 bg-[#C86635] hover:bg-[#b5582a] text-white px-6 py-3 text-xs font-semibold uppercase tracking-wider transition-colors shadow-sm"
+                        >
+                          <span>Commission Service Now</span>
+                          <ArrowUpRight className="w-4 h-4" />
+                        </button>
+
+                        <Link
+                          to={`/services/${service.slug}`}
+                          className="text-xs font-semibold uppercase tracking-wider text-stone-600 hover:text-stone-950 transition-colors inline-flex items-center gap-1"
+                        >
+                          <span>Details</span>
+                          <ArrowUpRight className="w-3.5 h-3.5" />
+                        </Link>
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="pt-3 border-t border-stone-100 space-y-3">
+                      <div className="flex items-baseline justify-between gap-2">
+                        <div className="flex items-baseline gap-2">
+                          <span className="text-[10px] uppercase font-mono tracking-widest text-stone-400">
+                            Engineering Appraisal:
+                          </span>
+                          <span className="text-xs font-mono text-stone-700 font-medium">
+                            Custom Technical Scope · Site-Specific Requirements
+                          </span>
+                        </div>
+                        <span className="text-[10px] font-mono uppercase tracking-wider text-stone-600 bg-stone-100 px-2 py-0.5 border border-stone-200 hidden sm:inline-block">
+                          Proposal / Technical Tender
+                        </span>
+                      </div>
+
+                      <div className="flex flex-wrap items-center gap-3 pt-1">
+                        <button
+                          type="button"
+                          onClick={onOpenConsultation}
+                          className="inline-flex items-center gap-1.5 bg-stone-950 hover:bg-stone-800 text-[#FBFBF9] px-5 py-2.5 text-xs font-semibold uppercase tracking-wider transition-colors shadow-xs"
+                        >
+                          <span>Request a Proposal</span>
+                          <ArrowUpRight className="w-3.5 h-3.5" />
+                        </button>
+
+                        <button
+                          type="button"
+                          onClick={onOpenConsultation}
+                          className="inline-flex items-center gap-1.5 border border-stone-300 hover:border-stone-800 text-stone-800 px-4 py-2.5 text-xs font-semibold uppercase tracking-wider transition-colors"
+                        >
+                          <span>Discuss Project</span>
+                        </button>
+
+                        <Link
+                          to={`/services/${service.slug}`}
+                          className="text-xs font-semibold uppercase tracking-wider text-stone-500 hover:text-stone-900 transition-colors inline-flex items-center gap-1 ml-auto"
+                        >
+                          <span>Technical Specifications</span>
+                          <ArrowUpRight className="w-3.5 h-3.5" />
+                        </Link>
+                      </div>
+                    </div>
+                  )}
+
                 </div>
               </div>
             );
           })}
+        </div>
+      </section>
+
+      {/* ADDITIONAL 30 LISTINGS FROM SERVICES-EXTRA.JSON UNDER 4 GROUPS */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
+        <div className="border-t border-stone-300 pt-16 pb-8 space-y-8">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
+            <div className="space-y-3">
+              <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-[0.2em] text-[#C86635]">
+                <span className="w-2 h-2 rounded-full bg-[#C86635]" />
+                <span>COMPREHENSIVE DIRECTORY</span>
+              </div>
+              <h2 className="font-editorial text-3xl sm:text-5xl text-stone-950 font-normal uppercase">
+                Specialized Studio Services &amp; Listings (30)
+              </h2>
+              <p className="text-sm text-stone-600 font-light max-w-2xl leading-relaxed">
+                Explore our specialized technical listings categorized into Design &amp; Architecture, Valuation, Survey, and Engineering Consultancy. Enquire directly via WhatsApp for immediate scheduling.
+              </p>
+            </div>
+
+            {/* Group Filter Pills */}
+            <div className="flex flex-wrap items-center gap-2">
+              <button
+                type="button"
+                onClick={() => setActiveExtraGroup('All Groups')}
+                className={`rounded-full px-4 py-2 text-xs font-sans font-medium transition-all cursor-pointer ${
+                  activeExtraGroup === 'All Groups'
+                    ? 'bg-stone-950 text-white shadow-sm'
+                    : 'bg-white text-stone-700 border border-stone-300 hover:border-[#C86635]'
+                }`}
+              >
+                All Groups ({extraServices.length})
+              </button>
+              {EXTRA_GROUPS.map(grp => {
+                const count = extraServices.filter(s => s.category.toLowerCase() === grp.toLowerCase()).length;
+                const isSelected = activeExtraGroup.toLowerCase() === grp.toLowerCase();
+                return (
+                  <button
+                    key={grp}
+                    type="button"
+                    onClick={() => setActiveExtraGroup(grp)}
+                    className={`rounded-full px-4 py-2 text-xs font-sans font-medium transition-all cursor-pointer ${
+                      isSelected
+                        ? 'bg-stone-950 text-white shadow-sm'
+                        : 'bg-white text-stone-700 border border-stone-300 hover:border-[#C86635]'
+                    }`}
+                  >
+                    {grp} ({count})
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Service Rows Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6">
+            {filteredExtraServices.map((srv, idx) => {
+              const hasPrice = srv.price && srv.price.trim() !== '' && srv.price.toLowerCase() !== 'request for price';
+              const priceDisplay = hasPrice ? srv.price : 'Price on request';
+              const whatsappUrl = `https://wa.me/917976453090?text=${encodeURIComponent(
+                `Hi, I am interested in inquiring about the service "${srv.name}" (${srv.category}). Please share availability and pricing details.`
+              )}`;
+
+              return (
+                <div
+                  key={`${srv.name}-${idx}`}
+                  className="bg-white rounded-2xl p-5 border border-stone-200 shadow-xs hover:shadow-md transition-all flex flex-col justify-between gap-4"
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="w-16 h-16 rounded-xl bg-stone-100 overflow-hidden shrink-0 border border-stone-200">
+                      <img
+                        src={srv.imageUrl}
+                        alt={srv.name}
+                        loading="lazy"
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                          (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1541888946425-d0fbb186c5f6?auto=format&fit=crop&w=300&q=80';
+                        }}
+                      />
+                    </div>
+
+                    <div className="space-y-1.5 flex-1">
+                      <span className="text-[10px] font-mono uppercase tracking-wider text-[#C86635] font-semibold">
+                        {srv.category}
+                      </span>
+                      <h3 className="font-sans font-medium text-sm text-stone-950 line-clamp-2 leading-snug">
+                        {srv.name}
+                      </h3>
+                      <div className="text-xs font-bold text-stone-900 pt-1">
+                        {priceDisplay}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="pt-2 border-t border-stone-100 flex items-center justify-between">
+                    <span className="text-[10px] font-mono uppercase text-stone-400">Design Plus Certified</span>
+                    <a
+                      href={whatsappUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 bg-stone-950 hover:bg-[#C86635] text-white px-4 py-2 rounded-full text-xs font-sans font-medium transition-colors"
+                      aria-label={`Enquire about ${srv.name} on WhatsApp`}
+                    >
+                      <MessageSquare className="w-3.5 h-3.5 text-emerald-400" />
+                      <span>WhatsApp Enquiry</span>
+                      <ArrowUpRight className="w-3.5 h-3.5 opacity-70" />
+                    </a>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </section>
 
@@ -154,6 +431,14 @@ export function ServicesPage({ onOpenConsultation }: ServicesPageProps) {
           </button>
         </div>
       </section>
+
+      {/* Reusable Refined Service Purchase Flow Modal */}
+      <ServicePurchaseFlow
+        isOpen={isPurchaseFlowOpen}
+        onClose={() => setIsPurchaseFlowOpen(false)}
+        initialServiceId={activePurchaseServiceId}
+        onOpenConsultation={onOpenConsultation}
+      />
 
     </main>
   );

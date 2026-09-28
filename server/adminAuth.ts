@@ -26,13 +26,30 @@ export const ADMIN_ALLOWLIST: string[] = [
   (process.env.ADMIN_EMAIL_2 || "designplusajmer@gmail.com").toLowerCase().trim()
 ];
 
-const JWT_SECRET = process.env.ADMIN_JWT_SECRET || "designplus-super-secret-admin-session-hmac-key-2026";
+let JWT_SECRET: string = process.env.ADMIN_SESSION_SECRET || process.env.ADMIN_JWT_SECRET || "";
+if (!JWT_SECRET) {
+  if (process.env.NODE_ENV === "production") {
+    throw new Error("[SECURITY CRITICAL] ADMIN_SESSION_SECRET is required in production environment. Refusing to start without secure secret.");
+  }
+  console.warn(
+    "[SECURITY WARNING] ADMIN_SESSION_SECRET is not set in environment. Generated ephemeral session key; admin sessions will not survive server restarts. Please set ADMIN_SESSION_SECRET in your environment."
+  );
+  JWT_SECRET = crypto.randomBytes(64).toString("hex");
+}
+
 let CURRENT_PASSWORD_HASH: string | null = null;
 let CURRENT_PASSWORD_SALT: string | null = null;
 
-// Initialize password hash with the bootstrap password
-function getInitialPasswordHash(): { salt: string; hash: string } {
-  const bootstrapPassword = process.env.ADMIN_BOOTSTRAP_PASSWORD || "design";
+export function isPasswordLoginConfigured(): boolean {
+  return !!process.env.ADMIN_BOOTSTRAP_PASSWORD;
+}
+
+// Initialize password hash with the bootstrap password if configured
+function getInitialPasswordHash(): { salt: string; hash: string } | null {
+  const bootstrapPassword = process.env.ADMIN_BOOTSTRAP_PASSWORD;
+  if (!bootstrapPassword) {
+    return null;
+  }
   const salt = crypto.randomBytes(16).toString("hex");
   const hash = crypto.pbkdf2Sync(bootstrapPassword, salt, 10000, 64, "sha512").toString("hex");
   return { salt, hash };
@@ -70,8 +87,13 @@ const auditLogsStore: AuditLogEntry[] = [
 
 // Helper: Verify password using PBKDF2
 function verifyPassword(password: string): boolean {
+  if (!password) return false;
+
   if (!CURRENT_PASSWORD_HASH || !CURRENT_PASSWORD_SALT) {
     const initial = getInitialPasswordHash();
+    if (!initial) {
+      return false;
+    }
     CURRENT_PASSWORD_SALT = initial.salt;
     CURRENT_PASSWORD_HASH = initial.hash;
   }
@@ -189,7 +211,12 @@ export function authenticateAdmin(emailRaw: string, passwordRaw: string, clientI
   message?: string;
   token?: string;
   admin?: AdminUser;
-} {
+} | null {
+  if (!isPasswordLoginConfigured()) {
+    console.warn(`[AUTH NOTICE] Password login attempted from IP ${clientIp}, but ADMIN_BOOTSTRAP_PASSWORD is not configured.`);
+    return null;
+  }
+
   const rateStatus = checkRateLimit(clientIp);
   if (!rateStatus.allowed) {
     return {

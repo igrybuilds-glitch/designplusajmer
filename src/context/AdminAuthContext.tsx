@@ -1,5 +1,10 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
-import { auth, signInWithGoogle as firebaseSignInWithGoogle, logOut as firebaseLogOut } from "../lib/firebase";
+import { 
+  auth, 
+  signInWithGoogle as firebaseSignInWithGoogle, 
+  logOut as firebaseLogOut,
+  getCurrentUserIdToken 
+} from "../lib/firebase";
 
 export interface AdminProfile {
   email: string;
@@ -146,32 +151,35 @@ export const AdminAuthProvider: React.FC<{ children: React.ReactNode }> = ({ chi
         return { success: false, error: errStr };
       }
 
-      // Check with backend
-      const res = await fetch("/api/admin/login", {
+      const idToken = await getCurrentUserIdToken();
+      if (!idToken) {
+        setLoading(false);
+        const errStr = "Failed to obtain secure authentication credentials from Google session.";
+        setError(errStr);
+        return { success: false, error: errStr };
+      }
+
+      // Verify ID token with backend and receive admin session JWT
+      const res = await fetch("/api/admin/login/google", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, password: "design" })
+        body: JSON.stringify({ idToken })
       });
 
       const data = await res.json();
       if (res.ok && data.token) {
+        const adminData = data.admin || data.user;
         setAdminToken(data.token);
-        setAdminUser(data.admin);
+        setAdminUser(adminData);
         sessionStorage.setItem(TOKEN_KEY, data.token);
-        sessionStorage.setItem(USER_KEY, JSON.stringify(data.admin));
+        sessionStorage.setItem(USER_KEY, JSON.stringify(adminData));
         setLoading(false);
         return { success: true };
       } else {
-        // Direct allowlist authorization fallback
-        const adminObj: AdminProfile = {
-          email,
-          role: "admin",
-          displayName: firebaseUser.displayName || (email.includes("sudhir") ? "Er. Sudhir Soni" : "Admin")
-        };
-        setAdminUser(adminObj);
-        sessionStorage.setItem(USER_KEY, JSON.stringify(adminObj));
+        const errStr = data.error || "Access Denied: Google administrator authentication failed.";
+        setError(errStr);
         setLoading(false);
-        return { success: true };
+        return { success: false, error: errStr };
       }
     } catch (err: any) {
       const msg = err.message || "Failed to complete Google administrative authentication";

@@ -184,7 +184,7 @@ export const BLOG_ARTICLES: BlogArticleRecord[] = [
       'On the facade, structural loading is transferred cleanly to perimeter shear walls, liberating the entire street level for continuous floor-to-ceiling glass display windows that maximize pedestrian visibility along busy transit corridors like Jaipur Road and Ana Sagar Circular Road.',
       'The slightly higher upfront engineering investment in post-tensioned design typically delivers a 20% to 30% premium in long-term lease rates and dramatically accelerates tenant leasing velocity.'
     ],
-    featuredImage: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80',
+    featuredImage: '/images/blog/commercial-facade-columns.webp',
     author: 'Er. Sudhir Soni, Chartered Engineer',
     publishedAt: '2024-05-18',
     updatedAt: '2024-06-02',
@@ -200,7 +200,7 @@ export const BLOG_ARTICLES: BlogArticleRecord[] = [
     relatedLocations: ['ajmer', 'jaipur'],
     relatedArticles: ['office-space-planning-and-workplace-ergonomics', 'structural-safety-and-architecture-in-rajasthan'],
     date: 'May 2024',
-    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80'
+    image: '/images/blog/commercial-facade-columns.webp'
   },
 
   // 3. Commercial Design - Article 6
@@ -211,15 +211,15 @@ export const BLOG_ARTICLES: BlogArticleRecord[] = [
     slug: 'office-space-planning-and-workplace-ergonomics',
     title: 'Modern Office Space Planning: Circulation Grids, Acoustic Zones, and Natural Daylight',
     metaTitle: 'Office Space Planning & Workplace Ergonomics | Design Plus',
-    metaDescription: 'Essential architectural guidelines for designing contemporary corporate workspaces: desk spacing, acoustic separation, HVAC zoning, and natural illumination.',
-    excerpt: 'How spatial programming and biophilic workplace design improve employee productivity, reduce acoustic fatigue, and adapt to changing team densities.',
+    metaDescription: 'Architectural guidelines for contemporary corporate workspaces: circulation spines, acoustic separation baffles, perimeter desk daylighting, and ergonomic zone planning.',
+    excerpt: 'Architectural strategies for high-performance corporate workspaces: organizing floor plates along linear circulation spines, controlling acoustic reverberation with ceiling baffles, and optimizing glare-free daylighting.',
     content: [
       'The modern corporate workspace has evolved far beyond repetitive cubicle grids. Today’s high-performance offices require dynamic spatial ecosystems that balance high-focus concentration zones with collaborative breakout environments.',
       'We organize workplace floor plans along clean circulation spines. High-traffic social areas—such as reception lounges, pantry cafes, and all-hands meeting suites—are clustered near the central elevator core to contain ambient sound.',
       'Workstation banks are oriented perpendicular to perimeter glazing, guaranteeing that every desk receives glare-controlled daylight without direct solar reflection on computer monitors.',
       'Acoustic planning incorporates micro-perforated acoustic ceiling baffles, fabric-wrapped wall paneling, and strategic carpet transitions that reduce reverberation times below 0.6 seconds, eliminating the distracting background hum typical of poorly planned offices.'
     ],
-    featuredImage: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80',
+    featuredImage: '/images/blog/office-space-planning.webp',
     author: 'Ar. Vipul Verma & Er. Amit Soni',
     publishedAt: '2024-04-12',
     updatedAt: '2024-05-01',
@@ -235,7 +235,7 @@ export const BLOG_ARTICLES: BlogArticleRecord[] = [
     relatedLocations: ['ajmer', 'jaipur'],
     relatedArticles: ['commercial-facade-design-and-open-column-spans', 'minimalist-interior-materiality-and-natural-stone'],
     date: 'April 2024',
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80'
+    image: '/images/blog/office-space-planning.webp'
   },
 
   // 4. Interior Design - Article 7
@@ -448,6 +448,90 @@ export const BLOG_ARTICLES: BlogArticleRecord[] = [
     relatedArticles: ['how-to-choose-an-architect-in-ajmer', 'structural-safety-and-architecture-in-rajasthan'],
     date: 'July 2024',
     image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80'
+  },
+
+  // 7. Architectural Fees & Budgeting - Article 13
+  {
+    id: 'art-fees-2026',
+    category: 'architecture',
+    subcategory: 'Fee & Contract Guide 2026',
+    slug: 'architect-fees-2026-guide-ajmer',
+    title: 'Architect Fees in 2026: What Ajmer Homeowners Must Know Before Signing',
+    metaTitle: 'Architect Fees in 2026: Ajmer Homeowner Guide | Design Plus',
+    metaDescription: '2026 action guide to architect fees and charges in Ajmer. Learn quote breakdowns, 5 hidden costs, ADA fee updates, and real budgeting for a 2,000 sq.ft home.',
+    excerpt: 'A practical 2026 action guide for Ajmer homeowners: how to decode architectural quotes, understand inflation impacts, spot red flags, and budget accurately.',
+    content: [
+      'Entering 2026, constructing a custom residential bungalow or commercial property in Ajmer requires a smarter, more vigilant approach to budgeting. Rising material inflation—with basic RCC civil rates now climbing between ₹1,800 and ₹2,400 per sq.ft—has pushed the financial stakes of architectural decision-making higher than ever before.',
+      'What Changed in 2026 for Ajmer Homeowners: The architectural fee landscape has shifted in three key areas. First, percentage-of-cost fees (typically 4% to 7% for bespoke homes) now reflect elevated gross construction figures, meaning homeowners must negotiate well-defined caps and transparent milestone benchmarks. Second, the Ajmer Development Authority (ADA) and urban local bodies have restructured sanction schedules with modernized online scrutiny charges, revised betterment fees, and updated green building FAR exemptions. Third, the Goods and Services Tax (GST at 18%, SAC code 998321) applies to all licensed professional services—an outlay that corporate or commercial clients can offset via Input Tax Credit (ITC), but residential private builders must explicitly budget into their net cash flow.',
+      'How to Read an Architect\'s Quotation Line-by-Line: Never evaluate a professional quote based solely on the bottom-line figure. A rigorous agreement separates architectural schematic concept design from structural engineering, interior working drawings, and MEP (mechanical, electrical, plumbing) layouts. Scrutinize the revision clause: ethical practices include 2 to 3 comprehensive design iterations during the schematic phase, whereas ambiguous contracts charge surprise penalty fees for standard layout modifications. Furthermore, verify whether site-supervision visits are bundled at critical structural milestones (foundation casting, plinth, lintel, and roof slab shuttering) or billed piecemeal at ₹1,500 to ₹3,500 per ad-hoc contractor call.',
+      'The 5 Hidden Costs Homeowners Routinely Miss: 1. Geotechnical Soil Investigation: Ajmer’s mixed terrain—ranging from Foy Sagar granitic formations to Ana Sagar silt strata—requires borehole testing (₹15,000 to ₹30,000) before foundation design. 2. Statutory Liaison & Scrutiny Charges: ADA file processing, surveyor verification, and fire safety scrutiny fees are government statutory dues separate from professional design fees. 3. 3D Elevation Iterations: While preliminary volumetric perspectives are standard, photo-realistic ray-traced walkthroughs beyond agreed limits carry rendering surcharges. 4. Daily PMC Site-Supervision: Periodic architectural inspection differs fundamentally from full-time Project Management Consultancy (PMC) where a clerk of works supervises daily concrete pours. 5. As-Built Drawing Sets: Post-construction sanction regularizations and structural stability certificates for municipal completion.',
+      'Red Flags in Suspiciously Cheap Quotes: Beware of local drafting kiosks advertising "full architectural plans for ₹10 to ₹15 per sq.ft." These operators recycle generic stock plans without considering solar path, wind direction, or Vastu alignments. More dangerously, they omit chartered structural engineering certifications, outsourcing beam-column framing to unlicensed contractors who overspend on redundant steel or undersize footing safety. Remember: a turnkey contractor offering "free architectural drawings" embeds their profit margin directly into inflated material procurement and unmonitored masonry volume.',
+      'Worked Budgeting Example for a 2,000 Sq.Ft House in Ajmer: Consider a G+1 independent villa in Panchsheel or Vaishali Nagar with a total built-up area of 2,000 sq.ft. At a standard 2026 civil construction rate of ₹2,100/sq.ft, the base construction expenditure equals ₹42,00,000. An integrated architectural and chartered structural engineering scope under a comprehensive 5% fee model totals ₹2,10,000 (roughly ₹105/sq.ft). Structured into milestone stages—10% advance concept, 20% schematic design, 30% structural working drawings and sanction drawings, 25% MEP and interior layouts, and 15% site quality sign-off—this professional investment guarantees IS-code seismic safety, avoids costly on-site demolition, and routinely saves 12% to 18% in construction waste.'
+    ],
+    featuredImage: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200&q=80',
+    author: 'Ar. Vipul Verma, M.H.S. (Belgium)',
+    publishedAt: '2026-01-10',
+    updatedAt: '2026-02-15',
+    status: 'published',
+    sources: [
+      'Council of Architecture (CoA) Comprehensive Architectural Practice & Fee Matrix',
+      'Ajmer Development Authority (ADA) Schedule of Scrutiny & Sanction Charges 2025–2026',
+      'Institution of Engineers (India) Chartered Engineering Fee Advisory Standards',
+      'Central Board of Indirect Taxes and Customs (CBIC) GST Rates for SAC 998321'
+    ],
+    tags: ['Architect Fees 2026', 'Architect Charges Ajmer', 'House Construction Budgeting Ajmer', 'ADA Approvals', 'Chartered Engineers', 'Contract Guide'],
+    readTime: '8 min read',
+    relatedServices: ['architectural-design', 'structural-design', '2d-floor-planning', '3d-elevation-design'],
+    relatedProjects: ['ana-sagar-residence', 'pushkar-courtyard-haven'],
+    relatedLocations: ['ajmer', 'kishangarh', 'beawar'],
+    relatedArticles: ['how-to-choose-an-architect-in-ajmer', 'navigating-ada-building-byelaws-ajmer', 'structural-safety-and-architecture-in-rajasthan'],
+    date: 'January 2026',
+    image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200&q=80'
+  },
+
+  // 8. Vastu & Residential Living - Article 14
+  {
+    id: 'art-vastu-tips-001',
+    category: 'architecture',
+    subcategory: 'Practical Vastu Remedies',
+    slug: 'vastu-tips-for-ajmer-homes',
+    title: '10 Practical Vastu Tips for Ajmer Homes (No Demolition Required)',
+    metaTitle: '10 Practical Vastu Tips for Ajmer Homes | Design Plus',
+    metaDescription: '10 actionable Vastu tips for Ajmer homes without demolition. Expert non-structural remedies for entrance, kitchen, bedroom, and mirrors by Design Plus.',
+    excerpt: 'Actionable, non-structural Vastu tips for Ajmer homeowners: 10 practical remedies for entrances, kitchens, bedrooms, mirrors, and plot selection with zero demolition.',
+    content: [
+      'Many homeowners in Ajmer believe that aligning their house with Vastu Shastra requires drastic measures—tearing down load-bearing masonry walls, relocating reinforced concrete staircases, or ripping apart finished bathrooms. In architectural reality, classical Vastu Shastra is fundamentally an ancient science of solar orientation, prevailing winds, and elemental equilibrium (Pancha Mahabhuta). When spatial layouts need rebalancing, non-destructive remedies offer effective, pragmatic harmony without structural disruption.',
+      '1. Main Entrance Remedies & Door Alignment: The primary threshold governs the influx of vital prana. Keep the entrance impeccably illuminated with warm 2700K lighting, unobstructed by shoe racks or trash bins. If the doorway opens towards a compromised quadrant, install an elemental brass or copper strip embedded flush along the floor threshold, hang an auspicious brass toran, and ensure the main shutter swings inward smoothly a full 90 degrees without squeaks or structural binding.',
+      '2. Kitchen Corrections Without Shifting Walls: The culinary hearth belongs in the Southeast (Agni) zone. If your existing kitchen is situated in the Northwest (Vayu) or North, you do not need to tear out the plumbing. Install a green Baroda marble slab or neutral granite plinth directly beneath the gas stove, orient your cooking posture facing East toward the morning sun, and ensure drinking water vessels or RO purifiers are positioned on the Northeast wall, physically separated by at least three feet from active burners.',
+      '3. Master Bedroom Position & Sleep Direction: The master suite achieves optimal stability in the Southwest (Nairutya). For existing bedrooms across other zones, the single most critical correction is sleeping orientation: always sleep with your head pointing toward the South (earth grounding) or East (mental clarity), and never toward the North where magnetic repulsion disturbs sleep cycles and blood pressure. Anchor the room with earthy taupe, sand, or warm beige palettes, and eliminate television screens within six feet of the headboard.',
+      '4. Mirrors to Relocate Immediately: Mirrors reflect and amplify electromagnetic energy. Never place a mirror directly opposite the bed where it reflects sleeping occupants, as this correlates with persistent restlessness and morning fatigue. If wardrobe mirrors cannot be removed, screen them with soft linen curtains or frosted film at night. Furthermore, avoid mirrors facing the main entrance door or toilet entrances, and ensure decorative mirrors are anchored exclusively on North or East walls.',
+      '5. Staircase Vastu Remedies: A staircase represents heavy dead load. In existing floor plans, staircases should ascend in a clockwise direction. If a staircase sits in an unfavorable orientation, paint the stairwell in grounding sandstone or light earthen tones and ensure bright, diffused lighting throughout the flight. Crucially, keep the under-stair cavity completely clear—never convert this enclosed, low-ceiling space into a prayer altar (Puja room), kitchen counter, or guest toilet.',
+      '6. Toilet & Bathroom Non-Structural Corrections: Toilets represent water drainage and waste discharge. If a bathroom is located in an sensitive zone such as the Northeast or Southwest, keep the door permanently shut. Place an open ceramic bowl containing raw, unrefined rock sea salt in an elevated corner to absorb humidity and stagnant ions, replacing the salt every 30 days. Maintain the WC seat lid in a closed position and apply a thin zinc or lead partition tape under the door threshold to seal vibrational leakage.',
+      '7. Balcony & Terrace Directional Usage: Balconies in the North and East should be maintained lightweight, uncluttered, and open to morning sunlight—ideal for sacred Tulsi planters and flowering jasmine. Conversely, South and West terraces and balconies should be weighted down: install heavier terracotta planters, wooden pergolas, shaded louvers, or place your overhead water storage tanks here to naturally ground the high-energy Nairutya sector.',
+      '8. Directional Color & Lighting Coordination: Paint has direct psychological and energetic impact. Repaint rooms in accordance with cardinal resonance: East flourishes with light greens, ivories, and crisp whites; North responds to pale sky blues and off-whites; Southeast demands soft corals, creams, and warm pastels; Southwest thrives with grounding ochre, clay, and sand. Replace harsh cold-white 6500K LED tubes with warm 2700K–3000K diffused fixtures.',
+      '9. Plot-Selection Guidelines for Ajmer Land Buyers: When acquiring land in expanding Ajmer sectors like Panchsheel, Vaishali Nagar, or along the Beawar/Kishangarh highways, inspect natural topography and road alignment. Prioritize plots sloping gently toward the Northeast, choose regular rectangular or square geometries with a minimum 1:1.5 to 1:2 aspect ratio, avoid sharp triangular cuts, and verify that the plot does not confront a direct T-junction spear (Veedhi Shoola) without adequate buffer space.',
+      '10. Vastu for Rented Apartments: Renters facing strict lease restrictions can implement powerful movable remedies without drilling or structural alterations. Hang a five-rod hollow brass wind chime in the Northwest balcony to stimulate fluid circulation, install a natural Himalayan pink salt lamp in the living room conversation area, employ freestanding wooden lattice screens (jaalis) to create subtle entrance privacy foyers, and align your home office workstation facing North or East.',
+      'When Tips Are Not Enough: While non-destructive tips resolve everyday household imbalances, complex renovations, commercial buildings, and ground-up architectural commissions require chartered engineering and precise millimeter planning. When structural beams, load-bearing shear walls, or municipal setbacks conflict with Vastu geometry, Design Plus offers certified Vastu-integrated architectural design and audit services that balance classical principles with modern IS-code structural safety.'
+    ],
+    featuredImage: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
+    author: 'Ar. Vipul Verma, M.H.S. (Belgium)',
+    publishedAt: '2026-02-20',
+    updatedAt: '2026-03-01',
+    status: 'published',
+    sources: [
+      'Brihat Samhita and Classical Vastu Shastra Directional Matrices',
+      'Council of Architecture (CoA) Residential Design Standards',
+      'Bureau of Indian Standards: National Building Code of India (NBC 2016) Part 8',
+      'Design Plus Regional Architectural & Environmental Research Archive'
+    ],
+    tags: ['Vastu Tips for Home', 'Vastu Tips for House', 'Vastu Remedies Ajmer', 'Non-Demolition Vastu', 'House Planning', 'Ajmer Homes'],
+    readTime: '7 min read',
+    relatedServices: ['vastu-consultation', 'architectural-design', '2d-floor-planning', '3d-elevation-design'],
+    relatedProjects: ['ana-sagar-residence', 'pushkar-courtyard-haven'],
+    relatedLocations: ['ajmer', 'pushkar', 'jaipur', 'kishangarh'],
+    relatedArticles: ['vastu-shastra-and-contemporary-floor-plan-ergonomics', 'architect-in-ajmer-guide', 'climate-responsive-design-rajasthan'],
+    date: 'February 2026',
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80'
   }
 ];
 

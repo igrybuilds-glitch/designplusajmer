@@ -110,6 +110,22 @@ export const PUBLIC_ROUTES: RouteDefinition[] = [
     indexable: true,
     parent: '/services'
   },
+  {
+    path: '/project-management',
+    type: 'service',
+    title: 'PMC & Turnkey Project Execution Ajmer | Design Plus',
+    primaryIntent: 'Chartered Project Management Consultancy, Turnkey Site Supervision & Quality Audits',
+    indexable: true,
+    parent: '/services'
+  },
+  {
+    path: '/architect-fees-ajmer',
+    type: 'service',
+    title: 'Architect Fees in Ajmer (2025 Guide) | Design Plus',
+    primaryIntent: 'Complete Pricing & Cost Guide for Architectural and Structural Engineering Fees in Ajmer',
+    indexable: true,
+    parent: '/services'
+  },
 
   // 03 Project Portfolio & Categories
   {

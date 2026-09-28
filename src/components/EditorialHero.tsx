@@ -1,5 +1,12 @@
 import React from 'react';
-import styles from './EditorialHero.module.css';
+
+const styles = {
+  heroWrapper: 'flex flex-col',
+  textSection: 'hero-text-section',
+  imageSection: 'hero-image-section',
+  imageContainer: 'overflow-hidden',
+  image: 'hero-gentle-zoom',
+};
 
 export interface EditorialHeroProps {
   subtitle?: React.ReactNode;

@@ -1,4 +1,4 @@
-import { TeamMember, Project, Service, LocationInfo, BlogPost, ProcessStep, FAQItem } from '../types';
+import { TeamMember, LocationInfo, ProcessStep, FAQItem } from '../types';
 
 export const BUSINESS_INFO = {
   name: 'Design Plus',
@@ -25,8 +25,8 @@ export const LEADERSHIP: TeamMember = {
   name: 'Er. Sudhir Soni',
   role: 'Founder, CEO & Principal Structural Engineer',
   qualification: 'M.E. (Structure) | M.I.E. | FIV | Chartered Engineer',
-  bio: 'With extensive practice in advanced structural analysis and civil engineering, Er. Sudhir Soni leads Design Plus as a Chartered Engineer and Fellow of the Institution of Valuers (FIV). His leadership fuses empirical structural safety with functional architectural planning.',
-  specialization: 'Structural Analysis, Earthquake-Resistant Design, Valuation & Institutional Engineering'
+  bio: 'With over three decades of engineering leadership, Er. Sudhir Soni has pioneered structural design across Rajasthan. As a Chartered Engineer and Approved Valuer (FIV), he ensures rigorous structural integrity, stability calculations, and authority compliances for multi-story residential, commercial, and infrastructure developments.',
+  specialization: 'High-Rise RCC Structures, Seismic Design, Structural Audits & Chartered Certification'
 };
 
 export const TEAM_MEMBERS: TeamMember[] = [
@@ -60,186 +60,54 @@ export const TEAM_MEMBERS: TeamMember[] = [
   }
 ];
 
-export const SERVICES: Service[] = [
-  {
-    slug: 'architectural-design',
-    title: 'Architectural Design',
-    shortDescription: 'Comprehensive spatial planning from conceptual sketches to complete execution drawings.',
-    fullDescription: 'Our architectural practice treats each project as a site-specific dialogue between environmental orientation, user lifestyle, and material tactility. From zoning to facade rhythms, our team synthesizes spatial poetry with technical buildability.',
-    deliverables: [
-      'Comprehensive Master Layouts & Site Analysis',
-      'Context-driven Massing & Spatial Schemes',
-      'Regulatory & Municipal Approval Documentation',
-      'Material Specifications & Tender Packages'
-    ],
-    processHighlights: [
-      'Site topography and sun-path mapping',
-      'Iterative schematic space-planning',
-      'Integration with structural and MEP grids'
-    ],
-    iconName: 'Compass',
-    heroImage: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80'
-  },
-  {
-    slug: 'residential-architecture',
-    title: 'Residential Architecture',
-    shortDescription: 'Custom residences, family villas, and multi-generational homes tailored to Rajasthan’s climate.',
-    fullDescription: 'We design bespoke residences that prioritize thermal comfort, natural cross-ventilation, and intimate family privacy. By reinterpreting courtyards, shaded verandas, and clean contemporary lines, each residence becomes a tranquil sanctuary.',
-    deliverables: [
-      'Bespoke Villa & Bungalow Blueprints',
-      'Thermal Performance & Cross-Ventilation Planning',
-      'Courtyard & Private Garden Integration',
-      'Complete Working & Construction Details'
-    ],
-    processHighlights: [
-      'Family lifestyle and generational zoning workshops',
-      'Micro-climate and shading analysis',
-      'Coordination with local masonry and stone craftsmen'
-    ],
-    iconName: 'Home',
-    heroImage: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80'
-  },
-  {
-    slug: 'commercial-architecture',
-    title: 'Commercial Architecture',
-    shortDescription: 'High-visibility corporate offices, retail hubs, and commercial centers built for operational efficiency.',
-    fullDescription: 'Commercial structures require bold street presence, fluid customer ingress, and flexible structural spans. Design Plus delivers commercial architecture engineered for maximum return on square footage while honoring civic aesthetics.',
-    deliverables: [
-      'High-Density Floor Spans & Column Grids',
-      'Pedestrian & Vehicular Circulation Systems',
-      'Commercial Facade Engineering & Signage Integration',
-      'Safety, Fire & Local Authority Byelaw Compliance'
-    ],
-    processHighlights: [
-      'Footfall and customer pathway modeling',
-      'Large-span structural coordination',
-      'Energy efficiency and HVAC integration'
-    ],
-    iconName: 'Building2',
-    heroImage: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80'
-  },
-  {
-    slug: 'interior-design',
-    title: 'Interior Design',
-    shortDescription: 'Refined architectural interiors focused on bespoke joinery, acoustic balance, and tactile materiality.',
-    fullDescription: 'We believe interior spaces are the tactile continuation of the architectural envelope. We curate custom woodwork, architectural lighting, neutral stone palettes, and ergonomic proportions that evoke enduring calm.',
-    deliverables: [
-      'Reflected Ceiling & Architectural Lighting Plans',
-      'Custom Millwork, Cabinetry & Joinery Details',
-      'Finishes, Natural Stone & Palette Schedules',
-      'Bathroom, Kitchen & Service Detailing'
-    ],
-    processHighlights: [
-      'Material mood boards and physical sample curation',
-      'Lighting lux calculations and ambient mood zoning',
-      'On-site joinery mockups and precision alignment'
-    ],
-    iconName: 'LayoutGrid',
-    heroImage: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80'
-  },
-  {
-    slug: '2d-floor-planning',
-    title: '2D Floor Planning',
-    shortDescription: 'Precision architectural layouts optimizing circulation, Vastu compliance, and functional ergonomics.',
-    fullDescription: 'A flawless floor plan is the invisible spine of every exceptional building. We produce clear, millimeter-accurate 2D drawings with intentional room flow, zero dead corridors, and pragmatic furniture clearances.',
-    deliverables: [
-      'Dimensioned Floor Plans with Furniture Layouts',
-      'Circulation Diagrams & Functional Zoning',
-      'Vastu Directional Optimization',
-      'Detailed Wall, Door & Window Schedules'
-    ],
-    processHighlights: [
-      'Spatial adjacency matrix formulation',
-      'Dimensional checking against structural columns',
-      'User movement simulation and ergonomics verification'
-    ],
-    iconName: 'PenTool',
-    heroImage: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80'
-  },
-  {
-    slug: '3d-elevation-design',
-    title: '3D Elevation Design',
-    shortDescription: 'Photorealistic architectural visualizations showcasing texture, shadow play, and exterior geometry.',
-    fullDescription: 'Before ground is broken, our 3D visualization studio models accurate real-world daylighting, authentic stone claddings, metal screens, and louvers. This gives clients absolute clarity and confidence in their building’s final exterior expression.',
-    deliverables: [
-      'High-Resolution Day & Night Architectural Renders',
-      'Facade Materiality, Texture & Color Selection',
-      'Parapet, Balcony & Screening Detailed Profiles',
-      'Exterior Architectural Lighting Visuals'
-    ],
-    processHighlights: [
-      '3D volumetric digital modeling',
-      'Physical sun-position shadow calculation',
-      'Material calibration with local stone and paints'
-    ],
-    iconName: 'Box',
-    heroImage: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80'
-  },
-  {
-    slug: 'structural-design',
-    title: 'Structural Design',
-    shortDescription: 'Chartered engineering calculations, RCC detailing, and earthquake-resistant framing systems.',
-    fullDescription: 'Under the direct supervision of Chartered Engineer Er. Sudhir Soni, our structural engineering department produces calculations and reinforcement drawings that ensure extreme longevity, seismic resilience, and material economy.',
-    deliverables: [
-      'Chartered Engineer Structural Stability Certificates',
-      'RCC Column, Beam, Footing & Slab Schedules',
-      'Seismic Zone III/IV Structural Detailing',
-      'Steel Structure Analysis & Connection Details'
-    ],
-    processHighlights: [
-      'Finite element computerized structural analysis',
-      'Soil bearing capacity and foundation sizing',
-      'Optimization of steel-to-concrete ratios'
-    ],
-    iconName: 'ShieldCheck',
-    heroImage: 'https://images.unsplash.com/photo-1541888946425-d0fbb186c5f6?auto=format&fit=crop&w=1200&q=80'
-  }
-];
+// Re-export canonical services from dedicated source of truth
+export { SERVICES, type Service, EDITORIAL_SERVICES, type EditorialServiceItem, getServiceBySlug } from './services';
 
+// Re-export canonical projects from dedicated source of truth
 export { RAW_PROJECTS as PROJECTS } from './projectsData';
 
 export const PROCESS_STEPS: ProcessStep[] = [
   {
     number: '01',
     title: 'DISCOVER',
-    subtitle: 'Requirements, Site Study & Regulatory Check',
-    description: 'Every project begins on the soil itself. We assess site dimensions, orientation, neighboring structures, sun-path, wind vectors, and municipal zoning byelaws to formulate the strategic project brief.',
-    deliverables: ['Site Topography Evaluation', 'Client Lifestyle Briefing', 'Zoning & Byelaw Clearance Matrix']
+    subtitle: 'Reconnaissance, Topography & Zoning Due Diligence',
+    description: 'Every project begins on the soil itself. We assess site dimensions, orientation, neighboring structures, sun-path, wind vectors, geotechnical conditions, and municipal zoning byelaws to formulate the strategic project brief.',
+    deliverables: ['Total Station Site Topography', 'Client Requirement Briefing', 'Zoning & Municipal Byelaw Clearance Matrix']
   },
   {
     number: '02',
-    title: 'PLAN',
-    subtitle: 'Spatial Ergonomics & 2D Floor Planning',
-    description: 'We draft optimized 2D space layouts that reconcile functional room adjacencies with directional orientations (including Vastu alignment). Every square foot is sculpted to eliminate wasted circulation.',
-    deliverables: ['Dimensioned 2D Master Floor Plans', 'Furniture & Clearance Layouts', 'Circulation Efficiency Diagrams']
+    title: 'CONCEPT',
+    subtitle: 'Spatial Ideation, Climate Orientation & Massing',
+    description: 'We draft optimized space layouts that reconcile functional room adjacencies with solar directional orientations (including Vastu alignment). Volumetric massing models balance thermal comfort with spatial luxury.',
+    deliverables: ['Conceptual Spatial Layouts', 'Sun-Path & Shading Diagrams', 'Preliminary Architectural Massing']
   },
   {
     number: '03',
     title: 'DESIGN',
-    subtitle: 'Architectural Volumes & Elevations',
-    description: 'Translating planar diagrams into three-dimensional architecture. We compose volume, rhythm, window openings, overhangs, and materials to express an enduring contemporary identity.',
-    deliverables: ['Architectural Cross-Sections', 'Exterior Facade Concepts', 'Fenestration & Shading Strategy']
+    subtitle: 'Architectural Volumes, Elevations & Tactile Materiality',
+    description: 'Translating planar diagrams into enduring three-dimensional architecture. We compose volume, rhythm, window openings, overhangs, and authentic stone finishes to express a timeless contemporary identity.',
+    deliverables: ['Detailed 2D Floor Plans', '3D Exterior Elevation Visuals', 'Fenestration, Joinery & Material Proofing']
   },
   {
     number: '04',
-    title: 'VISUALIZE',
-    subtitle: 'Photorealistic 3D Renders & Material Proofing',
-    description: 'We generate accurate 3D exterior and interior visualizations under daylight and twilight settings. This stage gives our clients absolute spatial confidence before construction commencement.',
-    deliverables: ['High-Resolution 3D Renders', 'Material & Stone Palette Samples', 'Exterior Lighting Simulations']
+    title: 'ENGINEERING',
+    subtitle: 'Chartered Structural Mechanics & Seismic Physics',
+    description: 'Led by Er. Sudhir Soni (Chartered Engineer, M.E. Structure), our engineering team executes rigorous computer finite element modeling for columns, beams, post-tensioned spans, foundations, and MEP service coordination.',
+    deliverables: ['Chartered Structural Calculations (IS 456 / IS 1893)', 'RCC Column & Beam Reinforcement Schedules', 'Foundation & Soil-Structure Interaction Design']
   },
   {
     number: '05',
-    title: 'DEVELOP',
-    subtitle: 'Chartered Structural Engineering & Working Drawings',
-    description: 'Led by Er. Sudhir Soni, our engineering team executes rigorous computer modeling for columns, beams, footings, and electrical/MEP systems, compiling standard execution drawing sets.',
-    deliverables: ['Chartered Engineer Structural Calculations', 'RCC Reinforcement Schedules', 'Complete Architectural Working Drawings']
+    title: 'DOCUMENTATION',
+    subtitle: 'Municipal Sanction Drawings & Statutory Working Sets',
+    description: 'Compiling comprehensive working drawing packages, bar bending schedules, electrical networks, and official municipal sanction files conforming to Ajmer Development Authority (ADA) and PWD standards.',
+    deliverables: ['Official ADA Sanction Blueprints', 'Bar Bending Schedules (BBS)', 'Comprehensive On-Site Execution Package']
   },
   {
     number: '06',
-    title: 'COORDINATE',
-    subtitle: 'Technical Clarification & Site Alignment',
-    description: 'We provide ongoing technical drawing clarifications and critical stage milestone reviews to ensure that what was drafted on paper is built with structural fidelity on site.',
-    deliverables: ['Drawing Revision Packages', 'Structural Milestone Verifications', 'Client Progress Reviews']
+    title: 'EXECUTION / CONSULTANCY',
+    subtitle: 'On-Site Structural Supervision & Milestone Verification',
+    description: 'We provide ongoing technical drawing clarifications, reinforcement inspection audits prior to concrete casting, and Chartered Engineer milestone certifications to ensure absolute fidelity between plan and built reality.',
+    deliverables: ['Pre-Pour Rebar Inspection Reports', 'Chartered Structural Stability Certificates', 'Project Commissioning & As-Built Records']
   }
 ];
 
@@ -307,6 +175,70 @@ export const LOCATIONS_SERVED: LocationInfo[] = [
       'Interior Architecture with Indigenous Marble & Wood'
     ],
     heroImage: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80'
+  },
+  {
+    slug: 'beawar',
+    city: 'Beawar',
+    state: 'Rajasthan',
+    tagline: 'Industrial & Heritage Commercial Architecture Corridor',
+    description: 'As a premier architect in Beawar, Design Plus delivers modern residential villa planning, commercial textile and cement showroom complexes, and chartered structural engineering along the vital Ajmer-Udaipur growth corridor (NH-58).',
+    architecturalContext: 'Beawar combines historic colonial-era trading avenues with dense commercial markets and sprawling industrial estates. Residential plots often feature deep linear urban profiles requiring central light courtyards, thermal masonry against semi-arid heat, and robust column-free commercial spans.',
+    localRegulations: 'Expertise in Beawar Municipal Council (Nagar Parishad) building bylaws, commercial FAR limits, industrial shed clearances, fire NOC norms, and structural stability certifications under IS 456.',
+    serviceHighlights: [
+      'Bespoke Residential Villa Planning & 3D Elevations in Beawar',
+      'Chartered Structural Stability Certificates for Nagar Parishad Approvals',
+      'Commercial Market Complexes & Industrial Warehouse Design',
+      'Vastu-Compliant Floor Plans for Dense Commercial & Urban Plots'
+    ],
+    heroImage: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80'
+  },
+  {
+    slug: 'kishangarh',
+    city: 'Kishangarh',
+    state: 'Rajasthan',
+    tagline: 'India’s Marble Capital & Contemporary Luxury Villa Practice',
+    description: 'Leading architect in Kishangarh specializing in luxury marble merchant kothis, contemporary stone facades, and industrial marble processing factory layouts along the Jaipur-Ajmer express highway.',
+    architecturalContext: 'As Asia’s premier marble trading hub, Kishangarh architecture showcases breathtaking indigenous stone, Makrana and imported marble cladding, high-ceilinged double-height villas, and expansive industrial pre-engineered steel buildings (PEB) on flat alluvial terrain.',
+    localRegulations: 'Full compliance with Kishangarh Development Authority (KDA / ADA extended jurisdiction), RIICO industrial zone regulations, heavy crane-girder structural clearances, and commercial setback guidelines.',
+    serviceHighlights: [
+      'Luxury Marble Villa & Kothi Architectural Design in Kishangarh',
+      'Chartered Structural Engineering for Heavy Industrial & PEB Sheds',
+      'Contemporary Stone Facade Cladding & Daylight Engineering',
+      'Integrated 3D Elevations, Turnkey Interiors & Vastu Planning'
+    ],
+    heroImage: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80'
+  },
+  {
+    slug: 'kekri',
+    city: 'Kekri',
+    state: 'Rajasthan',
+    tagline: 'Fast-Growing District Hub & Agricultural Agro-Hub Planning',
+    description: 'Recognized architect in Kekri delivering modern residential house plans, agro-industrial facilities, institutional structures, and chartered structural engineering for families and entrepreneurs across the new district headquarters.',
+    architecturalContext: 'As an elevated newly designated district headquarters, Kekri experiences rapid urban subdivision, agricultural mandi expansion, and expanding residential colonies. Buildings require climate-resilient foundation design for variable black cotton and loamy soils.',
+    localRegulations: 'Coordination with Kekri District Municipal Administration (Nagar Palika), agricultural land-use conversion under Rajasthan Tenancy Act Section 90-A, and structural stability certifications.',
+    serviceHighlights: [
+      'Modern Residential House Planning & 3D Front Elevations in Kekri',
+      'Agro-Processing Unit & Mandi Commercial Complex Architecture',
+      'Specialized Foundation Engineering for Variable Agricultural Soils',
+      'Chartered Structural Stability Certificates for Bank Loans & Approvals'
+    ],
+    heroImage: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80'
+  },
+  {
+    slug: 'nasirabad',
+    city: 'Nasirabad',
+    state: 'Rajasthan',
+    tagline: 'Cantonment Heritage & Rural-Suburban Estate Architecture',
+    description: 'Experienced architect in Nasirabad offering tailored residential house designs, cantonment-compliant building plans, farmhouse retreats, and chartered structural stability vetting throughout the historic cantonment and rural belt.',
+    architecturalContext: 'Nasirabad features a historic cantonment precinct flanked by scenic semi-arid agricultural farmlands. Architectural work balances colonial bungalow heritage proportions, deep shaded verandahs, and contemporary reinforced concrete construction adapted to open winds.',
+    localRegulations: 'Meticulous alignment with Nasirabad Cantonment Board (NCB) building regulations, strict security perimeter setbacks, height covenants, and ADA regional master plan guidelines.',
+    serviceHighlights: [
+      'Cantonment Board Compliant Residential & Commercial Blueprints',
+      'Bespoke Farmhouse & Country Home Master Planning in Nasirabad',
+      'Chartered Structural Stability Certificates Signed by Er. Sudhir Soni',
+      'Passive Climate Shading, Deep Verandahs & Rainwater Harvesting'
+    ],
+    heroImage: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=80'
   }
 ];
 
@@ -364,7 +296,8 @@ export const TYPOLOGIES = [
     title: 'Commercial & Retail Centers',
     subtitle: 'High-Street Retail, Shopping Plazas & Mixed-Use Hubs',
     description: 'High-visibility facades with open structural spans that maximize usable commercial floor area, customer circulation, and asset return.',
-    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80',
+    image: '/images/megamenu/retail-centers.webp',
+    alt: 'High-street retail shopping plaza with glazed storefronts and evening illumination',
     link: '/projects/commercial'
   },
   {

@@ -142,6 +142,13 @@ export interface Service {
   processHighlights: string[];
   iconName: string;
   heroImage: string;
+  purchaseEnabled?: boolean;
+  price?: number | null;
+  pricingLabel?: string;
+  pricingUnit?: string;
+  ctaLabel?: string;
+  secondaryCtaLabel?: string;
+  packageId?: string;
 }
 
 export interface LocationInfo {

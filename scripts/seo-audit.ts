@@ -7,11 +7,15 @@ import { MemoryRouter, Routes, Route, Navigate } from 'react-router-dom';
 // Data sources for dynamic route parameter resolution
 import { SERVICES, LOCATIONS_SERVED, BUSINESS_INFO } from '../src/data/siteData';
 import { getAllProjects, PROJECT_CATEGORIES } from '../src/data/projectsData';
-import { BLOG_CATEGORIES, getAllBlogArticles } from '../src/data/blogData';
+import { getAllArticles as getAllBlogArticles } from '../src/content/blog/articles';
+import { getAllCategories as getAllBlogCategories } from '../src/content/blog/categories';
+import { getAllAuthors as getAllBlogAuthors } from '../src/content/blog/authors';
+import { getAllTags as getAllBlogTags } from '../src/content/blog/tags';
 
 // Pages
 import { HomePage } from '../src/pages/HomePage';
 import { AboutPage } from '../src/pages/AboutPage';
+import { TeamPage } from '../src/pages/TeamPage';
 import { ServicesPage } from '../src/pages/ServicesPage';
 import { ServiceDetailPage } from '../src/pages/ServiceDetailPage';
 import { ProjectsPage } from '../src/pages/ProjectsPage';
@@ -21,6 +25,8 @@ import { LocationsPage } from '../src/pages/LocationsPage';
 import { LocationDetailPage } from '../src/pages/LocationDetailPage';
 import { BlogPage } from '../src/pages/BlogPage';
 import { BlogCategoryPage } from '../src/pages/BlogCategoryPage';
+import { BlogTagPage } from '../src/pages/BlogTagPage';
+import { BlogAuthorPage } from '../src/pages/BlogAuthorPage';
 import { BlogDetailPage } from '../src/pages/BlogDetailPage';
 import { BlogDispatcher } from '../src/pages/BlogDispatcher';
 import { ContactPage } from '../src/pages/ContactPage';
@@ -69,7 +75,7 @@ function parseAppRoutes(): string[] {
   let match;
   while ((match = routeRegex.exec(content)) !== null) {
     const routePath = match[1];
-    if (routePath !== '*') {
+    if (routePath !== '*' && !routePath.startsWith('/admin') && routePath.startsWith('/')) {
       routes.push(routePath);
     }
   }
@@ -138,6 +144,16 @@ function expandRoutes(routePatterns: string[]): Array<{ url: string; pattern: st
       for (const loc of LOCATIONS_SERVED) {
         addRoute(`/locations/${loc.slug}`, pattern, 'Location Detail');
       }
+    } else if (pattern === '/blog/tag/:tag') {
+      const tags = getAllBlogTags();
+      for (const t of tags) {
+        addRoute(`/blog/tag/${t.slug}`, pattern, 'Blog Tag');
+      }
+    } else if (pattern === '/blog/author/:author') {
+      const authors = getAllBlogAuthors();
+      for (const a of authors) {
+        addRoute(`/blog/author/${a.slug}`, pattern, 'Blog Author');
+      }
     } else if (pattern === '/blog') {
       addRoute('/blog', pattern, 'Blog Hub');
     } else if (pattern.startsWith('/blog/') && !pattern.includes(':')) {
@@ -155,6 +171,17 @@ function expandRoutes(routePatterns: string[]): Array<{ url: string; pattern: st
       for (const art of matchingArticles) {
         addRoute(`/blog/${category}/${art.slug}`, pattern, 'Blog Article Detail');
       }
+    } else if (pattern === '/blog/category/:category') {
+      const allCategories = getAllBlogCategories();
+      for (const cat of allCategories) {
+        addRoute(`/blog/category/${cat.slug}`, pattern, 'Blog Category');
+      }
+    } else if (pattern === '/studio') {
+      addRoute('/studio', pattern, 'Studio');
+    } else if (pattern === '/team') {
+      addRoute('/team', pattern, 'Team');
+    } else if (pattern === '/insights') {
+      // Internal redirect to blog
     } else if (pattern === '/contact') {
       addRoute('/contact', pattern, 'Contact');
     } else {
@@ -172,6 +199,8 @@ function renderRouteMarkup(url: string): string {
   const routes = [
     React.createElement(Route, { key: 'home', path: '/', element: React.createElement(HomePage) }),
     React.createElement(Route, { key: 'about', path: '/about', element: React.createElement(AboutPage) }),
+    React.createElement(Route, { key: 'studio', path: '/studio', element: React.createElement(AboutPage) }),
+    React.createElement(Route, { key: 'team', path: '/team', element: React.createElement(TeamPage) }),
     React.createElement(Route, { key: 'services', path: '/services', element: React.createElement(ServicesPage) }),
     React.createElement(Route, { key: 'services-slug', path: '/services/:slug', element: React.createElement(ServiceDetailPage) }),
     React.createElement(Route, { key: 'projects', path: '/projects', element: React.createElement(ProjectsPage) }),
@@ -187,6 +216,10 @@ function renderRouteMarkup(url: string): string {
     React.createElement(Route, { key: 'locations', path: '/locations', element: React.createElement(LocationsPage) }),
     React.createElement(Route, { key: 'locations-slug', path: '/locations/:slug', element: React.createElement(LocationDetailPage) }),
     React.createElement(Route, { key: 'blog', path: '/blog', element: React.createElement(BlogPage) }),
+    React.createElement(Route, { key: 'blog-tag', path: '/blog/tag/:tag', element: React.createElement(BlogTagPage) }),
+    React.createElement(Route, { key: 'blog-author', path: '/blog/author/:author', element: React.createElement(BlogAuthorPage) }),
+    React.createElement(Route, { key: 'blog-cat-any', path: '/blog/:category', element: React.createElement(BlogCategoryPage) }),
+    React.createElement(Route, { key: 'blog-cat-prefix', path: '/blog/category/:category', element: React.createElement(BlogCategoryPage) }),
     React.createElement(Route, { key: 'blog-arch', path: '/blog/architecture', element: React.createElement(BlogCategoryPage) }),
     React.createElement(Route, { key: 'blog-int', path: '/blog/interior-design', element: React.createElement(BlogCategoryPage) }),
     React.createElement(Route, { key: 'blog-res', path: '/blog/residential-design', element: React.createElement(BlogCategoryPage) }),
