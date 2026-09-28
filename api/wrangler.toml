@@ -1,0 +1,21 @@
+# Design Plus API — Cloudflare Worker (backend for the Pages frontend)
+# Secrets (GEMINI_API_KEY, RAZORPAY_*, ADMIN_*, FIREBASE_*) are set via the
+# Cloudflare dashboard (Workers > designplus-api > Settings > Variables),
+# NEVER committed here.
+
+name = "designplus-api"
+main = "src/index.ts"
+compatibility_date = "2026-09-01"
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "designplus-db"
+database_id = "FILL_AFTER_DASHBOARD_CREATION"
+
+[[r2_buckets]]
+binding = "STORAGE"
+bucket_name = "designplus-storage"
+
+[vars]
+ENVIRONMENT = "production"
