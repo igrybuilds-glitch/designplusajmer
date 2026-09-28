@@ -50,6 +50,14 @@ export function ServiceDetailPage({ onOpenConsultation }: ServiceDetailPageProps
     a.relatedServices?.includes(service.slug)
   ).slice(0, 2);
 
+  // Meta description capped at ~155 chars (word-boundary trim) so SERP
+  // snippets never truncate mid-sentence.
+  const rawDescription = `Professional ${service.title} in Ajmer, Rajasthan. ${service.shortDescription}`;
+  const metaDescription =
+    rawDescription.length <= 155
+      ? rawDescription
+      : `${rawDescription.slice(0, 152).slice(0, rawDescription.slice(0, 152).lastIndexOf(' '))}...`;
+
   const canonicalUrl = `https://designplusajmer.in/services/${service.slug}`;
 
   const serviceSchema = {
@@ -72,8 +80,8 @@ export function ServiceDetailPage({ onOpenConsultation }: ServiceDetailPageProps
   return (
     <main id="service-detail-page" className="pt-28 pb-20">
       <SEOHead
-        title={`${service.title} in Ajmer, Rajasthan | Design Plus Studio`}
-        description={`Professional ${service.title.toLowerCase()} in Ajmer & Rajasthan. ${service.shortDescription} Led by Er. Sudhir Soni & Ar. Vipul Verma.`}
+        title={`${service.title} in Ajmer | Design Plus`}
+        description={metaDescription}
         keywords={`${service.title.toLowerCase()} ajmer, ${service.title.toLowerCase()} rajasthan, ${service.slug.replace(/-/g, ' ')}, architect in ajmer, chartered engineer ajmer`}
         image={service.heroImage}
         canonical={canonicalUrl}

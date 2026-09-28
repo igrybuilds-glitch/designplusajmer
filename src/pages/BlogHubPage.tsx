@@ -77,7 +77,7 @@ export default function BlogHubPage() {
   return (
     <div className="blog-hub-page min-h-screen bg-white dark:bg-stone-950 text-stone-900 dark:text-stone-100">
       <SEOHead
-        title="Blog — Architecture Guides & Trends in Ajmer | Design Plus"
+        title="Architecture Blog | Design Plus Ajmer"
         description="Practical architecture guides, construction costs, Vaastu tips and design trends for Ajmer, Rajasthan — from the architects at Design Plus."
         canonical={`${SITE_URL}/blog`}
         type="website"

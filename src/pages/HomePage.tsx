@@ -154,7 +154,7 @@ export function HomePage({ onOpenConsultation }: HomePageProps) {
   return (
     <main id="homepage-content" className="relative bg-transparent text-[#F4F0E8] min-h-screen">
       <SEOHead
-        title="Design Plus | Architects in Ajmer | Interiors, Turnkey & Structural Design"
+        title="Design Plus | Architects & Structural Engineers in Ajmer"
         description="Premier architect in Ajmer for bespoke house planning Ajmer, refined interior designer Ajmer solutions, and turnkey project execution with structural rigor."
         keywords="architect in ajmer, architects in ajmer, house planning ajmer, interior designer ajmer, turnkey project execution, structural engineer ajmer, chartered engineer rajasthan, villa design ajmer"
         canonical="https://designplusajmer.in/"

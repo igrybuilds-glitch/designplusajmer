@@ -55,7 +55,7 @@ export default function BlogHubArticlePage() {
   return (
     <div className="blog-hub-page min-h-screen bg-white dark:bg-stone-950 text-stone-900 dark:text-stone-100">
       <SEOHead
-        title={`${post.title} | Design Plus Blog`}
+        title={`${post.seoTitle || post.title} | Design Plus`}
         description={post.description}
         canonical={canonical}
         type="article"

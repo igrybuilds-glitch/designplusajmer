@@ -78,8 +78,8 @@ export function ContactPage() {
   return (
     <main id="contact-page" className="pt-28 pb-20">
       <SEOHead
-        title="Contact Design Plus | Architects & Structural Engineers in Ajmer"
-        description="Contact Design Plus studio in Ajmer, Rajasthan. Direct phone: 7976453090 / 9461465610. Email: designplusajmer@gmail.com. Consult with Chartered Engineer Er. Sudhir Soni."
+        title="Contact Design Plus | Architects in Ajmer"
+        description="Contact Design Plus studio, Ajmer. Call 7976453090 / 9461465610 or email designplusajmer@gmail.com. Consult Chartered Engineer Er. Sudhir Soni."
         canonical="https://designplusajmer.in/contact"
         schema={contactSchema}
       />

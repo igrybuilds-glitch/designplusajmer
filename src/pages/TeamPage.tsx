@@ -64,8 +64,8 @@ export function TeamPage({ onOpenConsultation }: TeamPageProps) {
   return (
     <main id="team-page" className="pt-28 pb-20 bg-[#F5F2EB] text-[#1A1917] min-h-screen">
       <SEOHead
-        title="Leadership & Engineering Team | Design Plus Architects & Engineers"
-        description="Meet Er. Sudhir Soni (Chartered Engineer, M.E. Structure), Ar. Vipul Verma (B.Arch, M.H.S. Belgium), Er. Ankit Soni (M.Tech Structure), Er. Shikha Soni (M.Tech Electrical), and Er. Amit Soni (M.Plan)."
+        title="Our Team | Design Plus Architects Ajmer"
+        description="Meet the Design Plus leadership: Er. Sudhir Soni (Chartered Engineer), Ar. Vipul Verma (Principal Architect), and our M.Tech / M.Plan engineering team in Ajmer."
         keywords="Er Sudhir Soni, Ar Vipul Verma, Er Ankit Soni, Er Shikha Soni, Er Amit Soni, architects team ajmer, structural engineers rajasthan"
         canonical="https://designplusajmer.in/team"
         schema={teamSchema}
