@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown, Phone, ArrowUpRight, Sparkles, Film, Bookmark, User as UserIcon } from 'lucide-react';
+import { Menu, X, ChevronDown, Phone, ArrowUpRight, Sparkles, Bookmark, User as UserIcon } from 'lucide-react';
 import { BUSINESS_INFO, SERVICES, LOCATIONS_SERVED } from '../data/siteData';
 import { BLOG_CATEGORIES } from '../data/blogData';
 import { useAuth } from '../context/AuthContext';
@@ -8,14 +8,12 @@ import { useAuth } from '../context/AuthContext';
 interface NavbarProps {
   onOpenConsultation?: () => void;
   onOpenAiStudio?: () => void;
-  onOpenVeoStudio?: () => void;
   onOpenClientPortal?: () => void;
 }
 
 export function Navbar({ 
   onOpenConsultation, 
   onOpenAiStudio, 
-  onOpenVeoStudio, 
   onOpenClientPortal 
 }: NavbarProps) {
   const { user, savedProjects } = useAuth();

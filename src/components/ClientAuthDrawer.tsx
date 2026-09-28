@@ -114,7 +114,7 @@ export function ClientAuthDrawer({ isOpen, onClose, onOpenConsultation }: Client
                   Access Your Studio Portal
                 </h4>
                 <p className="text-xs text-stone-600 leading-relaxed">
-                  Sign in with Google to bookmark verified architectural projects, track custom consultation status, and save Veo video renders.
+                  Sign in with Google to bookmark verified architectural projects and track custom consultation status.
                 </p>
               </div>
 

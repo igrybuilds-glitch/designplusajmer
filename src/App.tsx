@@ -60,7 +60,6 @@ function AppContent() {
 
   const [isConsultationOpen, setIsConsultationOpen] = useState(false);
   const [isAiStudioOpen, setIsAiStudioOpen] = useState(false);
-  const [isVeoStudioOpen, setIsVeoStudioOpen] = useState(false);
   const [isClientPortalOpen, setIsClientPortalOpen] = useState(false);
 
   useEffect(() => {
@@ -105,9 +104,6 @@ function AppContent() {
   const openAiStudio = () => setIsAiStudioOpen(true);
   const closeAiStudio = () => setIsAiStudioOpen(false);
 
-  const openVeoStudio = () => setIsVeoStudioOpen(true);
-  const closeVeoStudio = () => setIsVeoStudioOpen(false);
-
   const openClientPortal = () => setIsClientPortalOpen(true);
   const closeClientPortal = () => setIsClientPortalOpen(false);
 
@@ -117,7 +113,6 @@ function AppContent() {
         <Navbar 
           onOpenConsultation={openConsultation}
           onOpenAiStudio={openAiStudio}
-          onOpenVeoStudio={openVeoStudio}
           onOpenClientPortal={openClientPortal}
         />
       )}

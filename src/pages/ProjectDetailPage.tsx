@@ -21,14 +21,12 @@ import {
   Sparkles,
   Sun,
   Leaf,
-  Bookmark,
-  Film
+  Bookmark
 } from 'lucide-react';
 import { SEOHead } from '../components/SEOHead';
 import { getProjectBySlug, getAdjacentProjects, getRelatedProjects } from '../data/projectsData';
 import { ArchitecturalDrawing } from '../types';
 import { useAuth } from '../context/AuthContext';
-import { VeoStudioModal } from '../components/VeoStudioModal';
 
 interface ProjectDetailPageProps {
   onOpenConsultation?: () => void;
@@ -44,7 +42,6 @@ export function ProjectDetailPage({ onOpenConsultation }: ProjectDetailPageProps
 
   const [activeDrawingIndex, setActiveDrawingIndex] = useState(0);
   const [selectedDrawingForZoom, setSelectedDrawingForZoom] = useState<ArchitecturalDrawing | null>(null);
-  const [isVeoOpen, setIsVeoOpen] = useState(false);
 
   // If project is not found, redirect to projects index
   if (!project) {
@@ -200,7 +197,7 @@ export function ProjectDetailPage({ onOpenConsultation }: ProjectDetailPageProps
             {project.summary}
           </p>
 
-          {/* Interactive Actions: Bookmark & Veo 3D Animation */}
+          {/* Interactive Actions: Bookmark & Consultation */}
           <div className="flex flex-wrap items-center gap-3 pt-2">
             <button
               onClick={() => toggleBookmark({
@@ -217,14 +214,6 @@ export function ProjectDetailPage({ onOpenConsultation }: ProjectDetailPageProps
             >
               <Bookmark className={`w-4 h-4 ${bookmarked ? "fill-amber-300 text-amber-300" : "text-stone-600"}`} />
               <span>{bookmarked ? "Saved to Client Portal" : "Bookmark Project"}</span>
-            </button>
-
-            <button
-              onClick={() => setIsVeoOpen(true)}
-              className="inline-flex items-center gap-2 px-4 py-2 text-xs uppercase tracking-wider font-semibold rounded-xs bg-purple-900 hover:bg-purple-800 text-purple-100 shadow-xs transition-colors"
-            >
-              <Film className="w-4 h-4 text-purple-300" />
-              <span>Animate with Veo (veo-3.1-fast-generate-preview)</span>
             </button>
 
             {onOpenConsultation && (
@@ -916,14 +905,6 @@ export function ProjectDetailPage({ onOpenConsultation }: ProjectDetailPageProps
           </div>
         </div>
       )}
-
-      {/* Veo 3D Animation Studio for this Project */}
-      <VeoStudioModal
-        isOpen={isVeoOpen}
-        onClose={() => setIsVeoOpen(false)}
-        initialImage={project.heroImage}
-        initialPrompt={`Cinematic 4K architectural drone flythrough of ${project.title} in ${project.city}, Rajasthan with natural stone textures and ambient golden hour sunlight.`}
-      />
     </main>
   );
 }

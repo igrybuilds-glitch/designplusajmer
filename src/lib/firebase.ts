@@ -152,26 +152,6 @@ export async function submitConsultationInquiry(data: InquiryData) {
   return { id: res.id, ...docData };
 }
 
-// Veo Video Renders Store
-export interface VideoRenderRecord {
-  id?: string;
-  userId: string;
-  prompt: string;
-  videoUrl: string;
-  aspectRatio: "16:9" | "9:16";
-  createdAt: string;
-}
-
-export async function saveVideoRender(record: Omit<VideoRenderRecord, "id" | "createdAt">) {
-  const colRef = collection(db, "video_renders");
-  const docData = {
-    ...record,
-    createdAt: new Date().toISOString()
-  };
-  const res = await addDoc(colRef, docData);
-  return { id: res.id, ...docData };
-}
-
 // Saved Conversations Store
 export async function saveConversation(userId: string, role: string, messages: any[], convId?: string) {
   const id = convId || `${userId}_${role}_${Date.now()}`;
