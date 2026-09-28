@@ -2,7 +2,9 @@
 
 export interface Env {
   DB: D1Database;
-  STORAGE: R2Bucket;
+  // Optional until the R2 subscription is enabled on the account
+  // (needs a payment method). uploads.ts degrades to 503 without it.
+  STORAGE?: R2Bucket;
 
   // Non-secret config
   ENVIRONMENT?: string;
