@@ -127,7 +127,13 @@ export function SEOHead({
     // If rendered outside router context
   }
 
-  const resolvedCanonical = customCanonical || `${DEFAULT_SITE_ORIGIN}${pathname === '/' ? '' : pathname}`;
+  const withTrailingSlash = (u: string) => (u.endsWith('/') ? u : `${u}/`);
+  // Single canonical form site-wide: https://designplusajmer.in/<path>/ (the
+  // server 308-redirects extensionless paths to the trailing-slash form, so
+  // canonicals must already be in that form — no redirect chains for crawlers).
+  const resolvedCanonical = withTrailingSlash(
+    customCanonical || `${DEFAULT_SITE_ORIGIN}${pathname === '/' ? '' : pathname}`
+  );
   const effectiveSchema = schema || (pathname === '/' ? HOMEPAGE_ARCHITECT_SCHEMA : undefined);
 
   useEffect(() => {
@@ -159,7 +165,10 @@ export function SEOHead({
     setMeta('property', 'og:description', description);
     setMeta('property', 'og:image', image);
     setMeta('property', 'og:type', type);
-    setMeta('property', 'og:url', typeof window !== 'undefined' ? window.location.href : resolvedCanonical);
+    // og:url must be the canonical URL — never window.location.href (during the
+    // prerender crawl that leaks the local preview origin, e.g. 127.0.0.1, into
+    // production HTML).
+    setMeta('property', 'og:url', resolvedCanonical);
 
     // Twitter Card Meta
     setMeta('name', 'twitter:card', 'summary_large_image');
@@ -188,23 +197,14 @@ export function SEOHead({
 
   }, [title, description, keywords, image, pathname, resolvedCanonical, type, noindex]);
 
+  // NOTE: <title>/<meta>/<link> head tags are written ONLY by the useEffect
+  // above (single imperative writer: updates index.html's tags in place).
+  // Rendering them declaratively here as well made React hoist EXTRA copies
+  // into <head>, producing duplicate <title>, <meta name="robots"> and
+  // <link rel="canonical"> tags in the prerendered HTML. Only JSON-LD stays
+  // declarative.
   return (
     <>
-      <title>{title}</title>
-      <meta name="description" content={description} />
-      <meta name="keywords" content={keywords} />
-      <meta name="robots" content={noindex ? 'noindex, nofollow' : 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1'} />
-      <meta property="og:site_name" content="Design Plus Architecture Studio" />
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
-      <meta property="og:image" content={image} />
-      <meta property="og:type" content={type} />
-      <meta property="og:url" content={resolvedCanonical} />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={image} />
-      <link rel="canonical" href={resolvedCanonical} />
       {effectiveSchema && (
         <script
           type="application/ld+json"
