@@ -54,11 +54,11 @@ export function TeamPage({ onOpenConsultation }: TeamPageProps) {
   };
 
   const partnerPhotos: Record<string, string> = {
-    'Er. Sudhir Soni': 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1000&q=85',
+    'Er. Sudhir Soni': '/images/team/sudhir-soni.jpg',
     'Ar. Vipul Verma': 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1000&q=85',
-    'Er. Ankit Soni': 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=1000&q=85',
-    'Er. Shikha Soni': 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1000&q=85',
-    'Er. Amit Soni': 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=1000&q=85'
+    'Er. Ankit Soni': '/images/team/ankit-soni.jpg',
+    'Er. Shikha Soni': '/images/team/shikha-soni.jpg',
+    'Er. Amit Soni': '/images/team/amit-soni.jpg'
   };
 
   return (
