@@ -6,7 +6,6 @@ import { GoogleGenAI } from "@google/genai";
 import { createServer as createViteServer } from "vite";
 import { adminRouter } from "./server/adminApi";
 import { paymentRouter } from "./server/paymentApi";
-import { testSupabaseConnection } from "./server/supabase";
 
 dotenv.config();
 
@@ -47,28 +46,6 @@ async function startServer() {
       return res.sendFile(targetFile);
     }
     res.status(404).json({ error: "Source code zip archive not found" });
-  });
-
-  // Supabase Backend Connectivity & Security Status Check
-  app.get("/api/supabase/status", async (_req, res) => {
-    try {
-      const result = await testSupabaseConnection();
-      res.json({
-        ...result,
-        securityReport: {
-          keyClassification: "Publishable / Anonymous Key (sb_publishable_...)",
-          rowLevelSecurityRequired: true,
-          serviceRoleBypassKeyConfigured: !!process.env.SUPABASE_SERVICE_ROLE_KEY,
-          recommendations: [
-            "Ensure Row Level Security (RLS) is enabled on all tables in Supabase Dashboard (Authentication > Policies).",
-            "Do NOT store service_role keys in the client bundle or commit them to source control.",
-            "Use Supabase Auth or backend proxy routes for sensitive administrative writes."
-          ]
-        }
-      });
-    } catch (err: any) {
-      res.status(500).json({ error: err?.message || "Failed to test Supabase connection" });
-    }
   });
 
   // Private Admin API Routes
