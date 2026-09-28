@@ -8,19 +8,19 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://designplusajmer.in/about</loc>
+    <loc>https://designplusajmer.in/about/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://designplusajmer.in/team</loc>
+    <loc>https://designplusajmer.in/team/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://designplusajmer.in/contact</loc>
+    <loc>https://designplusajmer.in/contact/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -28,97 +28,97 @@
 
   <!-- Services -->
   <url>
-    <loc>https://designplusajmer.in/services</loc>
+    <loc>https://designplusajmer.in/services/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://designplusajmer.in/services/architectural-design</loc>
+    <loc>https://designplusajmer.in/services/architectural-design/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://designplusajmer.in/services/structural-design</loc>
+    <loc>https://designplusajmer.in/services/structural-design/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://designplusajmer.in/services/residential-architecture</loc>
+    <loc>https://designplusajmer.in/services/residential-architecture/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://designplusajmer.in/services/commercial-architecture</loc>
+    <loc>https://designplusajmer.in/services/commercial-architecture/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://designplusajmer.in/services/interior-design</loc>
+    <loc>https://designplusajmer.in/services/interior-design/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://designplusajmer.in/services/infrastructure</loc>
+    <loc>https://designplusajmer.in/services/infrastructure/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://designplusajmer.in/services/bridges</loc>
+    <loc>https://designplusajmer.in/services/bridges/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://designplusajmer.in/services/flyovers</loc>
+    <loc>https://designplusajmer.in/services/flyovers/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://designplusajmer.in/services/hydraulics</loc>
+    <loc>https://designplusajmer.in/services/hydraulics/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://designplusajmer.in/services/water-supply-sewerage</loc>
+    <loc>https://designplusajmer.in/services/water-supply-sewerage/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://designplusajmer.in/services/topographical-survey</loc>
+    <loc>https://designplusajmer.in/services/topographical-survey/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://designplusajmer.in/services/planning</loc>
+    <loc>https://designplusajmer.in/services/planning/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://designplusajmer.in/services/township-planning</loc>
+    <loc>https://designplusajmer.in/services/township-planning/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://designplusajmer.in/services/geotechnical-consultancy</loc>
+    <loc>https://designplusajmer.in/services/geotechnical-consultancy/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://designplusajmer.in/services/project-consultancy</loc>
+    <loc>https://designplusajmer.in/services/project-consultancy/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -126,31 +126,31 @@
 
   <!-- Project Portfolios -->
   <url>
-    <loc>https://designplusajmer.in/projects</loc>
+    <loc>https://designplusajmer.in/projects/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://designplusajmer.in/projects/residential</loc>
+    <loc>https://designplusajmer.in/projects/residential/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://designplusajmer.in/projects/commercial</loc>
+    <loc>https://designplusajmer.in/projects/commercial/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://designplusajmer.in/projects/interior</loc>
+    <loc>https://designplusajmer.in/projects/interior/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://designplusajmer.in/projects/structural</loc>
+    <loc>https://designplusajmer.in/projects/structural/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -158,37 +158,37 @@
 
   <!-- Regional Hubs -->
   <url>
-    <loc>https://designplusajmer.in/locations</loc>
+    <loc>https://designplusajmer.in/locations/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://designplusajmer.in/locations/ajmer</loc>
+    <loc>https://designplusajmer.in/locations/ajmer/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://designplusajmer.in/locations/jaipur</loc>
+    <loc>https://designplusajmer.in/locations/jaipur/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://designplusajmer.in/locations/pushkar</loc>
+    <loc>https://designplusajmer.in/locations/pushkar/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://designplusajmer.in/locations/kishangarh</loc>
+    <loc>https://designplusajmer.in/locations/kishangarh/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://designplusajmer.in/locations/udaipur</loc>
+    <loc>https://designplusajmer.in/locations/udaipur/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -196,55 +196,55 @@
 
   <!-- Blog Hub -->
   <url>
-    <loc>https://designplusajmer.in/blog</loc>
+    <loc>https://designplusajmer.in/blog/</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://designplusajmer.in/blog/top-10-architects-in-ajmer</loc>
+    <loc>https://designplusajmer.in/blog/top-10-architects-in-ajmer/</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://designplusajmer.in/blog/cost-of-building-a-house-in-ajmer-2026</loc>
+    <loc>https://designplusajmer.in/blog/cost-of-building-a-house-in-ajmer-2026/</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://designplusajmer.in/blog/how-to-plan-your-dream-home-in-ajmer</loc>
+    <loc>https://designplusajmer.in/blog/how-to-plan-your-dream-home-in-ajmer/</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://designplusajmer.in/blog/guide-to-hiring-architect-in-ajmer</loc>
+    <loc>https://designplusajmer.in/blog/guide-to-hiring-architect-in-ajmer/</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://designplusajmer.in/blog/architectural-trends-ajmer-2026</loc>
+    <loc>https://designplusajmer.in/blog/architectural-trends-ajmer-2026/</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://designplusajmer.in/blog/sustainable-eco-friendly-architecture-ajmer</loc>
+    <loc>https://designplusajmer.in/blog/sustainable-eco-friendly-architecture-ajmer/</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://designplusajmer.in/blog/vaastu-compliant-home-plans-ajmer</loc>
+    <loc>https://designplusajmer.in/blog/vaastu-compliant-home-plans-ajmer/</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://designplusajmer.in/blog/interior-design-cost-per-sqft-ajmer</loc>
+    <loc>https://designplusajmer.in/blog/interior-design-cost-per-sqft-ajmer/</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
