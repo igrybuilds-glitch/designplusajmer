@@ -105,7 +105,7 @@ export function ProductsPage({}: ProductsPageProps) {
 
           {/* Category Filter Pills */}
           <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none pt-2">
-            <span className="text-xs font-mono uppercase text-[#141414]/60 mr-2 whitespace-nowrap flex items-center gap-1.5">
+            <span className="text-xs font-mono uppercase text-[#141414]/60 mr-2 whitespace-nowrap shrink-0 flex items-center gap-1.5">
               <Filter className="w-3.5 h-3.5 text-[#C86635]" />
               Categories:
             </span>
@@ -120,7 +120,7 @@ export function ProductsPage({}: ProductsPageProps) {
                   key={cat}
                   type="button"
                   onClick={() => setSelectedCategory(cat)}
-                  className={`rounded-full px-4 py-2 text-xs font-sans font-medium whitespace-nowrap transition-all cursor-pointer ${
+                  className={`rounded-full px-4 py-2 text-xs font-sans font-medium whitespace-nowrap shrink-0 transition-all cursor-pointer ${
                     isSelected
                       ? 'bg-[#141414] text-white shadow-sm ring-2 ring-[#C86635]'
                       : 'bg-[#faf8f5] text-[#141414]/80 border border-[#141414]/15 hover:border-[#C86635]'

@@ -163,7 +163,7 @@ export function BlogPage() {
           <div className="flex items-center gap-2 overflow-x-auto pb-2 md:pb-0 scrollbar-none text-xs font-mono">
             <button
               onClick={() => setActiveCategoryFilter('all')}
-              className={`px-3 py-1.5 transition-all text-xs tracking-wider uppercase ${
+              className={`px-3 py-1.5 transition-all text-xs tracking-wider uppercase whitespace-nowrap shrink-0 ${
                 activeCategoryFilter === 'all'
                   ? 'bg-[#1A1917] text-[#F5F2EB] font-bold'
                   : 'text-[#6E665B] hover:text-[#1A1917] hover:bg-black/5'
@@ -175,7 +175,7 @@ export function BlogPage() {
               <button
                 key={cat.slug}
                 onClick={() => setActiveCategoryFilter(cat.slug)}
-                className={`px-3 py-1.5 transition-all text-xs tracking-wider uppercase whitespace-nowrap ${
+                className={`px-3 py-1.5 transition-all text-xs tracking-wider uppercase whitespace-nowrap shrink-0 ${
                   activeCategoryFilter === cat.slug
                     ? 'bg-[#1A1917] text-[#F5F2EB] font-bold'
                     : 'text-[#6E665B] hover:text-[#1A1917] hover:bg-black/5'

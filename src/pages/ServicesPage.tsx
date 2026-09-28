@@ -1,10 +1,11 @@
 import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowUpRight, Compass, Home, Building2, LayoutGrid, PenTool, Box, ShieldCheck, MessageSquare } from 'lucide-react';
+import { ArrowUpRight, Compass, Home, Building2, LayoutGrid, PenTool, Box, ShieldCheck, MessageSquare, ShoppingBag } from 'lucide-react';
 import { SEOHead } from '../components/SEOHead';
 import { EditorialHero } from '../components/EditorialHero';
 import { SERVICES } from '../data/siteData';
 import { ServicePurchaseFlow } from '../components/services/ServicePurchaseFlow';
+import { PurchasableService } from '../data/purchasableServices';
 import servicesExtraData from '../data/services-extra.json';
 
 interface ExtraServiceItem {
@@ -39,6 +40,7 @@ export function ServicesPage({ onOpenConsultation }: ServicesPageProps) {
   const [filterMode, setFilterMode] = useState<'all' | 'buy-now' | 'engineering'>('all');
   const [isPurchaseFlowOpen, setIsPurchaseFlowOpen] = useState<boolean>(false);
   const [activePurchaseServiceId, setActivePurchaseServiceId] = useState<string>('2d-floor-plan');
+  const [activeCustomService, setActiveCustomService] = useState<PurchasableService | undefined>(undefined);
   const [activeExtraGroup, setActiveExtraGroup] = useState<string>('All Groups');
 
   const extraServices = servicesExtraData as ExtraServiceItem[];
@@ -47,6 +49,39 @@ export function ServicesPage({ onOpenConsultation }: ServicesPageProps) {
     if (servicePackageId) {
       setActivePurchaseServiceId(servicePackageId);
     }
+    setActiveCustomService(undefined);
+    setIsPurchaseFlowOpen(true);
+  };
+
+  const handleExtraBuyNow = (srv: ExtraServiceItem, idx: number) => {
+    const slug = srv.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 48) || `service-${idx}`;
+    setActiveCustomService({
+      id: `extra-${idx}-${slug}`,
+      slug: `extra-${slug}`,
+      name: srv.name,
+      category: 'Small Technical Services',
+      tagline: srv.category,
+      description: `${srv.name} (${srv.category}) — executed by the Design Plus studio team, Ajmer. Share your site details and preferred schedule; we confirm scope and timeline before execution.`,
+      price: null,
+      pricingLabel: srv.price && srv.price.trim() !== '' ? srv.price.trim() : 'Price on request',
+      unitLabel: 'per service engagement',
+      deliveryTimeline: 'Scheduled on confirmation',
+      purchaseEnabled: true,
+      ctaLabel: 'Buy Now',
+      secondaryCtaLabel: 'WhatsApp Enquiry',
+      formType: 'standard',
+      whatsIncluded: [
+        'Studio-certified service execution',
+        'Direct coordination with the Design Plus team',
+        'Written scope confirmation before work begins'
+      ],
+      whatWeNeed: [
+        'Site / project location',
+        'Preferred date / schedule',
+        'Scope details or reference photos'
+      ],
+      recommendedFor: 'Clients across Ajmer & Rajasthan needing this specialized technical service.'
+    });
     setIsPurchaseFlowOpen(true);
   };
 
@@ -100,7 +135,7 @@ export function ServicesPage({ onOpenConsultation }: ServicesPageProps) {
           <div className="flex items-center gap-2 overflow-x-auto scrollbar-none pb-1 sm:pb-0">
             <button
               onClick={() => setFilterMode('all')}
-              className={`px-3 py-1.5 transition-all uppercase tracking-wider whitespace-nowrap ${
+              className={`px-3 py-1.5 transition-all uppercase tracking-wider whitespace-nowrap shrink-0 ${
                 filterMode === 'all'
                   ? 'bg-stone-900 text-white font-semibold'
                   : 'text-stone-600 hover:text-stone-950 hover:bg-stone-100'
@@ -110,7 +145,7 @@ export function ServicesPage({ onOpenConsultation }: ServicesPageProps) {
             </button>
             <button
               onClick={() => setFilterMode('buy-now')}
-              className={`px-3 py-1.5 transition-all uppercase tracking-wider whitespace-nowrap flex items-center gap-1.5 ${
+              className={`px-3 py-1.5 transition-all uppercase tracking-wider whitespace-nowrap shrink-0 flex items-center gap-1.5 ${
                 filterMode === 'buy-now'
                   ? 'bg-[#C86635] text-white font-semibold'
                   : 'text-stone-600 hover:text-stone-950 hover:bg-stone-100'
@@ -120,7 +155,7 @@ export function ServicesPage({ onOpenConsultation }: ServicesPageProps) {
             </button>
             <button
               onClick={() => setFilterMode('engineering')}
-              className={`px-3 py-1.5 transition-all uppercase tracking-wider whitespace-nowrap ${
+              className={`px-3 py-1.5 transition-all uppercase tracking-wider whitespace-nowrap shrink-0 ${
                 filterMode === 'engineering'
                   ? 'bg-stone-900 text-white font-semibold'
                   : 'text-stone-600 hover:text-stone-950 hover:bg-stone-100'
@@ -390,19 +425,30 @@ export function ServicesPage({ onOpenConsultation }: ServicesPageProps) {
                     </div>
                   </div>
 
-                  <div className="pt-2 border-t border-stone-100 flex items-center justify-between">
+                  <div className="pt-2 border-t border-stone-100 flex items-center justify-between gap-2 flex-wrap">
                     <span className="text-[10px] font-mono uppercase text-stone-400">Design Plus Certified</span>
-                    <a
-                      href={whatsappUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 bg-stone-950 hover:bg-[#C86635] text-white px-4 py-2 rounded-full text-xs font-sans font-medium transition-colors"
-                      aria-label={`Enquire about ${srv.name} on WhatsApp`}
-                    >
-                      <MessageSquare className="w-3.5 h-3.5 text-emerald-400" />
-                      <span>WhatsApp Enquiry</span>
-                      <ArrowUpRight className="w-3.5 h-3.5 opacity-70" />
-                    </a>
+                    <div className="flex items-center gap-2">
+                      <button
+                        type="button"
+                        onClick={() => handleExtraBuyNow(srv, idx)}
+                        className="inline-flex items-center gap-1.5 bg-[#C86635] hover:bg-[#b5582a] text-white px-4 py-2 rounded-full text-xs font-sans font-medium transition-colors cursor-pointer"
+                        aria-label={`Buy ${srv.name} now`}
+                      >
+                        <ShoppingBag className="w-3.5 h-3.5" />
+                        <span>Buy Now</span>
+                      </button>
+                      <a
+                        href={whatsappUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 bg-stone-950 hover:bg-[#C86635] text-white px-4 py-2 rounded-full text-xs font-sans font-medium transition-colors"
+                        aria-label={`Enquire about ${srv.name} on WhatsApp`}
+                      >
+                        <MessageSquare className="w-3.5 h-3.5 text-emerald-400" />
+                        <span>WhatsApp Enquiry</span>
+                        <ArrowUpRight className="w-3.5 h-3.5 opacity-70" />
+                      </a>
+                    </div>
                   </div>
                 </div>
               );
@@ -435,8 +481,9 @@ export function ServicesPage({ onOpenConsultation }: ServicesPageProps) {
       {/* Reusable Refined Service Purchase Flow Modal */}
       <ServicePurchaseFlow
         isOpen={isPurchaseFlowOpen}
-        onClose={() => setIsPurchaseFlowOpen(false)}
+        onClose={() => { setIsPurchaseFlowOpen(false); setActiveCustomService(undefined); }}
         initialServiceId={activePurchaseServiceId}
+        customService={activeCustomService}
         onOpenConsultation={onOpenConsultation}
       />
 
