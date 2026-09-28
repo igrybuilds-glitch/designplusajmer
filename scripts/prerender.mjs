@@ -95,9 +95,13 @@ async function main() {
       await page.goto(url, { waitUntil: 'networkidle0', timeout: 45000 });
       await delay(SETTLE_MS);
       const html = await page.content();
+      // Strip the local preview origin: Chrome serializes dynamically-injected
+      // <link rel="modulepreload"> / stylesheet tags with absolute preview URLs
+      // (http://127.0.0.1:PORT/...). They must be relative in production HTML.
+      const clean = html.split(`http://127.0.0.1:${PREVIEW_PORT}`).join('');
       const outDir = route === '/' ? DIST : join(DIST, route);
       mkdirSync(outDir, { recursive: true });
-      writeFileSync(join(outDir, 'index.html'), html);
+      writeFileSync(join(outDir, 'index.html'), clean);
       ok++;
     } catch (err) {
       console.warn(`[prerender] ✗ ${route}: ${err.message}`);
