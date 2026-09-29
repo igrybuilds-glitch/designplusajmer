@@ -424,6 +424,86 @@ Site measurement, space planning, 3D views, working drawings (electrical, false 
 ---
 
 Planning interiors in Ajmer? [Explore our interior services](/services) or [book a free consultation](/contact) for an item-wise estimate.`
+  },
+  {
+    slug: 'buying-plot-ajmer-due-diligence-checklist',
+    title: 'Buying a Plot in Ajmer: Legal Due-Diligence Checklist (2026)',
+    description: 'Buying a residential plot in Ajmer? ADA approval, patta, RERA, title chain, conversion orders \u2014 the complete legal checklist before you pay a token.',
+    date: '2026-09-29',
+    category: 'Guides',
+    content: `
+# Buying a Plot in Ajmer: Legal Due-Diligence Checklist (2026)
+
+Every week in Ajmer, someone pays a \u201ctoken\u201d for a plot that turns out to be unapproved, disputed, or sitting on agricultural land that was never converted. The broker disappears, the money doesn't.
+
+Plot buying is where dream-home plans go to die \u2014 or survive. This is the checklist that separates the two.
+
+## 1. Is the layout actually approved?
+
+The single most important question in Ajmer is not the price per square yard \u2014 it's **who approved the scheme**.
+
+- **ADA-approved schemes** (Ajmer Development Authority) are the gold standard inside the city: Panchsheel Nagar, Prithviraj Nagar, Kotda, Chandravardai Nagar and dozens more were developed by ADA itself, and ADA periodically e-auctions its own residential plots. If a colony claims \"ADA approved,\" ask for the scheme approval letter \u2014 not just a marketing brochure.
+- **RERA-registered projects** get a second layer of verification. Rajasthan RERA listings show the project registration number; private townships should have one (e.g. format Raj/P/YYYY/XXXX).
+- **Unapproved subdivisions** \u2014 agricultural land carved into plots with no authority approval \u2014 are the classic Ajmer trap, especially on the city's edges. These can face demolition or penalty action, and you will never get a proper building-plan approval on them.
+
+**Rule:** no approval letter = no token money. Verbal assurances mean nothing.
+
+## 2. Patta and title: who really owns it?
+
+- **Patta (title deed):** the seller must hold a valid patta or registered sale deed in their own name. Ask for the original, not a photocopy.
+- **Title chain (30 years):** trace the chain of sale deeds, partition deeds, and inheritance documents back at least 30 years. Gaps or sudden jumps in ownership are a red flag \u2014 resolve them before proceeding, don't hope them away.
+- **Jamabandi / khata records:** the seller's name should appear in the current revenue records (jamabandi) and mutation entries. If a previous sale was never mutated, the chain is broken on paper even if money changed hands.
+- **Co-owners and heirs:** if the plot was inherited, every legal heir's consent matters. One excluded heir with a court claim can stall your construction for years.
+
+## 3. Encumbrances and litigation check
+
+- Get an **Encumbrance Certificate** from the sub-registrar's office covering the ownership period \u2014 it reveals registered mortgages, loans, and charges on the plot.
+- Independently search for **pending litigation**: family disputes, stay orders, acquisition notices, and revenue proceedings don't always show on a bare EC. A property lawyer's written title report is worth every rupee here.
+- Check for **government acquisition notices** \u2014 roads, utilities, and infrastructure projects around Ajmer regularly change what a plot can become.
+
+## 4. Land-use conversion: the agricultural-land trap
+
+Large parts of Ajmer's outskirts (Pushkar Road, Jaipur Road corridors) are agricultural land. Building a house on land that is still classified agricultural \u2014 without a conversion order \u2014 is illegal.
+
+- **Conversion order (land-use change):** if the land was originally agricultural, there must be a legal conversion order covering the exact khasra/khatauni numbers of your plot.
+- **Verify the exact plot, not the colony:** a colony's developer may have converted part of the land while selling unconverted parcels. The order must name *your* plot.
+- **Never buy agricultural land and \"convert it later.\"** Conversion is a government process with fees, timelines, and eligibility rules \u2014 buying first and hoping is a gamble, not a plan.
+
+## 5. The token-money discipline
+
+When the plot passes the checks above, protect the transaction:
+
+1. **Pay token only after documents are verified** \u2014 never before. Token typically runs \u20b950,000\u2013\u20b91,00,000 and is documented in writing.
+2. **Agreement to Sell** within a week or two of token, with plot details, payment schedule, and timelines \u2014 registered or notarised, never verbal.
+3. **No cash payments** outside the documented trail. Every rupee should flow through bank transfers matching the agreement amounts.
+4. **Registration** at the sub-registrar's office completes the transfer. Keep every receipt.
+
+## 6. Site reality checks (before you fall in love with the location)
+
+- **Road width and access:** the width of the facing road affects both livability and what you're allowed to build \u2014 narrower roads restrict height and FAR.
+- **Drainage and water-logging:** visit after a rain if you can. Ajmer's low-lying pockets flood.
+- **Soil and level:** get a soil test before designing anything \u2014 black cotton soil and fill-ground need different foundations, and that changes your [house-building budget](/blog/cost-of-building-a-house-in-ajmer-2026).
+- **Electricity, water, and sewage lines** \u2014 check they actually reach the plot, not \"will reach soon.\"
+
+## Red flags that should stop you cold
+
+1. Seller refuses to show original documents before token money.
+2. \"Approval is under process\" \u2014 buy the finished approval, not the promise.
+3. The same plot being sold by two different \"owners.\"
+4. Power of Attorney sale chains (POA \u2192 POA \u2192 POA) instead of registered deeds.
+5. Price far below market rate for the locality \u2014 there is always a reason.
+6. Pressure tactics: \"one more buyer is coming tomorrow\" is a script, not information.
+
+## What a safe purchase looks like
+
+ADA-approved (or RERA-registered) scheme \u2192 original patta in the seller's name \u2192 clean 30-year title chain \u2192 no encumbrances or litigation \u2192 conversion order if the land was ever agricultural \u2192 written token + agreement to sell \u2192 registered sale deed. Then \u2014 and only then \u2014 hire your architect and start the [building-plan approval process](/blog/building-plan-approval-ajmer).
+
+A clean plot makes everything after it cheaper and faster: approvals, loans, and construction. A dirty plot makes everything after it a fight.
+
+*Disclaimer: this is general guidance, not legal advice. Always engage a Rajasthan property lawyer for a written title due-diligence report before paying any substantial amount.*
+
+**Bought a clean plot and ready to design?** [Book a free site consultation](/contact) \u2014 we'll walk your plot, check the practical constraints, and plan a home that actually fits it.
+`
   }
 ];
 
