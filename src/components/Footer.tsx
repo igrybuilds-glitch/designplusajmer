@@ -172,17 +172,17 @@ export function Footer() {
             <Link to="/privacy-policy" className="hover:text-[#B86B38] underline decoration-white/30 underline-offset-4 transition-colors">
               Privacy Policy
             </Link>
-            <Link to="/terms-of-service" className="hover:text-[#B86B38] underline decoration-white/30 underline-offset-4 transition-colors">
-              Terms of Service
+            <Link to="/vastu" className="hover:text-[#B86B38] underline decoration-white/30 underline-offset-4 transition-colors">
+              Vastu Design
             </Link>
-            <Link to="/sitemap" className="hover:text-[#B86B38] underline decoration-white/30 underline-offset-4 transition-colors">
+            <a href="/sitemap.xml" className="hover:text-[#B86B38] underline decoration-white/30 underline-offset-4 transition-colors">
               Sitemap
+            </a>
+            <Link to="/architect-fees-ajmer" className="hover:text-[#B86B38] underline decoration-white/30 underline-offset-4 transition-colors">
+              Fee Guide
             </Link>
-            <Link to="/architect-fees-calculator-ajmer" className="hover:text-[#B86B38] underline decoration-white/30 underline-offset-4 transition-colors">
-              Fee Calculator
-            </Link>
-            <Link to="/structural-drawing-charges-ajmer" className="hover:text-[#B86B38] underline decoration-white/30 underline-offset-4 transition-colors font-semibold">
-              Structural Charges
+            <Link to="/structural-drawing-ajmer" className="hover:text-[#B86B38] underline decoration-white/30 underline-offset-4 transition-colors font-semibold">
+              Structural Drawings
             </Link>
             <Link to="/admin" className="inline-flex items-center gap-1.5 hover:text-[#B86B38] underline decoration-white/30 underline-offset-4 transition-colors">
               Studio Portal

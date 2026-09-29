@@ -23,10 +23,10 @@ export const HOMEPAGE_ARCHITECT_SCHEMA = {
   priceRange: '₹₹₹',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Civil Lines',
+    streetAddress: 'Rajeev Marg, Panchsheel Nagar',
     addressLocality: 'Ajmer',
     addressRegion: 'Rajasthan',
-    postalCode: '305001',
+    postalCode: '305004',
     addressCountry: 'IN'
   },
   geo: {
