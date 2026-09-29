@@ -492,6 +492,10 @@ export function ProjectManagementPage({ onOpenConsultation }: ProjectManagementP
               to="/contact"
               className="inline-flex items-center justify-center gap-2 border border-stone-700 hover:border-stone-400 text-stone-200 px-5 py-3.5 text-xs font-semibold uppercase tracking-wider transition-colors min-h-[44px] active:scale-95"
             >
+              <span>Contact Studio Office</span>
+              <ArrowUpRight className="w-4 h-4" />
+            </Link>
+          </div>
 
         {/* Related guides &amp; services — internal SEO links */}
         <nav aria-label="Related guides and services" className="mt-10 pt-6 border-t border-white/10">
