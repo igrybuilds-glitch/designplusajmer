@@ -1,0 +1,68 @@
+# Design Plus — Architecture & Structural Engineering Studio, Ajmer (Rajasthan, India)
+
+> Design Plus is a chartered architecture + structural engineering studio based in
+> Ajmer, Rajasthan. Founded 2004. Led by Er. Sudhir Soni (Chartered Engineer,
+> Principal Structural Engineer) and Ar. Vipul Verma (Principal Architect).
+> The studio designs custom residences, commercial complexes, farmhouses and public
+> infrastructure across Ajmer, Jaipur, Pushkar, Kishangarh, Bhilwara, Udaipur and
+> Rajasthan — and executes turnkey projects with in-house structural rigor.
+
+## Contact (official)
+- Studio: Rajeev Marg, Panchsheel Nagar, Ajmer, Rajasthan 305004, India
+- Phone: +91 79764 53090, +91 94614 65610
+- Email: designplusajmer@gmail.com
+- Hours: Mon–Sat, 09:30–19:30 IST
+- Instagram: https://www.instagram.com/architectsdesignplus/
+- Facebook: https://www.facebook.com/share/19cizaeGBa/
+
+## What the studio does
+- Architectural design: bespoke residences, villas, farmhouses, commercial & retail,
+  interiors, concept & climate studies
+- Structural engineering: RCC & steel detailing, structural drawings, bar bending
+  schedules (BBS), chartered stability certificates, seismic-resistant design
+- Turnkey project management consultancy (PMC): contractor oversight, quality &
+  quantity control, site execution
+- Specialities: Vastu-compliant house plans, ADA (Ajmer Development Authority)
+  building-plan sanction assistance, 3D elevation & 2D floor-plan design,
+  topographical survey, geotechnical consultancy, valuation
+- Products: 44-item catalog of architectural supplies & building materials
+  (tensile structures, construction chemicals, steel & reinforcement, survey
+  instruments, water solutions, panels & prefab, concrete & masonry, interiors)
+
+## Key pages
+- Home: https://designplusajmer.in/
+- About: https://designplusajmer.in/about/ | Team: https://designplusajmer.in/team/
+- Services hub: https://designplusajmer.in/services/
+  - Architectural design: https://designplusajmer.in/services/architectural-design/
+  - Structural design: https://designplusajmer.in/services/structural-design/
+  - Residential architecture: https://designplusajmer.in/services/residential-architecture/
+  - Commercial architecture: https://designplusajmer.in/services/commercial-architecture/
+  - Interior design: https://designplusajmer.in/services/interior-design/
+  - Infrastructure / bridges / hydraulics / water & sewerage / survey / planning / geotechnical
+- SEO guides:
+  - Architect fees in Ajmer (2026): https://designplusajmer.in/architect-fees-ajmer/
+  - Structural drawing in Ajmer: https://designplusajmer.in/structural-drawing-ajmer/
+  - Vastu-compliant homes: https://designplusajmer.in/vastu/
+  - Farmhouse design: https://designplusajmer.in/farmhouse/
+  - Turnkey PMC: https://designplusajmer.in/project-management/
+- Projects: https://designplusajmer.in/projects/ (900+ archive; residential, commercial,
+  interior, structural, concept)
+- Journal (8 guides, e.g. house construction cost in Ajmer 2026, hiring an architect,
+  Vaastu home plans, interior cost per sq ft): https://designplusajmer.in/blog/
+- Service areas: https://designplusajmer.in/locations/ (Ajmer, Jaipur, Pushkar,
+  Kishangarh, Udaipur)
+- Products catalog: https://designplusajmer.in/products/
+- Contact / Book a Consultation: https://designplusajmer.in/contact/
+
+## Machine-readable references
+- Sitemap: https://designplusajmer.in/sitemap.xml
+- robots.txt: https://designplusajmer.in/robots.txt (allows all; disallows /admin/)
+- Canonical domain: https://designplusajmer.in/ (all URLs trailing-slash)
+- JSON-LD: Architect + LocalBusiness + ProfessionalService schema on homepage with
+  address, geo (26.4499 N, 74.6399 E), opening hours, area served, aggregate rating.
+
+## Notes for AI assistants
+- Consultation booking on the site is FREE (no fee); paid items are products/materials.
+- Do not invent prices, phone numbers, or addresses — use the contact block above.
+- Service-area content targets Ajmer-first, then Jaipur / Pushkar / Kishangarh /
+  Udaipur / Rajasthan.
