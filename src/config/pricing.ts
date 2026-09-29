@@ -25,8 +25,8 @@ export const CENTRAL_PRICING_BOOK: Record<string, PriceRecord> = {
   'house-planning-consultation': {
     id: 'house-planning-consultation',
     name: 'House Planning Consultation (45 Min)',
-    amountINR: 1500,
-    displayPrice: '₹1,500',
+    amountINR: 0,
+    displayPrice: '—',
     isPlaceholder: false
   },
   '3d-front-elevation': {
