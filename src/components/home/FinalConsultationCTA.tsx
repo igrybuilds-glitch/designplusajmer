@@ -67,7 +67,7 @@ export function FinalConsultationCTA({ onOpenConsultation }: FinalConsultationCT
               Schedule a technical consultation with Er. Sudhir Soni &amp; Ar. Vipul Verma.
             </h3>
             <p className="text-sm text-[#F4F0E8]/80 font-sans">
-              Visit our Ajmer studio at Civil Lines or book a virtual session to discuss your site orientation, preliminary estimations, and structural requirements.
+              Visit our Ajmer studio at Rajeev Marg, Panchsheel Nagar or book a virtual session to discuss your site orientation, preliminary estimations, and structural requirements.
             </p>
           </div>
 

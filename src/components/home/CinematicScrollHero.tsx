@@ -205,7 +205,7 @@ export function CinematicScrollHero({ onOpenConsultation }: CinematicScrollHeroP
 
         {/* Bottom Footer Datum */}
         <div className="relative z-20 w-full py-3.5 px-4 bg-[#1E1D1A]/90 backdrop-blur-md text-center text-xs font-sans font-normal uppercase tracking-widest text-[#F4F0E8]/80 border-t border-white/10">
-          Civil Lines, Ajmer &middot; Bespoke Architectural &amp; Structural Engineering Studio
+          Panchsheel Nagar, Ajmer &middot; Bespoke Architectural &amp; Structural Engineering Studio
         </div>
       </section>
     </>
