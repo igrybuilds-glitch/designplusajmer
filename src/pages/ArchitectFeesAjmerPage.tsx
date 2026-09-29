@@ -185,7 +185,7 @@ export function ArchitectFeesAjmerPage({ onOpenConsultation }: ArchitectFeesAjme
   return (
     <main id="architect-fees-page" className="pt-28 pb-24 bg-[#FBFBF9] text-[#1A1917]">
       <SEOHead
-        title="Architect Fees in Ajmer (2025 Guide) | Design Plus"
+        title="Architect Fees in Ajmer (2026 Guide) | Design Plus"
         description="Transparent architect fees in Ajmer guide. Compare per-sqft rates, percentage models, and structural costs for residential villas and commercial spaces."
         keywords="architect fees in ajmer, how much does an architect charge in ajmer, architect cost per sq ft ajmer, house planning charges ajmer, architectural fees rajasthan, chartered engineer rates ajmer"
         canonical="https://designplusajmer.in/architect-fees-ajmer"
@@ -556,10 +556,28 @@ export function ArchitectFeesAjmerPage({ onOpenConsultation }: ArchitectFeesAjme
               to="/services"
               className="inline-flex items-center justify-center gap-2 border border-stone-700 hover:border-stone-400 text-stone-200 px-5 py-3.5 text-xs font-semibold uppercase tracking-wider transition-colors min-h-[44px] active:scale-95"
             >
-              <span>Explore Disciplines</span>
-              <ArrowUpRight className="w-4 h-4" />
-            </Link>
-          </div>
+
+        {/* Related guides &amp; services — internal SEO links */}
+        <nav aria-label="Related guides and services" className="mt-10 pt-6 border-t border-white/10">
+          <p className="text-[10px] font-mono uppercase tracking-[0.25em] text-stone-500 mb-3">Related Guides &amp; Services</p>
+          <ul className="flex flex-wrap gap-x-6 gap-y-2 text-xs font-sans">
+              <li>
+                <Link to="/blog/cost-of-building-a-house-in-ajmer-2026/" className="text-stone-400 hover:text-[#C86635] underline decoration-stone-700 underline-offset-4 transition-colors">
+                  House construction cost in Ajmer (2026 guide)
+                </Link>
+              </li>
+              <li>
+                <Link to="/blog/interior-design-cost-per-sqft-ajmer/" className="text-stone-400 hover:text-[#C86635] underline decoration-stone-700 underline-offset-4 transition-colors">
+                  Interior design cost per sq ft in Ajmer
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact/" className="text-stone-400 hover:text-[#C86635] underline decoration-stone-700 underline-offset-4 transition-colors">
+                  Book a Consultation
+                </Link>
+              </li>
+          </ul>
+        </nav>
         </div>
       </section>
     </main>

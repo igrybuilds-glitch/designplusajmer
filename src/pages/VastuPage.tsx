@@ -167,10 +167,10 @@ export function VastuPage({ onOpenConsultation }: VastuPageProps) {
       telephone: '+91-7976453090',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'Civil Lines',
+        streetAddress: 'Rajeev Marg, Panchsheel Nagar',
         addressLocality: 'Ajmer',
         addressRegion: 'Rajasthan',
-        postalCode: '305001',
+        postalCode: '305004',
         addressCountry: 'IN'
       }
     },
@@ -641,7 +641,7 @@ export function VastuPage({ onOpenConsultation }: VastuPageProps) {
               Ready to Design Your Vastu-Compliant Sanctuary?
             </h2>
             <p className="text-xs sm:text-sm text-stone-400 leading-relaxed">
-              Bring your plot dimensions or existing blueprints to our Civil Lines studio. Experience the peace of mind that comes from certified architecture, complete Vastu harmony, and chartered structural engineering.
+              Bring your plot dimensions or existing blueprints to our Rajeev Marg, Panchsheel Nagar studio. Experience the peace of mind that comes from certified architecture, complete Vastu harmony, and chartered structural engineering.
             </p>
           </div>
 
@@ -659,10 +659,28 @@ export function VastuPage({ onOpenConsultation }: VastuPageProps) {
               to="/structural-drawing-ajmer"
               className="inline-flex items-center justify-center gap-2 border border-stone-700 hover:border-stone-400 text-stone-200 px-5 py-3.5 text-xs font-semibold uppercase tracking-wider transition-colors min-h-[44px] active:scale-95"
             >
-              <span>Structural Services</span>
-              <ArrowUpRight className="w-4 h-4" />
-            </Link>
-          </div>
+
+        {/* Related guides &amp; services — internal SEO links */}
+        <nav aria-label="Related guides and services" className="mt-10 pt-6 border-t border-white/10">
+          <p className="text-[10px] font-mono uppercase tracking-[0.25em] text-stone-500 mb-3">Related Guides &amp; Services</p>
+          <ul className="flex flex-wrap gap-x-6 gap-y-2 text-xs font-sans">
+              <li>
+                <Link to="/blog/vaastu-compliant-home-plans-ajmer/" className="text-stone-400 hover:text-[#C86635] underline decoration-stone-700 underline-offset-4 transition-colors">
+                  Vaastu-compliant home plans guide
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/residential-architecture/" className="text-stone-400 hover:text-[#C86635] underline decoration-stone-700 underline-offset-4 transition-colors">
+                  Residential architecture in Ajmer
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact/" className="text-stone-400 hover:text-[#C86635] underline decoration-stone-700 underline-offset-4 transition-colors">
+                  Book a Consultation
+                </Link>
+              </li>
+          </ul>
+        </nav>
         </div>
       </section>
     </main>

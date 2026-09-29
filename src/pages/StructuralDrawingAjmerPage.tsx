@@ -155,10 +155,10 @@ export function StructuralDrawingAjmerPage({ onOpenConsultation }: StructuralDra
       telephone: '+91-7976453090',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'Civil Lines',
+        streetAddress: 'Rajeev Marg, Panchsheel Nagar',
         addressLocality: 'Ajmer',
         addressRegion: 'Rajasthan',
-        postalCode: '305001',
+        postalCode: '305004',
         addressCountry: 'IN'
       }
     },
@@ -511,10 +511,28 @@ export function StructuralDrawingAjmerPage({ onOpenConsultation }: StructuralDra
               to="/project-management"
               className="inline-flex items-center justify-center gap-2 border border-stone-700 hover:border-stone-400 text-stone-200 px-5 py-3.5 text-xs font-semibold uppercase tracking-wider transition-colors min-h-[44px] active:scale-95"
             >
-              <span>View Site PMC Scope</span>
-              <ArrowUpRight className="w-4 h-4" />
-            </Link>
-          </div>
+
+        {/* Related guides &amp; services — internal SEO links */}
+        <nav aria-label="Related guides and services" className="mt-10 pt-6 border-t border-white/10">
+          <p className="text-[10px] font-mono uppercase tracking-[0.25em] text-stone-500 mb-3">Related Guides &amp; Services</p>
+          <ul className="flex flex-wrap gap-x-6 gap-y-2 text-xs font-sans">
+              <li>
+                <Link to="/services/structural-design/" className="text-stone-400 hover:text-[#C86635] underline decoration-stone-700 underline-offset-4 transition-colors">
+                  Structural design services
+                </Link>
+              </li>
+              <li>
+                <Link to="/blog/how-to-plan-your-dream-home-in-ajmer/" className="text-stone-400 hover:text-[#C86635] underline decoration-stone-700 underline-offset-4 transition-colors">
+                  How to plan your dream home in Ajmer
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact/" className="text-stone-400 hover:text-[#C86635] underline decoration-stone-700 underline-offset-4 transition-colors">
+                  Book a Consultation
+                </Link>
+              </li>
+          </ul>
+        </nav>
         </div>
       </section>
     </main>

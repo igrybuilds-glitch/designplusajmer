@@ -87,7 +87,7 @@ export function ProductCategorySeoPage({ onOpenConsultation }: ProductCategorySe
       '@type': 'PostalAddress',
       addressLocality: 'Ajmer',
       addressRegion: 'Rajasthan',
-      postalCode: '305001',
+      postalCode: '305004',
       addressCountry: 'IN'
     },
     mainEntity: {

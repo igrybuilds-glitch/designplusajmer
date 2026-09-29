@@ -169,10 +169,10 @@ export function FarmhousePage({ onOpenConsultation }: FarmhousePageProps) {
       telephone: '+91-7976453090',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'Civil Lines',
+        streetAddress: 'Rajeev Marg, Panchsheel Nagar',
         addressLocality: 'Ajmer',
         addressRegion: 'Rajasthan',
-        postalCode: '305001',
+        postalCode: '305004',
         addressCountry: 'IN'
       }
     },
@@ -617,7 +617,7 @@ export function FarmhousePage({ onOpenConsultation }: FarmhousePageProps) {
               Ready to Design Your Dream Rural Estate in Rajasthan?
             </h2>
             <p className="text-xs sm:text-sm text-stone-400 leading-relaxed">
-              Book an initial site visit or consultation at our Civil Lines, Ajmer studio. We will review your land coordinates, discuss ecological master planning, and outline a tailored roadmap to turn your rural acreage into an enduring family legacy.
+              Book an initial site visit or consultation at our Rajeev Marg, Panchsheel Nagar studio in Ajmer. We will review your land coordinates, discuss ecological master planning, and outline a tailored roadmap to turn your rural acreage into an enduring family legacy.
             </p>
           </div>
 
@@ -635,10 +635,28 @@ export function FarmhousePage({ onOpenConsultation }: FarmhousePageProps) {
               to="/vastu"
               className="inline-flex items-center justify-center gap-2 border border-stone-700 hover:border-stone-400 text-stone-200 px-5 py-3.5 text-xs font-semibold uppercase tracking-wider transition-colors min-h-[44px] active:scale-95"
             >
-              <span>Vastu Alignment</span>
-              <ArrowUpRight className="w-4 h-4" />
-            </Link>
-          </div>
+
+        {/* Related guides &amp; services — internal SEO links */}
+        <nav aria-label="Related guides and services" className="mt-10 pt-6 border-t border-white/10">
+          <p className="text-[10px] font-mono uppercase tracking-[0.25em] text-stone-500 mb-3">Related Guides &amp; Services</p>
+          <ul className="flex flex-wrap gap-x-6 gap-y-2 text-xs font-sans">
+              <li>
+                <Link to="/services/residential-architecture/" className="text-stone-400 hover:text-[#C86635] underline decoration-stone-700 underline-offset-4 transition-colors">
+                  Residential architecture in Ajmer
+                </Link>
+              </li>
+              <li>
+                <Link to="/locations/pushkar/" className="text-stone-400 hover:text-[#C86635] underline decoration-stone-700 underline-offset-4 transition-colors">
+                  Architects in Pushkar
+                </Link>
+              </li>
+              <li>
+                <Link to="/vastu/" className="text-stone-400 hover:text-[#C86635] underline decoration-stone-700 underline-offset-4 transition-colors">
+                  Vastu-compliant farmhouse design
+                </Link>
+              </li>
+          </ul>
+        </nav>
         </div>
       </section>
     </main>

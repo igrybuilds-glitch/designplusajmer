@@ -64,7 +64,7 @@ export function ServiceGroupSeoPage({ onOpenConsultation }: ServiceGroupSeoPageP
       '@type': 'PostalAddress',
       addressLocality: 'Ajmer',
       addressRegion: 'Rajasthan',
-      postalCode: '305001',
+      postalCode: '305004',
       addressCountry: 'IN'
     },
     mainEntity: {
