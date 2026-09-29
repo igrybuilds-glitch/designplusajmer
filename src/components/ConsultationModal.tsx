@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { X, Phone, CheckCircle2, ArrowRight, Loader2, ShieldCheck, Lock, Mail } from 'lucide-react';
+import { X, CheckCircle2, ArrowRight, Loader2, ShieldCheck } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/siteData';
 import { submitConsultationInquiry } from '../lib/firebase';
 import { useAuth } from '../context/AuthContext';
@@ -97,107 +97,33 @@ export function ConsultationModal({ isOpen, onClose, defaultService, itemId = 'h
     }
   };
 
-  // 3. Initiate Razorpay Checkout Payment & Booking
-  const handleProceedToPayment = async (e: React.FormEvent) => {
+  // 3. Book consultation directly — no payment step (consultation carries no fee)
+  const handleBookConsultation = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!consentRequired) return;
     if (otpStep !== 'verified') {
-      alert('Please verify your email via OTP before proceeding to payment.');
+      alert('Please verify your email via OTP before booking.');
       return;
     }
 
     setSubmitting(true);
     try {
-      // Create secure order on server (server looks up price from price book)
-      const orderRes = await fetch('/api/payment/create-order', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          itemId,
-          email: formData.email,
-          customerName: formData.name,
-          phone: formData.phone
-        })
+      // Log booking inquiry directly — no payment gateway involved
+      await submitConsultationInquiry({
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        projectType: formData.service,
+        location: formData.location,
+        message: formData.notes,
+        userId: user?.uid
       });
-      const orderData = await orderRes.json();
-      if (!orderRes.ok) throw new Error(orderData.error || 'Failed to create payment order');
 
-      // Load Razorpay checkout script dynamically if not present
-      if (!(window as any).Razorpay) {
-        await new Promise((resolve, reject) => {
-          const script = document.createElement('script');
-          script.src = 'https://checkout.razorpay.com/v1/checkout.js';
-          script.onload = resolve;
-          script.onerror = reject;
-          document.body.appendChild(script);
-        });
-      }
-
-      const options = {
-        key: orderData.keyId,
-        amount: orderData.amount * 100, // paise
-        currency: orderData.currency || 'INR',
-        name: 'Design Plus',
-        description: orderData.itemDescription || 'Architectural Consultation & Booking',
-        order_id: orderData.orderId,
-        prefill: {
-          name: formData.name,
-          email: formData.email,
-          contact: formData.phone
-        },
-        theme: {
-          color: '#B86B38'
-        },
-        handler: async (response: any) => {
-          try {
-            // Verify payment signature server-side
-            const verifyRes = await fetch('/api/payment/verify-payment', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({
-                razorpay_order_id: response.razorpay_order_id,
-                razorpay_payment_id: response.razorpay_payment_id,
-                razorpay_signature: response.razorpay_signature,
-                itemId,
-                email: formData.email
-              })
-            });
-            const verifyData = await verifyRes.json();
-            if (!verifyRes.ok) throw new Error(verifyData.error || 'Payment signature verification failed');
-
-            setBookingRef(verifyData.bookingReference || 'DP-BK-984210');
-
-            // Log submission to Firestore / database
-            try {
-              await submitConsultationInquiry({
-                name: formData.name,
-                email: formData.email,
-                phone: formData.phone,
-                projectType: formData.service,
-                location: formData.location,
-                message: formData.notes,
-                userId: user?.uid
-              });
-            } catch (fsErr) {
-              console.warn('Firestore log notice:', fsErr);
-            }
-
-            setSubmitted(true);
-          } catch (verifyErr: any) {
-            alert(`Payment verification error: ${verifyErr.message}`);
-          }
-        },
-        modal: {
-          ondismiss: () => {
-            setSubmitting(false);
-          }
-        }
-      };
-
-      const rzp = new (window as any).Razorpay(options);
-      rzp.open();
+      setBookingRef('DP-' + Math.random().toString(36).slice(2, 8).toUpperCase());
+      setSubmitted(true);
     } catch (err: any) {
-      alert(err.message || 'Payment initiation failed');
+      alert(err.message || 'Booking failed. Please try again.');
+    } finally {
       setSubmitting(false);
     }
   };
@@ -224,17 +150,17 @@ export function ConsultationModal({ isOpen, onClose, defaultService, itemId = 'h
           <div>
             <div className="mb-6">
               <span className="text-[11px] uppercase tracking-widest text-[#B86B38] font-semibold block mb-1">
-                Direct Studio Dialogue &middot; Test Mode Secure Checkout
+                Direct Studio Dialogue
               </span>
               <h3 id="consultation-modal-title" className="font-editorial text-2xl sm:text-3xl text-stone-950 font-bold">
                 Book Site Consultation
               </h3>
               <p className="text-xs sm:text-sm text-stone-600 mt-2">
-                Connect with Er. Sudhir Soni and the Design Plus architecture team. Secure your consultation slot with instant Razorpay payment.
+                Connect with Er. Sudhir Soni and the Design Plus architecture team. Share your details below and our team will schedule your consultation.
               </p>
             </div>
 
-            <form onSubmit={handleProceedToPayment} className="space-y-4">
+            <form onSubmit={handleBookConsultation} className="space-y-4">
               <div>
                 <label className="block text-xs uppercase tracking-wider font-semibold text-stone-700 mb-1">
                   Full Name *
@@ -323,7 +249,7 @@ export function ConsultationModal({ isOpen, onClose, defaultService, itemId = 'h
               {otpStep === 'verified' && (
                 <div className="p-2.5 bg-emerald-50 border border-emerald-200 rounded-lg text-xs text-emerald-800 flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                  <span>Email successfully verified via 6-digit secure server OTP. Ready for payment.</span>
+                  <span>Email verified successfully. You can now book your consultation.</span>
                 </div>
               )}
 
@@ -408,18 +334,18 @@ export function ConsultationModal({ isOpen, onClose, defaultService, itemId = 'h
                   {submitting ? (
                     <>
                       <Loader2 className="w-4 h-4 animate-spin text-white" />
-                      <span>Opening Secure Razorpay Checkout...</span>
+                      <span>Booking your consultation...</span>
                     </>
                   ) : (
                     <>
-                      <Lock className="w-3.5 h-3.5" />
-                      <span>Pay ₹1,500 &amp; Book Consultation</span>
+                      <ArrowRight className="w-3.5 h-3.5" />
+                      <span>Book a Consultation</span>
                     </>
                   )}
                 </button>
                 {otpStep !== 'verified' && (
                   <p className="text-[11px] text-amber-800 text-center mt-1.5 font-medium">
-                    * Please enter your email and verify via 6-digit OTP above to unlock secure payment.
+                    * Please enter your email and verify via 6-digit OTP above to enable booking.
                   </p>
                 )}
               </div>
@@ -449,7 +375,7 @@ export function ConsultationModal({ isOpen, onClose, defaultService, itemId = 'h
               Booking Reference: <strong className="text-[#B86B38]">{bookingRef}</strong>
             </div>
             <p className="text-sm text-stone-600 max-w-sm mx-auto">
-              Thank you, {formData.name}. Payment verified via secure server signature. Our senior team led by Er. Sudhir Soni will coordinate with you at ({formData.phone}) within 24 hours.
+              Thank you, {formData.name}. Our senior team led by Er. Sudhir Soni will coordinate with you at ({formData.phone}) within 24 hours.
             </p>
             <div className="pt-4 flex flex-col sm:flex-row gap-3 justify-center">
               <button
