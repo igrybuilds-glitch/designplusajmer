@@ -126,6 +126,12 @@
   "price": "Price on request"
  },
  {
+  "category": "Survey Services",
+  "imageUrl": "/images/services/topographical-survey.webp",
+  "name": "UAV (Drone) Surveyors",
+  "price": "Price on request"
+ },
+ {
   "category": "Design & Architecture Services",
   "imageUrl": "https://images.jdmagicbox.com/quickquotes/images_main/architect-for-landscape-600122372-4epgqpoq.jpg",
   "name": "Architect for Landscape",
