@@ -114,9 +114,10 @@ const DISCIPLINES: EngineeringDiscipline[] = [
     category: 'SITE INVESTIGATION & MAPPING',
     codeStandard: 'IS 1892 · IS 2131 · DGPS RTK Standards',
     tagline: 'Subsurface Borehole Logging & DGPS Contour Mapping',
-    description: 'High-precision land surveying utilizing Real-Time Kinematic (RTK) DGPS and Robotic Total Stations to establish benchmarked contour maps. Coupled with geotechnical rotary core drilling and Standard Penetration Testing (SPT) for safe bearing capacity.',
+    description: 'High-precision land surveying utilizing Real-Time Kinematic (RTK) DGPS, Robotic Total Stations and UAV (Drone) Survey with photogrammetry mapping to establish benchmarked contour maps. Coupled with geotechnical rotary core drilling and Standard Penetration Testing (SPT) for safe bearing capacity.',
     technicalParameters: [
       { label: 'Horizontal & Vertical Accuracy', value: '±5mm RTK DGPS Precision' },
+      { label: 'UAV (Drone) Survey', value: 'Aerial Photogrammetry & Orthomosaic Mapping' },
       { label: 'Contour Interval Mapping', value: '0.25m Precision Intervals' },
       { label: 'Borehole Drilling Depth', value: 'Up to 30m or Refusal Strata' },
       { label: 'Safe Bearing Capacity (SBC)', value: '180 – 450 kN/m² Laboratory Certified' }
