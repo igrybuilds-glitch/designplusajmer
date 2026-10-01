@@ -1,0 +1,19 @@
+# Security headers for the Cloudflare Pages deployment (added in the
+# 2026-09-30 vulnerability audit). Cloudflare merges these with its own
+# defaults (x-content-type-options, referrer-policy are already set upstream).
+#
+# IMPORTANT: the Content-Security-Policy pins the inline preloader <script>
+# in index.html by SHA-256 hash. If that script is ever edited, recompute:
+#   python3 -c "
+#   import re,hashlib,base64
+#   s = open('index.html', encoding='utf-8').read()
+#   m = re.search(r'<script>(.*?)</script>', s, re.S)
+#   print('sha256-' + base64.b64encode(hashlib.sha256(m.group(1).encode()).digest()).decode())"
+# and replace the hash below, otherwise the preloader will stop running.
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-OBc7wKaYG/jjcrwOE13rbLXj55lkf5P9gTGDEVzRe2g='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; media-src 'self' data: https:; connect-src 'self' https://firestore.googleapis.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
