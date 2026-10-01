@@ -145,7 +145,7 @@ export function ArchitectFeesAjmerPage({ onOpenConsultation }: ArchitectFeesAjme
   const feesArticleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    '@id': 'https://designplusajmer.in/architect-fees-ajmer#article',
+    '@id': 'https://designplusajmer.co.in/architect-fees-ajmer#article',
     headline: 'Architect Fees in Ajmer: Complete 2025 Cost & Pricing Guide',
     description: 'Transparent architect fees in Ajmer guide. Compare per-sqft rates, percentage models, and structural costs for residential villas and commercial spaces.',
     image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
@@ -153,20 +153,20 @@ export function ArchitectFeesAjmerPage({ onOpenConsultation }: ArchitectFeesAjme
       '@type': 'Person',
       name: 'Ar. Vipul Verma',
       jobTitle: 'Principal Architect',
-      url: 'https://designplusajmer.in/about'
+      url: 'https://designplusajmer.co.in/about'
     },
     publisher: {
       '@type': 'Organization',
       name: 'Design Plus',
-      url: 'https://designplusajmer.in',
+      url: 'https://designplusajmer.co.in',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://designplusajmer.in/logo.png'
+        url: 'https://designplusajmer.co.in/logo.png'
       }
     },
     datePublished: '2025-01-15',
     dateModified: '2025-01-15',
-    mainEntityOfPage: 'https://designplusajmer.in/architect-fees-ajmer'
+    mainEntityOfPage: 'https://designplusajmer.co.in/architect-fees-ajmer'
   };
 
   const feesFAQSchema = {
@@ -188,7 +188,7 @@ export function ArchitectFeesAjmerPage({ onOpenConsultation }: ArchitectFeesAjme
         title="Architect Fees in Ajmer (2026 Guide) | Design Plus"
         description="Transparent architect fees in Ajmer guide. Compare per-sqft rates, percentage models, and structural costs for residential villas and commercial spaces."
         keywords="architect fees in ajmer, how much does an architect charge in ajmer, architect cost per sq ft ajmer, house planning charges ajmer, architectural fees rajasthan, chartered engineer rates ajmer"
-        canonical="https://designplusajmer.in/architect-fees-ajmer"
+        canonical="https://designplusajmer.co.in/architect-fees-ajmer"
         schema={[feesArticleSchema, feesFAQSchema]}
       />
 

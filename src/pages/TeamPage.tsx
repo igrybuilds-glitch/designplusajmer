@@ -13,7 +13,7 @@ export function TeamPage({ onOpenConsultation }: TeamPageProps) {
     '@context': 'https://schema.org',
     '@type': 'AboutPage',
     name: 'Leadership & Engineering Team | Design Plus',
-    url: 'https://designplusajmer.in/team',
+    url: 'https://designplusajmer.co.in/team',
     description: 'Meet the team behind Design Plus Architects & Engineers in Ajmer, Rajasthan: Er. Sudhir Soni, Ar. Vipul Verma, Er. Ankit Soni, Er. Shikha Soni, and Er. Amit Soni.',
     mainEntity: {
       '@type': 'Organization',
@@ -67,7 +67,7 @@ export function TeamPage({ onOpenConsultation }: TeamPageProps) {
         title="Our Team | Design Plus Architects Ajmer"
         description="Meet the Design Plus leadership: Er. Sudhir Soni (Chartered Engineer), Ar. Vipul Verma (Principal Architect), and our M.Tech / M.Plan engineering team in Ajmer."
         keywords="Er Sudhir Soni, Ar Vipul Verma, Er Ankit Soni, Er Shikha Soni, Er Amit Soni, architects team ajmer, structural engineers rajasthan"
-        canonical="https://designplusajmer.in/team"
+        canonical="https://designplusajmer.co.in/team"
         schema={teamSchema}
       />
 

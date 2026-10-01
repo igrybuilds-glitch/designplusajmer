@@ -82,18 +82,18 @@ export function BlogPage() {
     '@type': 'Blog',
     name: 'Design Plus Architectural & Engineering Journal',
     description: 'First-hand professional essays, structural calculations, building bylaws, and local construction guides from chartered engineers and architects in Ajmer, Rajasthan.',
-    url: 'https://designplusajmer.in/blog',
+    url: 'https://designplusajmer.co.in/blog',
     publisher: {
       '@type': 'Organization',
       name: 'Design Plus Architects & Engineers',
-      url: 'https://designplusajmer.in',
-      logo: 'https://designplusajmer.in/logo.png'
+      url: 'https://designplusajmer.co.in',
+      logo: 'https://designplusajmer.co.in/logo.png'
     },
     blogPost: allArticles.slice(0, 10).map(a => ({
       '@type': 'BlogPosting',
       headline: a.title,
       description: a.metaDescription,
-      url: `https://designplusajmer.in/blog/${a.slug}`,
+      url: `https://designplusajmer.co.in/blog/${a.slug}`,
       datePublished: a.publishedAt,
       dateModified: a.updatedAt,
       author: {
@@ -108,7 +108,7 @@ export function BlogPage() {
       <SEOHead
         title="Architecture & Engineering Journal | Design Plus Ajmer"
         description="Authoritative essays and guides on residential architecture, IS code structural engineering, building plan sanctions, and construction costs in Ajmer, Rajasthan."
-        canonical="https://designplusajmer.in/blog"
+        canonical="https://designplusajmer.co.in/blog"
         schema={blogSchema}
       />
 

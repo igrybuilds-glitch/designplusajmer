@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-export const DEFAULT_SITE_ORIGIN = 'https://designplusajmer.in';
+export const DEFAULT_SITE_ORIGIN = 'https://designplusajmer.co.in';
 
 /*
  * LIVE RATING VALUES (JustDial / Client Audits):
@@ -11,11 +11,11 @@ export const DEFAULT_SITE_ORIGIN = 'https://designplusajmer.in';
 export const HOMEPAGE_ARCHITECT_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': ['Architect', 'LocalBusiness', 'ProfessionalService', 'ArchitecturalService', 'EngineeringService'],
-  '@id': 'https://designplusajmer.in/#architect-business',
+  '@id': 'https://designplusajmer.co.in/#architect-business',
   name: 'Design Plus',
   legalName: 'Design Plus Architecture & Structural Engineering Studio',
-  url: 'https://designplusajmer.in',
-  logo: 'https://designplusajmer.in/logo.png',
+  url: 'https://designplusajmer.co.in',
+  logo: 'https://designplusajmer.co.in/logo.png',
   image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
   description: 'Premier architect in Ajmer for bespoke house planning Ajmer, refined interior designer Ajmer solutions, and turnkey project execution with structural rigor.',
   telephone: ['+91-7976453090', '+91-9461465610'],
@@ -128,7 +128,7 @@ export function SEOHead({
   }
 
   const withTrailingSlash = (u: string) => (u.endsWith('/') ? u : `${u}/`);
-  // Single canonical form site-wide: https://designplusajmer.in/<path>/ (the
+  // Single canonical form site-wide: https://designplusajmer.co.in/<path>/ (the
   // server 308-redirects extensionless paths to the trailing-slash form, so
   // canonicals must already be in that form — no redirect chains for crawlers).
   const resolvedCanonical = withTrailingSlash(

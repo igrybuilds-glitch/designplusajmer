@@ -340,7 +340,7 @@ export const AdminBlogEditPage: React.FC = () => {
 
             <div className="p-3.5 rounded-xl bg-white text-stone-900 shadow-inner font-sans text-xs">
               <div className="flex items-center gap-1 text-[11px] text-stone-600 mb-0.5 truncate">
-                <span>designplusajmer.in</span>
+                <span>designplusajmer.co.in</span>
                 <span>›</span>
                 <span>blog</span>
                 <span>›</span>

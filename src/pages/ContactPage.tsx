@@ -59,7 +59,7 @@ export function ContactPage() {
     '@context': 'https://schema.org',
     '@type': 'ContactPage',
     name: 'Contact Design Plus',
-    url: 'https://designplusajmer.in/contact',
+    url: 'https://designplusajmer.co.in/contact',
     description: 'Contact Design Plus studio in Ajmer, Rajasthan. Consult with Chartered Engineer Er. Sudhir Soni.',
     mainEntity: {
       '@type': 'ProfessionalService',
@@ -80,7 +80,7 @@ export function ContactPage() {
       <SEOHead
         title="Contact Design Plus | Architects in Ajmer"
         description="Contact Design Plus studio, Ajmer. Call 7976453090 / 9461465610 or email designplusajmer@gmail.com. Consult Chartered Engineer Er. Sudhir Soni."
-        canonical="https://designplusajmer.in/contact"
+        canonical="https://designplusajmer.co.in/contact"
         schema={contactSchema}
       />
 

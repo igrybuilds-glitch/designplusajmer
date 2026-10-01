@@ -6,7 +6,7 @@ import { Reveal } from '../components/blog-hub/Reveal';
 import '../components/blog-hub/blog-hub.css';
 
 const CATEGORIES = ['All', 'Guides', 'Trends', 'Rankings'];
-const SITE_URL = 'https://designplusajmer.in';
+const SITE_URL = 'https://designplusajmer.co.in';
 
 function formatDate(dateStr: string): string {
   const [y, m, d] = dateStr.split('-').map(Number);

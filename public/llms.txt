@@ -30,34 +30,34 @@
   instruments, water solutions, panels & prefab, concrete & masonry, interiors)
 
 ## Key pages
-- Home: https://designplusajmer.in/
-- About: https://designplusajmer.in/about/ | Team: https://designplusajmer.in/team/
-- Services hub: https://designplusajmer.in/services/
-  - Architectural design: https://designplusajmer.in/services/architectural-design/
-  - Structural design: https://designplusajmer.in/services/structural-design/
-  - Residential architecture: https://designplusajmer.in/services/residential-architecture/
-  - Commercial architecture: https://designplusajmer.in/services/commercial-architecture/
-  - Interior design: https://designplusajmer.in/services/interior-design/
+- Home: https://designplusajmer.co.in/
+- About: https://designplusajmer.co.in/about/ | Team: https://designplusajmer.co.in/team/
+- Services hub: https://designplusajmer.co.in/services/
+  - Architectural design: https://designplusajmer.co.in/services/architectural-design/
+  - Structural design: https://designplusajmer.co.in/services/structural-design/
+  - Residential architecture: https://designplusajmer.co.in/services/residential-architecture/
+  - Commercial architecture: https://designplusajmer.co.in/services/commercial-architecture/
+  - Interior design: https://designplusajmer.co.in/services/interior-design/
   - Infrastructure / bridges / hydraulics / water & sewerage / survey / planning / geotechnical
 - SEO guides:
-  - Architect fees in Ajmer (2026): https://designplusajmer.in/architect-fees-ajmer/
-  - Structural drawing in Ajmer: https://designplusajmer.in/structural-drawing-ajmer/
-  - Vastu-compliant homes: https://designplusajmer.in/vastu/
-  - Farmhouse design: https://designplusajmer.in/farmhouse/
-  - Turnkey PMC: https://designplusajmer.in/project-management/
-- Projects: https://designplusajmer.in/projects/ (900+ archive; residential, commercial,
+  - Architect fees in Ajmer (2026): https://designplusajmer.co.in/architect-fees-ajmer/
+  - Structural drawing in Ajmer: https://designplusajmer.co.in/structural-drawing-ajmer/
+  - Vastu-compliant homes: https://designplusajmer.co.in/vastu/
+  - Farmhouse design: https://designplusajmer.co.in/farmhouse/
+  - Turnkey PMC: https://designplusajmer.co.in/project-management/
+- Projects: https://designplusajmer.co.in/projects/ (900+ archive; residential, commercial,
   interior, structural, concept)
 - Journal (8 guides, e.g. house construction cost in Ajmer 2026, hiring an architect,
-  Vaastu home plans, interior cost per sq ft): https://designplusajmer.in/blog/
-- Service areas: https://designplusajmer.in/locations/ (Ajmer, Jaipur, Pushkar,
+  Vaastu home plans, interior cost per sq ft): https://designplusajmer.co.in/blog/
+- Service areas: https://designplusajmer.co.in/locations/ (Ajmer, Jaipur, Pushkar,
   Kishangarh, Udaipur)
-- Products catalog: https://designplusajmer.in/products/
-- Contact / Book a Consultation: https://designplusajmer.in/contact/
+- Products catalog: https://designplusajmer.co.in/products/
+- Contact / Book a Consultation: https://designplusajmer.co.in/contact/
 
 ## Machine-readable references
-- Sitemap: https://designplusajmer.in/sitemap.xml
-- robots.txt: https://designplusajmer.in/robots.txt (allows all; disallows /admin/)
-- Canonical domain: https://designplusajmer.in/ (all URLs trailing-slash)
+- Sitemap: https://designplusajmer.co.in/sitemap.xml
+- robots.txt: https://designplusajmer.co.in/robots.txt (allows all; disallows /admin/)
+- Canonical domain: https://designplusajmer.co.in/ (all URLs trailing-slash)
 - JSON-LD: Architect + LocalBusiness + ProfessionalService schema on homepage with
   address, geo (26.4499 N, 74.6399 E), opening hours, area served, aggregate rating.
 

@@ -22,11 +22,11 @@ export function BlogTagPage({ onOpenConsultation }: BlogTagPageProps) {
     '@type': 'CollectionPage',
     name: `${tagName} Articles | Design Plus Journal`,
     description: `Articles and engineering insights tagged under ${tagName} by Design Plus Architects & Engineers.`,
-    url: `https://designplusajmer.in/blog/tag/${activeTagSlug}`,
+    url: `https://designplusajmer.co.in/blog/tag/${activeTagSlug}`,
     publisher: {
       '@type': 'Organization',
       name: 'Design Plus Architects & Engineers',
-      url: 'https://designplusajmer.in'
+      url: 'https://designplusajmer.co.in'
     }
   };
 
@@ -35,7 +35,7 @@ export function BlogTagPage({ onOpenConsultation }: BlogTagPageProps) {
       <SEOHead
         title={`${tagName} | Design Plus Journal Topic`}
         description={`Explore articles, technical guides, and architectural case studies tagged with ${tagName}.`}
-        canonical={`https://designplusajmer.in/blog/tag/${activeTagSlug}`}
+        canonical={`https://designplusajmer.co.in/blog/tag/${activeTagSlug}`}
         schema={tagSchema}
       />
 

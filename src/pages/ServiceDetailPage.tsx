@@ -58,7 +58,7 @@ export function ServiceDetailPage({ onOpenConsultation }: ServiceDetailPageProps
       ? rawDescription
       : `${rawDescription.slice(0, 152).slice(0, rawDescription.slice(0, 152).lastIndexOf(' '))}...`;
 
-  const canonicalUrl = `https://designplusajmer.in/services/${service.slug}`;
+  const canonicalUrl = `https://designplusajmer.co.in/services/${service.slug}`;
 
   const serviceSchema = {
     '@context': 'https://schema.org',
@@ -68,7 +68,7 @@ export function ServiceDetailPage({ onOpenConsultation }: ServiceDetailPageProps
     provider: {
       '@type': 'ProfessionalService',
       name: 'Design Plus',
-      url: 'https://designplusajmer.in'
+      url: 'https://designplusajmer.co.in'
     },
     areaServed: {
       '@type': 'State',

@@ -55,7 +55,7 @@ export function ServiceGroupSeoPage({ onOpenConsultation }: ServiceGroupSeoPageP
     '@type': ['LocalBusiness', 'CollectionPage'],
     name: `${groupInfo.title} | Design Plus Ajmer`,
     description: groupInfo.description,
-    url: `https://designplusajmer.in/services/group/${groupSlug}`,
+    url: `https://designplusajmer.co.in/services/group/${groupSlug}`,
     areaServed: {
       '@type': 'State',
       name: 'Rajasthan, India'
@@ -92,7 +92,7 @@ export function ServiceGroupSeoPage({ onOpenConsultation }: ServiceGroupSeoPageP
         title={`${groupInfo.title} | Design Plus Ajmer`}
         description={groupInfo.description}
         keywords={`${groupInfo.title.toLowerCase()}, structural consultants ajmer, design plus services`}
-        canonical={`https://designplusajmer.in/services/group/${groupSlug}`}
+        canonical={`https://designplusajmer.co.in/services/group/${groupSlug}`}
         schema={schema}
       />
 

@@ -13,7 +13,7 @@ export function AboutPage({ onOpenConsultation }: AboutPageProps) {
     '@context': 'https://schema.org',
     '@type': 'AboutPage',
     name: 'About Design Plus',
-    url: 'https://designplusajmer.in/about',
+    url: 'https://designplusajmer.co.in/about',
     description: 'Learn about Design Plus, led by Chartered Engineer Er. Sudhir Soni and Principal Architect Ar. Vipul Verma.',
     mainEntity: {
       '@type': 'ProfessionalService',
@@ -32,7 +32,7 @@ export function AboutPage({ onOpenConsultation }: AboutPageProps) {
         title="About Design Plus | Architects in Ajmer"
         description="Meet Er. Sudhir Soni (Chartered Engineer) and Ar. Vipul Verma (Principal Architect). 20+ years of engineering heritage, 900+ bespoke projects in Rajasthan."
         keywords="about design plus, Er Sudhir Soni, Ar Vipul Verma, architects ajmer history, chartered engineer credentials, structural consultant rajasthan"
-        canonical="https://designplusajmer.in/about"
+        canonical="https://designplusajmer.co.in/about"
         schema={aboutSchema}
       />
 

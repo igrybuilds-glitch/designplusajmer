@@ -84,8 +84,8 @@ export function ProjectsPage({ initialCategory }: ProjectsPageProps) {
   }, [allProjects, activeCategoryParam, selectedType, searchQuery]);
 
   const canonicalUrl = activeCategoryParam === 'all' 
-    ? 'https://designplusajmer.in/projects'
-    : `https://designplusajmer.in/projects/${activeCategoryParam}`;
+    ? 'https://designplusajmer.co.in/projects'
+    : `https://designplusajmer.co.in/projects/${activeCategoryParam}`;
 
   const portfolioSchema = {
     '@context': 'https://schema.org',
@@ -100,7 +100,7 @@ export function ProjectsPage({ initialCategory }: ProjectsPageProps) {
       itemListElement: filteredProjects.slice(0, 10).map((proj, idx) => ({
         '@type': 'ListItem',
         position: idx + 1,
-        url: `https://designplusajmer.in/projects/${proj.category}/${proj.slug}`,
+        url: `https://designplusajmer.co.in/projects/${proj.category}/${proj.slug}`,
         name: proj.title
       }))
     }

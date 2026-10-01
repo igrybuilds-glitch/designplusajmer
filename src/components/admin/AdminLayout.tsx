@@ -496,7 +496,7 @@ export const AdminLayout: React.FC = () => {
                         {adminUser?.displayName || "Lead Administrator"}
                       </div>
                       <div className="text-[10px] font-mono text-stone-400 truncate">
-                        {adminUser?.email || "admin@designplusajmer.in"}
+                        {adminUser?.email || "admin@designplusajmer.co.in"}
                       </div>
                     </div>
                   </div>

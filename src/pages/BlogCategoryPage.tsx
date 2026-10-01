@@ -27,11 +27,11 @@ export function BlogCategoryPage({ onOpenConsultation }: BlogCategoryPageProps) 
     '@type': 'CollectionPage',
     name: `${category.name} | Design Plus Journal Archive`,
     description: category.description,
-    url: `https://designplusajmer.in/blog/category/${category.slug}`,
+    url: `https://designplusajmer.co.in/blog/category/${category.slug}`,
     publisher: {
       '@type': 'Organization',
       name: 'Design Plus Architects & Engineers',
-      url: 'https://designplusajmer.in'
+      url: 'https://designplusajmer.co.in'
     }
   };
 
@@ -40,7 +40,7 @@ export function BlogCategoryPage({ onOpenConsultation }: BlogCategoryPageProps) 
       <SEOHead
         title={category.metaTitle || `${category.name} | Design Plus Archive`}
         description={category.metaDescription || category.description}
-        canonical={`https://designplusajmer.in/blog/category/${category.slug}`}
+        canonical={`https://designplusajmer.co.in/blog/category/${category.slug}`}
         schema={categorySchema}
       />
 

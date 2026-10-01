@@ -61,7 +61,7 @@ export function ProductsPage({}: ProductsPageProps) {
     '@type': 'CollectionPage',
     name: 'Architectural Supplies, Materials & Equipment | Design Plus',
     description: 'Browse 44 certified architectural supplies, building materials, surveying equipment, and specialized construction products from Design Plus Ajmer.',
-    url: 'https://designplusajmer.in/products'
+    url: 'https://designplusajmer.co.in/products'
   };
 
   return (
@@ -70,7 +70,7 @@ export function ProductsPage({}: ProductsPageProps) {
         title="Architectural Supplies & Materials Catalog | Design Plus Ajmer"
         description="Browse 44 certified architectural supplies, building materials, surveying equipment, and specialized construction products from Design Plus Ajmer."
         keywords="architectural supplies ajmer, building materials rajasthan, construction equipment catalog, design plus products"
-        canonical="https://designplusajmer.in/products"
+        canonical="https://designplusajmer.co.in/products"
         schema={schema}
       />
 

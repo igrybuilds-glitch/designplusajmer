@@ -10,7 +10,7 @@ export function PrivacyPolicyPage() {
     '@type': 'WebPage',
     name: 'Privacy Policy & DPDP Act Compliance | Design Plus Ajmer',
     description: 'Privacy Policy of Design Plus Architecture & Structural Engineering Studio in Ajmer, Rajasthan, outlining compliance with the Digital Personal Data Protection (DPDP) Act, India.',
-    url: 'https://designplusajmer.in/privacy-policy'
+    url: 'https://designplusajmer.co.in/privacy-policy'
   };
 
   return (
@@ -19,7 +19,7 @@ export function PrivacyPolicyPage() {
         title="Privacy Policy & DPDP Act Compliance | Design Plus Ajmer"
         description="Privacy policy and personal data protection disclosures for Design Plus Studio in Ajmer, Rajasthan, in compliance with the DPDP Act, India."
         keywords="privacy policy design plus, dpdp act compliance ajmer, data protection studio rajasthan"
-        canonical="https://designplusajmer.in/privacy-policy"
+        canonical="https://designplusajmer.co.in/privacy-policy"
         schema={schema}
       />
 

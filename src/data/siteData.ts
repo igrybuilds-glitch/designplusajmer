@@ -2,7 +2,7 @@ import { TeamMember, LocationInfo, ProcessStep, FAQItem } from '../types';
 
 export const BUSINESS_INFO = {
   name: 'Design Plus',
-  website: 'designplusajmer.in',
+  website: 'designplusajmer.co.in',
   tagline: 'Architecture & Structural Engineering Practice',
   subTagline: 'Chartered structural engineering rigor integrated with refined architectural spatial design.',
   city: 'Ajmer',

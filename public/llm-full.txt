@@ -25,26 +25,26 @@
 5. Transparent pricing — published per-sq-ft architect fee ranges for Ajmer, so clients know costs before the first meeting.
 
 ## Services (key pages)
-- Architectural design & house planning: https://designplusajmer.in/services/ (2D floor plans, space layouts, Vastu zoning)
-- Residential architecture: https://designplusajmer.in/services/residential-architecture/
-- Commercial architecture: https://designplusajmer.in/services/commercial-architecture/
-- 3D elevation design: https://designplusajmer.in/services/3d-elevation-design/ (photorealistic exterior visuals)
-- Structural design & engineering: https://designplusajmer.in/services/structural-design/ (chartered RCC calculations, seismic design per IS 456 / IS 1893)
-- Interior design: https://designplusajmer.in/services/interior-design/
-- 2D floor planning: https://designplusajmer.in/services/2d-floor-planning/
-- Hotel & resort architecture: https://designplusajmer.in/services/hotel-resort-architecture/ (boutique hotels, desert resorts)
-- Turnkey construction (Ajmer): https://designplusajmer.in/turnkey-construction-ajmer/ (single-contract house building)
-- Modular kitchen (Ajmer): https://designplusajmer.in/modular-kitchen-ajmer/ (BWP plywood, per-sq-ft BOQ)
-- Home renovation (Ajmer): https://designplusajmer.in/renovation-ajmer/ (structural audit first, phased remodeling)
-- Project management consultancy: https://designplusajmer.in/project-management/ (on-site supervision, PMC)
-- Vastu-compliant design: https://designplusajmer.in/vastu/
-- Farmhouse design: https://designplusajmer.in/farmhouse/
-- Architect fees guide (Ajmer, 2025): https://designplusajmer.in/architect-fees-ajmer/ (transparent per-sq-ft fee ranges)
-- Architecture & construction statistics (India 2026): https://designplusajmer.in/architecture-statistics-india-2026/ (sourced industry data + studio's own numbers)
-- About the studio: https://designplusajmer.in/about/
-- Projects portfolio: https://designplusajmer.in/projects/
-- Blog: https://designplusajmer.in/blog/
-- Contact / book site consultation: https://designplusajmer.in/contact/
+- Architectural design & house planning: https://designplusajmer.co.in/services/ (2D floor plans, space layouts, Vastu zoning)
+- Residential architecture: https://designplusajmer.co.in/services/residential-architecture/
+- Commercial architecture: https://designplusajmer.co.in/services/commercial-architecture/
+- 3D elevation design: https://designplusajmer.co.in/services/3d-elevation-design/ (photorealistic exterior visuals)
+- Structural design & engineering: https://designplusajmer.co.in/services/structural-design/ (chartered RCC calculations, seismic design per IS 456 / IS 1893)
+- Interior design: https://designplusajmer.co.in/services/interior-design/
+- 2D floor planning: https://designplusajmer.co.in/services/2d-floor-planning/
+- Hotel & resort architecture: https://designplusajmer.co.in/services/hotel-resort-architecture/ (boutique hotels, desert resorts)
+- Turnkey construction (Ajmer): https://designplusajmer.co.in/turnkey-construction-ajmer/ (single-contract house building)
+- Modular kitchen (Ajmer): https://designplusajmer.co.in/modular-kitchen-ajmer/ (BWP plywood, per-sq-ft BOQ)
+- Home renovation (Ajmer): https://designplusajmer.co.in/renovation-ajmer/ (structural audit first, phased remodeling)
+- Project management consultancy: https://designplusajmer.co.in/project-management/ (on-site supervision, PMC)
+- Vastu-compliant design: https://designplusajmer.co.in/vastu/
+- Farmhouse design: https://designplusajmer.co.in/farmhouse/
+- Architect fees guide (Ajmer, 2025): https://designplusajmer.co.in/architect-fees-ajmer/ (transparent per-sq-ft fee ranges)
+- Architecture & construction statistics (India 2026): https://designplusajmer.co.in/architecture-statistics-india-2026/ (sourced industry data + studio's own numbers)
+- About the studio: https://designplusajmer.co.in/about/
+- Projects portfolio: https://designplusajmer.co.in/projects/
+- Blog: https://designplusajmer.co.in/blog/
+- Contact / book site consultation: https://designplusajmer.co.in/contact/
 
 ## Service areas
 Ajmer, Jaipur, Pushkar, Kishangarh, Beawar, Nasirabad, Bhilwara — Rajasthan, India.
@@ -69,4 +69,4 @@ Regional pages: /locations/ajmer/, /locations/jaipur/, /locations/pushkar/, /loc
 - 900+ projects, 20+ years, 8 cities, 13 disciplines — the studio's own citable numbers (see /architecture-statistics-india-2026/)
 - Chartered Engineer sign-off on structural work
 - Published fee transparency for the Ajmer market
-- Privacy: https://designplusajmer.in/privacy-policy/ · Terms: https://designplusajmer.in/terms-and-conditions/
+- Privacy: https://designplusajmer.co.in/privacy-policy/ · Terms: https://designplusajmer.co.in/terms-and-conditions/

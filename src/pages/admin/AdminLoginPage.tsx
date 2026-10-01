@@ -98,7 +98,7 @@ export const AdminLoginPage: React.FC = () => {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="admin@designplusajmer.in"
+                placeholder="admin@designplusajmer.co.in"
                 className="w-full px-3.5 py-2.5 rounded-xl bg-stone-950 border border-stone-800 text-stone-100 placeholder-stone-600 text-sm focus:outline-none focus:border-amber-500/60 focus:ring-1 focus:ring-amber-500/60 transition-colors"
                 autoComplete="email"
                 disabled={isSubmitting}

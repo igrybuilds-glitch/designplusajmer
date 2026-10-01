@@ -157,13 +157,13 @@ export function VastuPage({ onOpenConsultation }: VastuPageProps) {
   const vastuServiceSchema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    '@id': 'https://designplusajmer.in/vastu#service',
+    '@id': 'https://designplusajmer.co.in/vastu#service',
     name: 'Vastu-Compliant House Design & Architectural Planning in Ajmer',
     serviceType: 'Vastu Architectural Design & Floor Plan Audit',
     provider: {
       '@type': 'ProfessionalService',
       name: 'Design Plus',
-      url: 'https://designplusajmer.in',
+      url: 'https://designplusajmer.co.in',
       telephone: '+91-7976453090',
       address: {
         '@type': 'PostalAddress',
@@ -211,7 +211,7 @@ export function VastuPage({ onOpenConsultation }: VastuPageProps) {
         title="Vastu Architect in Ajmer | Vastu Compliant House Plans"
         description="Chartered Vastu architect in Ajmer. Scientific Vastu compliant house design, modern floor plans, and layout audits without compromising structural safety."
         keywords="vastu compliant house design ajmer, vastu architect ajmer, vastu house plan, vastu floor plan ajmer, vastu audit rajasthan, chartered engineer vastu ajmer"
-        canonical="https://designplusajmer.in/vastu"
+        canonical="https://designplusajmer.co.in/vastu"
         schema={[vastuServiceSchema, vastuFAQSchema]}
       />
 
