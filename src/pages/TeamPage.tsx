@@ -55,7 +55,7 @@ export function TeamPage({ onOpenConsultation }: TeamPageProps) {
 
   const partnerPhotos: Record<string, string> = {
     'Er. Sudhir Soni': '/images/team/sudhir-soni.jpg',
-    'Ar. Vipul Verma': 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1000&q=85',
+    'Ar. Vipul Verma': '/images/team/vipul-verma.jpg',
     'Er. Ankit Soni': '/images/team/ankit-soni.jpg',
     'Er. Shikha Soni': '/images/team/shikha-soni.jpg',
     'Er. Amit Soni': '/images/team/amit-soni.jpg'

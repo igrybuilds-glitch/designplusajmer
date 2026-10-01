@@ -3,25 +3,10 @@
 --   wrangler d1 execute designplus-db --file=api/schema.sql
 -- (or paste into the dashboard's D1 SQL editor)
 
--- Email OTP store (replaces the old in-memory otpStore Map).
--- The OTP code itself is stored as a SHA-256 hash, never plaintext.
-CREATE TABLE IF NOT EXISTS otp_store (
-  email      TEXT PRIMARY KEY,
-  code_hash  TEXT NOT NULL,
-  attempts   INTEGER NOT NULL DEFAULT 0,
-  verified   INTEGER NOT NULL DEFAULT 0,
-  expires_at INTEGER NOT NULL,
-  created_at INTEGER NOT NULL
-);
-
--- OTP send rate limits: max 5 OTPs/day per email + 60s resend cooldown
--- (replaces the old in-memory otpRateStore Map).
-CREATE TABLE IF NOT EXISTS otp_rate_limits (
-  email           TEXT PRIMARY KEY,
-  count           INTEGER NOT NULL DEFAULT 0,
-  window_start    INTEGER NOT NULL,
-  last_request_at INTEGER NOT NULL DEFAULT 0
-);
+-- NOTE: the old email-OTP tables (otp_store, otp_rate_limits) were REMOVED
+-- 2026-10-01 — the client ordered the whole OTP system deleted (no
+-- verification-code friction). If those tables still exist in a live DB,
+-- they can be dropped: DROP TABLE IF EXISTS otp_store; DROP TABLE IF EXISTS otp_rate_limits;
 
 -- Admin audit trail (replaces the old in-memory auditLogsStore array).
 CREATE TABLE IF NOT EXISTS admin_audit_log (

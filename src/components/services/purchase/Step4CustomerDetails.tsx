@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { CustomerDetailsState } from './types';
+import { isValidIndianMobile, PHONE_ERROR_MESSAGE } from '../../../lib/phone';
 
 interface Step4CustomerDetailsProps {
   customerDetails: CustomerDetailsState;
@@ -10,8 +11,19 @@ export function Step4CustomerDetails({
   customerDetails,
   setCustomerDetails
 }: Step4CustomerDetailsProps) {
+  const [phoneError, setPhoneError] = useState('');
+
   const updateField = (field: keyof CustomerDetailsState, value: string) => {
     setCustomerDetails(prev => ({ ...prev, [field]: value }));
+  };
+
+  const handlePhoneChange = (value: string) => {
+    updateField('phone', value);
+    if (value.trim() && !isValidIndianMobile(value)) {
+      setPhoneError(PHONE_ERROR_MESSAGE);
+    } else {
+      setPhoneError('');
+    }
   };
 
   return (
@@ -47,11 +59,17 @@ export function Step4CustomerDetails({
           <input
             type="tel"
             required
-            placeholder="+91 98XXX XXXXX"
+            inputMode="numeric"
+            placeholder="10-digit mobile, e.g. 98290 12345"
             value={customerDetails.phone}
-            onChange={(e) => updateField('phone', e.target.value)}
-            className="w-full p-2.5 bg-white border border-stone-300 text-sm focus:border-stone-900 focus:outline-hidden"
+            onChange={(e) => handlePhoneChange(e.target.value)}
+            className={`w-full p-2.5 bg-white border text-sm focus:outline-hidden ${
+              phoneError ? 'border-red-500 focus:border-red-600' : 'border-stone-300 focus:border-stone-900'
+            }`}
           />
+          {phoneError && (
+            <p className="text-xs text-red-600 mt-1 font-medium">{phoneError}</p>
+          )}
         </div>
 
         <div>

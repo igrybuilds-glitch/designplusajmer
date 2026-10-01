@@ -1,5 +1,5 @@
 import React, { useId } from 'react';
-import { X, ArrowRight, ArrowLeft, CheckCircle2, Printer } from 'lucide-react';
+import { X, ArrowRight, ArrowLeft, Printer } from 'lucide-react';
 import { ServicePurchaseFlowProps } from './purchase/types';
 import { useServicePurchaseFlow } from './purchase/useServicePurchaseFlow';
 import { Step1ServiceSelect } from './purchase/Step1ServiceSelect';
@@ -7,7 +7,7 @@ import { Step2ProjectDetails } from './purchase/Step2ProjectDetails';
 import { Step3FileUpload } from './purchase/Step3FileUpload';
 import { Step4CustomerDetails } from './purchase/Step4CustomerDetails';
 import { Step5OrderReview } from './purchase/Step5OrderReview';
-import { Step6PaymentPlaceholder, paymentProvider } from './purchase/Step6PaymentPlaceholder';
+import { Step6Payment, paymentProvider } from './purchase/Step6Payment';
 import { Step7Confirmation } from './purchase/Step7Confirmation';
 
 // Export paymentProvider, hook, and modular steps for external reuse
@@ -111,9 +111,17 @@ export function ServicePurchaseFlow({
         );
       case 6:
         return (
-          <Step6PaymentPlaceholder
+          <Step6Payment
             selectedPaymentMode={selectedPaymentMode}
             setSelectedPaymentMode={setSelectedPaymentMode}
+            itemId={selectedServiceId}
+            itemName={currentService.name}
+            amountLabel={currentService.pricingLabel}
+            customerName={customerDetails.fullName}
+            customerPhone={customerDetails.phone}
+            isSubmitting={isSubmitting}
+            onPaymentComplete={(paymentRef) => submitOrder(paymentRef)}
+            onSkipPayment={() => submitOrder()}
           />
         );
       case 7:
@@ -210,21 +218,9 @@ export function ServicePurchaseFlow({
                 <ArrowRight className="w-3.5 h-3.5" />
               </button>
             ) : (
-              <button
-                type="button"
-                disabled={isSubmitting}
-                onClick={submitOrder}
-                className="inline-flex items-center gap-2 bg-[#C86635] hover:bg-[#b5582a] text-white px-7 py-3 text-xs font-mono uppercase tracking-[0.18em] font-semibold transition-colors shadow-sm disabled:opacity-50"
-              >
-                {isSubmitting ? (
-                  <span>Registering Order...</span>
-                ) : (
-                  <>
-                    <span>Submit Commission</span>
-                    <CheckCircle2 className="w-4 h-4" />
-                  </>
-                )}
-              </button>
+              <span className="text-[11px] text-stone-400 font-mono hidden sm:inline">
+                Step 6 of 7 — choose your payment option above
+              </span>
             )}
           </>
         ) : (

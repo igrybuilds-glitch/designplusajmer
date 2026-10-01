@@ -1,174 +1,26 @@
 // Secure payment & booking routes. Mounted at /api/payment.
 //
-// OTP state and replay protection live in D1 (replacing the old in-memory
-// Maps/Sets). OTP codes are stored as SHA-256 hashes, never plaintext.
+// Email OTP was REMOVED entirely (client feedback: nobody wants the
+// verification-code headache). Booking + payment work with just name +
+// a valid 10-digit Indian mobile number — verified client-side, never OTP.
 //
-// Behavior notes vs the old Express server:
+// Behavior notes:
 // - RAZORPAY_KEY_ID / RAZORPAY_KEY_SECRET are REQUIRED. When absent the
-//   order endpoint returns 503 (the old server silently fell back to mock
-//   keys/orders, which would fabricate payments — never do that here).
+//   order endpoint returns 503 (we never fall back to mock keys/orders,
+//   which would fabricate payments — never do that here).
 // - Test-mode mock order verification ("order_mock_*") is only honored when
 //   the configured key is a Razorpay TEST key (rzp_test_*).
+// - TEST keys only. Live keys + KYC are the studio owner's job.
 
 import { Hono } from "hono";
-import { createHash, createHmac, randomBytes, timingSafeEqual } from "node:crypto";
+import { createHmac, randomBytes, timingSafeEqual } from "node:crypto";
 import type { Env } from "../env";
 import { createRazorpayOrder } from "../razorpay";
 import { lookupPrice } from "../../../src/config/pricing";
 
 export const paymentRoutes = new Hono<{ Bindings: Env }>();
 
-const OTP_TTL_MS = 10 * 60 * 1000; // 10 minutes
-const OTP_RESEND_COOLDOWN_MS = 60 * 1000; // 60 seconds
-const OTP_MAX_PER_DAY = 5;
-const OTP_MAX_ATTEMPTS = 5;
-
-function sha256Hex(value: string): string {
-  return createHash("sha256").update(value).digest("hex");
-}
-
-interface OtpRow {
-  code_hash: string;
-  attempts: number;
-  verified: number;
-  expires_at: number;
-}
-
-interface OtpRateRow {
-  count: number;
-  window_start: number;
-  last_request_at: number;
-}
-
-// 1. Send Email OTP
-paymentRoutes.post("/send-otp", async (c) => {
-  const { email } = await c.req.json();
-  if (!email || typeof email !== "string" || !email.includes("@")) {
-    return c.json({ error: "Valid email address is required" }, 400);
-  }
-
-  const normalizedEmail = email.toLowerCase().trim();
-  const now = Date.now();
-  const today = new Date(now).toDateString();
-  const db = c.env.DB;
-
-  let rate = await db
-    .prepare(`SELECT count, window_start, last_request_at FROM otp_rate_limits WHERE email = ?`)
-    .bind(normalizedEmail)
-    .first<OtpRateRow>();
-
-  if (!rate || new Date(rate.window_start).toDateString() !== today) {
-    rate = { count: 0, window_start: now, last_request_at: 0 };
-  }
-
-  // 60-second cooldown check
-  if (now - rate.last_request_at < OTP_RESEND_COOLDOWN_MS) {
-    const remainingSecs = Math.ceil((OTP_RESEND_COOLDOWN_MS - (now - rate.last_request_at)) / 1000);
-    return c.json({ error: `Please wait ${remainingSecs}s before requesting another OTP code.` }, 429);
-  }
-
-  // Daily free tier cap check (max 5 OTPs per email/day)
-  if (rate.count >= OTP_MAX_PER_DAY) {
-    return c.json(
-      {
-        error:
-          "Daily free email verification limit reached (5/day). Please contact our Ajmer studio directly at +91 98290 85850.",
-      },
-      429
-    );
-  }
-
-  await db
-    .prepare(
-      `INSERT INTO otp_rate_limits (email, count, window_start, last_request_at) VALUES (?, ?, ?, ?)
-       ON CONFLICT(email) DO UPDATE SET count = excluded.count, window_start = excluded.window_start,
-         last_request_at = excluded.last_request_at`
-    )
-    .bind(normalizedEmail, rate.count + 1, rate.window_start, now)
-    .run();
-
-  const otp = (100000 + Math.floor(Math.random() * 900000)).toString(); // 6-digit OTP
-  const expiresAt = now + OTP_TTL_MS;
-
-  await db
-    .prepare(
-      `INSERT INTO otp_store (email, code_hash, attempts, verified, expires_at, created_at)
-       VALUES (?, ?, 0, 0, ?, ?)
-       ON CONFLICT(email) DO UPDATE SET code_hash = excluded.code_hash, attempts = 0,
-         verified = 0, expires_at = excluded.expires_at, created_at = excluded.created_at`
-    )
-    .bind(normalizedEmail, sha256Hex(otp), expiresAt, now)
-    .run();
-
-  // NOTE: no email is actually dispatched yet (same as the old server, which
-  // only logged the code). Wiring Resend into this endpoint is a separate,
-  // already-planned task. Until then the code is visible in `wrangler tail`
-  // logs, and in the response only when explicitly enabled for testing.
-  console.log(`[Email OTP] Generated for ${normalizedEmail} (valid for 10 minutes)`);
-
-  return c.json({
-    success: true,
-    message: `6-digit verification OTP sent to ${normalizedEmail}.`,
-    testModeOtpHint: c.env.INCLUDE_TEST_OTP_HINT === "true" ? otp : undefined,
-  });
-});
-
-// 2. Verify Email OTP
-paymentRoutes.post("/verify-otp", async (c) => {
-  const { email, otp } = await c.req.json();
-  if (!email || !otp) {
-    return c.json({ error: "Email and OTP code are required" }, 400);
-  }
-
-  const normalizedEmail = email.toLowerCase().trim();
-  const db = c.env.DB;
-
-  const record = await db
-    .prepare(`SELECT code_hash, attempts, verified, expires_at FROM otp_store WHERE email = ?`)
-    .bind(normalizedEmail)
-    .first<OtpRow>();
-
-  if (!record) {
-    return c.json({ error: "No active OTP request found for this email. Please request a new OTP." }, 400);
-  }
-
-  if (Date.now() > record.expires_at) {
-    await db.prepare(`DELETE FROM otp_store WHERE email = ?`).bind(normalizedEmail).run();
-    return c.json({ error: "OTP has expired (10-minute limit). Please request a new OTP." }, 400);
-  }
-
-  if (record.attempts >= OTP_MAX_ATTEMPTS) {
-    await db.prepare(`DELETE FROM otp_store WHERE email = ?`).bind(normalizedEmail).run();
-    return c.json({ error: "Maximum verification attempts exceeded. Please request a new OTP." }, 429);
-  }
-
-  const attempts = record.attempts + 1;
-  await db
-    .prepare(`UPDATE otp_store SET attempts = ? WHERE email = ?`)
-    .bind(attempts, normalizedEmail)
-    .run();
-
-  const candidate = sha256Hex(String(otp).trim());
-  let match = false;
-  try {
-    match = timingSafeEqual(Buffer.from(record.code_hash, "hex"), Buffer.from(candidate, "hex"));
-  } catch {
-    match = false;
-  }
-
-  if (!match) {
-    return c.json({ error: `Invalid OTP code. ${OTP_MAX_ATTEMPTS - attempts} attempts remaining.` }, 400);
-  }
-
-  await db
-    .prepare(`UPDATE otp_store SET verified = 1 WHERE email = ?`)
-    .bind(normalizedEmail)
-    .run();
-
-  return c.json({ success: true, message: "Email successfully verified via OTP." });
-});
-
-// 3. Create Razorpay Order (fraud-proof server price book lookup)
+// 1. Create Razorpay Order (fraud-proof server price book lookup)
 paymentRoutes.post("/create-order", async (c) => {
   const keyId = c.env.RAZORPAY_KEY_ID;
   const keySecret = c.env.RAZORPAY_KEY_SECRET;
@@ -184,24 +36,26 @@ paymentRoutes.post("/create-order", async (c) => {
   }
 
   try {
-    const { itemId, email, customerName, phone } = await c.req.json();
+    const { itemId, customerName, phone } = await c.req.json();
 
-    if (!email) {
-      return c.json({ error: "Verified email is required to initiate booking order." }, 400);
+    if (!customerName || typeof customerName !== "string" || !customerName.trim()) {
+      return c.json({ error: "Customer name is required to initiate booking order." }, 400);
     }
-
-    const normalizedEmail = email.toLowerCase().trim();
-    const db = c.env.DB;
-    const otpRecord = await db
-      .prepare(`SELECT verified FROM otp_store WHERE email = ?`)
-      .bind(normalizedEmail)
-      .first<{ verified: number }>();
-    if (!otpRecord || !otpRecord.verified) {
-      return c.json({ error: "Email must be verified via OTP before initiating payment." }, 403);
+    const digits = String(phone || "").replace(/\D/g, "");
+    const normalized = digits.length === 12 && digits.startsWith("91")
+      ? digits.slice(2)
+      : digits.length === 11 && digits.startsWith("0")
+        ? digits.slice(1)
+        : digits;
+    if (!/^[6-9]\d{9}$/.test(normalized)) {
+      return c.json({ error: "A valid 10-digit Indian mobile number is required." }, 400);
     }
 
     // SERVER PRICE BOOK LOOKUP (CRITICAL FRAUD-PROOFING: ignore any client-sent price!)
     const resolvedPriceINR = lookupPrice(itemId || "default-consultation");
+    if (!resolvedPriceINR || resolvedPriceINR <= 0) {
+      return c.json({ error: "This service cannot be paid online yet. Please contact the studio directly." }, 400);
+    }
     const amountInPaise = resolvedPriceINR * 100; // Razorpay expects amount in paise
 
     const receiptId = `rcpt_${Date.now()}_${randomBytes(3).toString("hex")}`;
@@ -213,9 +67,8 @@ paymentRoutes.post("/create-order", async (c) => {
         receipt: receiptId,
         notes: {
           itemId: itemId || "default-consultation",
-          customerEmail: normalizedEmail,
-          customerName: customerName || "Valued Client",
-          customerPhone: phone || "",
+          customerName: customerName.trim(),
+          customerPhone: normalized,
         },
       });
     } catch (rzpErr: any) {
@@ -233,6 +86,7 @@ paymentRoutes.post("/create-order", async (c) => {
       amount: resolvedPriceINR,
       currency: "INR",
       keyId,
+      testMode: keyId.startsWith("rzp_test_"),
       itemDescription: itemId || "Design Plus Architectural Consultation",
     });
   } catch (err: any) {
@@ -241,7 +95,7 @@ paymentRoutes.post("/create-order", async (c) => {
   }
 });
 
-// 4. Verify Payment & Signature (server-side signature verification + replay protection)
+// 2. Verify Payment & Signature (server-side signature verification + replay protection)
 paymentRoutes.post("/verify-payment", async (c) => {
   const keyId = c.env.RAZORPAY_KEY_ID;
   const keySecret = c.env.RAZORPAY_KEY_SECRET;

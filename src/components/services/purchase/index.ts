@@ -5,5 +5,5 @@ export * from './Step2ProjectDetails';
 export * from './Step3FileUpload';
 export * from './Step4CustomerDetails';
 export * from './Step5OrderReview';
-export * from './Step6PaymentPlaceholder';
+export * from './Step6Payment';
 export * from './Step7Confirmation';

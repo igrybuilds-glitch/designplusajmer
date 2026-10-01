@@ -3,7 +3,7 @@
 // Mounted at /api.
 //
 // NOTE: this endpoint is intentionally unauthenticated per spec; consider
-// gating it behind the OTP-verified booking flow if abuse appears.
+// rate-limiting by IP if abuse appears.
 
 import { Hono } from "hono";
 import type { Env } from "../env";

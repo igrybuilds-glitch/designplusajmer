@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { X, CheckCircle2, ArrowRight, Loader2, ShieldCheck } from 'lucide-react';
+import { X, CheckCircle2, ArrowRight, Loader2, ShieldCheck, Phone } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/siteData';
 import { submitConsultationInquiry } from '../lib/firebase';
 import { useAuth } from '../context/AuthContext';
+import { isValidIndianMobile, normalizeIndianMobile, PHONE_ERROR_MESSAGE } from '../lib/phone';
 
 interface ConsultationModalProps {
   isOpen: boolean;
@@ -17,14 +18,7 @@ export function ConsultationModal({ isOpen, onClose, defaultService, itemId = 'h
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [consentRequired, setConsentRequired] = useState(false);
-  const [consentOptional, setConsentOptional] = useState(false);
-
-  // Email OTP States
-  const [otpStep, setOtpStep] = useState<'input' | 'verify' | 'verified'>('input');
-  const [otpCode, setOtpCode] = useState('');
-  const [otpSending, setOtpSending] = useState(false);
-  const [otpVerifying, setOtpVerifying] = useState(false);
-  const [otpMessage, setOtpMessage] = useState('');
+  const [phoneError, setPhoneError] = useState('');
 
   const [formData, setFormData] = useState({
     name: user?.displayName || '',
@@ -39,80 +33,34 @@ export function ConsultationModal({ isOpen, onClose, defaultService, itemId = 'h
 
   if (!isOpen) return null;
 
-  // 1. Send Email OTP
-  const handleSendOtp = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!formData.email || !formData.email.includes('@')) {
-      alert('Please enter a valid email address first.');
-      return;
-    }
-
-    setOtpSending(true);
-    setOtpMessage('');
-    try {
-      const res = await fetch('/api/payment/send-otp', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: formData.email })
-      });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error || 'Failed to send OTP');
-
-      setOtpStep('verify');
-      setOtpMessage(data.message || 'OTP sent successfully.');
-      if (data.testModeOtpHint) {
-        console.info(`[Test Mode OTP Hint]: ${data.testModeOtpHint}`);
-      }
-    } catch (err: any) {
-      alert(err.message || 'Error sending OTP');
-    } finally {
-      setOtpSending(false);
+  const handlePhoneChange = (value: string) => {
+    setFormData({ ...formData, phone: value });
+    if (value.trim() && !isValidIndianMobile(value)) {
+      setPhoneError(PHONE_ERROR_MESSAGE);
+    } else {
+      setPhoneError('');
     }
   };
 
-  // 2. Verify Email OTP
-  const handleVerifyOtp = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!otpCode || otpCode.length < 6) {
-      alert('Please enter the 6-digit verification code.');
-      return;
-    }
-
-    setOtpVerifying(true);
-    try {
-      const res = await fetch('/api/payment/verify-otp', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: formData.email, otp: otpCode })
-      });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error || 'Invalid OTP');
-
-      setOtpStep('verified');
-      setOtpMessage('Email verified successfully!');
-    } catch (err: any) {
-      alert(err.message || 'OTP verification failed');
-    } finally {
-      setOtpVerifying(false);
-    }
-  };
-
-  // 3. Book consultation directly — no payment step (consultation carries no fee)
+  // Book consultation — just name + mobile, no verification codes.
   const handleBookConsultation = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!consentRequired) return;
-    if (otpStep !== 'verified') {
-      alert('Please verify your email via OTP before booking.');
+    if (!formData.name.trim()) {
+      alert('Please enter your name.');
+      return;
+    }
+    if (!isValidIndianMobile(formData.phone)) {
+      setPhoneError(PHONE_ERROR_MESSAGE);
       return;
     }
 
     setSubmitting(true);
     try {
-      // Log booking inquiry directly — no payment gateway involved
       await submitConsultationInquiry({
-        name: formData.name,
-        email: formData.email,
-        phone: formData.phone,
+        name: formData.name.trim(),
+        email: formData.email.trim(),
+        phone: normalizeIndianMobile(formData.phone),
         projectType: formData.service,
         location: formData.location,
         message: formData.notes,
@@ -136,7 +84,7 @@ export function ConsultationModal({ isOpen, onClose, defaultService, itemId = 'h
       className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-stone-950/70 backdrop-blur-xs animate-in fade-in duration-200"
     >
       <div className="relative w-full max-w-lg bg-[#FBFBF9] border border-stone-300 shadow-2xl p-6 sm:p-8 max-h-[90vh] overflow-y-auto">
-        
+
         {/* Close Button */}
         <button
           onClick={onClose}
@@ -150,20 +98,20 @@ export function ConsultationModal({ isOpen, onClose, defaultService, itemId = 'h
           <div>
             <div className="mb-6">
               <span className="text-[11px] uppercase tracking-widest text-[#B86B38] font-semibold block mb-1">
-                Direct Studio Dialogue
+                Talk Directly to the Studio
               </span>
               <h3 id="consultation-modal-title" className="font-editorial text-2xl sm:text-3xl text-stone-950 font-bold">
                 Book Site Consultation
               </h3>
               <p className="text-xs sm:text-sm text-stone-600 mt-2">
-                Connect with Er. Sudhir Soni and the Design Plus architecture team. Share your details below and our team will schedule your consultation.
+                Fill in your name and mobile number — our team will call you within 24 hours to schedule.
               </p>
             </div>
 
             <form onSubmit={handleBookConsultation} className="space-y-4">
               <div>
                 <label className="block text-xs uppercase tracking-wider font-semibold text-stone-700 mb-1">
-                  Full Name *
+                  Your Name *
                 </label>
                 <input
                   type="text"
@@ -171,192 +119,119 @@ export function ConsultationModal({ isOpen, onClose, defaultService, itemId = 'h
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   placeholder="e.g. Rajesh Sharma"
-                  className="w-full px-3 py-2.5 bg-white border border-stone-300 text-stone-900 text-sm focus:border-stone-800 focus:outline-hidden"
+                  className="w-full px-3 py-3 bg-white border border-stone-300 text-stone-900 text-sm focus:border-stone-800 focus:outline-hidden"
                 />
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-xs uppercase tracking-wider font-semibold text-stone-700 mb-1">
-                    Phone Number *
-                  </label>
-                  <input
-                    type="tel"
-                    required
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    placeholder="e.g. 98290XXXXX"
-                    className="w-full px-3 py-2.5 bg-white border border-stone-300 text-stone-900 text-sm focus:border-stone-800 focus:outline-hidden"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-xs uppercase tracking-wider font-semibold text-stone-700 mb-1">
-                    Email Address (OTP Verification) *
-                  </label>
-                  <div className="flex gap-2">
-                    <input
-                      type="email"
-                      required
-                      disabled={otpStep === 'verified'}
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      placeholder="e.g. rajesh@gmail.com"
-                      className="w-full px-3 py-2.5 bg-white border border-stone-300 text-stone-900 text-sm focus:border-stone-800 focus:outline-hidden disabled:bg-stone-100"
-                    />
-                    {otpStep !== 'verified' && (
-                      <button
-                        type="button"
-                        onClick={handleSendOtp}
-                        disabled={otpSending}
-                        className="bg-stone-900 text-white px-3 py-2 text-xs font-mono uppercase shrink-0 hover:bg-stone-800 cursor-pointer disabled:opacity-50"
-                      >
-                        {otpSending ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : 'Send OTP'}
-                      </button>
-                    )}
-                  </div>
-                </div>
+              <div>
+                <label className="block text-xs uppercase tracking-wider font-semibold text-stone-700 mb-1">
+                  Mobile Number *
+                </label>
+                <input
+                  type="tel"
+                  required
+                  inputMode="numeric"
+                  value={formData.phone}
+                  onChange={(e) => handlePhoneChange(e.target.value)}
+                  placeholder="10-digit mobile, e.g. 98290 12345"
+                  className={`w-full px-3 py-3 bg-white border text-stone-900 text-sm focus:outline-hidden ${
+                    phoneError ? 'border-red-500 focus:border-red-600' : 'border-stone-300 focus:border-stone-800'
+                  }`}
+                />
+                {phoneError && (
+                  <p className="text-xs text-red-600 mt-1 font-medium">{phoneError}</p>
+                )}
               </div>
 
-              {/* OTP Input Step */}
-              {otpStep === 'verify' && (
-                <div className="p-3 bg-amber-50 border border-amber-200 rounded-lg space-y-2">
-                  <div className="text-xs text-amber-900 font-medium flex items-center justify-between">
-                    <span>Enter 6-digit verification code sent to {formData.email}:</span>
-                    {otpMessage && <span className="text-[10px] text-amber-700">{otpMessage}</span>}
-                  </div>
-                  <div className="flex gap-2">
-                    <input
-                      type="text"
-                      maxLength={6}
-                      value={otpCode}
-                      onChange={(e) => setOtpCode(e.target.value)}
-                      placeholder="123456"
-                      className="w-full px-3 py-2 bg-white border border-amber-300 text-stone-900 text-sm font-mono tracking-widest focus:outline-hidden"
-                    />
-                    <button
-                      type="button"
-                      onClick={handleVerifyOtp}
-                      disabled={otpVerifying}
-                      className="bg-[#B86B38] text-white px-4 py-2 text-xs font-mono uppercase shrink-0 hover:bg-[#a55d31] cursor-pointer disabled:opacity-50"
-                    >
-                      {otpVerifying ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : 'Verify Code'}
-                    </button>
-                  </div>
-                </div>
-              )}
-
-              {otpStep === 'verified' && (
-                <div className="p-2.5 bg-emerald-50 border border-emerald-200 rounded-lg text-xs text-emerald-800 flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                  <span>Email verified successfully. You can now book your consultation.</span>
-                </div>
-              )}
-
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-xs uppercase tracking-wider font-semibold text-stone-700 mb-1">
-                    Project Type
+                    What Do You Need?
                   </label>
                   <select
                     value={formData.service}
                     onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                    className="w-full px-3 py-2.5 bg-white border border-stone-300 text-stone-900 text-sm focus:border-stone-800 focus:outline-hidden"
+                    className="w-full px-3 py-3 bg-white border border-stone-300 text-stone-900 text-sm focus:border-stone-800 focus:outline-hidden"
                   >
-                    <option value="Residential Architecture">Residential Architecture</option>
-                    <option value="Commercial Architecture">Commercial Architecture</option>
-                    <option value="Interior Design">Interior Architecture</option>
-                    <option value="Structural Design">Chartered Structural Design</option>
-                    <option value="2D Floor Planning">2D Floor Planning & Vastu</option>
-                    <option value="3D Elevation Design">3D Elevation Visualizations</option>
+                    <option value="Residential Architecture">Home Design</option>
+                    <option value="Commercial Architecture">Commercial Building</option>
+                    <option value="Interior Design">Interior Design</option>
+                    <option value="Structural Design">Structural Design</option>
+                    <option value="2D Floor Planning">2D Floor Plan / Vastu</option>
+                    <option value="3D Elevation Design">3D Elevation</option>
                   </select>
                 </div>
 
                 <div>
                   <label className="block text-xs uppercase tracking-wider font-semibold text-stone-700 mb-1">
-                    Location in Rajasthan
+                    Email (Optional)
                   </label>
                   <input
-                    type="text"
-                    value={formData.location}
-                    onChange={(e) => setFormData({ ...formData, location: e.target.value })}
-                    placeholder="e.g. Panchsheel Nagar, Ajmer"
-                    className="w-full px-3 py-2.5 bg-white border border-stone-300 text-stone-900 text-sm focus:border-stone-800 focus:outline-hidden"
+                    type="email"
+                    value={formData.email}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    placeholder="you@example.com"
+                    className="w-full px-3 py-3 bg-white border border-stone-300 text-stone-900 text-sm focus:border-stone-800 focus:outline-hidden"
                   />
                 </div>
               </div>
 
               <div>
                 <label className="block text-xs uppercase tracking-wider font-semibold text-stone-700 mb-1">
-                  Plot Details or Project Scope
+                  Tell Us About Your Plot (Optional)
                 </label>
                 <textarea
                   rows={2}
                   value={formData.notes}
                   onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
-                  placeholder="Plot size (e.g. 40x60 ft), number of floors, desired timeline..."
-                  className="w-full px-3 py-2.5 bg-white border border-stone-300 text-stone-900 text-sm focus:border-stone-800 focus:outline-hidden resize-none"
+                  placeholder="Plot size, floors, timeline..."
+                  className="w-full px-3 py-3 bg-white border border-stone-300 text-stone-900 text-sm focus:border-stone-800 focus:outline-hidden resize-none"
                 ></textarea>
               </div>
 
-              {/* DPDP Act Granular Consent Section */}
-              <div className="p-3.5 rounded-xl bg-stone-100 border border-stone-300 space-y-2.5 text-xs text-stone-700">
-                <div className="flex items-center gap-1.5 font-semibold text-stone-900 uppercase tracking-wide">
-                  <ShieldCheck className="w-4 h-4 text-[#B86B38]" />
-                  <span>Data Protection Notice (DPDP Act, India)</span>
-                </div>
-                <p className="text-stone-600 leading-relaxed text-[11px]">
-                  <strong>Data Collected:</strong> Name, phone, email, and project details. <strong>Purpose:</strong> To schedule consultation and coordinate with studio desk. Call <a href="tel:+917976453090" className="text-[#B86B38] font-bold">+91-7976453090</a>. Read our <Link to="/privacy-policy" target="_blank" className="text-[#B86B38] underline font-medium">Privacy Policy</Link>.
-                </p>
-
-                <div className="space-y-1.5 pt-1 border-t border-stone-200">
-                  <label className="flex items-start gap-2 cursor-pointer">
-                    <input
-                      type="checkbox"
-                      required
-                      checked={consentRequired}
-                      onChange={(e) => setConsentRequired(e.target.checked)}
-                      className="mt-0.5 rounded-xs text-[#B86B38] focus:ring-[#B86B38]"
-                    />
-                    <span className="text-stone-900 font-medium">
-                      <strong>(Required)</strong> I consent to Design Plus contacting me regarding this consultation booking.
-                    </span>
-                  </label>
-                </div>
-              </div>
+              {/* Short consent (DPDP Act) */}
+              <label className="flex items-start gap-2 cursor-pointer p-3 rounded-xl bg-stone-100 border border-stone-300 text-xs text-stone-700">
+                <input
+                  type="checkbox"
+                  required
+                  checked={consentRequired}
+                  onChange={(e) => setConsentRequired(e.target.checked)}
+                  className="mt-0.5 rounded-xs text-[#B86B38] focus:ring-[#B86B38]"
+                />
+                <span>
+                  <ShieldCheck className="w-3.5 h-3.5 inline text-[#B86B38] mr-1" />
+                  I agree Design Plus may call/message me about this booking. <Link to="/privacy-policy" target="_blank" className="text-[#B86B38] underline font-medium">Privacy Policy</Link>
+                </span>
+              </label>
 
               <div className="pt-2">
                 <button
                   type="submit"
-                  disabled={submitting || !consentRequired || otpStep !== 'verified'}
-                  className="w-full bg-[#B86B38] hover:bg-[#a55d31] disabled:opacity-50 text-white py-3.5 text-xs tracking-wider uppercase font-semibold transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-lg"
+                  disabled={submitting || !consentRequired}
+                  className="w-full bg-[#B86B38] hover:bg-[#a55d31] disabled:opacity-50 text-white py-4 text-sm tracking-wider uppercase font-semibold transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-lg"
                 >
                   {submitting ? (
                     <>
                       <Loader2 className="w-4 h-4 animate-spin text-white" />
-                      <span>Booking your consultation...</span>
+                      <span>Booking...</span>
                     </>
                   ) : (
                     <>
-                      <ArrowRight className="w-3.5 h-3.5" />
-                      <span>Book a Consultation</span>
+                      <ArrowRight className="w-4 h-4" />
+                      <span>Book My Consultation</span>
                     </>
                   )}
                 </button>
-                {otpStep !== 'verified' && (
-                  <p className="text-[11px] text-amber-800 text-center mt-1.5 font-medium">
-                    * Please enter your email and verify via 6-digit OTP above to enable booking.
-                  </p>
-                )}
               </div>
 
               <div className="pt-1 text-center">
                 <p className="text-xs text-stone-500">
-                  Or call the studio directly:{' '}
+                  Prefer to talk now? Call the studio:{' '}
                   <a
                     href={`tel:${BUSINESS_INFO.phones[0].raw}`}
-                    className="text-stone-900 font-semibold underline decoration-stone-400"
+                    className="text-stone-900 font-semibold underline decoration-stone-400 inline-flex items-center gap-1"
                   >
+                    <Phone className="w-3 h-3" />
                     {BUSINESS_INFO.phones[0].display}
                   </a>
                 </p>
@@ -369,20 +244,20 @@ export function ConsultationModal({ isOpen, onClose, defaultService, itemId = 'h
               <CheckCircle2 className="w-7 h-7" />
             </div>
             <h3 className="font-editorial text-2xl text-stone-950 font-bold">
-              Consultation Booked Successfully
+              Done! We'll Call You Soon
             </h3>
             <div className="p-3 bg-stone-100 border border-stone-200 rounded-lg max-w-xs mx-auto text-xs font-mono text-stone-800">
               Booking Reference: <strong className="text-[#B86B38]">{bookingRef}</strong>
             </div>
             <p className="text-sm text-stone-600 max-w-sm mx-auto">
-              Thank you, {formData.name}. Our senior team led by Er. Sudhir Soni will coordinate with you at ({formData.phone}) within 24 hours.
+              Thank you, {formData.name}. Our team will call you on {normalizeIndianMobile(formData.phone)} within 24 hours.
             </p>
             <div className="pt-4 flex flex-col sm:flex-row gap-3 justify-center">
               <button
                 onClick={onClose}
-                className="bg-stone-900 text-white px-6 py-2.5 text-xs font-semibold uppercase tracking-wider cursor-pointer"
+                className="bg-stone-900 text-white px-6 py-3 text-xs font-semibold uppercase tracking-wider cursor-pointer"
               >
-                Close Window
+                Close
               </button>
             </div>
           </div>

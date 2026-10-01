@@ -8,10 +8,10 @@ export interface Env {
 
   // Non-secret config
   ENVIRONMENT?: string;
-  INCLUDE_TEST_OTP_HINT?: string;
 
   // Secrets — set via the Cloudflare dashboard, never committed.
   GEMINI_API_KEY?: string;
+  // Razorpay TEST keys only (rzp_test_*). Live keys + KYC are the studio owner's job.
   RAZORPAY_KEY_ID?: string;
   RAZORPAY_KEY_SECRET?: string;
   ADMIN_EMAIL_1?: string;

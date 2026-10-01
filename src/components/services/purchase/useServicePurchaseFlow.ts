@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { PurchasableService, PURCHASABLE_SERVICES } from '../../../data/purchasableServices';
 import { submitConsultationInquiry } from '../../../lib/firebase';
+import { isValidIndianMobile, normalizeIndianMobile } from '../../../lib/phone';
 import { 
   ProjectDetailsState, 
   CustomerDetailsState, 
@@ -80,8 +81,12 @@ export function useServicePurchaseFlow(options: UseServicePurchaseFlowOptions = 
   // Step Navigation
   const nextStep = useCallback(() => {
     if (currentStep === 4) {
-      if (!customerDetails.fullName.trim() || !customerDetails.phone.trim()) {
-        alert('Please provide your name and phone number for architectural verification.');
+      if (!customerDetails.fullName.trim()) {
+        alert('Please enter your full name.');
+        return false;
+      }
+      if (!isValidIndianMobile(customerDetails.phone)) {
+        alert('Please enter a valid 10-digit mobile number (e.g. 98290 12345).');
         return false;
       }
     }
@@ -100,18 +105,19 @@ export function useServicePurchaseFlow(options: UseServicePurchaseFlowOptions = 
   }, []);
 
   // Final Order Submission
-  const submitOrder = useCallback(async () => {
+  // paymentRef: optional Razorpay booking reference after a successful online payment.
+  const submitOrder = useCallback(async (paymentRef?: string) => {
     setIsSubmitting(true);
     
-    // Generate deterministic reference: DP-ORD-2026-XXXX
+    // Generate deterministic reference: DP-ORD-2026-XXXX (or use the payment booking ref)
     const randomSuffix = Math.floor(1000 + Math.random() * 9000);
-    const refCode = `DP-ORD-2026-${randomSuffix}`;
+    const refCode = paymentRef || `DP-ORD-2026-${randomSuffix}`;
     setOrderReference(refCode);
 
     try {
       await submitConsultationInquiry({
         name: customerDetails.fullName,
-        phone: customerDetails.phone,
+        phone: normalizeIndianMobile(customerDetails.phone),
         email: customerDetails.email,
         projectType: `[Standardized Order] ${currentService.name}`,
         location: `${customerDetails.city} - ${customerDetails.projectAddress}`,
@@ -121,7 +127,7 @@ Parameters: ${projectDetails.plotLength ? `${projectDetails.plotLength}x${projec
 Special Notes: ${projectDetails.specialRequirements || projectDetails.mainQuestion || 'None'}
 Files: ${uploadedFiles.map(f => f.name).join(', ') || (skipFiles ? 'Will send via WhatsApp' : 'None')}
 Preferred Contact: ${customerDetails.preferredContactMethod}
-Payment Preference: ${selectedPaymentMode === 'invoice_first' ? 'Pro-Forma GST Invoice First' : 'Online Gateway'}`
+Payment Preference: ${paymentRef ? `Online Razorpay Payment (${paymentRef})` : (selectedPaymentMode === 'invoice_first' ? 'Pro-Forma GST Invoice First' : 'Online Gateway')}`
       });
     } catch (err) {
       console.warn('[useServicePurchaseFlow] Firestore submission notice:', err);
