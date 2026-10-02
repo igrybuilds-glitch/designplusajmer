@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { 
   ArrowLeft, 
@@ -42,6 +42,29 @@ export function ProjectDetailPage({ onOpenConsultation }: ProjectDetailPageProps
 
   const [activeDrawingIndex, setActiveDrawingIndex] = useState(0);
   const [selectedDrawingForZoom, setSelectedDrawingForZoom] = useState<ArchitecturalDrawing | null>(null);
+
+  // Scroll-reveal for the curated gallery (staggered fade-up as figures enter view)
+  useEffect(() => {
+    const els = Array.from(document.querySelectorAll('.reveal-gallery'));
+    if (els.length === 0) return;
+    if (!('IntersectionObserver' in window)) {
+      els.forEach((el) => el.classList.add('is-visible'));
+      return;
+    }
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            io.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+    );
+    els.forEach((el) => io.observe(el));
+    return () => io.disconnect();
+  }, [targetSlug]);
 
   // If project is not found, redirect to projects index
   if (!project) {
@@ -293,7 +316,7 @@ export function ProjectDetailPage({ onOpenConsultation }: ProjectDetailPageProps
             alt={project.heroImageDetails?.alt || project.title}
             width={1800}
             height={1012}
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-center kenburns-hero"
           />
           {project.heroImageDetails?.caption && (
             <figcaption className="absolute bottom-0 inset-x-0 bg-stone-950/80 backdrop-blur-xs text-stone-200 text-xs px-6 py-3 font-sans">
@@ -616,7 +639,8 @@ export function ProjectDetailPage({ onOpenConsultation }: ProjectDetailPageProps
                   {project.galleryImages.map((imgItem, gIdx) => (
                     <figure
                       key={gIdx}
-                      className={`bg-white border border-stone-200 overflow-hidden ${
+                      style={{ transitionDelay: `${(gIdx % 4) * 120}ms` }}
+                      className={`reveal-gallery bg-white border border-stone-200 overflow-hidden ${
                         imgItem.aspect === 'tall' ? 'sm:row-span-2' : ''
                       }`}
                     >

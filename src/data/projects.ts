@@ -131,12 +131,12 @@ export const PROJECTS: Project[] = [
       'Structural Design & Engineering',
       'Campus Planning'
     ],
-    description: 'A school campus planned around courtyards — bright classrooms, safe staircases, and playgrounds shaded from the afternoon sun.',
+    description: 'Sindolia Shikshan Sansthan Madhyamik Vidyalaya — a school campus planned around courtyards: bright classrooms, safe staircases, and playgrounds shaded from the afternoon sun.',
     brief: 'Design a school where children learn comfortably through Rajasthan summers.',
     designApproach: 'Classrooms face north-east for soft light; central courtyard drives cross-ventilation; playful yet sturdy detailing.',
     images: [
-      'https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80'
+      '/images/projects/school-building-ajmer-front.webp',
+      '/images/projects/school-building-ajmer-angled.webp'
     ],
     featured: false,
     isConcept: false,
@@ -157,8 +157,30 @@ export const PROJECTS: Project[] = [
     challenge: 'Comfortable learning spaces through Rajasthan summers.',
     approach: 'North-east classrooms, central courtyard ventilation.',
     structuralEngineering: 'RCC framed structure as per IS codes.',
-    heroImage: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1200&q=80',
-    gallery: ['https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1200&q=80'],
+    heroImage: '/images/projects/school-building-ajmer-front.webp',
+    heroImageDetails: {
+      url: '/images/projects/school-building-ajmer-front.webp',
+      alt: 'Sindolia Shikshan Sansthan school front elevation — symmetrical brick and plaster facade',
+      caption: 'Front elevation of Sindolia Shikshan Sansthan Madhyamik Vidyalaya, Ajmer.'
+    },
+    gallery: [
+      '/images/projects/school-building-ajmer-front.webp',
+      '/images/projects/school-building-ajmer-angled.webp'
+    ],
+    galleryImages: [
+      {
+        url: '/images/projects/school-building-ajmer-front.webp',
+        caption: 'Front elevation — brick piers, jali screens and a shaded central entrance porch.',
+        alt: 'School front elevation render',
+        aspect: 'wide'
+      },
+      {
+        url: '/images/projects/school-building-ajmer-angled.webp',
+        caption: 'Aerial perspective — G+2 classroom wings arranged for light and cross-ventilation.',
+        alt: 'School aerial angle render',
+        aspect: 'wide'
+      }
+    ],
     features: ['Courtyard ventilation', 'Shaded playgrounds', 'Safe staircases'],
     locationDetails: {
       city: 'Ajmer',

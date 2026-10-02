@@ -167,3 +167,26 @@ html.lenis, html.lenis body {
   pointer-events: none;
 }
 
+
+/* Project showcase animations (2026-10-02) — hero Ken Burns + gallery scroll reveal */
+@keyframes kenburns-slow {
+  0% { transform: scale(1) translate(0, 0); }
+  100% { transform: scale(1.12) translate(-1.5%, 1.5%); }
+}
+.kenburns-hero {
+  animation: kenburns-slow 22s ease-in-out infinite alternate;
+  will-change: transform;
+}
+.reveal-gallery {
+  opacity: 0;
+  transform: translateY(28px) scale(0.985);
+  transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1), transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal-gallery.is-visible {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .kenburns-hero { animation: none; }
+  .reveal-gallery { opacity: 1; transform: none; transition: none; }
+}
