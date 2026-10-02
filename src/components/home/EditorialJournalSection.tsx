@@ -30,8 +30,8 @@ export function EditorialJournalSection() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14 sm:mb-20">
           <div>
             <h2 className="font-editorial text-4xl sm:text-6xl md:text-7xl font-normal leading-[0.98] tracking-tight text-white uppercase">
-              Monographs &amp; <br />
-              <span className="italic font-light text-[#F4F0E8]/70">structural research.</span>
+              Articles &amp; <br />
+              <span className="italic font-light text-[#F4F0E8]/70">helpful guides.</span>
             </h2>
           </div>
 

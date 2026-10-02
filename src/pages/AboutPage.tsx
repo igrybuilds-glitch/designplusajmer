@@ -39,8 +39,8 @@ export function AboutPage({ onOpenConsultation }: AboutPageProps) {
       {/* Hero Header via Reusable Component */}
       <EditorialHero 
         subtitle="About The Studio"
-        title="An interdisciplinary studio uniting Chartered Structural Engineering with architectural craft."
-        description="Based in Ajmer, Design Plus was established on the principle that enduring buildings emerge from an inseparable union of structural safety, environmental context, and spatial clarity."
+        title="Architects & Structural Engineers — Based at Ajmer."
+        description="Based at Ajmer since 2004. We design homes, offices and buildings — and our engineers make sure every structure is safe as per Indian codes."
         backgroundImageUrl="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80"
         imageAlt="Design Plus architectural drafting and structural calculations studio"
       />

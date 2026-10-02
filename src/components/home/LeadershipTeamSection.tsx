@@ -39,8 +39,7 @@ export function LeadershipTeamSection() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14 sm:mb-20">
           <div className="max-w-3xl">
             <h2 className="font-editorial text-4xl sm:text-6xl md:text-7xl font-normal leading-[0.98] tracking-tight uppercase text-white" style={{ textWrap: 'balance' }}>
-              The minds behind <br />
-              <span className="italic font-light text-[#F4F0E8]/70">the calculations.</span>
+              Meet our <br /><span className="italic font-light">team.</span>
             </h2>
           </div>
 

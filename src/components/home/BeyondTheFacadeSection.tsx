@@ -110,11 +110,11 @@ export function BeyondTheFacadeSection() {
         {/* Section Headline */}
         <div className="max-w-4xl mb-12 sm:mb-16 space-y-4">
           <h2 className="font-editorial text-4xl sm:text-6xl md:text-7xl font-normal leading-[0.98] tracking-tight uppercase text-white">
-            Where design <br />
-            <span className="italic font-light text-[#F4F0E8]/70">meets structural truth.</span>
+            Beautiful design, <br />
+            <span className="italic font-light text-[#F4F0E8]/70">built to last.</span>
           </h2>
           <p className="text-base sm:text-lg text-[#F4F0E8]/85 font-sans max-w-2xl font-normal leading-relaxed">
-            Every building is a physical calculation. Unlike surface-only stylists, Design Plus is led by chartered structural engineers who sign off on load paths, foundation mechanics, and Indian statutory code compliance from day one.
+            A beautiful building must also be safe. Our engineers check every beam, column and foundation as per Indian safety codes — before construction starts.
           </p>
         </div>
 

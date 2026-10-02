@@ -166,19 +166,19 @@ export const EDITORIAL_SERVICES: EditorialServiceItem[] = [
   {
     id: 'topographical-survey',
     number: '08',
-    headline: 'Topographical Survey',
-    category: 'GEODETIC SPATIAL SURVEY',
+    headline: 'Land Survey & Mapping',
+    category: 'SURVEY & MEASUREMENT',
     shortDescription:
-      'High-precision total station traverse mapping, differential GPS (DGPS) geodetic control benchmarks, and digital terrain profiling for master planning and infrastructure corridors.',
-    metadata: ['DGPS BENCHMARKS', 'TOTAL STATION', '0.5M CONTOUR INTERVAL', 'GIS COORDINATES'],
-    technicalTag: 'SURVEY OF INDIA DATUM · DGPS CONTROLLED',
+      'Complete land measurement for your plot — including modern drone (UAV) aerial survey, GPS mapping, and contour plans for house or building approval.',
+    metadata: ['DRONE (UAV) SURVEY', 'GPS MAPPING', 'CONTOUR PLANS', 'PLOT MEASUREMENT'],
+    technicalTag: 'DRONE + GPS · ACCURATE TO CENTIMETER',
     route: '/services/topographical-survey',
-    imageSrc: '/images/services/topographical-survey.webp',
-    imageAlt: 'High precision total station optical surveying instrument mounted on geodetic tripod on field terrain overlooking land development',
-    caption: 'Total Station Geodetic Baseline Network · Topographic Contour Profiling & Benchmark Traverse',
+    imageSrc: 'https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&w=2000&q=85',
+    imageAlt: 'Drone conducting aerial land survey over a development plot',
+    caption: 'Drone Aerial Survey · GPS Plot Mapping & Contour Plans',
     annotations: [
-      { label: 'ANGULAR PRECISION', value: '1-Arcsecond Total Station' },
-      { label: 'VERTICAL DATUM', value: 'Mean Sea Level (MSL) Synchronized' }
+      { label: 'DRONE SURVEY', value: 'UAV Aerial Mapping & Photos' },
+      { label: 'ACCURACY', value: 'Centimeter-Level GPS Control' }
     ]
   },
   {

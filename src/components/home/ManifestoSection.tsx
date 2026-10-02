@@ -156,7 +156,7 @@ export function ManifestoSection() {
           <div className="flex items-center gap-3">
             <span className="text-[#B86B38] font-bold">02 //</span>
             <span className="uppercase tracking-[0.24em] font-semibold text-[#F4F0E8]">
-              ONE STUDIO. MANY DISCIPLINES.
+              ARCHITECTS & ENGINEERS. UNDER ONE ROOF.
             </span>
           </div>
 
@@ -166,7 +166,7 @@ export function ManifestoSection() {
               EST. 2004 · AJMER, RAJASTHAN
             </span>
             <span className="text-white/30">|</span>
-            <span>CHARTERED STRUCTURAL RIGOR + SPATIAL POETRY</span>
+            <span>DESIGN + ENGINEERING, TOGETHER</span>
             <span className="text-white/30">|</span>
             <span className="font-semibold text-white">IS 456 · IS 1893 · IRC 112</span>
           </div>
@@ -184,16 +184,16 @@ export function ManifestoSection() {
           <div className="manifesto-title-main relative z-20 text-center max-w-4xl px-4 pointer-events-auto">
             <div className="inline-flex items-center gap-2 text-[10px] sm:text-xs font-mono tracking-[0.3em] uppercase text-[#B86B38] mb-2 sm:mb-3">
               <Compass className="w-3.5 h-3.5" />
-              <span>THE MULTIDISCIPLINARY ENGINE</span>
+              <span>WHAT WE DO</span>
             </div>
 
             <h2 className="font-editorial text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-normal leading-[0.92] tracking-tight uppercase text-[#F4F0E8]">
-              ONE STUDIO. <br />
-              <span className="italic font-light text-[#F4F0E8]/70">MANY DISCIPLINES.</span>
+              ARCHITECTS &amp; ENGINEERS. <br />
+              <span className="italic font-light text-[#F4F0E8]/70">UNDER ONE ROOF.</span>
             </h2>
 
             <p className="mt-4 sm:mt-5 text-sm sm:text-base lg:text-lg text-[#F4F0E8]/90 font-serif max-w-2xl mx-auto leading-relaxed">
-              Most architecture firms draw forms without calculating stresses. Most engineering consultancies calculate loads without understanding spatial light. Design Plus unifies both from the first sketch to the final pour.
+              We design your home or building AND make sure it stands strong. One team handles everything — from the first drawing to the final construction.
             </p>
 
             {/* Quick Interactive Discipline Selector Tabs */}

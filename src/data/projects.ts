@@ -68,300 +68,157 @@ export const PROJECT_CATEGORIES: CategoryMeta[] = [
 
 export const PROJECTS: Project[] = [
   {
-    id: 'dp-res-001',
-    slug: 'ana-sagar-residence',
-    title: 'Ana Sagar Lake Residence',
-    category: 'residential',
+    id: 'dp-inst-001',
+    slug: 'nagar-palika-office-building',
+    title: 'Nagar Palika Office Building',
+    category: 'institutional',
     status: 'completed',
-    location: 'Circular Road, Ajmer',
-    area: '4,800 sq.ft.',
+    location: 'Ajmer, Rajasthan',
+    area: '12,000 sq.ft.',
+    floors: 'G+3 Floors',
+    services: [
+      'Architectural Design',
+      'Structural Design & Engineering',
+      'Municipal Sanction Drawings'
+    ],
+    description: 'A functional government office building designed for daily public use — clear circulation, natural light, and low-maintenance materials.',
+    brief: 'Design a durable, easy-to-maintain office building for municipal staff and visiting public.',
+    designApproach: 'Simple structural grid, shaded corridors for Rajasthan heat, and separate public-staff circulation.',
+    images: [
+      'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80'
+    ],
+    featured: false,
+    isConcept: false,
+    relatedServices: ['architectural-design', 'structural-design'],
+    relatedLocations: ['ajmer'],
+    relatedProjects: [],
+    projectType: 'real',
+    projectCategory: 'institutional',
+    clientType: 'Government',
+    city: 'Ajmer',
+    year: '2021',
+    builtUpArea: '12,000 sq.ft.',
+    categoryLabel: 'Institutional',
+    typology: 'Government Office',
+    lead: 'Er. Sudhir Soni',
+    scopeOfWork: ['Architectural Design', 'Structural Design', 'Sanction Drawings'],
+    summary: 'Municipal office building for Nagar Palika, Ajmer.',
+    challenge: 'Durable public building with clear circulation.',
+    approach: 'Simple grid, shaded corridors, separate public-staff flow.',
+    structuralEngineering: 'RCC framed structure as per IS codes.',
+    heroImage: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80',
+    gallery: ['https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80'],
+    features: ['Natural ventilation', 'Low-maintenance finishes', 'Accessible design'],
+    locationDetails: {
+      city: 'Ajmer',
+      state: 'Rajasthan',
+      areaOrNeighborhood: 'Ajmer',
+      displayLocation: 'Ajmer, Rajasthan',
+    },
+  },
+  {
+    id: 'dp-inst-002',
+    slug: 'school-building-ajmer',
+    title: 'School Building',
+    category: 'institutional',
+    status: 'completed',
+    location: 'Ajmer, Rajasthan',
+    area: '20,000 sq.ft.',
     floors: 'G+2 Floors',
     services: [
-      'Comprehensive Architectural Design',
-      'Chartered Structural Engineering & Stability Audit',
-      'Municipal Sanction Blueprints (ADA Approval)',
-      'Passive Solar Bioclimatic Modeling',
-      'Interior Spatial Coordination & Lighting Grid'
+      'Architectural Design',
+      'Structural Design & Engineering',
+      'Campus Planning'
     ],
-    description: 'A contemporary lakefront villa responding to western solar radiation through deep cantilevered canopies, local stone thermal buffers, and an internal micro-climate courtyard.',
-    brief: 'Commissioned by a private family to establish an enduring multi-generational sanctuary overlooking the expansive waters of Ana Sagar Lake. The brief demanded uninhibited panoramic views toward the lake and northern Aravalli ridge, while strictly safeguarding interior living quarters against intense desert solar heat gain.',
-    designApproach: 'Our studio adopted a hybrid vernacular-contemporary strategy. We positioned a shaded two-story central light-well and water courtyard at the structural heart of the villa, generating a stack effect that evacuates warm air. The western facade is wrapped in deep 4.5-meter post-tensioned RCC cantilevered overhangs and vertical Dholpur stone louvers that truncate low-angle solar rays while preserving framed views of the lake.',
+    description: 'A school campus planned around courtyards — bright classrooms, safe staircases, and playgrounds shaded from the afternoon sun.',
+    brief: 'Design a school where children learn comfortably through Rajasthan summers.',
+    designApproach: 'Classrooms face north-east for soft light; central courtyard drives cross-ventilation; playful yet sturdy detailing.',
     images: [
-      '/images/projects/ana-sagar-residence.jpg',
-      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1200&q=80'
+      'https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80'
     ],
-    featured: true,
+    featured: false,
     isConcept: false,
-    relatedServices: ['architectural-design', 'structural-design', '3d-elevation-design', '2d-floor-planning'],
-    relatedLocations: ['ajmer', 'pushkar'],
-    relatedProjects: ['pushkar-courtyard-haven', 'contemporary-rajasthan-villa'],
-
-    // Compatibility fields
+    relatedServices: ['architectural-design', 'structural-design'],
+    relatedLocations: ['ajmer'],
+    relatedProjects: [],
+    projectType: 'real',
+    projectCategory: 'institutional',
+    clientType: 'Institutional Client',
+    city: 'Ajmer',
+    year: '2022',
+    builtUpArea: '20,000 sq.ft.',
+    categoryLabel: 'Institutional',
+    typology: 'School Campus',
+    lead: 'Er. Sudhir Soni',
+    scopeOfWork: ['Architectural Design', 'Structural Design', 'Campus Planning'],
+    summary: 'School campus in Ajmer planned around courtyards.',
+    challenge: 'Comfortable learning spaces through Rajasthan summers.',
+    approach: 'North-east classrooms, central courtyard ventilation.',
+    structuralEngineering: 'RCC framed structure as per IS codes.',
+    heroImage: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1200&q=80',
+    gallery: ['https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1200&q=80'],
+    features: ['Courtyard ventilation', 'Shaded playgrounds', 'Safe staircases'],
+    locationDetails: {
+      city: 'Ajmer',
+      state: 'Rajasthan',
+      areaOrNeighborhood: 'Ajmer',
+      displayLocation: 'Ajmer, Rajasthan',
+    },
+  },
+  {
+    id: 'dp-res-010',
+    slug: 'panchsheel-nagar-residence-dilip',
+    title: 'Panchsheel Nagar Residence — Dilip',
+    category: 'residential',
+    status: 'completed',
+    location: 'Panchsheel Nagar, Ajmer',
+    area: '3,200 sq.ft.',
+    floors: 'G+1 Floors',
+    services: [
+      'Architectural Design',
+      'Structural Design',
+      'Interior Design'
+    ],
+    description: 'A family home in Panchsheel Nagar planned for privacy and light — a calm courtyard house built for everyday Rajasthani life.',
+    brief: 'A comfortable modern home for the Dilip family with room to grow.',
+    designApproach: 'Vastu-aligned planning, shaded sit-outs, and a terrace designed for evening family time.',
+    images: [
+      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80'
+    ],
+    featured: false,
+    isConcept: false,
+    relatedServices: ['architectural-design', 'structural-design', '3d-elevation-design'],
+    relatedLocations: ['ajmer'],
+    relatedProjects: [],
     projectType: 'real',
     projectCategory: 'residential',
     clientType: 'Private Residential Client',
     city: 'Ajmer',
-    locationDetails: {
-      city: 'Ajmer',
-      state: 'Rajasthan',
-      areaOrNeighborhood: 'Ana Sagar Circular Road',
-      displayLocation: 'Circular Road, Ajmer, Rajasthan',
-      isRegionalContext: true
-    },
-    year: '2024',
-    siteArea: '7,200 sq.ft.',
-    builtUpArea: '4,800 sq.ft.',
-    categoryLabel: 'Residential Villa',
-    typology: 'Lakefront Climate-Responsive Courtyard Villa',
-    badges: ['Built Commission', 'Chartered Certified', 'Featured Case Study'],
-    isFeatured: true,
-    lead: 'Ar. Vipul Verma & Er. Sudhir Soni',
-    leadership: {
-      architecturalPrincipal: 'Ar. Vipul Verma (B.Arch, M.H.S. Belgium)',
-      structuralPrincipal: 'Er. Sudhir Soni (Chartered Engineer, M.E. Structure)',
-      projectLead: 'Ar. Vipul Verma & Er. Sudhir Soni'
-    },
-    scopeOfWork: [
-      'Comprehensive Architectural Design',
-      'Chartered Structural Engineering & Stability Audit',
-      'Municipal Sanction Blueprints (ADA Approval)',
-      'Passive Solar Bioclimatic Modeling',
-      'Interior Spatial Coordination & Lighting Grid'
-    ],
-    summary: 'A contemporary lakefront villa responding to western solar radiation through deep cantilevered canopies, local stone thermal buffers, and an internal micro-climate courtyard.',
-    challenge: 'The lakefront orientation situated the primary living areas directly exposed to western afternoon glare and thermal peaks exceeding 44°C during summer months. Additionally, proximity to the lake water table required specialized waterproofed sub-surface foundation design to prevent moisture migration into ground-level living volumes.',
-    approach: 'Our studio adopted a hybrid vernacular-contemporary strategy. We positioned a shaded two-story central light-well and water courtyard at the structural heart of the villa, generating a stack effect that evacuates warm air. The western facade is wrapped in deep 4.5-meter post-tensioned RCC cantilevered overhangs and vertical Dholpur stone louvers that truncate low-angle solar rays while preserving framed views of the lake.',
-    structuralEngineering: 'Engineered 4.5-meter column-free cantilevered terraces using high-performance post-tensioned RCC beams certified under Chartered Engineer standards with Grade M30 concrete and Fe500D TMT reinforcement.',
-    structuralDetails: {
-      framingSystem: 'Moment-Resisting Reinforced Concrete Space Frame with Post-Tensioned Cantilever Slabs',
-      foundationType: 'Combined Reinforced Concrete Raft & Strap Footings with crystalline integral waterproofing',
-      specialTechnicalFeatures: [
-        '4.5-meter column-free post-tensioned terrace cantilevers overlooking the waterfront',
-        'Sub-grade hydrostatic damp-proofing membrane with peripheral perforated sub-drainage',
-        'Seismic Zone II compliant ductile frame detailing in conformance with IS 13920:2016'
-      ],
-      charteredCertificationNote: 'Chartered Engineer Structural Stability Certificate Issued & Vetted under Er. Sudhir Soni (Reg. AM-085449).'
-    },
-    sustainabilityFeatures: [
-      'Passive micro-climate central water courtyard reducing interior ambient temperatures by 4–6°C',
-      '100% rooftop rainwater harvesting routed to a 45,000-liter sub-surface masonry cistern',
-      'Cavity wall envelope utilizing local fly-ash masonry with polyurethane core thermal resistance',
-      'Cross-ventilation wind catchers aligned with prevailing southwest monsoon breezes'
-    ],
-    materialsUsed: [
-      { name: 'Dholpur Beige Sandstone', application: 'Exterior solar screen louvers & boundary claddings' },
-      { name: 'Kishangarh Statuario Marble', application: 'Ground floor main living & formal reception flooring' },
-      { name: 'Thermally Broken Low-E Double Glazing', application: 'Western lakefront fenestrations (U-value 1.4 W/m²K)' },
-      { name: 'Exposed Board-Form Concrete', application: 'Architectural feature walls & structural cantilever soffits' }
-    ],
-    heroImage: '/images/projects/ana-sagar-residence.jpg',
-    heroImageDetails: {
-      url: '/images/projects/ana-sagar-residence.jpg',
-      alt: 'Ana Sagar Lakefront Residence exterior facade at twilight in Ajmer',
-      caption: 'Sunset perspective showcasing deep cantilevered shade canopies and Dholpur sandstone brise-soleil.'
-    },
-    gallery: [
-      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1200&q=80'
-    ],
-    galleryImages: [
-      {
-        url: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
-        caption: 'Central open-to-sky courtyard with cascading water veil and cooling micro-climate.',
-        alt: 'Internal shaded courtyard with natural stone flooring',
-        aspect: 'hero'
-      },
-      {
-        url: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80',
-        caption: 'Upper terrace lounge framed by post-tensioned cantilevered concrete planes.',
-        alt: 'Terrace lounge facing Lake Ana Sagar',
-        aspect: 'wide'
-      },
-      {
-        url: 'https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1200&q=80',
-        caption: 'Double-height living pavilion with integrated natural daylight monitors.',
-        alt: 'High ceiling living room with Kishangarh marble flooring',
-        aspect: 'wide'
-      }
-    ],
-    drawingsAndPlans: [
-      {
-        id: 'dp-res-drw-01',
-        title: 'Ground Level Architectural Working Plan',
-        type: 'floor-plan',
-        imageUrl: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80',
-        caption: 'Detailed 1:50 working layout illustrating central courtyard circulation, vastu zoning, and service cores.'
-      },
-      {
-        id: 'dp-res-drw-02',
-        title: 'Longitudinal Bioclimatic Section & Solar Angle Study',
-        type: 'section',
-        imageUrl: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80',
-        caption: 'Section analyzing stack ventilation dynamics, double-height volumes, and summer solstice shade cutoffs.'
-      },
-      {
-        id: 'dp-res-drw-03',
-        title: 'Post-Tensioned Cantilever Beam Structural Detail (Er. Sudhir Soni)',
-        type: 'structural-detail',
-        imageUrl: 'https://images.unsplash.com/photo-1541888946425-d0fbb1861564?auto=format&fit=crop&w=1200&q=80',
-        caption: 'Chartered engineering reinforcement schedule for 4.5m clear cantilever slab and moment joint ties.'
-      }
-    ],
-    features: [
-      'Triple-height central courtyard creating natural stack-effect cooling',
-      'Engineered 4.5-meter post-tensioned RCC cantilevered terrace canopies',
-      'High-performance insulated double glazing oriented to panoramic lake horizons',
-      'Underground 45,000L rainwater harvesting retention system with filtration chamber',
-      'ADA municipal sanctioned drawings with strict FAR & ground coverage compliance'
-    ],
-    seo: {
-      metaTitle: 'Ana Sagar Lake Residence | Luxury Villa Architecture in Ajmer | Design Plus',
-      metaDescription: 'Discover the Ana Sagar Lake Residence by Design Plus. Climate-responsive luxury villa in Ajmer featuring post-tensioned cantilevers and courtyard cooling.',
-      keywords: ['villa architecture Ajmer', 'Ana Sagar luxury residence', 'Design Plus projects', 'Er Sudhir Soni structural', 'Ar Vipul Verma architect']
-    }
-  },
-  {
-    id: 'dp-com-002',
-    slug: 'panchsheel-commercial-pavilion',
-    title: 'Panchsheel Commercial Pavilion',
-    category: 'commercial',
-    status: 'completed',
-    location: 'Panchsheel Nagar, Ajmer',
-    area: '14,500 sq.ft.',
-    floors: 'B+G+3 Floors',
-    services: [
-      'Commercial Master Planning',
-      'Structural Steel & RCC Hybrid Framing',
-      'ADA Sanction & Commercial Clearance Drawings',
-      'Ventilated Terra-Cotta Rainscreen Facade Engineering',
-      'MEP Infrastructure & Lift Well Shaft Engineering'
-    ],
-    description: 'A multi-tier commercial retail and corporate hub engineered with column-free floor plates and high-durability ventilated facade technology.',
-    brief: 'A high-density urban commercial development requiring maximum ground-level retail frontage on a major arterial junction in Panchsheel Nagar, topped by flexible, column-free corporate floor plates capable of multiple tenant subdivisions.',
-    designApproach: 'The structure utilizes a reinforced concrete perimeter moment frame combined with high-grade structural steel internal composite sections. This eliminated interior load-bearing columns across a 12-meter bay width, unlocking unobstructed shopfronts and retail layouts.',
-    images: [
-      '/images/projects/panchsheel-commercial-pavilion.jpg',
-      'https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&q=80'
-    ],
-    featured: true,
-    isConcept: false,
-    relatedServices: ['commercial-architecture', 'structural-design', '3d-elevation-design'],
-    relatedLocations: ['ajmer', 'jaipur'],
-    relatedProjects: ['boutique-commercial-office', 'industrial-spans-kishangarh'],
-
-    // Compatibility fields
-    projectType: 'real',
-    projectCategory: 'commercial',
-    clientType: 'Commercial Real Estate Consortium',
-    city: 'Ajmer',
-    locationDetails: {
-      city: 'Ajmer',
-      state: 'Rajasthan',
-      areaOrNeighborhood: 'Panchsheel Nagar Commercial Corridor',
-      displayLocation: 'Panchsheel Nagar, Ajmer, Rajasthan',
-      isRegionalContext: true
-    },
     year: '2023',
-    siteArea: '8,500 sq.ft.',
-    builtUpArea: '14,500 sq.ft.',
-    categoryLabel: 'Commercial Complex',
-    typology: 'Multi-Tenant Commercial & Corporate Plaza',
-    badges: ['Built Commission', 'Chartered Certified', 'Commercial Landmark'],
-    isFeatured: true,
-    lead: 'Er. Sudhir Soni & Ar. Vipul Verma',
-    leadership: {
-      architecturalPrincipal: 'Ar. Vipul Verma (B.Arch, M.H.S. Belgium)',
-      structuralPrincipal: 'Er. Sudhir Soni (Chartered Engineer, M.E. Structure)',
-      projectLead: 'Er. Sudhir Soni & Ar. Vipul Verma'
+    builtUpArea: '3,200 sq.ft.',
+    categoryLabel: 'Residential',
+    typology: 'Family Home',
+    lead: 'Ar. Vipul Verma',
+    scopeOfWork: ['Architectural Design', 'Structural Design', 'Interiors'],
+    summary: 'Family residence for the Dilip family in Panchsheel Nagar.',
+    challenge: 'Privacy and light on a compact urban plot.',
+    approach: 'Vastu-aligned plan with courtyard and shaded sit-outs.',
+    structuralEngineering: 'RCC framed structure as per IS codes.',
+    heroImage: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80',
+    gallery: ['https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80'],
+    features: ['Courtyard house', 'Vastu planning', 'Terrace family space'],
+    locationDetails: {
+      city: 'Ajmer',
+      state: 'Rajasthan',
+      areaOrNeighborhood: 'Panchsheel Nagar',
+      displayLocation: 'Panchsheel Nagar, Ajmer, Rajasthan',
     },
-    scopeOfWork: [
-      'Commercial Master Planning',
-      'Structural Steel & RCC Hybrid Framing',
-      'ADA Sanction & Commercial Clearance Drawings',
-      'Ventilated Terra-Cotta Rainscreen Facade Engineering',
-      'MEP Infrastructure & Lift Well Shaft Engineering'
-    ],
-    summary: 'A multi-tier commercial retail and corporate hub engineered with column-free floor plates and high-durability ventilated facade technology.',
-    challenge: 'Accommodating heavy dynamic vehicular loads for underground basement parking while preserving high ceiling clearances and unobstructed 12-meter clear spans on the retail ground floor.',
-    approach: 'Engineered a transfer girder slab system at the ground-first transition level. This allowed basement parking grid columns to distribute into a wide-open commercial column footprint above.',
-    structuralEngineering: 'Engineered heavy-duty transfer slabs and composite steel-concrete columns certified under IS 800:2007 and IS 456:2000 for high commercial live loads (5.0 kN/m²).',
-    structuralDetails: {
-      framingSystem: 'Heavy-Duty RCC Moment Resisting Frame with 900mm Post-Tensioned Transfer Girders',
-      foundationType: 'Continuous Reinforced Concrete Bored Piles with Capping Raft for high sub-soil bearing capacity',
-      specialTechnicalFeatures: [
-        '12-meter unobstructed clear spans on retail floors using PT beam profiles',
-        'Seismic ductility detailing for high-occupancy commercial assembly classification',
-        'Dedicated high-capacity lift shafts and fire escape structural core'
-      ],
-      charteredCertificationNote: 'Comprehensive Commercial Structural Stability Certification by Er. Sudhir Soni, Chartered Engineer.'
-    },
-    sustainabilityFeatures: [
-      'High-performance double-skin ventilated terracotta ceramic facade panels reducing air conditioning load by 22%',
-      'Rooftop grid-tied solar photovoltaic installation supplying 65% of common area electrical requirements',
-      'Greywater treatment facility recycling washroom runoff for landscape and HVAC cooling tower makeup'
-    ],
-    materialsUsed: [
-      { name: 'Ventilated Terracotta Cladding', application: 'External rainscreen facade with rear air cavity' },
-      { name: 'Structural Glazing (Saint-Gobain Planitherm)', application: 'Curtain wall systems on street-facing elevations' },
-      { name: 'Industrial Flamed Granite', application: 'High-traffic ground concourse and pedestrian colonnade' }
-    ],
-    heroImage: '/images/projects/panchsheel-commercial-pavilion.jpg',
-    heroImageDetails: {
-      url: '/images/projects/panchsheel-commercial-pavilion.jpg',
-      alt: 'Panchsheel Commercial Pavilion modern commercial exterior facade in Ajmer',
-      caption: 'Main avenue perspective showcasing modern commercial pavilion facade with articulated structural bays.'
-    },
-    gallery: [
-      'https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&q=80'
-    ],
-    galleryImages: [
-      {
-        url: 'https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=1200&q=80',
-        caption: 'Ground floor commercial arcade with high-clearance structural spans and clear sightlines.',
-        alt: 'Commercial retail promenade in Panchsheel',
-        aspect: 'wide'
-      },
-      {
-        url: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&q=80',
-        caption: 'Upper level corporate office floor plate designed for modular executive partitioning.',
-        alt: 'Corporate open-plan office interior in Ajmer',
-        aspect: 'wide'
-      }
-    ],
-    drawingsAndPlans: [
-      {
-        id: 'dp-com-drw-01',
-        title: 'Ground Level Commercial Master Floor Plan',
-        type: 'floor-plan',
-        imageUrl: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80',
-        caption: 'Circulation grid illustrating 12m wide retail bays, dual fire egress stairs, and service elevator bank.'
-      },
-      {
-        id: 'dp-com-drw-02',
-        title: 'Transfer Girder Structural Section (Er. Sudhir Soni)',
-        type: 'structural-detail',
-        imageUrl: 'https://images.unsplash.com/photo-1541888946425-d0fbb1861564?auto=format&fit=crop&w=1200&q=80',
-        caption: 'Heavy RCC transfer beam detail carrying upper 3 floors over open basement parking grid.'
-      }
-    ],
-    features: [
-      '12-meter column-free retail spans providing maximum lease flexibility',
-      'Integrated basement parking with automated ventilation shafts and high-capacity ramp',
-      'Ventilated terracotta rainscreen envelope for superior thermal comfort and longevity',
-      'Two dedicated high-speed passenger elevators and independent heavy service lift',
-      'Complete ADA and Municipal fire-safety compliance clearance'
-    ],
-    seo: {
-      metaTitle: 'Panchsheel Pavilion | Commercial Architecture | Design Plus',
-      metaDescription: 'Explore the Panchsheel Commercial Pavilion designed by Design Plus. High-performance retail and corporate complex in Ajmer with column-free structural bays.',
-      keywords: ['commercial architect Ajmer', 'Panchsheel retail complex', 'Design Plus commercial projects', 'structural design Ajmer']
-    }
   },
+
+
   {
     id: 'dp-res-003',
     slug: 'pushkar-courtyard-haven',

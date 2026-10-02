@@ -35,7 +35,7 @@ export function ProcessSection() {
         <div className="max-w-3xl mb-12 sm:mb-16">
           <h2 className="font-editorial text-4xl sm:text-6xl md:text-7xl font-normal leading-[0.98] tracking-tight uppercase text-white" style={{ textWrap: 'balance' }}>
             A linear, verifiable <br />
-            <span className="italic font-light text-[#F4F0E8]/70">six-phase discipline.</span>
+            <span className="italic font-light text-[#F4F0E8]/70">simple 6-step process.</span>
           </h2>
           <p className="text-sm sm:text-base text-[#F4F0E8]/85 mt-4 leading-relaxed font-sans font-normal">
             Eliminating speculative guesswork through phased milestone sign-offs, precision spatial geometry, and Chartered Structural computation.

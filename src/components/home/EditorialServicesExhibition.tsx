@@ -138,11 +138,11 @@ export function EditorialServicesExhibition({ onOpenConsultation }: EditorialSer
             <span>MULTIDISCIPLINARY PRACTICE</span>
           </div>
           <h2 className="font-editorial text-4xl sm:text-6xl md:text-7xl font-normal tracking-tight uppercase text-white leading-[1.05]">
-            ONE STUDIO. <br />
-            <span className="text-[#B86B38]">MANY DISCIPLINES.</span>
+            WHAT WE <br />
+            <span className="text-[#B86B38]">DO.</span>
           </h2>
           <p className="text-base sm:text-lg text-[#F4F0E8]/85 font-sans font-light max-w-2xl leading-relaxed">
-            Architecture, structural engineering, infrastructure, and municipal consultancy unified under single-source accountability in Ajmer and across Rajasthan.
+            House designs, building plans, structural safety checks, interiors and construction support — everything your project needs, in Ajmer and across Rajasthan.
           </p>
         </div>
 

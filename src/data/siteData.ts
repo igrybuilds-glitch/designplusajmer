@@ -25,7 +25,7 @@ export const BUSINESS_INFO = {
 export const LEADERSHIP: TeamMember = {
   name: 'Er. Sudhir Soni',
   role: 'Founder, CEO & Principal Structural Engineer',
-  qualification: 'M.E. (Structure) | M.I.E. | FIV | Chartered Engineer',
+  qualification: 'M.E. (Structural Engineering) | M.I.E. | FIV | Chartered Engineer',
   bio: 'With over three decades of engineering leadership, Er. Sudhir Soni has pioneered structural design across Rajasthan. As a Chartered Engineer and Approved Valuer (FIV), he ensures rigorous structural integrity, stability calculations, and authority compliances for multi-story residential, commercial, and infrastructure developments.',
   specialization: 'High-Rise RCC Structures, Seismic Design, Structural Audits & Chartered Certification'
 };
@@ -34,9 +34,9 @@ export const TEAM_MEMBERS: TeamMember[] = [
   {
     name: 'Ar. Vipul Verma',
     role: 'Principal Architect',
-    qualification: 'B.Arch | M.H.S. (Belgium)',
-    bio: 'Educated in contemporary architectural theory and human settlement dynamics with postgraduate qualifications from Belgium. Specializes in climate-responsive residential layouts, daylight orchestration, and vernacular material integration.',
-    specialization: 'Architectural Design, Contextual Planning & Spatial Philosophy'
+    qualification: 'B.Arch, MHS (Belgium)',
+    bio: 'Studied architecture in Belgium. Designs homes and buildings suited to Rajasthan\'s climate — good light, natural airflow, and local materials.',
+    specialization: 'Home Design, Building Planning & Interiors'
   },
   {
     name: 'Er. Ankit Soni',

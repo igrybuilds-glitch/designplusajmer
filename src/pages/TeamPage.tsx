@@ -22,14 +22,14 @@ export function TeamPage({ onOpenConsultation }: TeamPageProps) {
         '@type': 'Person',
         name: 'Er. Sudhir Soni',
         jobTitle: 'Founder & Principal Structural Engineer',
-        honorificSuffix: 'M.E. (Structure) | M.I.E. | FIV | Chartered Engineer'
+        honorificSuffix: 'M.E. (Structural Engineering) | M.I.E. | FIV | Chartered Engineer'
       },
       employee: [
         {
           '@type': 'Person',
           name: 'Ar. Vipul Verma',
           jobTitle: 'Principal Architect',
-          honorificSuffix: 'B.Arch | M.H.S. (Belgium)'
+          honorificSuffix: 'B.Arch, MHS (Belgium)'
         },
         {
           '@type': 'Person',

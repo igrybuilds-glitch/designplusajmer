@@ -30,7 +30,7 @@ export function FeaturedProjectMonograph() {
   return (
     <section 
       id="selected-monographs" 
-      aria-label="Selected Architectural Monographs"
+      aria-label="Our Completed Projects"
       className="relative bg-transparent text-[#F4F0E8] py-20 sm:py-28 lg:py-36 overflow-hidden border-b border-white/15 transition-colors"
     >
       {/* Dark Readability Overlay for Fixed Video Background */}
@@ -42,7 +42,7 @@ export function FeaturedProjectMonograph() {
         <div className="flex items-center justify-between border-b border-white/20 pb-4 mb-12 sm:mb-16 text-xs font-mono text-[#F4F0E8]/70">
           <div className="flex items-center gap-2">
             <span className="text-[#B86B38] font-semibold">03 //</span>
-            <span className="uppercase tracking-[0.2em] font-medium text-white">Project Archive &amp; Monographs</span>
+            <span className="uppercase tracking-[0.2em] font-medium text-white">Our Completed Projects</span>
           </div>
           <div className="hidden sm:flex items-center gap-4 tracking-[0.16em] uppercase text-[#F4F0E8]/70">
             <span>AJMER · JAIPUR · KISHANGARH · PUSHKAR</span>
