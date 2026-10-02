@@ -452,6 +452,266 @@ export const PROJECTS: Project[] = [
     },
   },
   {
+    id: 'dp-com-012',
+    slug: 'convention-center-chitrakoot-dham-bhilwara',
+    title: 'Convention Center, Chitrakoot Dham',
+    category: 'commercial',
+    status: 'completed',
+    location: 'Chitrakoot Dham, Nagar Nigam, Bhilwara',
+    area: '25,000 sq.ft.',
+    floors: 'G+1 Floors',
+    services: [
+      'Architectural Design',
+      'Structural Design & Engineering'
+    ],
+    description: 'A civic convention center for Nagar Nigam at Chitrakoot Dham, Bhilwara — a bold glass-and-stone public building with a grand double-height entrance and deep sun-shading fins.',
+    brief: 'A landmark public venue for the city.',
+    designApproach: 'Full-height glazing framed by stone and timber fins; deep overhangs cut the western sun while keeping the grand entrance hall day-lit.',
+    images: [
+      '/images/projects/convention-center-chitrakoot-dham.webp'
+    ],
+    featured: false,
+    isConcept: false,
+    relatedServices: ['architectural-design', 'structural-design'],
+    relatedLocations: ['ajmer'],
+    relatedProjects: [],
+    projectType: 'real',
+    projectCategory: 'commercial',
+    clientType: 'Institutional Client (Nagar Nigam)',
+    city: 'Bhilwara',
+    year: '2024',
+    builtUpArea: '25,000 sq.ft.',
+    categoryLabel: 'Commercial',
+    typology: 'Convention Center',
+    lead: 'Er. Sudhir Soni',
+    scopeOfWork: ['Architectural Design', 'Structural Design'],
+    summary: 'Civic convention center for Nagar Nigam at Chitrakoot Dham, Bhilwara.',
+    challenge: 'A public landmark with grand presence and comfortable interiors.',
+    approach: 'Glazed facade with stone fins and deep sun-shading overhangs.',
+    structuralEngineering: 'RCC framed structure as per IS codes.',
+    heroImage: '/images/projects/convention-center-chitrakoot-dham.webp',
+    heroImageDetails: {
+      url: '/images/projects/convention-center-chitrakoot-dham.webp',
+      alt: 'Convention Center at Chitrakoot Dham, Bhilwara — glass and stone facade',
+      caption: 'Convention Center, Chitrakoot Dham, Nagar Nigam, Bhilwara.'
+    },
+    gallery: [
+      '/images/projects/convention-center-chitrakoot-dham.webp'
+    ],
+    galleryImages: [
+      {
+        url: '/images/projects/convention-center-chitrakoot-dham.webp',
+        caption: 'Street elevation — double-height glass entrance framed in stone and timber.',
+        alt: 'Convention center, Chitrakoot Dham, Bhilwara',
+        aspect: 'wide'
+      }
+    ],
+    features: ['Double-height entrance', 'Sun-shading fins', 'Stone-clad facade'],
+    locationDetails: {
+      city: 'Bhilwara',
+      state: 'Rajasthan',
+      areaOrNeighborhood: 'Chitrakoot Dham',
+      displayLocation: 'Chitrakoot Dham, Nagar Nigam, Bhilwara, Rajasthan',
+      latitude: 25.3411,
+      longitude: 74.6374,
+    },
+  },
+  {
+    id: 'dp-res-014',
+    slug: 'sanjay-sharma-residence-chitrakoot-nagar',
+    title: 'Sanjay Sharma Residence',
+    category: 'residential',
+    status: 'completed',
+    location: 'Chitrakoot Nagar, Makadwali Road, Ajmer',
+    area: '4,000 sq.ft.',
+    floors: 'G+2 Floors',
+    services: [
+      'Architectural Design',
+      'Structural Design'
+    ],
+    description: 'A modern family residence for Mr. Sanjay Sharma in Chitrakoot Nagar, Ajmer — crisp white and grey volumes, warm timber soffits, glass-railed balconies and hanging greens.',
+    brief: 'A contemporary family home with a striking evening presence.',
+    designApproach: 'Stacked clean volumes with deep balconies; timber soffits and glass railings keep the mass light while the facade glows after dusk.',
+    images: [
+      '/images/projects/sanjay-sharma-residence.webp'
+    ],
+    featured: false,
+    isConcept: false,
+    relatedServices: ['architectural-design', 'structural-design'],
+    relatedLocations: ['ajmer'],
+    relatedProjects: [],
+    projectType: 'real',
+    projectCategory: 'residential',
+    clientType: 'Private Residential Client',
+    city: 'Ajmer',
+    year: '2024',
+    builtUpArea: '4,000 sq.ft.',
+    categoryLabel: 'Residential',
+    typology: 'Private Residence',
+    lead: 'Ar. Vipul Verma',
+    scopeOfWork: ['Architectural Design', 'Structural Design'],
+    summary: 'Modern G+2 family residence in Chitrakoot Nagar, Ajmer.',
+    challenge: 'A striking yet warm family home on a compact urban plot.',
+    approach: 'Clean stacked volumes, timber soffits, glass balconies.',
+    structuralEngineering: 'RCC framed structure as per IS codes.',
+    heroImage: '/images/projects/sanjay-sharma-residence.webp',
+    heroImageDetails: {
+      url: '/images/projects/sanjay-sharma-residence.webp',
+      alt: 'Sanjay Sharma residence at dusk — modern white and grey facade, Chitrakoot Nagar',
+      caption: 'Residence of Mr. Sanjay Sharma, Chitrakoot Nagar, Makadwali Road, Ajmer.'
+    },
+    gallery: [
+      '/images/projects/sanjay-sharma-residence.webp'
+    ],
+    galleryImages: [
+      {
+        url: '/images/projects/sanjay-sharma-residence.webp',
+        caption: 'Evening elevation — stacked volumes with timber soffits and glass balconies.',
+        alt: 'Sanjay Sharma residence',
+        aspect: 'wide'
+      }
+    ],
+    features: ['Timber soffits', 'Glass-railed balconies', 'Evening facade lighting'],
+    locationDetails: {
+      city: 'Ajmer',
+      state: 'Rajasthan',
+      areaOrNeighborhood: 'Chitrakoot Nagar, Makadwali Road',
+      displayLocation: 'Chitrakoot Nagar, Makadwali Road, Ajmer, Rajasthan',
+      latitude: 26.4993,
+      longitude: 74.6286,
+    },
+  },
+  {
+    id: 'dp-res-015',
+    slug: 'shantilal-residence-gangapur-bhilwara',
+    title: 'Shantilal Residence',
+    category: 'residential',
+    status: 'completed',
+    location: 'Gangapur, Bhilwara',
+    area: '3,200 sq.ft.',
+    floors: 'G+1 Floors',
+    services: [
+      'Architectural Design',
+      'Structural Design'
+    ],
+    description: 'A contemporary duplex residence for Mr. Shantilal in Gangapur, Bhilwara — stone-clad tower, vertical timber fins, glass balconies and a pergola-capped terrace.',
+    brief: 'A modern family duplex with strong street presence.',
+    designApproach: 'A stone-clad vertical core anchors the composition; timber screens filter the harsh sun while glass balconies open the living spaces to the street.',
+    images: [
+      '/images/projects/shantilal-residence-gangapur.webp'
+    ],
+    featured: false,
+    isConcept: false,
+    relatedServices: ['architectural-design', 'structural-design'],
+    relatedLocations: ['ajmer'],
+    relatedProjects: [],
+    projectType: 'real',
+    projectCategory: 'residential',
+    clientType: 'Private Residential Client',
+    city: 'Bhilwara',
+    year: '2024',
+    builtUpArea: '3,200 sq.ft.',
+    categoryLabel: 'Residential',
+    typology: 'Private Residence',
+    lead: 'Ar. Vipul Verma',
+    scopeOfWork: ['Architectural Design', 'Structural Design'],
+    summary: 'Contemporary duplex residence in Gangapur, Bhilwara.',
+    challenge: 'Modern street presence with sun control and privacy.',
+    approach: 'Stone tower, timber fins, glass balconies, terrace pergola.',
+    structuralEngineering: 'RCC framed structure as per IS codes.',
+    heroImage: '/images/projects/shantilal-residence-gangapur.webp',
+    heroImageDetails: {
+      url: '/images/projects/shantilal-residence-gangapur.webp',
+      alt: 'Shantilal residence — stone and timber facade with glass balconies, Gangapur',
+      caption: 'Residence of Mr. Shantilal, Gangapur, Bhilwara, Rajasthan.'
+    },
+    gallery: [
+      '/images/projects/shantilal-residence-gangapur.webp'
+    ],
+    galleryImages: [
+      {
+        url: '/images/projects/shantilal-residence-gangapur.webp',
+        caption: 'Front elevation — stone-clad core with timber fins and glass balconies.',
+        alt: 'Shantilal residence',
+        aspect: 'wide'
+      }
+    ],
+    features: ['Stone-clad tower', 'Timber sun-screens', 'Terrace pergola'],
+    locationDetails: {
+      city: 'Bhilwara',
+      state: 'Rajasthan',
+      areaOrNeighborhood: 'Gangapur',
+      displayLocation: 'Gangapur, Bhilwara, Rajasthan',
+      latitude: 25.2179,
+      longitude: 74.262,
+    },
+  },
+  {
+    id: 'dp-res-016',
+    slug: 'babulal-soni-residence-nakamadar-ajmer',
+    title: 'Babulal Soni Residence',
+    category: 'residential',
+    status: 'completed',
+    location: 'Nakamadar, Ajmer',
+    area: '3,800 sq.ft.',
+    floors: 'G+2 Floors',
+    services: [
+      'Architectural Design',
+      'Structural Design'
+    ],
+    description: 'A tall contemporary residence for Mr. Babulal Soni in Nakamadar, Ajmer — a full-height glass tower wrapped in a timber screen, stone cladding and layered balconies.',
+    brief: 'Maximum presence on a narrow urban plot.',
+    designApproach: 'Vertical emphasis: a glass stair-and-lobby tower in a timber sleeve, with stone and white frames layering the balconies for depth and shade.',
+    images: [
+      '/images/projects/babulal-soni-residence-nakamadar.webp'
+    ],
+    featured: false,
+    isConcept: false,
+    relatedServices: ['architectural-design', 'structural-design'],
+    relatedLocations: ['ajmer'],
+    relatedProjects: [],
+    projectType: 'real',
+    projectCategory: 'residential',
+    clientType: 'Private Residential Client',
+    city: 'Ajmer',
+    year: '2024',
+    builtUpArea: '3,800 sq.ft.',
+    categoryLabel: 'Residential',
+    typology: 'Private Residence',
+    lead: 'Ar. Vipul Verma',
+    scopeOfWork: ['Architectural Design', 'Structural Design'],
+    summary: 'Tall contemporary G+2 residence in Nakamadar, Ajmer.',
+    challenge: 'Presence and daylight on a narrow plot.',
+    approach: 'Glass tower in timber screen, layered stone balconies.',
+    structuralEngineering: 'RCC framed structure as per IS codes.',
+    heroImage: '/images/projects/babulal-soni-residence-nakamadar.webp',
+    heroImageDetails: {
+      url: '/images/projects/babulal-soni-residence-nakamadar.webp',
+      alt: 'Babulal Soni residence — glass tower with timber screen, Nakamadar',
+      caption: 'Residence of Mr. Babulal Soni, Nakamadar, Ajmer.'
+    },
+    gallery: [
+      '/images/projects/babulal-soni-residence-nakamadar.webp'
+    ],
+    galleryImages: [
+      {
+        url: '/images/projects/babulal-soni-residence-nakamadar.webp',
+        caption: 'Front elevation — full-height glass tower wrapped in a timber screen.',
+        alt: 'Babulal Soni residence',
+        aspect: 'wide'
+      }
+    ],
+    features: ['Full-height glass tower', 'Timber screen', 'Stone cladding'],
+    locationDetails: {
+      city: 'Ajmer',
+      state: 'Rajasthan',
+      areaOrNeighborhood: 'Nakamadar',
+      displayLocation: 'Nakamadar, Ajmer, Rajasthan',
+      latitude: 26.4524,
+      longitude: 74.6665,
+    },
+  },
+  {
     id: 'dp-res-010',
     slug: 'panchsheel-nagar-residence-dilip',
     title: 'Panchsheel Nagar Residence — Dilip',
