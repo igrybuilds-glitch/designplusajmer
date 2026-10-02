@@ -73,6 +73,7 @@ export const PROJECTS: Project[] = [
     title: 'Nagar Palika Office Building',
     category: 'institutional',
     status: 'completed',
+    hidden: true,
     location: 'Ajmer, Rajasthan',
     area: '12,000 sq.ft.',
     floors: 'G+3 Floors',
@@ -123,6 +124,7 @@ export const PROJECTS: Project[] = [
     title: 'Sindoliya Senior Secondary School',
     category: 'institutional',
     status: 'completed',
+    hidden: true,
     location: 'Bhadsiya, Ajmer',
     area: '20,000 sq.ft.',
     floors: 'G+2 Floors',
@@ -785,58 +787,6 @@ export const PROJECTS: Project[] = [
     },
   },
   {
-    id: 'dp-res-010',
-    slug: 'panchsheel-nagar-residence-dilip',
-    title: 'Panchsheel Nagar Residence — Dilip',
-    category: 'residential',
-    status: 'completed',
-    location: 'Panchsheel Nagar, Ajmer',
-    area: '3,200 sq.ft.',
-    floors: 'G+1 Floors',
-    services: [
-      'Architectural Design',
-      'Structural Design',
-      'Interior Design'
-    ],
-    description: 'A family home in Panchsheel Nagar planned for privacy and light — a calm courtyard house built for everyday Rajasthani life.',
-    brief: 'A comfortable modern home for the Dilip family with room to grow.',
-    designApproach: 'Vastu-aligned planning, shaded sit-outs, and a terrace designed for evening family time.',
-    images: [
-      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80'
-    ],
-    featured: false,
-    isConcept: false,
-    relatedServices: ['architectural-design', 'structural-design', '3d-elevation-design'],
-    relatedLocations: ['ajmer'],
-    relatedProjects: [],
-    projectType: 'real',
-    projectCategory: 'residential',
-    clientType: 'Private Residential Client',
-    city: 'Ajmer',
-    year: '2023',
-    builtUpArea: '3,200 sq.ft.',
-    categoryLabel: 'Residential',
-    typology: 'Family Home',
-    lead: 'Ar. Vipul Verma',
-    scopeOfWork: ['Architectural Design', 'Structural Design', 'Interiors'],
-    summary: 'Family residence for the Dilip family in Panchsheel Nagar.',
-    challenge: 'Privacy and light on a compact urban plot.',
-    approach: 'Vastu-aligned plan with courtyard and shaded sit-outs.',
-    structuralEngineering: 'RCC framed structure as per IS codes.',
-    heroImage: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80',
-    gallery: ['https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80'],
-    features: ['Courtyard house', 'Vastu planning', 'Terrace family space'],
-    locationDetails: {
-      city: 'Ajmer',
-      state: 'Rajasthan',
-      areaOrNeighborhood: 'Panchsheel Nagar',
-      displayLocation: 'Panchsheel Nagar, Ajmer, Rajasthan',
-    },
-  },
-
-
-  {
     id: 'dp-res-003',
     slug: 'pushkar-courtyard-haven',
     title: 'Pushkar Courtyard Haven',
@@ -863,7 +813,7 @@ export const PROJECTS: Project[] = [
     isConcept: false,
     relatedServices: ['residential-architecture', 'interior-design', '2d-floor-planning'],
     relatedLocations: ['pushkar', 'ajmer'],
-    relatedProjects: ['ana-sagar-residence', 'contemporary-rajasthan-villa'],
+    relatedProjects: ['contemporary-rajasthan-villa'],
 
     // Compatibility fields
     projectType: 'real',
@@ -993,7 +943,7 @@ export const PROJECTS: Project[] = [
     isConcept: false,
     relatedServices: ['interior-design', '3d-elevation-design', 'architectural-design'],
     relatedLocations: ['ajmer', 'jaipur'],
-    relatedProjects: ['contemporary-retail-interior', 'ana-sagar-residence'],
+    relatedProjects: ['contemporary-retail-interior'],
 
     // Compatibility fields
     projectType: 'real',
@@ -1121,7 +1071,7 @@ export const PROJECTS: Project[] = [
     isConcept: false,
     relatedServices: ['structural-design', 'commercial-architecture'],
     relatedLocations: ['jaipur', 'ajmer'],
-    relatedProjects: ['panchsheel-commercial-pavilion', 'mayo-link-institutional-academy'],
+    relatedProjects: ['mayo-link-institutional-academy'],
 
     // Compatibility fields
     projectType: 'real',
@@ -1250,7 +1200,7 @@ export const PROJECTS: Project[] = [
     isConcept: false,
     relatedServices: ['architectural-design', 'structural-design', '2d-floor-planning'],
     relatedLocations: ['ajmer', 'jaipur'],
-    relatedProjects: ['panchsheel-commercial-pavilion', 'ana-sagar-residence'],
+    relatedProjects: [],
 
     // Compatibility fields
     projectType: 'real',
@@ -1382,7 +1332,7 @@ export const PROJECTS: Project[] = [
     isConcept: true,
     relatedServices: ['architectural-design', '3d-elevation-design', '2d-floor-planning'],
     relatedLocations: ['ajmer', 'pushkar'],
-    relatedProjects: ['contemporary-rajasthan-villa', 'ana-sagar-residence'],
+    relatedProjects: ['contemporary-rajasthan-villa'],
 
     // Compatibility fields
     projectType: 'concept',
@@ -1656,7 +1606,7 @@ export const PROJECTS: Project[] = [
     isConcept: true,
     relatedServices: ['residential-architecture', '2d-floor-planning', '3d-elevation-design'],
     relatedLocations: ['ajmer', 'jaipur'],
-    relatedProjects: ['ana-sagar-residence', 'modern-courtyard-residence'],
+    relatedProjects: ['modern-courtyard-residence'],
 
     // Compatibility fields
     projectType: 'concept',
@@ -1792,7 +1742,7 @@ export const PROJECTS: Project[] = [
     isConcept: true,
     relatedServices: ['commercial-architecture', '3d-elevation-design', 'interior-design'],
     relatedLocations: ['ajmer', 'jaipur'],
-    relatedProjects: ['panchsheel-commercial-pavilion', 'vaishali-studio-interiors'],
+    relatedProjects: ['vaishali-studio-interiors'],
 
     // Compatibility fields
     projectType: 'concept',
@@ -2052,7 +2002,7 @@ export const RAW_PROJECTS = PROJECTS;
 
 // Helper Query Functions
 export function getAllProjects(): Project[] {
-  return PROJECTS;
+  return PROJECTS.filter((p) => !p.hidden);
 }
 
 export function getProjectBySlug(slug: string): Project | undefined {

@@ -17,14 +17,15 @@ export function FeaturedProjectMonograph() {
   const [blueprintMode, setBlueprintMode] = useState<boolean>(false);
 
   const filteredProjects = useMemo(() => {
+    const visible = PROJECTS.filter((p) => !p.hidden);
     if (activeFilter === 'all') {
-      return PROJECTS.slice(0, 6);
+      return visible.slice(0, 6);
     }
-    const matches = PROJECTS.filter(p => p.category.toLowerCase().includes(activeFilter.toLowerCase()));
-    return matches.length > 0 ? matches.slice(0, 6) : PROJECTS.slice(0, 6);
+    const matches = visible.filter(p => p.category.toLowerCase().includes(activeFilter.toLowerCase()));
+    return matches.length > 0 ? matches.slice(0, 6) : visible.slice(0, 6);
   }, [activeFilter]);
 
-  const heroProject = filteredProjects[0] || PROJECTS[0];
+  const heroProject = filteredProjects[0] || PROJECTS.filter((p) => !p.hidden)[0];
   const secondaryProjects = filteredProjects.slice(1, 5);
 
   return (

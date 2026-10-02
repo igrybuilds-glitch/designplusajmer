@@ -89,6 +89,7 @@ export interface Project {
   images?: string[];
   featured?: boolean;
   isConcept?: boolean;
+  hidden?: boolean;
   relatedServices?: string[];
   relatedLocations?: string[];
   relatedProjects?: string[];
