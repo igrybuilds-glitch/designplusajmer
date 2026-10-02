@@ -1995,6 +1995,267 @@ export const PROJECTS: Project[] = [
       metaDescription: 'Design study of Contemporary Retail Interior by Design Plus. Experiential stone and architectural craft gallery in Kishangarh, Rajasthan.',
       keywords: ['marble showroom design Kishangarh', 'luxury retail interior Rajasthan', 'concept retail architecture', 'Design Plus study']
     }
+  },
+  {
+    id: 'dp-res-017',
+    slug: 'op-soni-residence-taragarh-road',
+    title: 'Mr. OP Soni Residence',
+    category: 'residential',
+    status: 'completed',
+    location: 'Taragarh Road, Ajmer',
+    area: '4,200 sq.ft.',
+    floors: 'G+2 Floors',
+    services: [
+      'Architectural Design',
+      'Structural Design & Engineering'
+    ],
+    description: 'A stately modern residence on Taragarh Road, Ajmer — symmetrical facade with arched colonnades, layered balconies, and warm evening illumination.',
+    brief: 'A grand family residence with classical-modern fusion and generous outdoor living.',
+    designApproach: 'Symmetrical massing with arched openings; layered balconies create depth against the clean plastered facade.',
+    images: [
+      '/images/projects/op-soni-residence.jpg'
+    ],
+    featured: false,
+    isConcept: false,
+    relatedServices: ['architectural-design', 'structural-design', '3d-elevation-design'],
+    relatedLocations: ['ajmer'],
+    relatedProjects: [],
+    projectType: 'real',
+    projectCategory: 'residential',
+    clientType: 'Private Residential Client',
+    city: 'Ajmer',
+    year: '2024',
+    builtUpArea: '4,200 sq.ft.',
+    categoryLabel: 'Residential',
+    typology: 'Modern Villa',
+    lead: 'Ar. Vipul Verma',
+    scopeOfWork: ['Architectural Design', 'Structural Design'],
+    summary: 'Stately modern residence with arched colonnades on Taragarh Road.',
+    challenge: 'Grand street presence with classical-modern balance.',
+    approach: 'Symmetrical facade, arched openings, layered balconies.',
+    structuralEngineering: 'RCC framed structure as per IS codes.',
+    heroImage: '/images/projects/op-soni-residence.jpg',
+    heroImageDetails: {
+      url: '/images/projects/op-soni-residence.jpg',
+      alt: 'OP Soni residence — modern villa on Taragarh Road, Ajmer',
+      caption: 'Evening view of OP Soni Residence, Taragarh Road, Ajmer.'
+    },
+    gallery: [
+      '/images/projects/op-soni-residence.jpg'
+    ],
+    galleryImages: [
+      {
+        url: '/images/projects/op-soni-residence.jpg',
+        caption: 'Dusk view — arched colonnades and layered balconies glowing warm.',
+        alt: 'Residence evening render',
+        aspect: 'wide'
+      }
+    ],
+    features: ['Arched colonnades', 'Layered balconies', 'Grand entrance'],
+    locationDetails: {
+      city: 'Ajmer',
+      state: 'Rajasthan',
+      areaOrNeighborhood: 'Taragarh Road',
+      displayLocation: 'Taragarh Road, Ajmer, Rajasthan',
+      latitude: 26.4209,
+      longitude: 74.6342,
+    },
+  },
+  {
+    id: 'dp-res-018',
+    slug: 'vijay-swarnkar-residence-udaipur',
+    title: 'Mr. Vijay Swarnkar Residence',
+    category: 'residential',
+    status: 'completed',
+    location: 'Udaipur',
+    area: '5,000 sq.ft.',
+    floors: 'G+2 Floors',
+    services: [
+      'Architectural Design',
+      'Structural Design & Engineering'
+    ],
+    description: 'A luxurious modern villa in Udaipur — clean white volumes, glass railings, manicured courtyards, and evening light washing over the facade.',
+    brief: 'A premium family villa with contemporary luxury and seamless indoor-outdoor flow.',
+    designApproach: 'Crisp geometric volumes with full-height glazing; landscaped forecourt frames the arrival.',
+    images: [
+      '/images/projects/vijay-swarnkar-residence.jpg'
+    ],
+    featured: false,
+    isConcept: false,
+    relatedServices: ['architectural-design', 'structural-design', '3d-elevation-design'],
+    relatedLocations: ['udaipur'],
+    relatedProjects: [],
+    projectType: 'real',
+    projectCategory: 'residential',
+    clientType: 'Private Residential Client',
+    city: 'Udaipur',
+    year: '2024',
+    builtUpArea: '5,000 sq.ft.',
+    categoryLabel: 'Residential',
+    typology: 'Luxury Villa',
+    lead: 'Ar. Vipul Verma',
+    scopeOfWork: ['Architectural Design', 'Structural Design'],
+    summary: 'Luxurious modern villa with glass railings in Udaipur.',
+    challenge: 'Premium luxury with seamless indoor-outdoor living.',
+    approach: 'Geometric volumes, full-height glazing, landscaped courts.',
+    structuralEngineering: 'RCC framed structure as per IS codes.',
+    heroImage: '/images/projects/vijay-swarnkar-residence.jpg',
+    heroImageDetails: {
+      url: '/images/projects/vijay-swarnkar-residence.jpg',
+      alt: 'Vijay Swarnkar residence — luxury modern villa in Udaipur',
+      caption: 'Evening view of Vijay Swarnkar Residence, Udaipur.'
+    },
+    gallery: [
+      '/images/projects/vijay-swarnkar-residence.jpg'
+    ],
+    galleryImages: [
+      {
+        url: '/images/projects/vijay-swarnkar-residence.jpg',
+        caption: 'Dusk view — glass railings and warm light over manicured courts.',
+        alt: 'Villa evening render',
+        aspect: 'wide'
+      }
+    ],
+    features: ['Glass railings', 'Manicured courtyards', 'Full-height glazing'],
+    locationDetails: {
+      city: 'Udaipur',
+      state: 'Rajasthan',
+      areaOrNeighborhood: 'Udaipur',
+      displayLocation: 'Udaipur, Rajasthan',
+      latitude: 24.5813,
+      longitude: 73.6956,
+    },
+  },
+  {
+    id: 'dp-res-019',
+    slug: 'beeram-khan-residence-kharva',
+    title: 'Mr. Beeram Khan Residence',
+    category: 'residential',
+    status: 'completed',
+    location: 'Kharva, Ajmer',
+    area: '3,800 sq.ft.',
+    floors: 'G+1 Floors',
+    services: [
+      'Architectural Design',
+      'Structural Design & Engineering'
+    ],
+    description: 'A contemporary family home in Kharva, Ajmer — warm material palette, deep verandas, and a welcoming forecourt under evening skies.',
+    brief: 'A comfortable modern home rooted in local context with generous verandas.',
+    designApproach: 'Horizontal massing with deep overhangs; warm textures balance the modern geometry.',
+    images: [
+      '/images/projects/beeram-khan-residence.jpg'
+    ],
+    featured: false,
+    isConcept: false,
+    relatedServices: ['architectural-design', 'structural-design', '3d-elevation-design'],
+    relatedLocations: ['ajmer'],
+    relatedProjects: [],
+    projectType: 'real',
+    projectCategory: 'residential',
+    clientType: 'Private Residential Client',
+    city: 'Ajmer',
+    year: '2024',
+    builtUpArea: '3,800 sq.ft.',
+    categoryLabel: 'Residential',
+    typology: 'Modern Family Home',
+    lead: 'Ar. Vipul Verma',
+    scopeOfWork: ['Architectural Design', 'Structural Design'],
+    summary: 'Contemporary family home with deep verandas in Kharva.',
+    challenge: 'Modern comfort with local contextual warmth.',
+    approach: 'Horizontal massing, deep overhangs, warm textures.',
+    structuralEngineering: 'RCC framed structure as per IS codes.',
+    heroImage: '/images/projects/beeram-khan-residence.jpg',
+    heroImageDetails: {
+      url: '/images/projects/beeram-khan-residence.jpg',
+      alt: 'Beeram Khan residence — modern family home in Kharva, Ajmer',
+      caption: 'Evening view of Beeram Khan Residence, Kharva, Ajmer.'
+    },
+    gallery: [
+      '/images/projects/beeram-khan-residence.jpg'
+    ],
+    galleryImages: [
+      {
+        url: '/images/projects/beeram-khan-residence.jpg',
+        caption: 'Dusk view — warm material palette under evening skies.',
+        alt: 'Home evening render',
+        aspect: 'wide'
+      }
+    ],
+    features: ['Deep verandas', 'Warm material palette', 'Welcoming forecourt'],
+    locationDetails: {
+      city: 'Ajmer',
+      state: 'Rajasthan',
+      areaOrNeighborhood: 'Kharva',
+      displayLocation: 'Kharva, Ajmer, Rajasthan',
+      latitude: 26.2222,
+      longitude: 74.4808,
+    },
+  },
+  {
+    id: 'dp-sports-001',
+    slug: 'stadium-kishangarh',
+    title: 'Stadium, Kishangarh',
+    category: 'institutional',
+    status: 'under-construction',
+    location: 'Kishangarh',
+    area: '12 Acres',
+    floors: 'Single Tier',
+    services: [
+      'Architectural Design',
+      'Structural Design & Engineering',
+      'Master Planning'
+    ],
+    description: 'A modern sports stadium in Kishangarh — comprehensive site plan with athletic tracks, spectator stands, and integrated support facilities.',
+    brief: 'A civic sports facility serving Kishangarh with professional-grade infrastructure.',
+    designApproach: 'Efficient site planning with clear circulation; spectator comfort and athlete performance drive the layout.',
+    images: [
+      '/images/projects/stadium-kishangarh.jpg'
+    ],
+    featured: false,
+    isConcept: false,
+    relatedServices: ['architectural-design', 'structural-design', 'master-planning'],
+    relatedLocations: ['kishangarh'],
+    relatedProjects: [],
+    projectType: 'real',
+    projectCategory: 'institutional',
+    clientType: 'Institutional Client',
+    city: 'Kishangarh',
+    year: '2025',
+    builtUpArea: '12 Acres',
+    categoryLabel: 'Institutional',
+    typology: 'Sports Stadium',
+    lead: 'Er. Sudhir Soni',
+    scopeOfWork: ['Architectural Design', 'Structural Design', 'Master Planning'],
+    summary: 'Modern sports stadium with athletic tracks in Kishangarh.',
+    challenge: 'Professional-grade sports infrastructure for the region.',
+    approach: 'Efficient planning, clear circulation, spectator comfort.',
+    structuralEngineering: 'RCC and steel structure as per IS codes.',
+    heroImage: '/images/projects/stadium-kishangarh.jpg',
+    heroImageDetails: {
+      url: '/images/projects/stadium-kishangarh.jpg',
+      alt: 'Stadium Kishangarh — architectural site plan',
+      caption: 'Site plan of Stadium, Kishangarh.'
+    },
+    gallery: [
+      '/images/projects/stadium-kishangarh.jpg'
+    ],
+    galleryImages: [
+      {
+        url: '/images/projects/stadium-kishangarh.jpg',
+        caption: 'Comprehensive site plan — tracks, stands, and support facilities.',
+        alt: 'Stadium site plan',
+        aspect: 'wide'
+      }
+    ],
+    features: ['Athletic tracks', 'Spectator stands', 'Support facilities'],
+    locationDetails: {
+      city: 'Kishangarh',
+      state: 'Rajasthan',
+      areaOrNeighborhood: 'Kishangarh',
+      displayLocation: 'Kishangarh, Rajasthan',
+      latitude: 26.5813,
+      longitude: 74.8738,
+    },
   }
 ];
 
