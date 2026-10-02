@@ -387,6 +387,71 @@ export const PROJECTS: Project[] = [
     },
   },
   {
+    id: 'dp-res-013',
+    slug: 'ml-prajapati-residence-panchsheel-nagar',
+    title: 'ML Prajapati Residence — Dharma Villa',
+    category: 'residential',
+    status: 'completed',
+    location: 'A Block, Panchsheel Nagar, Ajmer',
+    area: '2,800 sq.ft.',
+    floors: 'G+2 Floors',
+    services: [
+      'Architectural Design',
+      'Structural Design & Engineering'
+    ],
+    description: 'Dharma Villa — a completed family residence for Mr. ML Prajapati in A Block, Panchsheel Nagar, Ajmer. Warm plastered volumes with glass-railed balconies, built for everyday family life.',
+    brief: 'A sturdy, comfortable family home with generous balconies.',
+    designApproach: 'Simple stacked volumes, shaded balconies with glass railings, and a practical plan built to last.',
+    images: [
+      '/images/projects/ml-prajapati-residence.webp'
+    ],
+    featured: false,
+    isConcept: false,
+    relatedServices: ['architectural-design', 'structural-design'],
+    relatedLocations: ['ajmer'],
+    relatedProjects: [],
+    projectType: 'real',
+    projectCategory: 'residential',
+    clientType: 'Private Residential Client',
+    city: 'Ajmer',
+    year: '2024',
+    builtUpArea: '2,800 sq.ft.',
+    categoryLabel: 'Residential',
+    typology: 'Family Home',
+    lead: 'Er. Sudhir Soni',
+    scopeOfWork: ['Architectural Design', 'Structural Design'],
+    summary: 'Completed family residence (Dharma Villa) in Panchsheel Nagar.',
+    challenge: 'Comfortable family living with generous balcony space.',
+    approach: 'Stacked volumes with shaded glass-railed balconies.',
+    structuralEngineering: 'RCC framed structure as per IS codes.',
+    heroImage: '/images/projects/ml-prajapati-residence.webp',
+    heroImageDetails: {
+      url: '/images/projects/ml-prajapati-residence.webp',
+      alt: 'Dharma Villa — completed residence of Mr. ML Prajapati, Panchsheel Nagar',
+      caption: 'Dharma Villa, residence of Mr. ML Prajapati, A Block, Panchsheel Nagar, Ajmer.'
+    },
+    gallery: [
+      '/images/projects/ml-prajapati-residence.webp'
+    ],
+    galleryImages: [
+      {
+        url: '/images/projects/ml-prajapati-residence.webp',
+        caption: 'Completed front view — glass-railed balconies over warm plastered volumes.',
+        alt: 'Dharma Villa completed photo',
+        aspect: 'tall'
+      }
+    ],
+    features: ['Glass-railed balconies', 'Family-first planning', 'Completed & handed over'],
+    locationDetails: {
+      city: 'Ajmer',
+      state: 'Rajasthan',
+      areaOrNeighborhood: 'A Block, Panchsheel Nagar',
+      displayLocation: 'A Block, Panchsheel Nagar, Ajmer, Rajasthan',
+      latitude: 26.5189,
+      longitude: 74.6356,
+    },
+  },
+  {
     id: 'dp-res-010',
     slug: 'panchsheel-nagar-residence-dilip',
     title: 'Panchsheel Nagar Residence — Dilip',
