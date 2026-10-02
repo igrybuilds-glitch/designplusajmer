@@ -780,10 +780,10 @@ export const BLOG_ARTICLES: BlogArticle[] = [
   {
     id: 'art-architect-vs-contractor',
     slug: 'architect-vs-contractor',
-    title: 'Architect vs Contractor: Who Should You Hire First for Your Building Project?',
-    metaTitle: 'Architect vs Contractor: Who to Hire First? | Design Plus Decision Guide',
-    metaDescription: 'Should you hire an architect or a civil contractor first? Discover the critical differences in role, fiduciary responsibility, cost control, and project execution.',
-    excerpt: 'Understand the distinct roles of architects and building contractors, why hiring the architect first protects your investment, and how to structure healthy collaboration.',
+    title: 'Architect vs Contractor in Ajmer: Who to Hire First (and the \'Free Drawing\' Trap)',
+    metaTitle: 'Architect vs Contractor in Ajmer: Who to Hire First in 2026',
+    metaDescription: 'Should you hire an architect or contractor first in Ajmer? Real fee math, the free-drawing trap, and how tendering with proper drawings saves lakhs.',
+    excerpt: 'Should you hire an architect or contractor first in Ajmer? The real fee math behind ‘free drawings,’ the correct hiring order, and how tendering with proper drawings saves lakhs.',
     category: 'decision-guides',
     subcategory: 'Professional Selection',
     tags: ['decision-guide', 'architects-in-ajmer', 'house-planning'],
@@ -799,48 +799,117 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       qualifications: 'M.E. Structure, FIV, Chartered Engineer'
     },
     publishedAt: '2024-11-15',
-    updatedAt: '2025-01-10',
-    readTime: '7 min read',
-    wordCount: 1650,
+    updatedAt: '2026-10-02',
+    readTime: '5 min read',
+    wordCount: 914,
     featuredImage: {
       src: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=85',
       alt: 'Architect reviewing construction blueprints with client in design studio',
       caption: 'Clear division between design oversight and physical execution protects project budgets.',
       credit: 'Design Plus Studio Archive'
     },
-    intro: 'When planning to construct a home or commercial building, one of the earliest dilemmas property owners face is: "Should I hire an architect or a contractor first?" While some building contractors offer "all-in-one turnkey deals with free drawings," understanding the fundamental conflict of interest inherent in contractor-led design is essential to protecting your life savings.',
+    intro: 'It\'s the first big decision of every home project in Ajmer, and most families get it backwards. A contractor offers a tempting deal — "construction ke saath drawing free" — and the family signs, thinking they\'ve saved the architect\'s fee. A year later they\'re paying for that "free" drawing many times over in inflated material rates, mid-construction changes, and a house that looks nothing like what they imagined. Here\'s how the two roles actually differ, what each costs in Ajmer, and the hiring order that protects your money.',
     keyTakeaways: [
-      'The architect is the client’s independent technical advocate; the contractor is the execution vendor.',
-      'Hiring an architect first ensures design drawings and quantities (BOQ) are frozen before contractors tender, enabling true apples-to-apples price competition.',
-      'When contractors provide "free drawings," design choices are inevitably biased toward construction speed and higher material consumption rather than long-term energy savings.',
-      'The optimal workflow is: Architect designs and details → Contractor bids on standardized drawings → Architect supervises contractor execution.'
+      'An architect is your independent technical advocate; a contractor is the execution vendor — when one person plays both roles, nobody is checking their work.',
+      '‘Free’ contractor drawings typically hide 10–20% material overuse and ₹1–3 lakh in mid-construction changes that would have been free on paper.',
+      'The correct order: architect designs and freezes drawings plus BOQ, contractors bid on identical drawings, architect supervises execution.',
+      'An architect’s fee of 3–8% of construction cost is dwarfed by the 15–25% waste poor planning adds — ₹6–10 lakh lost on a ₹40 lakh house against a ₹1.2–3.2 lakh design fee.',
     ],
     tableOfContents: [
-      { id: 'core-differences', text: '1. Core Differences in Role and Responsibilities', level: 2 },
-      { id: 'the-free-plan-trap', text: '2. The Hidden Cost of "Free Contractor Drawings"', level: 2 },
-      { id: 'competitive-bidding', text: '3. How Architecture Drawings Save Money on Contractor Bids', level: 2 },
-      { id: 'ideal-workflow', text: '4. The Professional Project Workflow', level: 2 },
-      { id: 'faqs', text: '5. Frequently Asked Questions', level: 2 }
+      { id: 'fundamental-difference', text: '1. The Fundamental Difference', level: 2 },
+      { id: 'free-drawing-trap', text: '2. The "Free Drawing" Trap, with Real Numbers', level: 2 },
+      { id: 'correct-order', text: '3. What the Correct Order Looks Like', level: 2 },
+      { id: 'costs-in-ajmer', text: '4. What Each Costs in Ajmer (2026, Indicative)', level: 2 },
+      { id: 'one-firm-both', text: '5. Can One Firm Do Both?', level: 2 },
+      { id: 'red-flags', text: '6. Red Flags When Hiring Either', level: 2 },
+      { id: 'first-meeting-questions', text: '7. Five Questions for Your First Meeting', level: 2 },
+      { id: 'bottom-line', text: '8. Bottom Line', level: 2 },
     ],
     sections: [
       {
-        id: 'core-differences',
-        heading: '1. Core Differences in Role and Responsibilities',
+        id: 'fundamental-difference',
+        heading: '1. The Fundamental Difference',
         level: 2,
         paragraphs: [
-          'An architect is trained in spatial planning, ergonomics, climate science, structural coordination, and aesthetic harmony. The architect’s legal responsibility is to the client—ensuring the building is safe, legally compliant, comfortable, and durable.',
-          'A contractor’s primary expertise lies in workforce mobilization, procurement of raw materials, equipment operation, and physical construction management. The contractor’s business model depends on maximizing construction margin within an agreed timeframe.'
+          'An architect is your independent technical advocate — they design the house, coordinate structure, produce the drawings contractors bid on, and supervise execution on your behalf. A contractor is the execution vendor — they mobilize labour, procure materials, and build. The architect\'s legal and professional duty is to you; the contractor\'s business model depends on construction margin. When one person plays both roles, nobody is checking their work.',
         ]
       },
       {
-        id: 'the-free-plan-trap',
-        heading: '2. The Hidden Cost of "Free Contractor Drawings"',
+        id: 'free-drawing-trap',
+        heading: '2. The "Free Drawing" Trap, with Real Numbers',
         level: 2,
         paragraphs: [
-          'When a contractor offers "free drawings," there is no independent party verifying whether the specified column sizes, steel ratios, or concrete mixes are appropriate. If the contractor chooses to reduce rebar spacing or omit waterproofing steps to cut costs, the homeowner has no technical recourse.',
-          'Conversely, when an independent architect produces complete working drawings, the contractor must build precisely to those specifications, under the oversight of regular architectural site audits.'
+          'When an Ajmer contractor offers free drawings with a turnkey contract, here\'s what typically happens:',
+          'No independent quantities. Without an architect\'s BOQ (bill of quantities), you can\'t verify whether the quoted 120 bags of cement should have been 90. Industry experience suggests unmeasured contracts routinely carry 10–20% material overuse that the client never sees.',
+          'Design biased toward speed, not you. "Free" drawings specify what\'s fastest to build and highest-margin to execute — not what\'s energy-efficient or well-planned for your family\'s next 30 years.',
+          'Changes cost a fortune. Every "ek wall idhar shift kar do" mid-construction is billed at premium rates because there\'s no frozen drawing to point at. Families commonly spend ₹1–3 lakh on changes that would have been free on paper.',
+          'No technical recourse. If the contractor thins the rebar or skips waterproofing steps, there\'s no independent professional who specified otherwise — and no one to catch it.',
+          'The architect\'s fee for a typical Ajmer residence (3–8% of construction cost, or roughly ₹25–80 per sq ft for design) looks like a saving to skip. It isn\'t. Poor planning and unmeasured execution routinely add 15–25% waste to a project — on a ₹40 lakh house, that\'s ₹6–10 lakh lost against a ₹1.2–3.2 lakh design fee.',
         ]
-      }
+      },
+      {
+        id: 'correct-order',
+        heading: '3. What the Correct Order Looks Like',
+        level: 2,
+        paragraphs: [
+          'Step 1 — Architect designs. Complete architectural drawings, structural design by a chartered engineer, MEP layouts, and a detailed BOQ. Everything frozen on paper.',
+          'Step 2 — Contractors bid on identical drawings. With 3 contractors quoting against the same BOQ, you get true apples-to-apples competition. In Ajmer\'s market this single step typically saves 8–12% versus negotiating blind — because padding becomes visible.',
+          'Step 3 — Architect supervises. Stage-wise site visits verify the contractor builds to the drawings: steel placement before concrete pours, waterproofing before tiling, levels before finishing. This is where most "contractor-led" projects silently lose quality.',
+        ]
+      },
+      {
+        id: 'costs-in-ajmer',
+        heading: '4. What Each Costs in Ajmer (2026, Indicative)',
+        level: 2,
+        paragraphs: [
+          'Architect (design only) — ₹25–80 per sq ft: Drawings, 3D views, material selection',
+          'Architect (design + supervision) — 3–8% of construction cost: Above + scheduled site visits, contractor coordination',
+          'Structural engineer (standalone) — ₹15,000–40,000 per residence: Structural drawings, foundation design',
+          'Contractor (labour + material) — Quoted per sq ft or lump sum: Execution only — verify against BOQ',
+          'Indicative ranges. Always get the inclusions list in writing — "supervision" means nothing until the number of site visits is specified.',
+        ]
+      },
+      {
+        id: 'one-firm-both',
+        heading: '5. Can One Firm Do Both?',
+        level: 2,
+        paragraphs: [
+          'Yes — if the design and execution sides are genuinely independent in accountability. Design Plus, for example, runs architecture, structural consultancy, and interiors under one roof but produces the same frozen drawings and BOQ a standalone architect would, so tendering stays honest. The red flag isn\'t integration — it\'s a contractor who won\'t give you item-wise drawings and quantities before you sign the construction contract. Whoever you hire, demand that paperwork first.',
+        ]
+      },
+      {
+        id: 'red-flags',
+        heading: '6. Red Flags When Hiring Either',
+        level: 2,
+        paragraphs: [
+          'No written agreement — only verbal promises and a handshake.',
+          '"Design free with construction" — the design cost is hiding inside inflated construction rates.',
+          'No site visit before quoting — anyone pricing your plot without seeing its soil, slope, and approach road is guessing.',
+          'Can\'t show a completed project in Ajmer — drive past it, don\'t just see renders.',
+          '50%+ advance demanded before any drawing exists. Stage-wise payments linked to milestones are the norm.',
+        ]
+      },
+      {
+        id: 'first-meeting-questions',
+        heading: '7. Five Questions for Your First Meeting',
+        level: 2,
+        paragraphs: [
+          '1. Show me 2–3 completed homes in Ajmer I can visit or drive past.',
+          '2. Will I get complete working drawings + BOQ before construction pricing is fixed?',
+          '3. Who does the structural design, and will I see the structural drawings?',
+          '4. How many supervision site visits are included, and what triggers extra ones?',
+          '5. How are mid-construction changes priced — per a rate schedule, or "as per actuals"?',
+          'If they can\'t answer #2 clearly, walk away — that answer is the whole game.',
+        ]
+      },
+      {
+        id: 'bottom-line',
+        heading: '8. Bottom Line',
+        level: 2,
+        paragraphs: [
+          'Hire the architect first, freeze the design, then let contractors compete on equal drawings. It\'s the only hiring order where someone in the room is paid to protect your interests rather than the construction margin. In Ajmer\'s market, that one decision is worth more than any negotiation trick you\'ll ever learn.',
+        ]
+      },
     ],
     commonMistakes: [
       {
@@ -1397,10 +1466,10 @@ export const BLOG_ARTICLES: BlogArticle[] = [
   {
     id: 'art-2d-plan-vs-3d-design',
     slug: '2d-plan-vs-3d-design',
-    title: '2D House Plan vs Complete 3D Architectural Design: What Is the Real Difference?',
-    metaTitle: '2D House Plan vs 3D Architectural Design | Design Plus Guide',
-    metaDescription: 'Discover why a 2D floor plan alone is inadequate for modern home construction. How 3D architectural massing prevents costly structural and elevation errors on site.',
-    excerpt: 'A 2D plan shows room length and breadth; it reveals nothing about heights, solar shading, staircase headroom, or facade proportions. Understand the crucial differences.',
+    title: '2D House Plan vs 3D Architectural Design: What Ajmer Homeowners Should Actually Pay For',
+    metaTitle: '2D vs 3D House Design in Ajmer: Costs & When Each Is Worth It',
+    metaDescription: '2D plan vs 3D architectural design in Ajmer: real costs (₹), what each includes, and when a 3D elevation saves you lakhs in site mistakes.',
+    excerpt: 'A 2D plan shows room length and breadth; it reveals nothing about heights, solar shading, staircase headroom, or facade proportions. Real Ajmer costs, and when 3D pays for itself.',
     category: 'decision-guides',
     subcategory: 'Design Visualization & Accuracy',
     tags: ['decision-guide', 'house-planning', 'architects-in-ajmer'],
@@ -1416,35 +1485,123 @@ export const BLOG_ARTICLES: BlogArticle[] = [
       qualifications: 'M.E. Structure, FIV, Chartered Engineer'
     },
     publishedAt: '2024-11-25',
-    updatedAt: '2025-01-14',
-    readTime: '6 min read',
-    wordCount: 1450,
+    updatedAt: '2026-10-02',
+    readTime: '5 min read',
+    wordCount: 971,
     featuredImage: {
       src: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=85',
       alt: 'Architectural 3D digital model wireframe transitioning into photorealistic facade',
       caption: 'Three-dimensional volumetric modeling tests solar shadows and beam depths before concrete is poured.',
       credit: 'Design Plus Digital Studio'
     },
-    intro: 'Many prospective homebuilders attempt to save money by purchasing a cheap 2D floor plan from an online portal or local draftsman, intending to "figure out the elevation with the mason on site." This approach almost inevitably leads to awkward facade proportions, compromised staircase headroom, and expensive structural alterations.',
+    intro: 'Walk through Vaishali Nagar or Panchsheel Nagar and you\'ll hear the same story: a family bought a cheap 2D floor plan — sometimes from an online portal, sometimes from a local draftsman for ₹5,000–15,000 — then told the mason to "copy the elevation from this Instagram photo." Six months later the facade looks nothing like the photo, the staircase headroom fails, and fixing it costs more than the 3D design ever would have. This isn\'t an argument that everyone needs full 3D. It\'s a guide to what each option actually buys you in Ajmer, what each costs, and when skipping 3D is a genuine saving versus an expensive mistake.',
     keyTakeaways: [
-      'A 2D floor plan only conveys horizontal dimensions (length and width); it provides zero validation of vertical spatial volumes.',
-      '3D architectural modeling coordinates ceiling heights, lintel drops, structural beam projections, and natural window daylighting in true three dimensions.',
-      'Testing solar azimuth angles on a 3D digital model identifies unshaded windows before concrete is poured, saving lakhs in lifelong air conditioning costs.'
+      'A 2D plan is a horizontal slice at roughly 4 feet — it shows room sizes but nothing about beam depths, staircase headroom, facade proportions, or sun and shade.',
+      'A proper 3D package is a visual contract: massing model, photorealistic elevations, interior views, a sun-path study for Ajmer’s latitude (~26.4° N), and a virtual walkthrough.',
+      '3D design typically costs 1–3% of the construction budget — a single avoided mid-construction change (₹50,000–2,00,000) pays for it several times over.',
+      'ADA sanction drawings are compliance documents, not construction drawings — confirm which set you are paying for before you build.',
     ],
     tableOfContents: [
-      { id: 'the-limitations-of-2d', text: '1. The Inherent Blind Spots of 2D Drafting', level: 2 },
-      { id: 'what-3d-reveals', text: '2. What 3D Volumetric Design Actually Solves', level: 2 },
-      { id: 'faqs', text: '3. Frequently Asked Questions', level: 2 }
+      { id: 'what-2d-plan-is', text: '1. What a 2D Plan Actually Is (and Isn’t)', level: 2 },
+      { id: 'what-3d-adds', text: '2. What 3D Architectural Design Adds', level: 2 },
+      { id: 'real-costs-ajmer', text: '3. Real Costs in Ajmer (2026, Indicative)', level: 2 },
+      { id: 'when-2d-enough', text: '4. When 2D Alone Is Genuinely Enough', level: 2 },
+      { id: 'when-skipping-3d-costs-more', text: '5. When Skipping 3D Will Cost You More Than 3D', level: 2 },
+      { id: 'approval-trap', text: '6. The Ajmer-Specific Trap: Approval Drawings Are Not Design Drawings', level: 2 },
+      { id: 'decision-framework', text: '7. Decision Framework: Five Questions to Ask Yourself', level: 2 },
+      { id: 'bottom-line', text: '8. Bottom Line', level: 2 },
     ],
     sections: [
       {
-        id: 'the-limitations-of-2d',
-        heading: '1. The Inherent Blind Spots of 2D Drafting',
+        id: 'what-2d-plan-is',
+        heading: '1. What a 2D Plan Actually Is (and Isn’t)',
         level: 2,
         paragraphs: [
-          'A 2D plan is an abstraction: it slices through a building horizontally at approximately 4 feet from the floor. It cannot show you how low an RCC beam hangs over a corridor, whether your staircase meets head-clearance safety codes, or how shadows fall across your courtyard at 3 PM in May.'
+          'A 2D floor plan is a horizontal slice through your house at roughly 4 feet above the floor. It tells you room sizes, wall positions, door/window locations. That\'s it.',
+          'What it cannot show you:',
+          'How low an RCC beam hangs over your corridor or drawing room — a 2D plan draws the beam as a line; in reality it can drop 18–24 inches and ruin a double-height look.',
+          'Staircase headroom — the most common 2D-to-site failure in Ajmer homes. The plan looks fine; on site, a tall family member ducks under a landing.',
+          'Facade proportions — a 2D elevation drawing gives heights but zero sense of depth, shadow, or how stone cladding meets a jharokha-style window.',
+          'Sun and shade — which bedrooms get blasted by the western sun at 4 PM in May. In Ajmer\'s climate, this single factor decides your electricity bill for the next 30 years.',
+          'A 2D plan is a legal and technical document. It is not a visual document. Most homeowner disappointment comes from expecting it to be both.',
         ]
-      }
+      },
+      {
+        id: 'what-3d-adds',
+        heading: '2. What 3D Architectural Design Adds',
+        level: 2,
+        paragraphs: [
+          'A proper 3D architectural package for a residence typically includes:',
+          '1. 3D massing model — the building\'s true volumes, tested from every angle.',
+          '2. Photorealistic exterior elevations — materials, stone bands, jaali screens, lighting, as they\'ll actually look.',
+          '3. Interior 3D views of key rooms — ceiling heights, false-ceiling drops, wardrobe depths against actual wall positions.',
+          '4. Sun-path study — shadows across your courtyard and facade at different times of day and year, modeled for Ajmer\'s latitude (~26.4° N).',
+          '5. Virtual walkthrough — moving through the house before a brick is laid.',
+          'The critical difference: 3D is a visual contract between you and your contractor. When the mason says "elevation toh photo jaisa nahi banega," you point at the approved render. Disputes that would cost ₹50,000–2,00,000 in mid-construction changes get settled on a screen for free.',
+        ]
+      },
+      {
+        id: 'real-costs-ajmer',
+        heading: '3. Real Costs in Ajmer (2026, Indicative)',
+        level: 2,
+        paragraphs: [
+          '2D floor plan (draftsman) — ₹5,000–15,000: Basic room layout, no structural design, no approvals',
+          '2D architectural drawings (architect) — ₹25–80 per sq ft: Layout + working drawings; structural coordination separate',
+          '3D exterior elevation only — ₹15,000–40,000: Renders of the facade from 2–3 angles',
+          'Complete 3D architectural design — ₹25–80 per sq ft (design): Full package above, coordinated with structure',
+          'Indicative market ranges, not a quotation. Complex designs, large cantilevers, and premium materials push costs up.',
+          'Note what the draftsman\'s ₹8,000 plan does not include: structural design (a separate chartered engineer\'s job, typically ₹15,000–40,000 for a residence), ADA/naksha approval drawings, or any liability if something fails. The architect\'s fee looks bigger until you price what the cheap plan omits.',
+        ]
+      },
+      {
+        id: 'when-2d-enough',
+        heading: '4. When 2D Alone Is Genuinely Enough',
+        level: 2,
+        paragraphs: [
+          'Single-room additions or internal reconfigurations where the exterior doesn\'t change.',
+          'You already have a trusted architect\'s full drawing set and just need a layout tweak.',
+          'Budget is truly the constraint and the design is simple (rectangular plot, standard rooms) — but get the structural drawings done properly regardless.',
+        ]
+      },
+      {
+        id: 'when-skipping-3d-costs-more',
+        heading: '5. When Skipping 3D Will Cost You More Than 3D',
+        level: 2,
+        paragraphs: [
+          'Custom facades with stone cladding, jalis, or double-height volumes — proportion mistakes are visible forever and cost lakhs to fix.',
+          'West-facing plots — without a sun study, you\'re guessing on shading. In Ajmer, a wrong guess means a bedroom that\'s unusable from 2–6 PM every summer.',
+          'Any design with cantilevers, cutouts, or courtyards — these live or die on 3D coordination between architecture and structure.',
+          'When your contractor works from photos — if the brief is "aisa kuch bana do," you need renders, not lines.',
+        ]
+      },
+      {
+        id: 'approval-trap',
+        heading: '6. The Ajmer-Specific Trap: Approval Drawings Are Not Design Drawings',
+        level: 2,
+        paragraphs: [
+          'Many homeowners discover too late that the drawings submitted for ADA approval (naksha pass) are sanction drawings — simplified, compliance-focused, and useless for construction. You still need working drawings (column layouts, beam details, electrical/plumbing) to actually build. Confirm with your architect upfront which set you\'re paying for; the approval set alone will not get your house built correctly.',
+        ]
+      },
+      {
+        id: 'decision-framework',
+        heading: '7. Decision Framework: Five Questions to Ask Yourself',
+        level: 2,
+        paragraphs: [
+          '1. Is my facade custom or standard? Custom → 3D. Standard box → 2D may do.',
+          '2. Is the plot west- or south-facing? Yes → get the sun study (needs 3D).',
+          '3. Am I building double-height spaces, courtyards, or cantilevers? Yes → 3D, non-negotiable.',
+          '4. Does my contractor build from drawings or from photos? Photos → 3D renders become your contract.',
+          '5. What\'s my total construction budget? 3D design typically costs 1–3% of it. If a 2% spend prevents even one major mid-construction change, it has paid for itself several times over.',
+        ]
+      },
+      {
+        id: 'bottom-line',
+        heading: '8. Bottom Line',
+        level: 2,
+        paragraphs: [
+          'A 2D plan answers "where do the walls go." A 3D design answers "what will my home actually feel and look like — and will the contractor build what I imagined." In Ajmer\'s market, where most disputes come from the gap between imagination and execution, that second answer is worth far more than it costs.',
+        ]
+      },
     ],
     commonMistakes: [
       {
