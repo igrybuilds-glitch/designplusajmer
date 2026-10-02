@@ -30,6 +30,8 @@ export interface ProjectLocation {
   areaOrNeighborhood?: string;
   displayLocation: string;
   isRegionalContext?: boolean;
+  latitude?: number;
+  longitude?: number;
 }
 
 export interface ProjectLeadership {

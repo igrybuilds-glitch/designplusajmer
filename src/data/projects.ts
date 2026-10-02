@@ -120,10 +120,10 @@ export const PROJECTS: Project[] = [
   {
     id: 'dp-inst-002',
     slug: 'school-building-ajmer',
-    title: 'School Building',
+    title: 'Sindoliya Senior Secondary School',
     category: 'institutional',
     status: 'completed',
-    location: 'Ajmer, Rajasthan',
+    location: 'Bhadsiya, Ajmer',
     area: '20,000 sq.ft.',
     floors: 'G+2 Floors',
     services: [
@@ -131,7 +131,7 @@ export const PROJECTS: Project[] = [
       'Structural Design & Engineering',
       'Campus Planning'
     ],
-    description: 'Sindolia Shikshan Sansthan Madhyamik Vidyalaya — a school campus planned around courtyards: bright classrooms, safe staircases, and playgrounds shaded from the afternoon sun.',
+    description: 'Sindoliya Senior Secondary School, Bhadsiya — a school campus planned around courtyards: bright classrooms, safe staircases, and playgrounds shaded from the afternoon sun.',
     brief: 'Design a school where children learn comfortably through Rajasthan summers.',
     designApproach: 'Classrooms face north-east for soft light; central courtyard drives cross-ventilation; playful yet sturdy detailing.',
     images: [
@@ -160,8 +160,8 @@ export const PROJECTS: Project[] = [
     heroImage: '/images/projects/school-building-ajmer-front.webp',
     heroImageDetails: {
       url: '/images/projects/school-building-ajmer-front.webp',
-      alt: 'Sindolia Shikshan Sansthan school front elevation — symmetrical brick and plaster facade',
-      caption: 'Front elevation of Sindolia Shikshan Sansthan Madhyamik Vidyalaya, Ajmer.'
+      alt: 'Sindoliya Senior Secondary School front elevation — symmetrical brick and plaster facade',
+      caption: 'Front elevation of Sindoliya Senior Secondary School, Bhadsiya, Ajmer.'
     },
     gallery: [
       '/images/projects/school-building-ajmer-front.webp',
@@ -185,8 +185,205 @@ export const PROJECTS: Project[] = [
     locationDetails: {
       city: 'Ajmer',
       state: 'Rajasthan',
+      areaOrNeighborhood: 'Bhadsiya',
+      displayLocation: 'Bhadsiya, Ajmer, Rajasthan',
+      latitude: 26.6889,
+      longitude: 74.6687,
+    },
+  },
+  {
+    id: 'dp-com-011',
+    slug: 'rosium-township-entrance-gate',
+    title: 'Rosium Township — Entrance Gate',
+    category: 'commercial',
+    status: 'completed',
+    location: 'Ajmer, Rajasthan',
+    area: '5,000 sq.ft.',
+    floors: 'Single Storey',
+    services: [
+      'Architectural Design',
+      'Structural Design & Engineering'
+    ],
+    description: 'Grand entrance gateway for Rosium Township, Ajmer — a bold canopy on stone-clad piers flanked by retail shops, setting a premium first impression.',
+    brief: 'Design a landmark entrance that gives the township a premium identity.',
+    designApproach: 'Symmetrical composition with a floating roof plane, warm timber soffit, and shopfronts integrated into the gatehouse wings.',
+    images: [
+      '/images/projects/rosium-township-gate.webp'
+    ],
+    featured: false,
+    isConcept: false,
+    relatedServices: ['architectural-design', 'structural-design'],
+    relatedLocations: ['ajmer'],
+    relatedProjects: [],
+    projectType: 'real',
+    projectCategory: 'commercial',
+    clientType: 'Developer Client',
+    city: 'Ajmer',
+    year: '2024',
+    builtUpArea: '5,000 sq.ft.',
+    categoryLabel: 'Commercial',
+    typology: 'Township Entrance & Retail',
+    lead: 'Er. Sudhir Soni',
+    scopeOfWork: ['Architectural Design', 'Structural Design'],
+    summary: 'Landmark entrance gateway with integrated retail for Rosium Township.',
+    challenge: 'A premium identity for the township on a highway-facing edge.',
+    approach: 'Floating canopy roof, stone piers, integrated shopfronts.',
+    structuralEngineering: 'RCC framed structure with steel canopy as per IS codes.',
+    heroImage: '/images/projects/rosium-township-gate.webp',
+    heroImageDetails: {
+      url: '/images/projects/rosium-township-gate.webp',
+      alt: 'Rosium Township entrance gate — canopy on stone piers with retail shops',
+      caption: 'Entrance gateway of Rosium Township, Ajmer.'
+    },
+    gallery: [
+      '/images/projects/rosium-township-gate.webp'
+    ],
+    galleryImages: [
+      {
+        url: '/images/projects/rosium-township-gate.webp',
+        caption: 'Street view — floating roof canopy over the entry court, shops on both wings.',
+        alt: 'Township entrance gate render',
+        aspect: 'wide'
+      }
+    ],
+    features: ['Landmark canopy roof', 'Integrated retail shops', 'Stone-clad piers'],
+    locationDetails: {
+      city: 'Ajmer',
+      state: 'Rajasthan',
       areaOrNeighborhood: 'Ajmer',
       displayLocation: 'Ajmer, Rajasthan',
+      latitude: 26.5236,
+      longitude: 74.7335,
+    },
+  },
+  {
+    id: 'dp-res-011',
+    slug: 'dr-kriplani-residence-dholabhata',
+    title: 'Dr. Kriplani Residence',
+    category: 'residential',
+    status: 'completed',
+    location: 'Dholabhata, Ajmer',
+    area: '3,000 sq.ft.',
+    floors: 'G+2 Floors',
+    services: [
+      'Architectural Design',
+      'Structural Design & Engineering'
+    ],
+    description: 'A modern family residence in Dholabhata, Ajmer — crisp white volumes wrapped in warm timber fins, with jali screens and a shaded terrace.',
+    brief: 'A contemporary home with strong street presence and cool, shaded interiors.',
+    designApproach: 'Layered facade of timber fins and perforated screens filters the harsh sun; deep balconies create outdoor rooms.',
+    images: [
+      '/images/projects/dr-kriplani-residence.webp'
+    ],
+    featured: false,
+    isConcept: false,
+    relatedServices: ['architectural-design', 'structural-design', '3d-elevation-design'],
+    relatedLocations: ['ajmer'],
+    relatedProjects: [],
+    projectType: 'real',
+    projectCategory: 'residential',
+    clientType: 'Private Residential Client',
+    city: 'Ajmer',
+    year: '2024',
+    builtUpArea: '3,000 sq.ft.',
+    categoryLabel: 'Residential',
+    typology: 'Family Home',
+    lead: 'Ar. Vipul Verma',
+    scopeOfWork: ['Architectural Design', 'Structural Design'],
+    summary: 'Modern timber-and-white family residence in Dholabhata.',
+    challenge: 'Strong street presence with cool shaded interiors.',
+    approach: 'Timber fins, jali screens and deep shaded balconies.',
+    structuralEngineering: 'RCC framed structure as per IS codes.',
+    heroImage: '/images/projects/dr-kriplani-residence.webp',
+    heroImageDetails: {
+      url: '/images/projects/dr-kriplani-residence.webp',
+      alt: 'Dr. Kriplani residence — modern white and timber facade with jali screens',
+      caption: 'Front elevation of Dr. Kriplani Residence, Dholabhata, Ajmer.'
+    },
+    gallery: [
+      '/images/projects/dr-kriplani-residence.webp'
+    ],
+    galleryImages: [
+      {
+        url: '/images/projects/dr-kriplani-residence.webp',
+        caption: 'Front elevation — timber fins, perforated screens and a shaded terrace crown.',
+        alt: 'House front elevation render',
+        aspect: 'tall'
+      }
+    ],
+    features: ['Timber fin facade', 'Jali sun screens', 'Shaded terrace'],
+    locationDetails: {
+      city: 'Ajmer',
+      state: 'Rajasthan',
+      areaOrNeighborhood: 'Dholabhata',
+      displayLocation: 'Dholabhata, Ajmer, Rajasthan',
+      latitude: 26.4372,
+      longitude: 74.6531,
+    },
+  },
+  {
+    id: 'dp-res-012',
+    slug: 'dilip-jhurani-residence-panchsheel-nagar',
+    title: 'Dilip Jhurani Residence',
+    category: 'residential',
+    status: 'completed',
+    location: 'Panchsheel Nagar, Ajmer',
+    area: '3,500 sq.ft.',
+    floors: 'G+2 Floors',
+    services: [
+      'Architectural Design',
+      'Structural Design & Engineering'
+    ],
+    description: 'A crisp white modern villa in Panchsheel Nagar, Ajmer — layered balconies with ornamental railings, warm evening light, and a welcoming forecourt.',
+    brief: 'An elegant modern villa with generous balconies and a grand arrival.',
+    designApproach: 'Stacked white volumes with deep overhangs; ornamental metal railings add craft against the clean geometry.',
+    images: [
+      '/images/projects/villa-unnamed.webp'
+    ],
+    featured: false,
+    isConcept: false,
+    relatedServices: ['architectural-design', 'structural-design', '3d-elevation-design'],
+    relatedLocations: ['ajmer'],
+    relatedProjects: [],
+    projectType: 'real',
+    projectCategory: 'residential',
+    clientType: 'Private Residential Client',
+    city: 'Ajmer',
+    year: '2024',
+    builtUpArea: '3,500 sq.ft.',
+    categoryLabel: 'Residential',
+    typology: 'Modern Villa',
+    lead: 'Ar. Vipul Verma',
+    scopeOfWork: ['Architectural Design', 'Structural Design'],
+    summary: 'White modern villa with layered balconies in Panchsheel Nagar.',
+    challenge: 'Elegant street presence with generous outdoor living.',
+    approach: 'Stacked volumes, deep overhangs, crafted metal railings.',
+    structuralEngineering: 'RCC framed structure as per IS codes.',
+    heroImage: '/images/projects/villa-unnamed.webp',
+    heroImageDetails: {
+      url: '/images/projects/villa-unnamed.webp',
+      alt: 'Dilip Jhurani residence — white modern villa at dusk',
+      caption: 'Evening view of Dilip Jhurani Residence, Panchsheel Nagar, Ajmer.'
+    },
+    gallery: [
+      '/images/projects/villa-unnamed.webp'
+    ],
+    galleryImages: [
+      {
+        url: '/images/projects/villa-unnamed.webp',
+        caption: 'Dusk view — layered balconies glowing warm against crisp white volumes.',
+        alt: 'Villa evening render',
+        aspect: 'wide'
+      }
+    ],
+    features: ['Layered balconies', 'Ornamental railings', 'Grand forecourt'],
+    locationDetails: {
+      city: 'Ajmer',
+      state: 'Rajasthan',
+      areaOrNeighborhood: 'Panchsheel Nagar',
+      displayLocation: 'Panchsheel Nagar, Ajmer, Rajasthan',
+      latitude: 26.5145,
+      longitude: 74.6369,
     },
   },
   {
