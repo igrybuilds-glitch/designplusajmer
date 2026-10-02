@@ -712,6 +712,79 @@ export const PROJECTS: Project[] = [
     },
   },
   {
+    id: 'dp-res-017',
+    slug: 'siyaram-choudhary-residence-merta-city',
+    title: 'Siyaram Choudhary Residence',
+    category: 'residential',
+    status: 'completed',
+    location: 'Merta City, Nagaur',
+    area: '3,500 sq.ft.',
+    floors: 'G+2 Floors',
+    services: [
+      'Architectural Design',
+      'Structural Design'
+    ],
+    description: 'A warm contemporary residence for Mr. Siyaram Choudhary in Merta City — beige stone cladding, a deep shaded balcony, jaali-pattern railings and a pergola-capped terrace.',
+    brief: 'A modern family home rooted in local warmth.',
+    designApproach: 'Earthy beige palette with deep reveals for shade; jaali railings and a terrace pergola bring traditional craft into a clean modern frame.',
+    images: [
+      '/images/projects/siyaram-choudhary-residence-merta.webp',
+      '/images/projects/siyaram-choudhary-residence-merta-2.webp'
+    ],
+    featured: false,
+    isConcept: false,
+    relatedServices: ['architectural-design', 'structural-design'],
+    relatedLocations: ['ajmer'],
+    relatedProjects: [],
+    projectType: 'real',
+    projectCategory: 'residential',
+    clientType: 'Private Residential Client',
+    city: 'Merta City',
+    year: '2024',
+    builtUpArea: '3,500 sq.ft.',
+    categoryLabel: 'Residential',
+    typology: 'Private Residence',
+    lead: 'Ar. Vipul Verma',
+    scopeOfWork: ['Architectural Design', 'Structural Design'],
+    summary: 'Warm contemporary G+2 residence in Merta City, Nagaur.',
+    challenge: 'Modern comfort with a local, earthy character.',
+    approach: 'Beige stone, deep shaded balcony, jaali railings, terrace pergola.',
+    structuralEngineering: 'RCC framed structure as per IS codes.',
+    heroImage: '/images/projects/siyaram-choudhary-residence-merta.webp',
+    heroImageDetails: {
+      url: '/images/projects/siyaram-choudhary-residence-merta.webp',
+      alt: 'Siyaram Choudhary residence — beige stone facade with shaded balcony, Merta City',
+      caption: 'Residence of Mr. Siyaram Choudhary, Merta City, Nagaur, Rajasthan.'
+    },
+    gallery: [
+      '/images/projects/siyaram-choudhary-residence-merta.webp',
+      '/images/projects/siyaram-choudhary-residence-merta-2.webp'
+    ],
+    galleryImages: [
+      {
+        url: '/images/projects/siyaram-choudhary-residence-merta.webp',
+        caption: 'Angled elevation — beige stone cladding with deep shaded balcony.',
+        alt: 'Siyaram Choudhary residence',
+        aspect: 'wide'
+      },
+      {
+        url: '/images/projects/siyaram-choudhary-residence-merta-2.webp',
+        caption: 'Front elevation — jaali railings and pergola-capped terrace.',
+        alt: 'Siyaram Choudhary residence front view',
+        aspect: 'wide'
+      }
+    ],
+    features: ['Beige stone cladding', 'Jaali-pattern railings', 'Terrace pergola'],
+    locationDetails: {
+      city: 'Merta City',
+      state: 'Rajasthan',
+      areaOrNeighborhood: 'Merta City',
+      displayLocation: 'Merta City, Nagaur, Rajasthan',
+      latitude: 26.6424,
+      longitude: 73.9752,
+    },
+  },
+  {
     id: 'dp-res-010',
     slug: 'panchsheel-nagar-residence-dilip',
     title: 'Panchsheel Nagar Residence — Dilip',
