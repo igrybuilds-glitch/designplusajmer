@@ -24,7 +24,7 @@ const STATS_DATA: StatItem[] = [
     target: 20,
     suffix: '+',
     label: 'Years of Experience',
-    description: 'Continuous Practice Since 2004'
+    description: 'Continuous Practice Since 2006'
   },
   {
     id: 'disciplines',

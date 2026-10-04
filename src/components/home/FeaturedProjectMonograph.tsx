@@ -48,7 +48,7 @@ export function FeaturedProjectMonograph() {
           <div className="hidden sm:flex items-center gap-4 tracking-[0.16em] uppercase text-[#F4F0E8]/70">
             <span>AJMER · JAIPUR · KISHANGARH · PUSHKAR</span>
             <span className="text-white/30">|</span>
-            <span>2004 – 2026 ARCHIVE</span>
+            <span>2006 – 2026 ARCHIVE</span>
           </div>
         </div>
 

@@ -40,7 +40,7 @@ export function AboutPage({ onOpenConsultation }: AboutPageProps) {
       <EditorialHero 
         subtitle="About The Studio"
         title="Architects & Structural Engineers — Based at Ajmer."
-        description="Based at Ajmer since 2004. We design homes, offices and buildings — and our engineers make sure every structure is safe as per Indian codes."
+        description="Based at Ajmer since 2006. We design homes, offices and buildings — and our engineers make sure every structure is safe as per Indian codes."
         backgroundImageUrl="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80"
         imageAlt="Design Plus architectural drafting and structural calculations studio"
       />

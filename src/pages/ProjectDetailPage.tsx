@@ -260,6 +260,17 @@ export function ProjectDetailPage({ onOpenConsultation }: ProjectDetailPageProps
               <span>{project.location}</span>
             </div>
             <div className="text-[11px] text-stone-500 mt-0.5">{project.city}, Rajasthan</div>
+            {project.locationDetails?.latitude && project.locationDetails?.longitude && (
+              <a
+                href={`https://www.google.com/maps/search/?api=1&query=${project.locationDetails.latitude},${project.locationDetails.longitude}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[11px] text-[#B86B38] hover:underline mt-0.5 inline-block font-mono"
+                title="Open this project location in Google Maps"
+              >
+                {project.locationDetails.latitude.toFixed(4)}, {project.locationDetails.longitude.toFixed(4)} ↗
+              </a>
+            )}
           </div>
 
           <div>

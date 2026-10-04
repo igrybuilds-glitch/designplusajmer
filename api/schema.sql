@@ -64,3 +64,17 @@ CREATE TABLE IF NOT EXISTS processed_orders (
   order_id     TEXT PRIMARY KEY,
   processed_at INTEGER NOT NULL
 );
+
+-- Website visitor meter (client request 2026-10-04: "Provide meter for how
+-- many person visited the website"). One row per pageview; IPs are stored
+-- only as a salted SHA-256 hash (DPDP-friendly, no raw PII).
+CREATE TABLE IF NOT EXISTS pageviews (
+  id         INTEGER PRIMARY KEY AUTOINCREMENT,
+  path       TEXT NOT NULL,
+  referrer   TEXT NOT NULL DEFAULT '',
+  ip_hash    TEXT NOT NULL DEFAULT '',
+  user_agent TEXT NOT NULL DEFAULT '',
+  created_at INTEGER NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_pageviews_created ON pageviews (created_at DESC);
+CREATE INDEX IF NOT EXISTS idx_pageviews_path ON pageviews (path);

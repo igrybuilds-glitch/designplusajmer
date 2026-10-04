@@ -92,7 +92,11 @@ async function main() {
   for (const route of routes) {
     const url = `http://127.0.0.1:${PREVIEW_PORT}${route}`;
     try {
-      await page.goto(url, { waitUntil: 'networkidle0', timeout: 45000 });
+      // NOTE (2026-10-04): waitUntil 'networkidle0' hangs forever when external
+      // image hosts (Unsplash) trickle or stall from the build VM — the DOM is
+      // fully serialized by page.content() regardless of image bytes, so
+      // domcontentloaded + SETTLE_MS is sufficient and never hangs.
+      await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 45000 });
       await delay(SETTLE_MS);
       const html = await page.content();
       // Strip the local preview origin: Chrome serializes dynamically-injected

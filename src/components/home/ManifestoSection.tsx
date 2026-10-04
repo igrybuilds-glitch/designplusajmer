@@ -163,7 +163,7 @@ export function ManifestoSection() {
           <div className="hidden md:flex items-center gap-6 text-[11px] uppercase tracking-wider text-[#F4F0E8]/70">
             <span className="flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 rounded-full bg-[#B86B38]" />
-              EST. 2004 · AJMER, RAJASTHAN
+              EST. 2006 · AJMER, RAJASTHAN
             </span>
             <span className="text-white/30">|</span>
             <span>DESIGN + ENGINEERING, TOGETHER</span>

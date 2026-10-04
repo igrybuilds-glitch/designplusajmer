@@ -26,6 +26,8 @@ const LocationDetailPage = lazy(() => import('./pages/LocationDetailPage').then(
 const BlogHubPage = lazy(() => import('./pages/BlogHubPage'));
 const BlogHubArticlePage = lazy(() => import('./pages/BlogHubArticlePage'));
 const ContactPage = lazy(() => import('./pages/ContactPage').then(m => ({ default: m.ContactPage })));
+const PostersPage = lazy(() => import('./pages/PostersPage').then(m => ({ default: m.PostersPage })));
+const PosterCategoryPage = lazy(() => import('./pages/PosterCategoryPage').then(m => ({ default: m.PosterCategoryPage })));
 const ProjectManagementPage = lazy(() => import('./pages/ProjectManagementPage').then(m => ({ default: m.ProjectManagementPage })));
 const ArchitectFeesAjmerPage = lazy(() => import('./pages/ArchitectFeesAjmerPage').then(m => ({ default: m.ArchitectFeesAjmerPage })));
 const StructuralDrawingAjmerPage = lazy(() => import('./pages/StructuralDrawingAjmerPage').then(m => ({ default: m.StructuralDrawingAjmerPage })));
@@ -39,6 +41,7 @@ const PrivacyPolicyPage = lazy(() => import('./pages/PrivacyPolicyPage').then(m 
 // Admin CMS Components & Pages (Lazy loaded on demand to minimize homepage bundle weight)
 import { AdminProtectedRoute } from './components/admin/AdminProtectedRoute';
 import { AdminLayout } from './components/admin/AdminLayout';
+import { usePageviewTracker } from './hooks/usePageviewTracker';
 const AdminLoginPage = lazy(() => import('./pages/admin/AdminLoginPage').then(m => ({ default: m.AdminLoginPage })));
 const AdminDashboardPage = lazy(() => import('./pages/admin/AdminDashboardPage').then(m => ({ default: m.AdminDashboardPage })));
 const AdminProjectsPage = lazy(() => import('./pages/admin/AdminProjectsPage').then(m => ({ default: m.AdminProjectsPage })));
@@ -57,6 +60,7 @@ const AdminAuditLogPage = lazy(() => import('./pages/admin/AdminAuditLogPage').t
 function AppContent() {
   const location = useLocation();
   const isAdminRoute = location.pathname.startsWith('/admin');
+  usePageviewTracker();
 
   const [isConsultationOpen, setIsConsultationOpen] = useState(false);
   const [isAiStudioOpen, setIsAiStudioOpen] = useState(false);
@@ -163,6 +167,10 @@ function AppContent() {
           {/* 06 Blog Hub */}
           <Route path="/blog" element={<BlogHubPage />} />
           <Route path="/blog/:slug" element={<BlogHubArticlePage />} />
+
+          {/* 06b Knowledge Posters (client request 2026-10-04) */}
+          <Route path="/posters" element={<PostersPage />} />
+          <Route path="/posters/:category" element={<PosterCategoryPage />} />
 
           {/* 07 Contact & Inquiries */}
           <Route path="/contact" element={<ContactPage />} />

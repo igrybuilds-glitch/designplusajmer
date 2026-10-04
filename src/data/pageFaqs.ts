@@ -38,7 +38,7 @@ export const PAGE_FAQS: Record<string, Array<{ q: string; a: string }>> = {
   team: [
     {
       q: 'Who leads Design Plus?',
-      a: 'Er. Sudhir Soni founded Design Plus in 2004 and leads as Founder, CEO, and Principal Structural Engineer. A Chartered Engineer (India) with an M.E. in Structural Engineering, he is a Member of the Institution of Engineers and a Fellow of the Institution of Valuers, validating structural stability certifications and municipal compliance files for ADA and PWD.'
+      a: 'Er. Sudhir Soni founded Design Plus in 2006 and leads as Founder, CEO, and Principal Structural Engineer. A Chartered Engineer (India) with an M.E. in Structural Engineering, he is a Member of the Institution of Engineers and a Fellow of the Institution of Valuers, validating structural stability certifications and municipal compliance files for ADA and PWD.'
     },
     {
       q: 'Who is the Principal Architect and what is his background?',

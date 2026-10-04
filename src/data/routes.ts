@@ -5,6 +5,8 @@ export type RouteType =
   | 'location' 
   | 'blog-hub' 
   | 'blog-category' 
+  | 'posters-hub'
+  | 'posters-category'
   | 'contact';
 
 export interface RouteDefinition {
@@ -282,6 +284,72 @@ export const PUBLIC_ROUTES: RouteDefinition[] = [
     primaryIntent: 'ADA Building Approvals, Setbacks, Municipal Guidelines & Local Trends',
     indexable: true,
     parent: '/blog'
+  },
+
+  // 05b Knowledge Posters (launched 2026-10-04, client request)
+  {
+    path: '/posters',
+    type: 'posters-hub',
+    title: 'Knowledge Posters & Infographics | Design Plus Ajmer',
+    primaryIntent: 'Free Educational Posters: Structural Engineering, Construction Tips, Fire Safety, High-Rise Rules',
+    indexable: true,
+    parent: '/',
+    children: [
+      '/posters/structural-engineering',
+      '/posters/construction-tips',
+      '/posters/fire-safety',
+      '/posters/high-rise-buildings',
+      '/posters/architecture',
+      '/posters/general-awareness'
+    ]
+  },
+  {
+    path: '/posters/structural-engineering',
+    type: 'posters-category',
+    title: 'Structural Engineering Posters | Design Plus Ajmer',
+    primaryIntent: 'Structural Engineering Basics, RCC Thumb Rules, IS 456 Posters',
+    indexable: true,
+    parent: '/posters'
+  },
+  {
+    path: '/posters/construction-tips',
+    type: 'posters-category',
+    title: 'Construction Tips Posters | Design Plus Ajmer',
+    primaryIntent: 'House Construction Tips India, Quality Checklists, Site Supervision Posters',
+    indexable: true,
+    parent: '/posters'
+  },
+  {
+    path: '/posters/fire-safety',
+    type: 'posters-category',
+    title: 'Fire Safety Posters & Norms | Design Plus Ajmer',
+    primaryIntent: 'Fire Safety Norms India, NBC 2016 Requirements, Fire NOC Posters',
+    indexable: true,
+    parent: '/posters'
+  },
+  {
+    path: '/posters/high-rise-buildings',
+    type: 'posters-category',
+    title: 'High-Rise Building Guide Posters | Design Plus',
+    primaryIntent: 'High Rise Building Rules India, NBC 15-Metre Rule, Refuge Area Posters',
+    indexable: true,
+    parent: '/posters'
+  },
+  {
+    path: '/posters/architecture',
+    type: 'posters-category',
+    title: 'Architecture Posters & Design Ideas | Design Plus',
+    primaryIntent: 'Modern House Design India, Vastu Tips, Elevation Ideas Posters',
+    indexable: true,
+    parent: '/posters'
+  },
+  {
+    path: '/posters/general-awareness',
+    type: 'posters-category',
+    title: 'General Awareness Posters | Design Plus Ajmer',
+    primaryIntent: 'Building Bye-Laws India, RERA Rights, Green Building Basics Posters',
+    indexable: true,
+    parent: '/posters'
   },
 
   // 06 Contact & Consultation

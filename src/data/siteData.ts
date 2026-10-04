@@ -58,6 +58,13 @@ export const TEAM_MEMBERS: TeamMember[] = [
     qualification: 'M.Plan',
     bio: 'Provides urban design expertise, master planning, byelaw alignment, zoning compliance, and macro-spatial circulation strategies for private estates and institutional developments.',
     specialization: 'Urban Master Planning, Zoning Byelaws & Infrastructure Coordination'
+  },
+  {
+    name: 'Kishan Verma',
+    role: 'Consultant — Pumping Systems, Hydraulic Design & Engineering',
+    qualification: 'Member, Ajmer Engineers Institute, Ajmer',
+    bio: 'Consulting specialist for pumping systems, hydraulic design and engineering — water supply networks, pump selection and system hydraulics for residential, commercial and institutional projects.',
+    specialization: 'Pumping Systems, Hydraulic Design & Engineering'
   }
 ];
 

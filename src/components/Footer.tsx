@@ -164,6 +164,7 @@ export function Footer() {
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-mono text-[#F4F0E8]/60">
           <div>
             &copy; {new Date().getFullYear()} {BUSINESS_INFO.name} Architecture &amp; Structural Engineering Studio. All Rights Reserved.
+            <span className="block sm:inline sm:ml-3 text-[#F4F0E8]/50">GSTIN: 08AZEPS7516E1Z7</span>
           </div>
 
           <div className="flex flex-wrap items-center gap-6">

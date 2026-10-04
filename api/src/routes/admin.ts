@@ -211,6 +211,32 @@ adminRoutes.get("/stats", requireAdmin, async (c) => {
 
   const recentLogs = await getAuditLogs(c.env.DB, 6, getAdminAllowlist(c.env));
 
+  // Website visitor meter (client request 2026-10-04). Best-effort: if the
+  // pageviews table doesn't exist yet (schema not applied), report zeros.
+  let visitors = { total_pageviews: 0, unique_visitors: 0, today: 0, last_7_days: 0 };
+  try {
+    const now = Date.now();
+    const dayStart = now - 24 * 3600 * 1000;
+    const weekStart = now - 7 * 24 * 3600 * 1000;
+    const total = await c.env.DB.prepare(
+      "SELECT COUNT(*) AS pv, COUNT(DISTINCT ip_hash) AS uv FROM pageviews"
+    ).first<{ pv: number; uv: number }>();
+    const today = await c.env.DB.prepare(
+      "SELECT COUNT(*) AS pv FROM pageviews WHERE created_at > ?"
+    ).bind(dayStart).first<{ pv: number }>();
+    const week = await c.env.DB.prepare(
+      "SELECT COUNT(*) AS pv FROM pageviews WHERE created_at > ?"
+    ).bind(weekStart).first<{ pv: number }>();
+    visitors = {
+      total_pageviews: total?.pv ?? 0,
+      unique_visitors: total?.uv ?? 0,
+      today: today?.pv ?? 0,
+      last_7_days: week?.pv ?? 0,
+    };
+  } catch {
+    /* pageviews table missing -> zeros */
+  }
+
   return c.json({
     projects: {
       total: totalProjects,
@@ -227,6 +253,7 @@ adminRoutes.get("/stats", requireAdmin, async (c) => {
     locations: { total: totalLocations, published: totalLocations },
     team: { total: totalTeamMembers },
     messages: { unread: unreadInquiries, total: 12 },
+    visitors,
     recentLogs,
   });
 });

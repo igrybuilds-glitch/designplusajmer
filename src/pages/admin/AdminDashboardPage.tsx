@@ -15,7 +15,8 @@ import {
   Sparkles,
   CheckCircle2,
   AlertTriangle,
-  FileText
+  FileText,
+  Eye
 } from "lucide-react";
 import { fetchAllCMSProjects, fetchAllCMSBlogPosts, fetchAllCMSMessages, CMSProject, CMSBlogPost, CMSMessage } from "../../services/adminCmsService";
 
@@ -25,6 +26,7 @@ interface DashboardStats {
   services: { total: number; published: number };
   locations: { total: number; published: number };
   messages: { unread: number; total: number };
+  visitors?: { total_pageviews: number; unique_visitors: number; today: number; last_7_days: number };
 }
 
 export const AdminDashboardPage: React.FC = () => {
@@ -215,6 +217,30 @@ export const AdminDashboardPage: React.FC = () => {
             <div className="text-xs text-stone-400 mt-1 flex items-center gap-1.5 font-mono">
               <span className="text-emerald-400 font-semibold">Consultation Queue</span>
               <span>• Direct Submissions</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Metric 5: Website Visitors (client-requested visitor meter) */}
+        <div className="p-5 rounded-2xl bg-stone-900/90 border border-stone-800 flex flex-col justify-between">
+          <div className="flex items-center justify-between">
+            <span className="text-xs font-mono uppercase tracking-wider text-stone-400">
+              Website Visitors
+            </span>
+            <div className="w-8 h-8 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
+              <Eye className="w-4 h-4" />
+            </div>
+          </div>
+          <div className="mt-4">
+            <div className="text-3xl font-serif font-bold text-stone-100 flex items-baseline gap-2">
+              <span>{(stats?.visitors?.total_pageviews ?? 0).toLocaleString('en-IN')}</span>
+              <span className="text-xs font-mono text-cyan-400 font-normal">
+                ({(stats?.visitors?.unique_visitors ?? 0).toLocaleString('en-IN')} unique)
+              </span>
+            </div>
+            <div className="text-xs text-stone-400 mt-1 flex items-center gap-1.5 font-mono">
+              <span className="text-cyan-400 font-semibold">{stats?.visitors?.today ?? 0} today</span>
+              <span>• {stats?.visitors?.last_7_days ?? 0} last 7 days</span>
             </div>
           </div>
         </div>

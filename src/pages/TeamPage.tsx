@@ -87,7 +87,7 @@ export function TeamPage({ onOpenConsultation }: TeamPageProps) {
             Principals, Engineers &amp; Planners.
           </h1>
           <p className="text-sm sm:text-base text-stone-700 font-sans leading-relaxed max-w-2xl font-light">
-            Founded in 2004, Design Plus is anchored by chartered structural engineering rigor, European-honed spatial philosophy, electrical power networks, and urban master planning.
+            Founded in 2006, Design Plus is anchored by chartered structural engineering rigor, European-honed spatial philosophy, electrical power networks, and urban master planning.
           </p>
         </div>
       </div>
