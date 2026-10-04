@@ -3,4 +3,5 @@ Allow: /
 Disallow: /admin/
 Disallow: /admin/*
 
-Sitemap: https://designplusajmer.co.in/sitemap.xml
+
+Sitemap: https://www.designplusajmer.co.in/sitemap.xml
