@@ -107,7 +107,7 @@ export function ServicesPage({ onOpenConsultation }: ServicesPageProps) {
         '@type': 'Service',
         name: service.title,
         description: service.shortDescription,
-        url: `https://designplusajmer.co.in/services/${service.slug}`
+        url: `https://www.designplusajmer.co.in/services/${service.slug}`
       }
     }))
   };
@@ -118,7 +118,7 @@ export function ServicesPage({ onOpenConsultation }: ServicesPageProps) {
         title="Architecture & Structural Services | Design Plus"
         description="Explore our integrated services: Residential villa design, commercial architecture, 3D elevation rendering, 2D floor plans, and structural calculations."
         keywords="architectural services ajmer, structural design rajasthan, 3d elevation rendering, 2d floor planning, interior architecture ajmer, building approval drawings"
-        canonical="https://designplusajmer.co.in/services"
+        canonical="https://www.designplusajmer.co.in/services"
         schema={servicesSchema}
       />
 

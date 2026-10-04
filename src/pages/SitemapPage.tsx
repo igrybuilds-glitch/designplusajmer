@@ -98,7 +98,7 @@ export function SitemapPage() {
     '@type': 'WebPage',
     name: 'Sitemap | Design Plus Ajmer',
     description: 'Complete sitemap of the Design Plus Architecture & Structural Engineering Studio website — every page, service, location and journal article.',
-    url: 'https://designplusajmer.co.in/sitemap',
+    url: 'https://www.designplusajmer.co.in/sitemap',
   };
 
   return (
@@ -107,7 +107,7 @@ export function SitemapPage() {
         title="Sitemap | Design Plus Ajmer"
         description="Browse every page on the Design Plus Studio website — services, portfolio, locations, cost guides and journal articles."
         keywords="sitemap design plus, site pages ajmer architect"
-        canonical="https://designplusajmer.co.in/sitemap"
+        canonical="https://www.designplusajmer.co.in/sitemap"
         schema={schema}
       />
 

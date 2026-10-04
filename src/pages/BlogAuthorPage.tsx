@@ -31,7 +31,7 @@ export function BlogAuthorPage({ onOpenConsultation }: BlogAuthorPageProps) {
       worksFor: {
         '@type': 'Organization',
         name: 'Design Plus Architects & Engineers',
-        url: 'https://designplusajmer.co.in'
+        url: 'https://www.designplusajmer.co.in'
       }
     }
   };
@@ -41,7 +41,7 @@ export function BlogAuthorPage({ onOpenConsultation }: BlogAuthorPageProps) {
       <SEOHead
         title={`${author.name} | Design Plus Author Archive`}
         description={`${author.name} (${author.qualifications}). ${author.bio}`}
-        canonical={`https://designplusajmer.co.in/blog/author/${author.slug}`}
+        canonical={`https://www.designplusajmer.co.in/blog/author/${author.slug}`}
         schema={authorSchema}
       />
 

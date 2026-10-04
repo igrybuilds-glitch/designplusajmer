@@ -29,11 +29,11 @@ export function HomePage({ onOpenConsultation }: HomePageProps) {
   const homeSchema = {
     '@context': 'https://schema.org',
     '@type': ['Architect', 'LocalBusiness', 'ProfessionalService', 'ArchitecturalService', 'EngineeringService'],
-    '@id': 'https://designplusajmer.co.in/#architect-business',
+    '@id': 'https://www.designplusajmer.co.in/#architect-business',
     name: 'Design Plus',
     legalName: 'Design Plus Architecture & Structural Engineering Studio',
-    url: 'https://designplusajmer.co.in',
-    logo: 'https://designplusajmer.co.in/logo.png',
+    url: 'https://www.designplusajmer.co.in',
+    logo: 'https://www.designplusajmer.co.in/logo.png',
     image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
     description: 'Premier architect in Ajmer for bespoke house planning Ajmer, refined interior designer Ajmer solutions, and turnkey project execution with structural rigor.',
     telephone: ['+91-7976453090', '+91-9461465610'],
@@ -157,7 +157,7 @@ export function HomePage({ onOpenConsultation }: HomePageProps) {
         title="Design Plus | Architects & Structural Engineers in Ajmer"
         description="Premier architect in Ajmer for bespoke house planning Ajmer, refined interior designer Ajmer solutions, and turnkey project execution with structural rigor."
         keywords="architect in ajmer, architects in ajmer, house planning ajmer, interior designer ajmer, turnkey project execution, structural engineer ajmer, chartered engineer rajasthan, villa design ajmer"
-        canonical="https://designplusajmer.co.in/"
+        canonical="https://www.designplusajmer.co.in/"
         schema={homeSchema}
       />
       

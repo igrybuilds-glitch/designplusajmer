@@ -145,13 +145,13 @@ export function StructuralDrawingAjmerPage({ onOpenConsultation }: StructuralDra
   const structuralServiceSchema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    '@id': 'https://designplusajmer.co.in/structural-drawing-ajmer#service',
+    '@id': 'https://www.designplusajmer.co.in/structural-drawing-ajmer#service',
     name: 'Structural Drawing & RCC Detailing Services in Ajmer',
     serviceType: 'Chartered Structural Engineering & Detailing',
     provider: {
       '@type': 'ProfessionalService',
       name: 'Design Plus',
-      url: 'https://designplusajmer.co.in',
+      url: 'https://www.designplusajmer.co.in',
       telephone: '+91-7976453090',
       address: {
         '@type': 'PostalAddress',
@@ -199,7 +199,7 @@ export function StructuralDrawingAjmerPage({ onOpenConsultation }: StructuralDra
         title="Structural Drawing in Ajmer | RCC & Steel Detailing"
         description="Chartered structural drawing in Ajmer. Expert RCC detailing services, steel connection drawings, and Bar Bending Schedules (BBS) under IS 456 and IS 13920."
         keywords="structural drawing ajmer, rcc detailing services, steel detailing, bar bending schedule ajmer, structural blueprint ajmer, chartered structural engineer rajasthan"
-        canonical="https://designplusajmer.co.in/structural-drawing-ajmer"
+        canonical="https://www.designplusajmer.co.in/structural-drawing-ajmer"
         schema={[structuralServiceSchema, structuralFAQSchema]}
       />
 

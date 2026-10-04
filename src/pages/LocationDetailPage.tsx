@@ -139,7 +139,7 @@ export function LocationDetailPage({ onOpenConsultation }: LocationDetailPagePro
   // Localized FAQs
   const localFaqs = LOCATION_FAQS[location.slug] || LOCATION_FAQS.ajmer;
 
-  const canonicalUrl = `https://designplusajmer.co.in/locations/${location.slug}`;
+  const canonicalUrl = `https://www.designplusajmer.co.in/locations/${location.slug}`;
 
   const locationSchema = {
     '@context': 'https://schema.org',
@@ -157,7 +157,7 @@ export function LocationDetailPage({ onOpenConsultation }: LocationDetailPagePro
     parentOrganization: {
       '@type': 'Organization',
       name: 'Design Plus',
-      url: 'https://designplusajmer.co.in'
+      url: 'https://www.designplusajmer.co.in'
     }
   };
 

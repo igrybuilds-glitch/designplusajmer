@@ -159,13 +159,13 @@ export function FarmhousePage({ onOpenConsultation }: FarmhousePageProps) {
   const farmhouseServiceSchema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    '@id': 'https://designplusajmer.co.in/farmhouse#service',
+    '@id': 'https://www.designplusajmer.co.in/farmhouse#service',
     name: 'Luxury Farmhouse Design & Estate Architecture in Ajmer',
     serviceType: 'Farmhouse Architecture, Master Planning & Rural Estate Engineering',
     provider: {
       '@type': 'ProfessionalService',
       name: 'Design Plus',
-      url: 'https://designplusajmer.co.in',
+      url: 'https://www.designplusajmer.co.in',
       telephone: '+91-7976453090',
       address: {
         '@type': 'PostalAddress',
@@ -213,7 +213,7 @@ export function FarmhousePage({ onOpenConsultation }: FarmhousePageProps) {
         title="Farmhouse Design in Ajmer | Luxury Farmhouse Architect"
         description="Bespoke farmhouse design in Ajmer & Rajasthan. Luxury estate master planning, passive cooling, off-grid water autonomy, and chartered structural engineering."
         keywords="farmhouse design ajmer, farmhouse architect rajasthan, luxury farmhouse plans, pushkar farmhouse design, rural estate architect ajmer, agricultural land farmhouse rajasthan"
-        canonical="https://designplusajmer.co.in/farmhouse"
+        canonical="https://www.designplusajmer.co.in/farmhouse"
         schema={[farmhouseServiceSchema, farmhouseFAQSchema]}
       />
 

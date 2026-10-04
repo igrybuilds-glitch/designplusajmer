@@ -614,7 +614,7 @@ export const AdminProjectEditPage: React.FC = () => {
                 type="text"
                 value={project.canonical || ""}
                 onChange={(e) => setProject({ ...project, canonical: e.target.value })}
-                placeholder="https://designplusajmer.co.in/projects/..."
+                placeholder="https://www.designplusajmer.co.in/projects/..."
                 className="w-full px-3.5 py-2.5 rounded-xl bg-stone-950 border border-stone-800 text-stone-100 text-xs font-mono focus:outline-none focus:border-amber-500"
               />
             </div>

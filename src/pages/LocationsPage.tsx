@@ -15,7 +15,7 @@ export function LocationsPage() {
       item: {
         '@type': 'Place',
         name: `${loc.city}, ${loc.state}`,
-        url: `https://designplusajmer.co.in/locations/${loc.slug}`,
+        url: `https://www.designplusajmer.co.in/locations/${loc.slug}`,
         description: loc.description
       }
     }))
@@ -26,7 +26,7 @@ export function LocationsPage() {
       <SEOHead
         title="Service Areas in Rajasthan | Design Plus"
         description="Explore Design Plus architectural and structural engineering services across Ajmer, Jaipur, Pushkar, Udaipur, Beawar, Kishangarh, Kekri, and Nasirabad."
-        canonical="https://designplusajmer.co.in/locations"
+        canonical="https://www.designplusajmer.co.in/locations"
         schema={locationsSchema}
       />
 

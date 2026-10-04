@@ -48,7 +48,7 @@ export function BlogDetailPage({ onOpenConsultation }: BlogDetailPageProps) {
   }
 
   // Canonical clean URL: /blog/[slug]
-  const canonicalUrl = `https://designplusajmer.co.in/blog/${post.slug}`;
+  const canonicalUrl = `https://www.designplusajmer.co.in/blog/${post.slug}`;
   const categoryMeta = BlogApi.getCategoryBySlug(post.category);
   const relatedArticles = BlogApi.getRelatedArticles(post.slug, 3);
   const allProjects = getAllProjects();
@@ -76,13 +76,13 @@ export function BlogDetailPage({ onOpenConsultation }: BlogDetailPageProps) {
       '@type': 'Person',
       name: post.author.name,
       jobTitle: post.author.role,
-      url: `https://designplusajmer.co.in/blog/author/${post.author.slug}`
+      url: `https://www.designplusajmer.co.in/blog/author/${post.author.slug}`
     },
     publisher: {
       '@type': 'Organization',
       name: 'Design Plus Architects & Engineers',
-      url: 'https://designplusajmer.co.in',
-      logo: 'https://designplusajmer.co.in/logo.png'
+      url: 'https://www.designplusajmer.co.in',
+      logo: 'https://www.designplusajmer.co.in/logo.png'
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
@@ -113,19 +113,19 @@ export function BlogDetailPage({ onOpenConsultation }: BlogDetailPageProps) {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://designplusajmer.co.in/'
+        item: 'https://www.designplusajmer.co.in/'
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Journal',
-        item: 'https://designplusajmer.co.in/blog'
+        item: 'https://www.designplusajmer.co.in/blog'
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: categoryMeta?.name || post.category,
-        item: `https://designplusajmer.co.in/blog/category/${post.category}`
+        item: `https://www.designplusajmer.co.in/blog/category/${post.category}`
       },
       {
         '@type': 'ListItem',

@@ -78,7 +78,7 @@ export function ProductCategorySeoPage({ onOpenConsultation }: ProductCategorySe
     '@type': ['LocalBusiness', 'CollectionPage'],
     name: `${catInfo.title} | Design Plus Ajmer`,
     description: catInfo.description,
-    url: `https://designplusajmer.co.in/products/${categorySlug}`,
+    url: `https://www.designplusajmer.co.in/products/${categorySlug}`,
     areaServed: {
       '@type': 'State',
       name: 'Rajasthan, India'
@@ -116,7 +116,7 @@ export function ProductCategorySeoPage({ onOpenConsultation }: ProductCategorySe
         title={`${catInfo.title} | Design Plus Ajmer`}
         description={catInfo.description}
         keywords={`${catInfo.title.toLowerCase()}, building materials ajmer, design plus catalog`}
-        canonical={`https://designplusajmer.co.in/products/${categorySlug}`}
+        canonical={`https://www.designplusajmer.co.in/products/${categorySlug}`}
         schema={schema}
       />
 

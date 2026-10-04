@@ -95,7 +95,7 @@ export function ArchitectureStatisticsPage({ onOpenConsultation }: ArchitectureS
         title="Architecture & Construction Statistics India 2026 | Design Plus"
         description="Key architecture and construction statistics for India and Rajasthan in 2026 — market size, housing data, cost breakdowns — plus Design Plus studio's own numbers. Sourced and updated quarterly."
         keywords="architecture statistics india 2026, construction industry statistics india, rajasthan housing statistics, construction cost rajasthan, india construction market size"
-        canonical="https://designplusajmer.co.in/architecture-statistics-india-2026"
+        canonical="https://www.designplusajmer.co.in/architecture-statistics-india-2026"
       />
 
       {/* Header */}

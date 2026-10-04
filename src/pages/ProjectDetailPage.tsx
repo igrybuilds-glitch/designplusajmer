@@ -84,7 +84,7 @@ export function ProjectDetailPage({ onOpenConsultation }: ProjectDetailPageProps
   const isConcept = project.projectType === 'concept';
   const drawings = project.drawingsAndPlans || [];
   const currentDrawing = drawings[activeDrawingIndex] || drawings[0];
-  const canonicalUrl = `https://designplusajmer.co.in/projects/${project.category}/${project.slug}`;
+  const canonicalUrl = `https://www.designplusajmer.co.in/projects/${project.category}/${project.slug}`;
 
   // Schema.org Structured Data
   const schemaOrgJSONLD = {
@@ -96,7 +96,7 @@ export function ProjectDetailPage({ onOpenConsultation }: ProjectDetailPageProps
     creator: {
       '@type': 'Organization',
       name: 'Design Plus',
-      url: 'https://designplusajmer.co.in',
+      url: 'https://www.designplusajmer.co.in',
       founder: {
         '@type': 'Person',
         name: 'Er. Sudhir Soni',

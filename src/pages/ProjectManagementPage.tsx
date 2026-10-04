@@ -125,13 +125,13 @@ export function ProjectManagementPage({ onOpenConsultation }: ProjectManagementP
   const pmcServiceSchema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    '@id': 'https://designplusajmer.co.in/project-management#service',
+    '@id': 'https://www.designplusajmer.co.in/project-management#service',
     name: 'Project Management Consultancy & Turnkey Project Execution',
     serviceType: 'Project Management Consultancy (PMC)',
     provider: {
       '@type': 'ProfessionalService',
       name: 'Design Plus',
-      url: 'https://designplusajmer.co.in',
+      url: 'https://www.designplusajmer.co.in',
       telephone: '+91-7976453090',
       address: {
         '@type': 'PostalAddress',
@@ -178,7 +178,7 @@ export function ProjectManagementPage({ onOpenConsultation }: ProjectManagementP
         title="PMC & Turnkey Project Execution Ajmer | Design Plus"
         description="Chartered project management consultancy in Ajmer. Expert turnkey project execution, contractor oversight, quality audits, and zero cost-overrun governance."
         keywords="project management consultancy ajmer, turnkey project execution, construction pmc ajmer, site supervision rajasthan, chartered engineer building inspection, turnkey house construction ajmer"
-        canonical="https://designplusajmer.co.in/project-management"
+        canonical="https://www.designplusajmer.co.in/project-management"
         schema={[pmcServiceSchema, pmcFAQSchema]}
       />
 

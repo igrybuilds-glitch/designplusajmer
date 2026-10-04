@@ -27,7 +27,7 @@ export function TurnkeyConstructionAjmerPage({ onOpenConsultation }: TurnkeyCons
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
   const toggleFaq = (index: number) => setOpenFaqIndex(openFaqIndex === index ? null : index);
 
-  const canonicalUrl = 'https://designplusajmer.co.in/turnkey-construction-ajmer';
+  const canonicalUrl = 'https://www.designplusajmer.co.in/turnkey-construction-ajmer';
 
   const benefits = [
     {
@@ -176,7 +176,7 @@ export function TurnkeyConstructionAjmerPage({ onOpenConsultation }: TurnkeyCons
     provider: {
       '@type': 'ProfessionalService',
       name: 'Design Plus',
-      url: 'https://designplusajmer.co.in',
+      url: 'https://www.designplusajmer.co.in',
       telephone: '+91-7976453090',
       email: 'designplusajmer@gmail.com',
       address: {
@@ -213,7 +213,7 @@ export function TurnkeyConstructionAjmerPage({ onOpenConsultation }: TurnkeyCons
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://designplusajmer.co.in/' },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.designplusajmer.co.in/' },
       { '@type': 'ListItem', position: 2, name: 'Turnkey Construction in Ajmer', item: canonicalUrl }
     ]
   };

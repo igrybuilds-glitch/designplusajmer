@@ -9,7 +9,7 @@ export function TermsAndConditionsPage() {
     '@type': 'WebPage',
     name: 'Terms & Conditions | Design Plus Ajmer',
     description: 'Terms and conditions governing architectural, structural engineering and interior design services by Design Plus Studio, Ajmer, Rajasthan.',
-    url: 'https://designplusajmer.co.in/terms-and-conditions'
+    url: 'https://www.designplusajmer.co.in/terms-and-conditions'
   };
 
   return (
@@ -18,7 +18,7 @@ export function TermsAndConditionsPage() {
         title="Terms & Conditions | Design Plus Ajmer"
         description="Terms and conditions for architectural design, structural engineering and interior design services by Design Plus Studio, Ajmer, Rajasthan."
         keywords="design plus terms, architect terms conditions ajmer, design service agreement rajasthan"
-        canonical="https://designplusajmer.co.in/terms-and-conditions"
+        canonical="https://www.designplusajmer.co.in/terms-and-conditions"
         schema={schema}
       />
 
