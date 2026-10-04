@@ -5,9 +5,7 @@ import { BLOG_CATEGORIES } from '../data/blogData';
 
 export function Footer() {
   return (
-    <footer id="main-footer" className="relative bg-transparent text-[#F4F0E8] pt-16 pb-12 border-t border-white/15 overflow-hidden transition-colors">
-      {/* Dark Readability Overlay for Fixed Video Background */}
-      <div className="absolute inset-0 bg-black/85 backdrop-blur-[2px] -z-10" aria-hidden="true" />
+    <footer id="main-footer" className="relative bg-[#141412] text-[#F4F0E8] pt-16 pb-12 border-t border-white/15 overflow-hidden transition-colors">
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
