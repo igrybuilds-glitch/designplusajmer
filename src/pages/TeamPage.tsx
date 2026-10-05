@@ -58,7 +58,8 @@ export function TeamPage({ onOpenConsultation }: TeamPageProps) {
     'Ar. Vipul Verma': '/images/team/vipul-verma.jpg',
     'Er. Ankit Soni': '/images/team/ankit-soni.jpg',
     'Er. Shikha Soni': '/images/team/shikha-soni.jpg',
-    'Er. Amit Soni': '/images/team/amit-soni.jpg'
+    'Er. Amit Soni': '/images/team/amit-soni.jpg',
+    'Kishan Verma': '/images/team/kishan-verma.jpg'
   };
 
   return (

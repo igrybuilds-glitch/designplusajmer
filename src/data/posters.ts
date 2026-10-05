@@ -22,6 +22,8 @@ export interface PosterCategory {
   seoDescription: string;
   /** 300+ words of indexable educational copy for the category landing */
   intro: string[];
+  /** Live posters with real images (client-supplied) */
+  publishedPosters?: { title: string; blurb: string; image: string; alt: string }[];
   /** Poster titles planned / arriving for this category */
   upcomingPosters: { title: string; blurb: string }[];
   icon: string; // lucide icon name key used by the page
@@ -243,6 +245,14 @@ export const POSTER_CATEGORIES: PosterCategory[] = [
       },
     ],
     icon: 'BookOpen',
+    publishedPosters: [
+      {
+        title: 'Rain Water Harvesting System — A New Approach',
+        blurb: 'How a rain water filter feeds filtered rain water from roof to tank: the complete harvesting chain — filter, drain, storage — every Indian home can adopt.',
+        image: '/images/posters/rain-water-harvesting.jpg',
+        alt: 'Rain Water Harvesting System poster — rain water filter diagram by Design Plus Ajmer',
+      },
+    ],
   },
 ];
 

@@ -5,6 +5,7 @@ import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { ScrollToTop } from './components/ScrollToTop';
 import { ConsultationModal } from './components/ConsultationModal';
+import { CookieConsent } from './components/CookieConsent';
 import { AuthProvider } from './context/AuthContext';
 import { AdminAuthProvider } from './context/AdminAuthContext';
 import { ClientAuthDrawer } from './components/ClientAuthDrawer';
@@ -216,6 +217,9 @@ function AppContent() {
       </div>
 
       {!isAdminRoute && <Footer />}
+
+      {/* DPDP cookie consent banner (site-wide, once per visitor) */}
+      {!isAdminRoute && <CookieConsent />}
 
       {/* Global Drawers & Modals */}
       {!isAdminRoute && (

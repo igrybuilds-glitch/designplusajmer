@@ -126,6 +126,32 @@ export function PosterCategoryPage() {
           Posters in this collection
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {(cat.publishedPosters || []).map((poster, i) => (
+            <article
+              key={'pub-' + i}
+              className="group bg-white border border-stone-200 rounded-2xl overflow-hidden hover:border-[#B86B38]/60 hover:shadow-xl transition-all duration-300 flex flex-col"
+            >
+              <div className="relative bg-stone-100 overflow-hidden">
+                <img
+                  src={poster.image}
+                  alt={poster.alt}
+                  className="w-full h-auto object-contain group-hover:scale-[1.02] transition-transform duration-500"
+                  loading="lazy"
+                />
+                <span className="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-[0.18em] bg-emerald-600 text-white px-3 py-1 rounded-full">
+                  Live
+                </span>
+              </div>
+              <div className="p-6 flex flex-col flex-1">
+                <h3 className="font-editorial text-lg font-bold text-stone-900 leading-snug mb-2">
+                  {poster.title}
+                </h3>
+                <p className="text-sm text-stone-600 leading-relaxed font-sans font-light flex-1">
+                  {poster.blurb}
+                </p>
+              </div>
+            </article>
+          ))}
           {cat.upcomingPosters.map((poster, i) => (
             <article
               key={i}
