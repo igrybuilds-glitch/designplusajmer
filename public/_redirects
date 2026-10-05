@@ -1,3 +1,8 @@
+# Apex -> www canonical redirect (added 2026-10-05): any apex-subpath 301s to www.
+# NOTE: fires only if the apex domain is attached to this Pages project; the
+# Cloudflare-dashboard redirect rule (founder-hands) remains the authoritative fix.
+https://designplusajmer.co.in/* https://www.designplusajmer.co.in/:splat 301
+http://designplusajmer.co.in/* https://www.designplusajmer.co.in/:splat 301
 # /api/* is proxied to the Cloudflare Worker by functions/api/[[path]].ts
 # (Pages _redirects cannot 200-proxy to absolute URLs, so no rule here).
 # SPA fallback below.

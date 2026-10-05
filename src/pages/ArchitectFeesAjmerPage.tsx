@@ -462,7 +462,7 @@ export function ArchitectFeesAjmerPage({ onOpenConsultation }: ArchitectFeesAjme
               <div className="font-editorial text-xl font-bold text-stone-950">Zero Failures</div>
               <div className="text-xs font-mono text-stone-500 uppercase mt-0.5">IS 456 Structural Integrity</div>
               <p className="text-xs text-stone-600 mt-2 leading-relaxed">
-                900+ executed structures without a single structural failure, crack dispute, or subgrade settlement.
+                Executed structures with a standing record of zero structural failures, crack disputes, or subgrade settlements.
               </p>
             </div>
             <div>

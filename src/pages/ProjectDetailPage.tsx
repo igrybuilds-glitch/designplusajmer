@@ -21,7 +21,8 @@ import {
   Sparkles,
   Sun,
   Leaf,
-  Bookmark
+  Bookmark,
+  Image as ImageIcon
 } from 'lucide-react';
 import { SEOHead } from '../components/SEOHead';
 import { getProjectBySlug, getAdjacentProjects, getRelatedProjects } from '../data/projectsData';
@@ -183,6 +184,32 @@ export function ProjectDetailPage({ onOpenConsultation }: ProjectDetailPageProps
               <span className="text-[11px] uppercase font-bold tracking-widest text-amber-900 bg-amber-200/90 px-3 py-1.5 border border-amber-400/60 font-mono">
                 DESIGN STUDY
               </span>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Representative Imagery Disclosure Notice (if gallery uses reference photos) */}
+      {project.imageDisclaimer && (
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
+          <div className="p-6 bg-stone-100/95 border-2 border-stone-300/80 text-stone-900 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-xs">
+            <div className="flex items-start gap-3.5">
+              <div className="p-2 bg-stone-200/80 text-stone-800 shrink-0 mt-0.5">
+                <ImageIcon className="w-5 h-5" />
+              </div>
+              <div className="space-y-1">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="text-xs uppercase tracking-widest font-bold text-stone-950">
+                    REPRESENTATIVE IMAGERY
+                  </span>
+                  <span className="text-[10px] uppercase font-mono px-2 py-0.5 bg-stone-200 text-stone-800 font-semibold border border-stone-300">
+                    Illustrative Reference
+                  </span>
+                </div>
+                <p className="text-xs text-stone-700 leading-relaxed max-w-3xl font-sans">
+                  {project.imageDisclaimer} The project facts on this page — name, location, area, year, scope of work — describe the real studio commission.
+                </p>
+              </div>
             </div>
           </div>
         </section>

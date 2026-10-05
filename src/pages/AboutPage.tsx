@@ -30,7 +30,7 @@ export function AboutPage({ onOpenConsultation }: AboutPageProps) {
     <main id="about-page" className="pt-28 pb-20">
       <SEOHead
         title="About Design Plus | Architects in Ajmer"
-        description="Meet Er. Sudhir Soni (Chartered Engineer) and Ar. Vipul Verma (Principal Architect). 20+ years of engineering heritage, 900+ bespoke projects in Rajasthan."
+        description="Meet Er. Sudhir Soni (Chartered Engineer) and Ar. Vipul Verma (Principal Architect). 20+ years of engineering heritage and bespoke projects across Rajasthan."
         keywords="about design plus, Er Sudhir Soni, Ar Vipul Verma, architects ajmer history, chartered engineer credentials, structural consultant rajasthan"
         canonical="https://www.designplusajmer.co.in/about"
         schema={aboutSchema}

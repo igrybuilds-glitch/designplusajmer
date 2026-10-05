@@ -22,7 +22,7 @@ export const PAGE_FAQS: Record<string, Array<{ q: string; a: string }>> = {
     },
     {
       q: 'How much experience does the studio have?',
-      a: 'Design Plus brings over 20 years of engineering heritage and 900+ bespoke projects across Rajasthan. Er. Sudhir Soni has overseen structural calculations and foundation engineering across residential, commercial, and industrial facilities, with every plan mathematically vetted against seismic, wind, and municipal safety codes before breaking ground.'
+      a: 'Design Plus brings over 20 years of engineering heritage and bespoke projects across Rajasthan. Er. Sudhir Soni has overseen structural calculations and foundation engineering across residential, commercial, and industrial facilities, with every plan mathematically vetted against seismic, wind, and municipal safety codes before breaking ground.'
     },
     {
       q: 'What disciplines does the Design Plus team cover?',

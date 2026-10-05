@@ -356,6 +356,12 @@ export function ProjectsPage({ initialCategory }: ProjectsPageProps) {
                             <span>Built Commission</span>
                           </span>
                         )}
+
+                        {!isConcept && project.imageDisclaimer && (
+                          <span className="bg-stone-100/95 text-stone-700 text-[9px] uppercase tracking-wider px-2 py-1 font-semibold border border-stone-300">
+                            <span>Representative imagery</span>
+                          </span>
+                        )}
                       </div>
 
                       {/* Status / Year Badge */}

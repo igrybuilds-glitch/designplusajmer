@@ -266,7 +266,7 @@ export function StructuralDrawingAjmerPage({ onOpenConsultation }: StructuralDra
           </div>
           <div>
             <div className="font-editorial text-2xl sm:text-4xl text-emerald-800 font-bold">0% Failures</div>
-            <div className="text-[11px] sm:text-xs font-mono text-stone-600 uppercase tracking-wider mt-1">900+ Built Works</div>
+            <div className="text-[11px] sm:text-xs font-mono text-stone-600 uppercase tracking-wider mt-1">Built Works</div>
             <p className="text-[11px] text-stone-500 mt-0.5">Over 20+ years practice</p>
           </div>
           <div>
@@ -420,8 +420,8 @@ export function StructuralDrawingAjmerPage({ onOpenConsultation }: StructuralDra
             </div>
 
             <div className="lg:col-span-4 bg-stone-50 p-6 border border-stone-200 text-center space-y-4">
-              <div className="font-editorial text-3xl font-bold text-stone-950">900+</div>
-              <div className="text-xs font-mono uppercase text-stone-600 tracking-wider">Structures Standing Tall</div>
+              <div className="font-editorial text-3xl font-bold text-stone-950">Zero</div>
+              <div className="text-xs font-mono uppercase text-stone-600 tracking-wider">Structural Failures</div>
               <p className="text-xs text-stone-500">
                 Residential villas, high-rises, commercial plazas, and highway bridges designed without a single structural failure.
               </p>

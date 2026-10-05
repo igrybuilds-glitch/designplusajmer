@@ -8,9 +8,9 @@ export interface TestimonialTrustSignal {
 
 export const TESTIMONIAL_TRUST_SIGNALS: TestimonialTrustSignal[] = [
   {
-    metric: '4.9 ★',
+    metric: '4.8 ★',
     label: 'Client Trust Rating',
-    caption: 'Across 900+ commissioned works in Rajasthan'
+    caption: 'Verified client rating on JustDial'
   },
   {
     metric: '20+ Yrs',
@@ -22,11 +22,6 @@ export const TESTIMONIAL_TRUST_SIGNALS: TestimonialTrustSignal[] = [
     label: 'ADA Sanction Record',
     caption: 'Zero regulatory delays with Ajmer bylaws'
   },
-  {
-    metric: '900+',
-    label: 'Projects Delivered',
-    caption: 'Bespoke residences, estates & commercial spaces'
-  }
 ];
 
 export const TESTIMONIALS_DATA: Testimonial[] = [

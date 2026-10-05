@@ -92,7 +92,7 @@ export function Footer() {
               <li><Link to="/projects/concept" className="hover:text-[#B86B38] transition-colors block">Concept &amp; Climate Studies</Link></li>
               <li className="pt-1">
                 <Link to="/projects" className="text-[#B86B38] hover:text-[#c47745] font-semibold font-mono text-[11px]">
-                  Explore 900+ Archive &rarr;
+                  Explore Archive &rarr;
                 </Link>
               </li>
             </ul>

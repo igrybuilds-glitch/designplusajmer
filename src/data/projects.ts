@@ -91,6 +91,7 @@ export const PROJECTS: Project[] = [
     ],
     featured: false,
     isConcept: false,
+    imageDisclaimer: 'Representative imagery — gallery photographs are illustrative reference images, not photographs of this project; real project photography is pending from the client.',
     relatedServices: ['architectural-design', 'structural-design'],
     relatedLocations: ['ajmer'],
     relatedProjects: [],
@@ -110,7 +111,7 @@ export const PROJECTS: Project[] = [
     structuralEngineering: 'RCC framed structure as per IS codes.',
     heroImage: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80',
     gallery: ['https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80'],
-    features: ['Natural ventilation', 'Low-maintenance finishes', 'Accessible design'],
+    features: ['REPRESENTATIVE IMAGERY — gallery photographs are illustrative reference images; real project photography is pending from the client.', 'Natural ventilation', 'Low-maintenance finishes', 'Accessible design'],
     locationDetails: {
       city: 'Ajmer',
       state: 'Rajasthan',
@@ -811,6 +812,7 @@ export const PROJECTS: Project[] = [
     ],
     featured: true,
     isConcept: false,
+    imageDisclaimer: 'Representative imagery — gallery photographs are illustrative reference images, not photographs of this project; real project photography is pending from the client.',
     relatedServices: ['residential-architecture', 'interior-design', '2d-floor-planning'],
     relatedLocations: ['pushkar', 'ajmer'],
     relatedProjects: ['contemporary-rajasthan-villa'],
@@ -832,7 +834,7 @@ export const PROJECTS: Project[] = [
     builtUpArea: '3,600 sq.ft.',
     categoryLabel: 'Haveli Residence',
     typology: 'Contemporary Vernacular Courtyard Residence',
-    badges: ['Built Commission', 'Vernacular Heritage', 'Chartered Certified'],
+    badges: ['Built Commission', 'Vernacular Heritage', 'Chartered Certified', 'REPRESENTATIVE IMAGERY'],
     isFeatured: true,
     lead: 'Ar. Vipul Verma & Er. Sudhir Soni',
     leadership: {
@@ -883,13 +885,13 @@ export const PROJECTS: Project[] = [
     galleryImages: [
       {
         url: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80',
-        caption: 'Sunlit verandah wrapped around the central courtyard garden.',
+        caption: 'Sunlit verandah wrapped around the central courtyard garden. (Representative imagery.)',
         alt: 'Verandah corridor with limestone flooring',
         aspect: 'wide'
       },
       {
         url: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80',
-        caption: 'Master bedroom suite with deep recessed jharokha window seats.',
+        caption: 'Master bedroom suite with deep recessed jharokha window seats. (Representative imagery.)',
         alt: 'Bedroom interior with traditional architectural details',
         aspect: 'wide'
       }
@@ -900,10 +902,11 @@ export const PROJECTS: Project[] = [
         title: 'Courtyard Spatial Arrangement Plan',
         type: 'floor-plan',
         imageUrl: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80',
-        caption: 'Traditional chowk floor layout illustrating central void and surrounding living verandahs.'
+        caption: 'Traditional chowk floor layout illustrating central void and surrounding living verandahs. (Representative reference image.)'
       }
     ],
     features: [
+      'REPRESENTATIVE IMAGERY — gallery photographs are illustrative reference images; real project photography is pending from the client.',
       'Central open-to-sky chowk providing natural diurnal cooling',
       '450mm solid stone thermal mass walls moderating desert climate extremes',
       'Hand-chiseled Jodhpur stone jali screens diffusing harsh sunlight into soft ambient illumination',
@@ -941,6 +944,7 @@ export const PROJECTS: Project[] = [
     ],
     featured: true,
     isConcept: false,
+    imageDisclaimer: 'Representative imagery — gallery photographs are illustrative reference images, not photographs of this project; real project photography is pending from the client.',
     relatedServices: ['interior-design', '3d-elevation-design', 'architectural-design'],
     relatedLocations: ['ajmer', 'jaipur'],
     relatedProjects: ['contemporary-retail-interior'],
@@ -962,7 +966,7 @@ export const PROJECTS: Project[] = [
     builtUpArea: '2,200 sq.ft.',
     categoryLabel: 'Interior Architecture',
     typology: 'Executive Studio & Contemporary Living Interior',
-    badges: ['Built Commission', 'Bespoke Millwork', 'Interior Design'],
+    badges: ['Built Commission', 'Bespoke Millwork', 'Interior Design', 'REPRESENTATIVE IMAGERY'],
     isFeatured: true,
     lead: 'Ar. Vipul Verma',
     leadership: {
@@ -1011,13 +1015,13 @@ export const PROJECTS: Project[] = [
     galleryImages: [
       {
         url: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=80',
-        caption: 'Executive studio desk with integrated cable management and soft diffused cove lighting.',
+        caption: 'Executive studio desk with integrated cable management and soft diffused cove lighting. (Representative imagery.)',
         alt: 'Creative executive office workspace interior',
         aspect: 'wide'
       },
       {
         url: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80',
-        caption: 'Dining suite framed by minimalist brass pendant and fluted timber wall backdrop.',
+        caption: 'Dining suite framed by minimalist brass pendant and fluted timber wall backdrop. (Representative imagery.)',
         alt: 'Modern dining space with warm ambient lighting',
         aspect: 'wide'
       }
@@ -1028,10 +1032,11 @@ export const PROJECTS: Project[] = [
         title: 'Interior Millwork & Ceiling Reflected Plan',
         type: 'floor-plan',
         imageUrl: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80',
-        caption: 'Comprehensive reflected ceiling plan with precision LED channel coordinates and dimming zones.'
+        caption: 'Comprehensive reflected ceiling plan with precision LED channel coordinates and dimming zones. (Representative reference image.)'
       }
     ],
     features: [
+      'REPRESENTATIVE IMAGERY — gallery photographs are illustrative reference images; real project photography is pending from the client.',
       'Custom fluted walnut cabinetry with concealed touch-to-open German hardware',
       'Concealed architectural cove lighting with tunable white 2700K–4000K circadian controls',
       'Seamless Grey Armani marble slab flooring with hairline epoxy jointing',
@@ -1069,6 +1074,7 @@ export const PROJECTS: Project[] = [
     ],
     featured: false,
     isConcept: false,
+    imageDisclaimer: 'Representative imagery — gallery photographs are illustrative reference images, not photographs of this project; real project photography is pending from the client.',
     relatedServices: ['structural-design', 'commercial-architecture'],
     relatedLocations: ['jaipur', 'ajmer'],
     relatedProjects: ['mayo-link-institutional-academy'],
@@ -1090,7 +1096,7 @@ export const PROJECTS: Project[] = [
     builtUpArea: '28,000 sq.ft.',
     categoryLabel: 'Industrial Structural',
     typology: 'Heavy-Duty Industrial Manufacturing & Logistics Hub',
-    badges: ['Built Commission', 'Chartered Certified', 'Industrial Steel'],
+    badges: ['Built Commission', 'Chartered Certified', 'Industrial Steel', 'REPRESENTATIVE IMAGERY'],
     isFeatured: false,
     lead: 'Er. Sudhir Soni (Chartered Engineer)',
     leadership: {
@@ -1140,13 +1146,13 @@ export const PROJECTS: Project[] = [
     galleryImages: [
       {
         url: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80',
-        caption: 'Steel fabrication assembly showing rigid moment-resisting knee joints.',
+        caption: 'Steel fabrication assembly showing rigid moment-resisting knee joints. (Representative imagery.)',
         alt: 'Structural steel assembly on site',
         aspect: 'wide'
       },
       {
         url: 'https://images.unsplash.com/photo-1541888946425-d0fbb1861564?auto=format&fit=crop&w=1200&q=80',
-        caption: 'Heavy machinery foundation reinforcement grid before high-grade concrete casting.',
+        caption: 'Heavy machinery foundation reinforcement grid before high-grade concrete casting. (Representative imagery.)',
         alt: 'Machinery foundation rebar layout',
         aspect: 'wide'
       }
@@ -1157,10 +1163,11 @@ export const PROJECTS: Project[] = [
         title: '32m Portal Frame Elevation & Crane Bracket Detail',
         type: 'structural-detail',
         imageUrl: 'https://images.unsplash.com/photo-1541888946425-d0fbb1861564?auto=format&fit=crop&w=1200&q=80',
-        caption: 'Structural fabrication drawing detailing crane surge brackets, base plates, and anchor bolts.'
+        caption: 'Structural fabrication drawing detailing crane surge brackets, base plates, and anchor bolts. (Representative reference image.)'
       }
     ],
     features: [
+      'REPRESENTATIVE IMAGERY — gallery photographs are illustrative reference images; real project photography is pending from the client.',
       '32-meter clear span structural steel portal frame design without interior columns',
       'Dual 25-ton overhead traveling crane gantry engineering with full dynamic surge analysis',
       'Engineered machine foundations with vibration isolation joints for heavy marble gang-saws',
@@ -1198,6 +1205,7 @@ export const PROJECTS: Project[] = [
     ],
     featured: false,
     isConcept: false,
+    imageDisclaimer: 'Representative imagery — gallery photographs are illustrative reference images, not photographs of this project; real project photography is pending from the client.',
     relatedServices: ['architectural-design', 'structural-design', '2d-floor-planning'],
     relatedLocations: ['ajmer', 'jaipur'],
     relatedProjects: [],
@@ -1219,7 +1227,7 @@ export const PROJECTS: Project[] = [
     builtUpArea: '18,500 sq.ft.',
     categoryLabel: 'Institutional Campus',
     typology: 'Modern Educational & Academic Facility',
-    badges: ['Built Commission', 'Educational Landmark', 'Chartered Certified'],
+    badges: ['Built Commission', 'Educational Landmark', 'Chartered Certified', 'REPRESENTATIVE IMAGERY'],
     isFeatured: false,
     lead: 'Ar. Vipul Verma & Er. Sudhir Soni',
     leadership: {
@@ -1270,13 +1278,13 @@ export const PROJECTS: Project[] = [
     galleryImages: [
       {
         url: 'https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&w=1200&q=80',
-        caption: 'Tiered academic lecture theater designed with calculated acoustic reverberation times.',
+        caption: 'Tiered academic lecture theater designed with calculated acoustic reverberation times. (Representative imagery.)',
         alt: 'Tiered university auditorium',
         aspect: 'wide'
       },
       {
         url: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80',
-        caption: 'Wide open-air connecting corridor with Kota stone paving and natural greenery.',
+        caption: 'Wide open-air connecting corridor with Kota stone paving and natural greenery. (Representative imagery.)',
         alt: 'Open air corridor with Kota stone flooring',
         aspect: 'wide'
       }
@@ -1287,10 +1295,11 @@ export const PROJECTS: Project[] = [
         title: 'Institutional Typical Classroom Level Layout',
         type: 'floor-plan',
         imageUrl: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80',
-        caption: 'Plan detailing modular 60-student classrooms, teacher prep suites, and dual fire escape towers.'
+        caption: 'Plan detailing modular 60-student classrooms, teacher prep suites, and dual fire escape towers. (Representative reference image.)'
       }
     ],
     features: [
+      'REPRESENTATIVE IMAGERY — gallery photographs are illustrative reference images; real project photography is pending from the client.',
       'Earthquake-resistant Special Moment-Resisting Frame (SMRF) certified by Er. Sudhir Soni',
       'North-facing classroom orientation eliminating direct glare and minimizing air conditioning need',
       'Dual wide fire exit staircases with 120-minute fire separation doors',
@@ -1997,7 +2006,7 @@ export const PROJECTS: Project[] = [
     }
   },
   {
-    id: 'dp-res-017',
+    id: 'dp-res-020', // renamed 2026-10-05: was duplicate id (was 2nd dp-res-017)
     slug: 'op-soni-residence-taragarh-road',
     title: 'Mr. OP Soni Residence',
     category: 'residential',
@@ -2263,7 +2272,7 @@ export const PROJECTS: Project[] = [
     title: 'Ram Mandir, Apekshan City',
     category: 'institutional',
     status: 'completed',
-    hidden: false,
+    hidden: true, // retired 2026-10-05: duplicates real-asset entry dp-inst-apekshan-temple-chachiwas; hero/gallery were stock
     location: 'Apekshan City, Chachivas, Ajmer',
     area: '3,000 sq.ft.',
     services: [
@@ -2278,7 +2287,7 @@ export const PROJECTS: Project[] = [
       'https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1600100397608-f010f4d3d1e2?auto=format&fit=crop&w=1200&q=80'
     ],
-    featured: true,
+    featured: false, // retired 2026-10-05: hidden + unfeatured (duplicates real-asset Apekshan entry)
     isConcept: false,
     relatedServices: ['architectural-design', 'structural-design', '3d-elevation-design'],
     relatedLocations: ['ajmer'],
@@ -2313,12 +2322,12 @@ export const PROJECTS: Project[] = [
     },
   },
   {
-    id: 'dp-inst-madhubaneshwar-mandir',
+    id: 'dp-inst-madhubaneshwar-mandir-retired', // renamed 2026-10-05: was duplicate id (retired stock-hero entry)
     slug: 'madhubaneshwar-mahadev-mandir-ajmer',
     title: 'Madhubaneshwar Mahadev Mandir',
     category: 'institutional',
     status: 'in-design',
-    hidden: false,
+    hidden: true, // retired 2026-10-05: stock hero; kept real-asset duplicate below
     location: 'UIT Colony, Nakamadar, Ajmer',
     area: '4,000 sq.ft.',
     services: [
@@ -2337,7 +2346,7 @@ export const PROJECTS: Project[] = [
     isConcept: false,
     relatedServices: ['architectural-design', 'structural-design', '2d-floor-planning'],
     relatedLocations: ['ajmer'],
-    relatedProjects: ['ram-mandir-apekshan-city-ajmer'],
+    relatedProjects: ['apekshan-temple-chachiwas-ajmer'],
     projectType: 'real',
     projectCategory: 'institutional',
     clientType: 'Private Trust',
@@ -2643,8 +2652,9 @@ export function getAllProjects(): Project[] {
 
 export function getProjectBySlug(slug: string): Project | undefined {
   const normalized = slug.toLowerCase().trim();
+  // Hidden (retired) entries are not routable: detail pages redirect to /projects.
   return PROJECTS.find(
-    (p) => p.slug.toLowerCase() === normalized || p.id.toLowerCase() === normalized
+    (p) => !p.hidden && (p.slug.toLowerCase() === normalized || p.id.toLowerCase() === normalized)
   );
 }
 
@@ -2664,7 +2674,7 @@ export function getProjectsByType(type: 'all' | 'real' | 'concept'): Project[] {
 }
 
 export function getFeaturedProjects(): Project[] {
-  return PROJECTS.filter((p) => p.featured || p.isFeatured);
+  return PROJECTS.filter((p) => !p.hidden && (p.featured || p.isFeatured));
 }
 
 export function getRelatedProjects(currentProject: Project, limit = 2): Project[] {

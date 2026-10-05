@@ -29,7 +29,7 @@ const LOCATION_FAQS: Record<string, Array<{ q: string; a: string }>> = {
     },
     {
       q: 'Does Er. Sudhir Soni provide certified Structural Stability Certificates for ADA municipal approvals?',
-      a: 'Yes. As a certified Chartered Engineer (M.I.E., FIV) and structural consultant with over 20+ years of practice and 900+ projects, Er. Sudhir Soni provides official structural calculations, soil load tests, and stability vetting required for multi-story residential and commercial ADA sanction files.'
+      a: 'Yes. As a certified Chartered Engineer (M.I.E., FIV) and structural consultant with over 20+ years of practice and a wide portfolio of projects, Er. Sudhir Soni provides official structural calculations, soil load tests, and stability vetting required for multi-story residential and commercial ADA sanction files.'
     },
     {
       q: 'How does Design Plus address foundation engineering on rocky Aravalli terrain in Ajmer?',

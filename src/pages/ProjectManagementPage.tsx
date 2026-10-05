@@ -239,11 +239,6 @@ export function ProjectManagementPage({ onOpenConsultation }: ProjectManagementP
             <p className="text-[11px] text-stone-500 mt-0.5">Er. Sudhir Soni, FIV / CE</p>
           </div>
           <div>
-            <div className="font-editorial text-2xl sm:text-4xl text-stone-950 font-bold">900+</div>
-            <div className="text-[11px] sm:text-xs font-mono text-stone-600 uppercase tracking-wider mt-1">Delivered Builds</div>
-            <p className="text-[11px] text-stone-500 mt-0.5">Rajasthan wide execution</p>
-          </div>
-          <div>
             <div className="font-editorial text-2xl sm:text-4xl text-emerald-800 font-bold">0%</div>
             <div className="text-[11px] sm:text-xs font-mono text-stone-600 uppercase tracking-wider mt-1">Structural Failures</div>
             <p className="text-[11px] text-stone-500 mt-0.5">IS 456 &amp; IS 1893 certified</p>
@@ -513,7 +508,7 @@ export function ProjectManagementPage({ onOpenConsultation }: ProjectManagementP
               </li>
               <li>
                 <Link to="/projects/" className="text-stone-400 hover:text-[#C86635] underline decoration-stone-700 underline-offset-4 transition-colors">
-                  900+ project archive
+                  Project archive
                 </Link>
               </li>
           </ul>

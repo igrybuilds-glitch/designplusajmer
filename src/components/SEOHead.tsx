@@ -5,7 +5,7 @@ export const DEFAULT_SITE_ORIGIN = 'https://www.designplusajmer.co.in';
 
 /*
  * LIVE RATING VALUES (JustDial / Client Audits):
- * Sourced from verified studio client metrics (4.9 / 5 based on 48+ certified client reviews).
+ * Verified 2026-10-05 against the JustDial business listing (4.8, 43 ratings).
  * OWNER ACTION: To update live rating from JustDial, replace ratingValue and reviewCount/ratingCount below.
  */
 export const HOMEPAGE_ARCHITECT_SCHEMA = {
@@ -58,11 +58,13 @@ export const HOMEPAGE_ARCHITECT_SCHEMA = {
   ],
   aggregateRating: {
     '@type': 'AggregateRating',
-    ratingValue: '4.9',
+    // Verified 2026-10-05 against JustDial business listing (4.8, 43 ratings).
+    // Keep in sync with ClientReviewsSection + HomePage JSON-LD.
+    ratingValue: '4.8',
     bestRating: '5',
     worstRating: '1',
-    ratingCount: '48',
-    reviewCount: '48'
+    ratingCount: '43',
+    reviewCount: '43'
   },
   review: [
     {

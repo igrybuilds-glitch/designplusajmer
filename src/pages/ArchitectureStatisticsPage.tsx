@@ -63,7 +63,7 @@ const INDUSTRY_STATS: StatItem[] = [
 
 const STUDIO_STATS: StatItem[] = [
   {
-    stat: '900+ projects designed and engineered across Rajasthan — homes, commercial buildings, hotels, interiors and infrastructure.',
+    stat: 'Projects designed and engineered across Rajasthan — homes, commercial buildings, hotels, interiors and infrastructure.',
     source: 'Design Plus studio records',
     date: '2026'
   },

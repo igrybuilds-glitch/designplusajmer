@@ -90,7 +90,7 @@ export function FeaturedProjectMonograph() {
               to="/projects"
               className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-[0.2em] font-bold text-[#B86B38] hover:text-[#c47745] transition-colors shrink-0"
             >
-              <span>Full 900+ Archive</span>
+              <span>Full Archive</span>
               <ArrowUpRight className="w-4 h-4" aria-hidden="true" />
             </Link>
           </div>

@@ -90,6 +90,10 @@ export interface Project {
   featured?: boolean;
   isConcept?: boolean;
   hidden?: boolean;
+  // Honest-provenance flag: when set, gallery images are illustrative
+  // reference photos, not photographs of this project. Rendered as a
+  // visible disclaimer banner on the detail page and a chip on listing cards.
+  imageDisclaimer?: string;
   relatedServices?: string[];
   relatedLocations?: string[];
   relatedProjects?: string[];
