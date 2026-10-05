@@ -164,7 +164,7 @@ export function ProjectsPage({ initialCategory }: ProjectsPageProps) {
               Filter by Typology
             </span>
             <span className="text-xs text-stone-500 font-sans">
-              Showing {filteredProjects.length} of {allProjects.length} projects
+              Showing {filteredProjects.length} of {allProjects.length} selected works
             </span>
           </div>
 
