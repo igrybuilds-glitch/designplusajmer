@@ -17,7 +17,11 @@ interface DisciplineItem {
   image: string;
   tag: string;
   stats: { label: string; value: string };
-  pos: { top: string; left: string };
+  // Satellite card placement — side-anchored so cards NEVER overlap the
+  // central headline/drawer column or overflow the viewport edge.
+  // Fix 2026-10-05: earlier left:%-only positions collided with the centered
+  // headline and ran off the right edge (see hero overlap bug report).
+  pos: { top: string; side: 'left' | 'right'; offset: string };
 }
 
 const DISCIPLINES: DisciplineItem[] = [
@@ -32,7 +36,7 @@ const DISCIPLINES: DisciplineItem[] = [
     image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
     tag: 'SPATIAL VOLUMES',
     stats: { label: 'Principal', value: 'Ar. Vipul Verma (Belgium)' },
-    pos: { top: '14%', left: '8%' }
+    pos: { top: '10%', side: 'left', offset: '1.5%' }
   },
   {
     id: 'structural',
@@ -45,7 +49,7 @@ const DISCIPLINES: DisciplineItem[] = [
     image: 'https://images.unsplash.com/photo-1541888946425-d0fbb18615f8?auto=format&fit=crop&w=800&q=80',
     tag: 'LOAD PATHS',
     stats: { label: 'Principal', value: 'Er. Sudhir Soni (M.E. Structure)' },
-    pos: { top: '56%', left: '68%' }
+    pos: { top: '54%', side: 'right', offset: '1.5%' }
   },
   {
     id: 'infrastructure',
@@ -58,7 +62,7 @@ const DISCIPLINES: DisciplineItem[] = [
     image: 'https://images.unsplash.com/photo-1545558014-8692077e9b5c?auto=format&fit=crop&w=800&q=80',
     tag: 'CIVIL SCALE',
     stats: { label: 'Expertise', value: 'Bridges & Highway Engineering' },
-    pos: { top: '22%', left: '72%' }
+    pos: { top: '8%', side: 'right', offset: '1.5%' }
   },
   {
     id: 'interiors',
@@ -71,7 +75,7 @@ const DISCIPLINES: DisciplineItem[] = [
     image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80',
     tag: 'MILLWORK',
     stats: { label: 'Execution', value: 'Turnkey Millwork & Lighting' },
-    pos: { top: '70%', left: '12%' }
+    pos: { top: '66%', side: 'left', offset: '1.5%' }
   },
   {
     id: 'mep',
@@ -84,7 +88,7 @@ const DISCIPLINES: DisciplineItem[] = [
     image: 'https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=800&q=80',
     tag: 'BUILDING PHYSICS',
     stats: { label: 'Efficiency', value: 'Net-Zero Solar & MEP' },
-    pos: { top: '42%', left: '85%' }
+    pos: { top: '70%', side: 'right', offset: '1.5%' }
   },
   {
     id: 'survey',
@@ -97,7 +101,7 @@ const DISCIPLINES: DisciplineItem[] = [
     image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80',
     tag: 'SUB-STRATA',
     stats: { label: 'Apparatus', value: 'DGPS & SPT Borehole Unit' },
-    pos: { top: '38%', left: '4%' }
+    pos: { top: '41%', side: 'left', offset: '1.5%' }
   },
   {
     id: 'consultancy',
@@ -110,7 +114,7 @@ const DISCIPLINES: DisciplineItem[] = [
     image: 'https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80',
     tag: 'COMPLIANCE',
     stats: { label: 'Affiliation', value: 'Chartered Engineer & FIV' },
-    pos: { top: '36%', left: '78%' }
+    pos: { top: '31%', side: 'right', offset: '1.5%' }
   }
 ];
 
@@ -180,8 +184,8 @@ export function ManifestoSection() {
           <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 h-[1px] bg-white/10 pointer-events-none" aria-hidden="true" />
           <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 w-[1px] bg-white/10 pointer-events-none" aria-hidden="true" />
 
-          {/* Central Monumental Headline */}
-          <div className="manifesto-title-main relative z-20 text-center max-w-4xl px-4 pointer-events-auto">
+          {/* Central Monumental Headline — narrowed on xl so satellite cards flank it cleanly */}
+          <div className="manifesto-title-main relative z-20 text-center max-w-4xl xl:max-w-3xl px-4 pointer-events-auto">
             <div className="inline-flex items-center gap-2 text-[10px] sm:text-xs font-mono tracking-[0.3em] uppercase text-[#B86B38] mb-2 sm:mb-3">
               <Compass className="w-3.5 h-3.5" />
               <span>WHAT WE DO</span>
@@ -234,13 +238,17 @@ export function ManifestoSection() {
           {/* ===================================================================
               3. FLOATING DISCIPLINE SATELLITES
           =================================================================== */}
-          <div className="hidden lg:block absolute inset-0 pointer-events-none">
+          {/* Satellites only render where there is room to flank the centre column */}
+          <div className="hidden xl:block absolute inset-0 pointer-events-none">
             {DISCIPLINES.map((disc, idx) => {
               const isSelected = selectedDiscipline.id === disc.id;
+              const anchor = disc.pos.side === 'left'
+                ? { top: disc.pos.top, left: disc.pos.offset }
+                : { top: disc.pos.top, right: disc.pos.offset };
               return (
                 <div
                   key={disc.id}
-                  style={{ top: disc.pos.top, left: disc.pos.left }}
+                  style={anchor}
                   className={`disc-card-${idx} absolute pointer-events-auto transition-transform duration-300 z-20 ${
                     isSelected ? 'scale-105 z-30' : 'hover:scale-102'
                   }`}
@@ -250,7 +258,7 @@ export function ManifestoSection() {
                     role="button"
                     tabIndex={0}
                     onKeyDown={(e) => e.key === 'Enter' && handleSelectDiscipline(disc)}
-                    className={`p-3 w-56 xl:w-64 border transition-all cursor-pointer backdrop-blur-md text-left rounded-xl ${
+                    className={`p-3 w-52 2xl:w-60 border transition-all cursor-pointer backdrop-blur-md text-left rounded-xl ${
                       isSelected
                         ? 'bg-black/85 border-[#B86B38] shadow-xl ring-1 ring-[#B86B38]/50 text-white'
                         : 'bg-black/60 border-white/20 shadow-md hover:border-white/40 text-[#F4F0E8]/90'
@@ -283,7 +291,7 @@ export function ManifestoSection() {
           {/* ===================================================================
               4. ACTIVE DISCIPLINE DETAIL DRAWER / VIGNETTE INSPECTOR
           =================================================================== */}
-          <div className="relative z-20 mt-6 sm:mt-8 w-full max-w-4xl mx-auto bg-black/75 backdrop-blur-md border border-white/20 p-4 sm:p-6 shadow-2xl rounded-2xl text-[#F4F0E8]">
+          <div className="relative z-20 mt-6 sm:mt-8 w-full max-w-4xl xl:max-w-3xl mx-auto bg-black/75 backdrop-blur-md border border-white/20 p-4 sm:p-6 shadow-2xl rounded-2xl text-[#F4F0E8]">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
               
               <div className="md:col-span-4 relative overflow-hidden bg-black border border-white/20 aspect-[4/3] group rounded-xl">
