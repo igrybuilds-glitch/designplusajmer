@@ -50,6 +50,10 @@ export function Navbar({
     { label: 'Posters', path: '/posters' },
     { label: 'Contact', path: '/contact' }
   ];
+  // Desktop nav drops 'Contact' — the START A PROJECT CTA already opens the
+  // consultation flow, and the 8th link was sliding underneath the CTA button
+  // at lg–xl widths (text overlap bug reported 2026-10-05).
+  const desktopNavLinks = navLinks.filter((l) => l.label !== 'Contact');
 
   return (
     <header
@@ -105,7 +109,7 @@ export function Navbar({
 
           {/* Desktop Navigation Links - Premium Architectural Style */}
           <nav className="hidden lg:flex items-center space-x-8 xl:space-x-10 text-xs font-sans uppercase tracking-[0.25em]">
-            {navLinks.map((item) => {
+            {desktopNavLinks.map((item) => {
               const active = isActive(item.path);
               return (
                 <Link
