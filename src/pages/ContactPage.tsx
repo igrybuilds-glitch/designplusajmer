@@ -26,8 +26,12 @@ export function ContactPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!consentRequired) return;
-    
+    if (!consentRequired) {
+      setError('Please tick the required consent checkbox above so our studio can contact you about your enquiry.');
+      document.getElementById('dpdp-consent-required')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      return;
+    }
+
     setIsSubmitting(true);
     setError(null);
 
@@ -340,12 +344,12 @@ export function ContactPage() {
                   </p>
 
                   <div className="space-y-2 pt-1 border-t border-stone-200">
-                    <label className="flex items-start gap-2.5 cursor-pointer">
+                    <label className="flex items-start gap-2.5 cursor-pointer" id="dpdp-consent-required">
                       <input
                         type="checkbox"
                         required
                         checked={consentRequired}
-                        onChange={(e) => setConsentRequired(e.target.checked)}
+                        onChange={(e) => { setConsentRequired(e.target.checked); if (e.target.checked) setError(null); }}
                         className="mt-0.5 rounded-xs text-amber-800 focus:ring-amber-800"
                       />
                       <span className="text-stone-900 font-medium">
@@ -375,12 +379,17 @@ export function ContactPage() {
                   )}
                   <button
                     type="submit"
-                    disabled={!consentRequired || isSubmitting}
+                    disabled={isSubmitting}
                     className="w-full bg-stone-950 hover:bg-stone-800 disabled:opacity-50 text-[#FBFBF9] py-3.5 text-xs tracking-wider uppercase font-semibold transition-colors flex items-center justify-center gap-2 cursor-pointer"
                   >
                     <span>{isSubmitting ? 'Submitting...' : 'Submit Inquiry for Review'}</span>
                     {!isSubmitting && <ArrowUpRight className="w-4 h-4" />}
                   </button>
+                  {!consentRequired && !isSubmitting && (
+                    <p className="text-[11px] text-amber-800 text-center mt-2 font-medium">
+                      Tick the required consent checkbox above to enable submission.
+                    </p>
+                  )}
                 </div>
 
                 <p className="text-[11px] text-stone-500 text-center">
