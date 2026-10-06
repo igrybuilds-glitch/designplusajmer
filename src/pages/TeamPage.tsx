@@ -197,7 +197,7 @@ export function TeamPage({ onOpenConsultation }: TeamPageProps) {
                   <img
                     src={photo}
                     alt={member.name}
-                    className="w-full h-full object-cover object-top filter grayscale contrast-105 group-hover:scale-102 transition-transform duration-500"
+                    className="w-full h-full object-cover object-center filter grayscale contrast-105 group-hover:scale-102 transition-transform duration-500"
                   />
                   <div className="absolute top-3 left-3 bg-[#11110F] text-white px-2.5 py-1 text-[9.5px] font-mono tracking-widest uppercase">
                     SPECIALIST // 0{idx + 1}

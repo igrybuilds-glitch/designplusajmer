@@ -10,7 +10,8 @@ export function LeadershipTeamSection() {
     'Ar. Vipul Verma': '/images/team/vipul-verma.jpg',
     'Er. Ankit Soni': '/images/team/ankit-soni.jpg',
     'Er. Shikha Soni': '/images/team/shikha-soni.jpg',
-    'Er. Amit Soni': '/images/team/amit-soni.jpg'
+    'Er. Amit Soni': '/images/team/amit-soni.jpg',
+    'Kishan Verma': '/images/team/kishan-verma.jpg'
   };
 
   return (
@@ -74,7 +75,7 @@ export function LeadershipTeamSection() {
                     alt={partner.name}
                     loading="eager"
                     decoding="async"
-                    className="w-full h-full object-cover object-top filter grayscale contrast-105 group-hover:scale-103 transition-transform duration-700 ease-out"
+                    className="w-full h-full object-cover object-center filter grayscale contrast-105 group-hover:scale-103 transition-transform duration-700 ease-out"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" aria-hidden="true" />
 

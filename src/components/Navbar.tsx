@@ -50,10 +50,10 @@ export function Navbar({
     { label: 'Posters', path: '/posters' },
     { label: 'Contact', path: '/contact' }
   ];
-  // Desktop nav drops 'Contact' — the START A PROJECT CTA already opens the
-  // consultation flow, and the 8th link was sliding underneath the CTA button
-  // at lg–xl widths (text overlap bug reported 2026-10-05).
-  const desktopNavLinks = navLinks.filter((l) => l.label !== 'Contact');
+  // Desktop nav keeps all 8 links incl. Contact — spacing tightened at lg
+  // (space-x-5, tracking 0.18em) so nothing slides under the CTA button.
+  // (2026-10-06: restored Contact — removing it broke "Contact is not appearing".)
+  const desktopNavLinks = navLinks;
 
   return (
     <header
@@ -108,7 +108,7 @@ export function Navbar({
           </Link>
 
           {/* Desktop Navigation Links - Premium Architectural Style */}
-          <nav className="hidden lg:flex items-center space-x-8 xl:space-x-10 text-xs font-sans uppercase tracking-[0.25em]">
+          <nav className="hidden lg:flex items-center space-x-5 xl:space-x-8 text-xs font-sans uppercase tracking-[0.18em]">
             {desktopNavLinks.map((item) => {
               const active = isActive(item.path);
               return (
