@@ -67,12 +67,13 @@ export const HOMEPAGE_PREPARATION_ASSETS: AssetDescriptor[] = [
   { id: 'proj-lounge', url: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=85', phase: 2, category: 'project' },
   { id: 'proj-executive', url: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=85', phase: 2, category: 'project' },
 
-  // 5. Practice Leadership & Chartered Partners
-  { id: 'team-sudhir-soni', url: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=85', phase: 2, category: 'team' },
-  { id: 'team-vipul-verma', url: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=85', phase: 2, category: 'team' },
-  { id: 'team-ankit-soni', url: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=800&q=85', phase: 2, category: 'team' },
-  { id: 'team-shikha-soni', url: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=85', phase: 2, category: 'team' },
-  { id: 'team-amit-soni', url: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=85', phase: 2, category: 'team' },
+  // 5. Practice Leadership & Chartered Partners (real team photos, not stock)
+  { id: 'team-sudhir-soni', url: '/images/team/sudhir-soni.jpg', phase: 2, category: 'team' },
+  { id: 'team-vipul-verma', url: '/images/team/vipul-verma.jpg', phase: 2, category: 'team' },
+  { id: 'team-ankit-soni', url: '/images/team/ankit-soni.jpg', phase: 2, category: 'team' },
+  { id: 'team-shikha-soni', url: '/images/team/shikha-soni.jpg', phase: 2, category: 'team' },
+  { id: 'team-amit-soni', url: '/images/team/amit-soni.jpg', phase: 2, category: 'team' },
+  { id: 'team-kishan-verma', url: '/images/team/kishan-verma.jpg', phase: 2, category: 'team' },
 
   // 6. Heavy Engineering & Infrastructure Showcase
   { id: 'eng-highways', url: '/images/services/highway-engineering.webp', phase: 2, category: 'engineering' },
