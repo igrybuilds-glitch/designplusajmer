@@ -73,11 +73,8 @@ export function Navbar({
             className="group flex items-center gap-3 focus:outline-hidden"
             aria-label="Design Plus Home"
           >
-            {/* Animated Monogram */}
-            <svg width="40" height="40" viewBox="0 0 40 40" className="stroke-[#B86B38]" fill="none" strokeWidth="1.5">
-              <rect x="5" y="5" width="30" height="30" className="dp-monogram-stroke" />
-              <path d="M14 20 L26 20 M20 14 L20 26 M14 26 L26 14" className="dp-monogram-stroke" />
-            </svg>
+            {/* Logo */}
+            <img src="/logo.png" alt="Design Plus logo" width={44} height={44} className="w-11 h-11 object-contain shrink-0" />
 
             <div className="flex flex-col">
               <span className="font-editorial text-2xl sm:text-3xl tracking-[0.06em] text-[#1E1D1A] font-normal uppercase transition-colors relative overflow-hidden">
@@ -107,8 +104,8 @@ export function Navbar({
             `}</style>
           </Link>
 
-          {/* Desktop Navigation Links - Premium Architectural Style */}
-          <nav className="hidden lg:flex items-center space-x-5 xl:space-x-8 text-xs font-sans uppercase tracking-[0.18em]">
+          {/* Desktop Navigation Links - Premium Architectural Style (xl and up: room for all 8 links + CTA) */}
+          <nav className="hidden xl:flex items-center space-x-8 text-xs font-sans uppercase tracking-[0.18em]">
             {desktopNavLinks.map((item) => {
               const active = isActive(item.path);
               return (
@@ -128,7 +125,7 @@ export function Navbar({
           </nav>
 
           {/* Direct CTA & Contact Action */}
-          <div className="hidden lg:flex items-center space-x-3">
+          <div className="hidden xl:flex items-center space-x-3">
             {/* Client Portal / Saved Works */}
             <button
               onClick={onOpenClientPortal}
@@ -155,7 +152,7 @@ export function Navbar({
           </div>
 
           {/* Mobile Menu Toggle & Actions */}
-          <div className="flex items-center space-x-2 lg:hidden">
+          <div className="flex items-center space-x-2 xl:hidden">
             <button
               onClick={onOpenClientPortal}
               className="p-2 text-[#1E1D1A]/80 hover:text-[#1E1D1A] relative"
@@ -184,7 +181,7 @@ export function Navbar({
 
       {/* Mobile Drawer Menu - Premium Architectural Style */}
       {isOpen && (
-        <div data-lenis-prevent className="lg:hidden bg-[#F4F0E8] border-b border-stone-300 px-6 py-8 space-y-6 max-h-[85vh] overflow-y-auto">
+        <div data-lenis-prevent className="xl:hidden bg-[#F4F0E8] border-b border-stone-300 px-6 py-8 space-y-6 max-h-[85vh] overflow-y-auto">
           <nav className="space-y-4 text-sm tracking-[0.25em] uppercase font-medium">
             {navLinks.map((item) => {
               const active = isActive(item.path);

@@ -11,7 +11,7 @@ export const BLOG_CATEGORIES: BlogCategoryMeta[] = [
     introduction: 'The Architecture journal documents our studio’s ongoing inquiry into how built form negotiates harsh climatic realities, tectonic truth, and civic dignity. In an era dominated by superficial facade treatments, we examine how genuine architecture emerges from the mathematical laws of structure, natural illumination, and regional materiality.',
     editorialNote: 'Our architectural practice operates on the premise that architectural beauty is inseparable from structural integrity. Every column grid, cantilevered canopy, and solar louver is an honest expression of structural equilibrium.',
     relatedServices: ['architectural-design', 'structural-design', '3d-elevation-design'],
-    relatedProjects: ['ana-sagar-residence', 'pushkar-courtyard-haven', 'contemporary-rajasthan-villa'],
+    relatedProjects: ['ana-sagar-residence', 'pushkar-courtyard-haven'],
     relatedLocations: ['ajmer', 'jaipur', 'pushkar', 'udaipur']
   },
   {
@@ -24,7 +24,7 @@ export const BLOG_CATEGORIES: BlogCategoryMeta[] = [
     introduction: 'A home is an enduring sanctuary that must shelter family life across generations while effortlessly withstanding Rajasthan’s 45°C summer peaks. The Residential Design journal explores spatial zoning, privacy gradients, acoustic buffers, and passive cooling courtyards tailored to modern Indian family structures.',
     editorialNote: 'Multi-generational living requires nuanced spatial zoning—providing quiet seclusion for elders, fluid social gathering spaces for family rituals, and private retreat zones for young professionals.',
     relatedServices: ['residential-architecture', '2d-floor-planning', 'structural-design'],
-    relatedProjects: ['ana-sagar-residence', 'pushkar-courtyard-haven', 'modern-courtyard-residence'],
+    relatedProjects: ['ana-sagar-residence', 'pushkar-courtyard-haven'],
     relatedLocations: ['ajmer', 'pushkar', 'jaipur', 'udaipur']
   },
   {
@@ -37,7 +37,7 @@ export const BLOG_CATEGORIES: BlogCategoryMeta[] = [
     introduction: 'Commercial architecture must balance striking street identity with uncompromising functional efficiency. Our commercial journal dissects high-density circulation grids, column-free structural spans, energy-efficient glazing envelopes, fire safety provisions, and maximizing return on leasable square footage.',
     editorialNote: 'Exceptional commercial spaces succeed at the intersection of pedestrian psychology and structural economics. By optimizing column grids, we allow dynamic tenant reconfiguration without structural compromises.',
     relatedServices: ['commercial-architecture', 'structural-design', '3d-elevation-design'],
-    relatedProjects: ['panchsheel-commercial-pavilion', 'boutique-commercial-office'],
+    relatedProjects: ['panchsheel-commercial-pavilion'],
     relatedLocations: ['ajmer', 'jaipur']
   },
   {
@@ -50,7 +50,7 @@ export const BLOG_CATEGORIES: BlogCategoryMeta[] = [
     introduction: 'Interior architecture is the tactile continuation of the building envelope. Rather than superficial decoration, our interior design journal explores the deliberate calibration of light, acoustics, human ergonomics, and honest materials—from hand-dressed Makrana marble and Jodhpur sandstone to bespoke teak millwork.',
     editorialNote: 'We approach interior environments through the lens of stillness and longevity. By stripping away extraneous ornament, we reveal the tranquil power of proportional space and warm, layered architectural illumination.',
     relatedServices: ['interior-design', '2d-floor-planning', 'architectural-design'],
-    relatedProjects: ['vaishali-studio-interiors', 'contemporary-retail-interior'],
+    relatedProjects: ['vaishali-studio-interiors'],
     relatedLocations: ['ajmer', 'jaipur', 'udaipur']
   },
   {
@@ -63,7 +63,7 @@ export const BLOG_CATEGORIES: BlogCategoryMeta[] = [
     introduction: 'Every exceptional building begins with an uncompromising floor plan. The House Planning journal provides rigorous, practical guides on eliminating wasteful corridors, calculating daylight penetration depths, coordinating structural column grids with furniture flow, and harmonizing Vastu shastra with modern ergonomics.',
     editorialNote: 'A floor plan is not merely an arrangement of rooms; it is an ergonomic choreography of daily habits, natural wind vectors, and plumbing economies that dictate quality of life for decades.',
     relatedServices: ['2d-floor-planning', 'residential-architecture', 'structural-design'],
-    relatedProjects: ['ana-sagar-residence', 'pushkar-courtyard-haven', 'modern-courtyard-residence'],
+    relatedProjects: ['ana-sagar-residence', 'pushkar-courtyard-haven'],
     relatedLocations: ['ajmer', 'jaipur', 'pushkar']
   },
   {
