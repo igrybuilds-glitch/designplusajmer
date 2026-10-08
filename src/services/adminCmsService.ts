@@ -247,7 +247,7 @@ let localMediaCache: CMSMediaItem[] = [
   {
     id: "media-2",
     filename: "aravalli-granite-subsoil.jpg",
-    url: "https://images.unsplash.com/photo-1541888946425-d0fbb186c5f6?auto=format&fit=crop&w=1200&q=80",
+    url: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80",
     altText: "Soil bearing capacity testing in Ajmer subsoil strata",
     caption: "Foundation geotechnical exploration site survey",
     category: "Blog",

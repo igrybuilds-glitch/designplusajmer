@@ -246,7 +246,7 @@ export function AtlasScrollCanvas() {
             key={url}
             src={url}
             alt=""
-            loading="eager"
+            loading="lazy"
             decoding="async"
             fetchPriority={idx < 2 ? "high" : "auto"}
           />

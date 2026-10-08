@@ -187,7 +187,7 @@ export function ProductCategorySeoPage({ onOpenConsultation }: ProductCategorySe
                       loading="lazy"
                       className="w-full h-full object-cover img-editorial"
                       onError={(e) => {
-                        (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1541888946425-d0fbb186c5f6?auto=format&fit=crop&w=600&q=80';
+                        (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80';
                       }}
                     />
                     <div className="absolute top-3 left-3 bg-[#141414]/80 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-mono uppercase tracking-wider text-white">

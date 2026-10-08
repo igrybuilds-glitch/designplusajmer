@@ -1070,7 +1070,7 @@ export const PROJECTS: Project[] = [
     images: [
       '/images/projects/industrial-spans-kishangarh.jpg',
       'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1541888946425-d0fbb1861564?auto=format&fit=crop&w=1200&q=80'
+      'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80'
     ],
     featured: false,
     isConcept: false,
@@ -1141,7 +1141,7 @@ export const PROJECTS: Project[] = [
     },
     gallery: [
       'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1541888946425-d0fbb1861564?auto=format&fit=crop&w=1200&q=80'
+      'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80'
     ],
     galleryImages: [
       {
@@ -1151,7 +1151,7 @@ export const PROJECTS: Project[] = [
         aspect: 'wide'
       },
       {
-        url: 'https://images.unsplash.com/photo-1541888946425-d0fbb1861564?auto=format&fit=crop&w=1200&q=80',
+        url: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80',
         caption: 'Heavy machinery foundation reinforcement grid before high-grade concrete casting. (Representative imagery.)',
         alt: 'Machinery foundation rebar layout',
         aspect: 'wide'
@@ -1162,7 +1162,7 @@ export const PROJECTS: Project[] = [
         id: 'dp-str-drw-01',
         title: '32m Portal Frame Elevation & Crane Bracket Detail',
         type: 'structural-detail',
-        imageUrl: 'https://images.unsplash.com/photo-1541888946425-d0fbb1861564?auto=format&fit=crop&w=1200&q=80',
+        imageUrl: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80',
         caption: 'Structural fabrication drawing detailing crane surge brackets, base plates, and anchor bolts. (Representative reference image.)'
       }
     ],
@@ -1598,7 +1598,7 @@ export const PROJECTS: Project[] = [
     designApproach: 'Symmetrical temple planning around a central sanctum; white marble-finish facades with gold accents; deep jali screens for filtered daylight and ventilation in Rajasthan heat.',
     images: [
       'https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1600100397608-f010f4d3d1e2?auto=format&fit=crop&w=1200&q=80'
+      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80'
     ],
     featured: false, // retired 2026-10-05: hidden + unfeatured (duplicates real-asset Apekshan entry)
     isConcept: false,
@@ -1622,7 +1622,7 @@ export const PROJECTS: Project[] = [
     heroImage: 'https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1200&q=80',
     gallery: [
       'https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1600100397608-f010f4d3d1e2?auto=format&fit=crop&w=1200&q=80'
+      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80'
     ],
     features: ['Traditional shikhara', 'Jali screen facades', 'Sanctum with natural light', 'Low-maintenance finishes'],
     locationDetails: {

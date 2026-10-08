@@ -47,7 +47,7 @@ export const HOMEPAGE_PREPARATION_ASSETS: AssetDescriptor[] = [
 
   // 3. Manifesto Disciplines Matrix
   { id: 'manifesto-arch', url: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80', phase: 2, category: 'manifesto' },
-  { id: 'manifesto-struct', url: 'https://images.unsplash.com/photo-1541888946425-d0fbb18615f8?auto=format&fit=crop&w=800&q=80', phase: 2, category: 'manifesto' },
+  { id: 'manifesto-struct', url: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80', phase: 2, category: 'manifesto' },
   { id: 'manifesto-infra', url: 'https://images.unsplash.com/photo-1545558014-8692077e9b5c?auto=format&fit=crop&w=800&q=80', phase: 2, category: 'manifesto' },
   { id: 'manifesto-interior', url: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80', phase: 2, category: 'manifesto' },
   { id: 'manifesto-plan', url: '/images/services/township-planning.webp', phase: 2, category: 'manifesto' },
@@ -84,7 +84,7 @@ export const HOMEPAGE_PREPARATION_ASSETS: AssetDescriptor[] = [
   { id: 'eng-township', url: '/images/services/township-planning.webp', phase: 2, category: 'engineering' },
 
   // 7. Research Monographs & Journal Previews
-  { id: 'journal-01', url: 'https://images.unsplash.com/photo-1541888946425-d0fbb186c5f6?auto=format&fit=crop&w=1200&q=80', phase: 2, category: 'journal' },
+  { id: 'journal-01', url: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80', phase: 2, category: 'journal' },
   { id: 'journal-02', url: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80', phase: 2, category: 'journal' },
   { id: 'journal-03', url: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80', phase: 2, category: 'journal' }
 ];

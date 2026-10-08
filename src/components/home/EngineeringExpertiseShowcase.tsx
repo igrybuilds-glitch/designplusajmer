@@ -287,10 +287,10 @@ export function EngineeringExpertiseShowcase() {
               <img
                 src={activeDiscipline.imageUrl}
                 alt={activeDiscipline.title}
-                loading="eager"
+                loading="lazy"
                 className="w-full h-full object-cover filter grayscale-[10%]"
                 onError={(e) => {
-                  (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1541888946425-d0fbb186c5f6?auto=format&fit=crop&w=1200&q=80';
+                  (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80';
                 }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />

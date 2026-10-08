@@ -41,7 +41,7 @@ export const BLOG_ARTICLES: BlogArticleRecord[] = [
       'At Design Plus, every spatial decision is vetted under Chartered Structural Engineering principles from the initial concept sketch. When our architectural team proposes an expansive glass opening or an inviting 4.5-meter cantilevered veranda overlooking Ana Sagar Lake, Er. Sudhir Soni and our structural engineers simultaneously calculate moment distributions, deflection limits, and seismic drift.',
       'The result is not only absolute structural longevity, but also dramatic construction economy. By calculating exact steel reinforcement distributions according to IS 456:2000 and IS 13920:2016, rather than guessing with oversized safety buffers, we eliminate redundant steel tonnage while guaranteeing seismic and wind resilience.'
     ],
-    featuredImage: 'https://images.unsplash.com/photo-1541888946425-d0fbb186c5f6?auto=format&fit=crop&w=1200&q=80',
+    featuredImage: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80',
     author: 'Er. Sudhir Soni, Chartered Engineer',
     publishedAt: '2024-10-18',
     updatedAt: '2024-11-05',
@@ -58,7 +58,7 @@ export const BLOG_ARTICLES: BlogArticleRecord[] = [
     relatedLocations: ['ajmer', 'jaipur'],
     relatedArticles: ['architectural-design-process-in-rajasthan', 'navigating-ada-building-byelaws-ajmer'],
     date: 'October 2024',
-    image: 'https://images.unsplash.com/photo-1541888946425-d0fbb186c5f6?auto=format&fit=crop&w=1200&q=80'
+    image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80'
   },
 
   // 1. Architecture - Article 2

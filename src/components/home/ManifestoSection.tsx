@@ -46,7 +46,7 @@ const DISCIPLINES: DisciplineItem[] = [
     description: 'Post-tensioned RCC slabs, ductile earthquake-resistant frames, seismic shear cores, and column-free cantilevered spaces calculated from fundamental mechanics.',
     standards: 'IS 456 · IS 1893:2016 · IS 13920',
     coordinates: 'SEISMIC ZONE II/III · γf = 1.50',
-    image: 'https://images.unsplash.com/photo-1541888946425-d0fbb18615f8?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80',
     tag: 'LOAD PATHS',
     stats: { label: 'Principal', value: 'Er. Sudhir Soni (M.E. Structure)' },
     pos: { top: '54%', side: 'right', offset: '1.5%' }
@@ -298,7 +298,7 @@ export function ManifestoSection() {
                 <img
                   src={selectedDiscipline.image}
                   alt={`${selectedDiscipline.name} Architectural Monograph`}
-                  loading="eager"
+                  loading="lazy"
                   decoding="async"
                   className="w-full h-full object-cover object-center filter grayscale-[10%] group-hover:scale-103 transition-transform duration-500"
                 />

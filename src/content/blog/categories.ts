@@ -22,7 +22,7 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
     description: 'Technical guidance from Er. Sudhir Soni (M.E. Structure, FIV, Chartered Engineer) on IS 456 concrete design, earthquake resilience, soil mechanics, and structural safety.',
     metaTitle: 'Structural Engineering Guides & IS Code Insights | Design Plus',
     metaDescription: 'In-depth structural engineering insights on RCC frames, seismic safety, foundation design, and deflection control under Indian Standards (IS 456, IS 1893).',
-    featuredImage: 'https://images.unsplash.com/photo-1541888946425-d0fbb18615f8?auto=format&fit=crop&w=1200&q=80',
+    featuredImage: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80',
     statutoryFocus: 'IS 456:2000 · IS 1893:2016 · IS 13920:2016 · Chartered Engineer'
   },
   {

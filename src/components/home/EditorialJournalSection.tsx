@@ -54,7 +54,7 @@ export function EditorialJournalSection() {
             >
               <div className="relative aspect-[16/10] w-full overflow-hidden bg-black">
                 <img
-                  src={article.featuredImage || article.image || 'https://images.unsplash.com/photo-1541888946425-d0fbb186c5f6?auto=format&fit=crop&w=800&q=80'}
+                  src={article.featuredImage || article.image || 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80'}
                   alt={article.title}
                   loading="lazy"
                   className="w-full h-full object-cover filter grayscale-[15%] group-hover:scale-105 transition-transform duration-700"

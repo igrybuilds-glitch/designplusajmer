@@ -168,7 +168,7 @@ export function ProductsPage({}: ProductsPageProps) {
                         loading="lazy"
                         className="w-full h-full object-cover img-editorial"
                         onError={(e) => {
-                          (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1541888946425-d0fbb186c5f6?auto=format&fit=crop&w=600&q=80';
+                          (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80';
                         }}
                       />
                       <Link

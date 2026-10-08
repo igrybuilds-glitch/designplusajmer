@@ -73,7 +73,7 @@ export function LeadershipTeamSection() {
                   <img
                     src={photo}
                     alt={partner.name}
-                    loading="eager"
+                    loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover object-center contrast-105 group-hover:scale-103 transition-transform duration-700 ease-out"
                   />

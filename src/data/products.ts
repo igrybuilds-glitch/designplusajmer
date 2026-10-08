@@ -46,7 +46,7 @@ export const PRODUCTS: ProductItem[] = [
     name: 'Fe500D High-Ductility TMT Rebar Framework',
     category: 'Structural Steel',
     price: 'Price on Request',
-    imageUrl: 'https://images.unsplash.com/photo-1541888946425-d0fbb18615f8?auto=format&fit=crop&w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80',
     description: 'Corrosion-resistant seismic grade Fe500D thermo-mechanically treated rebar specified for moment-resisting concrete frame structures under IS 13920.',
     tags: ['Steel', 'RCC', 'Structural']
   },

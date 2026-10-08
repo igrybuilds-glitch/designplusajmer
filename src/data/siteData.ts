@@ -326,7 +326,7 @@ export const TYPOLOGIES = [
     title: 'Chartered Structural Systems',
     subtitle: 'Heavy RCC Frames, Long-Span Portals & Retrofitting',
     description: 'Computer-modeled structural engineering, deep foundations, seismic reinforcement, and industrial portal framing certified by Chartered Engineers.',
-    image: 'https://images.unsplash.com/photo-1541888946425-d0fbb186c5f6?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80',
     link: '/projects/structural'
   }
 ];

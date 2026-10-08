@@ -153,7 +153,7 @@ export function FeaturedProjectMonograph() {
                 <img
                   src={heroProject.heroImage || heroProject.images?.[0] || 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=85'}
                   alt={heroProject.title}
-                  loading="eager"
+                  loading="lazy"
                   decoding="async"
                   className={`w-full h-full object-cover object-center transition-all duration-700 ${
                     blueprintMode 

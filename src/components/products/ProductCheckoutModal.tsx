@@ -60,7 +60,7 @@ export function ProductCheckoutModal({ isOpen, onClose, product }: ProductChecko
               alt={product.name}
               className="w-full h-full object-cover"
               onError={(e) => {
-                (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1541888946425-d0fbb186c5f6?auto=format&fit=crop&w=300&q=80';
+                (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=300&q=80';
               }}
             />
           </div>

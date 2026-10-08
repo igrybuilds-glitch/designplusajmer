@@ -281,7 +281,7 @@ export function StructuralDrawingAjmerPage({ onOpenConsultation }: StructuralDra
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20 sm:mb-24">
         <div className="relative aspect-16/9 md:aspect-21/9 bg-stone-200 overflow-hidden border border-stone-200 shadow-sm">
           <img
-            src="https://images.unsplash.com/photo-1541888946425-d0fbb18615f8?auto=format&fit=crop&w=1800&q=85"
+            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1800&q=85"
             alt="Chartered structural engineer reviewing concrete reinforcement and RCC structural drawings in Ajmer"
             width={1800}
             height={770}

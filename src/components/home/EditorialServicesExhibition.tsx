@@ -36,7 +36,7 @@ const DISCIPLINES: Discipline[] = [
     title: 'Structural Engineering',
     category: 'RCC & Steel Calculations',
     description: 'Rigorous finite element analysis (FEA), seismic-resistant RCC frames, long-span steel trusses, and foundation engineering certified by Chartered Structural Engineers.',
-    imageSrc: 'https://images.unsplash.com/photo-1541888946425-d0fbb186c5f6?auto=format&fit=crop&w=1200&q=80',
+    imageSrc: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80',
     imageAlt: 'Structural engineering blueprints and construction framework',
     standards: ['IS 456 / IS 1893 Seismic Compliance', 'Staad Pro & ETABS Simulation', 'Detailed Bar Bending Schedule (BBS)'],
     route: '/services/structural-engineering'

@@ -228,7 +228,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     readTime: '11 min read',
     wordCount: 2250,
     featuredImage: {
-      src: 'https://images.unsplash.com/photo-1541888946425-d0fbb18615f8?auto=format&fit=crop&w=1600&q=85',
+      src: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=85',
       alt: 'Reinforced concrete framing and brick masonry construction site in Rajasthan',
       caption: 'Grey structure RCC framing accounts for roughly 45–50% of the baseline civil construction expenditure.',
       credit: 'Design Plus Construction Supervision Archive'
@@ -1058,7 +1058,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     readTime: '9 min read',
     wordCount: 1800,
     featuredImage: {
-      src: 'https://images.unsplash.com/photo-1541888946425-d0fbb18615f8?auto=format&fit=crop&w=1600&q=85',
+      src: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=85',
       alt: 'Excavation of foundation trenches exposing bedrock strata in Rajasthan terrain',
       caption: 'Safe Bearing Capacity (SBC) determines footing dimensions and prevents differential settlement.',
       credit: 'Design Plus Geotechnical Archive'
