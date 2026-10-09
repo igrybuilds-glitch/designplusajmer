@@ -1,1 +1,11 @@
-{"background_color":"#1A1917","description":"Architecture, structural engineering, interiors and turnkey project management in Ajmer, Rajasthan.","display":"standalone","icons":[{"purpose":"any","sizes":"180x180","src":"/apple-touch-icon.png","type":"image/png"},{"purpose":"any","sizes":"192x192","src":"/android-chrome-192x192.png","type":"image/png"},{"purpose":"any","sizes":"512x512","src":"/android-chrome-512x512.png","type":"image/png"},{"purpose":"any","sizes":"any","src":"/favicon.svg","type":"image/svg+xml"}],"name":"Design Plus — Architects & Structural Engineers in Ajmer","scope":"/","short_name":"Design Plus","start_url":"/","theme_color":"#1A1917"}
+{
+  "name": "Design Plus Ajmer",
+  "short_name": "Design Plus",
+  "icons": [
+    { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
