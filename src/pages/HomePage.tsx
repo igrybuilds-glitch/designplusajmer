@@ -12,6 +12,7 @@ import { EngineeringExpertiseShowcase } from '../components/home/EngineeringExpe
 import { RegionalPresenceSection } from '../components/home/RegionalPresenceSection';
 import { EditorialJournalSection } from '../components/home/EditorialJournalSection';
 import { ClientReviewsSection } from '../components/home/ClientReviewsSection';
+import { InstagramReel } from '../components/InstagramReel';
 import { FinalConsultationCTA } from '../components/home/FinalConsultationCTA';
 import { prepareFirstPaint, prepareHomepageAssets } from '../utils/homepageAssetPreloader';
 import { HOMEPAGE_PREPARATION_ASSETS } from '../utils/homepageAssetManifest';
@@ -198,6 +199,9 @@ export function HomePage({ onOpenConsultation }: HomePageProps) {
 
         {/* 11. REVIEWS SECTION */}
         <ClientReviewsSection />
+
+        {/* 11b. INSTAGRAM REEL */}
+        <InstagramReel reelId="DeP-WaAzaWX" />
 
         {/* 12. CONTACT & COMMISSION INTAKE: DIRECT TELEPHONE, WHATSAPP, EMAIL & BRIEF */}
         <FinalConsultationCTA onOpenConsultation={onOpenConsultation} />
