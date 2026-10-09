@@ -1269,6 +1269,124 @@ Design and approvals typically take two to four months for a straightforward sho
 
 *Planning a shop, office or commercial complex in Ajmer, Pushkar or Kishangarh? [Book a free site consultation](/contact) \u2014 bring your plot papers, and we\u2019ll walk you through feasibility, costs and design options before you commit a single rupee.*`,
   },
+  {
+    slug: '30x50-house-plan-with-vastu',
+    seoTitle: '30×50 House Plan with Vastu (2026): Layout Guide',
+    title: "30×50 House Plan with Vastu: The Complete 2026 Layout Guide",
+    description: "30×50 house plan with Vastu: room placement rules, facing-wise entrance guide, real layouts, costs and timelines for a 1500 sq ft plot.",
+    date: '2026-10-09',
+    category: 'Guides',
+    image: '/images/blog/vaastu-compliant-home-plans-ajmer.jpg',
+    content: `A 30×50 plot is the most common building plot in India's tier-2 cities — 1,500 square feet of land, wide enough for a proper home and narrow enough to keep the budget sane. It is also the plot size where Vastu compliance gets most hotly debated: everyone from the mason to the neighbour has an opinion on where the kitchen should go. This guide cuts through that noise with the actual placement rules, facing-wise entrance guidance, realistic room sizes, and what a 30×50 build costs in 2026 — so you can brief your architect (or evaluate a ready-made plan) with confidence.
+
+**Short answer:** A Vastu-compliant 30×50 house plan puts the kitchen in the south-east, the master bedroom in the south-west, the pooja room in the north-east, toilets in the north-west or south-east (never the north-east or the centre of the house), and the staircase in the south, west or south-west. The main entrance goes in an auspicious pada of whichever wall faces the road — north, north-east and east are the universally preferred zones. After setbacks, a 30×50 plot yields roughly 1,100–1,230 sq ft of built-up area per floor, so a ground-plus-one home gives you about 2,460 sq ft: typically 4–5 bedrooms across two floors. At 2026 construction rates of roughly ₹1,500–1,800 per sq ft, budget around ₹37–44 lakh for a finished G+1 at mid-range finishes — costs vary with soil, location and specification.
+
+## What a 30×50 plot actually gives you
+
+Thirty by fifty feet is 1,500 square feet of land (about 167 square yards). But you don't get to build on all of it — front, rear and side setbacks required by the local authority eat into the footprint. Two published references bracket the reality well: a CAD plan listed on Cadbull shows 1,106 sq ft of built-up area per floor on a 30×50 plot, while Brick&Bolt's planning guide puts the usable footprint at roughly 1,230 sq ft per floor after setbacks. So plan on **about 1,100–1,230 sq ft per floor** — the exact number depends on your city's by-laws and how much of the plot the front setback consumes.
+
+That footprint is generous enough for real flexibility:
+
+| Configuration | Total built-up (approx) | What fits | Timeline |
+|---|---|---|---|
+| G+0 (single floor) | ~1,230 sq ft | 3–4 BHK on one level; no staircase cost | Shorter — single level |
+| G+1 (two floors) | ~2,460 sq ft | Ground: living + kitchen + 1 bedroom; first: 3 bedrooms + terrace — the most popular option | 7–10 months (Brick&Bolt) |
+| G+2 (three floors) | ~3,690 sq ft | One floor per family unit, or owner + two rental floors | Longer — three levels |
+
+For a single nuclear family of three to five, the G+1 is the sweet spot: daily living downstairs, private bedrooms upstairs. Joint families often take one floor per unit; owner-investors live on the ground floor and rent the upper floors. If you're still at the plot-buying stage, our [plot due-diligence checklist](/blog/buying-plot-ajmer-due-diligence-checklist) covers what to verify before you pay an advance.
+
+## The Vastu placement map for a 30×50 home
+
+Vastu Shastra assigns every room a preferred direction. The core rules are consistent across classical texts and modern consultants alike:
+
+| Room | Ideal direction | The rule that matters |
+|---|---|---|
+| Main entrance | North, north-east, or east | The largest, best-lit door in the house; opens inward without obstruction |
+| Living / drawing room | North, north-east, or east | Heavy furniture toward the south and west walls |
+| Kitchen | South-east (Agni corner) | Cook faces east; keep the fire zone away from water sources |
+| Master bedroom | South-west | Bed head toward the south or west; no mirror facing the bed |
+| Children's bedroom / study | West, north-west, or north-east | Study desk facing east or north |
+| Pooja room | North-east | Never under a staircase, never sharing a wall with a toilet |
+| Toilets / baths | North-west or south-east | Never in the north-east, never in the centre of the house |
+| Staircase | South, south-west, or west | Odd number of steps; clockwise ascent is preferred |
+| Balcony / open court | North or east | Lets in morning light; keep the north-east light and open |
+
+Two principles sit underneath the whole table: **keep the north and east light, open and low; keep the south and west heavy and grounded.** The geometric centre of the house (the Brahmasthan) stays open and uncluttered — no toilet, no staircase, no heavy pillar there. And the plot itself should be square or rectangular; a clean 30×50 rectangle is already a Vastu-friendly shape, which is one reason this plot size is so popular. Our [Vastu-compliant home plans guide](/blog/vaastu-compliant-home-plans-ajmer) goes deeper into the principles behind these placements.
+
+## Entrance and facing: east, west, north, south
+
+The entrance question is really two questions: which wall faces the road, and where on that wall the door goes. Each wall is traditionally divided into nine segments (padas), and only some are considered auspicious — so "east-facing is good" is only half the story; the door's exact position on the wall is the other half.
+
+- **East-facing 30×50:** the most straightforward case. Consultants place the main door in the north-east portion of the east wall — the fifth pada is the commonly cited sweet spot. Morning sun floods the entrance and living areas, and ventilation comes free.
+- **North-facing 30×50:** equally favourable. The entrance sits in the north-east zone of the north wall, and the pooja room and living areas naturally fall into the auspicious north-east quadrant.
+- **West-facing 30×50:** very common in plotted developments, and entirely workable. A detailed west-facing 30×50 plan walkthrough on YouTube (a 2BHK corner-plot design) shows the approach: entrance on the west in the favourable pada, car parking of 12×18 ft along the front, the pooja room still anchored in the north-east, and the kitchen held to the south-east despite the road being on the west. The lesson: facing changes the entrance and parking — not the room-direction map.
+- **South-facing 30×50:** the facing buyers worry about most. Consultants handle it with pada placement on the south wall plus compensating weight in the south-west (master bedroom, staircase, overhead tank). Don't buy the fear discount or pay the fear premium: get the pada chart for your specific plot from your architect and check it against the plan, don't go by facing alone.
+
+One practical note: whatever the facing, **the main door should be the largest and most prominent door in the house**, well-lit and opening inward without obstruction. That's both Vastu and plain common sense.
+
+## Real room sizes that work on 30×50
+
+Abstract rules don't pour concrete. Here are dimensions from actually published 30×50 plans, so you can sanity-check any drawing you're shown:
+
+- **Car parking:** 12×18 ft fits a car plus two-wheelers comfortably (YouTube west-facing 30×50 walkthrough). A 12×6 ft portico is the tighter alternative (Cadbull plan).
+- **Living / family hall:** 12×21 ft in the Cadbull ground-floor plan; 16'9"×11' in the YouTube walkthrough's family hall. Either way, the hall runs along the length of the plot.
+- **Kitchen:** 10×8 ft (Cadbull) to 11×8 ft (YouTube walkthrough) — both in the south-east.
+- **Master bedroom:** 10×10 ft is the compact standard on this plot width; 12×14 ft if you steal space from the hall. Always with an attached bath (5×6 to 7×4 ft is the workable toilet range).
+- **Second bedroom:** 8×16 ft or 10×12 ft — the 30 ft width forces one axis to stay narrow.
+- **Pooja:** a 10×4 ft niche in the north-east works; it doesn't need a full room.
+- **Dining:** often merged with the hall; a dedicated 10×8 ft dining sits next to the kitchen in larger G+1 layouts.
+
+Notice the pattern: on a 30×50, rooms run **long along the 50 ft axis and narrow along the 30 ft axis**. Any plan that puts a 14-ft-wide room across the 30-ft width is eating circulation space you'll miss later.
+
+## Five Vastu mistakes that ruin 30×50 plans
+
+1. **Toilet in the north-east.** The single most common defect in ready-made plans, and the hardest to fix after construction. Toilets belong in the north-west or south-east — never the north-east, never the centre.
+2. **Kitchen drifting to the south-west.** It happens when the designer prioritises the drawing room's road view over the Agni corner. The south-west is the master bedroom's zone; putting fire there is the classic Vastu clash.
+3. **Staircase in the north-east.** Stairs add weight and block light exactly where Vastu wants openness. Keep them south, south-west or west.
+4. **Pooja under the stairs or beside the toilet.** Both placements show up in cramped plans trying to "fit everything in". A small, correctly placed pooja niche beats a large, wrongly placed pooja room.
+5. **Ignoring the setbacks in the Vastu math.** The directional zones are measured on the **built footprint**, not the plot boundary. A plan that's Vastu-perfect on paper but drawn without setbacks will shift every room when the approval drawing is made.
+
+## What it costs and how long it takes
+
+Construction cost on a 30×50 in 2026 breaks into two honest numbers:
+
+- **Finished build at standard specification:** roughly **₹1,500–1,800 per sq ft** (a 2025–26 estimate published for a 1,500 sq ft duplex build). On a ~2,460 sq ft G+1, that works out to roughly **₹37–44 lakh** at mid-range finishes.
+- **Structure-only reference:** a published 30×50 3BHK plan estimates **₹35–40 lakh for the structure alone**, with finishing on top as per your choice — a useful reminder that tiles, woodwork and fixtures are where budgets actually move.
+
+So the working budget for a finished G+1 on a 30×50 plot in a tier-2 city: roughly **₹37–44 lakh at mid-range finishes, moving higher with premium specifications**. Always insist on an itemised BOQ before work starts — costs vary with soil, plot location and specification, and any fixed number quoted without a BOQ is a guess. Our [Ajmer construction-cost guide](/blog/cost-of-building-a-house-in-ajmer-2026) breaks down where each rupee goes.
+
+Timeline: Brick&Bolt's planning data puts a G+1 on this plot at **7–10 months** of construction, plus one to three months for drawings and building-plan approval. The approval step is the silent schedule-killer — a studio that files naksha approvals routinely will save you months over one that doesn't.
+
+## Ready-made plan vs an architect's custom plan
+
+Thousands of 30×50 plans float around YouTube and plan-selling websites, most of them drawn for a generic facing. They work as **reference and inspiration**, not as construction documents — because your plot's facing, road width, setback rules, soil, and family needs are specific. A custom plan from a local architect costs a fraction of the construction budget (our [architect-fees guide](/blog/architect-fees-ajmer-per-sq-ft) has 2026 per-sq-ft rates) and buys you three things a download can't: a structural design matched to your soil, approval drawings your municipality will actually pass, and a Vastu layout verified pada-by-pada for your exact facing. On a ₹40-lakh-plus build, that's the cheapest insurance you'll ever buy.
+
+---
+
+## Frequently asked questions
+
+**What is the best facing for a 30×50 house plan with Vastu?**
+East and north are traditionally preferred because the entrance, living areas and pooja room fall naturally into the auspicious north-east zone. But west and south-facing 30×50 plots build perfectly Vastu-compliant homes — the room-direction map doesn't change, only the entrance pada and parking layout do.
+
+**Can a south-facing 30×50 plot be Vastu compliant?**
+Yes. The entrance is placed in the auspicious pada of the south wall, the master bedroom and staircase anchor the south-west, and the kitchen stays in the south-east. Have your architect verify the pada positions on your specific plot rather than judging by facing alone.
+
+**Where should the kitchen be in a 30×50 house plan?**
+In the south-east corner — the Agni (fire) zone — with the cook facing east while working. If the south-east is genuinely unavailable, the north-west is the accepted secondary option. Never place the kitchen in the south-west or north-east.
+
+**How many bedrooms fit comfortably on a 30×50 plot?**
+Three to four bedrooms per floor is comfortable at roughly 1,100–1,230 sq ft of built-up area per level. A G+1 therefore delivers four to five bedrooms across two floors; a third floor takes it to six-plus for joint families or rental income.
+
+**How much does it cost to build a 30×50 house in 2026?**
+At roughly ₹1,500–1,800 per sq ft, a finished G+1 of about 2,460 sq ft costs around ₹37–44 lakh at mid-range finishes, moving higher with premium specifications. Always get an itemised BOQ — costs vary with soil, location and specification.
+
+**Do I need an architect, or can I use a ready-made 30×50 plan from the internet?**
+Use ready-made plans for ideas, not for construction. Your plot's facing, setbacks, soil and municipal by-laws are specific — only a custom drawing gives you a structurally sound, approval-ready, pada-verified plan. The design fee is a small fraction of a ₹40-lakh-plus build.
+
+---
+
+*Building on a 30×50 plot in Ajmer, Pushkar or Kishangarh? [Book a free site consultation](/contact) — bring your plot papers and facing details, and we'll map the Vastu layout, structure and budget for your exact plot before you commit a single rupee.*`,
+  },
 ];
 
 export function getBlogHubPost(slug: string): BlogHubPost | undefined {
