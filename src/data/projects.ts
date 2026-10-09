@@ -1998,6 +1998,15 @@ export const PROJECTS: Project[] = [
       '/images/projects/parvati-river-submersible-bridge.jpg'
     ],
     features: ['Plan & section drawings', 'PWD Dholpur commission', 'Drawing stage'],
+    drawingsAndPlans: [
+      {
+        id: 'dp-struct-parvati-bridge-sakswara-drw-01',
+        title: 'Plan and Section of Bridge Portion',
+        type: 'section',
+        imageUrl: '/images/drawings/submersible-bridge-parbati-plan-section.webp',
+        caption: 'Plan and section of the bridge portion — half top plan, half bottom plan and layout plan. 2D working drawing shared by the client.'
+      }
+    ],
     locationDetails: {
       city: 'Dholpur',
       state: 'Rajasthan',
@@ -2098,6 +2107,15 @@ export const PROJECTS: Project[] = [
       '/images/projects/bhadsiya-school-nagaur.jpg'
     ],
     features: ['Raft-beam drawings', 'Multi-block campus', 'Drawing stage'],
+    drawingsAndPlans: [
+      {
+        id: 'dp-inst-school-bhadsiya-nagaur-drw-01',
+        title: 'Plan Showing Raft Beam Arrangement',
+        type: 'structural-detail',
+        imageUrl: '/images/drawings/senior-secondary-school-raft-beam-plan.webp',
+        caption: 'Raft-beam foundation arrangement for the school campus blocks (Drg. ST-RAFT BEAM-17, dated 8.9.2025). 2D working drawing shared by the client.'
+      }
+    ],
     locationDetails: {
       city: 'Nagaur',
       state: 'Rajasthan',
@@ -2154,6 +2172,356 @@ export const PROJECTS: Project[] = [
       areaOrNeighborhood: 'Toliyasar',
       displayLocation: 'Ratngarh, Churu District, Rajasthan',
     },
+  },
+  {
+    id: 'dp-dwg-002',
+    slug: 'jalore-colony-topographical-survey',
+    title: 'Colony Topographical Survey — Jalore',
+    category: 'concept',
+    status: 'completed',
+    hidden: false,
+    location: 'Jalore, Rajasthan',
+    area: 'Topographical survey map — 5 colonies',
+    services: [
+      'Topographical Survey',
+      'Working Drawings'
+    ],
+    description: 'Topographical map for regularisation of housing plots situated on agriculture land, prepared for Nagar Palika Mandal, Jalore — covering Ashapurna, Ramdev, Shri Ganesh, Nath and Mohan colonies. Survey drawing dated 15.11.2012.',
+    brief: 'Survey and map five colonies for regularisation of housing plots on agriculture land.',
+    designApproach: 'Field topographical survey compiled into a single regularisation map at 1:1460.',
+    images: [
+      '/images/drawings/jalore-colony-topographical-survey.webp'
+    ],
+    featured: false,
+    isConcept: false,
+    imageDisclaimer: '2D working drawing shared by the client — presented as-issued; not a photograph of the project.',
+    relatedServices: ['architectural-design'],
+    relatedLocations: ['jalore'],
+    relatedProjects: [],
+    projectType: 'real',
+    projectCategory: 'concept',
+    clientType: 'Government',
+    city: 'Jalore',
+    year: '2012',
+    builtUpArea: 'Topographical survey (1:1460)',
+    categoryLabel: 'Concept Studies & Research',
+    typology: 'Topographical Survey',
+    lead: 'Er. Sudhir Soni',
+    scopeOfWork: ['Topographical Survey', 'Regularisation Map'],
+    summary: 'Topographical survey map for Nagar Palika Mandal, Jalore — 5 colonies, 2012.',
+    challenge: 'Regularisation mapping of housing plots on agriculture land.',
+    approach: 'Consolidated survey map covering all five colonies with plot-level detail.',
+    structuralEngineering: 'Survey documentation — no structural scope.',
+    heroImage: '/images/drawings/jalore-colony-topographical-survey.webp',
+    heroImageDetails: {
+      url: '/images/drawings/jalore-colony-topographical-survey.webp',
+      alt: 'Topographical survey map of five Jalore colonies with regularisation boundaries',
+      caption: 'Survey map showing colony boundaries for plot regularisation, Jalore.'
+    },
+    gallery: [
+      '/images/drawings/jalore-colony-topographical-survey.webp'
+    ],
+    drawingsAndPlans: [
+      {
+        id: 'dp-dwg-002-drw-01',
+        title: 'Topographical Survey Map — Five Colonies',
+        type: 'floor-plan',
+        imageUrl: '/images/drawings/jalore-colony-topographical-survey.webp',
+        caption: 'Topographical map for regularisation of housing plots on agriculture land (Drg. No. 1, dated 15.11.2012). 2D working drawing shared by the client.'
+      }
+    ],
+    features: ['Topographical survey', 'Nagar Palika commission', 'Plot regularisation'],
+    locationDetails: {
+      city: 'Jalore',
+      state: 'Rajasthan',
+      areaOrNeighborhood: 'Ashapurna / Ramdev / Shri Ganesh / Nath / Mohan Colonies',
+      displayLocation: 'Jalore, Rajasthan',
+    },
+    seo: {
+      metaTitle: 'Colony Topographical Survey, Jalore | Design Plus',
+      metaDescription: 'Topographical survey map for plot regularisation across five Jalore colonies by Design Plus Architects and Structural Consultants.',
+      keywords: ['Jalore architect', 'topographical survey Rajasthan', 'Design Plus projects']
+    }
+  },
+  {
+    id: 'dp-dwg-003',
+    slug: 'convention-center-ground-floor-plan',
+    title: 'Convention Center — Ground Floor Plan',
+    category: 'commercial',
+    status: 'in-design',
+    hidden: false,
+    location: 'Not stated on drawing sheet',
+    area: 'Ground floor — general arrangement plan',
+    services: [
+      'Architectural Design',
+      'Working Drawings'
+    ],
+    description: 'Ground-floor general arrangement plan for a convention center, prepared by Design Plus Architects and Structural Consultants. Location and client are not stated on the drawing sheet.',
+    brief: 'Develop the ground-floor general arrangement for a convention center.',
+    designApproach: 'General arrangement plan with hall, ancillary rooms and circulation resolved at ground level.',
+    images: [
+      '/images/drawings/convention-center-ground-floor-plan.webp'
+    ],
+    featured: false,
+    isConcept: false,
+    imageDisclaimer: '2D working drawing shared by the client — presented as-issued; not a photograph of the project.',
+    relatedServices: ['architectural-design'],
+    relatedLocations: [],
+    relatedProjects: [],
+    projectType: 'real',
+    projectCategory: 'commercial',
+    clientType: 'Not stated',
+    city: '—',
+    year: 'Undated',
+    builtUpArea: 'General arrangement drawing',
+    categoryLabel: 'Commercial & Retail',
+    typology: 'Convention Center',
+    lead: 'Er. Sudhir Soni',
+    scopeOfWork: ['Architectural Design', 'General Arrangement Plan'],
+    summary: 'Convention center ground-floor general arrangement plan — drawing stage.',
+    challenge: 'Ground-floor arrangement for a public convention venue.',
+    approach: 'General arrangement plan issued for the convention center ground floor.',
+    structuralEngineering: 'To be detailed at structural design stage.',
+    heroImage: '/images/drawings/convention-center-ground-floor-plan.webp',
+    heroImageDetails: {
+      url: '/images/drawings/convention-center-ground-floor-plan.webp',
+      alt: 'Ground floor general arrangement plan of a convention center',
+      caption: 'Ground-floor general arrangement plan with hall and ancillary spaces.'
+    },
+    gallery: [
+      '/images/drawings/convention-center-ground-floor-plan.webp'
+    ],
+    drawingsAndPlans: [
+      {
+        id: 'dp-dwg-003-drw-01',
+        title: 'Ground Floor — General Arrangement Plan',
+        type: 'floor-plan',
+        imageUrl: '/images/drawings/convention-center-ground-floor-plan.webp',
+        caption: 'Ground-floor general arrangement plan with legend. 2D working drawing shared by the client.'
+      }
+    ],
+    features: ['General arrangement plan', 'Drawing stage'],
+    locationDetails: {
+      city: '—',
+      state: 'Rajasthan',
+      areaOrNeighborhood: 'Not stated on drawing sheet',
+      displayLocation: 'Not stated on drawing sheet',
+    },
+    seo: {
+      metaTitle: 'Convention Center Ground Floor Plan | Design Plus',
+      metaDescription: 'Ground-floor general arrangement plan for a convention center by Design Plus Architects and Structural Consultants.',
+      keywords: ['convention center architect', 'Design Plus projects']
+    }
+  },
+  {
+    id: 'dp-dwg-004',
+    slug: 'bhishma-rob-jodhpur-jaisalmer',
+    title: 'ROB — Bhishma Railway Crossing, Jodhpur',
+    category: 'structural',
+    status: 'in-design',
+    hidden: false,
+    location: 'Jodhpur, Rajasthan',
+    area: 'General arrangement — plan & longitudinal section',
+    services: [
+      'Structural Design & Engineering',
+      'Working Drawings'
+    ],
+    description: 'General arrangement drawing for construction of a rail over bridge on the railway crossing on the Jodhpur–Jaisalmer section (Bhishma railway crossing), prepared for Jodhpur Development Authority. Plan and longitudinal section; checked 24.10.2020.',
+    brief: 'Engineer a rail over bridge general arrangement for authority approval.',
+    designApproach: 'General arrangement with plan and longitudinal section for the ROB crossing.',
+    images: [
+      '/images/drawings/bhishma-rob-jodhpur-jaisalmer.webp'
+    ],
+    featured: false,
+    isConcept: false,
+    imageDisclaimer: '2D working drawing shared by the client — presented as-issued; not a photograph of the project.',
+    relatedServices: ['structural-design'],
+    relatedLocations: ['jodhpur'],
+    relatedProjects: [],
+    projectType: 'real',
+    projectCategory: 'structural',
+    clientType: 'Government',
+    city: 'Jodhpur',
+    year: '2020',
+    builtUpArea: 'ROB — general arrangement',
+    categoryLabel: 'Chartered Structural Engineering',
+    typology: 'Rail Over Bridge',
+    lead: 'Er. Sudhir Soni',
+    scopeOfWork: ['Structural Design', 'General Arrangement Drawing'],
+    summary: 'ROB at Bhishma railway crossing, Jodhpur–Jaisalmer section — JDA commission, drawing stage (2020).',
+    challenge: 'General arrangement over a live railway crossing.',
+    approach: 'GAD with plan and longitudinal section for authority approval.',
+    structuralEngineering: 'RCC ROB structure as per railway and IS standards.',
+    heroImage: '/images/drawings/bhishma-rob-jodhpur-jaisalmer.webp',
+    heroImageDetails: {
+      url: '/images/drawings/bhishma-rob-jodhpur-jaisalmer.webp',
+      alt: 'General arrangement plan and longitudinal section of the Bhishma ROB',
+      caption: 'Plan and longitudinal section for the ROB at Bhishma railway crossing.'
+    },
+    gallery: [
+      '/images/drawings/bhishma-rob-jodhpur-jaisalmer.webp'
+    ],
+    drawingsAndPlans: [
+      {
+        id: 'dp-dwg-004-drw-01',
+        title: 'General Arrangement — Plan & Longitudinal Section',
+        type: 'section',
+        imageUrl: '/images/drawings/bhishma-rob-jodhpur-jaisalmer.webp',
+        caption: 'General arrangement drawing of the ROB with plan and longitudinal section. 2D working drawing shared by the client.'
+      }
+    ],
+    features: ['General arrangement drawing', 'JDA commission', 'Drawing stage'],
+    locationDetails: {
+      city: 'Jodhpur',
+      state: 'Rajasthan',
+      areaOrNeighborhood: 'Bhishma Railway Crossing, Jodhpur–Jaisalmer Section',
+      displayLocation: 'Jodhpur, Rajasthan',
+    },
+    seo: {
+      metaTitle: 'ROB Bhishma Railway Crossing Jodhpur | Design Plus',
+      metaDescription: 'Rail over bridge general arrangement at Bhishma railway crossing, Jodhpur — structural engineering by Design Plus for Jodhpur Development Authority.',
+      keywords: ['Jodhpur structural engineer', 'ROB design Rajasthan', 'Design Plus projects']
+    }
+  },
+  {
+    id: 'dp-dwg-006',
+    slug: 'tulja-bhavani-temple-ratangarh',
+    title: 'Tulja Bhavani Temple — DPR, Ratangarh',
+    category: 'institutional',
+    status: 'in-design',
+    hidden: false,
+    location: 'Ratangarh, Churu District, Rajasthan',
+    area: 'Temple development & renovation — DPR',
+    services: [
+      'Architectural Design',
+      'DPR Preparation'
+    ],
+    description: 'DPR for development and renovation of Tulja Bhavani Temple, Ratangarh — proposed ground-floor plan, section and front view by Design Plus (Drg. DP/DPR/TBM/02, dated 2.11.2025). DPR-stage commission.',
+    brief: 'Prepare the DPR for development and renovation of the temple complex.',
+    designApproach: 'Measured documentation with proposed plan, section and elevation for DPR submission.',
+    images: [
+      '/images/drawings/tulja-bhavani-temple-ratangarh.webp'
+    ],
+    featured: false,
+    isConcept: false,
+    imageDisclaimer: '2D working drawing shared by the client — presented as-issued; not a photograph of the project.',
+    relatedServices: ['architectural-design'],
+    relatedLocations: ['ratangarh'],
+    relatedProjects: [],
+    projectType: 'real',
+    projectCategory: 'institutional',
+    clientType: 'Trust',
+    city: 'Ratangarh',
+    year: '2025',
+    builtUpArea: 'Temple complex',
+    categoryLabel: 'Institutional & Educational',
+    typology: 'Temple Renovation — DPR',
+    lead: 'Er. Sudhir Soni',
+    scopeOfWork: ['Architectural Design', 'DPR Preparation'],
+    summary: 'Tulja Bhavani Temple, Ratangarh — DPR for development and renovation (Nov 2025).',
+    challenge: 'DPR documentation for temple development and renovation.',
+    approach: 'Proposed ground-floor plan, section and front view issued for DPR.',
+    structuralEngineering: 'To be detailed at structural design stage.',
+    heroImage: '/images/drawings/tulja-bhavani-temple-ratangarh.webp',
+    heroImageDetails: {
+      url: '/images/drawings/tulja-bhavani-temple-ratangarh.webp',
+      alt: 'Proposed ground floor plan, section and front view of Tulja Bhavani Temple',
+      caption: 'Proposed plan, section and front view for the temple DPR.'
+    },
+    gallery: [
+      '/images/drawings/tulja-bhavani-temple-ratangarh.webp'
+    ],
+    drawingsAndPlans: [
+      {
+        id: 'dp-dwg-006-drw-01',
+        title: 'Proposed Ground Floor Plan, Section & Front View',
+        type: 'floor-plan',
+        imageUrl: '/images/drawings/tulja-bhavani-temple-ratangarh.webp',
+        caption: 'Proposed ground-floor plan with section and front view (Drg. DP/DPR/TBM/02, dated 2.11.2025). 2D working drawing shared by the client.'
+      }
+    ],
+    features: ['DPR drawings', 'Temple renovation', 'Drawing stage'],
+    locationDetails: {
+      city: 'Ratangarh',
+      state: 'Rajasthan',
+      areaOrNeighborhood: 'Tulja Bhavani Temple',
+      displayLocation: 'Ratangarh, Churu District, Rajasthan',
+    },
+    seo: {
+      metaTitle: 'Tulja Bhavani Temple DPR Ratangarh | Design Plus',
+      metaDescription: 'DPR for development and renovation of Tulja Bhavani Temple, Ratangarh — proposed plan, section and elevation by Design Plus.',
+      keywords: ['Ratangarh architect', 'temple DPR Rajasthan', 'Design Plus projects']
+    }
+  },
+  {
+    id: 'dp-dwg-007',
+    slug: 'rub-hanumangarh-nwr-bikaner',
+    title: 'Road Under Bridge — Hanumangarh (NWR Bikaner Division)',
+    category: 'structural',
+    status: 'in-design',
+    hidden: false,
+    location: 'Hanumangarh, Rajasthan',
+    area: 'RCC box RUB — top plan & sections',
+    services: [
+      'Structural Design & Engineering',
+      'Working Drawings'
+    ],
+    description: 'Provision of a road under bridge — 1x9.00 m RCC box in lieu of the level crossing at KM 114/5-6, NWR Bikaner Division, Hanumangarh section — prepared for the Public Works Department, Rajasthan. Top plan with cross-sections.',
+    brief: 'Engineer an RCC box road under bridge replacing the level crossing.',
+    designApproach: 'RCC box section detailed with top plan and cross-sections for the under-bridge.',
+    images: [
+      '/images/drawings/rub-hanumangarh-level-crossing.webp'
+    ],
+    featured: false,
+    isConcept: false,
+    imageDisclaimer: '2D working drawing shared by the client — presented as-issued; not a photograph of the project.',
+    relatedServices: ['structural-design'],
+    relatedLocations: ['hanumangarh'],
+    relatedProjects: [],
+    projectType: 'real',
+    projectCategory: 'structural',
+    clientType: 'Government',
+    city: 'Hanumangarh',
+    year: 'Undated',
+    builtUpArea: '1x9.00 m RCC box',
+    categoryLabel: 'Chartered Structural Engineering',
+    typology: 'Road Under Bridge',
+    lead: 'Er. Sudhir Soni',
+    scopeOfWork: ['Structural Design', 'Working Drawings'],
+    summary: 'Road under bridge (1x9.00 m RCC box) at KM 114/5-6, Hanumangarh — PWD Rajasthan commission, drawing stage.',
+    challenge: 'Replacing a level crossing with an RCC box under-bridge.',
+    approach: 'Top plan with cross-sections for the RCC box structure.',
+    structuralEngineering: 'RCC box structure as per railway and IS standards.',
+    heroImage: '/images/drawings/rub-hanumangarh-level-crossing.webp',
+    heroImageDetails: {
+      url: '/images/drawings/rub-hanumangarh-level-crossing.webp',
+      alt: 'Top plan and cross-sections of the RCC box road under bridge',
+      caption: 'Top plan with cross-sections for the 1x9.00 m RCC box RUB.'
+    },
+    gallery: [
+      '/images/drawings/rub-hanumangarh-level-crossing.webp'
+    ],
+    drawingsAndPlans: [
+      {
+        id: 'dp-dwg-007-drw-01',
+        title: 'Top Plan & Cross-Sections — RCC Box',
+        type: 'structural-detail',
+        imageUrl: '/images/drawings/rub-hanumangarh-level-crossing.webp',
+        caption: 'Top plan with cross-sections for the RCC box road under bridge. 2D working drawing shared by the client.'
+      }
+    ],
+    features: ['RCC box structure', 'PWD Rajasthan commission', 'Drawing stage'],
+    locationDetails: {
+      city: 'Hanumangarh',
+      state: 'Rajasthan',
+      areaOrNeighborhood: 'KM 114/5-6, NWR Bikaner Division',
+      displayLocation: 'Hanumangarh, Rajasthan',
+    },
+    seo: {
+      metaTitle: 'Road Under Bridge Hanumangarh | Design Plus',
+      metaDescription: 'RCC box road under bridge at KM 114/5-6, Hanumangarh — structural engineering by Design Plus for PWD Rajasthan.',
+      keywords: ['Hanumangarh structural engineer', 'RUB design Rajasthan', 'Design Plus projects']
+    }
   }];
 
 export const RAW_PROJECTS = PROJECTS;
