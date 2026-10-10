@@ -58,6 +58,20 @@ export function ClientReviewsSection() {
             <ArrowUpRight className="w-4 h-4" />
           </a>
         </div>
+
+        <div className="mt-12 flex justify-center">
+          <div className="bg-white border border-stone-200 p-6 flex flex-col items-center max-w-xs">
+            <img
+              src="/images/google-review-qr.png"
+              alt="Scan to review Design Plus Architects on Google"
+              className="w-48 h-48 object-contain mb-4"
+              loading="lazy"
+            />
+            <p className="text-sm text-stone-600 text-center font-medium">
+              Scan to leave us a Google review
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
