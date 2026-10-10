@@ -6,6 +6,8 @@ import {
   Building2,
   DraftingCompass,
   BookOpen,
+  Layers,
+  Compass,
   ChevronRight,
   Download,
   Share2,
@@ -22,6 +24,8 @@ const ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
   Building2,
   DraftingCompass,
   BookOpen,
+  Layers,
+  Compass,
 };
 
 const SITE_URL = 'https://www.designplusajmer.co.in';

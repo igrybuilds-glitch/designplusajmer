@@ -6,6 +6,8 @@ import {
   Building2,
   DraftingCompass,
   BookOpen,
+  Layers,
+  Compass,
   ArrowRight,
   ArrowUpRight,
   Images,
@@ -20,6 +22,8 @@ const ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
   Building2,
   DraftingCompass,
   BookOpen,
+  Layers,
+  Compass,
 };
 
 const SITE_URL = 'https://www.designplusajmer.co.in';
@@ -99,7 +103,7 @@ export function PostersPage() {
               Browse by topic
             </p>
             <h2 className="font-editorial text-3xl md:text-4xl font-bold text-stone-900">
-              Six poster collections
+              Eight poster collections
             </h2>
           </div>
         </div>
