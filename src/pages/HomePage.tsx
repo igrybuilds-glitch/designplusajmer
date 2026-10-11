@@ -88,36 +88,9 @@ export function HomePage({ onOpenConsultation }: HomePageProps) {
       ratingCount: '43',
       reviewCount: '43'
     },
-    review: [
-      {
-        '@type': 'Review',
-        author: {
-          '@type': 'Person',
-          name: 'Rajesh & Sunita Singhal'
-        },
-        datePublished: '2024-03-15',
-        reviewRating: {
-          '@type': 'Rating',
-          ratingValue: '5',
-          bestRating: '5'
-        },
-        reviewBody: 'From sun-path orientation to earthquake-resistant structural detailing, Er. Sudhir Soni and Ar. Vipul Verma delivered far beyond our expectations. The central sandstone courtyard keeps our entire home remarkably cool during peak Ajmer summers without heavy AC load.'
-      },
-      {
-        '@type': 'Review',
-        author: {
-          '@type': 'Person',
-          name: 'Dr. Arvind K. Mathur'
-        },
-        datePublished: '2023-11-20',
-        reviewRating: {
-          '@type': 'Rating',
-          ratingValue: '5',
-          bestRating: '5'
-        },
-        reviewBody: 'Having our architectural plans and structural stability certificate processed through the Ajmer Development Authority without a single query was a massive relief. The acoustic separation between the clinic and private family residence demonstrates true spatial intelligence.'
-      }
-    ],
+    // NOTE (2026-10-11): individual Review objects removed — not visible
+    // on-page and unverifiable. Schema carries only the verified
+    // aggregateRating (JustDial 4.8/43, verified 2026-10-05).
     founder: {
       '@type': 'Person',
       name: 'Er. Sudhir Soni',

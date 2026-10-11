@@ -65,37 +65,12 @@ export const HOMEPAGE_ARCHITECT_SCHEMA = {
     worstRating: '1',
     ratingCount: '43',
     reviewCount: '43'
-  },
-  review: [
-    {
-      '@type': 'Review',
-      author: {
-        '@type': 'Person',
-        name: 'Rajesh & Sunita Singhal'
-      },
-      datePublished: '2024-03-15',
-      reviewRating: {
-        '@type': 'Rating',
-        ratingValue: '5',
-        bestRating: '5'
-      },
-      reviewBody: 'From sun-path orientation to earthquake-resistant structural detailing, Er. Sudhir Soni and Ar. Vipul Verma delivered far beyond our expectations. The central sandstone courtyard keeps our entire home remarkably cool during peak Ajmer summers without heavy AC load.'
-    },
-    {
-      '@type': 'Review',
-      author: {
-        '@type': 'Person',
-        name: 'Dr. Arvind K. Mathur'
-      },
-      datePublished: '2023-11-20',
-      reviewRating: {
-        '@type': 'Rating',
-        ratingValue: '5',
-        bestRating: '5'
-      },
-      reviewBody: 'Having our architectural plans and structural stability certificate processed through the Ajmer Development Authority without a single query was a massive relief. The acoustic separation between the clinic and private family residence demonstrates true spatial intelligence.'
-    }
-  ]
+  }
+  // NOTE (2026-10-11): individual Review objects removed — the two embedded
+  // reviews could not be verified against the live JustDial listing or the
+  // visible ClientReviewsSection. Per the no-fake-reviews rule, schema now
+  // carries only the verified aggregateRating until real review texts are
+  // confirmed from the listing.
 };
 
 export interface SEOHeadProps {
