@@ -1012,6 +1012,7 @@ export const POSTER_CATEGORIES: PosterCategory[] = [
       'vastu for flats India',
       'vastu entrance direction',
       'vastu remedies without demolition',
+      'benefits of vastu compliant home',
     ],
     seoTitle: 'Vastu Shastra Posters & Home Design | Design Plus Ajmer',
     seoDescription:
@@ -1022,6 +1023,12 @@ export const POSTER_CATEGORIES: PosterCategory[] = [
       'Vastu works best when it is part of the design from day one — not a correction after construction. Bring these posters to your consultation and let us plan a home that honours both tradition and structural sense.',
     ],
         publishedPosters: [
+      {
+        title: "Benefits of Vastu Compliant Home",
+        blurb: "Design Plus Ajmer: benefits of vastu compliant home. Vastu-compliant home designs blending science and tradition. Consult Ar. Vipul Verma: +91 7976453090.",
+        image: "/images/posters/vastu/vastu-compliant-home-benefits-ajmer.webp",
+        alt: "Benefits of Vastu Compliant Home poster by Design Plus Architects Ajmer Rajasthan",
+      },
       {
         title: "Vastu Bedroom Direction",
         blurb: "Design Plus Ajmer: vastu bedroom direction. Vastu-compliant home designs blending science and tradition. Consult Ar. Vipul Verma: +91 7976453090.",
