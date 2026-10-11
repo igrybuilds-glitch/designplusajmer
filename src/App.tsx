@@ -31,6 +31,14 @@ const PostersPage = lazy(() => import('./pages/PostersPage').then(m => ({ defaul
 const PosterCategoryPage = lazy(() => import('./pages/PosterCategoryPage').then(m => ({ default: m.PosterCategoryPage })));
 const ProjectManagementPage = lazy(() => import('./pages/ProjectManagementPage').then(m => ({ default: m.ProjectManagementPage })));
 const ArchitectFeesAjmerPage = lazy(() => import('./pages/ArchitectFeesAjmerPage').then(m => ({ default: m.ArchitectFeesAjmerPage })));
+const HouseDesignAjmerPage = lazy(() => import('./pages/HouseDesignAjmerPage').then(m => ({ default: m.HouseDesignAjmerPage })));
+const ElevationDesignAjmerPage = lazy(() => import('./pages/ElevationDesignAjmerPage').then(m => ({ default: m.ElevationDesignAjmerPage })));
+const InteriorDesignerAjmerPage = lazy(() => import('./pages/InteriorDesignerAjmerPage').then(m => ({ default: m.InteriorDesignerAjmerPage })));
+const VastuHomeAjmerPage = lazy(() => import('./pages/VastuHomeAjmerPage').then(m => ({ default: m.VastuHomeAjmerPage })));
+const PlanApprovalAjmerPage = lazy(() => import('./pages/PlanApprovalAjmerPage').then(m => ({ default: m.PlanApprovalAjmerPage })));
+const StructuralConsultancyAjmerPage = lazy(() => import('./pages/StructuralConsultancyAjmerPage').then(m => ({ default: m.StructuralConsultancyAjmerPage })));
+const BestArchitectsAjmerComparisonPage = lazy(() => import('./pages/BestArchitectsAjmerComparisonPage').then(m => ({ default: m.BestArchitectsAjmerComparisonPage })));
+const HinglishFaqAjmerPage = lazy(() => import('./pages/HinglishFaqAjmerPage').then(m => ({ default: m.HinglishFaqAjmerPage })));
 const StructuralDrawingAjmerPage = lazy(() => import('./pages/StructuralDrawingAjmerPage').then(m => ({ default: m.StructuralDrawingAjmerPage })));
 const VastuPage = lazy(() => import('./pages/VastuPage').then(m => ({ default: m.VastuPage })));
 const FarmhousePage = lazy(() => import('./pages/FarmhousePage').then(m => ({ default: m.FarmhousePage })));
@@ -141,6 +149,14 @@ function AppContent() {
           <Route path="/services/:slug" element={<ServiceDetailPage onOpenConsultation={openConsultation} />} />
           <Route path="/project-management" element={<ProjectManagementPage onOpenConsultation={openConsultation} />} />
           <Route path="/architect-fees-ajmer" element={<ArchitectFeesAjmerPage onOpenConsultation={openConsultation} />} />
+          <Route path="/house-design-ajmer" element={<HouseDesignAjmerPage onOpenConsultation={openConsultation} />} />
+          <Route path="/3d-elevation-design-ajmer" element={<ElevationDesignAjmerPage onOpenConsultation={openConsultation} />} />
+          <Route path="/interior-designer-ajmer" element={<InteriorDesignerAjmerPage onOpenConsultation={openConsultation} />} />
+          <Route path="/vastu-home-design-ajmer" element={<VastuHomeAjmerPage onOpenConsultation={openConsultation} />} />
+          <Route path="/building-plan-approval-ajmer" element={<PlanApprovalAjmerPage onOpenConsultation={openConsultation} />} />
+          <Route path="/structural-consultancy-ajmer" element={<StructuralConsultancyAjmerPage onOpenConsultation={openConsultation} />} />
+          <Route path="/best-architects-ajmer-comparison" element={<BestArchitectsAjmerComparisonPage onOpenConsultation={openConsultation} />} />
+          <Route path="/hinglish-faq-ajmer" element={<HinglishFaqAjmerPage onOpenConsultation={openConsultation} />} />
           <Route path="/structural-drawing-ajmer" element={<StructuralDrawingAjmerPage onOpenConsultation={openConsultation} />} />
           <Route path="/vastu" element={<VastuPage onOpenConsultation={openConsultation} />} />
           <Route path="/farmhouse" element={<FarmhousePage onOpenConsultation={openConsultation} />} />
