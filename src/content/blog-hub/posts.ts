@@ -2477,6 +2477,42 @@ Yes, and it is common \u2014 but the structure must be designed for the final fl
 Ready to turn your 40\u00d760 plot into a duplex that actually fits your family? [Book a Site Consultation](/contact) \u2014 we will study your plot\u2019s orientation, soil and bylaws, and draw a plan your contractor can build from, Vastu-compliant on request. Also see our [duplex house design guide for Ajmer](/blog/duplex-house-design-ajmer).
 `
   },
+  {
+    slug: 'architectural-design-process-in-rajasthan',
+    seoTitle: 'Architectural Design Process for Homes in Rajasthan | Design Plus',
+    title: 'The 5-Stage Architectural Design Process for Custom Homes in Rajasthan',
+    description: 'A step-by-step breakdown of how a custom architectural residence moves from initial site survey and 2D zoning to 3D elevation modeling, structural vetting, and turnkey execution.',
+    date: '2024-09-22',
+    category: 'Guides',
+    image: '/images/blog/how-to-plan-your-dream-home-in-ajmer.jpg',
+    content: `
+Building a custom residence in Rajasthan is one of the most substantial financial and emotional investments a family ever undertakes. Yet, without a disciplined design methodology, the process frequently devolves into ad-hoc contractor decisions and costly mid-construction alterations. This is the 5-stage architectural workflow we follow at Design Plus \u2014 from site survey to turnkey handover.
+
+## Stage 1: Site Topology & Solar Path Analysis
+
+Before sketching a single wall, we map true north, seasonal wind trajectories, soil bearing capacities, and municipal setbacks to determine the optimal building envelope. Getting this right at the start prevents the most expensive class of mistakes: a home oriented against the sun and wind.
+
+## Stage 2: 2D Ergonomic Space Planning
+
+Here, functional adjacencies, circulation efficiency, privacy zoning, and Vastu directional orientations are resolved to millimetre precision. This is the legal and dimensional contract of your home \u2014 every wall thickness, door swing, and plumbing shaft fixed before a single brick is laid.
+
+## Stage 3: 3D Volumetric & Elevation Modelling
+
+We test sun angles against window reveals, calculate overhang depths to block desert summer heat, and sculpt facade textures using regional stone and plaster. Humans experience architecture in three dimensions \u2014 volume, height, depth, and shadow \u2014 and 3D modelling lets us resolve material transitions and structural cantilevers virtually before pouring a single cubic yard of concrete.
+
+## Stage 4: Chartered Structural & MEP Engineering
+
+Detailed reinforcement schedules, electrical conduit grids, and plumbing stacks are finalised into complete working drawing packages. Every spatial decision is vetted under Chartered Structural Engineering principles from the concept sketch \u2014 moment distributions, deflection limits, and seismic drift calculated per IS 456:2000 and IS 13920:2016.
+
+## Stage 5: Construction Supervision & Quality Audits
+
+Regular site inspections ensure concrete slump tests, steel placement, and material curing strictly align with engineered specifications. A design is only as good as its execution, so our supervision keeps the site faithful to the drawings.
+
+The result is not only absolute structural longevity, but also dramatic construction economy. By calculating exact steel reinforcement distributions rather than guessing with oversized safety buffers, we eliminate redundant steel tonnage while guaranteeing seismic and wind resilience \u2014 saving clients hundreds of thousands of rupees in on-site alterations.
+
+Planning a custom home in Rajasthan? [Book a Site Consultation](/contact) \u2014 we will walk your plot, study its orientation and bylaws, and show you exactly what the 5-stage process looks like for your project. Also read our [guide to hiring an architect in Ajmer](/blog/guide-to-hiring-architect-in-ajmer).
+`
+  },
 ];
 
 export function getBlogHubPost(slug: string): BlogHubPost | undefined {
