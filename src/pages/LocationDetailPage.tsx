@@ -198,6 +198,18 @@ export function LocationDetailPage({ onOpenConsultation }: LocationDetailPagePro
         </div>
       </section>
 
+      {location.branchAddress && (
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+          <div className="flex items-start gap-3 border border-stone-200 bg-white p-5 sm:p-6">
+            <MapPin className="w-5 h-5 text-stone-900 shrink-0 mt-0.5" />
+            <div>
+              <div className="text-xs uppercase tracking-wider text-stone-400 font-semibold">{location.city} Branch Office</div>
+              <div className="font-medium text-stone-900 text-sm sm:text-base mt-1">{location.branchAddress}</div>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Hero Visual */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
         <div className="relative aspect-16/8 bg-stone-200 overflow-hidden border border-stone-200 shadow-xs">

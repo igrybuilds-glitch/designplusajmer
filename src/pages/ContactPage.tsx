@@ -131,6 +131,23 @@ export function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-stone-900 shrink-0 mt-0.5" />
+                  <div>
+                    <div className="text-xs uppercase tracking-wider text-stone-400 font-semibold">Jaipur Branch</div>
+                    <div className="font-medium text-stone-900">B-225, Vaishali Nagar, Opposite Karnataka Bank, Jaipur, Rajasthan 302021</div>
+                    <a
+                      href="https://www.google.com/maps/search/?api=1&query=B-225+Vaishali+Nagar+Opposite+Karnataka+Bank+Jaipur+Rajasthan+302021"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-xs font-semibold text-amber-800 hover:text-amber-900 mt-1.5 underline underline-offset-2"
+                    >
+                      <span>Get Directions on Google Maps</span>
+                      <ArrowUpRight className="w-3.5 h-3.5" />
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
                   <Phone className="w-5 h-5 text-stone-900 shrink-0 mt-0.5" />
                   <div>
                     <div className="text-xs uppercase tracking-wider text-stone-400 font-semibold">Verified Direct Lines</div>

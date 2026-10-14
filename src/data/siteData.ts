@@ -150,7 +150,8 @@ export const LOCATIONS_SERVED: LocationInfo[] = [
       'Corporate Office & Retail Spatial Planning',
       'Energy-Efficient Facade Design for Rajasthan Summers'
     ],
-    heroImage: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80'
+    heroImage: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80',
+    branchAddress: 'B-225, Vaishali Nagar, Opposite Karnataka Bank, Jaipur, Rajasthan 302021'
   },
   {
     slug: 'pushkar',

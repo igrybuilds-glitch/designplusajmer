@@ -169,6 +169,7 @@ export interface LocationInfo {
   serviceHighlights: string[];
   heroImage: string;
   distanceFromAjmer?: string;
+  branchAddress?: string;
 }
 
 export interface BlogCategoryMeta {
