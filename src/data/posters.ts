@@ -605,6 +605,12 @@ export const POSTER_CATEGORIES: PosterCategory[] = [
         image: "/images/posters/architecture/wardrobe-design-bedroom-ajmer.webp",
         alt: "Wardrobe Design Bedroom poster by Design Plus Architects & Structural Consultants, Ajmer Rajasthan",
       },
+      {
+        title: "Climate-Responsive Premium Design",
+        blurb: "Design Plus Architects Ajmer presents climate-responsive premium design: premium home design thought through with the climate, by Shikha Soni and Team Design Plus. Call +91 7976453090 for your project.",
+        image: "/images/posters/architecture/climate-responsive-premium-design-ajmer.webp",
+        alt: "Climate-Responsive Premium Design poster by Shikha Soni, Team Design Plus Architects, Ajmer Rajasthan",
+      },
     ],
     upcomingPosters: [
       {
@@ -765,6 +771,12 @@ export const POSTER_CATEGORIES: PosterCategory[] = [
         blurb: "Design Plus Ajmer awareness poster: weatherproof exterior paint. Practical solutions for Indian homeowners. Expert advice from Chartered Engineers.",
         image: "/images/posters/general-awareness/weatherproof-exterior-paint-ajmer.webp",
         alt: "Weatherproof Exterior Paint awareness poster by Design Plus Architects Ajmer",
+      },
+      {
+        title: "Building Restoration Services",
+        blurb: "Design Plus Ajmer awareness poster: building restoration services — we restore, reinforce and rebuild. Experts in technical restoration of buildings. Er. Sudhir Soni (M.E. Structure), A-1-C Rajeev Marg, Ajmer. Call +91 7976453090.",
+        image: "/images/posters/general-awareness/building-restoration-services-ajmer.webp",
+        alt: "Building Restoration Services poster by Er. Sudhir Soni, Design Plus Structural Consultants Ajmer",
       },
     ],
   },
