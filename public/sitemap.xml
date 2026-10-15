@@ -401,7 +401,7 @@
   <!-- SEO landing pages, products & service groups (added 2026-09-29) -->
   <url>
     <loc>https://www.designplusajmer.co.in/architect-fees-ajmer/</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -415,7 +415,7 @@
   <!-- Service + city pages, comparison & Hinglish FAQ (rank-#1 blitz 2026-10-11) -->
   <url>
     <loc>https://www.designplusajmer.co.in/house-design-ajmer/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -439,7 +439,7 @@
   </url>
   <url>
     <loc>https://www.designplusajmer.co.in/building-plan-approval-ajmer/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -464,6 +464,26 @@
   <url>
     <loc>https://www.designplusajmer.co.in/vastu/</loc>
     <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Valuation, chartered-engineer & Jaipur branch pages (overnight SEO blitz 2026-10-16) -->
+  <url>
+    <loc>https://www.designplusajmer.co.in/property-valuation/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.designplusajmer.co.in/chartered-engineer-certificates/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.designplusajmer.co.in/architect-in-jaipur/</loc>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>

@@ -24,7 +24,9 @@ interface HouseDesignAjmerPageProps {
 
 export function HouseDesignAjmerPage({ onOpenConsultation }: HouseDesignAjmerPageProps) {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
+  const [openHinglishIndex, setOpenHinglishIndex] = useState<number | null>(null);
   const toggleFaq = (index: number) => setOpenFaqIndex(openFaqIndex === index ? null : index);
+  const toggleHinglish = (index: number) => setOpenHinglishIndex(openHinglishIndex === index ? null : index);
 
   const canonicalUrl = 'https://www.designplusajmer.co.in/house-design-ajmer/';
 
@@ -113,8 +115,41 @@ export function HouseDesignAjmerPage({ onOpenConsultation }: HouseDesignAjmerPag
     {
       question: 'How many design revisions do I get?',
       answer: 'Concept stage includes two full layout revision rounds after the initial options, and the 3D elevation stage includes two facade revision rounds. Revisions beyond that, or changes after structural drawings are frozen, are quoted separately — the discipline keeps projects on schedule and within budget.'
+    },
+    {
+      question: '100 गज के प्लॉट पर 3BHK का नक्शा कैसे बनेगा?',
+      answer: '100 गज (लगभग 900 sq ft) के प्लॉट पर 3BHK का नक्शा आमतौर पर G+1 या G+2 में बनता है — ground floor पर living-dining, kitchen और एक bedroom, upper floor पर दो bedroom और terrace. Setback और FAR के नियमों के हिसाब से exact layout ADA byelaws के मुताबिक बनाया जाता है। हम site visit के बाद ही final layout देते हैं।'
+    },
+    {
+      question: 'What is the best house plan for a 20x60 east-facing plot?',
+      answer: 'On a 20x60 ft east-facing plot (roughly 133 sq yards), the classic layout puts the entrance on the 20-ft east face, living and parking at the front, bedrooms in the middle for privacy, and kitchen and utilities towards the west. We design it with morning-sun capture in the living spaces and Vastu zoning reconciled with ADA setback rules — the facing dictates orientation, not the plan template.'
+    },
+    {
+      question: 'What drawings does an architect give for a house plan in Ajmer?',
+      answer: 'A complete house-plan set includes 2D floor plans for every level with furniture layouts, a photorealistic 3D front elevation, working drawings (sections, door-window schedules, electrical and plumbing layouts), chartered structural RCC drawings with bar bending schedules, and the ADA or Nagar Nigam sanction drawing dossier. If someone offers only a \u201cfloor plan\u201d, that is a sketch — not a design.'
+    },
+    {
+      question: 'Is a Vastu-compliant plan required for ADA building plan approval?',
+      answer: 'No. ADA and Nagar Nigam check setbacks, ground coverage, FAR, height and parking — Vastu is not part of the statutory checklist. That said, a Vastu-aligned plan is fully sanctionable as long as the orientation and zoning respect the byelaws, which is exactly how we design them: Vastu inside the rules, not against them.'
     }
   ];
+
+  const hinglishFaqs = [
+    {
+      question: 'Ghar ka naksha Ajmer mein banwane par kitna kharcha aata hai?',
+      answer: 'Ajmer mein complete house design (2D floor plans, 3D elevation, chartered structural drawings, ADA sanction drawings) aam taur par ₹35–₹85 per sq ft built-up area mein hota hai. Sirf naksha (floor plan) aur poora working-drawing set — dono ke rate alag hote hain. Site visit ke baad hum likhit quotation dete hain.'
+    },
+    {
+      question: 'Naksha pass karwana zaroori hai kya Ajmer mein?',
+      answer: 'Haan. ADA limits ke andar (Vaishali Nagar, Panchsheel Nagar, Foy Sagar Road ke colonies) ADA sanction, aur purane shehar mein Nagar Nigam ki permission bina construction shuru nahi karni chahiye. Bina sanction ke kaam par stop-work notice, jurmana aur completion stage par compounding charges lag sakte hain.'
+    },
+    {
+      question: '100 gaj ka naksha aur 200 gaj ka naksha — design mein kya farak hota hai?',
+      answer: '100 gaj (900 sq ft) par design vertical hota hai — G+1/G+2 mein 3BHK, light-well planning ke saath. 200 gaj (1800 sq ft) par horizontal luxury milti hai — courtyard, double-height living, duplex options. Dono mein ADA setback aur FAR rules alag-alag apply hote hain, isliye plot size ke hisaab se hi naksha banta hai.'
+    }
+  ];
+
+  const allFaqs = [...faqs, ...hinglishFaqs];
 
   const professionalServiceSchema = {
     '@context': 'https://schema.org',
@@ -159,7 +194,7 @@ export function HouseDesignAjmerPage({ onOpenConsultation }: HouseDesignAjmerPag
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     '@id': `${canonicalUrl}#faq`,
-    mainEntity: faqs.map((f) => ({
+    mainEntity: allFaqs.map((f) => ({
       '@type': 'Question',
       name: f.question,
       acceptedAnswer: { '@type': 'Answer', text: f.answer }
@@ -180,7 +215,7 @@ export function HouseDesignAjmerPage({ onOpenConsultation }: HouseDesignAjmerPag
       <SEOHead
         title="House Design in Ajmer | Custom Home Architects | Design Plus"
         description="Custom house design in Ajmer — architect-drawn floor plans, Vastu-aligned layouts, 3D elevations, chartered structural engineering & ADA sanction drawings. Vaishali Nagar, Foy Sagar Road, Civil Lines."
-        keywords="house design in ajmer, home design ajmer, residential architect ajmer, house plan ajmer, villa design ajmer, duplex house design ajmer rajasthan"
+        keywords="house design in ajmer, home design ajmer, residential architect ajmer, house plan ajmer, house plan architect ajmer, ghar ka naksha ajmer, makaan ka naksha ajmer, 100 gaj ka naksha, villa design ajmer, duplex house design ajmer rajasthan"
         image="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1200&q=80"
         canonical={canonicalUrl}
         schema={[professionalServiceSchema, serviceSchema, faqSchema, breadcrumbSchema]}
@@ -435,7 +470,57 @@ export function HouseDesignAjmerPage({ onOpenConsultation }: HouseDesignAjmerPag
                     <span>Structural Consultancy in Ajmer</span>
                     <ArrowUpRight className="w-3.5 h-3.5" />
                   </Link>
+                  <Link to="/property-valuation" className="flex items-center justify-between text-sm text-stone-700 hover:text-amber-800 transition-colors">
+                    <span>Property Valuation in Ajmer</span>
+                    <ArrowUpRight className="w-3.5 h-3.5" />
+                  </Link>
+                  <Link to="/chartered-engineer-certificates" className="flex items-center justify-between text-sm text-stone-700 hover:text-amber-800 transition-colors">
+                    <span>Chartered Engineer Certificates</span>
+                    <ArrowUpRight className="w-3.5 h-3.5" />
+                  </Link>
+                  <Link to="/architect-in-jaipur" className="flex items-center justify-between text-sm text-stone-700 hover:text-amber-800 transition-colors">
+                    <span>Architect in Jaipur</span>
+                    <ArrowUpRight className="w-3.5 h-3.5" />
+                  </Link>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Hinglish FAQ block */}
+          <div className="lg:col-span-8 mt-2">
+            <div className="space-y-6 pt-6 border-t border-stone-200">
+              <div className="flex items-center gap-2 text-xs uppercase tracking-wider text-amber-800 font-semibold">
+                <ClipboardCheck className="w-4 h-4" />
+                <span>Sawaal-Jawaab · Aapki Bhasha Mein</span>
+              </div>
+              <h2 className="font-editorial text-2xl sm:text-3xl text-stone-950 font-medium">
+                Ghar ka Naksha — Aksar Puche Jaane Wale Sawaal
+              </h2>
+              <div className="space-y-3">
+                {hinglishFaqs.map((faq, index) => {
+                  const isOpen = openHinglishIndex === index;
+                  return (
+                    <div key={faq.question} className="bg-white border border-stone-200">
+                      <button
+                        type="button"
+                        onClick={() => toggleHinglish(index)}
+                        className="w-full text-left p-5 flex items-center justify-between gap-4 min-h-[44px] hover:bg-stone-50 transition-colors"
+                        aria-expanded={isOpen}
+                      >
+                        <span className="font-editorial text-base sm:text-lg text-stone-950 font-medium leading-snug">
+                          {faq.question}
+                        </span>
+                        <ChevronDown className={`w-4 h-4 text-stone-500 shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180 text-amber-800' : ''}`} />
+                      </button>
+                      {isOpen && (
+                        <div className="px-5 pb-5 pt-1 text-xs sm:text-sm text-stone-600 leading-relaxed border-t border-stone-100">
+                          {faq.answer}
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>

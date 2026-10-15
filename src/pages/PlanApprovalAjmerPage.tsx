@@ -135,6 +135,22 @@ export function PlanApprovalAjmerPage({ onOpenConsultation }: PlanApprovalAjmerP
     {
       question: 'Do you handle approval for commercial buildings in Ajmer?',
       answer: 'Yes. Commercial sanction involves additional layers — parking calculations, fire NOC coordination for applicable occupancies, signage provisions and sometimes traffic NOCs on arterial roads like Foy Sagar Road. Our studio prepares the full commercial dossier and manages the query cycle with the authority.'
+    },
+    {
+      question: 'अजमेर में नक्शा पास करवाने में कितना समय लगता है?',
+      answer: 'नक्शा पास (building plan approval) का समय ADA या Nagar Nigam की scrutiny queue पर depend करता है — clean residential filing आमतौर पर 4–8 हफ्तों में sanction हो जाती है। Setback या FAR में गड़बड़ी वाली drawings objection cycles में फँसकर महीनों लगाती हैं। इसलिए हम drawings को byelaw-checked करके file करते हैं, objection के बाद ठीक नहीं करते।'
+    },
+    {
+      question: 'What is the affidavit of architect / non-deviation affidavit for plan approval?',
+      answer: 'Rajasthan\u2019s building approval procedure requires statutory affidavits — including an affidavit from the architect and a non-deviation affidavit from the owner/builder — declaring the construction will follow the sanctioned drawings. They are part of the filing dossier we prepare; you sign, we draft them in the authority\u2019s prescribed format.'
+    },
+    {
+      question: 'Is a Vastu-compliant plan required for ADA building plan approval?',
+      answer: 'No. ADA and Nagar Nigam scrutiny checks setbacks, ground coverage, FAR, height and parking — Vastu is not on the statutory checklist. A Vastu-aligned plan is fully sanctionable as long as orientations and zoning respect the byelaws, which is how we design them: Vastu within the rules, never against them.'
+    },
+    {
+      question: 'How is \u201cnaksha pass\u201d different from a completion certificate?',
+      answer: '\u201cNaksha pass\u201d is the approval to build — sanctioned drawings issued by ADA or Nagar Nigam before construction starts. A completion certificate is issued after construction, confirming the building was built per the sanctioned drawings, and is certified by an architect or chartered engineer. We handle both ends: the sanction filing and the chartered engineer completion certification.'
     }
   ];
 
@@ -202,7 +218,7 @@ export function PlanApprovalAjmerPage({ onOpenConsultation }: PlanApprovalAjmerP
       <SEOHead
         title="Building Plan Approval in Ajmer | ADA Sanction Filing | Design Plus"
         description="Building plan approval in Ajmer — ADA & Nagar Nigam sanction drawings, setback/FAR compliance, chartered stability certificates, query resolution & completion certificates."
-        keywords="building plan approval ajmer, ada approval ajmer, house plan sanction ajmer, nagar nigam building permission ajmer, sanction drawing ajmer, completion certificate ajmer"
+        keywords="building plan approval ajmer, naksha pass ajmer, ada approval ajmer, house plan sanction ajmer, nagar nigam building permission ajmer, sanction drawing ajmer, completion certificate ajmer"
         image="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=80"
         canonical={canonicalUrl}
         schema={[professionalServiceSchema, serviceSchema, faqSchema, breadcrumbSchema]}
@@ -487,6 +503,18 @@ export function PlanApprovalAjmerPage({ onOpenConsultation }: PlanApprovalAjmerP
                   </Link>
                   <Link to="/structural-consultancy-ajmer" className="flex items-center justify-between text-sm text-stone-700 hover:text-amber-800 transition-colors">
                     <span>Structural Consultancy in Ajmer</span>
+                    <ArrowUpRight className="w-3.5 h-3.5" />
+                  </Link>
+                  <Link to="/property-valuation" className="flex items-center justify-between text-sm text-stone-700 hover:text-amber-800 transition-colors">
+                    <span>Property Valuation in Ajmer</span>
+                    <ArrowUpRight className="w-3.5 h-3.5" />
+                  </Link>
+                  <Link to="/chartered-engineer-certificates" className="flex items-center justify-between text-sm text-stone-700 hover:text-amber-800 transition-colors">
+                    <span>Chartered Engineer Certificates</span>
+                    <ArrowUpRight className="w-3.5 h-3.5" />
+                  </Link>
+                  <Link to="/architect-in-jaipur" className="flex items-center justify-between text-sm text-stone-700 hover:text-amber-800 transition-colors">
+                    <span>Architect in Jaipur</span>
                     <ArrowUpRight className="w-3.5 h-3.5" />
                   </Link>
                 </div>

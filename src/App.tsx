@@ -42,6 +42,9 @@ const HinglishFaqAjmerPage = lazy(() => import('./pages/HinglishFaqAjmerPage').t
 const StructuralDrawingAjmerPage = lazy(() => import('./pages/StructuralDrawingAjmerPage').then(m => ({ default: m.StructuralDrawingAjmerPage })));
 const VastuPage = lazy(() => import('./pages/VastuPage').then(m => ({ default: m.VastuPage })));
 const FarmhousePage = lazy(() => import('./pages/FarmhousePage').then(m => ({ default: m.FarmhousePage })));
+const PropertyValuationPage = lazy(() => import('./pages/PropertyValuationPage').then(m => ({ default: m.PropertyValuationPage })));
+const CharteredEngineerCertificatesPage = lazy(() => import('./pages/CharteredEngineerCertificatesPage').then(m => ({ default: m.CharteredEngineerCertificatesPage })));
+const ArchitectInJaipurPage = lazy(() => import('./pages/ArchitectInJaipurPage').then(m => ({ default: m.ArchitectInJaipurPage })));
 const ProductsPage = lazy(() => import('./pages/ProductsPage').then(m => ({ default: m.ProductsPage })));
 const ProductCategorySeoPage = lazy(() => import('./pages/ProductCategorySeoPage').then(m => ({ default: m.ProductCategorySeoPage })));
 const ServiceGroupSeoPage = lazy(() => import('./pages/ServiceGroupSeoPage').then(m => ({ default: m.ServiceGroupSeoPage })));
@@ -160,6 +163,9 @@ function AppContent() {
           <Route path="/structural-drawing-ajmer" element={<StructuralDrawingAjmerPage onOpenConsultation={openConsultation} />} />
           <Route path="/vastu" element={<VastuPage onOpenConsultation={openConsultation} />} />
           <Route path="/farmhouse" element={<FarmhousePage onOpenConsultation={openConsultation} />} />
+          <Route path="/property-valuation" element={<PropertyValuationPage onOpenConsultation={openConsultation} />} />
+          <Route path="/chartered-engineer-certificates" element={<CharteredEngineerCertificatesPage onOpenConsultation={openConsultation} />} />
+          <Route path="/architect-in-jaipur" element={<ArchitectInJaipurPage onOpenConsultation={openConsultation} />} />
           <Route path="/products" element={<ProductsPage onOpenConsultation={openConsultation} />} />
           <Route path="/products/:categorySlug" element={<ProductCategorySeoPage onOpenConsultation={openConsultation} />} />
           <Route path="/services/group/:groupSlug" element={<ServiceGroupSeoPage onOpenConsultation={openConsultation} />} />

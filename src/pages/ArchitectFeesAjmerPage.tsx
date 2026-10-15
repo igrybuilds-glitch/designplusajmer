@@ -138,6 +138,14 @@ export function ArchitectFeesAjmerPage({ onOpenConsultation }: ArchitectFeesAjme
     {
       question: 'When are architectural fee payments made during the project lifecycle?',
       answer: 'Fees are divided into clear, milestone-linked installments: typically 20% on concept confirmation, 30% upon approval of 2D floor plans & 3D elevations, 30% upon delivery of structural execution drawings, and the final 20% upon delivery of the comprehensive working drawing package and statutory files.'
+    },
+    {
+      question: 'What is the Council of Architecture scale of charges for an individual house?',
+      answer: 'The Council of Architecture\u2019s published scale of charges sets 7.5% of the cost of works as the professional fee for an individual house, covering architectural design, structural drawings, working drawings and periodic supervision. In practice, most Indian architects quote between 5% and 15% of project cost, or a per-square-foot rate — our Ajmer residential work typically falls between ₹35 and ₹85 per sq ft of built-up area depending on scope.'
+    },
+    {
+      question: 'घर का नक्शा बनवाने पर इंजीनियर या आर्किटेक्ट कितना रुपया लेता है?',
+      answer: 'Planning ke liye industry mein 3–5 रुपये per sq ft ki dar aam hai (3D elevation 4–5 रुपये, estimation 4–7 रुपये per sq ft) — lekin complete design package (floor plans + 3D elevation + chartered structural drawings + ADA sanction drawings) Ajmer mein ₹35–₹85 per sq ft built-up area ke range mein hota hai. Final quote hamesha site visit aur scope ke baad likhit mein milti hai.'
     }
   ];
 
@@ -578,6 +586,21 @@ export function ArchitectFeesAjmerPage({ onOpenConsultation }: ArchitectFeesAjme
               <li>
                 <Link to="/contact/" className="text-stone-400 hover:text-[#C86635] underline decoration-stone-700 underline-offset-4 transition-colors">
                   Book a Consultation
+                </Link>
+              </li>
+              <li>
+                <Link to="/property-valuation/" className="text-stone-400 hover:text-[#C86635] underline decoration-stone-700 underline-offset-4 transition-colors">
+                  Property valuation in Ajmer — approved valuer reports
+                </Link>
+              </li>
+              <li>
+                <Link to="/chartered-engineer-certificates/" className="text-stone-400 hover:text-[#C86635] underline decoration-stone-700 underline-offset-4 transition-colors">
+                  Chartered engineer certificates & stability reports
+                </Link>
+              </li>
+              <li>
+                <Link to="/architect-in-jaipur/" className="text-stone-400 hover:text-[#C86635] underline decoration-stone-700 underline-offset-4 transition-colors">
+                  Architect in Jaipur — Vaishali Nagar branch
                 </Link>
               </li>
           </ul>
