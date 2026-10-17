@@ -3083,7 +3083,7 @@ Our broader checklist for hiring any architect in the city applies here too: [gu
 
 **How much land is required to open a CBSE school in Rajasthan?**
 
-CBSE-linked guidance most school architects use: minimum 1 acre in cities with over 25 lakh population and 2 acres in smaller towns and rural areas, registered in the trust's name or leased for at least 30 years. CBSE does not fix a minimum built-up area, but since the July 2025 amendment your built-up carpet area caps how many sections you can run.
+CBSE-linked guidance most school architects use: minimum 1 acre in cities and 2 acres in smaller towns and rural areas, registered in the trust's name or leased for at least 30 years. CBSE does not fix a minimum built-up area, but since the July 2025 amendment your built-up carpet area caps how many sections you can run.
 
 **What is the minimum classroom size for a CBSE school?**
 
@@ -3095,7 +3095,7 @@ In 2026, Indian school architects typically quote ₹1,600–2,800 per square fo
 
 **How many sections can a school run under the 2025 CBSE rules?**
 
-Under the amended CBSE affiliation bye-laws (July 2025), the maximum number of sections is permitted strictly on the school's total built-up carpet area — for example, 4,000 square metres allows at most 33 sections and 6,200 square metres allows 48. The area must be certified by a licensed architect or the local body, and schools must run equal numbers of sections at the secondary and senior secondary levels.
+Under the amended CBSE affiliation bye-laws (July 2025), the maximum sections are permitted strictly on the school's total built-up carpet area — 4,000 square metres allows at most 33 sections and 6,200 square metres allows 48. The area must be certified by a licensed architect or the local body, and section counts must be equal at the secondary and senior secondary levels.
 
 **Are school buildings in Rajasthan earthquake-safe?**
 
