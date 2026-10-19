@@ -778,6 +778,12 @@ export const POSTER_CATEGORIES: PosterCategory[] = [
         image: "/images/posters/general-awareness/building-restoration-services-ajmer.webp",
         alt: "Building Restoration Services poster by Er. Sudhir Soni, Design Plus Structural Consultants Ajmer",
       },
+      {
+        title: "Poor Drainage Putting Your Building at Risk",
+        blurb: "Design Plus Ajmer awareness poster: poor site drainage puts your building at risk — avoid flooding, mould and structural damage with proper site drainage design, surface water flow, plinth & foundation protection, RCC and waterproofing solutions. Er. Sudhir Soni (M.E. Structure), A-1-C Rajeev Marg, Ajmer. Call +91 7976453090.",
+        image: "/images/posters/general-awareness/poor-drainage-building-at-risk-ajmer.jpg",
+        alt: "Design Plus - Poor drainage putting your building at risk - site drainage and waterproofing solutions",
+      },
     ],
   },
 
