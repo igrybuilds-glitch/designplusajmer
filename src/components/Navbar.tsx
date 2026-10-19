@@ -74,17 +74,7 @@ export function Navbar({
             aria-label="Design Plus Home"
           >
             {/* Logo */}
-            <img src="/logo.png" alt="Design Plus logo" width={44} height={44} className="w-11 h-11 object-contain shrink-0" />
-
-            <div className="flex flex-col">
-              <span className="font-editorial text-2xl sm:text-3xl tracking-[0.06em] text-[#1E1D1A] font-normal uppercase transition-colors relative overflow-hidden">
-                <span className="block dp-wordmark-text">Design Plus</span>
-                <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent -translate-x-full group-hover:animate-sheen"></span>
-              </span>
-              <span className="text-[9.5px] sm:text-[10px] tracking-[0.22em] uppercase font-sans text-[#6E665B] font-medium -mt-0.5">
-                Architecture + Structural Studio · Ajmer
-              </span>
-            </div>
+            <img src="/logo.png" alt="Design Plus — You Imagine We Design" width={96} height={48} className="h-12 w-auto object-contain shrink-0 rounded-[4px]" />
             
             <style>{`
               .dp-monogram-stroke {
