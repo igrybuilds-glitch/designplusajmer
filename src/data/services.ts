@@ -34,6 +34,9 @@ export interface Service {
   ctaLabel?: string;
   secondaryCtaLabel?: string;
   packageId?: string;
+  answerLead?: string;
+  coverageAreas?: { title: string; text: string }[];
+  faqs?: { question: string; answer: string }[];
 }
 
 export const EDITORIAL_SERVICES: EditorialServiceItem[] = [
@@ -318,7 +321,52 @@ export const SERVICES: Service[] = [
     pricingUnit: 'per room / zone',
     ctaLabel: 'Buy Now',
     secondaryCtaLabel: 'Discuss with an Architect',
-    packageId: 'renovation-layout-consultation'
+    packageId: 'renovation-layout-consultation',
+    answerLead: 'Design Plus is an interior design studio in Ajmer, practising since 2004 as part of Designplus Architects and Structural Consultants. The studio designs residential and commercial interiors — homes, modular kitchens, offices and retail spaces — with 3D room views approved before execution, detailed joinery drawings, and turnkey fit-outs supervised by its own architects and engineers.',
+    coverageAreas: [
+      {
+        title: 'Residential Interiors',
+        text: 'Homes, apartments and villas across Ajmer — living rooms, modular kitchens, bedrooms and wardrobes planned around how your family actually lives, with materials chosen for Rajasthan’s heat and dust.'
+      },
+      {
+        title: 'Commercial Interiors',
+        text: 'Offices, clinics, showrooms and coaching centres where the interior carries the brand: reception presence, staff workflow and client-facing finishes planned into the space from day one.'
+      },
+      {
+        title: 'Turnkey Fit-Outs',
+        text: 'Design-plus-execution under one roof: empanelled teams build to the drawings under studio supervision, with milestone inspections — so what was approved in design is what gets delivered on site.'
+      },
+      {
+        title: '3D Design Before Execution',
+        text: 'Every room is first built as a photorealistic 3D view. You approve colours, materials and furniture placement on screen before a single panel is cut or any execution begins.'
+      }
+    ],
+    faqs: [
+      {
+        question: 'What does an interior designer in Ajmer do?',
+        answer: 'An interior designer plans how a space looks, feels and functions — furniture layouts, modular kitchens, wardrobes, false ceilings, lighting and materials — and produces the drawings contractors build from. At Design Plus, interiors are led by Ar. Vipul Verma and coordinated with our structural team, so the design never conflicts with the building itself.'
+      },
+      {
+        question: 'Do you design interiors for both homes and offices in Ajmer?',
+        answer: 'Yes. The studio designs residential interiors — full homes, apartments and single rooms — and commercial interiors including offices, clinics, showrooms, coaching centres and boutique retail spaces across Ajmer.'
+      },
+      {
+        question: 'Can I see my interiors in 3D before the work begins?',
+        answer: 'Yes. Every designed room is presented as a photorealistic 3D view first. You approve colours, materials and furniture placement on screen, and only then do working drawings and execution begin — changes cost nothing at the 3D stage.'
+      },
+      {
+        question: 'Do you only design, or do you execute the interiors as well?',
+        answer: 'Both routes are available. Design-only engagements deliver the complete 3D and drawing package for your own contractor. Design-plus-execution engagements are built by our empanelled teams under studio supervision with milestone inspections — the route most Ajmer clients choose for kitchens and full-home interiors.'
+      },
+      {
+        question: 'What is the interior design cost per sq ft in Ajmer?',
+        answer: 'Interior architecture in Ajmer typically ranges from ₹50 to ₹120 per square foot of designed area. Wardrobe-and-paint refreshes sit at the lower end; full homes with modular kitchens, false ceilings, custom joinery and designer lighting sit at the upper end. We quote room-wise after a site visit, so you see exactly where the budget goes.'
+      },
+      {
+        question: 'Which areas does Design Plus serve for interior design?',
+        answer: 'The studio is based at Rajeev Marg, Panchsheel Nagar, Ajmer, and designs interiors across the city — including Vaishali Nagar and along Foy Sagar Road — as well as Pushkar, Kishangarh, Beawar and the wider region.'
+      }
+    ]
   },
   {
     slug: 'structural-design',

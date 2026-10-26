@@ -7,6 +7,8 @@ import {
   CheckCircle2, 
   ShieldCheck, 
   ChevronRight, 
+  ChevronDown, 
+  PhoneCall,
   BookOpen, 
   MapPin, 
   Building 
@@ -25,6 +27,7 @@ export function ServiceDetailPage({ onOpenConsultation }: ServiceDetailPageProps
   const { slug } = useParams<{ slug: string }>();
   const service = SERVICES.find((s) => s.slug === slug);
   const [isPurchaseFlowOpen, setIsPurchaseFlowOpen] = useState(false);
+  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
 
   if (!service) {
     return <Navigate to="/services" replace />;
@@ -77,6 +80,19 @@ export function ServiceDetailPage({ onOpenConsultation }: ServiceDetailPageProps
     serviceType: service.title
   };
 
+  const faqSchema = service.faqs?.length
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        '@id': `${canonicalUrl}#faq`,
+        mainEntity: service.faqs.map((f) => ({
+          '@type': 'Question',
+          name: f.question,
+          acceptedAnswer: { '@type': 'Answer', text: f.answer }
+        }))
+      }
+    : null;
+
   return (
     <main id="service-detail-page" className="pt-28 pb-20">
       <SEOHead
@@ -85,7 +101,7 @@ export function ServiceDetailPage({ onOpenConsultation }: ServiceDetailPageProps
         keywords={`${service.title.toLowerCase()} ajmer, ${service.title.toLowerCase()} rajasthan, ${service.slug.replace(/-/g, ' ')}, architect in ajmer, chartered engineer ajmer`}
         image={service.heroImage}
         canonical={canonicalUrl}
-        schema={serviceSchema}
+        schema={faqSchema ? [serviceSchema, faqSchema] : serviceSchema}
       />
 
       {/* Breadcrumb Navigation */}
@@ -117,6 +133,20 @@ export function ServiceDetailPage({ onOpenConsultation }: ServiceDetailPageProps
               </p>
             </div>
 
+            {service.answerLead && (
+              <div className="p-6 sm:p-8 bg-white border border-stone-200 space-y-3">
+                <div className="flex items-center gap-2">
+                  <span className="w-6 h-px bg-amber-800"></span>
+                  <span className="text-[11px] uppercase tracking-[0.25em] text-amber-800 font-semibold">
+                    {service.title} in Ajmer — In Brief
+                  </span>
+                </div>
+                <p className="text-base sm:text-lg text-stone-800 leading-relaxed font-sans">
+                  {service.answerLead}
+                </p>
+              </div>
+            )}
+
             <div className="relative aspect-16/10 bg-stone-200 overflow-hidden border border-stone-200 shadow-xs">
               <img
                 src={service.heroImage}
@@ -144,6 +174,26 @@ export function ServiceDetailPage({ onOpenConsultation }: ServiceDetailPageProps
                 In central Rajasthan, climatic extremes and distinct regional byelaws necessitate rigorous attention to detail. Our team ensures that each design responds to solar angles, soil capacity, and client longevity requirements.
               </p>
             </div>
+
+            {service.coverageAreas && service.coverageAreas.length > 0 && (
+              <div className="space-y-4">
+                <h2 className="font-editorial text-2xl sm:text-3xl text-stone-950 font-medium">
+                  What This Service Covers
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {service.coverageAreas.map((area) => (
+                    <div key={area.title} className="p-6 bg-white border border-stone-200 space-y-2">
+                      <h3 className="font-editorial text-lg text-stone-950 font-medium">
+                        {area.title}
+                      </h3>
+                      <p className="text-xs sm:text-sm text-stone-600 leading-relaxed">
+                        {area.text}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
 
             {/* Process Highlights */}
             <div className="p-8 bg-white border border-stone-200 space-y-4">
@@ -353,6 +403,93 @@ export function ServiceDetailPage({ onOpenConsultation }: ServiceDetailPageProps
                 <span>Start 7-Step Commission</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Frequently Asked Questions */}
+      {service.faqs && service.faqs.length > 0 && (
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+          <div className="max-w-4xl space-y-6">
+            <div className="space-y-2">
+              <div className="text-[11px] uppercase tracking-[0.25em] text-amber-800 font-semibold">
+                Questions, Answered Honestly
+              </div>
+              <h2 className="font-editorial text-2xl sm:text-3xl text-stone-950 font-medium">
+                {service.title} FAQs — Ajmer
+              </h2>
+            </div>
+            <div className="space-y-3">
+              {service.faqs.map((faq, index) => {
+                const isOpen = openFaqIndex === index;
+                return (
+                  <div key={faq.question} className="bg-white border border-stone-200">
+                    <button
+                      type="button"
+                      onClick={() => setOpenFaqIndex(isOpen ? null : index)}
+                      className="w-full text-left p-5 flex items-center justify-between gap-4 min-h-[44px] hover:bg-stone-50 transition-colors"
+                      aria-expanded={isOpen}
+                    >
+                      <span className="font-editorial text-base sm:text-lg text-stone-950 font-medium leading-snug">
+                        {faq.question}
+                      </span>
+                      <ChevronDown className={`w-4 h-4 text-stone-500 shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180 text-amber-800' : ''}`} />
+                    </button>
+                    {isOpen && (
+                      <div className="px-5 pb-5 pt-1 text-xs sm:text-sm text-stone-600 leading-relaxed border-t border-stone-100">
+                        {faq.answer}
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Studio Contact — GBP-Identical NAP & Direct CTA */}
+      {service.answerLead && (
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+          <div className="bg-[#1A1917] text-white p-8 sm:p-12 border border-stone-800 flex flex-col md:flex-row md:items-center justify-between gap-8">
+            <div className="space-y-4 max-w-xl">
+              <span className="text-[11px] font-mono uppercase tracking-widest text-[#C86635]">
+                Visit the Studio
+              </span>
+              <h2 className="font-editorial text-2xl sm:text-3xl text-white font-normal leading-tight">
+                Designplus Architects and Structural Consultants
+              </h2>
+              <address className="not-italic text-xs sm:text-sm text-stone-300 leading-relaxed space-y-1.5 font-sans">
+                <p>Rajeev Marg, Panchsheel Nagar, Ajmer</p>
+                <p>
+                  <a href="tel:+917976453090" className="hover:text-white transition-colors">+91-7976453090</a>
+                  {' · '}
+                  <a href="tel:+919461465610" className="hover:text-white transition-colors">+91-9461465610</a>
+                </p>
+                <p>
+                  <a href="mailto:designplusajmer@gmail.com" className="hover:text-white transition-colors">designplusajmer@gmail.com</a>
+                </p>
+                <p>
+                  <a href="https://designplusajmer.co.in" className="hover:text-white transition-colors">designplusajmer.co.in</a>
+                </p>
+              </address>
+            </div>
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 shrink-0">
+              <a
+                href="tel:+917976453090"
+                className="inline-flex items-center justify-center gap-2 bg-[#C86635] hover:bg-[#b5582a] text-white px-6 py-3.5 text-xs font-semibold uppercase tracking-wider transition-colors min-h-[44px]"
+              >
+                <PhoneCall className="w-4 h-4" />
+                <span>Call the Studio</span>
+              </a>
+              <Link
+                to="/contact"
+                className="inline-flex items-center justify-center gap-2 border border-stone-700 hover:border-stone-400 text-stone-200 px-5 py-3.5 text-xs font-semibold uppercase tracking-wider transition-colors min-h-[44px]"
+              >
+                <span>Contact Page</span>
+                <ArrowUpRight className="w-4 h-4" />
+              </Link>
             </div>
           </div>
         </section>

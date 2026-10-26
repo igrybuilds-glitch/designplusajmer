@@ -39,7 +39,7 @@ const DISCIPLINES: Discipline[] = [
     imageSrc: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80',
     imageAlt: 'Structural engineering blueprints and construction framework',
     standards: ['IS 456 / IS 1893 Seismic Compliance', 'Staad Pro & ETABS Simulation', 'Detailed Bar Bending Schedule (BBS)'],
-    route: '/services/structural-engineering'
+    route: '/services/structural-design'
   },
   {
     id: 'interiors',
@@ -61,7 +61,7 @@ const DISCIPLINES: Discipline[] = [
     imageSrc: 'https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=1200&q=80',
     imageAlt: 'Land surveying and geotechnical soil investigation',
     standards: ['Digital Total Station Contouring', 'Soil Bearing Capacity Testing', 'Boundary & Cadastral Verification'],
-    route: '/services/survey-services'
+    route: '/services/topographical-survey'
   },
   {
     id: 'project-management',
@@ -215,7 +215,12 @@ export function EditorialServicesExhibition({ onOpenConsultation }: EditorialSer
                 </div>
 
                 <div className="pt-6 mt-4 border-t border-white/15 flex items-center justify-between text-xs font-medium">
-                  <span className="text-[#B86B38]">View Specifications &rarr;</span>
+                  <Link
+                    to={discipline.route}
+                    className="text-[#B86B38] hover:text-white transition-colors"
+                  >
+                    View Specifications &rarr;
+                  </Link>
                   <span className={`w-2 h-2 rounded-full ${isSelected ? 'bg-[#B86B38]' : 'bg-white/30'}`} />
                 </div>
               </div>
