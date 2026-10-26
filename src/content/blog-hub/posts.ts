@@ -4126,6 +4126,106 @@ Shade the west wall with external shading, a balcony or a jaali screen, use ligh
 
 A master bedroom plan is only as honest as the measurements underneath it. [Book a site consultation](/contact) and Design Plus will measure your Ajmer master bedroom, plan the bed wall, wardrobe wall and attached bathroom as one connected suite, and walk you through the design in 3D before you spend a rupee on woodwork, ceiling or materials, so what you approve on screen is what your family actually sleeps in.`,
   },
+  {
+    slug: 'jaali-screen-facade-design-india',
+    seoTitle: 'Jaali Screen Facade Design in India (2026)',
+    title: 'Jaali Screen Facade Design in India (2026): Materials, Cooling, Cost & Mistakes',
+    description: 'Jaali screen facade design in India: how perforated screens cool a house, stone vs brick vs GRC vs terracotta, 2026 cost bands, and mistakes to avoid.',
+    date: '2026-10-26',
+    category: 'Guides',
+    image: '/images/blog/sustainable-eco-friendly-architecture-ajmer.jpg',
+    content: `Walk past any old haveli in Rajasthan at three in the afternoon and you will see the same trick at work: a stone screen full of holes, throwing patterned shade across a cool verandah while the street outside shimmers. That screen is a jaali, and it is not decoration. It is one of the oldest working pieces of climate engineering in Indian architecture, and it is back on modern Indian facades for a very practical reason: it cuts sun, keeps air moving, and gives privacy at the same time, without a single watt of electricity. The question for a house being built in Ajmer today is not whether a jaali works, but which material, which pattern density, and which wall it belongs on. Get those three decisions wrong and you get a dark room, a dusty screen, or a facade that costs far more than it should.
+
+**Short answer:** A jaali screen facade is a perforated screen — stone, brick, terracotta, concrete or GRC — fixed in front of a wall or opening so it filters sun, admits breeze and blocks the view in while letting you see out. On sun-facing walls it works best as a second skin with an air gap behind it, with denser patterns on the west and south and more open patterns where light is welcome. Published 2026 Indian bands run roughly Rs 300 to 2,000 per sq ft for sandstone, Rs 295 to 400 per sq ft for GRC panels, and Rs 60 to 75 per piece for 8x8 inch terracotta jali blocks, before fixing and framework. No Ajmer-specific rate is published, so treat these as indicative bands and get a local quote.
+
+## What a Jaali Actually Is, and Why It Came Back
+
+The word jaali means net, and that is exactly what it is: a net of stone, brick or clay with holes cut through it. The screens were cut and carved from marble or red sandstone in ornamental geometric patterns, and became a signature feature of Mughal India between the 16th and 18th centuries. The palaces and forts of Rajasthan used them for a reason that had nothing to do with showing off: in a hot, dry climate, a solid wall keeps the sun out but also keeps the air out, and a glass wall lets the air in only if you open it and let the heat in with it. A perforated screen is the third option. It breaks direct sun into shade and pattern, it lets wind through, and from the street it reads as a solid, private wall.
+
+The revival is driven by the same physics, not nostalgia. Modern Indian projects use jaali screens on houses, schools, offices and hotels, and the contemporary versions are often cast in glass-reinforced concrete (GRC) or built from brick rather than carved stone, which brings the cost down and the pattern options up. A recent Jaipur house by Nuar Studios wraps its whole facade in a red sandstone jali lattice, a direct nod to the city's heritage that also maximises natural light and airflow through the house. A Bangalore house by Kalavibhinna Architects, the Curtain House of 2025, goes further: a 15-foot-high self-supporting brick jali wall built from a double-brick interlocking layout, with no internal steel support frame at all, carrying its own weight purely through gravity and geometry. That is the point worth remembering. A jaali is a building element with structural and climate jobs to do, and it has to be designed like one.
+
+## How a Jaali Cools a House: Three Mechanisms, Not Magic
+
+A jaali cools in three ways, and a good design uses all three. First, shading: the solid part of the screen blocks direct sun before it reaches the glass or wall behind it, so the heat never enters the room in the first place. Second, ventilation: wind passes through the holes, and because the openings are often larger on the outside and smaller on the inside, the air speeds up as it squeezes through, a Venturi effect that traditional accounts credit with cooling the air as it is compressed and released. Third, the double-skin effect: when the jaali sits in front of a wall with an air gap behind it, the air in that gap heats up, rises, and pulls cooler air in behind it, acting like a chimney that draws heat away from the building.
+
+The published evidence is worth quoting carefully, because it comes from specific buildings and simulations rather than from jaali screens in general. The Punjab Kesari newspaper headquarters in New Delhi, designed by Studio Symbiosis, is wrapped in a perforated white GRC facade evoking a traditional jaali. Its co-founder describes the double screen as reducing the outside air temperature in front of the glass so that colder air is pulled inside, cutting the load on the air conditioning, with digital simulations setting a different porosity for each wall according to how much sun it receives, and no artificial lights needed during the day. At the St Andrew's Institute student block in Gurugram, the designer reports the jaali facade cutting direct sun glare by 70 percent and reducing the need for air conditioning by 35 percent, using rotated bricks and the stack effect to capture hot air and release it outdoors. Those are designer-reported figures for those buildings, not guarantees for your house, but they show the direction and the scale of the effect when the screen is designed rather than just decorated.
+
+A 2026 study of jaali facades in Jaipur's hot semi-arid climate, published in the journal Sustainability, reviews the simulation evidence and finds optimised screens achieving energy savings of up to 30 percent on south and west facades, with double-skin facades incorporating jaali elements reporting peak solar heat gain reductions of up to 78 percent. The same review notes that jaali screens with 30 to 50 percent perforation on south facades lower indoor temperatures by creating a shaded air buffer, and that cavity widths of 0.05 to 0.30 metres reduce heat transfer, with a perforation rate around 25 percent balancing daylighting and shading in hot arid regions. The lesson for a designer is that perforation ratio is a design variable, not a style choice: too closed and the room goes dark, too open and the shade disappears.
+
+## Stone, Brick, Terracotta or GRC: Choosing the Material
+
+The material decision drives cost, weight, maintenance and lifespan, so it should come before the pattern. Stone is the traditional choice and the most durable. Sandstone is the most workable for carving, marble is the most refined, and granite is the most weather-resistant. Brick is the most forgiving for a contemporary house: it is cheap, it is laid by any good mason, and as the Curtain House shows, a well-laid brick jaali can be self-supporting. Terracotta is the lightest and warmest-looking option, with a natural cooling reputation and a genuinely low material cost per piece. GRC is the modern workhorse for large facades: panels are cast in moulds, often CNC-milled for accuracy, so a complex pattern can repeat across a whole elevation without hand-carving every panel, and the panels are far lighter than stone.
+
+| Jaali material | What it is best for | Published 2026 band | Watch out for |
+| --- | --- | --- | --- |
+| Sandstone, CNC-cut | Large facades, heritage look | From Rs 300 per sq ft (Bangalore listing) | Needs sealant outdoors, re-sealed annually |
+| Sandstone, hand-carved | Feature panels, jharokha-style screens | Rs 400 to 2,000 per sq ft | Lead time 4 to 8 weeks |
+| Marble, hand-carved | Premium interiors, sheltered screens | Rs 600 to 5,000+ per sq ft | Best in covered positions, not full monsoon exposure |
+| Handcrafted stone jali, 3 inch | Outdoor screens, Rajasthan supply | Rs 750 per sq ft (Kishangarh listing) | Heavy: needs proper fixing and support |
+| GRC / GFRC panels | Full facades, repeating patterns | Rs 295 to 400 per sq ft | Fixing framework cost is extra |
+| Terracotta jali block, 8x8 inch | Balconies, partitions, compound screens | Rs 60 to 75 per piece | Mortar and laying cost is extra |
+| Sandstone window jali | Window screens, small openings | Rs 200 to 480 per sq ft (Raipur listings) | Pattern depth varies by supplier |
+
+All bands above are published supplier listings from Bangalore, Kishangarh, Raipur, Lucknow, Faridabad and Mumbai, not Ajmer quotes. They exclude fixing, framework, scaffolding and GST unless the supplier says otherwise. For a sense of scale, a 100 sq ft facade screen in CNC sandstone at the bottom of the band is Rs 30,000 of panel material alone, while the same area in hand-carved sandstone at the top of the band is Rs 2,00,000 before a mason touches it. That spread is why the material conversation has to happen before the pattern conversation, not after.
+
+For Ajmer specifically, the supply geography is favourable even though no Ajmer rate is published: Rajasthan is the home of sandstone carving, with Kishangarh and Dholpur stone working close by, so transport is shorter than it would be for a Bangalore or Mumbai supplier. What Ajmer adds is dust. Fine desert dust settles into every perforation, so a screen that cannot be hosed down or reached for cleaning will look tired within a year, and an unsealed sandstone screen in monsoon-driven rain will stain. Seal outdoor sandstone with a penetrating sealant before installation and re-seal it annually, as the Bangalore stone suppliers recommend, and keep the screen reachable.
+
+## Designing the Screen: Density, Orientation and the Air Gap
+
+A jaali that is the same density on every wall is a missed opportunity. The sun does not hit every wall equally, and neither should the screen. The west wall takes the harshest afternoon sun, roughly 3 to 6 pm in Ajmer's summer, and deserves the densest pattern. The south wall takes high summer sun and lower winter sun, so a medium density works, admitting winter warmth while blocking summer glare. The north wall barely needs shading at all, so an open pattern there buys daylight and breeze without losing anything. The Punjab Kesari headquarters took exactly this approach, tuning each wall's porosity to its sunlight with digital simulations. Your house does not need simulation software to apply the same logic, but it does need the architect to think wall by wall rather than ordering one pattern for the whole house.
+
+The air gap is the second design decision that separates a working jaali from a decorative one. A screen fixed flat against a wall still shades, but it does not ventilate. A screen held off the wall creates the ventilated cavity that carries heat up and away, and the Jaipur study's reviewed range of 0.05 to 0.30 metres for that cavity is a useful starting point for discussion with your structural engineer. The gap also needs a way in and out: air must enter at the bottom and escape at the top, or the chimney does nothing. A screen sealed top and bottom is just a second wall with holes in it.
+
+Privacy is the third function, and it is the one clients notice first. A jaali reads as solid from the street and open from inside, especially in daylight when the interior is darker than the exterior. That is why jaali screens work so well on balconies, stairwells and street-facing bedrooms in dense Ajmer colonies: you get breeze and daylight without living behind curtains. At night the effect reverses, because a lit interior shows through the holes, so bedrooms still need curtains or shutters behind the screen. Plan for that from the start rather than discovering it on the first evening.
+
+## Structural Reality: A Screen Is Not a Wall, Until It Has To Be
+
+Here is where a jaali project goes wrong most expensively. A small window screen can hang in a frame. A full-height facade screen cannot. Stone panels are heavy, brick screens carry their own weight plus wind load, and a 15-foot brick wall like the Curtain House only stands without steel because its double-brick interlocking layout was engineered that way, by masons skilled enough to lay it precisely. Wind is the load people forget: a perforated screen still catches wind, and a tall, freestanding screen on an upper floor or a terrace edge needs its fixing designed by a structural engineer, not improvised by a fabricator on site.
+
+Three structural questions to settle before ordering anything: what holds the screen up, what holds it back against wind, and what happens at the edges where it meets the slab, the column and the parapet. GRC panels need a steel framework and anchors, and the framework is a separate cost. Stone panels need brackets and dowels sized for their weight. Brick screens need either a supporting beam at intervals or a self-supporting geometry proven by the engineer. If your contractor waves these questions away, that is the moment to pause, because a screen that fails does not fail gracefully: it falls outward, onto the street or the courtyard below. Our guide to [structural engineering in Ajmer](/blog/structural-engineer-in-ajmer) covers why this kind of check matters, and the [hot-climate home design guide for 45-degree Rajasthan](/blog/hot-climate-home-design-india-45-degrees) sets out the shading and orientation logic a jaali should sit inside. For the 3D stage where you can actually see the shadows a pattern throws before you build it, see the [3D living room design guide for Ajmer](/blog/3d-living-room-design-ajmer).
+
+## Five Mistakes That Ruin Jaali Facades
+
+First, picking the pattern from a photograph without checking what it does to light inside. A dense geometric pattern that looks stunning on a showroom wall can leave a living room gloomy, because every hole you remove is daylight you lose. Approve the pattern against a sun study or at least a full-size sample held up on site, not a phone screen.
+
+Second, fixing the screen flat to the wall and losing the ventilated cavity. You keep the shade but throw away the chimney effect, which is half the cooling benefit.
+
+Third, choosing unsealed stone for a fully exposed west facade and then wondering why it stains and darkens after the first monsoon. Seal it, and budget for re-sealing every year.
+
+Fourth, ignoring cleaning and dust. In Ajmer, a screen with tiny, intricate perforations clogs with dust faster than a bold, open pattern, and if the screen is three floors up with no access, it will never be cleaned. Bold patterns age better here than delicate ones.
+
+Fifth, ordering the screen before the structural fixing is designed. The pattern, the panel size and the support system are one decision, and splitting them between a designer, a supplier and a contractor with nobody coordinating is how screens end up late, over budget, or unsafe. Decide the fixing at drawing stage, and let the pattern follow the panel sizes the structure allows.
+
+## FAQ
+
+### What is a jaali screen facade?
+
+A jaali screen facade is a perforated screen fixed to the outside of a building, made from stone, brick, terracotta, concrete or GRC. The holes filter direct sunlight, let breeze through and block the view in from the street, while the solid parts throw patterned shade. It works best as a second skin with an air gap behind it.
+
+### How much does a jaali screen cost in India?
+
+Published 2026 bands run roughly Rs 300 to 2,000 per sq ft for sandstone depending on CNC or hand carving, Rs 295 to 400 per sq ft for GRC panels, and Rs 60 to 75 per piece for 8x8 inch terracotta jali blocks. Fixing, framework, scaffolding and GST are extra. No Ajmer-specific rate is published, so get a local quote.
+
+### Does a jaali facade really cool a house?
+
+Yes, when designed as a climate device, not decoration. It shades the wall, admits breeze, and with an air gap behind it creates a chimney effect carrying heat away. A 2026 Jaipur study reviews simulations showing up to 30 percent energy savings on south and west facades; a Gurugram designer reports a 35 percent cut in air-conditioning need.
+
+### Which jaali material is best for Ajmer's climate?
+
+Sandstone suits Ajmer best for heritage-style facades, because Rajasthan stone is local and durable, but it must be sealed and re-sealed annually against dust and monsoon rain. Brick is the best value for a contemporary house, and GRC is best for large repeating patterns. Terracotta is lightest and cheapest per piece for balconies and partitions.
+
+### How do you maintain a jaali screen facade?
+
+Hose or pressure-wash the screen periodically to clear Ajmer's dust from the perforations, and keep it reachable for cleaning. Re-seal outdoor sandstone with a penetrating sealant every year. Check fixings and brackets annually, especially after monsoon winds, and replace any cracked stone or terracotta piece before it loosens.
+
+### Can a jaali be added to an existing house?
+
+Yes, but the fixing is critical: the screen's weight and wind load must be carried by brackets or a steel framework anchored to the structure, not to plaster or cladding. Get a structural opinion before adding heavy stone panels to an old wall, and approve the pattern against a sun study first.
+
+## Book Site Consultation
+
+A jaali facade is only as good as the wall-by-wall thinking behind it. [Book a site consultation](/contact) and Design Plus will study your plot's sun and wind, tune the pattern density for each wall, settle the fixing and air gap with a structural engineer, and show you the shadows the screen will throw in 3D before you spend a rupee on stone, brick or GRC, so the facade you approve is the facade that actually cools your house.`,
+  },
 ];
 
 export function getBlogHubPost(slug: string): BlogHubPost | undefined {
