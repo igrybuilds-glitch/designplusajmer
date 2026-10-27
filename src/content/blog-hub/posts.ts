@@ -4327,6 +4327,131 @@ Many do, and Vastu costs almost nothing when it is part of the first brief and a
 
 Choosing a designer is really choosing a process: measured drawings, honest rates and stage-by-stage supervision. [Book a site consultation](/contact) and Design Plus will measure your Ajmer home, plan the layout and materials with you, show the design in 3D room by room, and price it in an itemised BOQ before any execution begins — so the interior you approve on paper is the interior your family actually lives in.`,
   },
+  {
+    slug: '3-bhk-house-design-ajmer-apeksha-city-style',
+    seoTitle: '3 BHK House Design Ajmer: Apeksha City Style (2026)',
+    title: '3 BHK House Design in Ajmer (2026): Apeksha City Style Layouts, Sizes & Costs',
+    description: '3 BHK house design in Ajmer in the modern township style: plot sizes, room sizes, G+1 layouts, Vastu placement and 2026 construction costs.',
+    date: '2026-10-27',
+    category: 'Guides',
+    image: '/images/blog/how-to-plan-your-dream-home-in-ajmer.jpg',
+    content: `Walk through Ajmer's newer townships and a pattern repeats: compact, neatly laid-out plots, a modern front elevation, and a family trying to fit three bedrooms, a proper living space and parking onto land that is much smaller than the old city plots their parents built on. That is the design problem behind the search for a 3 BHK house design in Ajmer in the Apeksha City style — not a branded look, but a practical question: what does a comfortable three-bedroom home look like on a modern township plot, what does it cost in 2026, and which layout actually works?
+
+This guide answers it with published plan sizes, published Rajasthan cost bands and the layout logic that makes small plots live large. It uses Apeksha City in Chachiyawas, Ajmer, as the reference township because its listing facts are public — a RERA-registered plotting development — and the same logic applies to any similar new township plot in Ajmer.
+
+**Short answer:** On a modern Ajmer township plot of roughly 1,000–1,300 sq ft, a comfortable 3 BHK is usually a G+1 (ground + first floor) home, not a single-floor one: one bedroom, living, kitchen and parking on the ground floor, and two bedrooms plus a family space upstairs, giving roughly 1,400–2,000 sq ft of total built-up area. Budget roughly ₹1,800–₹3,000 per sq ft for construction in Rajasthan in 2026 (published 2026 guide band), so a 1,500 sq ft 3 BHK runs roughly ₹28–36 lakh at standard finishes and ₹40–50 lakh at premium finishes, before land and interiors. Get the structure, Vastu placement and staircase right on paper first — those three are expensive to fix later.
+
+## What "Apeksha City Style" Actually Means
+
+There is no official architectural style called "Apeksha City style". What buyers mean by it is the way homes are being built in Ajmer's newer plotted townships: modest plot sizes, contemporary elevations with clean lines and mixed materials, open-plan living and dining, a modular kitchen, and three bedrooms sized for a nuclear or small joint family rather than the sprawling joint-family houses of older Ajmer.
+
+Apeksha City itself is a useful anchor because its facts are on public record in project listings: a residential plotting development at Chachiyawas, Ajmer, by Apeksha Housing Private Limited, registered under RERA number RAJ/P/2025/3607 on 27 March 2025, covering about 3,000 sqm with 20 residential plots. Listings put its plot sizes at roughly 973–1,321 sq ft and list basic township infrastructure — water supply, rainwater harvesting, electrification with transformer and solar integration, storm drainage, sewerage with a treatment plant, and solid-waste disposal. Verify current availability and plot dimensions with the developer before buying; listings change, and this guide is about designing on such a plot, not selling one.
+
+The design consequence of those plot sizes is the whole story of this guide. A 1,000 sq ft plot is not a small house — it is a house that must be planned vertically, with every square foot earning its place.
+
+## The Plot Reality: What Actually Fits on 973–1,321 Sq Ft
+
+After front, rear and side setbacks, a 1,000–1,300 sq ft plot typically yields about 700–1,000 sq ft of built-up area per floor. That single fact decides the layout:
+
+| Option | Total built-up area (approx.) | What you get | Verdict for a 3 BHK |
+| --- | --- | --- | --- |
+| Single floor only | 700–1,000 sq ft | Tight 3 BHK or comfortable 2 BHK | Possible, but bedrooms shrink to 10x10 ft and storage disappears |
+| G+1 (ground + first floor) | 1,400–2,000 sq ft | Full 3 BHK with parking, lounge and balconies | The standard answer on township plots |
+| G+1 with a future-ready structure | 1,400–2,000 sq ft now, more later | Same as G+1, with columns and footings sized for a future floor | Best if the budget is tight today |
+
+Published plan libraries agree with this shape. A 20x60 ft (1,200 sq ft) plan delivers roughly 900–1,050 sq ft of built-up area per floor after setbacks, and its G+1 version totals about 2,050 sq ft. A 30x40 ft (1,200 sq ft) duplex plan puts living, dining, kitchen, one bedroom and parking on the ground floor, and the master bedroom, two more bedrooms and a family lounge upstairs. Our guide to [single floor house design in Rajasthan](/blog/single-floor-house-design-rajasthan) covers the other side of the choice: a single floor suits elderly parents and small families, but on a township plot it caps you at a tight 3 BHK, while going up buys real room sizes.
+
+One more plot fact matters before any design: soil and approval. A soil test before construction and the municipal approval drawings are not optional extras — published Rajasthan guides budget roughly ₹25,000–50,000 for soil testing and ₹50,000–1.5 lakh for approvals, and our [naksha approval process guide for Ajmer](/blog/naksha-approval-process-ajmer) walks through the documents and timelines. A 3 BHK design that has not cleared approval is a drawing, not a house.
+
+## Three Layouts That Work on a Township Plot
+
+### Layout 1: The tight single-floor 3 BHK (only if stairs are truly out)
+
+Everything on one level: living and dining at the front, kitchen in the south-east, three bedrooms of about 10x10 to 10x12 ft, two bathrooms, and parking squeezed to the side or front. It works for a family that cannot use stairs daily, but it trades away the lounge, the pooja space and most storage. Choose it only for a genuine mobility reason, not to save money — the saving is small and the compromise is permanent.
+
+### Layout 2: The standard G+1 3 BHK (the township default)
+
+Ground floor: parking, living room, dining, kitchen with utility, one bedroom with an attached bathroom, and a common bathroom. First floor: master bedroom with an attached bathroom and wardrobe, two bedrooms, a family lounge, and a front balcony. This is the layout published plan libraries repeat for 30x40 and 20x60 plots, because it separates the social ground floor from the private first floor, keeps the staircase near the entrance so guests never walk through bedrooms, and leaves the ground-floor bedroom usable for elderly parents or guests.
+
+### Layout 3: The G+1 with a courtyard or light well (the Ajmer upgrade)
+
+Same as Layout 2, but the plan gives up a small slice of floor area to a central courtyard, skylight or light well. In Ajmer's heat this is not decoration: it pulls daylight and stack ventilation into the middle of a deep plan, where rooms otherwise go dark and hot. We covered the full physics in our guide to [courtyard house design for Rajasthan's hot climate](/blog/courtyard-house-design-rajasthan-hot-climate) — on a compact township plot, a small courtyard pays for itself in comfort every summer afternoon.
+
+## Room-by-Room Sizes That Actually Work
+
+Published 3 BHK plans converge on a narrow band of sizes. Use these as your brief to the architect, and question any plan that goes far below them:
+
+| Room | Comfortable size | Notes |
+| --- | --- | --- |
+| Living room | 12x14 ft to 18x11 ft | One clear wall for the TV, no door clashes |
+| Dining | 8x10 ft or open with living | Open kitchen-dining makes small plans feel larger |
+| Kitchen | 10x11 ft, or 120–180 sq ft | L-shaped or U-shaped; utility beside it, never instead of it |
+| Master bedroom | 12x14 ft (10x12 ft minimum) | Attached bathroom, wardrobe wall, king bed with walking space |
+| Bedroom 2 and 3 | 10x12 ft and 10x10 ft | Queen bed plus wardrobe; below 10x10 ft, furniture starts dictating the room |
+| Bathrooms | 5x7 ft to 5x8 ft | Attached for the master, one common per floor |
+| Parking | 10x18 ft | Measure your actual car, not a generic bay |
+| Staircase | Dog-leg or L-shaped | Keep it near the entrance; it eats 80–100 sq ft, so place it deliberately |
+
+The YouTube lesson that matches these numbers comes from Civil Naksha Hub's 25x40 ft (1,000 sq ft) 3 BHK plan video: on a compact plot, the win is smart space utilisation — a living room that flows into dining, a kitchen planned with its pantry and toilet layout fixed early, and no dead passage. The channel itself flags its plan as conceptual and advises consulting a qualified architect or structural engineer before construction. That advice is the point: a free video plan is a starting brief, not a construction drawing. A real drawing set — floor plans, sections, electrical and plumbing points, and structural drawings from an engineer — is what a contractor can actually build from, as our [2D/3D floor plan design guide for Ajmer](/blog/2d-3d-floor-plan-design-ajmer-online) explains.
+
+## Vastu Placement Without Wrecking the Plan
+
+Most Ajmer families want Vastu followed, and on a township plot it costs almost nothing if it enters the first sketch and a great deal as a retrofit. The standard published placements are: kitchen in the south-east, master bedroom in the south-west, pooja in the north-east, and the main entrance ideally on the east or north side. State your requirements in the very first brief, and expect a good architect to balance them against light and ventilation — a kitchen that follows Vastu but faces a blank wall with no window is a worse kitchen, not a better one. If your plot's facing makes textbook placement impossible, ask for the closest workable compromise on paper before approving the plan, not after the walls are up.
+
+## Elevation and Heat: Looking Modern Without Cooking
+
+The "township style" elevation — stone or tile cladding at the base, textured paint or WPC louvers above, a clean parapet and hidden profile lights — is covered in detail in our [3D home elevation design guide for Ajmer](/blog/3d-home-elevation-design-ajmer). Two Ajmer-specific warnings apply. First, west-facing rooms take brutal afternoon sun: shade them with chajjas, louvers or a deeper balcony, and put heat-reflective lighter colours on sun-facing walls. Second, dust: closed storage beats open shelving in rooms facing the road, and finishes that wipe clean beat heavy textures. A pretty elevation that ignores the sun direction is a maintenance bill, not a design.
+
+## What a 3 BHK Costs in Ajmer in 2026
+
+No Ajmer-specific 3 BHK construction rate is published in the sources for this guide, so the honest bands are Rajasthan and nearby-city ones, with Ajmer expected at or below their lower end as a tier-2 city. Published 2026 guides put Rajasthan construction at roughly ₹1,800–₹3,000 per sq ft depending on city and finish, with a standard 3 BHK of about 1,500 sq ft at roughly ₹28–36 lakh and premium finishes at roughly ₹40–50 lakh. A nearby-city reference, Jaipur, is published at roughly ₹1,500 per sq ft for basic quality to ₹2,200 and above for premium, with a quality G+1 home of about 2,000 sq ft at roughly ₹34–39 lakh excluding land and interiors. Plan-library cost illustrations for a 1,500 sq ft home run from roughly ₹24.8–29.3 lakh (economy) through ₹30.8–33.8 lakh (standard) to ₹36.8–42.8 lakh (premium) — planning estimates only, since soil, material choices and labour rates move the final figure.
+
+| Built-up area | Standard finish (indicative) | Premium finish (indicative) |
+| --- | --- | --- |
+| 1,200 sq ft (tight 3 BHK) | ₹22–29 lakh | ₹32–40 lakh |
+| 1,500 sq ft (standard G+1 3 BHK) | ₹28–36 lakh | ₹40–50 lakh |
+| 1,800–2,000 sq ft (generous G+1 3 BHK) | ₹34–45 lakh | ₹48–60 lakh |
+
+These figures exclude land, approvals, interiors and the extras that surprise first-time builders: architect fees (published guides suggest 5–8% of construction cost), approvals, soil testing, and a 10–15% contingency for material price movement. Our companion guide to the [cost of building a house in Ajmer in 2026](/blog/cost-of-building-a-house-in-ajmer-2026) and our [house naksha design per sq ft rate guide](/blog/house-naksha-design-ajmer-per-sq-ft-rate) break down where the money actually goes. Always compare contractors on an itemised bill of quantities, never on a headline per-sq-ft rate — one quote's "₹1,800 per sq ft" may exclude flooring, fittings and electrical work that another's includes.
+
+## The Process, in Order
+
+First, the brief: plot size and facing, family needs, Vastu requirements, budget band — given in writing to the architect. Second, soil testing and approval drawings. Third, the concept plan and 3D views, with room sizes checked against the table above. Fourth, structural drawings from a structural engineer — on a G+1 home, the columns, beams and footings are the safety of the house, and a structural engineer, not just the architect, should sign them. Fifth, the itemised estimate and contractor selection. Sixth, construction in inspected stages: foundation, structure, brickwork, plaster, services, finishing. Skipping any stage's check to save a week is how a 3 BHK inherits damp walls, a leaking bathroom or a staircase that is a daily annoyance.
+
+## Five Mistakes That Shrink a 3 BHK
+
+First, approving a plan from a video or a photo without redrawing it for your plot's exact size, facing and setbacks. Second, shrinking bedrooms below 10x10 ft to save a lounge nobody uses. Third, placing the staircase as an afterthought — it is the most-used structure in the house and the hardest to move. Fourth, forgetting storage: a 3 BHK without a wardrobe wall per bedroom, a utility space and a store room fills up within a year. Fifth, starting construction before the design is frozen — mid-work changes are the single biggest budget killer, and on a compact plan every change ripples into two rooms.
+
+## FAQ
+
+### How much does it cost to build a 3 BHK house in Ajmer in 2026?
+
+Published 2026 Rajasthan guides put construction at roughly ₹1,800–₹3,000 per sq ft, so a standard 1,500 sq ft 3 BHK runs roughly ₹28–36 lakh and premium finishes roughly ₹40–50 lakh, excluding land and interiors. Ajmer, as a tier-2 city, should sit at or below the lower end; confirm against itemised local quotes.
+
+### Can a 3 BHK fit on a 1,000 sq ft plot in Ajmer?
+
+Yes, as a G+1 home: one bedroom, living, kitchen and parking on the ground floor, and two bedrooms plus a family space upstairs, giving roughly 1,400–2,000 sq ft in total. A single-floor 3 BHK on the same plot is possible but tight, with bedrooms shrinking toward 10x10 ft and storage largely lost.
+
+### What is Apeksha City in Ajmer?
+
+Apeksha City is a residential plotting development at Chachiyawas, Ajmer, by Apeksha Housing Private Limited, registered under RERA number RAJ/P/2025/3607 on 27 March 2025, with 20 residential plots listed at roughly 973–1,321 sq ft. Verify current availability and dimensions with the developer before buying.
+
+### What are good room sizes for a 3 BHK house?
+
+Published plans suggest a living room of about 12x14 ft, a kitchen of about 10x11 ft, a master bedroom of about 12x14 ft, and other bedrooms of about 10x12 ft and 10x10 ft, with bathrooms of about 5x7 ft. Below 10x10 ft, a bedroom stops fitting a queen bed, wardrobe and walking space comfortably.
+
+### Should a 3 BHK in Ajmer follow Vastu?
+
+Most Ajmer families prefer it, and it costs almost nothing when it enters the first sketch: kitchen in the south-east, master bedroom in the south-west, pooja in the north-east, entrance ideally east or north. A good architect balances Vastu with light and ventilation rather than forcing changes that damage the room.
+
+### Is a single floor or G+1 better for a 3 BHK on a township plot?
+
+G+1 is usually better: it doubles the usable area on the same plot, gives real bedroom sizes, and keeps a ground-floor bedroom for elderly parents or guests. Single floor suits families who cannot use stairs daily, but it caps the home at a tight 3 BHK on a 1,000–1,300 sq ft plot.
+
+## Book Site Consultation
+
+A 3 BHK on a township plot is won or lost on paper, before a single brick is laid. [Book a site consultation](/contact) and Design Plus will measure your Ajmer plot, test the layout options against your plot's exact size and facing, settle Vastu, structure and staircase on the drawing, and price the build in an itemised estimate — so the 3 BHK you approve is the 3 BHK your family actually lives in.`,
+  },
 ];
 
 export function getBlogHubPost(slug: string): BlogHubPost | undefined {
