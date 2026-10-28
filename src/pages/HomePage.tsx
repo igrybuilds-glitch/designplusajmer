@@ -12,6 +12,8 @@ import { EngineeringExpertiseShowcase } from '../components/home/EngineeringExpe
 import { RegionalPresenceSection } from '../components/home/RegionalPresenceSection';
 import { EditorialJournalSection } from '../components/home/EditorialJournalSection';
 import { ClientReviewsSection } from '../components/home/ClientReviewsSection';
+import { HomeFaqSection } from '../components/home/HomeFaqSection';
+import { HOME_FAQS } from '../data/homeFaq';
 import { InstagramReel } from '../components/InstagramReel';
 import { FinalConsultationCTA } from '../components/home/FinalConsultationCTA';
 import { prepareFirstPaint, prepareHomepageAssets } from '../utils/homepageAssetPreloader';
@@ -125,6 +127,19 @@ export function HomePage({ onOpenConsultation }: HomePageProps) {
     ]
   };
 
+  // FAQPage schema mirrors the visible HomeFaqSection accordion 1:1
+  // (HOME_FAQS is the single source of truth for both).
+  const homeFaqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    '@id': 'https://www.designplusajmer.co.in/#faq',
+    mainEntity: HOME_FAQS.map((f) => ({
+      '@type': 'Question',
+      name: f.question,
+      acceptedAnswer: { '@type': 'Answer', text: f.answer }
+    }))
+  };
+
   return (
     <main id="homepage-content" className="relative bg-transparent text-[#F4F0E8] min-h-screen">
       <SEOHead
@@ -132,7 +147,7 @@ export function HomePage({ onOpenConsultation }: HomePageProps) {
         description="Premier architect in Ajmer for bespoke house planning Ajmer, refined interior designer Ajmer solutions, and turnkey project execution with structural rigor."
         keywords="architect in ajmer, architects in ajmer, house planning ajmer, interior designer ajmer, turnkey project execution, structural engineer ajmer, chartered engineer rajasthan, villa design ajmer"
         canonical="https://www.designplusajmer.co.in/"
-        schema={homeSchema}
+        schema={[homeSchema, homeFaqSchema]}
       />
       
       {/* 00. PERSISTENT FIXED ATLAS CANVAS: 180-FRAME CINEMATIC BACKGROUND ATMOSPHERE */}
@@ -172,6 +187,9 @@ export function HomePage({ onOpenConsultation }: HomePageProps) {
 
         {/* 11. REVIEWS SECTION */}
         <ClientReviewsSection />
+
+        {/* 11a. AEO/GEO: ANSWER-FIRST BLOCKS + VISIBLE FAQ (mirrored in FAQPage schema above) */}
+        <HomeFaqSection />
 
         {/* 11b. INSTAGRAM REEL */}
         <InstagramReel reelId="DeP-WaAzaWX" />

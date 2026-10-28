@@ -8,6 +8,9 @@ export interface BlogHubPost {
   category: string;
   featured?: boolean;
   image?: string;
+  /** Optional FAQs — must also appear visibly in `content` (same Q&A text);
+   *  BlogHubArticlePage emits FAQPage schema from this field. */
+  faqs?: Array<{ question: string; answer: string }>;
   content: string;
 }
 
@@ -125,6 +128,24 @@ Building in or around Ajmer? Book a free site consultation with Design Plus \u20
         seoTitle: 'House Construction Cost in Ajmer (2026)',
     title: 'Cost of Building a House in Ajmer (2026): Real Rates, Hidden Costs & Smart Budgeting',
     description: 'Planning to build a house in Ajmer? Real 2026 construction costs per sq ft, hidden expenses most people miss, and budgeting tips from Design Plus.',
+    faqs: [
+      {
+        question: 'What is the average cost to build a 2,000 sq ft house in Ajmer?',
+        answer: 'At standard specifications, a 2,000 sq ft house in Ajmer typically totals ₹35–42 lakh in 2026. The same home at premium finishes runs higher — roughly ₹44–56 lakh at ₹2,200–2,800 per sq ft — and luxury bespoke builds start around ₹2,900 per sq ft. The grey structure consumes roughly half the outlay.'
+      },
+      {
+        question: 'Why do foundation costs vary so much in Ajmer?',
+        answer: 'Ajmer’s ground changes from plot to plot — rocky Aravalli strata in some areas, silty or filled soil in others. Foundation costs can swing 25–40% depending on which one your plot sits on, which is why a soil test before design is part of every realistic budget rather than an optional extra.'
+      },
+      {
+        question: 'Does the per sq ft construction rate include design and approval costs?',
+        answer: 'Usually not. The per sq ft construction rate covers the build itself; architectural design, structural drawings and Ajmer Development Authority (ADA) plan approval sit on top of it. Comprehensive house design in Ajmer typically runs ₹35–85 per sq ft of built-up area, and approval and utility costs should be budgeted as separate line items from the start.'
+      },
+      {
+        question: 'How can I keep my house construction budget under control in Ajmer?',
+        answer: 'Freeze the design before execution begins, insist on an itemised BOQ instead of a single lump-sum figure, test the soil before the foundation is designed, and keep a contingency for specification changes. Most budget overruns in Ajmer come from mid-build design changes and under-scoped foundations, not from material prices alone.'
+      }
+    ],
     date: '2026-10-11',
     category: 'Guides',
     image: '/images/blog/cost-of-building-a-house-in-ajmer-2026.jpg',
@@ -183,6 +204,28 @@ Design Plus Architects, Ajmer budgets 2025\u20132026 residential construction at
 | Luxury bespoke builds | \u20b92,900\u2013\u20b93,800+ |
 
 A 2,000 sq ft standard home typically totals \u20b935\u201342 lakh, with the grey structure consuming roughly half the outlay. Foundation costs swing 25\u201340% with Ajmer\u2019s rocky or silty terrain \u2014 another reason soil testing belongs in every budget.
+
+## Frequently asked questions about house construction cost in Ajmer
+
+### What is the average cost to build a 2,000 sq ft house in Ajmer?
+
+At standard specifications, a 2,000 sq ft house in Ajmer typically totals \u20b935\u201342 lakh in 2026. The same home at premium finishes runs higher \u2014 roughly \u20b944\u201356 lakh at \u20b92,200\u20132,800 per sq ft \u2014 and luxury bespoke builds start around \u20b92,900 per sq ft. The grey structure consumes roughly half the outlay.
+
+### Why do foundation costs vary so much in Ajmer?
+
+Ajmer\u2019s ground changes from plot to plot \u2014 rocky Aravalli strata in some areas, silty or filled soil in others. Foundation costs can swing 25\u201340% depending on which one your plot sits on, which is why a soil test before design is part of every realistic budget rather than an optional extra.
+
+### Does the per sq ft construction rate include design and approval costs?
+
+Usually not. The per sq ft construction rate covers the build itself; architectural design, structural drawings and Ajmer Development Authority (ADA) plan approval sit on top of it. Comprehensive house design in Ajmer typically runs \u20b935\u201385 per sq ft of built-up area, and approval and utility costs should be budgeted as separate line items from the start.
+
+### How can I keep my house construction budget under control in Ajmer?
+
+Freeze the design before execution begins, insist on an itemised BOQ instead of a single lump-sum figure, test the soil before the foundation is designed, and keep a contingency for specification changes. Most budget overruns in Ajmer come from mid-build design changes and under-scoped foundations, not from material prices alone.
+
+## Turning the budget into a buildable plan
+
+A rate per sq ft only becomes a real budget when it is tied to drawings. Start with [house design in Ajmer](/house-design-ajmer) to fix the plan, elevation and specification, have the structure engineered through our [structural consultancy in Ajmer](/structural-consultancy-ajmer) so steel and concrete quantities are calculated rather than guessed, and clear [building plan approval in Ajmer](/building-plan-approval-ajmer) before work begins on site.
 `
   },
   {
@@ -816,6 +859,8 @@ At minimum: a foundation layout plan, column and beam framing plans for every fl
 ---
 
 Building in or around Ajmer and want the structure done right the first time? Start with our [guide to hiring an architect in Ajmer](/blog/guide-to-hiring-architect-in-ajmer), understand how [architect fees in Ajmer](/blog/architect-fees-ajmer-per-sq-ft) fit your budget, and see the full [cost of building a house in Ajmer](/blog/cost-of-building-a-house-in-ajmer-2026) before you commit.
+
+For the service itself \u2014 RCC design, audits and stability certificates under one chartered engineer \u2014 see our [structural consultancy in Ajmer](/structural-consultancy-ajmer) page for scope, process and fees.
 
 **Want structure and architecture from one accountable team?** [Book a free site consultation](/contact) \u2014 we will walk your plot, review your soil conditions, and give you a clear written scope covering both design and structural engineering. No obligation, no sales pressure.`
   },
@@ -4325,7 +4370,9 @@ Many do, and Vastu costs almost nothing when it is part of the first brief and a
 
 ## Book Site Consultation
 
-Choosing a designer is really choosing a process: measured drawings, honest rates and stage-by-stage supervision. [Book a site consultation](/contact) and Design Plus will measure your Ajmer home, plan the layout and materials with you, show the design in 3D room by room, and price it in an itemised BOQ before any execution begins — so the interior you approve on paper is the interior your family actually lives in.`,
+Choosing a designer is really choosing a process: measured drawings, honest rates and stage-by-stage supervision. [Book a site consultation](/contact) and Design Plus will measure your Ajmer home, plan the layout and materials with you, show the design in 3D room by room, and price it in an itemised BOQ before any execution begins — so the interior you approve on paper is the interior your family actually lives in.
+
+To see the service behind this guide — scope, 3D process and what is included — visit our [interior designer in Ajmer](/interior-designer-ajmer) page.`,
   },
   {
     slug: '3-bhk-house-design-ajmer-apeksha-city-style',

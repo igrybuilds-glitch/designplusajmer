@@ -391,7 +391,30 @@ export const SERVICES: Service[] = [
     pricingUnit: 'per structural audit / layout',
     ctaLabel: 'Buy Now',
     secondaryCtaLabel: 'Speak with Er. Sudhir Soni',
-    packageId: 'structural-stability-audit'
+    packageId: 'structural-stability-audit',
+    answerLead: 'Design Plus provides chartered structural engineering in Ajmer, led by Er. Sudhir Soni (M.E. Structure, Chartered Engineer) as part of Designplus Architects and Structural Consultants, practising since 2004. The service covers RCC framing design to IS 456, seismic detailing to IS 1893, foundation design for Ajmer’s rocky and sandy soils, structural audits and ADA stability certificates.',
+    faqs: [
+      {
+        question: 'What does a structural engineer in Ajmer do?',
+        answer: 'A structural engineer designs the load-bearing skeleton of a building — foundations, columns, beams and slabs — calculated to IS codes for the soil, height and use of the building. In Ajmer the role also covers stability certificates for ADA sanction, structural audits of existing buildings and retrofitting designs. Design Plus provides all of these in-house under Er. Sudhir Soni.'
+      },
+      {
+        question: 'When do I need a structural engineer for my house in Ajmer?',
+        answer: 'You need one for any G+1 or taller construction, for houses on rocky or filled ground, when adding floors to an existing building, and whenever ADA sanction requires a stability certificate — which is standard. Even single-storey homes on Ajmer’s variable soils benefit, because proper footing design prevents the settlement cracks common in under-engineered houses.'
+      },
+      {
+        question: 'How much does structural design cost per sq ft in Ajmer?',
+        answer: 'In Ajmer, standalone chartered structural design typically ranges from ₹12 to ₹25 per square foot of built-up area, depending on building height, soil complexity and drawing detail. Structural audits and stability certificates are quoted per assignment after a site visit. When structural engineering is bundled with our architectural design, it is integrated into the single project fee.'
+      },
+      {
+        question: 'What is a structural stability certificate, and who can issue it in Ajmer?',
+        answer: 'It is a chartered engineer’s written certification that a structure complies with safety codes and can bear its design loads. The Ajmer Development Authority and Ajmer Nagar Nigam require it with sanction and completion filings. Only a registered chartered engineer — such as Er. Sudhir Soni at Design Plus — can legally issue it.'
+      },
+      {
+        question: 'Can Design Plus audit an existing building in Ajmer?',
+        answer: 'Yes. Our structural audits cover visual inspection, crack mapping, rebar corrosion assessment and load-capacity evaluation, delivered as a written report with remedies. Audits are commonly used before buying an older property, before adding floors, or when cracks and seepage suggest structural distress.'
+      }
+    ]
   },
   {
     slug: 'infrastructure',

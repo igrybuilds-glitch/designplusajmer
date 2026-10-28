@@ -52,6 +52,18 @@ export default function BlogHubArticlePage() {
     mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
   };
 
+  // Optional FAQPage schema — emitted ONLY when the post carries faqs that
+  // are also rendered visibly in its markdown content (same Q&A text).
+  const faqSchema = post.faqs && post.faqs.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: post.faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.question,
+      acceptedAnswer: { '@type': 'Answer', text: f.answer },
+    })),
+  } : null;
+
   return (
     <div className="blog-hub-page min-h-screen bg-white dark:bg-stone-950 text-stone-900 dark:text-stone-100">
       <SEOHead
@@ -59,7 +71,7 @@ export default function BlogHubArticlePage() {
         description={post.description}
         canonical={canonical}
         type="article"
-        schema={articleSchema}
+        schema={faqSchema ? [articleSchema, faqSchema] : articleSchema}
       />
       <ReadingProgress />
 
