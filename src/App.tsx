@@ -2,6 +2,7 @@ import { useState, useEffect, lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import Lenis from 'lenis';
 import { Navbar } from './components/Navbar';
+import { OfferBar, isDiwaliOfferActive, OFFER_BAR_PADDING_CLASS } from './components/OfferBar';
 import { Footer } from './components/Footer';
 import { ScrollToTop } from './components/ScrollToTop';
 import { ConsultationModal } from './components/ConsultationModal';
@@ -72,6 +73,7 @@ const AdminAuditLogPage = lazy(() => import('./pages/admin/AdminAuditLogPage').t
 function AppContent() {
   const location = useLocation();
   const isAdminRoute = location.pathname.startsWith('/admin');
+  const offerActive = !isAdminRoute && isDiwaliOfferActive();
   usePageviewTracker();
 
   const [isConsultationOpen, setIsConsultationOpen] = useState(false);
@@ -125,15 +127,21 @@ function AppContent() {
 
   return (
     <div className={`min-h-screen flex flex-col antialiased ${isAdminRoute ? 'bg-[#0e0d0b] text-stone-100' : 'bg-[#FBFBF9] text-stone-900 selection:bg-amber-200 selection:text-stone-900 font-sans'}`}>
+      {offerActive && (
+        <div className="fixed top-0 inset-x-0 z-[60]">
+          <OfferBar />
+        </div>
+      )}
       {!isAdminRoute && (
-        <Navbar 
+        <Navbar
           onOpenConsultation={openConsultation}
           onOpenAiStudio={openAiStudio}
           onOpenClientPortal={openClientPortal}
+          offerBarActive={offerActive}
         />
       )}
-      
-      <div className="flex-1 flex flex-col min-w-0">
+
+      <div className={`flex-1 flex flex-col min-w-0 ${offerActive ? OFFER_BAR_PADDING_CLASS : ''}`}>
         <Suspense fallback={null}>
         <Routes>
           {/* ========================================================= */}

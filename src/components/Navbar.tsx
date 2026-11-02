@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown, Phone, ArrowUpRight, Sparkles, Bookmark, User as UserIcon } from 'lucide-react';
+import { OFFER_BAR_OFFSET_CLASS } from './OfferBar';
 import { BUSINESS_INFO, SERVICES, LOCATIONS_SERVED } from '../data/siteData';
 import { BLOG_CATEGORIES } from '../data/blogData';
 import { useAuth } from '../context/AuthContext';
@@ -9,12 +10,14 @@ interface NavbarProps {
   onOpenConsultation?: () => void;
   onOpenAiStudio?: () => void;
   onOpenClientPortal?: () => void;
+  offerBarActive?: boolean;
 }
 
-export function Navbar({ 
-  onOpenConsultation, 
-  onOpenAiStudio, 
-  onOpenClientPortal 
+export function Navbar({
+  onOpenConsultation,
+  onOpenAiStudio,
+  onOpenClientPortal,
+  offerBarActive = false
 }: NavbarProps) {
   const { user, savedProjects } = useAuth();
   const [isOpen, setIsOpen] = useState(false);
@@ -58,7 +61,7 @@ export function Navbar({
   return (
     <header
       id="main-navigation"
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed ${offerBarActive ? OFFER_BAR_OFFSET_CLASS : 'top-0'} left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
           ? 'bg-[#F4F0E8]/95 backdrop-blur-md border-b border-[#DFD9CC] py-3 shadow-xs'
           : 'bg-[#F4F0E8]/85 backdrop-blur-xs border-b border-[#DFD9CC]/60 py-4'
