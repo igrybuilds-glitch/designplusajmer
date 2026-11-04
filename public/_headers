@@ -11,11 +11,11 @@
 #   print('sha256-' + base64.b64encode(hashlib.sha256(m.group(1).encode()).digest()).decode())"
 # and replace the hash below, otherwise the preloader will stop running.
 /*
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-OBc7wKaYG/jjcrwOE13rbLXj55lkf5P9gTGDEVzRe2g='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; media-src 'self' data: https:; connect-src 'self' https://firestore.googleapis.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-NMLzoW6aV926ihb3CK7x4OVlz71i8nJw8eJI1DVjXuE='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; media-src 'self' data: https:; connect-src 'self' https://firestore.googleapis.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
-  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
 
 # Cache static assets aggressively (added 2026-10-08 performance fix).
@@ -25,8 +25,18 @@
 /fonts/*
   Cache-Control: public, max-age=31536000, immutable
 /*.webp
-  Cache-Control: public, max-age=86400
+  Cache-Control: public, max-age=31536000, immutable
 /*.png
-  Cache-Control: public, max-age=86400
+  Cache-Control: public, max-age=31536000, immutable
 /*.ico
-  Cache-Control: public, max-age=86400
+  Cache-Control: public, max-age=31536000, immutable
+
+# Image payloads under /images/ (added 2026-11-04, score-100 lane): the
+# Express server (server.ts staticCacheOptions) already serves these with a
+# 1-year immutable cache, but the Cloudflare Pages path had NO rule for them,
+# which is what Lighthouse's "efficient cache lifetimes" audit flagged
+# (~2.8-3.0 MB of homepage images re-downloaded on repeat visits). Image
+# files here are content-addressed by upload (new uploads get new file
+# names), so a 1-year immutable cache matches the server behaviour.
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
