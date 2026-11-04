@@ -521,6 +521,8 @@ Design Plus Architects, Ajmer aligns main entrances for light, airflow, and unob
 ## What is the correct kitchen direction as per Vastu?
 
 Design Plus Architects, Ajmer places the culinary hearth in the Southeast Agni zone, but a North or Northwest kitchen needs no demolition. We correct it with a green Baroda marble or neutral granite plinth beneath the stove, east-facing cooking posture, and drinking-water vessels kept at least three feet from active burners on the Northeast wall.
+
+See the principles applied: a [30x50 house plan with Vastu](/blog/30x50-house-plan-with-vastu) worked end to end, and what an [online Vastu consultation for your home](/blog/home-vastu-consultant-ajmer-online) actually checks — or begin with our [house design in Ajmer](/house-design-ajmer) page.
 `
   },
   {
@@ -1102,6 +1104,8 @@ At minimum: stirrup spacing and hook angles at beam-column joints before concret
 
 Ductile detailing is specified on the structural drawings, not added on site. Read how seismic design is handled on our [structural design service](/services/structural-design) page, including the IS 1893 checks.
 
+Go deeper on the three decisions behind a seismic-safe frame: [frame structure versus load-bearing construction](/blog/load-bearing-vs-frame-structure-house-india), [soil testing before construction](/blog/soil-testing-before-construction-ajmer), and [how long an RCC frame structure lasts](/blog/rcc-frame-structure-lifespan-india).
+
 ---
 
 *Building in Ajmer, Pushkar, or Kishangarh? [Book a structural consultation](/contact) — bring your drawings or your plot papers, and Er. Sudhir Soni will tell you honestly where your project stands on seismic safety.*`
@@ -1235,7 +1239,9 @@ Reported Indian examples show roughly 6\u201310\u00b0C differences at peak heat 
 
 ### How much extra does passive cooling design cost in India?
 
-Many core strategies \u2014 orientation, room placement, wind-rose planning, courtyard layouts \u2014 cost nothing extra; they are planning decisions. Material options (filler slabs, CSEB, thicker walls, cavity walls) shift costs between line items rather than simply adding to them. The honest comparison is lifecycle: climate-first design trims years of power bills; a concrete box bills you every month.`
+Many core strategies \u2014 orientation, room placement, wind-rose planning, courtyard layouts \u2014 cost nothing extra; they are planning decisions. Material options (filler slabs, CSEB, thicker walls, cavity walls) shift costs between line items rather than simply adding to them. The honest comparison is lifecycle: climate-first design trims years of power bills; a concrete box bills you every month.
+
+Explore the cluster in depth: [courtyard houses for Rajasthan’s hot climate](/blog/courtyard-house-design-rajasthan-hot-climate), [thermal mass cooling for Indian homes](/blog/thermal-mass-cooling-home-design-india), and [jaali screen facades](/blog/jaali-screen-facade-design-india) — or start with our [house design in Ajmer](/house-design-ajmer) page if you are planning a build.`
   },
   {
     slug: '3d-home-elevation-design-ajmer',
@@ -2164,6 +2170,8 @@ Soil testing is the least expensive and most consequential step in building a ho
 A soil report only earns its fee when the foundation is designed from it. Our [structural design service](/services/structural-design) page explains how bearing capacity changes the footing design \u2014 and the cost.
 
 If you are planning construction in Ajmer, get the soil tested before the structural drawings — and [book a site consultation](/contact/) with the report in hand. We will tell you exactly what your ground can carry.
+
+Soil is also a seismic question: soft lakeside silt amplifies shaking while rock carries it differently. Our guide to [earthquake-resistant house design](/blog/earthquake-resistant-house-ajmer) explains how the ground changes the structural brief.
 `,
   },
   {
@@ -4693,7 +4701,9 @@ Partly. Exposed concrete or tile floors, removing carpet and false ceilings over
 
 ## Book Site Consultation
 
-Thermal mass is decided on the drawing board, not at the building site: wall thickness, orientation, shading, roof insulation and night-ventilation openings all have to be settled before the first slab is cast. [Book a site consultation](/contact) and Design Plus will test your plot's orientation and summer sun path, size the wall and floor mass your home actually needs, detail the structure for seismic Zone II, and price the build in an itemised estimate — so the house you approve stays cool in May without running the air conditioner all day.`,
+Thermal mass is decided on the drawing board, not at the building site: wall thickness, orientation, shading, roof insulation and night-ventilation openings all have to be settled before the first slab is cast. [Book a site consultation](/contact) and Design Plus will test your plot's orientation and summer sun path, size the wall and floor mass your home actually needs, detail the structure for seismic Zone II, and price the build in an itemised estimate — so the house you approve stays cool in May without running the air conditioner all day.
+
+Thermal mass only pays when the rest of the envelope agrees with it. See how it fits the full system in our guide to [hot climate home design in India](/blog/hot-climate-home-design-india-45-degrees).`,
   },
   {
     slug: 'false-ceiling-design-ajmer-cost-per-sq-ft',
