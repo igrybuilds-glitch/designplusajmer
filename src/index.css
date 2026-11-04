@@ -114,6 +114,10 @@
 .bg-accent { background-color: #B86B38; }
 .border-accent { border-color: #B86B38; }
 
+/* Buttons sit in the components layer so Tailwind utilities (utilities layer,
+   later in layer order) override their base colours — pass 8 root-cause fix
+   for the unlayered-class cascade bug confirmed in pass 7. */
+@layer components {
 /* Primary Button: Solid Ink with Subtle Hover Lift */
 .btn-primary {
   display: inline-flex;
@@ -163,6 +167,7 @@
   opacity: 0.7;
   border-color: #B86B38;
 }
+} /* @layer components */
 
 .editorial-grid {
   background-size: 40px 40px;
