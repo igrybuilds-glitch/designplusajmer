@@ -39,7 +39,7 @@ export function Footer() {
                 href={BUSINESS_INFO.socials.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#F4F0E8]/80 hover:text-[#B86B38] transition-colors flex items-center gap-1"
+                className="text-[#F4F0E8]/80 hover:text-[#B86B38] transition-colors flex items-center gap-1 py-1 -my-1"
                 aria-label="Design Plus Instagram Profile"
               >
                 <span>Instagram</span>
@@ -49,7 +49,7 @@ export function Footer() {
                 href={BUSINESS_INFO.socials.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#F4F0E8]/80 hover:text-[#B86B38] transition-colors flex items-center gap-1"
+                className="text-[#F4F0E8]/80 hover:text-[#B86B38] transition-colors flex items-center gap-1 py-1 -my-1"
                 aria-label="Design Plus Facebook Page"
               >
                 <span>Facebook</span>
@@ -63,16 +63,16 @@ export function Footer() {
             <p className="text-xs font-mono uppercase tracking-[0.2em] text-white font-bold border-b border-white/15 pb-2">
               Services &amp; PMC
             </p>
-            <ul className="space-y-2 text-xs font-sans text-[#F4F0E8]/80">
+            <ul className="space-y-1 text-xs font-sans text-[#F4F0E8]/80">
               {SERVICES.slice(0, 6).map((s) => (
                 <li key={s.slug}>
-                  <Link to={`/services/${s.slug}`} className="hover:text-[#B86B38] transition-colors block">
+                  <Link to={`/services/${s.slug}`} className="hover:text-[#B86B38] transition-colors block py-1">
                     {s.title}
                   </Link>
                 </li>
               ))}
               <li className="pt-1">
-                <Link to="/project-management" className="text-[#B86B38] hover:text-[#c47745] font-semibold font-mono text-[11px]">
+                <Link to="/project-management" className="text-[#B86B38] hover:text-[#c47745] font-semibold font-mono text-[11px] inline-block py-1">
                   Turnkey PMC &amp; Execution &rarr;
                 </Link>
               </li>
@@ -84,14 +84,14 @@ export function Footer() {
             <p className="text-xs font-mono uppercase tracking-[0.2em] text-white font-bold border-b border-white/15 pb-2">
               Works &amp; Portfolio
             </p>
-            <ul className="space-y-2 text-xs font-sans text-[#F4F0E8]/80">
-              <li><Link to="/projects/residential" className="hover:text-[#B86B38] transition-colors block">Residential Architecture</Link></li>
-              <li><Link to="/projects/commercial" className="hover:text-[#B86B38] transition-colors block">Commercial &amp; Retail</Link></li>
-              <li><Link to="/projects/interior" className="hover:text-[#B86B38] transition-colors block">Interior Architecture</Link></li>
-              <li><Link to="/projects/structural" className="hover:text-[#B86B38] transition-colors block">Chartered Structural Works</Link></li>
-              <li><Link to="/projects/concept" className="hover:text-[#B86B38] transition-colors block">Concept &amp; Climate Studies</Link></li>
+            <ul className="space-y-1 text-xs font-sans text-[#F4F0E8]/80">
+              <li><Link to="/projects/residential" className="hover:text-[#B86B38] transition-colors block py-1">Residential Architecture</Link></li>
+              <li><Link to="/projects/commercial" className="hover:text-[#B86B38] transition-colors block py-1">Commercial &amp; Retail</Link></li>
+              <li><Link to="/projects/interior" className="hover:text-[#B86B38] transition-colors block py-1">Interior Architecture</Link></li>
+              <li><Link to="/projects/structural" className="hover:text-[#B86B38] transition-colors block py-1">Chartered Structural Works</Link></li>
+              <li><Link to="/projects/concept" className="hover:text-[#B86B38] transition-colors block py-1">Concept &amp; Climate Studies</Link></li>
               <li className="pt-1">
-                <Link to="/projects" className="text-[#B86B38] hover:text-[#c47745] font-semibold font-mono text-[11px]">
+                <Link to="/projects" className="text-[#B86B38] hover:text-[#c47745] font-semibold font-mono text-[11px] inline-block py-1">
                   Explore Archive &rarr;
                 </Link>
               </li>
@@ -103,16 +103,16 @@ export function Footer() {
             <p className="text-xs font-mono uppercase tracking-[0.2em] text-white font-bold border-b border-white/15 pb-2">
               Blog &amp; Guides
             </p>
-            <ul className="space-y-2 text-xs font-sans text-[#F4F0E8]/80">
+            <ul className="space-y-1 text-xs font-sans text-[#F4F0E8]/80">
               {BLOG_CATEGORIES.map((cat) => (
                 <li key={cat.slug}>
-                  <Link to={`/blog?category=${cat.slug}`} className="hover:text-[#B86B38] transition-colors block">
+                  <Link to={`/blog?category=${cat.slug}`} className="hover:text-[#B86B38] transition-colors block py-1">
                     {cat.name}
                   </Link>
                 </li>
               ))}
               <li className="pt-1">
-                <Link to="/blog" className="text-[#B86B38] hover:text-[#c47745] font-semibold font-mono text-[11px]">
+                <Link to="/blog" className="text-[#B86B38] hover:text-[#c47745] font-semibold font-mono text-[11px] inline-block py-1">
                   Read All Articles &rarr;
                 </Link>
               </li>
@@ -124,16 +124,16 @@ export function Footer() {
             <p className="text-xs font-mono uppercase tracking-[0.2em] text-white font-bold border-b border-white/15 pb-2">
               Studio &amp; Office
             </p>
-            <div className="space-y-2 text-xs font-sans text-[#F4F0E8]/80">
+            <div className="space-y-1 text-xs font-sans text-[#F4F0E8]/80">
               <div className="flex items-start gap-2">
                 <MapPin className="w-3.5 h-3.5 text-[#B86B38] shrink-0 mt-0.5" />
                 <span>{BUSINESS_INFO.address}</span>
               </div>
               <div className="flex items-start gap-2">
                 <Phone className="w-3.5 h-3.5 text-[#B86B38] shrink-0 mt-0.5" />
-                <div className="space-y-0.5">
+                <div className="space-y-1">
                   {BUSINESS_INFO.phones.map((p, i) => (
-                    <a key={i} href={`tel:${p.raw}`} className="block hover:text-[#B86B38] transition-colors font-mono text-[11px]">
+                    <a key={i} href={`tel:${p.raw}`} className="block hover:text-[#B86B38] transition-colors font-mono text-[11px] py-1">
                       {p.display}
                     </a>
                   ))}
@@ -141,7 +141,7 @@ export function Footer() {
               </div>
               <div className="flex items-start gap-2">
                 <Mail className="w-3.5 h-3.5 text-[#B86B38] shrink-0 mt-0.5" />
-                <a href={`mailto:${BUSINESS_INFO.email}`} className="hover:text-[#B86B38] transition-colors break-all">
+                <a href={`mailto:${BUSINESS_INFO.email}`} className="hover:text-[#B86B38] transition-colors break-all py-1 -my-1">
                   {BUSINESS_INFO.email}
                 </a>
               </div>
@@ -150,7 +150,7 @@ export function Footer() {
             <div className="pt-2">
               <Link
                 to="/contact"
-                className="inline-flex items-center gap-1.5 bg-[#B86B38] hover:bg-[#a65d37] text-white px-4 py-2 text-xs font-medium uppercase tracking-wider transition-colors rounded shadow-md"
+                className="inline-flex items-center gap-1.5 bg-[#A65D37] hover:bg-[#93511F] text-white px-4 py-2 text-xs font-medium uppercase tracking-wider transition-colors rounded shadow-md"
               >
                 <span>Visit Studio Office</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
@@ -168,22 +168,22 @@ export function Footer() {
           </div>
 
           <div className="flex flex-wrap items-center gap-6">
-            <Link to="/privacy-policy" className="hover:text-[#B86B38] underline decoration-white/30 underline-offset-4 transition-colors">
+            <Link to="/privacy-policy" className="hover:text-[#B86B38] py-1 -my-1 underline decoration-white/30 underline-offset-4 transition-colors">
               Privacy Policy
             </Link>
-            <Link to="/vastu" className="hover:text-[#B86B38] underline decoration-white/30 underline-offset-4 transition-colors">
+            <Link to="/vastu" className="hover:text-[#B86B38] py-1 -my-1 underline decoration-white/30 underline-offset-4 transition-colors">
               Vastu Design
             </Link>
-            <a href="/sitemap.xml" className="hover:text-[#B86B38] underline decoration-white/30 underline-offset-4 transition-colors">
+            <a href="/sitemap.xml" className="hover:text-[#B86B38] py-1 -my-1 underline decoration-white/30 underline-offset-4 transition-colors">
               Sitemap
             </a>
-            <Link to="/architect-fees-ajmer" className="hover:text-[#B86B38] underline decoration-white/30 underline-offset-4 transition-colors">
+            <Link to="/architect-fees-ajmer" className="hover:text-[#B86B38] py-1 -my-1 underline decoration-white/30 underline-offset-4 transition-colors">
               Fee Guide
             </Link>
-            <Link to="/structural-drawing-ajmer" className="hover:text-[#B86B38] underline decoration-white/30 underline-offset-4 transition-colors font-semibold">
+            <Link to="/structural-drawing-ajmer" className="hover:text-[#B86B38] py-1 -my-1 underline decoration-white/30 underline-offset-4 transition-colors font-semibold">
               Structural Drawings
             </Link>
-            <Link to="/admin" className="inline-flex items-center gap-1.5 hover:text-[#B86B38] underline decoration-white/30 underline-offset-4 transition-colors">
+            <Link to="/admin" className="inline-flex items-center gap-1.5 hover:text-[#B86B38] py-1 -my-1 underline decoration-white/30 underline-offset-4 transition-colors">
               Studio Portal
             </Link>
           </div>

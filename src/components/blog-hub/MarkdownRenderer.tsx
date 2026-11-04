@@ -15,9 +15,9 @@ function renderInline(text: string, keyPrefix: string): React.ReactNode[] {
       const href = m[5];
       const isInternal = href.startsWith('/');
       parts.push(isInternal ? (
-        <Link key={`${keyPrefix}-l${i}`} to={href} className="text-amber-600 dark:text-amber-400 underline decoration-amber-300 underline-offset-2 hover:decoration-amber-500">{m[4]}</Link>
+        <Link key={`${keyPrefix}-l${i}`} to={href} className="text-amber-700 dark:text-amber-400 underline decoration-amber-500 underline-offset-2 hover:decoration-amber-700">{m[4]}</Link>
       ) : (
-        <a key={`${keyPrefix}-l${i}`} href={href} className="text-amber-600 dark:text-amber-400 underline decoration-amber-300 underline-offset-2 hover:decoration-amber-500">{m[4]}</a>
+        <a key={`${keyPrefix}-l${i}`} href={href} className="text-amber-700 dark:text-amber-400 underline decoration-amber-500 underline-offset-2 hover:decoration-amber-700">{m[4]}</a>
       ));
     }
     last = m.index + m[0].length;

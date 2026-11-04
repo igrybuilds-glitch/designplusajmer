@@ -50,7 +50,7 @@ export function CookieConsent() {
           <p className="text-xs text-stone-400 leading-relaxed">
             We use essential cookies to run this site and, with your consent, analytics cookies to
             understand visits. No advertising cookies. See our{' '}
-            <Link to="/privacy-policy" className="text-[#C86635] hover:underline">
+            <Link to="/privacy-policy" className="text-[#D97B47] underline decoration-[#D97B47]/50 underline-offset-2 hover:decoration-[#D97B47]">
               Privacy Policy
             </Link>
             .
@@ -58,7 +58,7 @@ export function CookieConsent() {
           <div className="flex gap-2 pt-1">
             <button
               onClick={() => choose('accepted')}
-              className="px-4 py-2 text-xs font-semibold rounded-full bg-[#C86635] text-white hover:bg-[#a8542a] transition-colors"
+              className="px-4 py-2 text-xs font-semibold rounded-full bg-[#A8542A] text-white hover:bg-[#8F4523] transition-colors"
             >
               Accept
             </button>
