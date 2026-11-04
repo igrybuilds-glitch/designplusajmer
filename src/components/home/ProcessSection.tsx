@@ -21,12 +21,12 @@ export function ProcessSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Index Header */}
-        <div className="flex items-center justify-between border-b border-white/20 pb-4 mb-12 sm:mb-16 text-xs font-mono text-[#F4F0E8]/70">
+        <div className="flex items-center justify-between border-b border-white/20 pb-4 mb-12 sm:mb-16 text-xs font-mono text-[#F4F0E8]">
           <div className="flex items-center gap-2">
-            <span className="text-[#B86B38] font-semibold">07.</span>
+            <span className="text-[#FBE3BC] font-semibold">07.</span>
             <span className="uppercase tracking-[0.2em] font-medium text-white">Execution Methodology</span>
           </div>
-          <span className="hidden sm:inline-block tracking-[0.16em] uppercase text-[#F4F0E8]/70">
+          <span className="hidden sm:inline-block tracking-[0.16em] uppercase text-[#F4F0E8]">
             Six-Phase Verifiable Delivery
           </span>
         </div>
@@ -35,9 +35,9 @@ export function ProcessSection() {
         <div className="max-w-3xl mb-12 sm:mb-16">
           <h2 className="font-editorial text-4xl sm:text-6xl md:text-7xl font-normal leading-[0.98] tracking-tight uppercase text-white" style={{ textWrap: 'balance' }}>
             A linear, verifiable <br />
-            <span className="italic font-light text-[#F4F0E8]/70">simple 6-step process.</span>
+            <span className="italic font-light text-[#F4F0E8]">simple 6-step process.</span>
           </h2>
-          <p className="text-sm sm:text-base text-[#F4F0E8]/85 mt-4 leading-relaxed font-sans font-normal">
+          <p className="text-sm sm:text-base text-[#F4F0E8] mt-4 leading-relaxed font-sans font-normal">
             Eliminating speculative guesswork through phased milestone sign-offs, precision spatial geometry, and Chartered Structural computation.
           </p>
         </div>
@@ -57,11 +57,11 @@ export function ProcessSection() {
                   className={`w-full text-left p-4 rounded-xl border transition-all cursor-pointer flex items-center justify-between ${
                     isActive
                       ? 'bg-[#A65D37] border-[#A65D37] text-white shadow-lg ring-1 ring-[#B86B38]/50'
-                      : 'bg-black/60 border-white/20 text-[#F4F0E8]/80 hover:border-white/40 hover:text-white'
+                      : 'bg-black/60 border-white/20 text-[#F4F0E8] hover:border-white/40 hover:text-white'
                   }`}
                 >
                   <div className="flex items-center gap-3">
-                    <span className={`text-xs font-mono font-bold ${isActive ? 'text-white' : 'text-[#B86B38]'}`}>
+                    <span className={`text-xs font-mono font-bold ${isActive ? 'text-white' : 'text-[#FBE3BC]'}`}>
                       {step.number} //
                     </span>
                     <span className="font-sans font-semibold text-xs sm:text-sm uppercase tracking-wider">
@@ -84,7 +84,7 @@ export function ProcessSection() {
                     <CurrentIcon className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-xs font-mono text-[#B86B38] block font-bold">PHASE {currentStep.number}</span>
+                    <span className="text-xs font-mono text-[#F2BC87] block font-bold">PHASE {currentStep.number}</span>
                     <h3 className="font-editorial text-2xl sm:text-3xl text-white font-normal uppercase">
                       {currentStep.title}
                     </h3>
@@ -92,13 +92,13 @@ export function ProcessSection() {
                 </div>
               </div>
 
-              <p className="text-sm sm:text-base text-[#F4F0E8]/85 font-sans leading-relaxed">
+              <p className="text-sm sm:text-base text-[#F4F0E8] font-sans leading-relaxed">
                 {currentStep.description}
               </p>
 
               <div className="space-y-3 pt-2">
-                <div className="text-xs font-mono uppercase tracking-wider text-[#F4F0E8]/60">Deliverables &amp; Vetting Milestones</div>
-                <ul className="space-y-2 text-xs sm:text-sm text-[#F4F0E8]/90">
+                <div className="text-xs font-mono uppercase tracking-wider text-[#F4F0E8]">Deliverables &amp; Vetting Milestones</div>
+                <ul className="space-y-2 text-xs sm:text-sm text-[#F4F0E8]">
                   {currentStep.deliverables.map((del, dIdx) => (
                     <li key={dIdx} className="flex items-start gap-2.5">
                       <CheckCircle2 className="w-4 h-4 text-[#B86B38] shrink-0 mt-0.5" />

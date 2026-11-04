@@ -40,14 +40,14 @@ export function FeaturedProjectMonograph() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header Masthead */}
-        <div className="flex items-center justify-between border-b border-white/20 pb-4 mb-12 sm:mb-16 text-xs font-mono text-[#F4F0E8]/70">
+        <div className="flex items-center justify-between border-b border-white/20 pb-4 mb-12 sm:mb-16 text-xs font-mono text-[#F4F0E8]">
           <div className="flex items-center gap-2">
-            <span className="text-[#B86B38] font-semibold">03 //</span>
+            <span className="text-[#FBE3BC] font-semibold">03 //</span>
             <span className="uppercase tracking-[0.2em] font-medium text-white">Our Completed Projects</span>
           </div>
-          <div className="hidden sm:flex items-center gap-4 tracking-[0.16em] uppercase text-[#F4F0E8]/70">
+          <div className="hidden sm:flex items-center gap-4 tracking-[0.16em] uppercase text-[#F4F0E8]">
             <span>AJMER · JAIPUR · KISHANGARH · PUSHKAR</span>
-            <span className="text-white/30">|</span>
+            <span className="text-white">|</span>
             <span>2006 – 2026 ARCHIVE</span>
           </div>
         </div>
@@ -57,9 +57,9 @@ export function FeaturedProjectMonograph() {
           <div className="max-w-2xl">
             <h2 className="font-editorial text-4xl sm:text-6xl md:text-7xl font-normal leading-[0.96] tracking-tight uppercase text-white" style={{ textWrap: 'balance' }}>
               Selected <br />
-              <span className="italic font-light text-[#F4F0E8]/70">built commissions.</span>
+              <span className="italic font-light text-[#F4F0E8]">built commissions.</span>
             </h2>
-            <p className="mt-4 text-sm sm:text-base text-[#F4F0E8]/85 font-serif leading-relaxed">
+            <p className="mt-4 text-sm sm:text-base text-[#F4F0E8] font-serif leading-relaxed">
               Every commission is an intersection of spatial poetry and structural load calculations. Browse residential estates, institutional masterplans, and public infrastructure engineered across Rajasthan.
             </p>
           </div>
@@ -75,8 +75,8 @@ export function FeaturedProjectMonograph() {
                     onClick={() => setActiveFilter(opt.id)}
                     className={`px-3 py-1.5 text-xs font-mono uppercase tracking-wider transition-colors cursor-pointer focus-visible:outline-hidden ${
                       isSelected 
-                        ? 'text-[#B86B38] font-semibold border-b-2 border-[#B86B38]' 
-                        : 'text-[#F4F0E8]/70 hover:text-white'
+                        ? 'text-[#FBE3BC] font-semibold border-b-2 border-[#B86B38]' 
+                        : 'text-[#F4F0E8] hover:text-white'
                     }`}
                     aria-pressed={isSelected}
                   >
@@ -88,7 +88,7 @@ export function FeaturedProjectMonograph() {
 
             <Link
               to="/projects"
-              className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-[0.2em] font-bold text-[#B86B38] hover:text-[#c47745] transition-colors shrink-0"
+              className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-[0.2em] font-bold text-[#FBE3BC] hover:text-[#c47745] transition-colors shrink-0"
             >
               <span>Full Archive</span>
               <ArrowUpRight className="w-4 h-4" aria-hidden="true" />
@@ -104,24 +104,24 @@ export function FeaturedProjectMonograph() {
             <div className="relative rounded-2xl overflow-hidden border border-white/20 bg-black/75 backdrop-blur-md shadow-2xl">
               
               {/* Monograph Top Control Bar */}
-              <div className="flex items-center justify-between px-4 sm:px-6 py-3 border-b border-white/15 bg-black/90 text-xs font-mono text-[#F4F0E8]/80">
+              <div className="flex items-center justify-between px-4 sm:px-6 py-3 border-b border-white/15 bg-black/90 text-xs font-mono text-[#F4F0E8]">
                 <div className="flex items-center gap-3">
-                  <span className="text-[#B86B38] font-bold">PLATE 01 //</span>
+                  <span className="text-[#F2BC87] font-bold">PLATE 01 //</span>
                   <span className="uppercase font-semibold tracking-wider text-white">{heroProject.title}</span>
-                  <span className="hidden md:inline-block text-white/30">·</span>
-                  <span className="hidden md:inline-block uppercase text-[#F4F0E8]/70">{heroProject.category}</span>
+                  <span className="hidden md:inline-block text-white">·</span>
+                  <span className="hidden md:inline-block uppercase text-[#F4F0E8]">{heroProject.category}</span>
                 </div>
 
                 {/* Blueprint / Built Reality Mode Toggle */}
                 <div className="flex items-center gap-2">
-                  <span className="text-[11px] uppercase tracking-wider text-[#F4F0E8]/60 hidden sm:inline">VIEW MODE:</span>
+                  <span className="text-[11px] uppercase tracking-wider text-[#F4F0E8] hidden sm:inline">VIEW MODE:</span>
                   <button
                     type="button"
                     onClick={() => setBlueprintMode(false)}
                     className={`px-2.5 py-1 text-[11px] font-mono uppercase tracking-wider cursor-pointer border transition-colors rounded ${
                       !blueprintMode
                         ? 'bg-[#A65D37] text-white border-[#A65D37]'
-                        : 'bg-black/60 text-[#F4F0E8]/80 border-white/20 hover:border-white/40'
+                        : 'bg-black/60 text-[#F4F0E8] border-white/20 hover:border-white/40'
                     }`}
                   >
                     <span className="flex items-center gap-1">
@@ -136,7 +136,7 @@ export function FeaturedProjectMonograph() {
                     className={`px-2.5 py-1 text-[11px] font-mono uppercase tracking-wider cursor-pointer border transition-colors rounded ${
                       blueprintMode
                         ? 'bg-[#0E2C3D] text-[#64B5F6] border-[#64B5F6]/50'
-                        : 'bg-black/60 text-[#F4F0E8]/80 border-white/20 hover:border-white/40'
+                        : 'bg-black/60 text-[#F4F0E8] border-white/20 hover:border-white/40'
                     }`}
                   >
                     <span className="flex items-center gap-1">
@@ -207,7 +207,7 @@ export function FeaturedProjectMonograph() {
 
                 {/* Bottom Architectural Story Content */}
                 <div className="absolute bottom-6 sm:bottom-10 inset-x-6 sm:inset-x-10 z-10 space-y-3">
-                  <div className="flex flex-wrap items-center gap-3 text-xs font-mono text-[#F4F0E8]/80">
+                  <div className="flex flex-wrap items-center gap-3 text-xs font-mono text-[#F4F0E8]">
                     <span className="flex items-center gap-1 bg-black/60 px-2.5 py-1 rounded border border-white/15">
                       <MapPin className="w-3.5 h-3.5 text-[#B86B38]" />
                       {heroProject.location}
@@ -226,7 +226,7 @@ export function FeaturedProjectMonograph() {
                     {heroProject.title}
                   </h3>
 
-                  <p className="text-xs sm:text-sm text-[#F4F0E8]/85 font-sans font-light max-w-2xl line-clamp-2 leading-relaxed">
+                  <p className="text-xs sm:text-sm text-[#F4F0E8] font-sans font-light max-w-2xl line-clamp-2 leading-relaxed">
                     {heroProject.brief}
                   </p>
 
@@ -272,24 +272,24 @@ export function FeaturedProjectMonograph() {
 
               <div className="p-5 sm:p-6 space-y-3 flex-1 flex flex-col justify-between">
                 <div className="space-y-1.5">
-                  <div className="flex items-center justify-between text-[10px] font-mono text-[#B86B38]">
+                  <div className="flex items-center justify-between text-[10px] font-mono text-[#F2BC87]">
                     <span>{proj.category}</span>
                     <span>{proj.year}</span>
                   </div>
                   <h4 className="font-editorial text-xl font-normal text-white group-hover:text-[#B86B38] transition-colors leading-snug">
                     {proj.title}
                   </h4>
-                  <p className="text-xs text-[#F4F0E8]/70 font-sans line-clamp-2">
+                  <p className="text-xs text-[#F4F0E8] font-sans line-clamp-2">
                     {proj.brief}
                   </p>
                 </div>
 
-                <div className="pt-4 border-t border-white/15 flex items-center justify-between text-xs font-mono text-[#F4F0E8]/80">
+                <div className="pt-4 border-t border-white/15 flex items-center justify-between text-xs font-mono text-[#F4F0E8]">
                   <span className="flex items-center gap-1">
                     <MapPin className="w-3 h-3 text-[#B86B38]" />
                     {proj.location}
                   </span>
-                  <span className="text-[#B86B38] group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">
+                  <span className="text-[#F2BC87] group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">
                     View &rarr;
                   </span>
                 </div>

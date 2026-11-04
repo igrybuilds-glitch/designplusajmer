@@ -16,9 +16,9 @@ export function EditorialJournalSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Index Header */}
-        <div className="flex items-center justify-between border-b border-white/20 pb-4 mb-12 sm:mb-16 text-xs font-mono text-[#F4F0E8]/70">
+        <div className="flex items-center justify-between border-b border-white/20 pb-4 mb-12 sm:mb-16 text-xs font-mono text-[#F4F0E8]">
           <div className="flex items-center gap-2">
-            <span className="text-[#B86B38] font-semibold">10.</span>
+            <span className="text-[#FBE3BC] font-semibold">10.</span>
             <span className="uppercase tracking-[0.2em] font-medium text-white">Research &amp; Publications</span>
           </div>
           <span className="hidden sm:inline-block tracking-[0.16em] uppercase">
@@ -31,13 +31,13 @@ export function EditorialJournalSection() {
           <div>
             <h2 className="font-editorial text-4xl sm:text-6xl md:text-7xl font-normal leading-[0.98] tracking-tight text-white uppercase">
               Articles &amp; <br />
-              <span className="italic font-light text-[#F4F0E8]/70">helpful guides.</span>
+              <span className="italic font-light text-[#F4F0E8]">helpful guides.</span>
             </h2>
           </div>
 
           <Link
             to="/blog"
-            className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-[0.2em] font-medium text-[#B86B38] hover:text-[#c47745] transition-colors"
+            className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-[0.2em] font-medium text-[#FBE3BC] hover:text-[#c47745] transition-colors"
           >
             <span>Browse Full Journal Archive</span>
             <ArrowUpRight className="w-4 h-4" />
@@ -67,7 +67,7 @@ export function EditorialJournalSection() {
 
               <div className="p-6 space-y-4 flex-1 flex flex-col justify-between">
                 <div className="space-y-2">
-                  <div className="flex items-center gap-4 text-[10px] font-mono text-[#F4F0E8]/60">
+                  <div className="flex items-center gap-4 text-[10px] font-mono text-[#F4F0E8]">
                     <span className="flex items-center gap-1">
                       <Calendar className="w-3 h-3 text-[#B86B38]" />
                       {article.date || article.publishedAt}
@@ -80,13 +80,13 @@ export function EditorialJournalSection() {
                   <h3 className="font-editorial text-xl sm:text-2xl text-white group-hover:text-[#B86B38] transition-colors leading-snug">
                     {article.title}
                   </h3>
-                  <p className="text-xs sm:text-sm text-[#F4F0E8]/80 font-sans line-clamp-2">
+                  <p className="text-xs sm:text-sm text-[#F4F0E8] font-sans line-clamp-2">
                     {article.excerpt}
                   </p>
                 </div>
 
                 <div className="pt-4 border-t border-white/15 flex items-center justify-between text-xs font-mono">
-                  <span className="text-[#B86B38] font-semibold">Read Monograph</span>
+                  <span className="text-[#F2BC87] font-semibold">Read Monograph</span>
                   <ArrowUpRight className="w-4 h-4 text-[#B86B38] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                 </div>
               </div>

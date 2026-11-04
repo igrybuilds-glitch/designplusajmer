@@ -133,20 +133,20 @@ export function EditorialServicesExhibition({ onOpenConsultation }: EditorialSer
         
         {/* 1. Giant Serif Headline on Top */}
         <div className="space-y-4 max-w-4xl">
-          <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-[0.2em] text-[#B86B38]">
+          <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-[0.2em] text-[#FBE3BC]">
             <span className="w-2 h-2 rounded-full bg-[#B86B38]" />
             <span>MULTIDISCIPLINARY PRACTICE</span>
           </div>
           <h2 className="font-editorial text-4xl sm:text-6xl md:text-7xl font-normal tracking-tight uppercase text-white leading-[1.05]">
             WHAT WE <br />
-            <span className="text-[#B86B38]">DO.</span>
+            <span className="text-[#FBE3BC]">DO.</span>
           </h2>
-          <p className="text-base sm:text-lg text-[#F4F0E8]/85 font-sans font-light max-w-2xl leading-relaxed">
+          <p className="text-base sm:text-lg text-[#F4F0E8] font-sans font-light max-w-2xl leading-relaxed">
             House designs, building plans, structural safety checks, interiors and construction support — everything your project needs, in Ajmer and across Rajasthan.
           </p>
-          <p className="text-sm sm:text-base text-[#F4F0E8]/85 font-sans font-light max-w-2xl leading-relaxed">
+          <p className="text-sm sm:text-base text-[#F4F0E8] font-sans font-light max-w-2xl leading-relaxed">
             Still comparing firms? Start with our guide to the{' '}
-            <Link to="/blog/top-10-architects-in-ajmer/" className="text-[#B86B38] underline decoration-[#B86B38]/50 underline-offset-4 hover:text-white hover:decoration-white transition-colors font-medium">
+            <Link to="/blog/top-10-architects-in-ajmer/" className="text-[#FBE3BC] underline decoration-[#B86B38]/50 underline-offset-4 hover:text-white hover:decoration-white transition-colors font-medium">
               best architects in Ajmer — how to choose
             </Link>{' '}
             before you look at the disciplines below.
@@ -155,7 +155,7 @@ export function EditorialServicesExhibition({ onOpenConsultation }: EditorialSer
 
         {/* 3. Filter Pills Row */}
         <div className="flex flex-wrap items-center gap-2 pt-2">
-          <span className="text-xs font-mono uppercase text-[#F4F0E8]/80 mr-2">Filter By:</span>
+          <span className="text-xs font-mono uppercase text-[#F4F0E8] mr-2">Filter By:</span>
           {[
             { label: 'All Disciplines', value: 'all' },
             { label: 'Structural', value: 'Structural' },
@@ -173,7 +173,7 @@ export function EditorialServicesExhibition({ onOpenConsultation }: EditorialSer
                 className={`rounded-full px-4 py-2 text-xs font-sans font-medium transition-all cursor-pointer ${
                   isSelected
                     ? 'bg-[#A65D37] text-white shadow-md'
-                    : 'bg-black/60 text-[#F4F0E8]/85 border border-white/20 hover:border-[#B86B38]'
+                    : 'bg-black/60 text-[#F4F0E8] border border-white/20 hover:border-[#B86B38]'
                 }`}
               >
                 {pill.label}
@@ -210,13 +210,13 @@ export function EditorialServicesExhibition({ onOpenConsultation }: EditorialSer
               >
                 <div className="space-y-3">
                   <div className="flex items-center justify-between text-xs font-mono">
-                    <span className="text-[#B86B38] font-bold">{discipline.number}</span>
-                    <span className="text-[#F4F0E8]/80 uppercase">{discipline.category}</span>
+                    <span className="text-[#F2BC87] font-bold">{discipline.number}</span>
+                    <span className="text-[#F4F0E8] uppercase">{discipline.category}</span>
                   </div>
                   <h3 className="font-editorial text-2xl font-normal text-white group-hover:text-[#B86B38] transition-colors">
                     {discipline.title}
                   </h3>
-                  <p className="text-xs sm:text-sm text-[#F4F0E8]/75 font-sans font-light leading-relaxed">
+                  <p className="text-xs sm:text-sm text-[#F4F0E8] font-sans font-light leading-relaxed">
                     {discipline.description}
                   </p>
                 </div>
@@ -225,7 +225,7 @@ export function EditorialServicesExhibition({ onOpenConsultation }: EditorialSer
                   <Link
                     to={discipline.route}
                     aria-label={`View specifications for ${discipline.title}`}
-                    className="text-[#B86B38] hover:text-white transition-colors"
+                    className="text-[#F2BC87] hover:text-white transition-colors"
                   >
                     View Specifications &rarr;
                   </Link>
@@ -255,7 +255,7 @@ export function EditorialServicesExhibition({ onOpenConsultation }: EditorialSer
           {/* Right Description & Standards */}
           <div className="lg:col-span-5 space-y-6">
             <div className="space-y-2">
-              <span className="text-xs font-mono uppercase tracking-widest text-[#B86B38] font-semibold">
+              <span className="text-xs font-mono uppercase tracking-widest text-[#F2BC87] font-semibold">
                 {activeDiscipline.category}
               </span>
               <h3 className="font-editorial text-3xl sm:text-4xl text-white">
@@ -263,13 +263,13 @@ export function EditorialServicesExhibition({ onOpenConsultation }: EditorialSer
               </h3>
             </div>
 
-            <p className="text-sm sm:text-base text-[#F4F0E8]/85 font-sans font-light leading-relaxed">
+            <p className="text-sm sm:text-base text-[#F4F0E8] font-sans font-light leading-relaxed">
               {activeDiscipline.description}
             </p>
 
             <div className="space-y-2.5 pt-2">
-              <div className="text-xs font-mono uppercase tracking-wider text-[#F4F0E8]/80">Key Standards &amp; Vetting</div>
-              <ul className="space-y-2 text-xs sm:text-sm text-[#F4F0E8]/90">
+              <div className="text-xs font-mono uppercase tracking-wider text-[#F4F0E8]">Key Standards &amp; Vetting</div>
+              <ul className="space-y-2 text-xs sm:text-sm text-[#F4F0E8]">
                 {activeDiscipline.standards.map((std, idx) => (
                   <li key={idx} className="flex items-center gap-2.5">
                     <CheckCircle2 className="w-4 h-4 text-[#B86B38] shrink-0" />

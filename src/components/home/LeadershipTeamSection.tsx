@@ -26,12 +26,12 @@ export function LeadershipTeamSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Index Header */}
-        <div className="flex items-center justify-between border-b border-white/20 pb-4 mb-12 sm:mb-16 text-xs font-mono text-[#F4F0E8]/70">
+        <div className="flex items-center justify-between border-b border-white/20 pb-4 mb-12 sm:mb-16 text-xs font-mono text-[#F4F0E8]">
           <div className="flex items-center gap-2">
-            <span className="text-[#B86B38] font-semibold">06.</span>
+            <span className="text-[#FBE3BC] font-semibold">06.</span>
             <span className="uppercase tracking-[0.2em] font-medium text-white">Leadership &amp; Partners</span>
           </div>
-          <span className="hidden sm:inline-block tracking-[0.16em] uppercase text-[#F4F0E8]/70">
+          <span className="hidden sm:inline-block tracking-[0.16em] uppercase text-[#F4F0E8]">
             Chartered Engineers &amp; Principal Architects
           </span>
         </div>
@@ -46,7 +46,7 @@ export function LeadershipTeamSection() {
 
           <Link
             to="/team"
-            className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-[0.2em] font-medium text-[#B86B38] hover:text-[#c47745] transition-colors"
+            className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-[0.2em] font-medium text-[#FBE3BC] hover:text-[#c47745] transition-colors"
           >
             <span>View Full Studio Roster</span>
             <ArrowUpRight className="w-4 h-4" aria-hidden="true" />
@@ -90,25 +90,25 @@ export function LeadershipTeamSection() {
                     <h3 className="font-editorial text-2xl text-white font-normal">
                       {partner.name}
                     </h3>
-                    <div className="text-xs font-mono text-[#B86B38] tracking-wide font-medium">
+                    <div className="text-xs font-mono text-[#F2BC87] tracking-wide font-medium">
                       {partner.role}
                     </div>
-                    <div className="text-[11px] font-mono text-[#F4F0E8]/70">
+                    <div className="text-[11px] font-mono text-[#F4F0E8]">
                       {partner.qualification}
                     </div>
                   </div>
 
-                  <p className="text-xs text-[#F4F0E8]/80 font-sans font-normal leading-relaxed">
+                  <p className="text-xs text-[#F4F0E8] font-sans font-normal leading-relaxed">
                     {partner.bio}
                   </p>
 
-                  <div className="pt-3 border-t border-white/15 flex items-center justify-between text-xs font-mono text-[#F4F0E8]/80">
-                    <span className="text-[10px] text-[#F4F0E8]/60 uppercase">
+                  <div className="pt-3 border-t border-white/15 flex items-center justify-between text-xs font-mono text-[#F4F0E8]">
+                    <span className="text-[10px] text-[#F4F0E8] uppercase">
                       {partner.specialization || 'Structural & Spatial'}
                     </span>
                     <Link
                       to="/team"
-                      className="text-[#B86B38] hover:text-[#c47745] font-medium transition-colors inline-flex items-center gap-1"
+                      className="text-[#F2BC87] hover:text-[#c47745] font-medium transition-colors inline-flex items-center gap-1"
                       aria-label={`View credentials for ${partner.name}`}
                     >
                       <span>Credentials</span>

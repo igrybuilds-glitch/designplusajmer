@@ -156,22 +156,22 @@ export function ManifestoSection() {
         {/* =====================================================================
             1. TOP BAR: CHAPTER INDEX & STATUTORY BENCHMARKS
         ===================================================================== */}
-        <header className="relative z-30 flex items-center justify-between border-b border-white/20 pb-3 text-xs font-mono text-[#F4F0E8]/70">
+        <header className="relative z-30 flex items-center justify-between border-b border-white/20 pb-3 text-xs font-mono text-[#F4F0E8]">
           <div className="flex items-center gap-3">
-            <span className="text-[#B86B38] font-bold">02 //</span>
+            <span className="text-[#FBE3BC] font-bold">02 //</span>
             <span className="uppercase tracking-[0.24em] font-semibold text-[#F4F0E8]">
               ARCHITECTS & ENGINEERS. UNDER ONE ROOF.
             </span>
           </div>
 
-          <div className="hidden md:flex items-center gap-6 text-[11px] uppercase tracking-wider text-[#F4F0E8]/70">
+          <div className="hidden md:flex items-center gap-6 text-[11px] uppercase tracking-wider text-[#F4F0E8]">
             <span className="flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 rounded-full bg-[#B86B38]" />
               EST. 2006 · AJMER, RAJASTHAN
             </span>
-            <span className="text-white/30">|</span>
+            <span className="text-white">|</span>
             <span>DESIGN + ENGINEERING, TOGETHER</span>
-            <span className="text-white/30">|</span>
+            <span className="text-white">|</span>
             <span className="font-semibold text-white">IS 456 · IS 1893 · IRC 112</span>
           </div>
         </header>
@@ -186,17 +186,17 @@ export function ManifestoSection() {
 
           {/* Central Monumental Headline — narrowed on xl so satellite cards flank it cleanly */}
           <div className="manifesto-title-main relative z-20 text-center max-w-4xl xl:max-w-3xl px-4 pointer-events-auto">
-            <div className="inline-flex items-center gap-2 text-[10px] sm:text-xs font-mono tracking-[0.3em] uppercase text-[#B86B38] mb-2 sm:mb-3">
+            <div className="inline-flex items-center gap-2 text-[10px] sm:text-xs font-mono tracking-[0.3em] uppercase text-[#FBE3BC] mb-2 sm:mb-3">
               <Compass className="w-3.5 h-3.5" />
               <span>WHAT WE DO</span>
             </div>
 
             <h2 className="font-editorial text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-normal leading-[0.92] tracking-tight uppercase text-[#F4F0E8]">
               ARCHITECTS &amp; ENGINEERS. <br />
-              <span className="italic font-light text-[#F4F0E8]/70">UNDER ONE ROOF.</span>
+              <span className="italic font-light text-[#F4F0E8]">UNDER ONE ROOF.</span>
             </h2>
 
-            <p className="mt-4 sm:mt-5 text-sm sm:text-base lg:text-lg text-[#F4F0E8]/90 font-serif max-w-2xl mx-auto leading-relaxed">
+            <p className="mt-4 sm:mt-5 text-sm sm:text-base lg:text-lg text-[#F4F0E8] font-serif max-w-2xl mx-auto leading-relaxed">
               We design your home or building AND make sure it stands strong. One team handles everything — from the first drawing to the final construction.
             </p>
 
@@ -261,11 +261,11 @@ export function ManifestoSection() {
                     className={`p-3 w-52 2xl:w-60 border transition-all cursor-pointer backdrop-blur-md text-left rounded-xl ${
                       isSelected
                         ? 'bg-black/85 border-[#B86B38] shadow-xl ring-1 ring-[#B86B38]/50 text-white'
-                        : 'bg-black/60 border-white/20 shadow-md hover:border-white/40 text-[#F4F0E8]/90'
+                        : 'bg-black/60 border-white/20 shadow-md hover:border-white/40 text-[#F4F0E8]'
                     }`}
                   >
-                    <div className="flex items-center justify-between text-[10px] font-mono text-[#F4F0E8]/80 pb-1.5 border-b border-white/10">
-                      <span className="text-[#B86B38] font-bold">{disc.number} //</span>
+                    <div className="flex items-center justify-between text-[10px] font-mono text-[#F4F0E8] pb-1.5 border-b border-white/10">
+                      <span className="text-[#FBE3BC] font-bold">{disc.number} //</span>
                       <span className="uppercase tracking-widest">{disc.tag}</span>
                     </div>
 
@@ -273,12 +273,12 @@ export function ManifestoSection() {
                       <h3 className="font-editorial text-sm font-semibold uppercase text-white tracking-tight leading-snug">
                         {disc.name}
                       </h3>
-                      <p className="text-[11px] font-mono text-[#F4F0E8]/70 truncate mt-0.5">
+                      <p className="text-[11px] font-mono text-[#F4F0E8] truncate mt-0.5">
                         {disc.subtitle}
                       </p>
                     </div>
 
-                    <div className="mt-2.5 pt-2 border-t border-white/10 flex items-center justify-between text-[10px] font-mono text-[#F4F0E8]/80">
+                    <div className="mt-2.5 pt-2 border-t border-white/10 flex items-center justify-between text-[10px] font-mono text-[#F4F0E8]">
                       <span className="truncate max-w-[140px]">{disc.standards}</span>
                       <ArrowUpRight className={`w-3 h-3 text-[#B86B38] transition-transform ${isSelected ? 'translate-x-0.5 -translate-y-0.5' : ''}`} />
                     </div>
@@ -306,31 +306,31 @@ export function ManifestoSection() {
                 <div className="absolute top-2 left-2 text-[9px] font-mono text-white bg-black/70 px-2 py-0.5 uppercase tracking-wider rounded">
                   SPEC {selectedDiscipline.number}
                 </div>
-                <div className="absolute bottom-2 inset-x-2 text-[10px] font-mono text-[#F4F0E8]/90 truncate">
+                <div className="absolute bottom-2 inset-x-2 text-[10px] font-mono text-[#F4F0E8] truncate">
                   {selectedDiscipline.coordinates}
                 </div>
               </div>
 
               <div className="md:col-span-8 space-y-3">
-                <div className="flex items-center justify-between text-xs font-mono text-[#B86B38] border-b border-white/15 pb-1.5">
+                <div className="flex items-center justify-between text-xs font-mono text-[#F2BC87] border-b border-white/15 pb-1.5">
                   <div className="flex items-center gap-2">
                     <span className="font-bold">{selectedDiscipline.number}</span>
                     <span className="uppercase tracking-widest text-white font-semibold">{selectedDiscipline.name}</span>
                   </div>
-                  <span className="text-[11px] text-[#F4F0E8]/70">{selectedDiscipline.standards}</span>
+                  <span className="text-[11px] text-[#F4F0E8]">{selectedDiscipline.standards}</span>
                 </div>
 
                 <h3 className="font-editorial text-xl sm:text-2xl text-white font-normal leading-snug">
                   {selectedDiscipline.subtitle}
                 </h3>
 
-                <p className="text-xs sm:text-sm text-[#F4F0E8]/85 leading-relaxed font-sans">
+                <p className="text-xs sm:text-sm text-[#F4F0E8] leading-relaxed font-sans">
                   {selectedDiscipline.description}
                 </p>
 
                 <div className="flex flex-wrap items-center justify-between gap-3 pt-2 border-t border-white/15 text-xs font-mono">
-                  <div className="text-[#F4F0E8]/85">
-                    <span className="text-[#F4F0E8]/80 uppercase tracking-wider">{selectedDiscipline.stats.label}: </span>
+                  <div className="text-[#F4F0E8]">
+                    <span className="text-[#F4F0E8] uppercase tracking-wider">{selectedDiscipline.stats.label}: </span>
                     <strong className="text-white font-medium">{selectedDiscipline.stats.value}</strong>
                   </div>
 
@@ -353,19 +353,19 @@ export function ManifestoSection() {
             5. BOTTOM FOUNDATION
         ===================================================================== */}
         <footer className="manifesto-foundation-bar relative z-30 border-t border-white/20 pt-4 mt-2">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-4 lg:gap-8 items-center text-xs font-mono text-[#F4F0E8]/85">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-4 lg:gap-8 items-center text-xs font-mono text-[#F4F0E8]">
             
             <div className="md:col-span-4 flex items-center gap-3">
               <ShieldCheck className="w-5 h-5 text-[#B86B38] shrink-0" />
               <div>
                 <span className="font-semibold text-white block">DUAL PRACTICE LEADERSHIP</span>
-                <span className="text-[11px] text-[#F4F0E8]/70 block">
+                <span className="text-[11px] text-[#F4F0E8] block">
                   Er. Sudhir Soni (Structural) &amp; Ar. Vipul Verma (Architecture)
                 </span>
               </div>
             </div>
 
-            <div className="md:col-span-5 flex flex-wrap items-center gap-y-1 gap-x-4 text-[11px] text-[#F4F0E8]/80">
+            <div className="md:col-span-5 flex flex-wrap items-center gap-y-1 gap-x-4 text-[11px] text-[#F4F0E8]">
               <span className="flex items-center gap-1 text-white font-medium">
                 <Check className="w-3.5 h-3.5 text-[#B86B38]" />
                 20+ Years Zero Failures

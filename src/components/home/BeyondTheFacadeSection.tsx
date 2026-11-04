@@ -97,12 +97,12 @@ export function BeyondTheFacadeSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header Strip */}
-        <div className="flex items-center justify-between border-b border-white/20 pb-4 mb-12 sm:mb-16 text-xs font-mono text-[#F4F0E8]/70">
+        <div className="flex items-center justify-between border-b border-white/20 pb-4 mb-12 sm:mb-16 text-xs font-mono text-[#F4F0E8]">
           <div className="flex items-center gap-2">
-            <span className="text-[#B86B38] font-semibold">05.</span>
+            <span className="text-[#FBE3BC] font-semibold">05.</span>
             <span className="uppercase tracking-[0.2em] font-medium text-white">Structural Physics &amp; Statutory Codes</span>
           </div>
-          <span className="hidden sm:inline-block tracking-[0.16em] uppercase text-[#F4F0E8]/70">
+          <span className="hidden sm:inline-block tracking-[0.16em] uppercase text-[#F4F0E8]">
             Calculated Load Paths · IS &amp; IRC Compliance
           </span>
         </div>
@@ -111,9 +111,9 @@ export function BeyondTheFacadeSection() {
         <div className="max-w-4xl mb-12 sm:mb-16 space-y-4">
           <h2 className="font-editorial text-4xl sm:text-6xl md:text-7xl font-normal leading-[0.98] tracking-tight uppercase text-white">
             Beautiful design, <br />
-            <span className="italic font-light text-[#F4F0E8]/70">built to last.</span>
+            <span className="italic font-light text-[#F4F0E8]">built to last.</span>
           </h2>
-          <p className="text-base sm:text-lg text-[#F4F0E8]/85 font-sans max-w-2xl font-normal leading-relaxed">
+          <p className="text-base sm:text-lg text-[#F4F0E8] font-sans max-w-2xl font-normal leading-relaxed">
             A beautiful building must also be safe. Our engineers check every beam, column and foundation as per Indian safety codes — before construction starts.
           </p>
         </div>
@@ -137,11 +137,11 @@ export function BeyondTheFacadeSection() {
                 className={`p-3.5 text-left rounded-xl border transition-all cursor-pointer flex flex-col justify-between gap-1.5 ${
                   isActive
                     ? 'bg-[#A65D37] border-[#A65D37] text-white shadow-lg ring-1 ring-[#B86B38]/50'
-                    : 'bg-black/60 border-white/20 text-[#F4F0E8]/80 hover:border-white/40 hover:text-white'
+                    : 'bg-black/60 border-white/20 text-[#F4F0E8] hover:border-white/40 hover:text-white'
                 }`}
               >
                 <span className="font-medium text-xs tracking-wider text-white">{tab.label}</span>
-                <span className="text-[10px] text-white/80 tracking-widest font-semibold">{tab.code}</span>
+                <span className="text-[10px] text-white tracking-widest font-semibold">{tab.code}</span>
               </button>
             );
           })}
@@ -156,19 +156,19 @@ export function BeyondTheFacadeSection() {
             <div className="lg:col-span-6 space-y-6">
               
               <div className="space-y-1">
-                <div className="flex items-center gap-2 text-xs font-mono text-[#B86B38]">
+                <div className="flex items-center gap-2 text-xs font-mono text-[#F2BC87]">
                   <span className="w-2 h-2 rounded-full bg-[#B86B38]" />
                   <span className="font-semibold">{currentData.code}</span>
                 </div>
                 <h3 className="font-editorial text-2xl sm:text-3xl text-white font-normal leading-snug">
                   {currentData.title}
                 </h3>
-                <p className="text-xs font-mono text-[#F4F0E8]/70">
+                <p className="text-xs font-mono text-[#F4F0E8]">
                   {currentData.tagline}
                 </p>
               </div>
 
-              <p className="text-sm sm:text-base text-[#F4F0E8]/85 leading-relaxed font-sans font-normal">
+              <p className="text-sm sm:text-base text-[#F4F0E8] leading-relaxed font-sans font-normal">
                 {currentData.description}
               </p>
 
@@ -176,7 +176,7 @@ export function BeyondTheFacadeSection() {
               <div className="grid grid-cols-2 gap-3 pt-2 text-xs font-mono border-t border-white/15">
                 {currentData.specs.map((spec, idx) => (
                   <div key={idx} className="bg-black/60 p-3 rounded-xl border border-white/15">
-                    <span className="text-[#F4F0E8]/60 block text-[9.5px] uppercase tracking-wider mb-0.5">
+                    <span className="text-[#F4F0E8] block text-[9.5px] uppercase tracking-wider mb-0.5">
                       {spec.label}
                     </span>
                     <span className="text-white font-semibold block">
@@ -187,9 +187,9 @@ export function BeyondTheFacadeSection() {
               </div>
 
               {/* Load Verification Stamp */}
-              <div className="flex items-center justify-between text-[11px] font-mono bg-black/60 border border-white/15 p-3 rounded-xl text-[#F4F0E8]/90">
+              <div className="flex items-center justify-between text-[11px] font-mono bg-black/60 border border-white/15 p-3 rounded-xl text-[#F4F0E8]">
                 <span>{currentData.loadType}</span>
-                <span className="text-[#B86B38] font-semibold">{currentData.safetyFactor}</span>
+                <span className="text-[#FBE3BC] font-semibold">{currentData.safetyFactor}</span>
               </div>
 
             </div>

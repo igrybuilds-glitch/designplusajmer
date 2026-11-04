@@ -171,12 +171,12 @@ export function EngineeringExpertiseShowcase() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Index Header */}
-        <div className="flex items-center justify-between border-b border-white/20 pb-4 mb-12 sm:mb-16 text-xs font-mono text-[#F4F0E8]/70">
+        <div className="flex items-center justify-between border-b border-white/20 pb-4 mb-12 sm:mb-16 text-xs font-mono text-[#F4F0E8]">
           <div className="flex items-center gap-2">
-            <span className="text-[#B86B38] font-semibold">08.</span>
+            <span className="text-[#FBE3BC] font-semibold">08.</span>
             <span className="uppercase tracking-[0.2em] font-medium text-white">Civil &amp; Infrastructure Engineering</span>
           </div>
-          <span className="hidden sm:inline-block tracking-[0.16em] uppercase text-[#F4F0E8]/70">
+          <span className="hidden sm:inline-block tracking-[0.16em] uppercase text-[#F4F0E8]">
             Highways, Bridges, Dams, PHE &amp; Master Planning
           </span>
         </div>
@@ -185,9 +185,9 @@ export function EngineeringExpertiseShowcase() {
         <div className="max-w-4xl mb-12 sm:mb-16 space-y-4">
           <h2 className="font-editorial text-4xl sm:text-6xl md:text-7xl font-normal leading-[0.98] tracking-tight uppercase text-white" style={{ textWrap: 'balance' }}>
             Heavy civil works <br />
-            <span className="italic font-light text-[#F4F0E8]/70">&amp; municipal infrastructure.</span>
+            <span className="italic font-light text-[#F4F0E8]">&amp; municipal infrastructure.</span>
           </h2>
-          <p className="text-base sm:text-lg text-[#F4F0E8]/85 font-sans max-w-2xl font-normal leading-relaxed">
+          <p className="text-base sm:text-lg text-[#F4F0E8] font-sans max-w-2xl font-normal leading-relaxed">
             Beyond private luxury estates, Design Plus maintains a rigorous civil engineering division delivering state highways, pre-stressed flyovers, water resource dams, and urban township master plans across Rajasthan.
           </p>
         </div>
@@ -204,10 +204,10 @@ export function EngineeringExpertiseShowcase() {
                 className={`p-3 text-left rounded-xl border transition-all cursor-pointer flex flex-col justify-between gap-1 ${
                   isSelected
                     ? 'bg-[#A65D37] border-[#A65D37] text-white shadow-lg ring-1 ring-[#B86B38]/50'
-                    : 'bg-black/60 border-white/20 text-[#F4F0E8]/80 hover:border-white/40 hover:text-white'
+                    : 'bg-black/60 border-white/20 text-[#F4F0E8] hover:border-white/40 hover:text-white'
                 }`}
               >
-                <span className="text-[10px] font-mono opacity-80 uppercase tracking-wider">
+                <span className="text-[10px] font-mono uppercase tracking-wider">
                   {disc.id.toUpperCase()}
                 </span>
                 <span className="font-sans font-semibold text-xs leading-snug line-clamp-1">
@@ -227,19 +227,19 @@ export function EngineeringExpertiseShowcase() {
             <div className="lg:col-span-7 space-y-6">
               
               <div className="space-y-2">
-                <div className="inline-flex items-center gap-2 text-xs font-mono text-[#B86B38]">
+                <div className="inline-flex items-center gap-2 text-xs font-mono text-[#F2BC87]">
                   <ShieldCheck className="w-4 h-4 text-[#B86B38]" />
                   <span className="font-semibold uppercase tracking-wider">{activeDiscipline.codeStandard}</span>
                 </div>
                 <h3 className="font-editorial text-3xl sm:text-5xl text-white font-normal leading-tight uppercase">
                   {activeDiscipline.title}
                 </h3>
-                <p className="text-xs font-mono text-[#F4F0E8]/70 uppercase tracking-widest">
+                <p className="text-xs font-mono text-[#F4F0E8] uppercase tracking-widest">
                   {activeDiscipline.tagline}
                 </p>
               </div>
 
-              <p className="text-sm sm:text-base text-[#F4F0E8]/85 leading-relaxed font-sans font-light">
+              <p className="text-sm sm:text-base text-[#F4F0E8] leading-relaxed font-sans font-light">
                 {activeDiscipline.description}
               </p>
 
@@ -247,7 +247,7 @@ export function EngineeringExpertiseShowcase() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
                 {activeDiscipline.technicalParameters.map((param, pIdx) => (
                   <div key={pIdx} className="bg-black/60 p-3.5 rounded-xl border border-white/15">
-                    <span className="text-[#F4F0E8]/60 block text-[10px] font-mono uppercase tracking-wider mb-1">
+                    <span className="text-[#F4F0E8] block text-[10px] font-mono uppercase tracking-wider mb-1">
                       {param.label}
                     </span>
                     <span className="text-white font-semibold font-mono text-xs block">
@@ -259,8 +259,8 @@ export function EngineeringExpertiseShowcase() {
 
               {/* Deliverables List */}
               <div className="space-y-3 pt-2">
-                <div className="text-xs font-mono uppercase tracking-wider text-[#F4F0E8]/60">Key Engineering Deliverables</div>
-                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm text-[#F4F0E8]/90 font-sans">
+                <div className="text-xs font-mono uppercase tracking-wider text-[#F4F0E8]">Key Engineering Deliverables</div>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm text-[#F4F0E8] font-sans">
                   {activeDiscipline.deliverables.map((del, dIdx) => (
                     <li key={dIdx} className="flex items-start gap-2 bg-black/50 p-2.5 rounded-lg border border-white/10">
                       <CheckCircle2 className="w-4 h-4 text-[#B86B38] shrink-0 mt-0.5" />
