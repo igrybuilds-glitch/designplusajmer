@@ -12,7 +12,7 @@ export function FinalConsultationCTA({ onOpenConsultation }: FinalConsultationCT
       className="relative bg-transparent text-[#F4F0E8] py-24 sm:py-32 lg:py-40 overflow-hidden border-t border-white/15 transition-colors"
     >
       {/* Dark Readability Overlay for Fixed Video Background */}
-      <div className="absolute inset-0 bg-black/60 backdrop-blur-[1px] -z-10" aria-hidden="true" />
+      <div className="absolute inset-0 bg-black/70 backdrop-blur-[1px] -z-10" aria-hidden="true" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
@@ -48,7 +48,7 @@ export function FinalConsultationCTA({ onOpenConsultation }: FinalConsultationCT
             { title: 'Commercial & Retail', desc: 'Retail complexes, showrooms & offices' },
             { title: 'Infrastructure & PMC', desc: 'Turnkey execution, bridges & public works' }
           ].map((type, i) => (
-            <div key={i} className="bg-black/70 backdrop-blur-md border border-white/20 p-6 rounded-2xl space-y-2 shadow-xl">
+            <div key={i} className="bg-black/80 backdrop-blur-md border border-white/20 p-6 rounded-2xl space-y-2 shadow-xl">
               <span className="text-xs font-mono text-[#F2BC87] font-bold">0{i + 1} //</span>
               <h3 className="font-editorial text-xl text-white font-normal">{type.title}</h3>
               <p className="text-xs text-[#F4F0E8] font-sans">{type.desc}</p>
@@ -57,7 +57,7 @@ export function FinalConsultationCTA({ onOpenConsultation }: FinalConsultationCT
         </div>
 
         {/* Action Panel */}
-        <div className="bg-black/80 backdrop-blur-xl border border-white/25 rounded-3xl p-8 sm:p-12 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-10">
+        <div className="bg-black/90 backdrop-blur-xl border border-white/25 rounded-3xl p-8 sm:p-12 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-10">
           <div className="space-y-4 max-w-2xl">
             <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#F2BC87]">
               <ShieldCheck className="w-4 h-4 text-[#B86B38]" />

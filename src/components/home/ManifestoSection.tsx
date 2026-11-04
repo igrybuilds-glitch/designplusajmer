@@ -145,7 +145,7 @@ export function ManifestoSection() {
       className="relative bg-transparent text-[#F4F0E8] overflow-hidden border-b border-white/15 transition-colors"
     >
       {/* Dark Readability Overlay for Fixed Video Background */}
-      <div className="absolute inset-0 bg-black/60 backdrop-blur-[1px] -z-10" aria-hidden="true" />
+      <div className="absolute inset-0 bg-black/70 backdrop-blur-[1px] -z-10" aria-hidden="true" />
 
       {/* Pinned Cinematic Presentation Stage (Height-calibrated) */}
       <div 
@@ -201,7 +201,7 @@ export function ManifestoSection() {
             </p>
 
             {/* Quick Interactive Discipline Selector Tabs */}
-            <div className="mt-5 sm:mt-6 relative z-40 flex flex-wrap justify-center items-center gap-1.5 sm:gap-2 max-w-3xl mx-auto p-1.5 sm:p-2 bg-black/60 backdrop-blur-xl rounded-full border border-white/20 shadow-[0_8px_30px_rgba(0,0,0,0.3)] pointer-events-auto">
+            <div className="mt-5 sm:mt-6 relative z-40 flex flex-wrap justify-center items-center gap-1.5 sm:gap-2 max-w-3xl mx-auto p-1.5 sm:p-2 bg-black/75 backdrop-blur-xl rounded-full border border-white/20 shadow-[0_8px_30px_rgba(0,0,0,0.3)] pointer-events-auto">
               {DISCIPLINES.map((d) => {
                 const isCurrent = selectedDiscipline.id === d.id;
 
@@ -291,7 +291,7 @@ export function ManifestoSection() {
           {/* ===================================================================
               4. ACTIVE DISCIPLINE DETAIL DRAWER / VIGNETTE INSPECTOR
           =================================================================== */}
-          <div className="relative z-20 mt-6 sm:mt-8 w-full max-w-4xl xl:max-w-3xl mx-auto bg-black/75 backdrop-blur-md border border-white/20 p-4 sm:p-6 shadow-2xl rounded-2xl text-[#F4F0E8]">
+          <div className="relative z-20 mt-6 sm:mt-8 w-full max-w-4xl xl:max-w-3xl mx-auto bg-black/85 backdrop-blur-md border border-white/20 p-4 sm:p-6 shadow-2xl rounded-2xl text-[#F4F0E8]">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
               
               <div className="md:col-span-4 relative overflow-hidden bg-black border border-white/20 aspect-[4/3] group rounded-xl">

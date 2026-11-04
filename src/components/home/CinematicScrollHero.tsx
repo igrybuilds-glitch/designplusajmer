@@ -176,7 +176,7 @@ export function CinematicScrollHero({ onOpenConsultation }: CinematicScrollHeroP
           ref={contentRef}
           className="relative z-20 px-4 sm:px-6 lg:px-8 py-8 w-full max-w-4xl mx-auto flex flex-col items-center text-center my-auto space-y-4"
         >
-          <div className="absolute inset-0 bg-black/50 backdrop-blur-[3px] rounded-3xl -z-10 max-w-3xl mx-auto my-auto h-[92%] border border-white/15 shadow-2xl" aria-hidden="true" />
+          <div className="absolute inset-0 bg-black/60 backdrop-blur-[3px] rounded-3xl -z-10 max-w-3xl mx-auto my-auto h-[92%] border border-white/15 shadow-2xl" aria-hidden="true" />
 
           <div className="px-6 py-6 sm:px-10 sm:py-10 space-y-5 w-full">
             <h1 className="font-editorial text-5xl sm:text-7xl md:text-8xl lg:text-9xl tracking-tight uppercase text-[#F4F0E8] leading-[0.95]">

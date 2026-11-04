@@ -277,10 +277,10 @@ export function AtlasScrollCanvas() {
       />
 
       {/* 4. Minimal Architectural Frame Metadata Indicator */}
-      <div className="absolute bottom-6 left-6 z-10 hidden md:flex items-center gap-3 px-3 py-1.5 bg-[#F5F2EB]/90 border border-[#1A1917]/10 text-[10px] font-mono tracking-widest text-[#1A1917]/70 select-none">
+      <div className="absolute bottom-6 left-6 z-10 hidden md:flex items-center gap-3 px-3 py-1.5 bg-[#F5F2EB]/90 border border-[#1A1917]/10 text-[10px] font-mono tracking-widest text-[#1A1917] select-none">
         <span className="w-1.5 h-1.5 rounded-full bg-[#C86635] animate-pulse" />
         <span ref={hudFrameTextRef}>CINEMATIC TIMELINE · FRAME 001 / 180</span>
-        <span className="text-[#1A1917]/30">|</span>
+        <span className="text-[#1A1917]/70">|</span>
         <span>6-SEC ATLAS</span>
       </div>
     </div>

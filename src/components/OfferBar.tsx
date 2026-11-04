@@ -27,7 +27,7 @@ export function OfferBar() {
     <div
       role="region"
       aria-label="Diwali offer"
-      className="h-12 lg:h-10 overflow-hidden bg-gradient-to-r from-[#3d0a0a] via-[#5e1410] to-[#3d0a0a] text-[#f6dd9a] shadow-sm"
+      className="h-12 lg:h-10 overflow-hidden bg-gradient-to-r from-[#3d0a0a] via-[#4A0F0B] to-[#3d0a0a] text-[#FFEFC4] shadow-sm"
     >
       <div className="h-full max-w-7xl mx-auto px-3 flex items-center justify-center">
         <p className="text-center font-sans text-[11px] leading-snug sm:text-xs lg:text-[13px]">
@@ -36,7 +36,7 @@ export function OfferBar() {
           <span> on all architecture &amp; interior design services — valid till 9 November 2026</span>
           <Link
             to="/contact"
-            className="ml-2.5 whitespace-nowrap font-semibold text-[#ffd968] underline decoration-[#d4a437] underline-offset-2 transition-colors hover:text-white"
+            className="ml-2.5 whitespace-nowrap font-semibold text-[#FFE37E] underline decoration-[#d4a437] underline-offset-2 transition-colors hover:text-white"
           >
             Get a Free Quote →
           </Link>

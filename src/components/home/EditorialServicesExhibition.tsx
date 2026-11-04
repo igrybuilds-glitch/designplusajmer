@@ -127,7 +127,7 @@ export function EditorialServicesExhibition({ onOpenConsultation }: EditorialSer
       aria-label="Design Plus Disciplines Section"
     >
       {/* Dark Readability Overlay for Fixed Video Background */}
-      <div className="absolute inset-0 bg-black/60 backdrop-blur-[1px] -z-10" aria-hidden="true" />
+      <div className="absolute inset-0 bg-black/70 backdrop-blur-[1px] -z-10" aria-hidden="true" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
         
@@ -173,7 +173,7 @@ export function EditorialServicesExhibition({ onOpenConsultation }: EditorialSer
                 className={`rounded-full px-4 py-2 text-xs font-sans font-medium transition-all cursor-pointer ${
                   isSelected
                     ? 'bg-[#A65D37] text-white shadow-md'
-                    : 'bg-black/60 text-[#F4F0E8] border border-white/20 hover:border-[#B86B38]'
+                    : 'bg-black/75 text-[#F4F0E8] border border-white/20 hover:border-[#B86B38]'
                 }`}
               >
                 {pill.label}
@@ -202,7 +202,7 @@ export function EditorialServicesExhibition({ onOpenConsultation }: EditorialSer
                 key={discipline.id}
                 onClick={() => setSelectedId(discipline.id)}
                 style={cardStyle}
-                className={`group bg-black/70 backdrop-blur-md rounded-2xl p-6 border transition-all duration-300 cursor-pointer flex flex-col justify-between ${
+                className={`group bg-black/80 backdrop-blur-md rounded-2xl p-6 border transition-all duration-300 cursor-pointer flex flex-col justify-between ${
                   isSelected
                     ? 'border-[#B86B38] ring-2 ring-[#B86B38]/40 shadow-xl'
                     : 'border-white/20 hover:border-white/40 shadow-md'
@@ -237,7 +237,7 @@ export function EditorialServicesExhibition({ onOpenConsultation }: EditorialSer
         </div>
 
         {/* 4. Detail Panel Below */}
-        <div className="bg-black/75 backdrop-blur-md rounded-3xl p-6 sm:p-10 border border-white/20 shadow-2xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-center text-[#F4F0E8]">
+        <div className="bg-black/85 backdrop-blur-md rounded-3xl p-6 sm:p-10 border border-white/20 shadow-2xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-center text-[#F4F0E8]">
           
           {/* Left Image */}
           <div className="lg:col-span-7 rounded-2xl overflow-hidden bg-black h-72 sm:h-96 relative border border-white/15">
@@ -247,7 +247,7 @@ export function EditorialServicesExhibition({ onOpenConsultation }: EditorialSer
               className="w-full h-full object-cover img-editorial"
               loading="lazy"
             />
-            <div className="absolute top-4 left-4 bg-black/80 backdrop-blur-md px-3.5 py-1.5 rounded-full text-xs font-mono uppercase tracking-wider text-white border border-white/15">
+            <div className="absolute top-4 left-4 bg-black/90 backdrop-blur-md px-3.5 py-1.5 rounded-full text-xs font-mono uppercase tracking-wider text-white border border-white/15">
               {activeDiscipline.number} · {activeDiscipline.title}
             </div>
           </div>
