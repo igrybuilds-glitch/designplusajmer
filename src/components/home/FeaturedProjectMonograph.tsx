@@ -35,7 +35,7 @@ export function FeaturedProjectMonograph() {
       className="relative bg-transparent text-[#F4F0E8] py-20 sm:py-28 lg:py-36 overflow-hidden border-b border-white/15 transition-colors"
     >
       {/* Dark Readability Overlay for Fixed Video Background */}
-      <div className="absolute inset-0 bg-black/30 backdrop-blur-[1px] -z-10" aria-hidden="true" />
+      <div className="absolute inset-0 bg-black/60 backdrop-blur-[1px] -z-10" aria-hidden="true" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
@@ -120,7 +120,7 @@ export function FeaturedProjectMonograph() {
                     onClick={() => setBlueprintMode(false)}
                     className={`px-2.5 py-1 text-[11px] font-mono uppercase tracking-wider cursor-pointer border transition-colors rounded ${
                       !blueprintMode
-                        ? 'bg-[#B86B38] text-white border-[#B86B38]'
+                        ? 'bg-[#A65D37] text-white border-[#A65D37]'
                         : 'bg-black/60 text-[#F4F0E8]/80 border-white/20 hover:border-white/40'
                     }`}
                   >
@@ -233,7 +233,7 @@ export function FeaturedProjectMonograph() {
                   <div className="pt-2 flex items-center gap-4">
                     <Link
                       to={`/projects/${heroProject.id}`}
-                      className="inline-flex items-center gap-2 bg-[#B86B38] hover:bg-[#a65d37] text-white px-5 py-2.5 text-xs font-sans font-medium uppercase tracking-wider transition-colors rounded-full shadow-lg"
+                      className="inline-flex items-center gap-2 bg-[#A65D37] hover:bg-[#93511F] text-white px-5 py-2.5 text-xs font-sans font-medium uppercase tracking-wider transition-colors rounded-full shadow-lg"
                     >
                       <span>Explore Monograph</span>
                       <ArrowUpRight className="w-4 h-4" />

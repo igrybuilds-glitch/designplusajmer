@@ -21,7 +21,7 @@ export function LeadershipTeamSection() {
       className="relative bg-transparent text-[#F4F0E8] py-20 sm:py-28 lg:py-36 overflow-hidden border-b border-white/15 transition-colors"
     >
       {/* Dark Readability Overlay for Fixed Video Background */}
-      <div className="absolute inset-0 bg-black/30 backdrop-blur-[1px] -z-10" aria-hidden="true" />
+      <div className="absolute inset-0 bg-black/60 backdrop-blur-[1px] -z-10" aria-hidden="true" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         

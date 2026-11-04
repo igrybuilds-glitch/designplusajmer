@@ -12,7 +12,7 @@ export function FinalConsultationCTA({ onOpenConsultation }: FinalConsultationCT
       className="relative bg-transparent text-[#F4F0E8] py-24 sm:py-32 lg:py-40 overflow-hidden border-t border-white/15 transition-colors"
     >
       {/* Dark Readability Overlay for Fixed Video Background */}
-      <div className="absolute inset-0 bg-black/30 backdrop-blur-[1px] -z-10" aria-hidden="true" />
+      <div className="absolute inset-0 bg-black/60 backdrop-blur-[1px] -z-10" aria-hidden="true" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
@@ -75,7 +75,7 @@ export function FinalConsultationCTA({ onOpenConsultation }: FinalConsultationCT
             <button
               type="button"
               onClick={onOpenConsultation}
-              className="btn-primary bg-[#B86B38] hover:bg-[#a65d37] text-white px-8 py-4 text-sm font-semibold tracking-wide shadow-xl cursor-pointer"
+              className="btn-primary bg-[#A65D37] hover:bg-[#93511F] text-white px-8 py-4 text-sm font-semibold tracking-wide shadow-xl cursor-pointer"
             >
               <span>Book Site Consultation</span>
               <ArrowUpRight className="w-4 h-4" />

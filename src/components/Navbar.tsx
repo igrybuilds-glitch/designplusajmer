@@ -106,7 +106,7 @@ export function Navbar({
                   key={item.path}
                   to={item.path}
                   className={`relative py-1 font-medium transition-colors cursor-pointer ${
-                    active ? 'text-[#B86B38]' : 'text-[#1E1D1A]/80 hover:text-[#B86B38]'
+                    active ? 'text-[#99522A]' : 'text-[#1E1D1A]/80 hover:text-[#B86B38]'
                   } after:absolute after:bottom-0 after:left-0 after:h-[1px] after:bg-[#B86B38] after:transition-all after:duration-300 ${
                     active ? 'after:w-full' : 'after:w-0 hover:after:w-full'
                   }`}
@@ -127,7 +127,7 @@ export function Navbar({
             >
               <Bookmark className="w-4 h-4 transition-transform duration-300 group-hover:scale-110 group-active:scale-125" />
               {savedProjects.length > 0 && (
-                <span className="text-[#B86B38] font-mono text-[10px] font-bold">
+                <span className="text-[#99522A] font-mono text-[10px] font-bold">
                   ({savedProjects.length})
                 </span>
               )}
@@ -184,7 +184,7 @@ export function Navbar({
                   to={item.path}
                   onClick={() => setIsOpen(false)}
                   className={`block py-2.5 transition-colors border-b border-stone-200/60 ${
-                    active ? 'text-[#B86B38] font-semibold' : 'text-[#1E1D1A] hover:text-[#B86B38]'
+                    active ? 'text-[#99522A] font-semibold' : 'text-[#1E1D1A] hover:text-[#B86B38]'
                   }`}
                 >
                   {item.label}

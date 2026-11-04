@@ -24,7 +24,7 @@ export function HomeFaqSection() {
 
         {/* Answer-first block 1 */}
         <div className="mb-14">
-          <p className="text-[11px] font-mono uppercase tracking-[0.25em] text-[#C86635] font-semibold mb-3">
+          <p className="text-[11px] font-mono uppercase tracking-[0.25em] text-[#99522A] font-semibold mb-3">
             Straight answers
           </p>
           <h2 id="home-faq-heading" className="font-editorial text-3xl sm:text-4xl font-medium mb-4">
@@ -62,7 +62,7 @@ export function HomeFaqSection() {
             <thead>
               <tr className="border-b-2 border-stone-900">
                 <th className="text-left py-3 pr-4 font-semibold" scope="col">What you get</th>
-                <th className="text-left py-3 pr-4 font-semibold text-[#C86635]" scope="col">Design Plus</th>
+                <th className="text-left py-3 pr-4 font-semibold text-[#99522A]" scope="col">Design Plus</th>
                 <th className="text-left py-3 font-semibold text-stone-500" scope="col">Typical draftsman</th>
               </tr>
             </thead>
@@ -94,11 +94,11 @@ export function HomeFaqSection() {
                     aria-expanded={open}
                     className="w-full flex items-center justify-between gap-4 py-5 text-left cursor-pointer group"
                   >
-                    <span className="font-medium text-stone-950 group-hover:text-[#C86635] transition-colors">
+                    <span className="font-medium text-stone-950 group-hover:text-[#99522A] transition-colors">
                       {faq.question}
                     </span>
                     <Plus
-                      className={`w-5 h-5 shrink-0 text-[#C86635] transition-transform duration-300 ${open ? 'rotate-45' : ''}`}
+                      className={`w-5 h-5 shrink-0 text-[#99522A] transition-transform duration-300 ${open ? 'rotate-45' : ''}`}
                       aria-hidden="true"
                     />
                   </button>

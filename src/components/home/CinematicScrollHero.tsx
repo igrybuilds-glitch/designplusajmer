@@ -192,7 +192,7 @@ export function CinematicScrollHero({ onOpenConsultation }: CinematicScrollHeroP
               <button
                 type="button"
                 onClick={onOpenConsultation}
-                className="btn-primary bg-[#B86B38] hover:bg-[#a65d37] text-white px-8 py-3.5 text-sm font-semibold tracking-wide shadow-lg cursor-pointer"
+                className="btn-primary bg-[#A65D37] hover:bg-[#93511F] text-white px-8 py-3.5 text-sm font-semibold tracking-wide shadow-lg cursor-pointer"
               >
                 <span>Book Site Consultation</span>
                 <ArrowUpRight className="w-4 h-4" />

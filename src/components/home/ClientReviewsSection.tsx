@@ -52,7 +52,7 @@ export function ClientReviewsSection() {
             href={BUSINESS_INFO.googleMapsUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-[#C86635] text-white px-8 py-3.5 text-xs font-semibold uppercase tracking-wider hover:bg-[#b5582a] transition-colors"
+            className="inline-flex items-center gap-2 bg-[#A8542A] text-white px-8 py-3.5 text-xs font-semibold uppercase tracking-wider hover:bg-[#8F4523] transition-colors"
           >
             Review us on Google
             <ArrowUpRight className="w-4 h-4" />

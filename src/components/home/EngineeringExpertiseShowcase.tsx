@@ -166,7 +166,7 @@ export function EngineeringExpertiseShowcase() {
       className="py-20 sm:py-28 lg:py-36 bg-transparent text-[#F4F0E8] border-b border-white/15 relative overflow-hidden transition-colors"
     >
       {/* Dark Readability Overlay for Fixed Video Background */}
-      <div className="absolute inset-0 bg-black/30 backdrop-blur-[1px] -z-10" aria-hidden="true" />
+      <div className="absolute inset-0 bg-black/60 backdrop-blur-[1px] -z-10" aria-hidden="true" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
@@ -203,7 +203,7 @@ export function EngineeringExpertiseShowcase() {
                 onClick={() => setActiveId(disc.id)}
                 className={`p-3 text-left rounded-xl border transition-all cursor-pointer flex flex-col justify-between gap-1 ${
                   isSelected
-                    ? 'bg-[#B86B38] border-[#B86B38] text-white shadow-lg ring-1 ring-[#B86B38]/50'
+                    ? 'bg-[#A65D37] border-[#A65D37] text-white shadow-lg ring-1 ring-[#B86B38]/50'
                     : 'bg-black/60 border-white/20 text-[#F4F0E8]/80 hover:border-white/40 hover:text-white'
                 }`}
               >
@@ -273,7 +273,7 @@ export function EngineeringExpertiseShowcase() {
               <div className="pt-4 flex items-center gap-4">
                 <Link
                   to="/services"
-                  className="btn-primary bg-[#B86B38] hover:bg-[#a65d37] text-white px-6 py-3 text-xs sm:text-sm font-semibold tracking-wide"
+                  className="btn-primary bg-[#A65D37] hover:bg-[#93511F] text-white px-6 py-3 text-xs sm:text-sm font-semibold tracking-wide"
                 >
                   <span>Request Engineering Quote</span>
                   <ArrowUpRight className="w-4 h-4" />

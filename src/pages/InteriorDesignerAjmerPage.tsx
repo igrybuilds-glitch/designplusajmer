@@ -476,7 +476,7 @@ export function InteriorDesignerAjmerPage({ onOpenConsultation }: InteriorDesign
             <button
               type="button"
               onClick={onOpenConsultation}
-              className="inline-flex items-center justify-center gap-2 bg-[#C86635] hover:bg-[#b5582a] text-white px-6 py-3.5 text-xs font-semibold uppercase tracking-wider transition-colors min-h-[44px] active:scale-95"
+              className="inline-flex items-center justify-center gap-2 bg-[#A8542A] hover:bg-[#8F4523] text-white px-6 py-3.5 text-xs font-semibold uppercase tracking-wider transition-colors min-h-[44px] active:scale-95"
             >
               <span>Start My Interior Design</span>
               <ArrowRight className="w-4 h-4" />

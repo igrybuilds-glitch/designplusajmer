@@ -85,7 +85,7 @@ export default function BlogHubArticlePage() {
 
           <Reveal delay={80}>
             <div className="flex items-center gap-3 mb-5">
-              <span className="text-[11px] font-bold uppercase tracking-[0.2em] bg-amber-500/15 text-amber-700 dark:text-amber-300 px-3 py-1.5 rounded-full">{post.category}</span>
+              <span className="text-[11px] font-bold uppercase tracking-[0.2em] bg-amber-500/15 text-amber-800 dark:text-amber-300 px-3 py-1.5 rounded-full">{post.category}</span>
               <span className="text-sm text-stone-500 dark:text-stone-400">{formatDate(post.date)}</span>
               {post.updated && (
                 <span className="text-sm text-stone-500 dark:text-stone-400">· Last updated: {formatDate(post.updated)}</span>
@@ -154,7 +154,7 @@ export default function BlogHubArticlePage() {
                     className="bh-card group flex flex-col h-full rounded-2xl border border-stone-200 dark:border-stone-800 bg-white dark:bg-stone-900/50 overflow-hidden"
                   >
                     <div className="p-5 flex flex-col flex-1">
-                      <div className="text-[11px] font-bold uppercase tracking-[0.18em] text-amber-600 dark:text-amber-400 mb-2">{r.category}</div>
+                      <div className="text-[11px] font-bold uppercase tracking-[0.18em] text-amber-700 dark:text-amber-400 mb-2">{r.category}</div>
                       <h3 className="font-bold leading-snug mb-2 group-hover:text-amber-700 dark:group-hover:text-amber-300 transition-colors">{r.title}</h3>
                       <p className="text-sm text-stone-600 dark:text-stone-400 line-clamp-2">{r.description}</p>
                     </div>

@@ -127,7 +127,7 @@ export function EditorialServicesExhibition({ onOpenConsultation }: EditorialSer
       aria-label="Design Plus Disciplines Section"
     >
       {/* Dark Readability Overlay for Fixed Video Background */}
-      <div className="absolute inset-0 bg-black/30 backdrop-blur-[1px] -z-10" aria-hidden="true" />
+      <div className="absolute inset-0 bg-black/60 backdrop-blur-[1px] -z-10" aria-hidden="true" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
         
@@ -172,7 +172,7 @@ export function EditorialServicesExhibition({ onOpenConsultation }: EditorialSer
                 onClick={() => setFilterCategory(pill.value)}
                 className={`rounded-full px-4 py-2 text-xs font-sans font-medium transition-all cursor-pointer ${
                   isSelected
-                    ? 'bg-[#B86B38] text-white shadow-md'
+                    ? 'bg-[#A65D37] text-white shadow-md'
                     : 'bg-black/60 text-[#F4F0E8]/85 border border-white/20 hover:border-[#B86B38]'
                 }`}
               >
@@ -283,7 +283,7 @@ export function EditorialServicesExhibition({ onOpenConsultation }: EditorialSer
               <Link
                 to={activeDiscipline.route}
                 aria-label={`Explore ${activeDiscipline.title}`}
-                className="btn-primary py-3 px-6 text-xs sm:text-sm bg-[#B86B38] hover:bg-[#a65d37] text-white"
+                className="btn-primary py-3 px-6 text-xs sm:text-sm bg-[#A65D37] hover:bg-[#93511F] text-white"
               >
                 <span>Explore Discipline</span>
                 <ArrowUpRight className="w-4 h-4" />

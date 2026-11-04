@@ -145,7 +145,7 @@ export function ManifestoSection() {
       className="relative bg-transparent text-[#F4F0E8] overflow-hidden border-b border-white/15 transition-colors"
     >
       {/* Dark Readability Overlay for Fixed Video Background */}
-      <div className="absolute inset-0 bg-black/30 backdrop-blur-[1px] -z-10" aria-hidden="true" />
+      <div className="absolute inset-0 bg-black/60 backdrop-blur-[1px] -z-10" aria-hidden="true" />
 
       {/* Pinned Cinematic Presentation Stage (Height-calibrated) */}
       <div 
@@ -212,7 +212,7 @@ export function ManifestoSection() {
                     onClick={() => handleSelectDiscipline(d)}
                     className={`group relative rounded-full px-3 sm:px-3.5 py-1.5 text-xs font-sans font-medium tracking-wide transition-all duration-300 flex items-center gap-1.5 sm:gap-2 cursor-pointer select-none active:scale-90 ${
                       isCurrent
-                        ? 'bg-[#B86B38] text-white shadow-md ring-2 ring-[#B86B38]/50 scale-[1.04]'
+                        ? 'bg-[#A65D37] text-white shadow-md ring-2 ring-[#B86B38]/50 scale-[1.04]'
                         : 'bg-white/10 hover:bg-white/20 text-[#F4F0E8] border border-white/15'
                     }`}
                   >

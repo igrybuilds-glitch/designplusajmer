@@ -35,7 +35,7 @@ export function RegionalPresenceSection() {
       className="relative bg-transparent text-[#F4F0E8] py-20 sm:py-28 lg:py-36 overflow-hidden border-b border-white/15 transition-colors"
     >
       {/* Dark Readability Overlay for Fixed Video Background */}
-      <div className="absolute inset-0 bg-black/30 backdrop-blur-[1px] -z-10" aria-hidden="true" />
+      <div className="absolute inset-0 bg-black/60 backdrop-blur-[1px] -z-10" aria-hidden="true" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
@@ -97,7 +97,7 @@ export function RegionalPresenceSection() {
           </div>
           <Link
             to="/locations"
-            className="btn-primary bg-[#B86B38] hover:bg-[#a65d37] text-white px-6 py-3 text-xs font-semibold tracking-wider shrink-0"
+            className="btn-primary bg-[#A65D37] hover:bg-[#93511F] text-white px-6 py-3 text-xs font-semibold tracking-wider shrink-0"
           >
             <span>Explore Service Corridors</span>
             <ArrowUpRight className="w-4 h-4" />
