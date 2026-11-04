@@ -66,7 +66,11 @@ export function Footer() {
             <ul className="space-y-1 text-xs font-sans text-[#F4F0E8]/80">
               {SERVICES.slice(0, 6).map((s) => (
                 <li key={s.slug}>
-                  <Link to={`/services/${s.slug}`} className="hover:text-[#B86B38] transition-colors block py-1">
+                  <Link
+                    to={`/services/${s.slug}`}
+                    aria-label={s.slug === 'residential-architecture' ? 'Residential Architecture — service' : undefined}
+                    className="hover:text-[#B86B38] transition-colors block py-1"
+                  >
                     {s.title}
                   </Link>
                 </li>
@@ -85,7 +89,7 @@ export function Footer() {
               Works &amp; Portfolio
             </p>
             <ul className="space-y-1 text-xs font-sans text-[#F4F0E8]/80">
-              <li><Link to="/projects/residential" className="hover:text-[#B86B38] transition-colors block py-1">Residential Architecture</Link></li>
+              <li><Link to="/projects/residential" aria-label="Residential Architecture — project portfolio" className="hover:text-[#B86B38] transition-colors block py-1">Residential Projects</Link></li>
               <li><Link to="/projects/commercial" className="hover:text-[#B86B38] transition-colors block py-1">Commercial &amp; Retail</Link></li>
               <li><Link to="/projects/interior" className="hover:text-[#B86B38] transition-colors block py-1">Interior Architecture</Link></li>
               <li><Link to="/projects/structural" className="hover:text-[#B86B38] transition-colors block py-1">Chartered Structural Works</Link></li>
@@ -133,7 +137,7 @@ export function Footer() {
                 <Phone className="w-3.5 h-3.5 text-[#B86B38] shrink-0 mt-0.5" />
                 <div className="space-y-1">
                   {BUSINESS_INFO.phones.map((p, i) => (
-                    <a key={i} href={`tel:${p.raw}`} className="block hover:text-[#B86B38] transition-colors font-mono text-[11px] py-1">
+                    <a key={i} href={`tel:${p.raw}`} className="flex items-center min-h-7 hover:text-[#B86B38] transition-colors font-mono text-[11px] py-1">
                       {p.display}
                     </a>
                   ))}
@@ -141,7 +145,7 @@ export function Footer() {
               </div>
               <div className="flex items-start gap-2">
                 <Mail className="w-3.5 h-3.5 text-[#B86B38] shrink-0 mt-0.5" />
-                <a href={`mailto:${BUSINESS_INFO.email}`} className="hover:text-[#B86B38] transition-colors break-all py-1 -my-1">
+                <a href={`mailto:${BUSINESS_INFO.email}`} className="inline-flex items-center min-h-7 hover:text-[#B86B38] transition-colors break-all py-1 -my-1">
                   {BUSINESS_INFO.email}
                 </a>
               </div>
