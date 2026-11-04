@@ -5,5 +5,16 @@ https://designplusajmer.co.in/* https://www.designplusajmer.co.in/:splat 301
 http://designplusajmer.co.in/* https://www.designplusajmer.co.in/:splat 301
 # /api/* is proxied to the Cloudflare Worker by functions/api/[[path]].ts
 # (Pages _redirects cannot 200-proxy to absolute URLs, so no rule here).
+
+# Cost-guide slug alias (2026-11-04, scores pass 2): the guide lives at
+# /blog/cost-of-building-a-house-in-ajmer-2026/ but the shorter slug
+# below was the one in the PageSpeed brief and in circulation — it fell
+# through to the SPA fallback and rendered the "Article not found"
+# shell (with a homepage canonical, which also cost SEO points in the
+# run). 301 both slash variants to the real article. Must stay above
+# the SPA fallback (first match wins).
+/blog/house-construction-cost-ajmer /blog/cost-of-building-a-house-in-ajmer-2026/ 301
+/blog/house-construction-cost-ajmer/ /blog/cost-of-building-a-house-in-ajmer-2026/ 301
+
 # SPA fallback below.
 /* /index.html 200
