@@ -10,8 +10,22 @@
 #   m = re.search(r'<script>(.*?)</script>', s, re.S)
 #   print('sha256-' + base64.b64encode(hashlib.sha256(m.group(1).encode()).digest()).decode())"
 # and replace the hash below, otherwise the preloader will stop running.
+#
+# External origins, each tied to a real in-repo feature (2026-11-04 pass 2):
+# - script-src https://apis.google.com — Firebase Auth injects gapi
+#   (api.js) for Google sign-in; it was CSP-blocked on every page, which
+#   was the site-wide console error holding Best Practices at 92.
+# - frame-src firebaseapp.com + accounts.google.com — the Firebase Auth
+#   helper iframe (authDomain/__/auth/iframe) and the gapi accounts
+#   iframe; frame-src 'none' silently killed both.
+# - frame-src https://www.instagram.com — the homepage reel embed
+#   (InstagramReel component), also dead under frame-src 'none'.
+# - googletagmanager / google-analytics — the env-gated, consent-gated
+#   GA4 loader in src/lib/analytics.ts (inert until the owner sets
+#   VITE_GA_MEASUREMENT_ID; allowed now so enabling it can't break).
+# No 'unsafe-inline'/'unsafe-eval' for scripts; origins stay explicit.
 /*
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-NMLzoW6aV926ihb3CK7x4OVlz71i8nJw8eJI1DVjXuE='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; media-src 'self' data: https:; connect-src 'self' https://firestore.googleapis.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-NMLzoW6aV926ihb3CK7x4OVlz71i8nJw8eJI1DVjXuE=' https://apis.google.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; media-src 'self' data: https:; connect-src 'self' https://firestore.googleapis.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://www.google-analytics.com https://www.googletagmanager.com; frame-src https://gen-lang-client-0970693213.firebaseapp.com https://accounts.google.com https://www.instagram.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
