@@ -14,6 +14,8 @@ export const HOMEPAGE_ARCHITECT_SCHEMA = {
   '@id': 'https://www.designplusajmer.co.in/#architect-business',
   name: 'Design Plus',
   legalName: 'Design Plus Architecture & Structural Engineering Studio',
+  founder: { '@type': 'Person', name: 'Er. Sudhir Soni', jobTitle: 'Structural Engineer' },
+  knowsAbout: ['Architecture', 'Structural engineering', 'Interior design', 'Earthquake resistant home design', 'Vastu compliant home design', 'House construction cost planning'],
   url: 'https://www.designplusajmer.co.in',
   logo: 'https://www.designplusajmer.co.in/logo.png',
   image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
