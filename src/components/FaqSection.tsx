@@ -59,7 +59,7 @@ export function FaqSection({
           `<` is escaped so answer text can never break out of the script block. */}
       <script type="application/ld+json">{JSON.stringify(faqSchema).replace(/</g, '\\u003c')}</script>
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <p className={`text-[11px] font-mono uppercase tracking-[0.25em] font-semibold mb-3 ${dark ? 'text-[#B86B38]' : 'text-[#99522A]'}`}>
+        <p className={`text-[11px] font-mono uppercase tracking-[0.25em] font-semibold mb-3 ${dark ? 'text-[#C97B47]' : 'text-[#99522A]'}`}>
           {eyebrow}
         </p>
         <h2 className="font-editorial text-3xl sm:text-4xl font-medium mb-8">
@@ -83,7 +83,7 @@ export function FaqSection({
                       {faq.q}
                     </span>
                     <Plus
-                      className={`w-5 h-5 shrink-0 transition-transform duration-300 ${open ? 'rotate-45' : ''} ${dark ? 'text-[#B86B38]' : 'text-[#99522A]'}`}
+                      className={`w-5 h-5 shrink-0 transition-transform duration-300 ${open ? 'rotate-45' : ''} ${dark ? 'text-[#C97B47]' : 'text-[#99522A]'}`}
                       aria-hidden="true"
                     />
                   </button>

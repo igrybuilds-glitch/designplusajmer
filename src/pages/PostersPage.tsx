@@ -68,7 +68,7 @@ export function PostersPage() {
           }}
         />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
-          <div className="flex items-center gap-2 text-[#B86B38] text-xs font-mono uppercase tracking-[0.25em] mb-6">
+          <div className="flex items-center gap-2 text-[#C97B47] text-xs font-mono uppercase tracking-[0.25em] mb-6">
             <Images className="w-4 h-4" />
             <span>Design Knowledge Library</span>
           </div>
@@ -99,7 +99,7 @@ export function PostersPage() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
         <div className="flex items-end justify-between mb-10">
           <div>
-            <p className="text-xs font-mono uppercase tracking-[0.25em] text-[#B86B38] mb-3">
+            <p className="text-xs font-mono uppercase tracking-[0.25em] text-[#99522A] mb-3">
               Browse by topic
             </p>
             <h2 className="font-editorial text-3xl md:text-4xl font-bold text-stone-900">
@@ -126,7 +126,7 @@ export function PostersPage() {
                 <p className="text-sm text-stone-600 leading-relaxed font-sans font-light flex-1">
                   {cat.seoDescription}
                 </p>
-                <div className="mt-6 flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#B86B38]">
+                <div className="mt-6 flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#99522A]">
                   <span>Explore posters</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -138,7 +138,7 @@ export function PostersPage() {
         {/* Why posters */}
         <div className="mt-20 bg-[#141412] text-[#F4F0E8] rounded-3xl p-8 md:p-14">
           <div className="max-w-3xl">
-            <p className="text-xs font-mono uppercase tracking-[0.25em] text-[#B86B38] mb-4">
+            <p className="text-xs font-mono uppercase tracking-[0.25em] text-[#C97B47] mb-4">
               Why we publish these
             </p>
             <h2 className="font-editorial text-2xl md:text-4xl font-bold leading-snug">
@@ -154,7 +154,7 @@ export function PostersPage() {
             </p>
             <Link
               to="/contact"
-              className="mt-8 inline-flex items-center gap-2 bg-[#B86B38] hover:bg-[#a65d37] text-white px-6 py-3 text-xs font-medium uppercase tracking-wider transition-colors rounded"
+              className="mt-8 inline-flex items-center gap-2 bg-[#A65D37] hover:bg-[#93511F] text-white px-6 py-3 text-xs font-medium uppercase tracking-wider transition-colors rounded"
             >
               <span>Discuss your project</span>
               <ArrowUpRight className="w-4 h-4" />

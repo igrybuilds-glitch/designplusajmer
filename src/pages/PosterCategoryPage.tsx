@@ -98,7 +98,7 @@ export function PosterCategoryPage() {
           <div className="w-14 h-14 rounded-2xl bg-[#B86B38]/10 border border-[#B86B38]/25 flex items-center justify-center text-[#B86B38]">
             <Icon className="w-7 h-7" />
           </div>
-          <p className="text-xs font-mono uppercase tracking-[0.25em] text-[#B86B38]">
+          <p className="text-xs font-mono uppercase tracking-[0.25em] text-[#99522A]">
             Poster Collection
           </p>
         </div>
@@ -173,7 +173,7 @@ export function PosterCategoryPage() {
                 />
                 <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
                   <Icon className="w-10 h-10 text-[#B86B38] mb-4" />
-                  <span className="text-[10px] font-mono uppercase tracking-[0.25em] text-[#B86B38] mb-2">
+                  <span className="text-[10px] font-mono uppercase tracking-[0.25em] text-[#C97B47] mb-2">
                     {cat.shortLabel} · Poster {String(i + 1).padStart(2, '0')}
                   </span>
                   <span className="font-editorial text-lg font-bold text-[#F4F0E8] leading-snug">

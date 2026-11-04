@@ -97,7 +97,7 @@ export function ConsultationModal({ isOpen, onClose, defaultService, itemId = 'h
         {!submitted ? (
           <div>
             <div className="mb-6">
-              <span className="text-[11px] uppercase tracking-widest text-[#B86B38] font-semibold block mb-1">
+              <span className="text-[11px] uppercase tracking-widest text-[#99522A] font-semibold block mb-1">
                 Talk Directly to the Studio
               </span>
               <h3 id="consultation-modal-title" className="font-editorial text-2xl sm:text-3xl text-stone-950 font-bold">
@@ -200,7 +200,7 @@ export function ConsultationModal({ isOpen, onClose, defaultService, itemId = 'h
                 />
                 <span>
                   <ShieldCheck className="w-3.5 h-3.5 inline text-[#B86B38] mr-1" />
-                  I agree Design Plus may call/message me about this booking. <Link to="/privacy-policy" target="_blank" className="text-[#B86B38] underline font-medium">Privacy Policy</Link>
+                  I agree Design Plus may call/message me about this booking. <Link to="/privacy-policy" target="_blank" className="text-[#99522A] underline font-medium">Privacy Policy</Link>
                 </span>
               </label>
 
@@ -208,7 +208,7 @@ export function ConsultationModal({ isOpen, onClose, defaultService, itemId = 'h
                 <button
                   type="submit"
                   disabled={submitting || !consentRequired}
-                  className="w-full bg-[#B86B38] hover:bg-[#a55d31] disabled:opacity-50 text-white py-4 text-sm tracking-wider uppercase font-semibold transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-lg"
+                  className="w-full bg-[#A65D37] hover:bg-[#93511F] disabled:opacity-50 text-white py-4 text-sm tracking-wider uppercase font-semibold transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-lg"
                 >
                   {submitting ? (
                     <>
@@ -247,7 +247,7 @@ export function ConsultationModal({ isOpen, onClose, defaultService, itemId = 'h
               Done! We'll Call You Soon
             </h3>
             <div className="p-3 bg-stone-100 border border-stone-200 rounded-lg max-w-xs mx-auto text-xs font-mono text-stone-800">
-              Booking Reference: <strong className="text-[#B86B38]">{bookingRef}</strong>
+              Booking Reference: <strong className="text-[#99522A]">{bookingRef}</strong>
             </div>
             <p className="text-sm text-stone-600 max-w-sm mx-auto">
               Thank you, {formData.name}. Our team will call you on {normalizeIndianMobile(formData.phone)} within 24 hours.

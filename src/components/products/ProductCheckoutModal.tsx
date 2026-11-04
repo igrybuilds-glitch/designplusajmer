@@ -45,7 +45,7 @@ export function ProductCheckoutModal({ isOpen, onClose, product }: ProductChecko
 
         {/* Modal Header */}
         <div className="space-y-1 mb-6">
-          <div className="inline-flex items-center gap-1.5 text-xs font-mono uppercase tracking-widest text-[#B86B38]">
+          <div className="inline-flex items-center gap-1.5 text-xs font-mono uppercase tracking-widest text-[#99522A]">
             <ShieldCheck className="w-4 h-4 text-[#B86B38]" />
             <span>Design Plus Secure Checkout</span>
           </div>
@@ -65,7 +65,7 @@ export function ProductCheckoutModal({ isOpen, onClose, product }: ProductChecko
             />
           </div>
           <div className="space-y-1 flex-1">
-            <span className="text-[10px] font-mono uppercase tracking-wider text-[#B86B38]">{product.category}</span>
+            <span className="text-[10px] font-mono uppercase tracking-wider text-[#99522A]">{product.category}</span>
             <h3 className="font-sans font-medium text-sm text-[#1E1D1A] line-clamp-2">{product.name}</h3>
             <div className="text-sm font-bold text-[#1E1D1A]">{priceDisplay}</div>
           </div>

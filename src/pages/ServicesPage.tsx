@@ -136,7 +136,7 @@ export function ServicesPage({ onOpenConsultation }: ServicesPageProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10 sm:mt-14">
         <p className="text-base sm:text-lg text-stone-700 leading-relaxed max-w-3xl">
           Choosing an architect in Ajmer? Compare firms on five checks — who signs the structural drawings, in-house approval, written per-square-foot fees, visitable completed homes, and one named person for delays — then see{' '}
-          <Link to="/blog/top-10-architects-in-ajmer/" className="text-[#B86B38] underline decoration-[#B86B38]/40 underline-offset-4 hover:decoration-[#B86B38] font-medium">
+          <Link to="/blog/top-10-architects-in-ajmer/" className="text-[#99522A] underline decoration-[#B86B38]/40 underline-offset-4 hover:decoration-[#B86B38] font-medium">
             how Design Plus answers each
           </Link>
           .

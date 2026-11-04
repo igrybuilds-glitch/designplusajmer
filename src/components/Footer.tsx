@@ -18,7 +18,7 @@ export function Footer() {
               <span className="font-editorial text-2xl tracking-widest text-white font-bold uppercase block">
                 {BUSINESS_INFO.name}
               </span>
-              <span className="text-[10px] tracking-[0.22em] text-[#B86B38] font-sans uppercase block mt-0.5 font-semibold">
+              <span className="text-[10px] tracking-[0.22em] text-[#C97B47] font-sans uppercase block mt-0.5 font-semibold">
                 Architecture &amp; Structural Engineering
               </span>
             </Link>
@@ -68,7 +68,7 @@ export function Footer() {
                 <li key={s.slug}>
                   <Link
                     to={`/services/${s.slug}`}
-                    aria-label={s.slug === 'residential-architecture' ? 'Residential Architecture — service' : undefined}
+                    aria-label={s.slug === 'residential-architecture' ? 'Residential Architecture — service' : s.slug === 'interior-design' ? 'Interior Design — service' : undefined}
                     className="hover:text-[#B86B38] transition-colors block py-1"
                   >
                     {s.title}
@@ -76,7 +76,7 @@ export function Footer() {
                 </li>
               ))}
               <li className="pt-1">
-                <Link to="/project-management" className="text-[#B86B38] hover:text-[#c47745] font-semibold font-mono text-[11px] inline-block py-1">
+                <Link to="/project-management" className="text-[#C97B47] hover:text-[#c47745] font-semibold font-mono text-[11px] inline-block py-1">
                   Turnkey PMC &amp; Execution &rarr;
                 </Link>
               </li>
@@ -95,7 +95,7 @@ export function Footer() {
               <li><Link to="/projects/structural" className="hover:text-[#B86B38] transition-colors block py-1">Chartered Structural Works</Link></li>
               <li><Link to="/projects/concept" className="hover:text-[#B86B38] transition-colors block py-1">Concept &amp; Climate Studies</Link></li>
               <li className="pt-1">
-                <Link to="/projects" className="text-[#B86B38] hover:text-[#c47745] font-semibold font-mono text-[11px] inline-block py-1">
+                <Link to="/projects" className="text-[#C97B47] hover:text-[#c47745] font-semibold font-mono text-[11px] inline-block py-1">
                   Explore Archive &rarr;
                 </Link>
               </li>
@@ -110,13 +110,17 @@ export function Footer() {
             <ul className="space-y-1 text-xs font-sans text-[#F4F0E8]/80">
               {BLOG_CATEGORIES.map((cat) => (
                 <li key={cat.slug}>
-                  <Link to={`/blog?category=${cat.slug}`} className="hover:text-[#B86B38] transition-colors block py-1">
-                    {cat.name}
+                  <Link
+                    to={`/blog?category=${cat.slug}`}
+                    aria-label={cat.slug === 'interior-design' ? 'Interior Design — articles & guides' : undefined}
+                    className="hover:text-[#B86B38] transition-colors block py-1"
+                  >
+                    {cat.slug === 'interior-design' ? 'Interior Design Articles' : cat.name}
                   </Link>
                 </li>
               ))}
               <li className="pt-1">
-                <Link to="/blog" className="text-[#B86B38] hover:text-[#c47745] font-semibold font-mono text-[11px] inline-block py-1">
+                <Link to="/blog" className="text-[#C97B47] hover:text-[#c47745] font-semibold font-mono text-[11px] inline-block py-1">
                   Read All Articles &rarr;
                 </Link>
               </li>
