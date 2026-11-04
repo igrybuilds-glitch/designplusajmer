@@ -127,7 +127,7 @@ export function EditorialServicesExhibition({ onOpenConsultation }: EditorialSer
       aria-label="Design Plus Disciplines Section"
     >
       {/* Dark Readability Overlay for Fixed Video Background */}
-      <div className="absolute inset-0 bg-black/70 backdrop-blur-[1px] -z-10" aria-hidden="true" />
+      <div className="absolute inset-0 bg-black/80 backdrop-blur-[1px] -z-10" aria-hidden="true" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
         
@@ -237,7 +237,7 @@ export function EditorialServicesExhibition({ onOpenConsultation }: EditorialSer
         </div>
 
         {/* 4. Detail Panel Below */}
-        <div className="bg-black/85 backdrop-blur-md rounded-3xl p-6 sm:p-10 border border-white/20 shadow-2xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-center text-[#F4F0E8]">
+        <div className="bg-[#141412] rounded-3xl p-6 sm:p-10 border border-white/20 shadow-2xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-center text-[#F4F0E8]">
           
           {/* Left Image */}
           <div className="lg:col-span-7 rounded-2xl overflow-hidden bg-black h-72 sm:h-96 relative border border-white/15">
