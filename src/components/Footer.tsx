@@ -28,7 +28,7 @@ export function Footer() {
             </p>
 
             <div className="pt-2 border-t border-white/15">
-              <div className="text-[10px] uppercase tracking-widest text-[#F4F0E8]/60 font-semibold mb-0.5">Practice Leadership</div>
+              <div className="text-[10px] uppercase tracking-widest text-[#F4F0E8]/80 font-semibold mb-0.5">Practice Leadership</div>
               <div className="text-xs text-white font-semibold">{LEADERSHIP.name}</div>
               <div className="text-[11px] text-[#F4F0E8]/70">{LEADERSHIP.qualification}</div>
             </div>
@@ -60,9 +60,9 @@ export function Footer() {
 
           {/* Column 2: Architectural Services */}
           <div className="space-y-3">
-            <h4 className="text-xs font-mono uppercase tracking-[0.2em] text-white font-bold border-b border-white/15 pb-2">
+            <p className="text-xs font-mono uppercase tracking-[0.2em] text-white font-bold border-b border-white/15 pb-2">
               Services &amp; PMC
-            </h4>
+            </p>
             <ul className="space-y-2 text-xs font-sans text-[#F4F0E8]/80">
               {SERVICES.slice(0, 6).map((s) => (
                 <li key={s.slug}>
@@ -81,9 +81,9 @@ export function Footer() {
 
           {/* Column 3: Portfolio & Works */}
           <div className="space-y-3">
-            <h4 className="text-xs font-mono uppercase tracking-[0.2em] text-white font-bold border-b border-white/15 pb-2">
+            <p className="text-xs font-mono uppercase tracking-[0.2em] text-white font-bold border-b border-white/15 pb-2">
               Works &amp; Portfolio
-            </h4>
+            </p>
             <ul className="space-y-2 text-xs font-sans text-[#F4F0E8]/80">
               <li><Link to="/projects/residential" className="hover:text-[#B86B38] transition-colors block">Residential Architecture</Link></li>
               <li><Link to="/projects/commercial" className="hover:text-[#B86B38] transition-colors block">Commercial &amp; Retail</Link></li>
@@ -100,9 +100,9 @@ export function Footer() {
 
           {/* Column 4: Journal & Insights */}
           <div className="space-y-3">
-            <h4 className="text-xs font-mono uppercase tracking-[0.2em] text-white font-bold border-b border-white/15 pb-2">
+            <p className="text-xs font-mono uppercase tracking-[0.2em] text-white font-bold border-b border-white/15 pb-2">
               Blog &amp; Guides
-            </h4>
+            </p>
             <ul className="space-y-2 text-xs font-sans text-[#F4F0E8]/80">
               {BLOG_CATEGORIES.map((cat) => (
                 <li key={cat.slug}>
@@ -121,9 +121,9 @@ export function Footer() {
 
           {/* Column 5: Studio Office & Contact */}
           <div className="space-y-3">
-            <h4 className="text-xs font-mono uppercase tracking-[0.2em] text-white font-bold border-b border-white/15 pb-2">
+            <p className="text-xs font-mono uppercase tracking-[0.2em] text-white font-bold border-b border-white/15 pb-2">
               Studio &amp; Office
-            </h4>
+            </p>
             <div className="space-y-2 text-xs font-sans text-[#F4F0E8]/80">
               <div className="flex items-start gap-2">
                 <MapPin className="w-3.5 h-3.5 text-[#B86B38] shrink-0 mt-0.5" />
@@ -161,7 +161,7 @@ export function Footer() {
         </div>
 
         {/* Bottom Legal Bar */}
-        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-mono text-[#F4F0E8]/60">
+        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-mono text-[#F4F0E8]/80">
           <div>
             &copy; {new Date().getFullYear()} {BUSINESS_INFO.name} Architecture &amp; Structural Engineering Studio. All Rights Reserved.
             <span className="block sm:inline sm:ml-3 text-[#F4F0E8]/50">GSTIN: 08AZEPS7516E1Z7</span>

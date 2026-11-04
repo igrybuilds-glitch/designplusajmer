@@ -264,21 +264,21 @@ export function ManifestoSection() {
                         : 'bg-black/60 border-white/20 shadow-md hover:border-white/40 text-[#F4F0E8]/90'
                     }`}
                   >
-                    <div className="flex items-center justify-between text-[10px] font-mono text-[#F4F0E8]/60 pb-1.5 border-b border-white/10">
+                    <div className="flex items-center justify-between text-[10px] font-mono text-[#F4F0E8]/80 pb-1.5 border-b border-white/10">
                       <span className="text-[#B86B38] font-bold">{disc.number} //</span>
                       <span className="uppercase tracking-widest">{disc.tag}</span>
                     </div>
 
                     <div className="pt-2">
-                      <h4 className="font-editorial text-sm font-semibold uppercase text-white tracking-tight leading-snug">
+                      <h3 className="font-editorial text-sm font-semibold uppercase text-white tracking-tight leading-snug">
                         {disc.name}
-                      </h4>
+                      </h3>
                       <p className="text-[11px] font-mono text-[#F4F0E8]/70 truncate mt-0.5">
                         {disc.subtitle}
                       </p>
                     </div>
 
-                    <div className="mt-2.5 pt-2 border-t border-white/10 flex items-center justify-between text-[10px] font-mono text-[#F4F0E8]/60">
+                    <div className="mt-2.5 pt-2 border-t border-white/10 flex items-center justify-between text-[10px] font-mono text-[#F4F0E8]/80">
                       <span className="truncate max-w-[140px]">{disc.standards}</span>
                       <ArrowUpRight className={`w-3 h-3 text-[#B86B38] transition-transform ${isSelected ? 'translate-x-0.5 -translate-y-0.5' : ''}`} />
                     </div>
@@ -330,7 +330,7 @@ export function ManifestoSection() {
 
                 <div className="flex flex-wrap items-center justify-between gap-3 pt-2 border-t border-white/15 text-xs font-mono">
                   <div className="text-[#F4F0E8]/85">
-                    <span className="text-[#F4F0E8]/60 uppercase tracking-wider">{selectedDiscipline.stats.label}: </span>
+                    <span className="text-[#F4F0E8]/80 uppercase tracking-wider">{selectedDiscipline.stats.label}: </span>
                     <strong className="text-white font-medium">{selectedDiscipline.stats.value}</strong>
                   </div>
 

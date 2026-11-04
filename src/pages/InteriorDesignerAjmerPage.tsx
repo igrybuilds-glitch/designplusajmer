@@ -261,7 +261,7 @@ export function InteriorDesignerAjmerPage({ onOpenConsultation }: InteriorDesign
       {/* Spaces we design */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
         <div className="space-y-3 mb-10 max-w-3xl">
-          <div className="text-[11px] uppercase tracking-wider text-stone-400 font-semibold">
+          <div className="text-[11px] uppercase tracking-wider text-stone-500 font-semibold">
             Spaces We Design
           </div>
           <h2 className="font-editorial text-2xl sm:text-3xl text-stone-950 font-medium">
@@ -287,7 +287,7 @@ export function InteriorDesignerAjmerPage({ onOpenConsultation }: InteriorDesign
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           <div className="lg:col-span-8 space-y-10">
             <div className="space-y-3">
-              <div className="text-[11px] uppercase tracking-wider text-stone-400 font-semibold">
+              <div className="text-[11px] uppercase tracking-wider text-stone-500 font-semibold">
                 Interior Questions, Answered
               </div>
               <h2 className="font-editorial text-2xl sm:text-3xl text-stone-950 font-medium">
@@ -327,7 +327,7 @@ export function InteriorDesignerAjmerPage({ onOpenConsultation }: InteriorDesign
 
             {/* Deliverables table */}
             <div className="space-y-4 pt-4">
-              <div className="text-[11px] uppercase tracking-wider text-stone-400 font-semibold">
+              <div className="text-[11px] uppercase tracking-wider text-stone-500 font-semibold">
                 What You Receive
               </div>
               <h2 className="font-editorial text-2xl sm:text-3xl text-stone-950 font-medium">

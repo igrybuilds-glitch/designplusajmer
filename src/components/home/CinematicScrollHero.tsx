@@ -152,6 +152,13 @@ export function CinematicScrollHero({ onOpenConsultation }: CinematicScrollHeroP
           }}
         >
           <source src={heroVideo} type="video/mp4" />
+          <track
+            kind="captions"
+            src="/captions/hero-interior-reveal.vtt"
+            srcLang="en"
+            label="English (descriptive)"
+            default
+          />
           Your browser does not support the video tag.
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/10 to-black/30" aria-hidden="true" />

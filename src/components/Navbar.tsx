@@ -123,7 +123,7 @@ export function Navbar({
             <button
               onClick={onOpenClientPortal}
               title="Client Account & Saved Works"
-              className="group p-2 rounded-full bg-white/80 hover:bg-[#B86B38]/15 text-[#6E665B] hover:text-[#B86B38] border border-[#1E1D1A]/10 hover:border-[#B86B38]/30 shadow-xs hover:shadow-sm active:scale-85 transition-all duration-300 inline-flex items-center gap-1.5 cursor-pointer"
+              className="group p-2.5 rounded-full bg-white/80 hover:bg-[#B86B38]/15 text-[#6E665B] hover:text-[#B86B38] border border-[#1E1D1A]/10 hover:border-[#B86B38]/30 shadow-xs hover:shadow-sm active:scale-85 transition-all duration-300 inline-flex items-center gap-1.5 cursor-pointer"
             >
               <Bookmark className="w-4 h-4 transition-transform duration-300 group-hover:scale-110 group-active:scale-125" />
               {savedProjects.length > 0 && (
@@ -148,7 +148,7 @@ export function Navbar({
           <div className="flex items-center space-x-2 xl:hidden">
             <button
               onClick={onOpenClientPortal}
-              className="p-2 text-[#1E1D1A]/80 hover:text-[#1E1D1A] relative"
+              className="p-2.5 text-[#1E1D1A]/80 hover:text-[#1E1D1A] relative"
               title="Client Portal & Saved"
               aria-label="Client Account"
             >

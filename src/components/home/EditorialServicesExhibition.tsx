@@ -148,7 +148,7 @@ export function EditorialServicesExhibition({ onOpenConsultation }: EditorialSer
 
         {/* 3. Filter Pills Row */}
         <div className="flex flex-wrap items-center gap-2 pt-2">
-          <span className="text-xs font-mono uppercase text-[#F4F0E8]/60 mr-2">Filter By:</span>
+          <span className="text-xs font-mono uppercase text-[#F4F0E8]/80 mr-2">Filter By:</span>
           {[
             { label: 'All Disciplines', value: 'all' },
             { label: 'Structural', value: 'Structural' },
@@ -204,7 +204,7 @@ export function EditorialServicesExhibition({ onOpenConsultation }: EditorialSer
                 <div className="space-y-3">
                   <div className="flex items-center justify-between text-xs font-mono">
                     <span className="text-[#B86B38] font-bold">{discipline.number}</span>
-                    <span className="text-[#F4F0E8]/60 uppercase">{discipline.category}</span>
+                    <span className="text-[#F4F0E8]/80 uppercase">{discipline.category}</span>
                   </div>
                   <h3 className="font-editorial text-2xl font-normal text-white group-hover:text-[#B86B38] transition-colors">
                     {discipline.title}
@@ -217,6 +217,7 @@ export function EditorialServicesExhibition({ onOpenConsultation }: EditorialSer
                 <div className="pt-6 mt-4 border-t border-white/15 flex items-center justify-between text-xs font-medium">
                   <Link
                     to={discipline.route}
+                    aria-label={`View specifications for ${discipline.title}`}
                     className="text-[#B86B38] hover:text-white transition-colors"
                   >
                     View Specifications &rarr;
@@ -260,7 +261,7 @@ export function EditorialServicesExhibition({ onOpenConsultation }: EditorialSer
             </p>
 
             <div className="space-y-2.5 pt-2">
-              <div className="text-xs font-mono uppercase tracking-wider text-[#F4F0E8]/60">Key Standards &amp; Vetting</div>
+              <div className="text-xs font-mono uppercase tracking-wider text-[#F4F0E8]/80">Key Standards &amp; Vetting</div>
               <ul className="space-y-2 text-xs sm:text-sm text-[#F4F0E8]/90">
                 {activeDiscipline.standards.map((std, idx) => (
                   <li key={idx} className="flex items-center gap-2.5">
@@ -274,6 +275,7 @@ export function EditorialServicesExhibition({ onOpenConsultation }: EditorialSer
             <div className="pt-4 flex flex-wrap items-center gap-4">
               <Link
                 to={activeDiscipline.route}
+                aria-label={`Explore ${activeDiscipline.title}`}
                 className="btn-primary py-3 px-6 text-xs sm:text-sm bg-[#B86B38] hover:bg-[#a65d37] text-white"
               >
                 <span>Explore Discipline</span>
