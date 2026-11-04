@@ -115,9 +115,9 @@ export function ServicesPage({ onOpenConsultation }: ServicesPageProps) {
   return (
     <main id="services-page" className="pt-28 pb-20 bg-[#faf8f5] text-[#141414]">
       <SEOHead
-        title="Architecture & Structural Services | Design Plus"
-        description="Explore our integrated services: Residential villa design, commercial architecture, 3D elevation rendering, 2D floor plans, and structural calculations."
-        keywords="architectural services ajmer, structural design rajasthan, 3d elevation rendering, 2d floor planning, interior architecture ajmer, building approval drawings"
+        title="Architect, Structural Engineer & Interior Designer in Ajmer | Design Plus"
+        description="Design Plus services in Ajmer: house design and architecture, chartered structural engineering, interior design, 3D elevations, floor plans and building-plan approval — one studio for design, structure and sanction."
+        keywords="architect in ajmer, structural engineer in ajmer, interior designer in ajmer, architectural services ajmer, structural design rajasthan, 3d elevation rendering, 2d floor planning, building approval drawings ajmer"
         canonical="https://www.designplusajmer.co.in/services"
         schema={servicesSchema}
       />
