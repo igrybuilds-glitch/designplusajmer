@@ -42,7 +42,7 @@ export function HomePage({ onOpenConsultation }: HomePageProps) {
     ],
     url: 'https://www.designplusajmer.co.in',
     logo: 'https://www.designplusajmer.co.in/logo.png',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://www.designplusajmer.co.in/og-image.jpg',
     description: 'Premier architect in Ajmer for bespoke house planning Ajmer, refined interior designer Ajmer solutions, and turnkey project execution with structural rigor.',
     telephone: ['+91-7976453090', '+91-9461465610'],
     email: 'designplusajmer@gmail.com',

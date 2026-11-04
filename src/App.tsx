@@ -69,6 +69,7 @@ const AdminMessagesPage = lazy(() => import('./pages/admin/AdminMessagesPage').t
 const AdminTeamPage = lazy(() => import('./pages/admin/AdminTeamPage').then(m => ({ default: m.AdminTeamPage })));
 const AdminSettingsPage = lazy(() => import('./pages/admin/AdminSettingsPage').then(m => ({ default: m.AdminSettingsPage })));
 const AdminAuditLogPage = lazy(() => import('./pages/admin/AdminAuditLogPage').then(m => ({ default: m.AdminAuditLogPage })));
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage').then(m => ({ default: m.NotFoundPage })));
 
 function AppContent() {
   const location = useLocation();
@@ -240,8 +241,9 @@ function AppContent() {
             <Route path="*" element={<Navigate to="/admin/dashboard" replace />} />
           </Route>
 
-          {/* Public Fallback */}
-          <Route path="*" element={<Navigate to="/" replace />} />
+          {/* Public Fallback — real 404 page (2026-11-04, score-100 lane):
+              previously redirected to home, a soft 404. */}
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
         </Suspense>
       </div>

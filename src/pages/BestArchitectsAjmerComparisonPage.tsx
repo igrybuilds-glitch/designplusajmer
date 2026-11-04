@@ -129,7 +129,7 @@ export function BestArchitectsAjmerComparisonPage({ onOpenConsultation }: BestAr
     '@id': 'https://www.designplusajmer.co.in/best-architects-ajmer-comparison#article',
     headline: 'Best Architects in Ajmer: 5 Firms Compared (2026)',
     description: 'An honest, criteria-based comparison of five Ajmer architecture firms using publicly listed JustDial ratings and review counts observed in October 2026.',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://www.designplusajmer.co.in/og-image.jpg',
     author: {
       '@type': 'Person',
       name: 'Ar. Vipul Verma',
@@ -174,7 +174,7 @@ export function BestArchitectsAjmerComparisonPage({ onOpenConsultation }: BestAr
       'Design Plus Architecture & Structural Engineering Studio'
     ],
     url: 'https://www.designplusajmer.co.in',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://www.designplusajmer.co.in/og-image.jpg',
     description: 'Chartered-led architecture and structural engineering studio in Ajmer, Rajasthan, led by Er. Sudhir Soni (M.E. Structure, FIV).',
     telephone: '+91-7976453090',
     email: 'designplusajmer@gmail.com',
