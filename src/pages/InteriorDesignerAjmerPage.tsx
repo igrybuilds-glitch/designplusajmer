@@ -117,6 +117,14 @@ export function InteriorDesignerAjmerPage({ onOpenConsultation }: InteriorDesign
     {
       question: 'How involved do I need to be during the interior project?',
       answer: 'Heavily involved at design stage — colours, materials and layouts need your sign-off — and lightly involved during execution, through milestone photo updates and scheduled site visits. Our supervision handles vendor coordination, quality checks and snag lists so the project does not consume your working days.'
+    },
+    {
+      question: 'Who is the best interior designer in Ajmer for a home?',
+      answer: 'Judge on scope you can verify: 3D designs you approve before work begins, a room-by-room written quotation, and one team answerable for both design and execution. Design Plus has designed homes in Ajmer since 2004 and handles interiors the same way — designed in-house, executed under the studio\u2019s supervision, and quoted per room before a single panel is cut.'
+    },
+    {
+      question: 'Do you design interiors for flats and apartments in Ajmer?',
+      answer: 'Yes. Flats and apartments are a large part of our Ajmer interior work — Vaishali Nagar, Panchsheel Nagar, Civil Lines and the Foy Sagar Road side. Apartment interiors are planned around the two decisions that change the budget most: false-ceiling scope and modular kitchen specification, both priced in writing before work begins.'
     }
   ];
 
