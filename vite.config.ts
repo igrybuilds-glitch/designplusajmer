@@ -15,7 +15,10 @@ export default defineConfig(() => {
       target: 'es2020',
       minify: 'esbuild',
       cssMinify: true,
-      sourcemap: false,
+      // Source maps ON (2026-11-04, score-100 lane): Lighthouse's Best
+      // Practices audit flags missing source maps for large first-party
+      // JS. Maps are only fetched by DevTools, never by normal visitors.
+      sourcemap: true,
       rollupOptions: {
         output: {
           manualChunks(id) {
