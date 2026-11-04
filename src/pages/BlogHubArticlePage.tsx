@@ -78,7 +78,7 @@ export default function BlogHubArticlePage() {
       <article className="pt-28 md:pt-36 pb-16 px-5 md:px-10">
         <div className="max-w-3xl mx-auto">
           <Reveal>
-            <Link to="/blog" className="inline-flex items-center gap-2 text-sm font-semibold text-amber-700 dark:text-amber-300 mb-8 hover:gap-3 transition-all">
+            <Link to="/blog" className="inline-flex items-center gap-2 text-sm font-semibold text-amber-700 dark:text-amber-300 mb-8 py-2 -my-2 px-1 -mx-1 hover:gap-3 transition-all">
               <span aria-hidden="true">←</span> All articles
             </Link>
           </Reveal>
@@ -95,9 +95,19 @@ export default function BlogHubArticlePage() {
             <p className="text-lg text-stone-600 dark:text-stone-400 leading-relaxed mb-8">{post.description}</p>
             {post.image && (
               <div className="mb-10 rounded-2xl overflow-hidden border border-stone-200 dark:border-stone-800 shadow-md aspect-16/10">
+                {/* width/height encode the DISPLAYED 16:10 ratio (the
+                    wrapper's aspect class) so the browser reserves exactly
+                    the box the image will occupy, from the attributes
+                    alone, before any CSS arrives (CLS defence).
+                    fetchPriority lifts the hero (the article's LCP
+                    element) ahead of below-fold assets. */}
                 <img
                   src={post.image}
                   alt={post.title}
+                  width={1920}
+                  height={1200}
+                  fetchPriority="high"
+                  decoding="async"
                   className="w-full h-full object-cover"
                 />
               </div>
