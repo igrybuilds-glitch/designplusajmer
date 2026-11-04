@@ -91,6 +91,26 @@ export function prepareHomepageAssets(): void {
     const atlases = HOMEPAGE_PREPARATION_ASSETS.filter((a) => a.category === 'atlas');
     const sections = HOMEPAGE_PREPARATION_ASSETS.filter((a) => a.category !== 'atlas');
 
+    // Connection gate (2026-11-04, score-100 lane): on metered or slow
+    // connections, skip the section-photograph pre-download entirely — the
+    // section components lazy-load those images as they approach the
+    // viewport, so nothing is lost visually; the eager burst was adding
+    // ~10 MB to the homepage's measured network payload (Lighthouse
+    // "enormous network payload" / total byte weight).
+    const conn = (typeof navigator !== 'undefined'
+      ? (navigator as Navigator & { connection?: { saveData?: boolean; effectiveType?: string } }).connection
+      : undefined);
+    const constrained = !!conn && (conn.saveData === true || ['slow-2g', '2g', '3g'].includes(conn.effectiveType || ''));
+
+    const nextIdle = () =>
+      new Promise<void>((resolve) => {
+        if (typeof window !== 'undefined' && 'requestIdleCallback' in window) {
+          (window as Window & { requestIdleCallback: (cb: () => void, opts?: { timeout: number }) => number }).requestIdleCallback(() => resolve(), { timeout: 2000 });
+        } else {
+          setTimeout(resolve, 350);
+        }
+      });
+
     // Preload atlases sequentially in batches to balance network and memory
     const loadBatch = async () => {
       // First batch: Atlases 02 and 03 (immediate scroll continuation)
@@ -98,11 +118,17 @@ export function prepareHomepageAssets(): void {
         await preloadAndDecodeImage(atlas.url, 'auto');
       }
 
-      // Second batch: All section photographs and monographs
-      const sectionPromises = sections.map((asset) =>
-        preloadAndDecodeImage(asset.url, 'auto')
-      );
-      await Promise.all(sectionPromises);
+      // Second batch: section photographs — sequential small batches with
+      // idle yields, so preparation never competes with real user input or
+      // the browser's own lazy-loading of near-viewport sections.
+      if (!constrained) {
+        for (let i = 0; i < sections.length; i += 3) {
+          await nextIdle();
+          await Promise.all(
+            sections.slice(i, i + 3).map((asset) => preloadAndDecodeImage(asset.url, 'low'))
+          );
+        }
+      }
 
       isPhase2Completed = true;
       if (typeof window !== 'undefined') {
@@ -119,15 +145,26 @@ export function prepareHomepageAssets(): void {
     });
   };
 
-  // Schedule without blocking the main rendering thread
+  // Schedule without blocking the main rendering thread — and never before
+  // the window load event (2026-11-04, score-100 lane): preparation used to
+  // begin during initial load, so Lighthouse counted every prepared asset in
+  // the page's load payload. Starting after load keeps first-load metrics
+  // honest while still warming sections before most users scroll.
   if (typeof window !== 'undefined') {
-    if ('requestIdleCallback' in window) {
-      (window as Window & { requestIdleCallback: (cb: () => void, opts?: { timeout: number }) => number }).requestIdleCallback(
-        runPreparation,
-        { timeout: 1500 }
-      );
+    const schedule = () => {
+      if ('requestIdleCallback' in window) {
+        (window as Window & { requestIdleCallback: (cb: () => void, opts?: { timeout: number }) => number }).requestIdleCallback(
+          runPreparation,
+          { timeout: 1500 }
+        );
+      } else {
+        setTimeout(runPreparation, 100);
+      }
+    };
+    if (document.readyState === 'complete') {
+      schedule();
     } else {
-      setTimeout(runPreparation, 100);
+      window.addEventListener('load', schedule, { once: true });
     }
   }
 }
