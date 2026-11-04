@@ -406,6 +406,13 @@ export function ModularKitchenAjmerPage({ onOpenConsultation }: ModularKitchenAj
               Rajeev Marg, Panchsheel Nagar studio · +91 79764 53090 · designplusajmer@gmail.com.
               Bring your kitchen measurements — leave with a 3D design and an honest BOQ.
             </p>
+            <p className="text-xs sm:text-sm text-stone-400 leading-relaxed">
+              Planning more than the kitchen? The same studio team works as your{' '}
+              <Link to="/interior-designer-ajmer" className="text-stone-100 underline decoration-stone-500 underline-offset-4 hover:decoration-stone-100 transition-colors">
+                interior designer in Ajmer for complete home interiors
+              </Link>
+              , so the kitchen and the rest of the home are designed as one.
+            </p>
           </div>
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 shrink-0">
             <button

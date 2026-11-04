@@ -123,11 +123,25 @@ export function ServicesPage({ onOpenConsultation }: ServicesPageProps) {
       />
 
       {/* Hero Header via Reusable Component */}
-      <EditorialHero 
+      <EditorialHero
         subtitle="Services & Capabilities"
         title="Integrated Architectural & Structural Disciplines"
         description="Every building stage—from municipal setback planning and structural RCC schedules to interior joinery and photorealistic elevations—is directed by our in-house engineering and architectural team."
       />
+
+      {/* Chooser strip (G-T3, 2026-11-04 max-push): hub-level entry point for
+          the "best architects in Ajmer" intent, linking to the A2 chooser
+          section on the comparison post. Fees are NOT repeated here — the
+          canonical fee statement lives on /about (C2). */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10 sm:mt-14">
+        <p className="text-base sm:text-lg text-stone-700 leading-relaxed max-w-3xl">
+          Choosing an architect in Ajmer? Compare firms on five checks — who signs the structural drawings, in-house approval, written per-square-foot fees, visitable completed homes, and one named person for delays — then see{' '}
+          <Link to="/blog/top-10-architects-in-ajmer/" className="text-[#B86B38] underline decoration-[#B86B38]/40 underline-offset-4 hover:decoration-[#B86B38] font-medium">
+            how Design Plus answers each
+          </Link>
+          .
+        </p>
+      </div>
 
       {/* Discipline & Commercial Scope Filter Bar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 sm:-mt-12 mb-12">

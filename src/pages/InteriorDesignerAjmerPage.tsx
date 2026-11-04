@@ -207,6 +207,9 @@ export function InteriorDesignerAjmerPage({ onOpenConsultation }: InteriorDesign
           <ChevronRight className="w-3.5 h-3.5 text-stone-400" />
           <span className="text-amber-900 font-medium">Interior Designer in Ajmer</span>
         </nav>
+        {/* G-T4 (2026-11-04 max-push): visible freshness line — update the
+            month only when this page's content actually changes. */}
+        <p className="text-[11px] font-mono uppercase tracking-wider text-stone-500 mt-3">Last updated: November 2026</p>
       </div>
 
       {/* Header */}

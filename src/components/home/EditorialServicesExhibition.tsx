@@ -144,6 +144,13 @@ export function EditorialServicesExhibition({ onOpenConsultation }: EditorialSer
           <p className="text-base sm:text-lg text-[#F4F0E8]/85 font-sans font-light max-w-2xl leading-relaxed">
             House designs, building plans, structural safety checks, interiors and construction support — everything your project needs, in Ajmer and across Rajasthan.
           </p>
+          <p className="text-sm sm:text-base text-[#F4F0E8]/85 font-sans font-light max-w-2xl leading-relaxed">
+            Still comparing firms? Start with our guide to the{' '}
+            <Link to="/blog/top-10-architects-in-ajmer/" className="text-[#B86B38] underline decoration-[#B86B38]/50 underline-offset-4 hover:text-white hover:decoration-white transition-colors font-medium">
+              best architects in Ajmer — how to choose
+            </Link>{' '}
+            before you look at the disciplines below.
+          </p>
         </div>
 
         {/* 3. Filter Pills Row */}

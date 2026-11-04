@@ -46,7 +46,7 @@ export default function BlogHubArticlePage() {
     headline: post.title,
     description: post.description,
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: post.updated || post.date,
     author: { '@type': 'Organization', name: 'Design Plus', url: SITE_URL },
     publisher: { '@type': 'Organization', name: 'Design Plus', url: SITE_URL },
     mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
@@ -87,6 +87,9 @@ export default function BlogHubArticlePage() {
             <div className="flex items-center gap-3 mb-5">
               <span className="text-[11px] font-bold uppercase tracking-[0.2em] bg-amber-500/15 text-amber-700 dark:text-amber-300 px-3 py-1.5 rounded-full">{post.category}</span>
               <span className="text-sm text-stone-500 dark:text-stone-400">{formatDate(post.date)}</span>
+              {post.updated && (
+                <span className="text-sm text-stone-500 dark:text-stone-400">· Last updated: {formatDate(post.updated)}</span>
+              )}
             </div>
             <h1 className="text-3xl md:text-5xl font-black tracking-tight leading-tight mb-6">{post.title}</h1>
             <p className="text-lg text-stone-600 dark:text-stone-400 leading-relaxed mb-8">{post.description}</p>

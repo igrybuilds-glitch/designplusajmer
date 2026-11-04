@@ -171,6 +171,56 @@ export function AboutPage({ onOpenConsultation }: AboutPageProps) {
         </div>
       </section>
 
+      {/* AEO Action 1 (2026-11-04 max-push): "shortlist by need" table —
+          mirrors the structure AI answers use, with Design Plus truthfully
+          present in every row it serves. Real HTML table so crawlers read
+          it raw; no extra entity schema (extends the C2 statement above).
+          Rating line is dated, per the pack's re-verify instruction —
+          the 4 Nov 2026 recheck verified 5.0 stars / 13 reviews on Google. */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
+        <div className="space-y-4 max-w-4xl">
+          <h2 className="font-editorial text-3xl sm:text-4xl text-stone-950 font-normal">
+            Choosing an architect in Ajmer, by what you need
+          </h2>
+          <div className="overflow-x-auto">
+            <table className="w-full text-left text-sm sm:text-base text-stone-600 leading-relaxed border-collapse">
+              <thead>
+                <tr className="border-b-2 border-stone-300">
+                  <th scope="col" className="py-3 pr-4 font-semibold text-stone-800 align-top">If you need</th>
+                  <th scope="col" className="py-3 pr-4 font-semibold text-stone-800 align-top">What to look for</th>
+                  <th scope="col" className="py-3 font-semibold text-stone-800 align-top">Design Plus</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-stone-200">
+                  <td className="py-3 pr-4 align-top font-medium text-stone-800">A complete home, design to approval</td>
+                  <td className="py-3 pr-4 align-top">One firm for architecture, structural design and the ADA plan approval, so no stage waits on another hire</td>
+                  <td className="py-3 align-top">All three in-house since 2004, led by Er. Sudhir Soni</td>
+                </tr>
+                <tr className="border-b border-stone-200">
+                  <td className="py-3 pr-4 align-top font-medium text-stone-800">Structural safety you can certify</td>
+                  <td className="py-3 pr-4 align-top">A chartered structural engineer who signs the drawings and can issue a stability certificate</td>
+                  <td className="py-3 align-top">Chartered structural design in-house, including earthquake-resistant design to IS 1893</td>
+                </tr>
+                <tr className="border-b border-stone-200">
+                  <td className="py-3 pr-4 align-top font-medium text-stone-800">A build on a fixed budget</td>
+                  <td className="py-3 pr-4 align-top">Published per-square-foot fees and a written scope before work begins</td>
+                  <td className="py-3 align-top">Design packages ₹35–85 per sq ft; structural design ₹5–15 per sq ft, quoted in writing</td>
+                </tr>
+                <tr className="border-b border-stone-200">
+                  <td className="py-3 pr-4 align-top font-medium text-stone-800">Interiors with the build</td>
+                  <td className="py-3 pr-4 align-top">Interior design from the same team that designed the structure, so services and structure agree</td>
+                  <td className="py-3 align-top">Interior design and modular kitchens handled in-house</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="text-sm sm:text-base text-stone-600 leading-relaxed">
+            Design Plus is the trading name of Designplus Architects and Structural Consultants, based at Rajeev Marg, Panchsheel Nagar, Ajmer. Rated 5.0 stars from 13 reviews on Google (as listed on 4 November 2026).
+          </p>
+        </div>
+      </section>
+
       {/* Studio Location & Contact Banner */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="p-10 bg-[#F5F5F0] border border-stone-300 flex flex-col md:flex-row md:items-center justify-between gap-6">

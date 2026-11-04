@@ -13,7 +13,15 @@ export const HOMEPAGE_ARCHITECT_SCHEMA = {
   '@type': ['Architect', 'LocalBusiness', 'ProfessionalService', 'ArchitecturalService', 'EngineeringService'],
   '@id': 'https://www.designplusajmer.co.in/#architect-business',
   name: 'Design Plus',
-  legalName: 'Design Plus Architecture & Structural Engineering Studio',
+  // G-T1 entity-name parity (2026-11-04, max-push): legalName carries the
+  // full practice name AI Mode cards and the GBP listing uses, so every
+  // surface states one entity. The studio form stays as alternateName.
+  legalName: 'Designplus Architects and Structural Consultants',
+  alternateName: [
+    'Design Plus Architects and Structural Consultants',
+    'Design Plus Architecture & Structural Engineering Studio',
+    'Designplus Ajmer'
+  ],
   founder: { '@type': 'Person', name: 'Er. Sudhir Soni', jobTitle: 'Structural Engineer' },
   knowsAbout: ['Architecture', 'Structural engineering', 'Interior design', 'Earthquake resistant home design', 'Vastu compliant home design', 'House construction cost planning'],
   url: 'https://www.designplusajmer.co.in',
@@ -77,6 +85,9 @@ export const HOMEPAGE_ARCHITECT_SCHEMA = {
 
 export interface SEOHeadProps {
   title?: string;
+  // Optional social-share title override: og:title only, never the
+  // document <title> (which stays keyword-led for search).
+  ogTitle?: string;
   description?: string;
   keywords?: string;
   image?: string;
@@ -88,6 +99,7 @@ export interface SEOHeadProps {
 
 export function SEOHead({
   title = 'Design Plus | Architects in Ajmer | Interiors, Turnkey & Structural Design',
+  ogTitle,
   description = 'Premier architect in Ajmer for bespoke house planning Ajmer, refined interior designer Ajmer solutions, and turnkey project execution with structural rigor.',
   keywords = 'architect in ajmer, house planning ajmer, interior designer ajmer, turnkey project execution, chartered engineer ajmer, top architecture firm rajasthan, 3d elevation design, structural consultant ajmer, ADA building permission ajmer, luxury villa design rajasthan',
   image = 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
@@ -140,7 +152,7 @@ export function SEOHead({
 
     // OpenGraph Meta
     setMeta('property', 'og:site_name', 'Design Plus Architecture Studio');
-    setMeta('property', 'og:title', title);
+    setMeta('property', 'og:title', ogTitle || title);
     setMeta('property', 'og:description', description);
     setMeta('property', 'og:image', image);
     setMeta('property', 'og:type', type);

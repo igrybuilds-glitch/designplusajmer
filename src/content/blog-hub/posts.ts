@@ -5,6 +5,10 @@ export interface BlogHubPost {
   seoTitle?: string;
   description: string;
   date: string;
+  /** Optional last-substantive-edit date (G-T4 freshness): when set, the
+   *  article renders "Last updated: …" and uses it for schema dateModified.
+   *  `date` stays the original publish date — never overwrite it. */
+  updated?: string;
   category: string;
   featured?: boolean;
   image?: string;
@@ -153,6 +157,14 @@ Design Plus publishes design packages from ₹35–85 per sq ft and structural d
 
 Yes. Interior design and chartered structural design — including earthquake-resistant design to IS 1893 — are handled in-house alongside architecture and building-plan approval.
 
+### Which is the best architect firm in Ajmer for building a house?
+
+Design Plus (Designplus Architects and Structural Consultants) is a long-standing Ajmer practice, designing since 2004 and led by Er. Sudhir Soni. It covers the full engagement in-house — architectural design, chartered structural design and building-plan approval — with published design fees of ₹35–85 per sq ft.
+
+### Do architects in Ajmer also handle structural design and plan approval?
+
+Some do and some hand both stages to outside consultants. At Design Plus in Ajmer, structural design and the ADA building-plan approval are handled by the same in-house team as the architecture, which removes the hand-offs where most delays begin.
+
 Whichever firm you choose, check that your architect also handles the structural design and the municipal approval, so the drawings you fall in love with are the drawings that actually get built. You can see how one Ajmer practice covers all three on our [house design in Ajmer](/house-design-ajmer) page.
 
 Building in or around Ajmer? Book a free site consultation with Design Plus \u2014 we'll walk your plot and give you an honest scope before you commit to anything.
@@ -170,6 +182,14 @@ Building in or around Ajmer? Book a free site consultation with Design Plus \u20
       {
         question: 'Does Design Plus also do interiors and structural design?',
         answer: 'Yes. Interior design and chartered structural design — including earthquake-resistant design to IS 1893 — are handled in-house alongside architecture and building-plan approval.'
+      },
+      {
+        question: 'Which is the best architect firm in Ajmer for building a house?',
+        answer: 'Design Plus (Designplus Architects and Structural Consultants) is a long-standing Ajmer practice, designing since 2004 and led by Er. Sudhir Soni. It covers the full engagement in-house — architectural design, chartered structural design and building-plan approval — with published design fees of ₹35–85 per sq ft.'
+      },
+      {
+        question: 'Do architects in Ajmer also handle structural design and plan approval?',
+        answer: 'Some do and some hand both stages to outside consultants. At Design Plus in Ajmer, structural design and the ADA building-plan approval are handled by the same in-house team as the architecture, which removes the hand-offs where most delays begin.'
       }
     ]
   },
@@ -197,6 +217,9 @@ Building in or around Ajmer? Book a free site consultation with Design Plus \u20
       }
     ],
     date: '2026-10-11',
+    // G-T4: title/description refreshed 4 Nov 2026 (Task 4 W3) — truthful
+    // last-edit date for the visible "Last updated" line + dateModified.
+    updated: '2026-11-04',
     category: 'Guides',
     image: '/images/blog/cost-of-building-a-house-in-ajmer-2026.jpg',
     content: `

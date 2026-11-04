@@ -168,7 +168,11 @@ export function BestArchitectsAjmerComparisonPage({ onOpenConsultation }: BestAr
     '@type': ['ProfessionalService', 'LocalBusiness'],
     '@id': 'https://www.designplusajmer.co.in/best-architects-ajmer-comparison#design-plus',
     name: 'Design Plus Architects',
-    legalName: 'Design Plus Architecture & Structural Engineering Studio',
+    legalName: 'Designplus Architects and Structural Consultants',
+    alternateName: [
+      'Design Plus Architects and Structural Consultants',
+      'Design Plus Architecture & Structural Engineering Studio'
+    ],
     url: 'https://www.designplusajmer.co.in',
     image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
     description: 'Chartered-led architecture and structural engineering studio in Ajmer, Rajasthan, led by Er. Sudhir Soni (M.E. Structure, FIV).',

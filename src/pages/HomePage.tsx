@@ -34,7 +34,12 @@ export function HomePage({ onOpenConsultation }: HomePageProps) {
     '@type': ['Architect', 'LocalBusiness', 'ProfessionalService', 'ArchitecturalService', 'EngineeringService'],
     '@id': 'https://www.designplusajmer.co.in/#architect-business',
     name: 'Design Plus',
-    legalName: 'Design Plus Architecture & Structural Engineering Studio',
+    legalName: 'Designplus Architects and Structural Consultants',
+    alternateName: [
+      'Design Plus Architects and Structural Consultants',
+      'Design Plus Architecture & Structural Engineering Studio',
+      'Designplus Ajmer'
+    ],
     url: 'https://www.designplusajmer.co.in',
     logo: 'https://www.designplusajmer.co.in/logo.png',
     image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
@@ -144,6 +149,7 @@ export function HomePage({ onOpenConsultation }: HomePageProps) {
     <main id="homepage-content" className="relative bg-transparent text-[#F4F0E8] min-h-screen">
       <SEOHead
         title="Design Plus | Architects & Structural Engineers in Ajmer"
+        ogTitle="Designplus Architects and Structural Consultants — Architects & Structural Engineers in Ajmer"
         description="Premier architect in Ajmer for bespoke house planning Ajmer, refined interior designer Ajmer solutions, and turnkey project execution with structural rigor."
         keywords="architect in ajmer, architects in ajmer, house planning ajmer, interior designer ajmer, turnkey project execution, structural engineer ajmer, chartered engineer rajasthan, villa design ajmer"
         canonical="https://www.designplusajmer.co.in/"
