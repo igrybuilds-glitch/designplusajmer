@@ -143,7 +143,7 @@ export function ServicePurchaseFlow({
       {/* HEADER */}
       <header className="p-5 sm:p-6 border-b border-stone-200 bg-white flex items-center justify-between shrink-0">
         <div>
-          <div className="flex items-center gap-2 text-[10px] font-mono uppercase tracking-widest text-[#C86635] font-semibold mb-1">
+          <div className="flex items-center gap-2 text-[10px] font-mono uppercase tracking-widest text-[#A8542A] font-semibold mb-1">
             <span>DESIGN PLUS DIRECT SERVICE COMMISSION</span>
             <span>·</span>
             <span>STEP 0{currentStep} / 07</span>

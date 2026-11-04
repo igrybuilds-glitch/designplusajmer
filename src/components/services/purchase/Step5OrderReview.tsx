@@ -26,7 +26,7 @@ export function Step5OrderReview({
         {/* Header info */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-stone-100 pb-4">
           <div>
-            <span className="text-[10px] font-mono uppercase tracking-widest text-[#C86635] font-semibold block">
+            <span className="text-[10px] font-mono uppercase tracking-widest text-[#A8542A] font-semibold block">
               COMMISSION DOSSIER PREVIEW
             </span>
             <h3 className="font-editorial text-2xl sm:text-3xl text-stone-950 font-normal mt-0.5">

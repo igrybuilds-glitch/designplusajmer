@@ -251,7 +251,7 @@ export function ArchitectFeesAjmerPage({ onOpenConsultation }: ArchitectFeesAjme
       {/* THREE PRIMARY FEE STRUCTURES */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20 sm:mb-24">
         <div className="border-b border-stone-200 pb-4 mb-10">
-          <span className="text-[11px] uppercase tracking-widest text-[#C86635] font-mono font-semibold block mb-1">
+          <span className="text-[11px] uppercase tracking-widest text-[#A8542A] font-mono font-semibold block mb-1">
             Pricing Models Explained
           </span>
           <h2 className="font-editorial text-2xl sm:text-4xl text-stone-950 font-normal">
@@ -293,7 +293,7 @@ export function ArchitectFeesAjmerPage({ onOpenConsultation }: ArchitectFeesAjme
                 <ul className="text-xs text-stone-700 space-y-1.5">
                   {model.inclusions.map((inc) => (
                     <li key={inc} className="flex items-start gap-2">
-                      <span className="text-[#C86635] font-bold">•</span>
+                      <span className="text-[#A8542A] font-bold">•</span>
                       <span>{inc}</span>
                     </li>
                   ))}
@@ -307,7 +307,7 @@ export function ArchitectFeesAjmerPage({ onOpenConsultation }: ArchitectFeesAjme
       {/* RATES BY PROJECT TYPOLOGY TABLE */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20 sm:mb-24">
         <div className="border-b border-stone-200 pb-4 mb-8">
-          <span className="text-[11px] uppercase tracking-widest text-[#C86635] font-mono font-semibold block mb-1">
+          <span className="text-[11px] uppercase tracking-widest text-[#A8542A] font-mono font-semibold block mb-1">
             Typology Breakdown
           </span>
           <h2 className="font-editorial text-2xl sm:text-4xl text-stone-950 font-normal">
@@ -386,7 +386,7 @@ export function ArchitectFeesAjmerPage({ onOpenConsultation }: ArchitectFeesAjme
       {/* ARCHITECT VS CONTRACTOR COST COMPARISON */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20 sm:mb-24">
         <div className="border-b border-stone-200 pb-4 mb-10">
-          <span className="text-[11px] uppercase tracking-widest text-[#C86635] font-mono font-semibold block mb-1">
+          <span className="text-[11px] uppercase tracking-widest text-[#A8542A] font-mono font-semibold block mb-1">
             Financial Reality Check
           </span>
           <h2 className="font-editorial text-2xl sm:text-4xl text-stone-950 font-normal">
@@ -447,7 +447,7 @@ export function ArchitectFeesAjmerPage({ onOpenConsultation }: ArchitectFeesAjme
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20 sm:mb-24">
         <div className="p-8 sm:p-12 bg-white border border-stone-200 space-y-6">
           <div className="max-w-3xl space-y-2">
-            <span className="text-[11px] font-mono uppercase tracking-widest text-[#C86635] font-semibold">
+            <span className="text-[11px] font-mono uppercase tracking-widest text-[#A8542A] font-semibold">
               The Design Plus Standard
             </span>
             <h2 className="font-editorial text-2xl sm:text-4xl text-stone-950 font-normal">
@@ -494,7 +494,7 @@ export function ArchitectFeesAjmerPage({ onOpenConsultation }: ArchitectFeesAjme
       {/* SEO-OPTIMIZED FAQ SECTION (Long-Tail Search Intent) */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-20 sm:mb-24">
         <div className="border-b border-stone-200 pb-4 mb-8 text-center sm:text-left">
-          <span className="text-[11px] uppercase tracking-widest text-[#C86635] font-mono font-semibold block mb-1">
+          <span className="text-[11px] uppercase tracking-widest text-[#A8542A] font-mono font-semibold block mb-1">
             Common Questions
           </span>
           <h2 className="font-editorial text-2xl sm:text-3xl text-stone-950 font-normal">
@@ -554,7 +554,7 @@ export function ArchitectFeesAjmerPage({ onOpenConsultation }: ArchitectFeesAjme
             <button
               type="button"
               onClick={onOpenConsultation}
-              className="inline-flex items-center justify-center gap-2 bg-[#C86635] hover:bg-[#b5582a] text-white px-6 py-3.5 text-xs font-semibold uppercase tracking-wider transition-colors min-h-[44px] shadow-sm active:scale-95"
+              className="inline-flex items-center justify-center gap-2 bg-[#A8542A] hover:bg-[#8F4523] text-white px-6 py-3.5 text-xs font-semibold uppercase tracking-wider transition-colors min-h-[44px] shadow-sm active:scale-95"
             >
               <span>Get Fee Estimate</span>
               <ArrowRight className="w-4 h-4" />

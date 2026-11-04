@@ -50,7 +50,7 @@ export function Step1ServiceSelect({
       <div className="bg-white border border-stone-200 p-6 space-y-6">
         <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 border-b border-stone-100 pb-4">
           <div>
-            <span className="text-[10px] font-mono uppercase tracking-widest text-[#C86635] font-semibold block">
+            <span className="text-[10px] font-mono uppercase tracking-widest text-[#A8542A] font-semibold block">
               {currentService.category}
             </span>
             <h3 className="font-editorial text-2xl sm:text-3xl text-stone-950 font-medium mt-0.5">
@@ -100,7 +100,7 @@ export function Step1ServiceSelect({
             <ul className="text-xs text-stone-700 space-y-2 font-sans">
               {currentService.whatsIncluded.map((item, idx) => (
                 <li key={idx} className="flex items-start gap-2">
-                  <span className="text-[#C86635] font-bold mt-0.5">•</span>
+                  <span className="text-[#A8542A] font-bold mt-0.5">•</span>
                   <span>{item}</span>
                 </li>
               ))}

@@ -600,7 +600,7 @@ Planning interiors in Ajmer? [Explore our interior services](/services) or [book
   },
   {
     slug: 'buying-plot-ajmer-due-diligence-checklist',
-    cover: '/images/blog/buying-plot-ajmer-due-diligence-checklist.jpg',
+    image: '/images/blog/architectural-trends-ajmer-2026.jpg',
     title: 'Buying a Plot in Ajmer: Legal Due-Diligence Checklist (2026)',
     description: 'Buying a residential plot in Ajmer? ADA approval, patta, RERA, title chain, conversion orders \u2014 the complete legal checklist before you pay a token.',
     date: '2026-09-29',
@@ -1042,7 +1042,7 @@ Yes — custom homes are our core practice, led by Ar. Vipul Verma with in-house
   },
   {
     slug: 'earthquake-resistant-house-ajmer',
-    cover: '/images/blog/earthquake-resistant-house-ajmer.jpg',
+    image: '/images/blog/commercial-facade-columns.webp',
     seoTitle: 'Earthquake-Resistant House in Ajmer: 2026 Guide',
     title: 'Earthquake-Resistant House in Ajmer: What Seismic Zone II/III Means for Your Construction (2026)',
     description: 'Building in Ajmer\u2019s Seismic Zone II/III? Ductile detailing per IS 13920, soil-matched foundations, and supervised steel — the 7 rules of an earthquake-safe home.',
@@ -2204,7 +2204,7 @@ Soil is also a seismic question: soft lakeside silt amplifies shaking while rock
     description: 'Soil testing cost in Ajmer for house construction: 2026 SPT market rates, the step-by-step process, borehole counts, and why the \u20b915,000\u2013\u20b930,000 investigation pays for itself.',
     date: '2026-10-11',
     category: 'Cost Guide',
-    image: '/images/blog/soil-testing-ajmer.jpg',
+    image: '/images/blog/how-to-plan-your-dream-home-in-ajmer.jpg',
     content: `## The Short Answer
 
 Design Plus Architects, Ajmer treats soil testing as non-negotiable: a two-borehole Standard Penetration Test (IS 2131) establishes your plot\u2019s safe bearing capacity for a typical market cost of \u20b915,000\u2013\u20b930,000 (Oct 2026). On Aravalli rock that buys leaner footings; on Ana Sagar silt it prevents settlement cracks \u2014 either way, the test pays for itself many times over.
@@ -2294,7 +2294,7 @@ Geotechnical laboratories with rotary drilling rigs and standard testing protoco
     description: 'Naksha approval in Ajmer (2026): required documents, the step-by-step sanction process, government fees, and why compliant files typically take 30\u201345 working days.',
     date: '2026-10-11',
     category: 'Approvals',
-    image: '/images/blog/naksha-approval-ajmer.jpg',
+    image: '/images/blog/guide-to-hiring-architect-in-ajmer.jpg',
     content: `## The Short Answer
 
 Design Plus Architects, Ajmer secures naksha (building plan) approval through the Ajmer Development Authority or Nagar Nigam with a complete dossier: registered patta and jamabandi, CoA-certified architectural drawings, and a chartered engineer\u2019s structural stability certificate. Sanction typically takes 30\u201345 working days \u2014 confirm current timelines with ADA or Nagar Nigam, since processing varies with workload.
@@ -5423,7 +5423,7 @@ A harvesting system is only as good as its measurements: roof area, rainfall, so
     description: 'How long an RCC frame lasts in India: published 60–80 year bands, corrosion, cover and curing, and the checks that stretch a home’s life.',
     date: '2026-11-03',
     category: 'Guides',
-    image: '/images/blog/earthquake-resistant-house-ajmer.jpg',
+    image: '/images/blog/commercial-facade-columns.webp',
     faqs: [
       { question: 'How long does an RCC frame structure last in India?', answer: 'A well built and well maintained RCC home in India is put at 60 to 80 years in guides, with 100 years cited as the general convention for RCC. Poor construction or neglected water damage can cut that sharply. Treat any number as a band, not a promise, and judge a house by its cover, cracks, water history and maintenance.' },
       { question: 'Does an RCC building expire after 50 years in India?', answer: 'No. The 50 year figure comes from European design conventions for ordinary buildings, not from a rule that a building fails at 50. Indian code IS 456:2000 sets durability through exposure class, concrete grade and cover, not an expiry year. A sound, maintained frame can serve well past 50, while a badly built one can need major repair much earlier.' },

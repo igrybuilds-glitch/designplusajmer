@@ -21,7 +21,7 @@ export function Step7Confirmation({
         <div className="w-14 h-14 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-300 flex items-center justify-center mx-auto">
           <CheckCircle2 className="w-8 h-8" />
         </div>
-        <div className="text-[11px] font-mono uppercase tracking-[0.25em] text-[#C86635] font-semibold">
+        <div className="text-[11px] font-mono uppercase tracking-[0.25em] text-[#A8542A] font-semibold">
           COMMISSION INTAKE REGISTERED
         </div>
         <h3 className="font-editorial text-3xl sm:text-4xl text-stone-950 font-medium">
@@ -36,7 +36,7 @@ export function Step7Confirmation({
       <div className="bg-white border border-stone-300 p-6 space-y-4 font-mono text-xs">
         <div className="flex items-center justify-between border-b border-stone-200 pb-3">
           <span className="text-stone-500 uppercase">COMMISSION REFERENCE</span>
-          <span className="text-stone-950 font-bold text-sm text-[#C86635]">{orderReference}</span>
+          <span className="text-stone-950 font-bold text-sm">{orderReference}</span>
         </div>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-stone-700">

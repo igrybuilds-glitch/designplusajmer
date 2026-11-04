@@ -177,7 +177,7 @@ export function Step6Payment({
   return (
     <div className="space-y-6 animate-in fade-in duration-200">
       <div className="space-y-1">
-        <span className="text-xs font-mono uppercase tracking-widest text-[#C86635] font-semibold block">
+        <span className="text-xs font-mono uppercase tracking-widest text-[#A8542A] font-semibold block">
           Payment
         </span>
         <p className="text-sm text-stone-600 font-sans">
