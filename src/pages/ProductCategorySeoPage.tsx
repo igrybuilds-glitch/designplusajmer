@@ -215,7 +215,7 @@ export function ProductCategorySeoPage({ onOpenConsultation }: ProductCategorySe
                   <button
                     type="button"
                     onClick={() => setSelectedProductForCheckout(product)}
-                    className="w-full btn-primary py-3 text-xs sm:text-sm flex items-center justify-center gap-2 bg-[#C86635] hover:bg-[#b5582a] text-white transition-colors cursor-pointer"
+                    className="w-full btn-primary py-3 text-xs sm:text-sm flex items-center justify-center gap-2 bg-[#A8542A] hover:bg-[#b5582a] text-white transition-colors cursor-pointer"
                     aria-label={`Buy ${product.name} now`}
                   >
                     <ShoppingBag className="w-4 h-4 text-white" />
