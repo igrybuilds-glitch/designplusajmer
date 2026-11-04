@@ -131,6 +131,18 @@ export function HouseDesignAjmerPage({ onOpenConsultation }: HouseDesignAjmerPag
     {
       question: 'Is a Vastu-compliant plan required for ADA building plan approval?',
       answer: 'No. ADA and Nagar Nigam check setbacks, ground coverage, FAR, height and parking — Vastu is not part of the statutory checklist. That said, a Vastu-aligned plan is fully sanctionable as long as the orientation and zoning respect the byelaws, which is exactly how we design them: Vastu inside the rules, not against them.'
+    },
+    {
+      question: 'What does an architect in Ajmer do for a house?',
+      answer: 'An architect in Ajmer plans the home around your plot, family and budget: floor plans and 3D elevations first, then working drawings, the structural design that makes the design safe, and the sanction drawings for plan approval. At Design Plus, all four stages sit with one team, which removes the hand-offs where most delays and cost surprises begin.'
+    },
+    {
+      question: 'Why does in-house structural design matter?',
+      answer: 'Because a design is only as good as the structure beneath it. Ajmer\u2019s ground changes from street to street, so foundations are sized from a soil test and the structure is engineered for earthquake resistance before building starts — not corrected on site afterwards. Having the structural engineer inside the same practice as the architect means the design you approved is the structure you get.'
+    },
+    {
+      question: 'How do I start with an architect in Ajmer?',
+      answer: 'Start with a site visit and a written scope: what the design fee covers, who signs the structural drawings, and who follows the approval file. Design Plus begins every engagement that way. To book, call 7976453090.'
     }
   ];
 
@@ -262,6 +274,36 @@ export function HouseDesignAjmerPage({ onOpenConsultation }: HouseDesignAjmerPag
               <span>{BUSINESS_INFO.phones[0].display}</span>
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* AEO/GEO answer block — architect in ajmer (mirrors the three FAQs below in FAQPage schema) */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+        <div className="space-y-4 max-w-4xl">
+          <h2 className="font-editorial text-2xl sm:text-3xl text-stone-950 font-medium">
+            Architect in Ajmer — Design Plus
+          </h2>
+          <p className="text-base sm:text-lg text-stone-700 leading-relaxed font-sans">
+            Design Plus is an architecture and structural-design practice in Ajmer, led by Er. Sudhir Soni and practising since 2004. From its studio at Rajeev Marg, Panchsheel Nagar, the firm designs homes, interiors and commercial buildings across Ajmer and handles the three stages that usually need three separate hires — the architectural design, the structural engineering, and the building-plan approval — under one roof, so the drawings that are approved are the drawings that get built.
+          </p>
+          <h3 className="font-editorial text-xl text-stone-950 font-medium pt-2">
+            What does an architect in Ajmer do for a house?
+          </h3>
+          <p className="text-sm sm:text-base text-stone-600 leading-relaxed font-sans">
+            An architect in Ajmer plans the home around your plot, family and budget: floor plans and 3D elevations first, then working drawings, the structural design that makes the design safe, and the sanction drawings for plan approval. At Design Plus, all four stages sit with one team, which removes the hand-offs where most delays and cost surprises begin.
+          </p>
+          <h3 className="font-editorial text-xl text-stone-950 font-medium pt-2">
+            Why does in-house structural design matter?
+          </h3>
+          <p className="text-sm sm:text-base text-stone-600 leading-relaxed font-sans">
+            Because a design is only as good as the structure beneath it. Ajmer’s ground changes from street to street, so foundations are sized from a soil test and the structure is engineered for earthquake resistance before building starts — not corrected on site afterwards. Having the structural engineer inside the same practice as the architect means the design you approved is the structure you get.
+          </p>
+          <h3 className="font-editorial text-xl text-stone-950 font-medium pt-2">
+            How do I start with an architect in Ajmer?
+          </h3>
+          <p className="text-sm sm:text-base text-stone-600 leading-relaxed font-sans">
+            Start with a site visit and a written scope: what the design fee covers, who signs the structural drawings, and who follows the approval file. Design Plus begins every engagement that way. To book, call 7976453090.
+          </p>
         </div>
       </section>
 
