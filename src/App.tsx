@@ -143,7 +143,19 @@ function AppContent() {
       )}
 
       <div className={`flex-1 flex flex-col min-w-0 ${offerActive ? OFFER_BAR_PADDING_CLASS : ''}`}>
-        <Suspense fallback={null}>
+        {/* CLS (pass 3, 2026-11-04): fallback must reserve a full viewport of
+            height. main.tsx uses createRoot (not hydration), so the first
+            commit replaces the prerendered snapshot BEFORE the lazy route
+            chunk arrives; with fallback={null} the page collapsed to
+            navbar+footer, the footer jumped INTO the viewport, and the
+            chunk's arrival pushed it back down ~1 viewport — Lighthouse
+            attributed CLS 0.942 to footer#main-footer on the cost guide
+            (always) and the interior page (whenever the chunk lost the
+            race, hence intermittent). A min-h-screen placeholder keeps the
+            footer below the fold in the transient state, so it is never a
+            shift source; the branded preloader covers the gap visually. */}
+        <Suspense fallback={<div className="min-h-screen" aria-hidden="true" />}>
+
         <Routes>
           {/* ========================================================= */}
           {/* PUBLIC CLIENT PORTAL & SHOWCASE ROUTES                     */}
