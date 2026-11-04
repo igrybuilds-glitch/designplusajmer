@@ -218,7 +218,7 @@ export function ManifestoSection() {
                   >
                     <span
                       className={`w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-mono font-bold transition-all duration-300 ${
-                        isCurrent ? 'bg-white/30 text-white' : 'bg-white/20 text-[#F4F0E8]'
+                        isCurrent ? 'bg-[#93511F] text-white' : 'bg-[#141412] text-[#F4F0E8]'
                       }`}
                     >
                       {d.number}
