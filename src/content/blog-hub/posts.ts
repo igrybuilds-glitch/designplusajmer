@@ -175,9 +175,9 @@ Building in or around Ajmer? Book a free site consultation with Design Plus \u20
   },
   {
     slug: 'cost-of-building-a-house-in-ajmer-2026',
-        seoTitle: 'House Construction Cost in Ajmer (2026)',
+        seoTitle: 'House Construction Cost in Ajmer (2026): Per Sq Ft Rates & Budget Guide | Design Plus',
     title: 'Cost of Building a House in Ajmer (2026): Real Rates, Hidden Costs & Smart Budgeting',
-    description: 'Planning to build a house in Ajmer? Real 2026 construction costs per sq ft, hidden expenses most people miss, and budgeting tips from Design Plus.',
+    description: 'House construction cost in Ajmer in 2026: real per sq ft rates (₹35–42 lakh for a standard 2,000 sq ft home), the hidden costs most budgets miss, and how to plan the build stage by stage — from Design Plus, Ajmer.',
     faqs: [
       {
         question: 'What is the average cost to build a 2,000 sq ft house in Ajmer?',
