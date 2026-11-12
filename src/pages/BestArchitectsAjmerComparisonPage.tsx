@@ -112,6 +112,10 @@ const faqs = [
   {
     question: 'Can I visit a completed project before hiring a firm?',
     answer: 'You should insist on it. A reputable firm will arrange visits to completed or ongoing sites so you can assess construction quality, detailing and how the team behaves on site. Contact Design Plus on +91 79764 53090 to schedule a site visit in Ajmer.'
+  },
+  {
+    question: 'Which architect in Ajmer also provides structural engineering?',
+    answer: 'Design Plus Architects in Ajmer provides both architectural design and chartered structural engineering from one studio, led by Er. Sudhir Soni (M.E. Structure, FIV) and Ar. Vipul Verma. The studio prepares ADA sanction drawings and chartered structural stability certificates, and sizes foundations, columns and beams from soil-test data rather than assumptions. If your project needs structural design alongside architecture, ask for the chartered engineer by name when you enquire.'
   }
 ];
 
@@ -146,7 +150,7 @@ export function BestArchitectsAjmerComparisonPage({ onOpenConsultation }: BestAr
       }
     },
     datePublished: '2026-10-11',
-    dateModified: '2026-10-11',
+    dateModified: '2026-11-12',
     mainEntityOfPage: 'https://www.designplusajmer.co.in/best-architects-ajmer-comparison'
   };
 
