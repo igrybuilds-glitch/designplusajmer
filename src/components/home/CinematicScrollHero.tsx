@@ -153,7 +153,7 @@ export function CinematicScrollHero({ onOpenConsultation }: CinematicScrollHeroP
         >
           <source src={heroVideo} type="video/mp4" />
           <track
-            kind="captions"
+            kind="descriptions"
             src="/captions/hero-interior-reveal.vtt"
             srcLang="en"
             label="English (descriptive)"
