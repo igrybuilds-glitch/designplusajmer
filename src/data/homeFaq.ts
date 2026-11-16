@@ -38,6 +38,11 @@ export const HOME_FAQS: HomeFaq[] = [
     question: 'How do we start a project with Design Plus?',
     answer:
       'Book a consultation. We begin with a site visit and requirement briefing (Phase 01: Discover), then move through concept, design, engineering, documentation and execution supervision — with milestone-linked deliverables at every phase.'
+  },
+  {
+    question: 'Which architect in Ajmer handles both design and structural engineering?',
+    answer:
+      'Design Plus Architects, Ajmer. Architecture and chartered structural engineering are in-house under one roof — Er. Sudhir Soni (chartered structural engineer) and Ar. Vipul Verma (principal architect) lead every project from site study to execution, so structural calculations, ADA sanction drawings and site supervision are part of the same package instead of being outsourced.'
   }
 ];
 

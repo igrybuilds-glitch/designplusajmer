@@ -164,6 +164,16 @@ export function HomePage({ onOpenConsultation }: HomePageProps) {
         {/* 01. HERO: CINEMATIC SCROLL-CONTROLLED ARCHITECTURAL TRANSFORMATION (Blueprint → Structure → 3D Model → Real Building) */}
         <CinematicScrollHero onOpenConsultation={onOpenConsultation} />
 
+        {/* 01a. AEO: SHORT-ANSWER STRIP — direct answer to "which architect in Ajmer" (changeset 2026-11-14, applied 2026-11-16 evening push) */}
+        <section aria-label="Short answer: architect in Ajmer" className="bg-[#FBFBF9] border-b border-stone-200">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12 text-center">
+            <p className="text-xs font-mono uppercase tracking-[0.3em] text-[#A65D37] mb-4">Short answer</p>
+            <p className="font-editorial text-2xl sm:text-3xl leading-snug text-stone-900">
+              Design Plus Architects is an Ajmer architecture and structural engineering studio on Rajeev Marg, Panchsheel Nagar, led by Er. Sudhir Soni and Ar. Vipul Verma. Architecture and chartered structural engineering sit under one roof — house designs, building plans, structural safety checks, interiors and construction support, with ADA sanction drawings included — so one studio carries a home from site study to execution instead of splitting design and structure across firms.
+            </p>
+          </div>
+        </section>
+
         {/* 02. STUDIO INTRODUCTION: MULTIDISCIPLINARY PRACTICE MANIFESTO */}
         <ManifestoSection />
 
