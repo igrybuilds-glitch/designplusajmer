@@ -7397,6 +7397,183 @@ A 9-inch brick wall with plaster and a jaali or grill top is the best all-round 
 
 A boundary wall is the first thing built and the hardest to fix — so it deserves to be decided on paper, with the height, the foundation depth and the column spacing written down, before the first trench is dug. [Book a site consultation](/contact) and Design Plus will work out the wall type, height and cost against your plot's actual measurements, mark the foundation and column positions on the section drawing, and give you an itemised estimate for the wall and gate — separately, in writing — before you commit to anything. Bring your plot papers and the sanctioned plan, and judge the studio on whether its numbers add up.`,
   },
+  {
+    slug: 'car-porch-design-house-india',
+    seoTitle: 'Car Porch Design for House in India: Sizes & Cost',
+    title: 'Car Porch Design for a House in India: Sizes, Types and Cost',
+    description: 'Car porch design for a house in India: sizes for one, two or three cars, porch types, gate and drainage rules, and 2026 costs.',
+    date: '2026-11-17',
+    category: 'Guides',
+    image: '/images/blog/how-to-plan-your-dream-home-in-ajmer.jpg',
+    faqs: [
+      { question: 'What is the standard size of a car porch for a house in India?', answer: 'A single-car porch needs about 3,000–3,300 mm wide and 5,500–6,000 mm deep, with at least 2,200 mm clear under beams — 2,400 mm or more is better for SUVs with roof carriers. Two cars side by side need about 5,700–6,000 × 6,000 mm. Add 1,200 mm if the walkway to the main door runs beside the cars.' },
+      { question: 'How much does a car porch cost in India?', answer: 'A finished two-car porch on a 40 × 60 ft plot costs roughly ₹59,000–1,26,000 for paving and a walkway canopy in October 2026 guides, before GST. A basic single-car shed starts around ₹20,000–45,000, while a premium tensile or solar-roof porch can cross ₹1,00,000. The structure above the porch is part of the house cost.' },
+      { question: 'What is the best flooring for a car porch?', answer: 'Interlocking concrete pavers (60–80 mm on a compacted base), rough or leather-finish Kota stone, flamed granite or broom-finished concrete. All four are hard, matt and repairable under tyres and monsoon water. Avoid glossy vitrified tiles and polished marble — they turn slippery when wet and crack under wheels.' },
+      { question: 'How wide should the main gate be for a car?', answer: 'A clear opening of 3,000 mm works on wide roads with a straight approach. On narrow lanes under about 9 m, where the car must turn sharply, plan 3,600 mm or splay the compound wall corners, and test the turn with the family\'s largest car before fixing the gate position.' },
+      { question: 'Which direction is best for a car porch as per Vastu?', answer: 'Vastu guides generally place the car porch on the east or north side of the house, so the parking does not block the morning light or the main entrance. The porch should sit within the plot without hiding the front elevation. Treat direction as one input among size, gate access and drainage — not the deciding factor.' },
+      { question: 'Should I install an EV charger in my car porch?', answer: 'At minimum, lay an empty conduit and a dedicated circuit from the main distribution board to each car bay during construction — chasing a heavy cable through a finished porch costs far more. A 7 kW wall charger needs about a 32 A circuit and may need a higher sanctioned load, so check with your electricity supplier first.' }
+    ],
+    content: `Car porch design for a house in India is usually decided last — squeezed into whatever front margin is left after the rooms are drawn, and sized for the car the family owned when the drawings were made. Yet the porch is the first room of the house, even though it has no walls. It is where the family arrives every evening, where guests step out in their best clothes, where groceries are unloaded in the rain and the scooter is charged. Five years later a bigger SUV arrives, the driver's door hits a column, the bonnet blocks the walkway to the main door, and the first heavy monsoon fills the porch because the drive slopes the wrong way. This guide covers the sizes that actually work for one, two and three cars, the porch types worth building, the gate and drainage rules that decide whether the porch works every day, and what it all costs in 2026.
+
+**Short answer:** A single-car porch needs about 3,000–3,300 mm wide and 5,500–6,000 mm deep; two cars side by side need about 5,700–6,000 × 6,000 mm, with at least 2,400 mm clear under the beams. The porch floor should fall gently away from the house to a trench drain inside the gate, and the gate needs 3,000 mm clear on a wide road or 3,600 mm on a lane under about 9 m. A finished two-car porch on a 40 × 60 ft plot costs roughly ₹59,000–1,26,000 for paving and a walkway canopy in October 2026 guides, before GST — the structure above it is part of the house cost.
+
+## How big should a car porch be?
+
+The size of a porch is set by three things: the number and size of the cars, the space needed to open doors and walk around them, and whether the walkway to the main door passes through the porch. A detailed 2026 guide by Surat-based Aaditya Interior works through the sizes for the plot sizes Indian families most often build on, and the numbers are worth using as your starting point rather than guessing on site.
+
+| Plot and need | Practical porch size | Comfortable size | Notes |
+|---|---|---|---|
+| 30 × 40 ft plot, one car | 3,000 × 5,500 mm | 3,300 × 6,000 mm | Walls on both sides need 3,300–3,600 mm width; walkway usually beside, not through |
+| 40 × 60 ft plot, two cars side by side | 5,500 × 5,500 mm | 5,700–6,000 × 6,000 mm | Shared centre door zone; columns at corners only |
+| 40 × 60 ft plot, two cars plus covered walkway | 6,900 × 6,000 mm | 7,200–7,500 × 6,000 mm | 1,200 mm walkway beside the cars to the main door |
+| Two cars in tandem (narrow frontage) | 3,000 × 10,000 mm | 3,300 × 11,000–12,000 mm | Only when both cars belong to the family; one blocks the other |
+| 50 × 80 ft and larger, three cars | 8,500 × 5,500 mm | 9,000 × 6,000 mm | Or two in the porch and one under a separate canopy |
+| Two-wheelers beside the cars | 900–1,000 × 2,000 mm each | 1,000 × 2,200 mm each | Plus a charging socket per regular electric scooter |
+| Clear height under beams | 2,200 mm | 2,400 mm or more | Allow for roof carriers and tall SUVs |
+
+Design for the largest car the family is likely to own in the next ten years, not the current one. A compact hatchback is about 3.6–3.9 m long and 1.6–1.7 m wide; a full-size SUV is about 4.7–4.95 m long and 1.85–1.95 m wide without mirrors. A porch planned around 6,000 mm length and 3,000–3,300 mm width per car accommodates both, leaving room to walk around the bonnet and open the boot. A commonly quoted standard size for a single car porch in Indian house-plan guides is 8 ft × 16 ft, which sits inside the same band. And leave at least 2 ft of clear space around the vehicle on all sides once it is parked — a rule repeated in porch guides from Kerala to the north, because it is the difference between opening a door and squeezing out sideways.
+
+On a 40 × 60 ft plot, a common arrangement puts the vehicle gate on the axis of the porch, so cars drive straight in without a diagonal turn inside the plot. A separate pedestrian gate leads along a 1,200 mm walkway to the main door, so guests on foot do not walk through the porch or squeeze past a parked bonnet. The two-wheelers sit in the front margin beside the walkway, near a wall socket. Columns supporting the room above stand only at the porch corners, outside the door zones of both cars.
+
+## The porch types worth building
+
+Three forms coexist in Indian houses today: the porch under a first-floor room, the cantilevered or column-supported canopy, and the open stilt. The choice should follow the plot, not fashion. A video by Home Villa World walks through the same design families — minimalist, covered, modern canopy, pergola, farmhouse, attached, open and freestanding — and the practical lesson is the same: the porch type is decided by how the house is structured and how much frontage you have.
+
+| Porch type | Best suited to | Key dimension or rule | Watch out for |
+|---|---|---|---|
+| Under a first-floor room | Most 40 × 60 ft and larger houses | Clear 2,400 mm or more under beams; columns at corners | Beam depth over a 6 m span; room above needs insulation from car heat and fumes |
+| Column-supported porch roof (porte-cochère) | Large plots, formal entrances | Clear span between columns 3,300 mm or more for one car | Columns in the front margin may not be permitted |
+| Cantilevered RCC canopy | Modern elevations, entrances without columns | Projection commonly about 1,500–2,400 mm, engineer-designed | Deflection, waterproofing, drip edge; projection limits in margins |
+| Light steel canopy (polycarbonate, metal, glass) | Existing houses, walkways, two-wheelers | Frame designed for wind uplift; laminated glass if glass | Noise in rain; UV-degraded cheap sheet; corrosion |
+| Pergola with louvres or climbers | Shade over a second car or a walkway | Slats sized for span; rain cover only if glazed | Bird droppings and leaf litter on cars |
+| Open stilt | Row houses, narrow plots, G+2 homes | Stilt height and use as per local rules | Column grid vs door zones; lighting and security |
+
+The porch under a room is the default for most Indian bungalows because it saves cost — the room above pays for the roof — but it is also the type where a structural mistake hurts most. A canopy suits a house that is already built, or a second car that arrived after the plan was sanctioned. A pergola is shade, not shelter: fine over a walkway or a second bay in Ajmer's dry months, but it will not keep a car dry in a monsoon burst unless it is glazed above.
+
+Materials follow the same trade-off the video lays out. Wood looks warm and traditional but needs regular maintenance and is vulnerable to rot and insect damage if not properly treated. Galvanised steel is the most common metal for carports — durable, affordable, and available as rust-protected sheets. Aluminium is light, durable and paintable, which suits portable and freestanding porches. Composite materials such as vinyl or fibreglass are low maintenance and come in many colours. Translucent polycarbonate panels let natural light in while still giving shade and privacy, which is why they appear on so many walkway canopies.
+
+## Columns, beams and headroom
+
+When the porch sits under a first-floor room, the structure above decides how well the porch works. A column placed beside a car's front door — where the door swings widest — is the single most common porch mistake, because it turns a 3,000 mm bay into a space where the driver must squeeze out. Columns should sit at the corners of the porch or in line with the bonnet or the boot, never beside the doors. Spanning 5,700–6,000 mm without an intermediate column is routine for a structural engineer, but it needs a deeper beam, and that beam reduces the headroom.
+
+Headroom is the second structural check. Bungalow floor-to-floor heights are commonly 3,150–3,600 mm. Subtract a beam of 450–600 mm, which a 6 m span may need, and the porch keeps about 2,550–3,150 mm under the beam — comfortable. But a porch whose floor has been raised to keep out floodwater, or whose beam is deeper than expected, can drop below 2,400 mm, which is tight for an SUV with a roof carrier or a roof box and for the gate shutter mechanism. Ask the structural engineer for the beam depth early and draw the porch section before the slab is cast. This is exactly the kind of check Design Plus builds into the structural drawings — the beam depth, the column positions and the clear height written on the section, not discovered after the concrete is poured.
+
+## The gate and the turn in from the road
+
+The gate decides how easily a car enters the plot. On a wide road, a 3,000 mm clear gate on the porch axis is enough. On a narrow lane of 6–9 m, the car cannot swing wide before turning, and a typical car's minimum turning circle — roughly 4.7–5.8 m in radius, larger for full-size SUVs — means it needs a wider gate, a splayed corner in the compound wall, or a few metres of straight run inside the gate. As a rule of thumb, plan 3,600 mm clear on lanes under about 9 m, and test the turn with the family's largest car using a swept-path template or a simple chalk trial on site.
+
+| Gate type | Space it needs | Strengths | Watch out for |
+|---|---|---|---|
+| Swing gate, two leaves inward | A clear arc inside equal to each leaf's width | Simple, cheap, easy to automate | No car can park in the swing arc; slopes inside the gate block the swing |
+| Swing gate, outward | Clear arc over the road edge | Saves space inside | Often not permitted to open over a public road; unsafe for passers-by |
+| Sliding gate on a track | A wall run beside the gate at least equal to the opening, plus overlap | No swing arc; strong; suits automation | Track collects dirt and water; needs a straight, level run |
+| Cantilever sliding gate (trackless) | Longer wall run (opening plus counterweight tail) | No floor track to clog or trip on | Heavier frame and rollers; costlier |
+| Telescopic sliding gate | Shorter side run than a single sliding leaf | Fits tight frontages | More moving parts; precise installation |
+| Rolling shutter (garage) | Box above the opening, about 300–450 mm deep | Secure, enclosed garage | Headroom loss; motor and manual override both needed |
+
+Automation is now common and worth planning even if it is added later: a conduit and a power point at the gate post, a loop or sensor for safety, and a manual release for power cuts. For swing gates, an automated leaf needs the same clear arc as a manual one, and the motor arm needs space at the hinge post. For sliding gates, the wall run must be straight, the track must be level and drained, and the gate should stop well short of the end of the wall with a mechanical stop. Fix the gate's width and swing with the architect before the boundary wall goes up — our guide to [boundary wall design](/blog/boundary-wall-design-house-india-cost) explains why moving a gate later means breaking masonry and rebuilding a pier.
+
+## Levels, slopes and monsoon drainage
+
+In flood-prone streets the level of the porch is a flood-defence decision. The road level rises over the years as it is resurfaced; a porch that sat 300 mm above the road when built may sit level with it twenty years later. Ajmer's streets are no exception — a monsoon burst can put water on a lane faster than it drains, and a porch that slopes toward the house brings that water straight into the foyer. Keep the porch floor above the road crown with margin, add a raised edge or hump at the gate where street water floods, and place a heavy-duty trench drain just inside the gate to catch water running down the drive. The house plinth should sit at least one or two risers above the porch, so splash and surface water stay out of the foyer.
+
+| Element | Typical value | Why |
+|---|---|---|
+| Drive main slope | 1:8 to 1:10 (12.5–10%); gentler is better | Common practice for vehicle ramps; steeper scrapes and slips when wet |
+| Transitions at top and bottom | About half the main slope over 3–3.6 m | Prevents bumpers and floor pans scraping |
+| Porch floor cross-fall | About 1:80 to 1:100, away from the house | Sheds water without feeling sloped |
+| Hump or raised edge at the gate | About 100–150 mm where streets flood | Keeps street water out in heavy rain |
+| Trench drain inside the gate | 100–150 mm wide, heavy-duty grating | Catches run-off before it reaches the porch |
+| Porch to house plinth | 1–3 risers of about 150 mm | Splash and surface water stay outside the foyer |
+| Downpipes from the roof above | Into the drain, never onto the drive | Prevents sheets of water across the porch |
+
+## Flooring and paving: what lasts under tyres
+
+Porch floors take point loads from tyres, oil drips, turning wheels and monsoon water, so the finish must be hard, matt and repairable. Interlocking concrete pavers on a compacted sub-base are the most forgiving: they flex with minor settlement, individual blocks can be lifted and relaid, and the joints let some rain soak in. Kota stone in a rough or leather finish is cool and traditional under a covered porch. Flamed or leather-finish granite is the premium option. Broom-finished concrete is strong and cheap if it is properly jointed. Glossy vitrified tiles and polished marble are the materials to avoid: slippery when wet and prone to cracking under wheels.
+
+| Item | Specification | Indicative cost (Oct 2026) | Notes |
+|---|---|---|---|
+| Interlocking concrete pavers | 60–80 mm on 25–40 mm sand over 150–200 mm sub-base | About ₹80–150 per sq ft laid with base | Edge restraint essential; 80 mm for regular SUV traffic |
+| Kota stone, rough or leather finish | Stone on mortar over PCC | About ₹70–150 per sq ft installed | Avoid polished Kota; seal against oil |
+| Granite, flamed or leather finish | 20–30 mm on mortar over PCC | Material about ₹100–350+ per sq ft plus laying | Premium, hard-wearing, stain-resistant |
+| Broom-finished RCC | 125–150 mm with mesh, cut joints | Usually priced with the civil work | Joints at about 3–4.5 m prevent random cracks |
+| Polycarbonate canopy on MS frame | Multiwall or solid sheet, UV-protected | About ₹350–800 per sq ft | Engineer-checked frame for wind uplift |
+| Pergola (timber, steel or aluminium) | Slats or louvres on a frame | About ₹600–1,500 per sq ft by material | Shade only, unless glazed above |
+
+Lighting should let the driver see the edges, the gate and any step without glare in the eyes. Recessed or surface downlights of 2,700–3,000 K in the porch ceiling, low bollards or step lights along the walkway, and a motion-sensor light at the gate cover most needs. Fittings in the porch should be rated for damp locations. A camera covering the gate and porch, and a video door phone at the pedestrian gate, are now standard in most new houses; run their cables during construction rather than surface-mounting them later. MagicBricks' porch guide puts basic porch work at roughly ₹800–1,800 per sq ft, which is a useful cross-check when a contractor quotes the whole job as one lump sum.
+
+## What does a car porch cost in India?
+
+The honest answer is that the porch has two prices: the structure and the finish. If the porch sits under a first-floor room, its slab, beams and columns are part of the house's civil cost. What you budget separately is the paving, the canopy, the gate, the drain, the lighting and the EV wiring. The worked example below, from the Aaditya Interior guide, shows how those separate items add up on a 40 × 60 ft plot.
+
+Take a 6,000 × 6,000 mm two-car porch under the first-floor room (about 388 sq ft), a 3,600 × 4,500 mm driveway from the gate (about 174 sq ft), and a 1,200 × 4,000 mm polycarbonate canopy over the walkway from the pedestrian gate (about 52 sq ft). Finishing the porch in rough Kota stone at ₹70–150 per sq ft costs about ₹27,000–58,000; the driveway in 80 mm pavers at ₹80–150 per sq ft about ₹14,000–26,000; and the walkway canopy at ₹350–800 per sq ft about ₹18,000–42,000. Together that is about ₹59,000–1,26,000, indicative October 2026, before GST. The gate, its automation, the trench drain, lighting, CCTV and EV wiring are quoted separately by the fabricator and electrician.
+
+A lighter option is a freestanding shed rather than a built porch. A 2026 parking-shed guide by Farari Enterprises puts a decent shed at ₹35,000–80,000, with a single-car tensile shed at ₹20,000–45,000 fully installed, and a real example from Indore — a 10 × 18 ft shed in an MS steel frame with a 6 mm twin-wall polycarbonate roof — at ₹47,000 all-in, roughly ₹261 per sq ft. Their budget bands run under ₹40,000 for a basic wall-mounted canopy or tensile shed, ₹40,000–80,000 for a mid-range polycarbonate or PVC tensile shed for one or two cars, and ₹80,000–2,50,000 for premium PTFE tensile or solar-panel roofs. Tensile fabric porches are quoted around ₹180–350 per sq ft in Kerala supplier guides, and typically take 10–15 days from fabrication to installation. A solar-panel roof shed — a 10 × 18 ft roof carrying four to six panels — is quoted as generating 2–3 kWh a day, enough for fans, lights and EV charging, though the panels are priced on top of the shed itself.
+
+No Ajmer-specific porch rate card is published anywhere we could verify, so treat the national bands above as planning figures and confirm with a written local quote. Ajmer's labour and material rates usually sit toward the lower half of the national bands, but transport, the stone you choose and the gate you pick move the total more than the city does. Get the estimate itemised — paving, canopy, gate, drain, lighting, EV point — before you commit, and compare written scopes, not headline rates.
+
+## Electric-vehicle charging: build it in now
+
+Even families without an electric car should build the provision during construction, because chasing a heavy cable through a finished porch and a stone-clad wall is far more expensive than laying a conduit in the slab or wall. Two levels are common for homes. Slow charging with a portable charger needs a dedicated socket circuit of about 15–16 A. A wall-mounted AC charger of about 7 kW needs a dedicated circuit of about 32 A single phase, with appropriate protection, and may need an increase in the sanctioned load from the electricity distribution company. Two-wheelers need a dedicated, protected socket near each regular bay.
+
+- Lay an empty conduit of adequate size from the main distribution board to each car bay and the two-wheeler bay during construction.
+- Place the charger or socket on the wall at the bonnet end of the bay, about 900–1,200 mm above the floor, out of the path of doors and bumpers.
+- Provide a dedicated circuit for each charging point, with protection selected by a licensed electrician following NBC 2016 Part 8 and the IS 17017 series for EV charging.
+- Check the sanctioned load and the meter capacity with the distribution company before buying a wall charger.
+- Keep sockets and chargers above any possible flood level and out of the reach of standing water.
+- Plan cable routes for the gate motor, CCTV and lighting at the same time, in separate conduits.
+
+## Vastu, placement and the front elevation
+
+Vastu guides generally place the car porch on the east or north side of the house, so the parking does not block the morning light or the main entrance, and the porch sits within the plot without hiding the front elevation. Treat direction as one input among size, gate access and drainage — not the deciding factor. A porch that follows Vastu but puts a column beside the driver's door, or slopes water into the foyer, has failed at the things that matter every day.
+
+The elevation deserves the same thought. A porch that swallows the whole front of the house makes the building read as a garage with a house behind it. The better designs keep the porch light: a cantilevered canopy instead of a heavy slab where the plot allows it, a jaali screen on one side for privacy and ventilation, sandstone piers at the gate that echo Rajasthan's material palette, and planting that softens the hard edges. Our guide to [jaali screen facade design](/blog/jaali-screen-facade-design-india) shows how the pattern work is done, and our [3D home elevation guide](/blog/3d-home-elevation-design-ajmer) covers how the porch, the gate and the elevation are composed together. A vertical garden or hanging pots on one side of the porch, and a pergola with climbers over the walkway, cost little and change how the front of the house feels — but keep climbers off the car itself, and keep the porch roof at a moderate height so it does not dominate the elevation.
+
+One more rule from the local bye-laws: open parking in the front margin is common, but covered structures, canopies, columns and their projection limits depend on the local development control rules. Confirm with the architect and the local authority — in Ajmer, the Ajmer Development Authority and the municipal office — before building any roof or column in a margin. Our guide to [house plan approval fees in Ajmer](/blog/house-plan-approval-fees-ajmer) explains what the sanctioned plan covers and what it costs.
+
+## Six mistakes that cost money later
+
+1. **Sizing the porch for today's car.** The hatchback you own now is 3.6–3.9 m long; the SUV you buy in five years is 4.7–4.95 m. A porch planned around 6,000 mm length and 3,000–3,300 mm width per car fits both.
+2. **Putting a column beside the front door.** Columns belong at the corners, or in line with the bonnet or the boot. One column in the door zone turns a workable bay into a daily squeeze.
+3. **Forgetting the beam depth.** A 6 m span can need a 450–600 mm beam. Check the clear height under it — at least 2,400 mm — before the slab is cast, not after.
+4. **Laying glossy tiles or polished stone.** Slippery when wet, cracked under wheels within a year. Use pavers, rough Kota, flamed granite or broom-finished concrete.
+5. **Sloping the porch toward the house.** The floor must fall 1:80–1:100 away from the house to a trench drain inside the gate. One monsoon will teach this lesson if the drawings do not.
+6. **Building the porch with no EV conduit, no gate conduit and no camera cable.** Retrofitting any of them through finished stone and plaster costs several times what a conduit in the slab would have cost.
+
+## How to plan it with your architect
+
+Bring the car porch into the first brief, not the last site visit. A good architect will ask for the plot size and the front margin, the cars the family owns and plans to own, the lane width outside the gate, the road level, and where the main door sits relative to the porch. Answer those before the first sketch and the porch lands in the plan for free. Ask for the porch section drawing with the column positions, the beam depth and the clear height written on it, a levels drawing from the road to the plinth, and a written estimate that lists paving, canopy, gate, drain, lighting and EV point separately — before you commit to anything. Judge the estimate on whether its numbers add up, not on whether its headline rate is the lowest. And settle the design in the same meeting: a porch under a room, a cantilevered canopy and a freestanding shed are different jobs with different suppliers, and none of them can be priced from a plan that has not decided which one it is.
+
+## Frequently asked questions
+
+**What is the standard size of a car porch for a house in India?**
+
+A single-car porch needs about 3,000–3,300 mm wide and 5,500–6,000 mm deep, with at least 2,200 mm clear under beams — 2,400 mm or more is better for SUVs with roof carriers. Two cars side by side need about 5,700–6,000 × 6,000 mm. Add 1,200 mm if the walkway to the main door runs beside the cars.
+
+**How much does a car porch cost in India?**
+
+A finished two-car porch on a 40 × 60 ft plot costs roughly ₹59,000–1,26,000 for paving and a walkway canopy in October 2026 guides, before GST. A basic single-car shed starts around ₹20,000–45,000, while a premium tensile or solar-roof porch can cross ₹1,00,000. The structure above the porch is part of the house cost.
+
+**What is the best flooring for a car porch?**
+
+Interlocking concrete pavers (60–80 mm on a compacted base), rough or leather-finish Kota stone, flamed granite or broom-finished concrete. All four are hard, matt and repairable under tyres and monsoon water. Avoid glossy vitrified tiles and polished marble — they turn slippery when wet and crack under wheels.
+
+**How wide should the main gate be for a car?**
+
+A clear opening of 3,000 mm works on wide roads with a straight approach. On narrow lanes under about 9 m, where the car must turn sharply, plan 3,600 mm or splay the compound wall corners, and test the turn with the family's largest car before fixing the gate position.
+
+**Which direction is best for a car porch as per Vastu?**
+
+Vastu guides generally place the car porch on the east or north side of the house, so the parking does not block the morning light or the main entrance. The porch should sit within the plot without hiding the front elevation. Treat direction as one input among size, gate access and drainage — not the deciding factor.
+
+**Should I install an EV charger in my car porch?**
+
+At minimum, lay an empty conduit and a dedicated circuit from the main distribution board to each car bay during construction — chasing a heavy cable through a finished porch costs far more. A 7 kW wall charger needs about a 32 A circuit and may need a higher sanctioned load, so check with your electricity supplier first.
+
+## Book Site Consultation
+
+A car porch is the first thing anyone sees of your house and the last thing most plans think about — so it deserves to be decided on paper, with the size, the column positions, the beam depth, the levels and the gate width written down, before the first footing is dug. [Book a site consultation](/contact) and Design Plus will work out the porch size, type and cost against your plot's actual measurements, mark the column and beam positions on the section drawing, and give you an itemised estimate for the paving, canopy, gate and EV point — separately, in writing — before you commit to anything. Bring your plot papers and the sanctioned plan, and judge the studio on whether its numbers add up.`,
+  },
 ];
 
 export function getBlogHubPost(slug: string): BlogHubPost | undefined {
