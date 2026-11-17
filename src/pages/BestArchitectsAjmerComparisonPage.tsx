@@ -150,7 +150,7 @@ export function BestArchitectsAjmerComparisonPage({ onOpenConsultation }: BestAr
       }
     },
     datePublished: '2026-10-11',
-    dateModified: '2026-11-12',
+    dateModified: '2026-11-17',
     mainEntityOfPage: 'https://www.designplusajmer.co.in/best-architects-ajmer-comparison'
   };
 
@@ -281,6 +281,16 @@ export function BestArchitectsAjmerComparisonPage({ onOpenConsultation }: BestAr
               <span>Call the Studio: {BUSINESS_INFO.phones[0].display}</span>
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* AEO: SHORT-ANSWER BOX — direct answer to "which is the best architect in Ajmer" (changeset 2026-11-10, applied 2026-11-17 evening push; "since 2004" year claim omitted — not present in page source) */}
+      <section aria-label="Short answer: best architect in Ajmer" className="bg-[#FBFBF9] border-b border-stone-200">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12 text-center">
+          <p className="text-xs font-mono uppercase tracking-[0.3em] text-[#A65D37] mb-4">Short answer</p>
+          <p className="font-editorial text-2xl sm:text-3xl leading-snug text-stone-900">
+            If you want architecture and chartered structural engineering from one Ajmer studio, Design Plus is the strongest match in this comparison. It is the only firm in the table with chartered structural engineering in-house — led by Er. Sudhir Soni (M.E. Structure, FIV) — plus ADA sanction drawings and stability certification, 4.8 stars from 43 JustDial ratings (October 2026), and a studio on Rajeev Marg, Panchsheel Nagar. There is no single official ranking of Ajmer architects; choose on typology, budget, and whether you need in-house chartered structural engineering, not on rating alone.
+          </p>
         </div>
       </section>
 
