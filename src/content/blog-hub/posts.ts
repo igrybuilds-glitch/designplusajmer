@@ -7843,6 +7843,162 @@ Ask for the chemical name and concentration, the IS 6313 stages covered, and the
 
 Termite treatment is a small line item with an outsized consequence: it is the only part of the house that can never be redone properly once the slab is down. [Book a site consultation](/contact) and Design Plus will schedule the five IS 6313 stages against your foundation programme, check the contractor's chemical, concentration and warranty in writing, and give you an itemised estimate for the treatment — separately, in writing — before you commit to anything. Bring your plot papers and the sanctioned plan, and judge the studio on whether its numbers add up.`,
   },
+  {
+    slug: 'plinth-beam-vs-damp-proof-course-house-india',
+    seoTitle: 'Plinth Beam vs Damp Proof Course House India 2026',
+    title: 'Plinth Beam vs Damp Proof Course (DPC) for Your House in India (2026): Difference, Cost per Running Foot and Which One You Actually Need',
+    description: 'Plinth beam vs damp proof course in India: what each does, the sizes and IS codes, cost per running foot, and why most houses need both.',
+    date: '2026-11-20',
+    category: 'Guides',
+    image: '/images/blog/cost-of-building-a-house-in-ajmer-2026.jpg',
+    faqs: [
+      { question: 'What is the difference between a plinth beam and a DPC?', answer: 'A plinth beam is a reinforced concrete beam at plinth level that ties columns together, spreads wall loads and resists differential settlement. A DPC is a thin impermeable layer, usually 25 mm of rich cement concrete, laid above the plinth to stop ground moisture rising into walls. One is structural, the other stops damp, and most Indian houses need both.' },
+      { question: 'Is a plinth beam compulsory for a house in India?', answer: 'No code makes it compulsory for every house, but Indian guides treat it as essential even for a single-storey home, especially on filled, black cotton or uneven soil, where houses without one often crack within two years. Size and steel must come from the structural drawing, not a thumb rule. Skipping it to save money is a common foundation mistake.' },
+      { question: 'How much does a plinth beam cost per running foot in India?', answer: 'A Delhi RCC beam rate analysis of Rs 23,790–29,071 per cubic metre puts a 9x9 inch plinth beam at roughly Rs 367–449 per running foot, and a 9x12 inch beam at Rs 489–598. On a small house with about 186 running feet of wall, the beam costs Rs 62,000–76,000. Ajmer quotes should sit toward the lower half of these bands.' },
+      { question: 'What is the thickness of a DPC in house construction?', answer: 'Under IS 3067:1988, a cement concrete DPC is at least 25 mm thick in a 1:1.5:3 mix with a waterproofing admixture. A polythene sheet DPC is at least 0.25 mm thick, bituminous coating is two layers of 1.5 mm each, bitumen felt is 3 mm, and mastic asphalt is 20 mm in two layers. Joints must overlap by 100 mm.' },
+      { question: 'Can a plinth beam replace a DPC?', answer: 'Not reliably. A YouTube cost comparison argues a plinth beam blocks rising water and can replace a DPC, but Indian guides disagree: reinforced concrete is porous, and every standard detail still lays a DPC above the beam. The beam stops settlement, the DPC stops damp. Treating one as a substitute for the other leaves houses with damp walls.' },
+      { question: 'Do houses in Ajmer need both a plinth beam and a DPC?', answer: 'Yes. Ajmer is dry, which reduces rising-damp risk, but monsoon rain, leaking tanks and shaded north walls still create damp pockets at plinth level, and local soil varies enough that a beam is cheap insurance against settlement cracks. No Ajmer-only rate card exists, so judge a local quote against the national bands here and get it itemised in writing.' }
+    ],
+    content: `Halfway through the foundation work on a new house, the contractor asks a question that sounds like a choice: plinth beam or DPC? The plinth beam vs damp proof course question comes up on almost every Indian house site, and the honest answer is that it is not a choice at all. A plinth beam is a structural element — a reinforced concrete beam that ties the columns together at plinth level and gives the walls a level base to sit on. A damp proof course, or DPC, is a moisture barrier — a thin impermeable layer that stops ground moisture rising into the walls by capillary action. One carries load, the other stops water. Most houses in India need both, and the expensive mistakes happen when one is skipped because the other was assumed to cover it.
+
+**Short answer:** A plinth beam is a reinforced concrete beam at plinth level that ties columns together, spreads wall loads and resists differential settlement; a DPC is a thin 25 mm impermeable layer laid above the plinth that stops rising damp. They do different jobs and a house normally needs both. In India, a 9x9 inch plinth beam works out at roughly Rs 367–449 per running foot on current Delhi RCC rates, while a DPC costs a fraction of that — a YouTube cost comparison from Pakistan puts the plinth beam at 4–5 times the DPC per running foot. Skipping the beam risks wall cracks; skipping the DPC risks damp, peeling paint and white salt patches at the base of the walls.
+
+## Plinth beam vs damp proof course: the difference in one table
+
+| Property | Plinth beam | Damp proof course (DPC) |
+|---|---|---|
+| Purpose | Structural — ties the base together and spreads wall loads | Moisture barrier — stops rising damp from the ground |
+| What it is | Reinforced cement concrete beam | Thin impermeable layer (concrete, bitumen, polythene or asphalt) |
+| Location | At or near plinth level, between foundation and walls | Above the plinth beam, under the first course of masonry, about 150 mm above ground |
+| Typical size | 9x9 in or 9x12 in for houses; size from the structural drawing | 25 mm thick cement concrete, or a 0.25 mm polythene sheet, or 3 mm bitumen felt |
+| Main risk if skipped | Differential settlement, wall cracks, columns shifting | Rising damp, efflorescence, peeling paint, plaster damage, mould |
+| Cost scale | Roughly Rs 367–449 per running foot (9x9 in, Delhi rates) | A fraction of the beam — 4–5 times cheaper per running foot in the video comparison |
+| Governing code | IS 456:2000 for RCC; IS 13920:2016 for seismic detailing | IS 3067:1988, the code of practice for DPC |
+
+The table makes the point in one glance: nothing in the DPC column does anything structural, and nothing in the plinth beam column stops water. They sit on top of each other in the same 450 mm of wall base, but they answer different failures.
+
+## What is a plinth beam?
+
+A plinth beam is a reinforced cement concrete beam constructed at or near plinth level, usually above the foundation and below the wall or floor level. In site language it is the base belt of the building: a horizontal tie that connects the columns, supports the masonry walls above, and keeps the whole base moving as one piece. It is used in framed structures, load-bearing structures, boundary walls and on any site where the soil may not settle uniformly.
+
+It helps in five main ways, as the Brick&Bolt construction guide sets out. First, it distributes wall loads more evenly over the foundation system. Second, it reduces the effect of differential settlement, where one part of the foundation settles more than another. Third, it ties columns together at the base level in framed structures. Fourth, it provides a level platform for masonry work, so walls start straight. Fifth, it supports damp proofing and termite-control detailing when planned properly — the DPC and the termite treatment both sit on the plinth detail the beam creates.
+
+Two clarifications matter. The plinth beam is not a vertical load-bearing beam in most residential and low-rise buildings. Its primary function is lateral stability — acting as a tie that resists soil pressure, minimises lateral movement and controls buckling in columns — not carrying slab or floor loads. Designing it as if it carried floor loads leads to over-reinforcement and wasted steel. And a plinth beam does not remove the need for a proper foundation. If the soil is weak or the footing design is poor, a plinth beam alone cannot save the structure; it supports the system, it cannot replace geotechnical and structural design. Our guide to [foundation types for black cotton soil](/blog/foundation-types-for-black-cotton-soil) covers the footing decisions the beam hangs off, and our guide to [soil testing before construction in Ajmer](/blog/soil-testing-before-construction-ajmer) explains why the soil report comes before any of this.
+
+### Types of plinth beam
+
+Different designs suit different buildings. An RCC plinth beam is the most common type in modern residential construction — concrete with steel reinforcement, top and bottom bars, stirrups and anchorage into the columns. A tie plinth beam connects isolated columns or footings at plinth level and is mainly about tying the structure together; in earthquake-prone regions its continuity and anchorage matter more than its size. A ground beam or foundation beam sits at or below ground level and can transfer loads between foundations or support walls over weak soil pockets — in some projects the same beam functions as both a ground beam and a plinth beam, and the structural engineer decides that from the foundation layout. A masonry-supported plinth beam sits over foundation walls in small load-bearing structures to create a level base, but it only performs if the masonry below is sound. A seismic plinth beam needs stronger continuity, ductile detailing and proper anchorage under IS 13920:2016, so the structural system behaves better under lateral forces.
+
+### Plinth beam size and reinforcement: what the codes say
+
+The size of a plinth beam depends on wall thickness, span, load, foundation type and structural design. In many residential buildings the beam width is kept equal to or slightly wider than the wall thickness, and the depth varies with span and load. The safest rule, repeated by every guide, is simple: use the size and reinforcement specified in the approved structural drawing, never a thumb rule carried from the last site.
+
+The detailing numbers that Indian guides quote as the minimum are worth knowing, because they are what you check on site before the concrete is poured. Under IS 456:2000, the main bars are a minimum of four — two at the top and two at the bottom — of 10 mm or 12 mm diameter. Stirrups are 6 mm diameter, spaced at 150 mm centres near supports and 200 mm centres in mid-span. Clear cover is a minimum of 25 mm, using proper cover blocks. Lap length is a minimum of 50 times the bar diameter in tension zones, properly staggered. The concrete grade is M20 (1:1.5:3) or higher as per the structural design. Curing should start within 6 to 8 hours of casting and continue for at least 7 to 10 days. And the plinth itself, under the National Building Code, should sit at least 450 mm above the surrounding natural ground in normal areas, and 600 mm to 1,000 mm in flood-prone or water-logged regions.
+
+## What is a damp proof course (DPC)?
+
+A damp proof course is a horizontal or vertical layer of impermeable material installed in a building element to block the movement of moisture. The most common location for a horizontal DPC is at plinth level, above the surrounding ground level and below the ground-floor wall construction. It works mainly by preventing rising damp — moisture from the soil moving upward through porous brick and concrete by capillary action. The same capillary pull that draws water up a sponge draws it up a wall, and without a barrier it can climb well above the plinth before it shows as a damp patch, a white salt crust or paint peeling off near the skirting.
+
+IS 3067:1988 is the Indian Standard code of practice for DPC, and it sets the thicknesses by material. A cement concrete DPC is a minimum of 2.5 cm thick in a rich 1:1.5:3 mix with a waterproofing admixture. A polythene sheet DPC is a minimum of 0.25 mm thick. A bituminous coating is two layers, each 1.5 mm thick. For bitumen felt the recommended thickness is 3 mm, and for mastic asphalt it is 20 mm, laid as two 10 mm layers. Where a DPC is laid in new construction, the steps are: prepare a level surface above the plinth, apply a layer of rich cement mortar in a 1:3 ratio, place the DPC material, ensure complete overlap at joints of at least 100 mm, and apply another mortar layer to sandwich the DPC. The layer must be continuous across the full width of the wall, carried round corners and under door openings without gaps — a DPC with a gap at a corner is a barrier with a door in it.
+
+Other common DPC materials are bitumen (hot or cold applied), mastic asphalt, metal sheets such as lead or copper, PVC or HDPE sheets, and chemical admixtures mixed into the concrete itself. Integral damp proofing adds water-repelling admixtures such as calcium stearate or silicates directly into the concrete or mortar during mixing. Surface treatment coats the exposed surface with bitumen-based paints or silicon-based coatings. Cavity wall construction uses two masonry skins separated by a gap of usually 50 mm as a moisture barrier. Guniting and pressure grouting are repair methods for existing buildings rather than new work.
+
+One distinction is worth keeping straight: DPC deals with moisture and dampness, while waterproofing handles water under pressure. DPC is rigid and usually installed in dry zones; waterproofing is more elastic and used in wet zones like roofs, basements and water tanks. A DPC at plinth level does not waterproof the roof or the bathroom, and a plinth beam does not waterproof anything at all.
+
+The consequences of a poor DPC show slowly and then all at once: efflorescence, the white powder of salts left behind as moisture evaporates; wall dampness and paint peeling off near the floor; structural decay as moisture reaches the reinforcement and corrodes it; fungal and mould growth; and unhealthy indoor conditions. The Civil Studies guide notes that a 25 mm DPC above the plinth beam is part of the standard checklist for plinth work in areas with poor drainage or high groundwater.
+
+## Plinth beam vs DPC: the sequence on site
+
+The two elements are built in a fixed order, and the order is part of the answer to which one you need. First the plinth beam line and level are marked, then the base is prepared, shuttering is fixed, reinforcement is placed to the structural drawing with cover blocks, openings and service sleeves are planned so nobody cuts the beam later, concrete of the specified grade is poured and compacted with a needle vibrator to avoid honeycombing, the top surface is finished level for the wall construction, and curing starts within 6 to 8 hours and continues for 7 to 10 days. Only after the beam has cured does the DPC go on: a level, clean plinth top, then the DPC layer across the full wall width, then the first course of masonry.
+
+Two things happen at the same stage and should be planned together. Anti-termite treatment is applied to the soil before concreting, especially in termite-prone regions — our guide to [termite treatment before construction cost in India](/blog/termite-treatment-before-construction-cost-india) sets out the five IS 6313 stages, and the plinth-fill stage is one of them. And plinth protection — a paved or concrete strip around the external perimeter — plus a ground slope away from the walls, keeps rainwater from collecting near the foundation. A beam and a DPC will both underperform if the ground slopes toward the house and water ponds against the plinth every monsoon.
+
+## Plinth beam vs damp proof course cost in India
+
+This is where the two elements are furthest apart. A DPC is a thin layer; a plinth beam is a full reinforced concrete member with steel, shuttering, concrete and curing. A YouTube cost comparison by GP Design & Construction, "Cost Difference of DPC and Plinth Beam", works the difference out per running foot for three house sizes, and its method is worth following even though its rates are Pakistani — the channel builds in Pakistan, prices in marla and kanal, and quotes in Pakistan rupees, so the figures below are the video's rates, not Indian ones.
+
+The video assumes a DPC of 2 inches with bitumen and polythene sheet on top, and a plinth beam of 9x9 inches with two bars on top, two below and rings at 6 to 7 inch spacing. On those assumptions, the DPC costs about Rs 140 per running foot on a 4-inch wall and Rs 195 per running foot on a 9-inch wall, while the plinth beam costs about Rs 700 per running foot on a 4-inch wall and Rs 820 per running foot on a 9-inch wall. That is roughly five times the DPC on a 4-inch wall and about 4.2 times on a 9-inch wall. For a 5-marla house (29 running feet of 4-inch wall and 157 running feet of 9-inch wall), the DPC comes to about Rs 34,675 and the plinth beam to about Rs 1.5 lakh — a difference of about Rs 1,15,000. For a 10-marla house (90 and 206 running feet), the DPC is Rs 53,000 and the plinth beam Rs 2,32,000, a difference of about Rs 1,80,000. For a 1-kanal house (90 and 366 running feet), the DPC is Rs 84,000 and the plinth beam Rs 3,63,000, a difference of Rs 2,79,000 by arithmetic. The video also notes that using three bars on top and three below, instead of two and two, adds about 25 to 30 percent to the plinth beam cost.
+
+### What the plinth beam costs in India
+
+For Indian rates, a current rate analysis from Infralens puts a complete RCC beam — M25 concrete with 140 kg of steel per cubic metre plus shuttering — at Rs 23,790–29,071 per cubic metre in Delhi, including 1 percent water charges and 15 percent contractor profit and overheads. The largest single cost in that rate is the steel: 140 kg of TMT Fe500D at Rs 59–65 per kg. Working that rate back into a per-running-foot figure for the beam sizes a house actually uses gives the table below. The arithmetic is shown so it can be checked: a 9x9 inch beam is 0.050625 cubic metres per running metre, so at Rs 23,790–29,071 per cubic metre it costs Rs 1,204–1,472 per running metre, or Rs 367–449 per running foot.
+
+| Beam size | Concrete per running metre | Cost per running metre | Cost per running foot |
+|---|---|---|---|
+| 9x9 in (225 x 225 mm) | 0.0506 cum | Rs 1,204–1,472 | Rs 367–449 |
+| 9x12 in (225 x 300 mm) | 0.0675 cum | Rs 1,606–1,962 | Rs 489–598 |
+| 4-in wall beam (100 x 225 mm) | 0.0225 cum | Rs 535–654 | Rs 163–199 |
+
+Two caveats. The Delhi rate is for a general RCC beam with 140 kg of steel per cubic metre, which is on the heavy side for a plinth beam, so treat the figures as an upper guide rather than a quote. And no published Indian per-running-foot rate card for DPC was found while researching this guide — DPC is usually priced inside the plinth or masonry item rather than as a separate line — so the honest Indian comparison is the ratio, not a DPC price: the plinth beam costs roughly four to five times the DPC per running foot, for a layer that is 25 mm thick against a beam that is 225 mm deep.
+
+### Worked example: a small house with 186 running feet of wall
+
+Take the video's 5-marla plan, which is close in size to a 30x40 ft Indian plot: 29 running feet of 4-inch internal walls and 157 running feet of 9-inch walls, 186 running feet in all. At the Indian rates derived above, the plinth beam on the 9-inch walls costs 157 x Rs 367–449 = Rs 57,619–70,493, and on the 4-inch walls 29 x Rs 163–199 = Rs 4,727–5,771. The total is Rs 62,346–76,264, rounded to about Rs 62,000–76,000 for the beam on a house of this size — before GST and before any local variation. The DPC on the same walls would be a small fraction of that, which is why the decision is never really about the DPC's price. It is about whether the beam's Rs 62,000–76,000 is worth paying to stop settlement cracks, and the answer on most Indian soils is yes. Get the figure as an itemised line in the contractor's quote, on the same beam size and steel, and compare two quotes on that same scope — a quote that is half the other one is almost certainly a quote for less steel or a smaller beam, not a bargain.
+
+## Do you need both? The decision matrix
+
+| Situation | Better choice |
+|---|---|
+| Single-storey house on good, firm soil | Plinth beam as per drawing plus DPC — the beam is still worth it for wall support and level |
+| G+1 or G+2 house | Both, no shortcut — deeper beam and stronger reinforcement per the structural design |
+| Black cotton, filled or uneven soil | Both, mandatory in practice — houses without a beam here often crack within two years |
+| Seismic zone | Both, with ductile detailing and anchorage under IS 13920:2016 |
+| Damp-prone or low-lying site | Both, plus a higher plinth (600–1,000 mm), plinth protection and drainage slope |
+| Budget pressure | Never cut the steel or the concrete grade — cut finishes instead; the beam and DPC are buried and cannot be redone |
+| Existing house with damp walls | DPC repair or chemical injection — a plinth beam cannot be added to a finished house |
+
+The matrix has one consistent answer because the two elements do not overlap. The only genuine either-or in this whole subject is the one the video raises: whether a plinth beam can replace a DPC. The video's presenter argues it can, since the beam is a thick concrete member that blocks rising water. The Indian guides take the other view, and it is the safer one: reinforced concrete is porous, the beam sits partly below ground where it stays damp, and every standard detail — IS 3067, Brick&Bolt, The Civil Studies — still lays a DPC above the beam. The beam stops settlement and cracks; the DPC stops damp. Treating one as a substitute for the other is how houses end up with damp walls and a contractor who has already been paid.
+
+## Six mistakes that cause cracks and damp walls
+
+**1. Skipping the plinth beam on a single-storey house.** The commonest error, especially on small houses with shallow foundations. Even a single storey needs the beam for load distribution and differential settlement, and on black cotton soil in parts of Madhya Pradesh and Maharashtra, buildings without plinth beams often develop structural cracks within the first two years.
+
+**2. Placing the beam at ground level.** A beam too close to the soil is directly exposed to moisture and surface water runoff, which raises the risk of reinforcement corrosion, dampness in interior walls, termite attack from untreated soil, and water entering during heavy rain. Raise the plinth beam above the highest local ground level — 450 mm minimum under the National Building Code, more in flood-prone areas.
+
+**3. Under-diameter bars, missing anchorage, or no formwork.** Using 8 mm main bars instead of 10 or 12 mm, bending bars without anchorage, or missing crank bars at beam-column junctions leads to cracking within months. Pouring concrete directly into a soil trench without shuttering is worse: soil mixes into the concrete, honeycombing appears, steel is left exposed, and the beam comes out uneven. Formwork defines the geometry, and it is not optional.
+
+**4. Cutting the beam later for pipes and cables.** Service sleeves and routes must be planned before concreting. Cutting a cast beam for plumbing or electrical lines damages reinforcement and reduces structural capacity, and it cannot be undone.
+
+**5. Poor compaction and poor curing.** Honeycombing from inadequate vibration reduces strength and exposes reinforcement to moisture. Concrete that dries too early develops shrinkage cracks and weak surface zones. A needle vibrator during pouring and curing for 7 to 10 days are not finishing touches; they are what make the beam reach its design strength.
+
+**6. A DPC with gaps, punctures, or no DPC at all.** The video makes this point from the mason's side: a DPC is a 2 to 3 inch line that has to be laid perfectly, and if the masons do not manage it — if it is punctured during laying, broken by tile work, or left with gaps at corners and door openings — moisture finds the gap. That is why damp patches and peeling plaster show up even in newly built houses. Check the DPC the same way you check the steel: continuous, full width, overlapped at joints, before the first course of masonry goes up.
+
+## Ajmer: what to expect on a local quote
+
+Ajmer's hot, dry climate works in a homeowner's favour in one way and against them in another. Rising damp is less aggressive here than in humid regions, because the soil dries out for much of the year — but Ajmer houses still create the damp pockets that matter: the plinth itself, the bathroom and kitchen walls, the soil under a leaking overhead tank, and the shaded north side of the house. The DPC is just as necessary here as anywhere in India; the climate changes where damp attacks, not whether it does. And Ajmer's soil varies enough from plot to plot — rocky in some areas, filled ground in newer colonies — that a plinth beam is cheap insurance against the settlement cracks that show up as diagonal lines above doors and windows a year or two after handover.
+
+On price, expect an Ajmer quote toward the lower half of the national bands. The derived rates above are Delhi rates, and tier-2 cities typically price below metros for the same scope — but no published Ajmer-only rate card exists for plinth beams or DPC, so treat those figures as a sanity check, not a fixed price. Get two quotes on the same written scope: same beam size, same steel diameter and spacing, same concrete grade, same DPC material and thickness. A quote that is half the other one is almost certainly a quote for less steel, a smaller beam or no DPC at all. Our guide to [house construction cost in Ajmer](/blog/cost-of-building-a-house-in-ajmer-2026) treats the plinth as a separate line item for exactly this reason, and our guide to [house plan approval fees in Ajmer](/blog/house-plan-approval-fees-ajmer) explains what the sanctioned drawings should show before work starts. The beam and the DPC are decided at the design stage, on paper, with the structural engineer — not on site, after the excavation is already open. Our guide to [RCC frame structure lifespan in India](/blog/rcc-frame-structure-lifespan-india) covers how the plinth detail feeds into the fifty-year life of the frame above it.
+
+## Frequently Asked Questions
+
+**What is the difference between a plinth beam and a DPC?**
+
+A plinth beam is a reinforced concrete beam at plinth level that ties columns together, spreads wall loads and resists differential settlement. A DPC is a thin impermeable layer, usually 25 mm of rich cement concrete, laid above the plinth to stop ground moisture rising into walls. One is structural, the other stops damp, and most Indian houses need both.
+
+**Is a plinth beam compulsory for a house in India?**
+
+No code makes it compulsory for every house, but Indian guides treat it as essential even for a single-storey home, especially on filled, black cotton or uneven soil, where houses without one often crack within two years. Size and steel must come from the structural drawing, not a thumb rule. Skipping it to save money is a common foundation mistake.
+
+**How much does a plinth beam cost per running foot in India?**
+
+A Delhi RCC beam rate analysis of Rs 23,790–29,071 per cubic metre puts a 9x9 inch plinth beam at roughly Rs 367–449 per running foot, and a 9x12 inch beam at Rs 489–598. On a small house with about 186 running feet of wall, the beam costs Rs 62,000–76,000. Ajmer quotes should sit toward the lower half of these bands.
+
+**What is the thickness of a DPC in house construction?**
+
+Under IS 3067:1988, a cement concrete DPC is at least 25 mm thick in a 1:1.5:3 mix with a waterproofing admixture. A polythene sheet DPC is at least 0.25 mm thick, bituminous coating is two layers of 1.5 mm each, bitumen felt is 3 mm, and mastic asphalt is 20 mm in two layers. Joints must overlap by 100 mm.
+
+**Can a plinth beam replace a DPC?**
+
+Not reliably. A YouTube cost comparison argues a plinth beam blocks rising water and can replace a DPC, but Indian guides disagree: reinforced concrete is porous, and every standard detail still lays a DPC above the beam. The beam stops settlement, the DPC stops damp. Treating one as a substitute for the other leaves houses with damp walls.
+
+**Do houses in Ajmer need both a plinth beam and a DPC?**
+
+Yes. Ajmer is dry, which reduces rising-damp risk, but monsoon rain, leaking tanks and shaded north walls still create damp pockets at plinth level, and local soil varies enough that a beam is cheap insurance against settlement cracks. No Ajmer-only rate card exists, so judge a local quote against the national bands here and get it itemised in writing.
+
+## Book Site Consultation
+
+The plinth beam and the DPC are the two cheapest decisions in a house that can never be redone — the beam is buried under the walls and the DPC is buried under the masonry. Get them right once, on paper, before the excavation opens. [Book a site consultation](/contact) and Design Plus will check the beam size, steel and DPC detail on your structural drawings against IS 456 and IS 3067, mark the plinth level and drainage slope on the site plan, and give you an itemised estimate for the beam and the DPC — separately, in writing — before you commit to anything. Bring your plot papers and the sanctioned plan, and judge the studio on whether its numbers add up.`,
+  },
 ];
 
 export function getBlogHubPost(slug: string): BlogHubPost | undefined {
