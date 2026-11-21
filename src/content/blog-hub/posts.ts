@@ -7999,6 +7999,147 @@ Yes. Ajmer is dry, which reduces rising-damp risk, but monsoon rain, leaking tan
 
 The plinth beam and the DPC are the two cheapest decisions in a house that can never be redone — the beam is buried under the walls and the DPC is buried under the masonry. Get them right once, on paper, before the excavation opens. [Book a site consultation](/contact) and Design Plus will check the beam size, steel and DPC detail on your structural drawings against IS 456 and IS 3067, mark the plinth level and drainage slope on the site plan, and give you an itemised estimate for the beam and the DPC — separately, in writing — before you commit to anything. Bring your plot papers and the sanctioned plan, and judge the studio on whether its numbers add up.`,
   },
+{
+    slug: 'rcc-slab-thickness-residential-house-india',
+    seoTitle: 'RCC Slab Thickness for Residential House India 2026',
+    title: 'RCC Slab Thickness for a Residential House in India (2026): 100 mm, 125 mm or 150 mm — and How Your Engineer Decides',
+    description: 'RCC slab thickness for Indian homes: 100, 125 or 150 mm by span, the IS 456 span-to-depth rules, a room-wise guide, and what each extra 25 mm costs.',
+    date: '2026-11-21',
+    category: 'Guides',
+    image: '/images/blog/cost-of-building-a-house-in-ajmer-2026.jpg',
+    faqs: [
+      { question: 'What is the standard RCC slab thickness for a house in India?', answer: 'Most Indian homes use a 125 mm (5 inch) to 150 mm (6 inch) slab. For room spans up to 3.5 metres, 125 mm is generally enough; for spans of 3.5 to 4.5 metres, 150 mm is the safer and more common choice. The final thickness comes from the structural drawing, set by span and support conditions under IS 456:2000.' },
+      { question: 'Is a 100 mm (4 inch) slab enough for a house?', answer: 'Only for very short spans under about 2.5 to 3 metres with light loads, such as small toilets, stores and sunshades. For a normal bedroom or living room spanning 3 to 4.5 metres, 100 mm is too thin: the slab will deflect, crack and feel bouncy underfoot. Most structural engineers recommend 125 mm as the minimum for a house floor.' },
+      { question: 'What is the minimum slab thickness as per IS 456?', answer: 'IS 456:2000 sets no single minimum thickness for ordinary slabs; it controls thickness through span-to-effective-depth ratios for deflection, plus cover and fire requirements. In practice slabs thinner than about 100 mm are rarely used for floors. For flat slabs, Clause 31.2.1 of IS 456:2000 sets a minimum thickness of 125 mm.' },
+      { question: 'How thick should a roof slab be in India?', answer: 'A normal residential roof slab is 125 to 150 mm, the same as a floor slab. Go to 150 to 175 mm if the roof carries a water tank, a terrace garden or a future floor of rooms. Roof slabs also need proper slope and waterproofing, since a thin slab with standing water cracks and leaks sooner.' },
+      { question: 'How much cement is needed for a 1,000 sq ft slab?', answer: 'For a 1,000 sq ft slab in M20 concrete, a 100 mm slab needs about 9.3 cubic metres and 75 bags of cement; a 125 mm slab needs 11.6 cubic metres and 94 bags; a 150 mm slab needs 13.9 cubic metres and 112 bags. Each extra 25 mm adds about 19 bags of cement and 2.3 cubic metres.' },
+      { question: 'Can I reduce slab thickness to save money?', answer: 'It is a false economy. Going from 150 mm to 125 mm saves about 19 bags of cement and 2.3 cubic metres of concrete, but a slab too thin for its span sags, cracks and can need expensive repair. The slab is the one element you cannot thicken later, so the saving is never worth the risk.' }
+    ],
+    content: `Halfway through the frame work on a new house, the contractor asks a question that sounds trivial: "4 inch ya 5 inch?" The RCC slab thickness for a residential house in India is one of those decisions that looks like a thumb rule and behaves like engineering. Get it right and the floors feel solid for fifty years. Get it wrong and the ceiling sags, hairline cracks spread across the soffit, and the repair bill dwarfs whatever the thinner slab saved. This guide sets out the standard thicknesses Indian engineers actually use, the IS 456 rules behind them, what each room needs, and what every extra 25 mm costs you in cement, steel and concrete.
+
+**Short answer:** Most Indian homes use a 125 mm (5 inch) to 150 mm (6 inch) RCC slab. For room spans up to 3.5 metres, 125 mm is generally enough; for spans of 3.5 to 4.5 metres, 150 mm is the safer and more common choice. A 100 mm (4 inch) slab works only for very short spans under about 2.5 to 3 metres. The thickness is fixed by the span between supports, the support conditions and the loads, under IS 456:2000 — never by habit, and never by what the last site used.
+
+## RCC slab thickness by span: the table to keep
+
+The span — the clear distance between the beams or walls supporting the slab — is the single biggest factor in thickness. As the span grows, the slab has to bridge a bigger gap, and it needs more depth to stop it bending. The thumb rules Indian structural guides quote for residential work line up closely across sources:
+
+| Clear span | Residential slab thickness | Where it applies |
+|---|---|---|
+| Up to 3 m | 100 mm (4 inch) | Small rooms, toilets, stores, short spans |
+| 3 m to 4 m | 125 mm (5 inch) | Most bedrooms, living rooms, kitchens |
+| 4 m to 5 m | 150 mm (6 inch) | Larger rooms, halls, longer spans |
+| 5 m to 6 m | 175 mm (7 inch) | Large halls, heavier loads |
+| 6 m to 7 m | 200 mm (8 inch) | Very large spans, commercial-scale loads |
+| Over 7 m | Ribbed, waffle or post-tensioned | Needs a specialist structural design |
+
+For the spans most Indian houses actually have — rooms of 3 to 4.5 metres — the answer is 125 to 150 mm. That is the range UltraTech's home-building guide quotes as the most commonly used in Indian homes, and it is the range every other Indian guide converges on. Spans above 4.5 metres, or slabs carrying heavy loads such as a water tank or a terrace garden, move into 150 to 200 mm. A roof slab carrying a water tank or a usable terrace should be 150 to 175 mm at minimum.
+
+A useful early-design check is span divided by 20 to 30. For a 3.5 metre span, span divided by 25 gives 140 mm, which lands in the same 125 to 150 mm band the table gives. These are planning figures, not a design: the structural engineer still runs the deflection check and issues the drawing.
+
+## How IS 456 decides slab thickness
+
+IS 456:2000, the Indian code for plain and reinforced concrete, does not hand you a single minimum thickness for an ordinary slab. It controls thickness through deflection — how much the slab sags under load. The code limits the ratio of span to effective depth (the depth from the top of the slab to the centre of the bottom steel), and the slab must be deep enough to keep long-term deflection within limits without an explicit calculation. The basic ratios in Clause 23.2.1 are:
+
+| Support condition | Basic span to effective depth ratio |
+|---|---|
+| Simply supported | 20 |
+| Continuous | 26 |
+| Cantilever | 7 |
+| Two-way, simply supported | 28 (shorter span basis) |
+| Two-way, continuous | 32 (shorter span basis) |
+
+A modification factor then adjusts the ratio for the percentage of tension steel and the grade of steel — for typical residential slabs with light reinforcement the factor is about 1.2 to 1.5, which lets the slab be thinner than the basic ratio alone would suggest. The practical result: for a continuous one-way slab, the effective depth works out at roughly span divided by 36, and adding the 20 mm cover and half a bar diameter gives an overall thickness of about span divided by 36 plus 25 mm.
+
+The key insight, and the reason the code works this way, is that for a typical residential slab carrying the standard 2 kN/m² live load, deflection governs over strength. The slab rarely needs much steel for strength; it always needs enough depth to limit sagging over decades under its own weight and the live load. That is why a slab can be strong enough on paper and still be wrong — a thin slab that passes a strength check will still deflect, crack and feel springy underfoot.
+
+One exception has a hard number. For flat slabs — slabs supported directly on columns with no beams — Clause 31.2.1 of IS 456:2000 sets a minimum thickness of 125 mm, and the span-to-depth ratios are multiplied by 0.9, which makes the slab thicker than a beam-supported slab of the same span. Flat slabs are uncommon in ordinary Indian houses, but if your design uses one, 125 mm is the floor, not the target.
+
+## One-way slab or two-way slab: why it matters
+
+A slab is one-way when it bends mainly in one direction and carries its load to two opposite supports — that happens when the longer span is more than twice the shorter span. A two-way slab bends in both directions and shares its load between all four supporting beams. Most rooms in a typical Indian house are two-way slabs, because room proportions are rarely long and narrow enough to be one-way.
+
+The distinction matters because a two-way slab can be thinner than a one-way slab of the same shorter span: the load is shared, and the code's span-to-depth ratio for two-way slabs is more generous. This is one of the points CivilGuruji's video on minimum slab thickness makes clearly — whether the slab is one-way or two-way, the span length and the design load decide the thickness, and the code's minimum-thickness tables are the check, not the contractor's memory. The same video notes the common practice of a 150 mm roof slab for buildings, and the limits on pipes embedded in a slab: a service pipe buried in the slab reduces its effective depth, so large pipes should never be cast into a thin slab.
+
+## Thickness by room: what each part of the house needs
+
+Different rooms carry different loads and span different distances, so the slab thickness should reflect the room, not a single number applied to the whole floor:
+
+| Room or area | Typical thickness | Notes |
+|---|---|---|
+| Bedroom, living room | 125–150 mm | 125 mm up to 3.5 m span; 150 mm for 3.5–4.5 m |
+| Kitchen | 125–150 mm | Same as living rooms, with waterproofing above the slab |
+| Bathroom, toilet | 100–125 mm | 100 mm for very short spans; 125 mm preferred for waterproofing and crack resistance |
+| Balcony (cantilever) | 150 mm at support, tapering to 100 mm at the free end | Up to 1.5 m projection: 125 mm; 1.5–2 m: 150 mm; over 2 m needs a beam |
+| Roof slab | 125–150 mm | 150–175 mm with a water tank, terrace garden or future floor |
+| Sunshade (chajja) | 75–100 mm | Tapered, about 75 mm at the edge to 100 mm at the wall |
+| Staircase landing | 125–150 mm | Check with the structural drawing; landings carry concentrated loads |
+
+The kitchen deserves a special note. Its slab thickness is the same as the living room, but kitchens deal with constant water exposure, so the waterproofing above the slab matters as much as the thickness. A 125 mm kitchen slab with a failed waterproofing layer will leak into the room below long before a thicker slab with good waterproofing does. The same logic applies to bathrooms, where 125 mm is preferred over 100 mm mainly because it resists cracking and gives the waterproofing a better base.
+
+## What each extra 25 mm costs you
+
+Thickness is not free, and the cost is easy to quantify because a slab is a simple volume: area multiplied by thickness. For each 1,000 sq ft (92.9 m²) of slab in M20 concrete, the material quantities are:
+
+| Slab thickness | Concrete | Cement (about 8.06 bags per m³) | Sand | Aggregate |
+|---|---|---|---|---|
+| 100 mm | 9.3 m³ | about 75 bags | 3.9 m³ | 7.8 m³ |
+| 125 mm | 11.6 m³ | about 94 bags | 4.9 m³ | 9.8 m³ |
+| 150 mm | 13.9 m³ | about 112 bags | 5.8 m³ | 11.7 m³ |
+
+Each extra 25 mm on a 1,000 sq ft slab adds about 19 bags of cement and nearly 2.3 m³ of concrete. Going from 125 mm to 150 mm increases the concrete volume by about 20 per cent. The steel rises too: a typical house slab uses roughly 80 kg of steel per cubic metre of concrete, so a 1,000 sq ft, 125 mm M20 slab needs about 0.9 tonnes of steel. And the extra weight is not free either — a 125 mm slab weighs about 3.1 kN/m² and a 150 mm slab about 3.75 kN/m², and that extra self-weight has to be carried by the beams, columns and footings below, which is one reason the engineer sizes the whole frame together.
+
+This is also why thinning the slab to save money is a false economy. Going from 150 mm to 125 mm on a 1,000 sq ft slab saves about 19 bags of cement and 2.3 m³ of concrete — a small sum against the cost of the house — while a slab that is too thin for its span sags, cracks and can need expensive repair. The slab is the one element you cannot thicken later. Our guide to [RCC frame structure lifespan in India](/blog/rcc-frame-structure-lifespan-india) explains how the slab detail feeds into the fifty-year life of the frame, and our guide to [house construction cost in Ajmer](/blog/cost-of-building-a-house-in-ajmer-2026) treats the slab as a separate line item so you can see exactly what the thickness decision costs.
+
+## Slab thickness mistakes to avoid on site
+
+**1. Copying the neighbour's thickness.** A 125 mm slab that works on a 3.2 metre span fails on a 4.6 metre span. Thickness follows the span on your drawing, not the house next door.
+
+**2. Treating the thumb rule as the design.** Span divided by 25 is a planning check. The structural drawing — with the deflection check, the steel percentage and the cover — is the design. If the site has no structural drawing for the slab, the thickness is a guess.
+
+**3. Skimping on cover.** The effective depth in the IS 456 ratios is measured to the centre of the steel, so the cover matters. Steel sitting on the shuttering with no cover block corrodes, and a slab with corroded steel loses strength from the inside. Use proper cover blocks, 20 mm for a slab in normal exposure.
+
+**4. Casting big pipes into a thin slab.** A pipe embedded in the slab eats into its effective depth exactly where the steel needs to be. Plan service routes before concreting, and never let a plumber chase a thick pipe through a cast slab.
+
+**5. Loading the roof slab before it is ready.** A roof slab carrying a water tank needs the thicker 150 to 175 mm section and the tank position marked on the drawing, not added later above a random spot. A 1,000-litre tank is a tonne of water sitting on one patch of slab for the life of the house.
+
+**6. Skipping curing.** A slab that dries too fast develops shrinkage cracks and a weak surface, and no thickness fixes that. Curing for 7 to 10 days is what lets the concrete reach its design strength — it is not a finishing touch. Our guide to [plinth beam vs damp proof course](/blog/plinth-beam-vs-damp-proof-course-house-india) makes the same point at the base of the house: the cheapest decisions are the ones buried in concrete.
+
+## Ajmer: what to expect on a local house
+
+Ajmer's hot, dry climate changes how a roof slab behaves, not how thick it should be. A bare concrete slab absorbs solar radiation all day and re-radiates it into the rooms below through the evening, which is why the top floor of an Ajmer house is the hottest room in the house by afternoon. The thickness decision stays structural — span, supports, loads — but the roof treatment on top of the slab is where the climate is fought: reflective coatings, a filler slab, or traditional fixes such as inverted mud pots, plus shade over the west and south openings. A thicker slab alone does not cool a house; a correctly sized slab with a treated roof does.
+
+Two Ajmer specifics are worth planning for. First, overhead water tanks are near-universal here, and they sit on the roof slab: confirm the tank position with the structural engineer and make sure the slab under it is in the 150 to 175 mm band, not the 125 mm band used for the rooms below. Second, many Ajmer houses add a floor later. If a future floor is even a possibility, tell the engineer before the ground-floor slab is cast — the slab and the frame below it need to be designed for the extra load from the start, because adding it later means either a new structural check or a slab that was never meant to carry it. Get two quotes on the same written scope — same slab thickness, same concrete grade, same steel diameter and spacing — and treat a quote that is far cheaper than the other as a quote for a thinner slab, not a better price.
+
+## Frequently Asked Questions
+
+**What is the standard RCC slab thickness for a house in India?**
+
+Most Indian homes use a 125 mm (5 inch) to 150 mm (6 inch) slab. For room spans up to 3.5 metres, 125 mm is generally enough; for spans of 3.5 to 4.5 metres, 150 mm is the safer and more common choice. The final thickness comes from the structural drawing, set by span and support conditions under IS 456:2000.
+
+**Is a 100 mm (4 inch) slab enough for a house?**
+
+Only for very short spans under about 2.5 to 3 metres with light loads, such as small toilets, stores and sunshades. For a normal bedroom or living room spanning 3 to 4.5 metres, 100 mm is too thin: the slab will deflect, crack and feel bouncy underfoot. Most structural engineers recommend 125 mm as the minimum for a house floor.
+
+**What is the minimum slab thickness as per IS 456?**
+
+IS 456:2000 sets no single minimum thickness for ordinary slabs; it controls thickness through span-to-effective-depth ratios for deflection, plus cover and fire requirements. In practice slabs thinner than about 100 mm are rarely used for floors. For flat slabs, Clause 31.2.1 of IS 456:2000 sets a minimum thickness of 125 mm.
+
+**How thick should a roof slab be in India?**
+
+A normal residential roof slab is 125 to 150 mm, the same as a floor slab. Go to 150 to 175 mm if the roof carries a water tank, a terrace garden or a future floor of rooms. Roof slabs also need proper slope and waterproofing, since a thin slab with standing water cracks and leaks sooner.
+
+**How much cement is needed for a 1,000 sq ft slab?**
+
+For a 1,000 sq ft slab in M20 concrete, a 100 mm slab needs about 9.3 cubic metres and 75 bags of cement; a 125 mm slab needs 11.6 cubic metres and 94 bags; a 150 mm slab needs 13.9 cubic metres and 112 bags. Each extra 25 mm adds about 19 bags of cement and 2.3 cubic metres.
+
+**Can I reduce slab thickness to save money?**
+
+It is a false economy. Going from 150 mm to 125 mm saves about 19 bags of cement and 2.3 cubic metres of concrete, but a slab too thin for its span sags, cracks and can need expensive repair. The slab is the one element you cannot thicken later, so the saving is never worth the risk.
+
+## Book Site Consultation
+
+The slab is the floor you will walk on for the next fifty years, and its thickness is decided once, on paper, before the shuttering goes up. [Book a site consultation](/contact) and Design Plus will check the slab thickness, span-to-depth ratios and steel on your structural drawings against IS 456, mark the water tank and future-floor loads on the plan, and give you an itemised estimate for the slab — separately, in writing — before you commit to anything. Bring your plot papers and the sanctioned plan, and judge the studio on whether its numbers add up.`,
+  },
 ];
 
 export function getBlogHubPost(slug: string): BlogHubPost | undefined {
