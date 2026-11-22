@@ -155,3 +155,57 @@
   .bh-card:hover { transform: none; }
   .bh-card:hover .bh-card-visual { transform: none; }
 }
+
+/* Blogger post body — the client's own published HTML, lightly tamed to
+   sit inside the blog-hub design language. Inline styles from Blogger are
+   preserved; these rules only set rhythm, sizing and overflow safety. */
+.bg-content {
+  font-size: 1.0625rem;
+  line-height: 1.85;
+  color: inherit;
+  overflow-wrap: break-word;
+}
+.bg-content p { margin: 0 0 1.25em; }
+.bg-content h1, .bg-content h2, .bg-content h3, .bg-content h4 {
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  margin: 1.6em 0 0.7em;
+}
+.bg-content h1 { font-size: 1.7em; }
+.bg-content h2 { font-size: 1.45em; scroll-margin-top: 96px; }
+.bg-content h3 { font-size: 1.2em; }
+.bg-content ul, .bg-content ol { margin: 0 0 1.25em; padding-left: 1.5em; }
+.bg-content ul { list-style: disc; }
+.bg-content ol { list-style: decimal; }
+.bg-content li { margin-bottom: 0.4em; }
+.bg-content a { color: #b45309; text-decoration: underline; text-underline-offset: 3px; }
+.dark .bg-content a { color: #fcd34d; }
+.bg-content img, .bg-content video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  margin: 1em auto;
+  display: block;
+}
+.bg-content table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  margin: 0 0 1.25em;
+}
+.bg-content td, .bg-content th { padding: 0.4em 0.7em; }
+.bg-content blockquote {
+  border-left: 3px solid rgba(245, 158, 11, 0.6);
+  padding-left: 1em;
+  margin: 0 0 1.25em;
+  font-style: italic;
+}
+.bg-content pre {
+  overflow-x: auto;
+  padding: 1em;
+  border-radius: 0.75rem;
+  background: rgba(120, 113, 108, 0.12);
+  margin: 0 0 1.25em;
+}

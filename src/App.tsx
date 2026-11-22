@@ -27,6 +27,7 @@ const LocationsPage = lazy(() => import('./pages/LocationsPage').then(m => ({ de
 const LocationDetailPage = lazy(() => import('./pages/LocationDetailPage').then(m => ({ default: m.LocationDetailPage })));
 const BlogHubPage = lazy(() => import('./pages/BlogHubPage'));
 const BlogHubArticlePage = lazy(() => import('./pages/BlogHubArticlePage'));
+const BloggerPostPage = lazy(() => import('./pages/BloggerPostPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage').then(m => ({ default: m.ContactPage })));
 const PostersPage = lazy(() => import('./pages/PostersPage').then(m => ({ default: m.PostersPage })));
 const PosterCategoryPage = lazy(() => import('./pages/PosterCategoryPage').then(m => ({ default: m.PosterCategoryPage })));
@@ -210,6 +211,8 @@ function AppContent() {
 
           {/* 06 Blog Hub */}
           <Route path="/blog" element={<BlogHubPage />} />
+          {/* Blogger mirror — Er. Sudhir Soni's Blogger posts, inside the blog section */}
+          <Route path="/blog/blogger/:postId" element={<BloggerPostPage />} />
           <Route path="/blog/:slug" element={<BlogHubArticlePage />} />
 
           {/* 06b Knowledge Posters (client request 2026-10-04) */}
