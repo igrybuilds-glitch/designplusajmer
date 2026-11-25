@@ -8471,6 +8471,142 @@ For an open kitchen with regular Indian frying, guides recommend a chimney with 
 
 The kitchen is the room you will use three times a day for twenty years, and its layout, direction and extraction are decided once, on paper, before the platform is cast. [Book a site consultation](/contact) and Design Plus will check your kitchen's direction and stove, sink and door placements against Vastu, size the chimney and ventilation to how your household actually cooks, and give you an itemised estimate for the kitchen — separately, in writing — before you commit to anything. Bring your plot papers and the sanctioned plan, and judge the studio on whether its numbers add up.`,
   },
+  {
+    slug: 'toilet-vastu-direction-india',
+    seoTitle: 'Toilet Vastu Direction India (2026): Best Placement',
+    title: 'Toilet Vastu Direction in India (2026): Where the Toilet Goes, Which Way the Seat Faces, and the North-East Mistake to Avoid',
+    description: 'Toilet Vastu direction in India: north-west is best, seat facing north or south — plus the north-east dosha, remedies and fittings.',
+    date: '2026-11-25',
+    category: 'Guides',
+    image: '/images/blog/vaastu-compliant-home-plans-ajmer.jpg',
+    faqs: [
+      { question: 'What is the best direction for a toilet as per Vastu?', answer: 'The north-west is the best direction for a toilet as per Vastu, with the west as the second choice. The person using the toilet should face north or south. Avoid the north-east, the south-west corner and the centre of the house, and keep the toilet away from the kitchen and the pooja room.' },
+      { question: 'Can a toilet be in the north-east as per Vastu?', answer: 'No, a toilet in the north-east is the most serious toilet dosha in Vastu, because the north-east is the prayer and water zone that should stay clean and open. Remedies such as a pyramid above the door can only reduce the effect, not remove it. If you are planning, move the toilet; if the house is built, keep it spotless.' },
+      { question: 'Which direction should the toilet seat face as per Vastu?', answer: 'The toilet seat should be placed so the person sitting on it faces north or south. In practice the WC pan sits along the east or west wall of the bathroom, with the users back to one of those walls. Facing east or west while using the toilet is discouraged in the Vastu guides.' },
+      { question: 'Which direction is good for an attached bathroom as per Vastu?', answer: 'An attached bathroom should sit on the west or north-west side of the bedroom it serves. That keeps the wet area on an external wall, gives it a window and a vent, and keeps it out of the north-east corner of the room. A bathroom in the north-east of a bedroom is a fault worth correcting at the plan stage.' },
+      { question: 'Where should the bathroom sink and mirror go as per Vastu?', answer: 'The sink and water outlets go in the north-east part of the bathroom, which is the water zone, and the mirror goes on the north or east wall. The geyser goes in the south-east, taps and showers on the north wall, and the door in the east or north.' },
+      { question: 'Can a toilet and bathroom be in the same direction as per Vastu?', answer: 'Yes, a combined toilet and bathroom can sit in the north-west or west, provided it has a window or exhaust fan and is kept clean. Traditionally the two were separate rooms, and the Shubh Vastu guide notes the north-west is the only direction where both are correct together. In any other direction, one of the two ends up wrongly placed.' }
+    ],
+    content: `The toilet is the smallest room in the house, and it causes the most arguments on a floor plan. In Ajmer, the question of toilet vastu direction India comes up on almost every new-home drawing — usually after the plan is nearly finished, when the toilet has landed in the north-east because that was the only space left. That is exactly the wrong order. The toilet's direction is decided at the plan stage, when moving a wall costs nothing; after construction, the same correction means breaking tiles, shifting a soil pipe and rebuilding a wet wall.
+
+**Short answer:** The best direction for a toilet in India, as per Vastu, is the north-west of the house, with the west as the second choice. The person using the toilet should face north or south. Never put a toilet in the north-east, the south-west corner, or the centre of the house. An attached bathroom goes on the west or north-west side of the bedroom it serves. Vastu is a traditional system of design belief, presented here as tradition rather than as a guaranteed outcome — but its toilet rules line up neatly with good plumbing practice, which is why architects take them seriously even when clients do not.
+
+## Toilet direction by zone: the ranking
+
+Vastu does not give one rule for toilets; it gives a ranking. The table below follows the order the published Vastu guides converge on, from the Urban Company guide to the HouseDesignIndia position guide and the JK Cement placement guide:
+
+| Direction | Vastu view | Why the tradition says so |
+|---|---|---|
+| North-west (Vayavya) | Best — first choice | Air zone; waste and water leave the house easily |
+| West | Accepted | Afternoon sun dries the wet area; good for attached baths |
+| South | Accepted | Works for attached baths of south bedrooms |
+| North (not the corner) | Tolerated | Keep clear of the north-east corner itself |
+| South-east | Bath only, not WC | Fire corner; clashes with the kitchen zone |
+| East | Discouraged | Blocks morning light to the living areas |
+| South-west corner | Discouraged | Reserved for the master bedroom and stability |
+| North-east (Ishan) | Avoid | Prayer and water zone; the classic toilet dosha |
+| Centre (Brahmasthan) | Never | No external wall for a window or vent |
+
+Two details in that table catch people out. First, the south-east is not a toilet zone: Vastu allows a bathing area there but not a WC, because the south-east is the fire corner reserved for the kitchen. Second, the north is tolerated only away from its corner — the moment a toilet touches the north-east corner itself, it becomes the dosha every consultant flags first. Our [30×50 house plan with Vastu](/blog/30x50-house-plan-with-vastu) shows the same ranking applied inside a complete plan, with toilets in the north-west or south-east and never in the north-east or the centre.
+
+## Why the north-west wins — and what the old texts actually say
+
+The modern rule — north-west first, west second — is not a random preference. In the tradition, the north-west is the Vayu kon, the air corner, governed by movement: waste and water that need to leave the house are placed where air moves them out. The north-east, by contrast, is the Ishan kon, the water and prayer zone, meant to stay clean, open and light. A toilet there puts waste where the tradition puts purity, and that is why every guide calls it the single most common fault in Indian homes.
+
+There is an honest complication, and it is worth stating plainly. The classical texts do not say what the modern guides say. The Purohit.app research into the old texts finds that the Manusmriti (4.151), the Gautama Dharma Sutra and the Yajnavalkya Smriti all assume the act happens outside, far from the house — and the two texts that name a direction point south or south-west: the Apastamba Dharma Sutra sends a person "towards the south or south-west", and the Vishnu Purana says the same. Two later Vastu texts give the latrine a place, and both put it on the south-west side: the Mayamata (26.214) places latrines on the square of Nirriti, the south-west, in an annex outside the main house, and the Vishvakarma Prakasha (2.96) puts the latrine room between the south and the south-west. Those texts also keep bathing apart from the latrine — the Vishvakarma Prakasha puts the bath in the east, well away from its latrine.
+
+So the north-west rule is a modern, practical adaptation, not a quotation from the classics — and it is the better rule for a modern house, because a north-west toilet sits on an external wall with a window, a short drain run and a soil stack that vents outside. The south-west of a modern plan is the master bedroom's corner, and no family wants a toilet there. The tradition's underlying principle survives the change: keep waste far from where the family eats, prays and sleeps, and give it its own way out of the house. Our [Vaastu-compliant home plans guide for Ajmer](/blog/vaastu-compliant-home-plans-ajmer) explains how the same principle shapes the whole-house layout.
+
+## Which way should the toilet seat face?
+
+After the room's position, the next question is the seat. The rule across the guides is consistent: the person sitting on the WC should face north or south. In practice that means the WC pan sits along the east or west wall of the bathroom, with the user's back to one of those walls. Facing east or west while using the toilet is discouraged.
+
+Two practical corollaries come with it. First, the toilet seat should not be attached to a main wall shared with the bedroom, kitchen or pooja room — the Urban Company guide flags this specifically, and it is also plain building sense: a WC against a pooja-room wall transmits noise and vibration into the quietest room in the house. Second, the seat belongs in the west, south or north-west part of the bathroom itself, according to the JK Cement guide — never in the bathroom's own north-east corner, where the sink and water fittings go instead.
+
+## Attached bathrooms: the bedroom rule
+
+The attached bathroom is where most modern plans go wrong, because the bathroom is placed for the bedroom's convenience rather than by direction. The rule from the guides is simple: an attached bathroom sits on the west or north-west side of the bedroom it serves. The HouseDesignIndia guide puts it the same way — the toilet sits on the west or north-west side of the bedroom, not in the north-east corner of that bedroom.
+
+The Shubh Vastu video lesson on attached bathrooms makes the point sharper. Traditionally the toilet and the bathroom were two separate rooms, because their purposes are different — one discards waste, the other cleans the body — and the tradition gives them different directions: the toilet to the west or north-west, the bathing area to the north or north-east. Put them together in one attached room, and only the north-west works for both at once. An attached toilet-bathroom on the north or east side of the house gets the bathing area right and the toilet wrong; on the west or south-west it gets the toilet right and the bathing area wrong. That is the single most useful test for an attached bathroom on a plan: if the room is not in the north-west, one of its two functions is in the wrong direction, and the plan should say which one the family is accepting.
+
+## Fittings inside the bathroom: sink, mirror, geyser, door and floor
+
+Once the room and the seat are placed, the fittings follow their own directional logic. The guides agree on the broad pattern, even where they differ on details:
+
+- **Sink and taps:** the sink, wash basin and water outlets go in the north-east part of the bathroom — the water zone — with taps and showers on the north wall. White sinks are preferred in the guides, and the wash basin sits on the north or east side.
+- **Mirror:** on the north or east wall only, never on the south or west wall.
+- **Geyser and electricals:** the water heater goes in the south-east of the bathroom, and a washing machine in the south-east or north-west. Fire and water are kept apart in the tradition, so the geyser never sits beside the taps.
+- **Door:** in the east or north if possible, and never directly opposite the kitchen or the pooja room. Use a solid wooden door and keep it shut when the bathroom is not in use.
+- **Window and ventilation:** a small window in the east, west or north wall, with an exhaust fan where a window is not possible. A bathroom without a window is a Vastu fault and a damp problem at the same time.
+- **Floor level and slope:** the guides recommend the bathroom floor sit slightly higher than the rest of the house — one to two feet above ground level is the figure the JK Cement and SquareYards guides give — and the floor slope should run towards the east or north-east so water drains out of the room rather than pooling against the walls.
+- **Colours:** light and earthy shades — beige, light brown, pastel blue or soft grey — rather than dark colours, which the guides say make a small wet room feel heavier and darker than it is.
+
+None of these is a structural rule, and none of them justifies demolishing a finished bathroom. But at the plan stage they cost nothing, and a bathroom drawn with the sink in the north-east, the mirror on the east wall and the geyser in the south-east is a bathroom that also happens to ventilate, drain and light well.
+
+## The north-east toilet: the dosha everyone asks about
+
+The north-east toilet is the fault people search for most, because it is so common. In older row houses and in many builder flats, the north-east corner of the house is where the entrance and the first small room land — and in the 1980s and 1990s that small room was frequently made the toilet. The guides are unanimous that it is the worst placement: the north-east is the most auspicious and spiritually significant part of the house, and a toilet there is associated in the tradition with health problems and financial setbacks.
+
+The Shubh Vastu video is unusually blunt about it: a toilet in the north-east or in the centre of the house is a major dosha, and no remedy fully removes it. That honesty matters, because the remedies market sells certainty. The remedy the video does give — a pyramid fixed above the bathroom door on the outside, which the tradition credits with gathering positive energy in that direction — is presented as something that reduces the effect, not as a cure. The same applies to the other standard remedies: keeping the toilet spotlessly clean, keeping the door shut, and keeping the pooja space as far from it as the plan allows.
+
+If the house is still on paper, the answer is simple: move the toilet. If the house is built and the toilet is already in the north-east, the practical answer is to stop spending on remedies and spend on the things that actually matter — ventilation, a working exhaust, a door that shuts, and a pooja room nowhere near it. Our [home Vastu consultation guide](/blog/home-vastu-consultant-ajmer-online) explains what a consultant actually checks in a case like this, and what can and cannot be corrected without breaking walls.
+
+## The plumbing half: what the structure needs
+
+Vastu says nothing about pipe sizes, and the HouseDesignIndia guide says so explicitly — but the National Building Code and common sense do, and the toilet's direction decides how easy the plumbing is. A toilet on an external wall in the north-west or west gives you one plumbing shaft, one soil stack and short drain runs to the septic tank or the municipal line. A toilet in the centre of the house needs a long horizontal drain, a vent that has to find its way to the roof, and a floor that has to be cut open if anything blocks. The guides place the septic tank in the north-west as well, which keeps the whole waste line on one side of the house.
+
+That is the real reason the north-west rule survives contact with modern construction: it is the direction where the Vastu answer and the plumber's answer are the same. When a plan puts the toilet in the north-east to save a few feet of pipe somewhere else, it usually costs more pipe, more fall and more maintenance for the life of the house — and it puts the wettest, noisiest room against the wall the family cares about most.
+
+## Mistakes to avoid
+
+**1. Deciding the toilet last.** The toilet is placed after the bedrooms, kitchen and pooja room are fixed, and it lands wherever space is left — usually the north-east. Fix the toilet's zone when the room layout is drawn, not after.
+
+**2. Putting the WC in the south-east.** The south-east is the kitchen's fire corner. A bathing area there is acceptable; a WC there clashes with the kitchen zone, and if the kitchen is also in the south-east the clash is direct.
+
+**3. Facing the seat east or west.** The most common error in finished bathrooms, because the pan is placed against whichever wall the pipe reaches first. The pan goes on the east or west wall so the user faces north or south.
+
+**4. Sharing a wall with the pooja room or kitchen.** Noise, vibration and smell cross a single wall. Keep the WC off any wall the kitchen or pooja room shares, even if the direction is right.
+
+**5. A bathroom with no window.** No window means no light and no air, and the exhaust fan becomes the only defence against damp. A window in the east, west or north wall is part of the Vastu guidance and part of basic building practice.
+
+**6. Buying remedies instead of moving the toilet.** Pyramids, crystals and colour changes are sold as cures for a north-east toilet. The guides that recommend them also say they only reduce the effect. On a new plan, the cure is free: draw the toilet in the north-west.
+
+## Ajmer: what to expect on a local house
+
+Ajmer's houses are mostly independent houses rather than flats, which makes this guide easier to apply than it would be in a metro: the toilet's direction is usually a genuine choice at the plan stage, not a builder's fixed layout. The north-west corner is available to claim before the drawings are frozen, and the seat, sink and door positions can be fixed before the first brick is laid. The climate helps too — a west-facing bathroom gets the harsh afternoon sun, which dries the wet area fast, and a window on the west wall gives the room the ventilation a north-east bathroom in a flat never gets.
+
+What does not change locally is the cost picture: moving a toilet on paper costs nothing, moving it after construction means breaking the floor, shifting the soil pipe and rebuilding the wet wall, and no published Ajmer rate card exists for that work, so costs vary widely with the extent of the change. The time to apply this guide is the moment the architect draws the room layout. Our [guide to hiring an architect in Ajmer](/blog/guide-to-hiring-architect-in-ajmer) sets out what to ask for at that stage, and our [open kitchen versus closed kitchen Vastu guide](/blog/open-kitchen-vs-closed-kitchen-vastu-india) shows how the same direction logic applies to the kitchen, the other room where Vastu and daily use meet.
+
+## Frequently asked questions
+
+**What is the best direction for a toilet as per Vastu?**
+
+The north-west is the best direction for a toilet as per Vastu, with the west as the second choice. The person using the toilet should face north or south. Avoid the north-east, the south-west corner and the centre of the house, and keep the toilet away from the kitchen and the pooja room.
+
+**Can a toilet be in the north-east as per Vastu?**
+
+No, a toilet in the north-east is the most serious toilet dosha in Vastu, because the north-east is the prayer and water zone that should stay clean and open. Remedies such as a pyramid above the door can only reduce the effect, not remove it. If you are planning, move the toilet; if the house is built, keep it spotless.
+
+**Which direction should the toilet seat face as per Vastu?**
+
+The toilet seat should be placed so the person sitting on it faces north or south. In practice the WC pan sits along the east or west wall of the bathroom, with the users back to one of those walls. Facing east or west while using the toilet is discouraged in the Vastu guides.
+
+**Which direction is good for an attached bathroom as per Vastu?**
+
+An attached bathroom should sit on the west or north-west side of the bedroom it serves. That keeps the wet area on an external wall, gives it a window and a vent, and keeps it out of the north-east corner of the room. A bathroom in the north-east of a bedroom is a fault worth correcting at the plan stage.
+
+**Where should the bathroom sink and mirror go as per Vastu?**
+
+The sink and water outlets go in the north-east part of the bathroom, which is the water zone, and the mirror goes on the north or east wall. The geyser goes in the south-east, taps and showers on the north wall, and the door in the east or north.
+
+**Can a toilet and bathroom be in the same direction as per Vastu?**
+
+Yes, a combined toilet and bathroom can sit in the north-west or west, provided it has a window or exhaust fan and is kept clean. Traditionally the two were separate rooms, and the Shubh Vastu guide notes the north-west is the only direction where both are correct together. In any other direction, one of the two ends up wrongly placed.
+
+## Book Site Consultation
+
+The toilet is decided once, on paper, before the first brick is laid — and it is the room you will use every day for the life of the house. [Book a site consultation](/contact) and Design Plus will check your toilet and bathroom directions, seat facing, sink and door placements against Vastu, verify the plumbing runs and ventilation on your structural drawings, and give you an itemised estimate for the wet areas — separately, in writing — before you commit to anything. Bring your plot papers and the sanctioned plan, and judge the studio on whether its numbers add up.`,
+  },
 ];
 
 export function getBlogHubPost(slug: string): BlogHubPost | undefined {
