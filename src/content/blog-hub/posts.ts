@@ -8607,6 +8607,150 @@ Yes, a combined toilet and bathroom can sit in the north-west or west, provided 
 
 The toilet is decided once, on paper, before the first brick is laid — and it is the room you will use every day for the life of the house. [Book a site consultation](/contact) and Design Plus will check your toilet and bathroom directions, seat facing, sink and door placements against Vastu, verify the plumbing runs and ventilation on your structural drawings, and give you an itemised estimate for the wet areas — separately, in writing — before you commit to anything. Bring your plot papers and the sanctioned plan, and judge the studio on whether its numbers add up.`,
   },
+  {
+    slug: 'house-elevation-design-cost-india',
+    seoTitle: 'House Elevation Design Cost India (2026): Full Guide',
+    title: 'House Elevation Design Cost in India (2026): Design Fees, Material Rates per Sq Ft, and Worked Budgets for a 30 ft Front',
+    description: 'House elevation design cost in India 2026: design fees ₹15,000–₹75,000, material rates ₹35–₹1,200/sq ft, and worked budgets for 20, 30 and 40 ft fronts.',
+    date: '2026-11-27',
+    category: 'Guides',
+    image: '/images/blog/cost-of-building-a-house-in-ajmer-2026.jpg',
+    faqs: [
+      { question: 'How much does house elevation design cost in India in 2026?', answer: 'Design-only fees for a house elevation in India in 2026 typically run ₹15,000 to ₹50,000 for a standard package with two or three concepts and a 3D view, or ₹15 to ₹80 per sq ft of facade area for a premium package with night views and working details. Building the front itself costs far more than designing it.' },
+      { question: 'How much does it cost to build a house elevation per sq ft in India?', answer: 'Building a house elevation in India in 2026 costs about ₹150 to ₹350 per sq ft of facade for a simple modern front in paint with one stone band and steel railings. A heavy front in stone, louvers and glass crosses ₹500 per sq ft. Paint alone is ₹35 to ₹90 per sq ft, while glass runs ₹450 to ₹1,200.' },
+      { question: 'What is the cheapest house elevation design in India?', answer: 'The cheapest good-looking elevation in India is a box-type front in exterior paint with one texture band and a simple steel railing, at about ₹150 to ₹250 per sq ft of facade. Spend on one accent — a stone band or a bold front door — and keep the rest plain plaster and paint.' },
+      { question: 'How much does a 3D front elevation design cost in India?', answer: 'A 3D front elevation design in India costs from about ₹3,999 for a ground-floor house to ₹5,999 for ground plus one floor and ₹7,999 for ground plus two floors, on a published November 2026 online rate card for plots up to 1,200 sq ft. An architect’s elevation-only package with concepts, drawings and details typically runs ₹15,000 to ₹75,000.' },
+      { question: 'How much does stone cladding cost per sq ft in India?', answer: 'Stone cladding in India in 2026 costs about ₹180 to ₹300 per sq ft installed for sandstone, Kota or slate fixed with adhesive and clips, and ₹600 to ₹1,200 for dry-fixed stone on steel anchors. Stone lasts 25 years or more and needs a sealer every three to five years. Use it on one feature wall, not the whole front.' },
+      { question: 'Does house elevation design cost include GST and scaffolding?', answer: 'Usually not. Published 2026 facade rates are generally quoted before GST, and most exclude the steel sub-frame, scaffolding for work above ground plus two floors, and facade lighting. Ask every bidder whether the quote includes GST, the sub-frame, waterproofing behind cladding and scaffolding, and get the exclusions in writing before you compare two prices.' }
+    ],
+    content: `The front of your house is the one part of the building every passer-by judges, and it is also the part most families budget last. In Ajmer, the question of house elevation design cost in India comes up the same way on almost every new-home project: the RCC frame, the flooring and the kitchen have careful estimates, and the elevation has a single line — or no line at all — until a facade quotation arrives in lakhs. The confusion starts with the phrase itself, because "elevation design cost" means two different things: the fee for designing the front, and the cost of building it. This guide separates the two, gives the 2026 rates for both, and works through real budgets for 20 ft, 30 ft and 40 ft fronts so you can check any quotation line by line.
+
+**Short answer:** Designing a house elevation in India in 2026 costs about ₹15,000 to ₹75,000 for an architect's elevation-only package, or ₹15 to ₹80 per sq ft of facade area; online 3D elevation services start from about ₹4,000 per floor. Building the front costs about ₹150 to ₹350 per sq ft of facade for a simple modern elevation in paint with one stone band, and crosses ₹500 per sq ft for a heavy stone, louver and glass front. A 30 ft wide G+1 house has roughly 760 sq ft of flat front face, so a mid-range finish lands between about ₹72,000 and ₹1.6 lakh before windows, railings, the gate, lighting and GST.
+
+## What "house elevation design cost" actually covers
+
+Three things make up the cost of a house elevation, and a quotation that hides any one of them cannot be compared with another. The first is the design: concept options, 3D views, and — most often forgotten — the working drawings and fixing details that tell the site exactly what to build. The second is the facade materials themselves, each priced per square foot of the area it covers, installed. The third is the supporting work that makes those materials safe and durable: sub-frames, waterproofing, fixings, scaffolding and lighting.
+
+The single most important fact about elevation pricing is that it is charged on facade area, not on built-up area. A 30 ft wide G+1 house has about 760 sq ft of flat front face, measured from plinth to parapet top, edge to edge — a small number next to the 2,000-plus sq ft of built-up area the same house contains. Every rate in this guide is per square foot of the area the material actually covers, installed, which is why two quotations for the same drawing can differ by a factor of three: one counts the facade area and splits it by material, the other quotes a lump sum for "elevation work" and hides what is inside it. Our [cost of building a house in Ajmer guide](/blog/cost-of-building-a-house-in-ajmer-2026) shows where the elevation sits inside the whole-house budget, and our [3D home elevation design guide for Ajmer](/blog/3d-home-elevation-design-ajmer) explains what a good front looks like before it is priced.
+
+## House elevation design cost in India: what the design itself costs
+
+Design is the smallest share of the elevation budget and the part that decides whether the rest is money well spent. In India it is charged in three common ways, and the table below puts the published 2026 figures side by side:
+
+| Design option | What you get | Indicative fee (2026) |
+|---|---|---|
+| Full architectural service (whole house) | Plans, elevations, sections, details, coordination, site visits | About 4–10% of construction cost |
+| Elevation-only package (architect or designer) | 2–3 concepts, final 3D view, elevation and material drawings | About ₹15,000–75,000 for a house front |
+| Design-only, per sq ft of facade | Basic: one concept and simple 3D view; Standard: 2–3 options with material suggestions; Premium: detailed 3D, night views, material specs, working details | Basic ₹15–30; Standard ₹25–50; Premium ₹40–80 per sq ft |
+| Online 3D elevation (flat rate) | 3D front view, per floor, plots up to 1,200 sq ft | ₹3,999 ground floor; ₹5,999 G+1; ₹7,999 G+2 |
+| 3D render views only | Photoreal still images | About ₹2,000–10,000 per view |
+| AI elevation tools | Quick sketches to shortlist ideas | From ₹29 for 10 sketches |
+
+The cheapest route is not always the cheapest outcome. A published experiment by Ongrid Design put the two extremes side by side on the same 30×40 plot: ₹29 bought ten AI elevation sketches in under an hour, while an independent Bangalore architect charged ₹15,000 for an elevation package with three iterations and one Vastu review, delivered in two weeks — and only the architect's version could go straight to working drawings. A 3D view alone is not a design. It shows how a front might look, but not how a 600 mm deep box is supported, where its rainwater goes, how the ACP turns a corner or how the stone is fixed. For any front with cladding, the package should include elevation drawings at 1:50 or 1:100 with materials marked and dimensioned, and typical sections at 1:10 or 1:20 through each system. Those are what contractors price from, and what stops the site improvising. Our [architect fees in Ajmer guide](/blog/architect-fees-ajmer-per-sq-ft) sets out the same fee models for the whole house, so the elevation fee can be checked against the full-service fee rather than accepted on its own.
+
+The best value, where it is available, is to design the elevation with the house rather than after it. When an architect designs the whole house, the elevation arrives as part of the professional fee — about 4 to 10 per cent of construction cost depending on scope — with the plans, sections and structural coordination, which is the best way to get a front that works with the plan. An elevation commissioned alone, after the plan is approved, costs ₹15,000 to ₹75,000 as a standalone package and still needs the fixing details priced separately if they are not included.
+
+## What it costs to build the front: material rates per sq ft
+
+The material choice is the single biggest swing in what the elevation costs. The table below gives installed rates — material plus framing, adhesive or anchors, labour and sealing — for tier-2 cities such as Jaipur, Indore, Bhopal or Lucknow, from the published 2026 HouseDesignIndia materials guide. Tier-1 cities run 15 to 30 per cent higher on labour:
+
+| Material | Installed rate (₹/sq ft) | Life before major work | Best used for |
+|---|---|---|---|
+| Texture paint (acrylic or silicone) | 35–90 | 5–8 years | Base finish over 60–70% of the face |
+| Exposed brick (wire-cut or brick tile) | 120–320 | 25 years and more | Feature walls, boundary, warm look |
+| Stone cladding (sandstone, slate, granite) | 180–650 | 25 years and more | Entrance block, plinth, feature column |
+| ACP sheet (3–4 mm, PVDF coated) | 220–450 | 10–15 years | Large flat panels, parapet band |
+| WPC louvers and panels | 280–650 | 3–5 years colour, 8–10 structure | Balcony screens, vertical accents |
+| HPL cladding (6–8 mm exterior grade) | 350–700 | 15–20 years | Wood-look panels, full facade bands |
+| Glass (toughened, laminated, framed) | 450–1,200 | 20 years and more | Stair tower, double-height living, railing |
+
+A second published source, the Aaditya Interior October 2026 rates table, agrees on the order of magnitude and differs where the specification differs — which is exactly the detail to check in a quotation. It puts exterior emulsion paint at ₹17–26 per sq ft and texture finishes at ₹40–150 or more, brick cladding tiles at ₹150–350, thin adhered stone at ₹200–500, FR-core ACP at ₹250–450, laser-cut MS jaali screens at ₹450–1,000, toughened glazing at ₹450–900, and compact HPL at ₹550–1,100. The HPL gap between the two tables is a grade difference, not an error: 6 mm exterior-grade sheets from Indian brands sit at the lower band, while 8–10 mm compact or imported sheets with a ten-year colour warranty sit at the upper one. The same applies to stone: local sandstone, Kota and slate in 15–20 mm thickness, fixed with tile adhesive and mechanical clips, land at ₹180–300 installed, while dry-fixed stone on stainless-steel anchors runs ₹600–1,200 or more. Always ask which thickness, which core and which fixing a rate assumes — a ₹300 ACP quote that excludes the steel sub-frame is not cheaper than a ₹420 quote that includes it.
+
+The practical rule the numbers support is to spend the expensive material where eyes land and keep the rest simple. The front face of a typical G+1 house on a 30 ft wide plot is 900 to 1,300 sq ft including projections, according to the same 2026 guide. Finishing it in texture paint alone costs about ₹50,000 to ₹1 lakh. Finishing it in a mix of stone, louvers and glass can pass ₹5 lakh. A simple modern elevation with paint, one stone band and steel railings lands between ₹150 and ₹350 per sq ft of facade; a heavy stone, louver and glass front crosses ₹500.
+
+## Worked budgets: what a 20 ft, 30 ft and 40 ft front costs
+
+The table below applies the published rates to typical fronts. Figures are indicative for October 2026, rounded, and exclude windows, railings, the main gate, facade lighting and GST:
+
+| Front | Facade area | Paint only | Mid-range mix | Premium mix |
+|---|---|---|---|---|
+| 20 ft G+1 house | About 500–510 sq ft | About ₹6,000–9,000 | About ₹42,000–90,000 | About ₹2–4.5 lakh |
+| 30 ft G+1 house | About 760 sq ft | About ₹13,000–20,000 | About ₹72,000–1.6 lakh | About ₹3.3–6.8 lakh |
+| 30 ft G+2 house | About 1,070 sq ft | About ₹18,000–28,000 | About ₹1–2.25 lakh | About ₹4.7–9.5 lakh |
+| 40 ft G+1 bungalow | About 1,100 sq ft | About ₹19,000–29,000 | About ₹1–2.3 lakh | About ₹4.8–9.7 lakh |
+
+To see how a mid-range figure is built, take the 30 ft G+1 front at 760 sq ft and split it the way the guides suggest: 60 per cent exterior emulsion paint (456 sq ft at ₹17–26 = ₹7,752–11,856), 25 per cent local sandstone (190 sq ft at ₹180–300 = ₹34,200–57,000), and 15 per cent ACP band (114 sq ft at ₹220–320 = ₹25,080–36,480). The total is about ₹67,000 to ₹1.05 lakh — which sits at the lower end of the published mid-range band of ₹72,000 to ₹1.6 lakh for the same front, as it should, since this mix uses the cheaper end of each material's range. The arithmetic is shown so you can re-run it with your own front's measurements and any quotation's rates.
+
+The premium end is a different order of magnitude, and the same source works it through for a 40 ft G+1 bungalow front of about 1,100 sq ft: 30 per cent dry-fixed stone (330 sq ft at ₹600–1,200 = ₹1.98–3.96 lakh), 20 per cent compact HPL (220 sq ft at ₹550–1,100 = ₹1.21–2.42 lakh), 10 per cent aluminium louvres (110 sq ft at ₹550–1,200 = ₹0.6–1.32 lakh), 20 per cent toughened glazing in frames (220 sq ft at ₹450–900 = ₹0.99–1.98 lakh) and 20 per cent paint (220 sq ft at ₹17–26 = about ₹4,000–6,000). The total is roughly ₹4.8–9.7 lakh, or about ₹440–890 per sq ft of facade — four to five times the mid-range mix. On a bungalow of about 3,500 sq ft built-up, that is roughly ₹140–280 per sq ft of built-up area, which is the kind of addition that moves a house from the standard construction band of about ₹2,200–2,800 per sq ft of built-up area into the premium band of ₹2,800–3,800 or more. The elevation, in other words, can be anything from under 1 per cent to well over 5 per cent of construction cost — and the choice is made in the material split, not in the design fee.
+
+## How to measure your facade area
+
+Every rate in this guide is per square foot of the area the material covers, so the first job is to measure the facade correctly — from plinth to parapet top, edge to edge — and then split it by material, deducting openings that receive windows or glazing instead. A 30 ft (about 9.15 m) G+1 front from plinth to parapet top is roughly 7.75 m tall, which gives about 71 sq m or 760 sq ft; the same front at G+2 is about 1,070 sq ft. Projecting boxes and frames add their side faces and soffits, which can add 10 to 25 per cent to the area of an elaborate front — which is why the HouseDesignIndia guide puts a 30 ft wide G+1 front at 900 to 1,300 sq ft once projections and a taller parapet are counted. Both figures are right; they measure different things. Measure the flat face first, then add the projection faces separately, and check which area a quotation is priced on before comparing it with another.
+
+Two measurement traps catch owners out. First, deducting nothing for windows: a front with large windows has far less clad area than its gross face, and a quotation priced on the gross area overcharges for every square foot of glass. Second, forgetting the soffits and side faces of projecting boxes: a 600 mm deep box adds two side faces and a soffit to the area, and those faces need the same finish, fixing and waterproofing as the front. A quotation that prices only the flat face will come back with extras for exactly those surfaces.
+
+## The cheapest elevation that still looks good
+
+The cheapest elevation that still looks designed is a box-type front: clean rectangular forms, exterior paint in two tones, one texture band and a simple steel railing. Published 2026 guides put it at about ₹150 to ₹250 per sq ft of facade — essentially good plaster and two-tone exterior paint, with the money concentrated on one element. The budget-elevation guides make the same point with itemised costs: an exposed red-brick band on the lower third costs about ₹45–70 per sq ft and is nearly free if the wall is already brick; textured plaster costs about ₹25–45 per sq ft over base plaster you are paying for anyway; stone-look cement cladding tiles on one accent wall cost about ₹80–120 per sq ft; and a bold front door costs ₹15,000–45,000 and is the one element everyone walks up to.
+
+The discipline is to pick one accent and let the rest stay plain. A small ACP band around the entrance or balcony, at ₹150–600 per sq ft installed, delivers most of the visual impact of a full-cladding elevation at a fraction of the cost — provided it is one band, not three competing ones. The most expensive cheap mistake is a bad colour, so explore colour combinations on your own facade before committing a single litre, and remember that a plain plaster-and-paint front with a good door and a straight parapet line reads better than a front with five materials fighting each other.
+
+## Hidden costs: GST, sub-frames, scaffolding and fire safety
+
+Several items regularly sit outside the facade rates and appear later as extras, and they are the reason two quotations for the same drawing differ so much. Sub-frames for ACP, HPL, louvres and screens may be quoted per kilogram of steel or aluminium rather than per sq ft, and galvanising or good primer and paint on steel frames is essential. Scaffolding and hoisting become significant above G+2. Waterproofing behind cladding — particularly behind adhered tiles and at the tops of boxes, parapets and copings — is cheap compared with fixing leaks later. Facade lighting needs conduits planned before cladding goes on, not chased in afterwards. And GST is charged on materials and works contracts, so ask every bidder whether their rates include it.
+
+Fire safety is not optional, and it is a cost, not a detail to skip. The National Building Code of India 2016, Part 4 (Fire and Life Safety), together with local fire authorities, controls the materials and details permitted on building facades, particularly for taller and public buildings. For any building, the published guidance specifies ACP with a fire-retardant core rather than a plain polyethylene core, fire stops in ventilated cavities at each floor, and non-combustible insulation where insulation is used. The same discipline applies to stone: stone above head height should be mechanically anchored, not only stuck on with adhesive. A quotation that prices PE-core ACP or adhesive-only stone is cheaper on paper and unsafe in practice — the saving is not a saving.
+
+## Mistakes to avoid
+
+**1. Budgeting the elevation on built-up area.** Facade rates are per sq ft of facade area. Pricing them on the house's built-up area inflates the budget by two to three times and makes every quotation look like a scam.
+
+**2. Comparing quotes that include different things.** A ₹300 ACP quote that excludes the steel sub-frame is not cheaper than a ₹420 quote that includes it. Ask for the same five lines from every bidder: design, finishes, sub-frame and projections, protection, and access.
+
+**3. Buying a 3D view and calling it a design.** A render shows how a front might look. Without elevation drawings at 1:50 or 1:100 and sections through each system, the site improvises the fixing details — and improvisation is where cladding fails.
+
+**4. Cladding the whole front in the expensive material.** Stone, HPL and glass earn their money on the entrance block, one feature wall or one band. Spread across the whole face they multiply the cost without multiplying the effect.
+
+**5. Skipping waterproofing behind cladding and at copings.** Water gets behind adhered tiles and into the tops of boxes and parapets. The waterproofing is a small line; the leak it prevents is a large one.
+
+**6. Choosing PE-core ACP or adhesive-only stone above head height.** Fire-retardant cores and mechanical anchors are the published standard. The cheaper specification is the one that fails.
+
+## Ajmer: what to expect on a local house
+
+Ajmer is a tier-2 city, and the published 2026 rates in this guide are tier-2 rates, so an Ajmer quotation should sit at or below the lower end of the national bands — not at the metro end. No published Ajmer-only elevation rate card exists, so any figure presented as "the Ajmer rate" should be treated as a single contractor's price, not a market rate; the honest way to use this guide locally is to take the national bands, expect the lower half, and compare three itemised quotations for the same material split. Rajasthan's own sandstone is the local advantage: local sandstone, Kota and slate in 15–20 mm thickness are the cheapest stone band in the table at ₹180–300 installed, and they suit Ajmer's climate and its sandstone building tradition far better than imported stone at the top of the range.
+
+The climate shapes the design as much as the budget. A west-facing front in Ajmer takes harsh afternoon sun, so the elevation should do real work: a [jaali screen](/blog/jaali-screen-facade-design-india) or vertical fins on the west face cut heat gain while giving the front its character, and deep chhajjas over windows protect the paint and the joinery. Laser-cut MS jaali screens run about ₹450–1,000 per sq ft installed and vertical fins about ₹500–1,200 — expensive per square foot, but they cover a small area and replace a larger expanse of plain wall. For a [commercial front](/blog/commercial-building-architect-ajmer) the same logic applies at a larger scale: a 50 ft wide G+3 commercial front of about 2,500 sq ft, finished in FR ACP over half its area and toughened glazing over 40 per cent, costs roughly ₹8–15 lakh before signage, lighting and GST. Before any of it is built, the plan itself has to be approved — our [house plan approval fees guide for Ajmer](/blog/house-plan-approval-fees-ajmer) sets out what the sanction costs, so the elevation budget is not confused with the approval budget.
+
+## Frequently asked questions
+
+**How much does house elevation design cost in India in 2026?**
+
+Design-only fees for a house elevation in India in 2026 typically run ₹15,000 to ₹50,000 for a standard package with two or three concepts and a 3D view, or ₹15 to ₹80 per sq ft of facade area for a premium package with night views and working details. Building the front itself costs far more than designing it.
+
+**How much does it cost to build a house elevation per sq ft in India?**
+
+Building a house elevation in India in 2026 costs about ₹150 to ₹350 per sq ft of facade for a simple modern front in paint with one stone band and steel railings. A heavy front in stone, louvers and glass crosses ₹500 per sq ft. Paint alone is ₹35 to ₹90 per sq ft, while glass runs ₹450 to ₹1,200.
+
+**What is the cheapest house elevation design in India?**
+
+The cheapest good-looking elevation in India is a box-type front in exterior paint with one texture band and a simple steel railing, at about ₹150 to ₹250 per sq ft of facade. Spend on one accent — a stone band or a bold front door — and keep the rest plain plaster and paint.
+
+**How much does a 3D front elevation design cost in India?**
+
+A 3D front elevation design in India costs from about ₹3,999 for a ground-floor house to ₹5,999 for ground plus one floor and ₹7,999 for ground plus two floors, on a published November 2026 online rate card for plots up to 1,200 sq ft. An architect’s elevation-only package with concepts, drawings and details typically runs ₹15,000 to ₹75,000.
+
+**How much does stone cladding cost per sq ft in India?**
+
+Stone cladding in India in 2026 costs about ₹180 to ₹300 per sq ft installed for sandstone, Kota or slate fixed with adhesive and clips, and ₹600 to ₹1,200 for dry-fixed stone on steel anchors. Stone lasts 25 years or more and needs a sealer every three to five years. Use it on one feature wall, not the whole front.
+
+**Does house elevation design cost include GST and scaffolding?**
+
+Usually not. Published 2026 facade rates are generally quoted before GST, and most exclude the steel sub-frame, scaffolding for work above ground plus two floors, and facade lighting. Ask every bidder whether the quote includes GST, the sub-frame, waterproofing behind cladding and scaffolding, and get the exclusions in writing before you compare two prices.
+
+## Book Site Consultation
+
+The elevation is decided once, on paper, before the first tile is fixed — and it is the part of the house you will look at every day for the life of the building. [Book a site consultation](/contact) and Design Plus will measure your facade, split it by material, check the fixing and waterproofing details on your structural drawings, and give you an itemised estimate for the front — separately, in writing — before you commit to anything. Bring your plot papers and the sanctioned plan, and judge the studio on whether its numbers add up.`,
+  },
 ];
 
 export function getBlogHubPost(slug: string): BlogHubPost | undefined {
